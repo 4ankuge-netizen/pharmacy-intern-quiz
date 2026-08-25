@@ -15,7 +15,7 @@ const APP_SHELL_FILES = [
   './js/quiz-engine.js',
   './js/storage.js',
   './js/stats.js',
-  './data/questions-sample.json',
+  './data/questions.json',
   './data/categories.json',
   './manifest.json',
   './icons/icon.svg',

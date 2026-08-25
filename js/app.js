@@ -1,13 +1,25 @@
 // アプリ全体の司令塔です。画面の切り替えと、各部品(クイズエンジンや保存モジュール)の
 // つなぎ込みを行います。
 
-import { filterQuestions, getWeakPointQuestions, checkAnswer, shuffle } from './quiz-engine.js';
+import {
+  filterQuestions,
+  getWeakPointQuestions,
+  checkAnswer,
+  pickRandomQuestions,
+  shuffleChoices,
+} from './quiz-engine.js';
 import { createStorage } from './storage.js';
 import { computeCategoryAccuracy } from './stats.js';
 
 const storage = createStorage(window.localStorage);
 
+// 1回の出題で出す問題数。問題プールが増えても、1回分はこの数で区切る
+const QUESTIONS_PER_SESSION = 10;
+
+// 出題に使う問題(PMDAの一次資料で確認済みのものだけ)
 let allQuestions = [];
+// 確認前のものも含めた全問題。「確認待ちが何問あるか」を案内するために持っておく
+let allQuestionsIncludingUnverified = [];
 let categories = [];
 let currentSession = []; // 今出題中の問題の配列
 let currentIndex = 0;
@@ -21,6 +33,9 @@ let sessionCorrectCount = 0;
 let answeredInSession = new Set();
 // 「もう一度解く」で同じ出題内容をやり直せるよう、直前の出題方法を覚えておく
 let lastQuizStarter = null;
+// 今表示している選択肢の並びと、その中で正解が何番目か。
+// 表示のたびに並び替えるため、正解の位置は問題データではなくこちらを見る
+let currentChoices = null;
 
 // 端末の現地時間で「今日」を求める(UTCの日付を使うと、日本時間では朝9時まで前日扱いになってしまうため)
 function getTodayLocalDate() {
@@ -34,10 +49,13 @@ function getTodayLocalDate() {
 // 起動時に、問題データとカテゴリー一覧を読み込む
 async function loadData() {
   const [questionsRes, categoriesRes] = await Promise.all([
-    fetch('data/questions-sample.json'),
+    fetch('data/questions.json'),
     fetch('data/categories.json'),
   ]);
-  allQuestions = await questionsRes.json();
+  allQuestionsIncludingUnverified = await questionsRes.json();
+  // PMDAの添付文書・インタビューフォーム・ガイドラインで内容を確認できた問題だけを出題する。
+  // 未確認の問題は、確認作業が済むまでアプリには出さない
+  allQuestions = allQuestionsIncludingUnverified.filter((q) => q.verified);
   categories = await categoriesRes.json();
 }
 
@@ -72,9 +90,10 @@ function renderHome() {
   });
 }
 
-// 出題を始めるときの共通の準備(点数や答えた記録をまっさらに戻す)
-function beginSession(questions, emptyMessage, starter) {
-  currentSession = shuffle(questions);
+// 出題を始めるときの共通の準備(点数や答えた記録をまっさらに戻す)。
+// プール全体からランダムに10問だけ選ぶので、問題が増えても1回分の長さは変わらない
+function beginSession(pool, emptyMessage, starter) {
+  currentSession = pickRandomQuestions(pool, QUESTIONS_PER_SESSION);
   currentIndex = 0;
   sessionCorrectCount = 0;
   answeredInSession = new Set();
@@ -84,11 +103,17 @@ function beginSession(questions, emptyMessage, starter) {
 }
 
 function startQuiz({ categoryId } = {}) {
-  beginSession(
-    filterQuestions(allQuestions, { categoryId }),
-    'このカテゴリーにはまだ問題がありません。',
-    () => startQuiz({ categoryId })
-  );
+  const pool = filterQuestions(allQuestions, { categoryId });
+  // 問題自体は入っているのに、確認作業がまだ済んでいないだけ、という場合は
+  // その理由が分かる案内にする
+  const unverifiedCount = filterQuestions(allQuestionsIncludingUnverified, { categoryId })
+    .filter((q) => !q.verified).length;
+  const message =
+    unverifiedCount > 0
+      ? `このカテゴリーには確認待ちの問題が${unverifiedCount}問あります。PMDAの資料での確認が済んだものから出題されます。`
+      : 'このカテゴリーにはまだ問題がありません。';
+
+  beginSession(pool, message, () => startQuiz({ categoryId }));
 }
 
 function startWeakPointQuiz() {
@@ -124,9 +149,13 @@ function renderQuestion() {
   const bookmarkButton = document.getElementById('bookmark-toggle-button');
   bookmarkButton.textContent = bookmarkIds.includes(question.id) ? '★ ブックマーク解除' : '☆ ブックマーク';
 
+  // 選択肢は表示するたびに並び替える。
+  // 位置を覚えて答えてしまうのを防ぐため、同じ問題でも毎回並びが変わる
+  currentChoices = shuffleChoices(question);
+
   const choiceList = document.getElementById('choice-list');
   choiceList.innerHTML = '';
-  question.choices.forEach((choiceText, index) => {
+  currentChoices.choices.forEach((choiceText, index) => {
     const button = document.createElement('button');
     button.textContent = choiceText;
     button.addEventListener('click', () => onAnswer(question, index, button));
@@ -135,7 +164,8 @@ function renderQuestion() {
 }
 
 function onAnswer(question, selectedIndex, selectedButton) {
-  const isCorrect = checkAnswer(question, selectedIndex);
+  // 正解かどうかは、今表示している並びの中での位置で判定する
+  const isCorrect = checkAnswer(currentChoices, selectedIndex);
 
   // 同じ問題を1回の出題の中で二度答えた場合、成績を二重に数えない。
   // (画面を切り替えて戻ってきたときに、もう一度答えられてしまうため)
@@ -151,7 +181,7 @@ function onAnswer(question, selectedIndex, selectedButton) {
 
   // 選んだボタンと、正解のボタンに色をつける
   const buttons = document.querySelectorAll('#choice-list button');
-  buttons[question.correctIndex].classList.add('correct');
+  buttons[currentChoices.correctIndex].classList.add('correct');
   if (!isCorrect) selectedButton.classList.add('incorrect');
   buttons.forEach((b) => (b.disabled = true));
 

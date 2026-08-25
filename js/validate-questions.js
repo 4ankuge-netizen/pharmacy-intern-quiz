@@ -5,6 +5,24 @@
 const VALID_DIFFICULTIES = ['beginner', 'intermediate', 'advanced'];
 const VALID_TYPES = ['single', 'case'];
 
+// 出題カテゴリーの正式な名前(id)の一覧。
+// data/categories.json と同じ内容にしておく必要があり、
+// ずれていないかはテストで見張っている。
+// カテゴリー名を打ち間違えると、その問題はホーム画面からも正答率画面からも
+// 消えてしまい、しかもエラーも出ないため、ここで必ず照合する。
+export const VALID_CATEGORY_IDS = [
+  'cancer',
+  'hypertension',
+  'diabetes',
+  'heart-disease',
+  'cerebrovascular',
+  'psychiatric',
+  'immune-allergy',
+  'infection',
+  'calculation',
+  'ethics',
+];
+
 export function validateQuestion(q) {
   const errors = [];
 
@@ -12,9 +30,9 @@ export function validateQuestion(q) {
   if (typeof q.id !== 'string' || q.id.length === 0) {
     errors.push('id が文字列で入っていません');
   }
-  // categoryの検証
-  if (typeof q.category !== 'string' || q.category.length === 0) {
-    errors.push('category が文字列で入っていません');
+  // categoryの検証。決められた10個のどれかであること
+  if (!VALID_CATEGORY_IDS.includes(q.category)) {
+    errors.push(`category が正しくありません(${VALID_CATEGORY_IDS.join(' / ')} のいずれか)`);
   }
   // difficultyの検証
   if (!VALID_DIFFICULTIES.includes(q.difficulty)) {
@@ -53,14 +71,26 @@ export function validateQuestion(q) {
   if (!q.source || typeof q.source.confirmedDate !== 'string') {
     errors.push('source.confirmedDate が入っていません');
   }
+  // verifiedの検証。PMDAの一次資料で内容を確認済みかどうかを表す
+  if (typeof q.verified !== 'boolean') {
+    errors.push('verified が true / false で入っていません');
+  }
 
   return errors;
 }
 
 export function validateQuestions(questions) {
   const results = [];
+  // 同じIDの問題が2つあると、解答履歴が混ざってしまうので見張る
+  const seenIds = new Set();
+
   for (const q of questions) {
     const errors = validateQuestion(q);
+    if (seenIds.has(q.id)) {
+      errors.push(`id「${q.id}」が重複しています`);
+    } else {
+      seenIds.add(q.id);
+    }
     // エラーがある問題だけを結果配列に加える
     if (errors.length > 0) {
       results.push({ id: q.id, errors });

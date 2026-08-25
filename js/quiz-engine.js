@@ -30,6 +30,30 @@ export function checkAnswer(question, selectedIndex) {
   return selectedIndex === question.correctIndex;
 }
 
+// 問題プールの中から、指定した数だけランダムに選ぶ。
+// プールが増えても1回の出題は決まった問題数で終わるようにするためのもの。
+// プールの数が足りないときは、ある分だけ返す。
+export function pickRandomQuestions(questions, count, randomFn = Math.random) {
+  // shuffle は元の配列を書き換えずに新しい配列を返すので、プール自体は無事
+  return shuffle(questions, randomFn).slice(0, count);
+}
+
+// 1問分の選択肢を並び替えて、正解が何番目に移ったかも一緒に返す。
+// 表示のたびに呼ぶことで、選択肢の位置を覚えて答えるのを防ぐ。
+// 元の問題データは書き換えない。
+export function shuffleChoices(question, randomFn = Math.random) {
+  // 「どれが正解か」の目印を付けたまま並び替え、後から位置を調べる
+  const marked = question.choices.map((text, index) => ({
+    text,
+    isCorrect: index === question.correctIndex,
+  }));
+  const shuffled = shuffle(marked, randomFn);
+  return {
+    choices: shuffled.map((item) => item.text),
+    correctIndex: shuffled.findIndex((item) => item.isCorrect),
+  };
+}
+
 // 配列の中身をランダムな順番に並べ替える(Fisher-Yatesシャッフル)
 // randomFn を差し替えられるようにして、テストのときは結果が毎回変わらないようにしている
 export function shuffle(array, randomFn = Math.random) {
