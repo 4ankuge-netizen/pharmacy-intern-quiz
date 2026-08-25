@@ -20,13 +20,25 @@
      必ず人(または一次資料を実際に読んだうえでの判断)を通します。
 */
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validateQuestions } from '../js/validate-questions.js';
+import { extractDrugName } from './list-drugs-to-fetch.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const QUESTIONS_PATH = join(HERE, '..', 'data', 'questions.json');
+const CACHE_DIR = join(HERE, '..', '.pmda-cache');
+
+// その問題の出典にあたる、取得済みの添付文書を読み込む
+function loadCachedDoc(question) {
+  const drug = extractDrugName(question.source.name);
+  if (!drug) return null;
+  const file = join(CACHE_DIR, `${drug.replace(/[^\p{L}\p{N}]/gu, '_').slice(0, 80)}.json`);
+  if (!existsSync(file)) return null;
+  const doc = JSON.parse(readFileSync(file, 'utf8'));
+  return doc.notFound || !doc.packUrl ? null : doc;
+}
 
 function todayLocalDate() {
   const now = new Date();
@@ -54,12 +66,27 @@ function main() {
   for (const d of decisions) {
     const q = byId.get(d.id);
     if (!q) { missing.push(d.id); continue; }
-    if (!d.url) { console.error(`URLがありません: ${d.id}`); process.exit(1); }
+
+    // URLと資料名が省略されていれば、取得済みの添付文書から補う。
+    // (検証は、その保存済みの文書を実際に読んで行っているため一致する)
+    let url = d.url;
+    let sourceName = d.sourceName;
+    if (!url) {
+      const doc = loadCachedDoc(q);
+      if (!doc) {
+        console.error(`URLが指定されておらず、添付文書も見つかりません: ${d.id}`);
+        process.exit(1);
+      }
+      url = doc.packUrl;
+      const product = String(doc.selectedProductName || '').replace(/\s*\.\.\.$/, '').trim();
+      // 「どの製品の、どの項目で確認したか」が後から分かる形にする
+      sourceName = sourceName || `${product} 添付文書${d.section ? ' ' + d.section : ''}`;
+    }
 
     q.verified = true;
-    q.source.url = d.url;
+    q.source.url = url;
     q.source.confirmedDate = d.confirmedDate || today;
-    if (d.sourceName) q.source.name = d.sourceName;
+    if (sourceName) q.source.name = sourceName;
     updated++;
   }
 

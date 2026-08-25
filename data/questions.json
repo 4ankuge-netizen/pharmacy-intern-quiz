@@ -14,11 +14,11 @@
   "correctIndex": 3,
   "explanation": "アプレピタントはNK1受容体拮抗薬で、高度催吐性リスクの抗がん剤による悪心・嘔吐の予防に用いられます。",
   "source": {
-   "name": "アプレピタントカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレピタントカプセル125mg「サワ 添付文書 4. 効能又は効果・18.1 作用機序(選択的NK1受容体拮抗型制吐剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2391008M1048_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-002",
@@ -98,11 +98,11 @@
   "correctIndex": 0,
   "explanation": "5-HT3受容体拮抗薬は消化管や中枢の5-HT3受容体を遮断し、抗がん剤による悪心・嘔吐を抑えます。",
   "source": {
-   "name": "グラニセトロン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カイトリル注1mg ／ カイ 添付文書 4. 効能又は効果・18.1.1(5-HT3受容体への高親和性)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2391400A3024_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-006",
@@ -119,11 +119,11 @@
   "correctIndex": 3,
   "explanation": "フェンタニル貼付剤は皮膚から吸収される経皮吸収型の強オピオイド鎮痛薬で、安定したがん性疼痛の管理に用いられます。",
   "source": {
-   "name": "フェンタニルクエン酸塩貼付剤 添付文書(効能・効果、用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フェンタニルクエン酸塩1日用テー 添付文書 4. 効能又は効果(弱オピオイドで治療困難ながん疼痛・経皮吸収型テープ)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1033_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-007",
@@ -140,11 +140,11 @@
   "correctIndex": 2,
   "explanation": "TS-1は経口投与可能な抗悪性腫瘍薬で、フッ化ピリミジン系(5-FU系)に分類されます。",
   "source": {
-   "name": "テガフール・ギメラシル・オテラシルカリウム配合カプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エスワンタイホウ配合OD錠T20 添付文書 18.1 作用機序(FTから5-FUへ変換)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4229101F1050_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-008",
@@ -182,11 +182,11 @@
   "correctIndex": 1,
   "explanation": "メトクロプラミドはドパミンD2受容体を遮断することで制吐作用や消化管運動促進作用を示します。",
   "source": {
-   "name": "メトクロプラミド錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メトクロプラミド錠5mg「NIG」 添付文書 18.1 作用機序(CTZのドパミンD2受容体遮断)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2399004F1286_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-010",
@@ -224,11 +224,11 @@
   "correctIndex": 2,
   "explanation": "シスプラチンは白金(プラチナ)製剤に分類される抗悪性腫瘍薬で、強い催吐性と腎毒性が特徴です。",
   "source": {
-   "name": "シスプラチン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "動注用アイエーコール50mg ／ 添付文書 19. 化学名 Diamminedichloroplatinum・分子式 Cl2H6N2Pt",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291401D1026_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-012",
@@ -245,11 +245,11 @@
   "correctIndex": 3,
   "explanation": "パクリタキセルはタキサン系の微小管阻害薬で、末梢神経障害が代表的な副作用として知られています。",
   "source": {
-   "name": "パクリタキセル注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "パクリタキセル注射液30mg「サワイ 添付文書 18.1 作用機序(微小管重合促進)・16.x 代謝(タキサン環の水酸化)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240406A1058_1_23/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-013",
@@ -308,11 +308,11 @@
   "correctIndex": 3,
   "explanation": "ベバシズマブはVEGF(血管内皮増殖因子)を標的とする分子標的薬で、腫瘍血管新生を阻害します。",
   "source": {
-   "name": "ベバシズマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アバスチン点滴静注用100mg/4mL 添付文書 18.1 作用機序(抗VEGFヒト化モノクローナル抗体・血管新生抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291413A1022_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-016",
@@ -350,11 +350,11 @@
   "correctIndex": 1,
   "explanation": "リツキシマブはB細胞表面のCD20を標的とする分子標的薬で、悪性リンパ腫の治療に用いられます。",
   "source": {
-   "name": "リツキシマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リツキサン点滴静注100mg ／ 添付文書 18.1 作用機序(CD20抗原に特異的に結合)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291407A1035_2_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-018",
@@ -371,11 +371,11 @@
   "correctIndex": 2,
   "explanation": "イマチニブはBCR-ABLチロシンキナーゼ阻害薬で、慢性骨髄性白血病などの治療に用いられます。",
   "source": {
-   "name": "イマチニブ錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イマチニブ錠100mg「JG」 添付文書 4. 効能又は効果・18.1.1 作用機序(Bcr-Abl阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291011F1141_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-019",
@@ -434,11 +434,11 @@
   "correctIndex": 2,
   "explanation": "ロイプロレリンはGnRHアゴニストで、前立腺がんや乳がんのホルモン療法に用いられます。",
   "source": {
-   "name": "リュープロレリン酢酸塩注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リュープロレリン酢酸塩注射用キ 添付文書 4. 効能又は効果(前立腺癌・閉経前乳癌)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499407G1046_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-022",
@@ -476,11 +476,11 @@
   "correctIndex": 2,
   "explanation": "イリノテカンはトポイソメラーゼI阻害薬に分類され、下痢が代表的な副作用として知られています。",
   "source": {
-   "name": "イリノテカン塩酸塩水和物注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イリノテカン塩酸塩点滴静注液40mg 添付文書 18.1 作用機序(Ⅰ型DNAトポイソメラーゼ阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240404A1130_3_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-024",
@@ -6566,11 +6566,11 @@
   "correctIndex": 3,
   "explanation": "クロニジンは中枢性のα2受容体刺激により交感神経活動を抑制する降圧薬です。",
   "source": {
-   "name": "クロニジン塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠75µg ／ カ 添付文書 18.1 作用機序(脳幹部α2受容体・交感神経緊張抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149001F1034_2_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-022",
@@ -6860,11 +6860,11 @@
   "correctIndex": 3,
   "explanation": "非ジヒドロピリジン系Ca拮抗薬(ベラパミルなど)は血管拡張作用に加え、心臓の刺激伝導系に作用し心拍数を抑制する作用もあわせ持ちます。",
   "source": {
-   "name": "ベラパミル塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ベラパミル塩酸塩錠40mg「JG」 添付文書 18.2(心拍数も軽度に減少)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171008F1118_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-036",
@@ -6881,11 +6881,11 @@
   "correctIndex": 3,
   "explanation": "β遮断薬は心臓のβ1受容体を遮断し心拍数を抑えるため、徐脈に注意が必要です。",
   "source": {
-   "name": "ビソプロロールフマル酸塩錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビソプロロールフマル酸塩錠0.625mg 添付文書 2.1 禁忌・8.x(徐脈があらわれた場合は減量又は中止)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-037",
@@ -6902,11 +6902,11 @@
   "correctIndex": 2,
   "explanation": "利尿薬は夜間の頻尿による睡眠妨害を避けるため、一般に朝の服用が推奨されます。",
   "source": {
-   "name": "ヒドロクロロチアジド錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「ト 添付文書 8.3(夜間の排尿を避けるため午前中に投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2132004F1103_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-038",
@@ -6944,11 +6944,11 @@
   "correctIndex": 3,
   "explanation": "Ca拮抗薬は血管平滑筋のカルシウムチャネルを阻害して血管を拡張させ、末梢血管抵抗を低下させることで血圧を下げます。",
   "source": {
-   "name": "アムロジピン錠 インタビューフォーム(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アムロジピン錠2.5mg「あすか」 添付文書 18.1・18.2(末梢血管平滑筋弛緩・全末梢血管抵抗の減少)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171022F1193_2_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-040",

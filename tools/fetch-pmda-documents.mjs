@@ -131,7 +131,26 @@ export function buildSearchTerms(rawName) {
 function documentMatchesDrug(text, drugName, productName = '') {
   const stem = drugName.replace(/(錠|カプセル|注射液|注|細粒|顆粒|散|液).*$/, '').trim();
   const needle = stem.length >= 3 ? stem : drugName;
-  if (!text.includes(needle)) return false;
+
+  /*
+    単なる部分一致だと、別の薬を同じ薬だと誤認する。
+    例:「クロニジン」で検索して「アプラクロニジン」(緑内障の点眼薬)の
+    添付文書を掴んでしまう。名前の一部として含まれているだけだから。
+
+    そこで、薬名の直前がカタカナでないこと(=より長い薬名の一部ではないこと)を
+    確かめる。
+  */
+  const KATAKANA = /[ァ-ヶー]/;
+  let standalone = false;
+  let from = 0;
+  while (true) {
+    const at = text.indexOf(needle, from);
+    if (at === -1) break;
+    const before = at > 0 ? text[at - 1] : '';
+    if (!KATAKANA.test(before)) { standalone = true; break; }
+    from = at + 1;
+  }
+  if (!standalone) return false;
 
   // 配合剤は、その成分名を含むので素通ししてしまう。
   // 単剤を探しているのに配合剤の添付文書を根拠にすると内容がずれるため除く
