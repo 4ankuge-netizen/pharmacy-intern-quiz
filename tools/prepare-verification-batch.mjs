@@ -95,6 +95,11 @@ function main() {
     console.log(`文書: ${doc.selectedProductName.replace(/\s*\.\.\.$/, '')}`);
     console.log(`URL: ${doc.packUrl}`);
 
+    // 「〜の分類は?」を問う問題が多く、添付文書の「薬効分類名」欄で
+    // そのまま判定できることが多いので、常に表示する
+    const classMatch = (doc.head || '').match(/薬効分類名\s*([^\n]{1,60})/);
+    if (classMatch) console.log(`[薬効分類名] ${classMatch[1].trim()}`);
+
     for (const key of guessRelevantSections(q)) {
       const section = doc.sections?.[key];
       if (section) {

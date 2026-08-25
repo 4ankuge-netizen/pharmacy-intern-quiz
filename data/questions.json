@@ -707,11 +707,11 @@
   "correctIndex": 0,
   "explanation": "ヒドロモルフォンはモルヒネと同様の強オピオイド鎮痛薬で、がん性疼痛治療の選択肢の一つです。",
   "source": {
-   "name": "ヒドロモルフォン塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナルラピド錠1mg ／ ナル 添付文書 4. 効能又は効果・18.1 作用機序(μオピオイド受容体アゴニスト)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8119003F1023_2_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-036",
@@ -728,11 +728,11 @@
   "correctIndex": 2,
   "explanation": "パロノセトロンは他の5-HT3受容体拮抗薬と比較して半減期が長く、遅発性の悪心・嘔吐にも効果が期待される薬剤です。",
   "source": {
-   "name": "パロノセトロン塩酸塩注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アロキシ静注0.75mg ／ ア 添付文書 18.1 作用機序(5-HT3受容体拮抗)・7.2(消失半減期は約40時間)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2391404A1020_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-037",
@@ -770,11 +770,11 @@
   "correctIndex": 3,
   "explanation": "アビラテロンはアンドロゲン合成酵素を阻害する薬剤で、去勢抵抗性前立腺がんの治療に用いられます。",
   "source": {
-   "name": "アビラテロン酢酸エステル錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アビラテロン酢酸エステル錠250mg「 添付文書 4. 効能又は効果(去勢抵抗性前立腺癌)・18.1 作用機序(CYP17阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291033F1091_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-039",
@@ -791,11 +791,11 @@
   "correctIndex": 3,
   "explanation": "エンザルタミドはアンドロゲン受容体を阻害する薬剤で、前立腺がんの治療に用いられます。",
   "source": {
-   "name": "エンザルタミド錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イクスタンジ錠40mg ／ 添付文書 18.1 作用機序(アンドロゲン受容体シグナル伝達阻害)・4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291031F1025_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-040",
@@ -812,11 +812,11 @@
   "correctIndex": 0,
   "explanation": "シクロホスファミドはアルキル化薬に分類され、悪性リンパ腫や乳がんなど幅広いがん種に用いられます。",
   "source": {
-   "name": "シクロホスファミド水和物注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンドキサン錠50mg 添付文書 薬効分類名(アルキル化剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4211002F1044_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-041",
@@ -833,11 +833,11 @@
   "correctIndex": 2,
   "explanation": "ゲムシタビンはヌクレオシド系代謝拮抗薬に分類され、膵がんや肺がんなどに用いられます。",
   "source": {
-   "name": "ゲムシタビン塩酸塩注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゲムシタビン点滴静注液200mg/5mL「 添付文書 18.1 作用機序(dFdCTPがdCTPと競合しDNA鎖に取り込まれる)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4224403A1026_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-042",
@@ -854,11 +854,11 @@
   "correctIndex": 0,
   "explanation": "ゲフィチニブはEGFR遺伝子変異陽性肺がんに用いられる分子標的薬(EGFRチロシンキナーゼ阻害薬)です。",
   "source": {
-   "name": "ゲフィチニブ錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゲフィチニブ錠250mg「JG」 添付文書 18.1 作用機序(EGFRチロシンキナーゼを選択的に阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291013F1043_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-043",
@@ -6356,11 +6356,11 @@
   "correctIndex": 3,
   "explanation": "ロサルタンはARBに分類され、尿酸値をやや低下させる作用も報告されています。",
   "source": {
-   "name": "ロサルタンカリウム錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ロサルタンカリウム錠25mg「アメル 添付文書 18.1・18.2.1(AT1受容体と選択的に結合しA-IIに拮抗)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149039F1244_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-013",
@@ -6461,11 +6461,11 @@
   "correctIndex": 1,
   "explanation": "カルベジロールはα1遮断作用とβ遮断作用をあわせ持つ薬剤で、高血圧や心不全の治療に用いられます。",
   "source": {
-   "name": "カルベジロール錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルベジロール錠1.25mg「JG」 添付文書 18.1 作用機序(β受容体遮断作用に加えα1受容体遮断作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149032F1137_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-018",
@@ -6482,11 +6482,11 @@
   "correctIndex": 2,
   "explanation": "アテノロールはβ1受容体選択性の高いβ遮断薬です。",
   "source": {
-   "name": "アテノロール錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アテノロール錠25mg「日新」 添付文書 薬効分類名(心臓選択性β遮断剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123011F1295_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-019",
@@ -6566,11 +6566,11 @@
   "correctIndex": 0,
   "explanation": "ヒドララジンは直接的に血管平滑筋を弛緩させる血管拡張薬です。",
   "source": {
-   "name": "ヒドララジン塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン注射用20mg 添付文書 18.1 作用機序(末梢細動脈の血管平滑筋に直接作用し血管を拡張)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2142400D1049_2_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-023",
@@ -6608,11 +6608,11 @@
   "correctIndex": 1,
   "explanation": "エプレレノンは選択的にアルドステロン受容体を遮断する降圧薬です。",
   "source": {
-   "name": "エプレレノン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エプレレノン錠25mg「杏林」 添付文書 薬効分類名(選択的ミネラルコルチコイド受容体拮抗薬)・18.1(アルドステロンの結合を阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149045F1037_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-025",
@@ -6629,11 +6629,11 @@
   "correctIndex": 0,
   "explanation": "エサキセレノンは選択的ミネラルコルチコイド受容体拮抗薬で、高血圧治療に用いられます。",
   "source": {
-   "name": "エサキセレノン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠1.25mg ／ ミネ 添付文書 薬効分類名(選択的ミネラルコルチコイド受容体ブロッカー)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149049F1027_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-026",
@@ -6671,11 +6671,11 @@
   "correctIndex": 1,
   "explanation": "ニカルジピン注射液は作用発現が速いCa拮抗薬で、高血圧緊急症など急速な降圧が必要な場面で用いられます。",
   "source": {
-   "name": "ニカルジピン塩酸塩注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニカルジピン塩酸塩注射液2mg「サ 添付文書 4. 効能又は効果(手術時の異常高血圧の救急処置・高血圧性緊急症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149400A1132_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-028",
@@ -6944,11 +6944,11 @@
   "correctIndex": 3,
   "explanation": "サイアザイド系利尿薬は遠位尿細管に作用し、ナトリウムの再吸収を抑制することで利尿作用・降圧作用を示します。",
   "source": {
-   "name": "ヒドロクロロチアジド錠 インタビューフォーム(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「ト 添付文書 18.1 作用機序(腎遠位尿細管におけるNa+とCl-の再吸収を抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2132004F1103_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-041",
@@ -7028,11 +7028,11 @@
   "correctIndex": 0,
   "explanation": "β遮断薬は心拍数・伝導を抑制するため、重度の徐脈や高度房室ブロックのある患者では禁忌とされます。",
   "source": {
-   "name": "ビソプロロールフマル酸塩錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビソプロロールフマル酸塩錠0.625mg 添付文書 2.1 禁忌(高度の徐脈・房室ブロック(II、III度)・洞房ブロック・洞不全症候群)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-045",
@@ -7049,11 +7049,11 @@
   "correctIndex": 2,
   "explanation": "ARBは腎機能や血清カリウム値に影響を与えることがあるため、定期的な検査によるモニタリングが重要です。",
   "source": {
-   "name": "カンデサルタン シレキセチル錠(ブロプレス)インタビューフォーム(第15版・2025年9月改訂) Ⅷ.6.(1)9.1.2高カリウム血症の患者",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カンデサルタン錠2mg「あすか」 添付文書 9.7.3(腎機能及び血清カリウム値を注意深く観察すること)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149040F1034_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-046",
@@ -7091,11 +7091,11 @@
   "correctIndex": 1,
   "explanation": "利尿薬服用中の高齢者は脱水を来しやすく、特に夏季の発汗時や体調不良時の水分管理に注意が必要です。",
   "source": {
-   "name": "ヒドロクロロチアジド錠 添付文書(高齢者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「ト 添付文書 9.8 高齢者(急激な利尿は血漿量の減少を来し脱水・低血圧等を起こすことがある)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2132004F1103_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-048",
