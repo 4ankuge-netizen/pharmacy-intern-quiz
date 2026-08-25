@@ -124,7 +124,11 @@ function onToggleBookmark() {
   const question = currentSession[currentIndex];
   if (!question) return;
   storage.toggleBookmark(question.id);
-  renderQuestion();
+  // renderQuestion()を呼ぶと解答後の色付けや解説パネルまで消えてリセットされてしまうため、
+  // ここではブックマークボタンの表示(星マーク)だけを直接書き換える
+  const bookmarkIds = storage.getBookmarkIds();
+  const bookmarkButton = document.getElementById('bookmark-toggle-button');
+  bookmarkButton.textContent = bookmarkIds.includes(question.id) ? '★ ブックマーク解除' : '☆ ブックマーク';
 }
 
 function renderStats() {
