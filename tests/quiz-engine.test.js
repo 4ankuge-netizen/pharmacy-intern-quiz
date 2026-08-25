@@ -38,6 +38,7 @@ test('不正解の選択肢を選ぶとfalseになる', () => {
 
 test('シャッフルしても中身の要素は変わらない(順番だけ変わる)', () => {
   const original = ['a', 'b', 'c', 'd'];
-  const result = shuffle(original, () => 0.999);
+  const result = shuffle(original, () => 0);
   assert.deepEqual([...result].sort(), [...original].sort());
+  assert.notDeepEqual(result, original); // 実際に順番が変わったことも確認する
 });
