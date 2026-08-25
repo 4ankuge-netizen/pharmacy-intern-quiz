@@ -184,3 +184,19 @@ async function init() {
 }
 
 init();
+
+// service-worker.js を登録する。オフライン対応と自動更新のために必要。
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js').then((registration) => {
+    registration.addEventListener('updatefound', () => {
+      const newWorker = registration.installing;
+      newWorker.addEventListener('statechange', () => {
+        // すでに動いていたService Workerがある状態で新しいものが有効になった場合だけ、
+        // 「新しいバージョンに切り替わった」とみなして再読み込みする
+        if (newWorker.state === 'activated' && navigator.serviceWorker.controller) {
+          window.location.reload();
+        }
+      });
+    });
+  });
+}
