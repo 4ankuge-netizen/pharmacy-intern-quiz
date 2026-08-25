@@ -12,6 +12,15 @@ let categories = [];
 let currentSession = []; // 今出題中の問題の配列
 let currentIndex = 0;
 
+// 端末の現地時間で「今日」を求める(UTCの日付を使うと、日本時間では朝9時まで前日扱いになってしまうため)
+function getTodayLocalDate() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
 // 起動時に、問題データとカテゴリー一覧を読み込む
 async function loadData() {
   const [questionsRes, categoriesRes] = await Promise.all([
@@ -29,6 +38,7 @@ function showScreen(screenId) {
   });
   if (screenId === 'stats-screen') renderStats();
   if (screenId === 'bookmark-screen') renderBookmarks();
+  if (screenId === 'quiz-screen') renderQuestion();
 }
 
 function renderHome() {
@@ -91,7 +101,7 @@ function renderQuestion() {
 
 function onAnswer(question, selectedIndex, selectedButton) {
   const isCorrect = checkAnswer(question, selectedIndex);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getTodayLocalDate();
 
   storage.recordAnswer(question.id, isCorrect, today);
   storage.updateStreakOnAnswer(today);
@@ -105,10 +115,27 @@ function onAnswer(question, selectedIndex, selectedButton) {
 
   document.getElementById('feedback-result').textContent = isCorrect ? '正解!' : '不正解';
   document.getElementById('feedback-explanation').textContent = question.explanation;
-  const sourceText = question.source?.url
-    ? `出典: ${question.source.name}(${question.source.url})`
-    : `出典: ${question.source?.name ?? '不明'}`;
-  document.getElementById('feedback-source').textContent = sourceText;
+
+  // 出典を表示する。URLがある場合はクリックできるリンクにする
+  const sourceContainer = document.getElementById('feedback-source');
+  sourceContainer.textContent = ''; // 前の問題の表示をクリアする
+  const sourceName = question.source?.name ?? '不明';
+  const sourceUrl = question.source?.url ?? '';
+  // http/httpsのURLだけをリンクにする(他の形式のURLが紛れ込んでも実行されないようにするため)
+  const isSafeUrl = /^https?:\/\//i.test(sourceUrl);
+
+  sourceContainer.append(`出典: ${sourceName}`);
+  if (isSafeUrl) {
+    sourceContainer.append('(');
+    const link = document.createElement('a');
+    link.href = sourceUrl;
+    link.textContent = sourceUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    sourceContainer.append(link);
+    sourceContainer.append(')');
+  }
+
   document.getElementById('answer-feedback').hidden = false;
 }
 
@@ -186,7 +213,11 @@ async function init() {
 init();
 
 // service-worker.js を登録する。オフライン対応と自動更新のために必要。
-if ('serviceWorker' in navigator) {
+// ただし、localhost で開発中は、古いキャッシュのせいで編集した内容が反映されないと混乱するため、
+// Service Workerをあえて登録しない。オフライン動作や自動更新の仕組み自体を確認したいときは、
+// 一時的にこのif文の条件(!isLocalDev)を外すか、localhost以外(スマホの実機など)で確認すること。
+const isLocalDev = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+if ('serviceWorker' in navigator && !isLocalDev) {
   // 登録処理を始める「前」に、すでに動いていたService Workerがあったかどうかを記録しておく。
   // (activate時のclients.claim()の影響で、初回インストールでも後からcontrollerが
   //  真になってしまうため、「更新かどうか」の判定はこの時点の状態を先に覚えておく必要がある)
