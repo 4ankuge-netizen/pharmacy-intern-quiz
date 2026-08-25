@@ -455,11 +455,11 @@
   "correctIndex": 1,
   "explanation": "オキサリプラチンは白金製剤に分類され、大腸がんなどに用いられます。末梢神経障害が代表的な副作用です。",
   "source": {
-   "name": "オキサリプラチン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オキサリプラチン点滴静注液50mg「NIG」 添付文書 18.1 作用機序・2.2 禁忌",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291410A1169_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-023",
@@ -6146,11 +6146,11 @@
   "correctIndex": 3,
   "explanation": "アムロジピンはCa拮抗薬に分類され、血管平滑筋の収縮を抑えて血圧を下げます。",
   "source": {
-   "name": "アムロジピン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アムロジピン錠2.5mg「あすか」 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171022F1193_2_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-002",
@@ -6167,11 +6167,11 @@
   "correctIndex": 3,
   "explanation": "カンデサルタンはARBに分類され、アンジオテンシンIIの受容体への結合を阻害して血圧を下げます。",
   "source": {
-   "name": "カンデサルタン シレキセチル錠(ブロプレス)インタビューフォーム(第15版・2025年9月改訂、武田薬品工業株式会社/T's製薬株式会社) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カンデサルタン錠2mg「あすか」 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149040F1034_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-003",
@@ -6188,11 +6188,11 @@
   "correctIndex": 2,
   "explanation": "エナラプリルはアンジオテンシン変換酵素(ACE)を阻害し、アンジオテンシンIIの産生を抑えることで血圧を下げます。",
   "source": {
-   "name": "エナラプリルマレイン酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エナラプリルマレイン酸塩錠2.5mg 添付文書 18.1.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2144002F1296_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-004",
@@ -6209,11 +6209,11 @@
   "correctIndex": 2,
   "explanation": "ヒドロクロロチアジドはサイアザイド系利尿薬で、腎臓でのナトリウム再吸収を抑制することで降圧作用を示します。",
   "source": {
-   "name": "ヒドロクロロチアジド錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2132004F1103_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-005",
@@ -6230,11 +6230,11 @@
   "correctIndex": 2,
   "explanation": "ビソプロロールはβ1受容体を選択的に遮断するβ遮断薬で、心拍数・心収縮力を抑えて血圧を下げます。",
   "source": {
-   "name": "ビソプロロールフマル酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビソプロロールフマル酸塩錠0.625mg 添付文書 18.1 作用機序・18.2 β1受容体選択性",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-006",
@@ -6272,11 +6272,11 @@
   "correctIndex": 2,
   "explanation": "ジヒドロピリジン系Ca拮抗薬は血管拡張作用により、浮腫や顔面のほてりが代表的な副作用として知られています。",
   "source": {
-   "name": "アムロジピン錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アムロジピン錠2.5mg「あすか」 添付文書 11.2 その他の副作用(循環器)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171022F1193_2_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-008",
@@ -6293,11 +6293,11 @@
   "correctIndex": 2,
   "explanation": "ARBとACE阻害薬はいずれもアルドステロン分泌を抑制する方向に働くため、高カリウム血症に注意が必要です。",
   "source": {
-   "name": "カンデサルタン シレキセチル錠(ブロプレス)インタビューフォーム(第15版・2025年9月改訂) Ⅷ.8.(1)重大な副作用と初期症状",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カンデサルタン錠2mg「あすか」 添付文書 11.1.4 高カリウム血症 / エナラプリルマレイン酸塩錠 添付文書 9.1.2 高カリウム血症の患者",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149040F1034_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-009",
@@ -6314,11 +6314,11 @@
   "correctIndex": 2,
   "explanation": "サイアザイド系利尿薬はカリウム排泄を促進するため、低カリウム血症に注意が必要です。",
   "source": {
-   "name": "ヒドロクロロチアジド錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 添付文書 11.1.7 低カリウム血症",
+   "url": "https://www.info.pmda.go.jp/go/pack/2132004F1103_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-010",
@@ -6545,11 +6545,11 @@
   "correctIndex": 1,
   "explanation": "ドキサゾシンはα1遮断薬に分類され、血管平滑筋のα1受容体を遮断して血圧を下げます。",
   "source": {
-   "name": "ドキサゾシンメシル酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドキサゾシン錠0.5mg「テバ」 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149026F1239_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-021",
@@ -6734,11 +6734,11 @@
   "correctIndex": 0,
   "explanation": "α1遮断薬は血管平滑筋のα1受容体を遮断することで血管を拡張させ、血圧を低下させます。",
   "source": {
-   "name": "ドキサゾシンメシル酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドキサゾシン錠0.5mg「テバ」 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149026F1239_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-030",
