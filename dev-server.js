@@ -23,20 +23,29 @@ const server = http.createServer((req, res) => {
   // クエリパラメータ(?付き)を取り除く
   filePath = filePath.split('?')[0];
   const fullPath = path.join(process.cwd(), filePath);
+  const resolvedFullPath = path.resolve(fullPath);
+  const resolvedCwd = path.resolve(process.cwd());
 
-  fs.readFile(fullPath, (err, data) => {
+  // /../../../etc/passwd のような相対パスでプロジェクトフォルダの外に出られないか確認
+  if (!resolvedFullPath.startsWith(resolvedCwd + path.sep) && resolvedFullPath !== resolvedCwd) {
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('404 Not Found: ' + filePath);
+    return;
+  }
+
+  fs.readFile(resolvedFullPath, (err, data) => {
     if (err) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       res.end('404 Not Found: ' + filePath);
       return;
     }
-    const ext = path.extname(fullPath);
+    const ext = path.extname(resolvedFullPath);
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
     res.writeHead(200, { 'Content-Type': contentType });
     res.end(data);
   });
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`開発用サーバーが起動しました: http://localhost:${PORT}`);
 });
