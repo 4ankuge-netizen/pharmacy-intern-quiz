@@ -2,9 +2,54 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>薬学実習クイズ</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>薬学実習クイズ(準備中)</h1>
+  <header class="app-header">
+    <h1>薬学実習クイズ</h1>
+    <p id="streak-display" class="streak-display"></p>
+  </header>
+
+  <nav class="app-nav">
+    <button data-screen="home-screen">ホーム</button>
+    <button data-screen="quiz-screen">クイズ</button>
+    <button data-screen="stats-screen">正答率</button>
+    <button data-screen="bookmark-screen">ブックマーク</button>
+  </nav>
+
+  <main>
+    <section id="home-screen" class="screen">
+      <h2>カテゴリーを選んでください</h2>
+      <div id="category-list"></div>
+      <button id="weak-point-button">弱点復習モードで始める</button>
+    </section>
+
+    <section id="quiz-screen" class="screen" hidden>
+      <p id="quiz-progress"></p>
+      <h2 id="question-text"></h2>
+      <div id="choice-list"></div>
+      <div id="answer-feedback" hidden>
+        <p id="feedback-result"></p>
+        <p id="feedback-explanation"></p>
+        <p id="feedback-source"></p>
+        <button id="bookmark-toggle-button">☆ ブックマーク</button>
+        <button id="next-question-button">次の問題へ</button>
+      </div>
+    </section>
+
+    <section id="stats-screen" class="screen" hidden>
+      <h2>カテゴリー別 正答率</h2>
+      <div id="stats-list"></div>
+    </section>
+
+    <section id="bookmark-screen" class="screen" hidden>
+      <h2>ブックマークした問題</h2>
+      <div id="bookmark-list"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
 </body>
 </html>

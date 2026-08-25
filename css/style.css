@@ -1,0 +1,66 @@
+/* 全体の基本スタイル。細かい見た目の作り込みは後の「デザイン仕上げ」で行う。今はまず使えることを優先。 */
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, "Hiragino Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f7;
+  color: #1c1c1e;
+}
+.app-header {
+  padding: 16px;
+  background: #2f6fed;
+  color: white;
+}
+.app-header h1 { margin: 0; font-size: 1.2rem; }
+.streak-display { margin: 4px 0 0; font-size: 0.9rem; }
+.app-nav {
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+.app-nav button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #eee;
+  border-radius: 8px;
+}
+main { padding: 16px; }
+.screen[hidden] { display: none; }
+#choice-list button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+}
+#choice-list button.correct { background: #d4f7d4; border-color: #2ecc71; }
+#choice-list button.incorrect { background: #fbd4d4; border-color: #e74c3c; }
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.bar-track {
+  background: #e0e0e0;
+  border-radius: 6px;
+  height: 12px;
+  overflow: hidden;
+  margin: 4px 0 12px;
+}
+.bar-fill {
+  background: #2f6fed;
+  height: 100%;
+}
