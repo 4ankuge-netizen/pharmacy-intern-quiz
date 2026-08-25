@@ -11,10 +11,12 @@
 */
 :root {
   --color-navy: #1B2A4A;
-  --color-green: #1F8A70;
+  /* 緑とグレーは、小さな文字でも読みやすさの基準(コントラスト比4.5)を満たすよう
+     少しだけ濃くしてある。色味は「調剤薬局の緑」のまま */
+  --color-green: #1B7C64;
   --color-paper: #FAF8F3;
   --color-vermillion: #B5483D;
-  --color-gray: #8B8578;
+  --color-gray: #6E685D;
   --color-ink: #24211D;
   --color-line: #E4DFD2;
   --color-line-dashed: #C9C2AF;
@@ -24,6 +26,13 @@
 }
 
 * { box-sizing: border-box; }
+
+/* キーボードで操作している人に、今どこを選んでいるかを枠線で示す。
+   :focus-visible を使うことで、指やマウスで触ったときには枠線が出ない */
+:focus-visible {
+  outline: 3px solid var(--color-navy);
+  outline-offset: 2px;
+}
 
 body {
   font-family: var(--font-body);
@@ -135,10 +144,17 @@ main h2 {
 #choice-list button:disabled { opacity: 1; } /* 解答後も文字が薄くならないようにする */
 
 /* 正解の選択肢には緑の枠+チェック印、選んだ不正解には朱色の枠+バツ印をつける */
+/* 印(✓✕)は、選択肢の文が長くても潰れないよう縮小させない */
 #choice-list button.correct { border-color: var(--color-green); background: #EEF6F2; }
-#choice-list button.correct::after { content: '✓'; color: var(--color-green); font-weight: 700; }
+#choice-list button.correct::after {
+  content: '✓'; color: var(--color-green); font-weight: 700;
+  flex-shrink: 0; margin-left: 8px;
+}
 #choice-list button.incorrect { border-color: var(--color-vermillion); background: #FBEEEC; }
-#choice-list button.incorrect::after { content: '✕'; color: var(--color-vermillion); font-weight: 700; }
+#choice-list button.incorrect::after {
+  content: '✕'; color: var(--color-vermillion); font-weight: 700;
+  flex-shrink: 0; margin-left: 8px;
+}
 
 #answer-feedback { margin-top: 6px; }
 #feedback-result { font-family: var(--font-body); font-weight: 700; font-size: 0.9rem; margin: 4px 0; }
@@ -229,6 +245,47 @@ main h2 {
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 700;
+}
+
+/* 結果画面。成績を大きく見せて、区切りがついたことが伝わるようにする */
+#result-score {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 18px 0 6px;
+}
+#result-score .result-count {
+  color: var(--color-green);
+  font-size: 2.2rem;
+}
+#result-comment {
+  font-size: 0.85rem;
+  color: var(--color-gray);
+  line-height: 1.7;
+  margin: 0 0 22px;
+}
+#retry-button,
+#back-home-button {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+#retry-button {
+  border: none;
+  background: var(--color-green);
+  color: var(--color-paper);
+}
+#back-home-button {
+  border: 1px solid var(--color-line);
+  background: white;
+  color: var(--color-ink);
+  font-weight: 400;
 }
 
 /* 正答率画面。カルテや帳簿の罫線のような、事務的で見やすい表にする */

@@ -15,6 +15,12 @@ let currentIndex = 0;
 // 「まだクイズを始めていない」のか「弱点がない」のかで文言を変えたいので、
 // 出題を始めるたびにその状況に合った文をここに入れておく
 let emptySessionMessage = 'ホームからカテゴリーを選んでください。';
+// 今回の出題での正解数(結果画面で使う)
+let sessionCorrectCount = 0;
+// 今回の出題ですでに答えた問題のID。同じ問題の成績を二重に記録しないための目印
+let answeredInSession = new Set();
+// 「もう一度解く」で同じ出題内容をやり直せるよう、直前の出題方法を覚えておく
+let lastQuizStarter = null;
 
 // 端末の現地時間で「今日」を求める(UTCの日付を使うと、日本時間では朝9時まで前日扱いになってしまうため)
 function getTodayLocalDate() {
@@ -40,15 +46,18 @@ function showScreen(screenId) {
   document.querySelectorAll('.screen').forEach((el) => {
     el.hidden = el.id !== screenId;
   });
-  // 今いる画面のタブに印を付けて、現在地が分かるようにする
+  // 今いる画面のタブに印を付けて、現在地が分かるようにする。
+  // 結果画面はタブにないが、クイズの流れの一部なので「クイズ」を選択中として扱う
+  const tabToHighlight = screenId === 'result-screen' ? 'quiz-screen' : screenId;
   document.querySelectorAll('.app-nav button').forEach((button) => {
-    const isCurrent = button.dataset.screen === screenId;
+    const isCurrent = button.dataset.screen === tabToHighlight;
     button.classList.toggle('active', isCurrent);
     button.setAttribute('aria-current', isCurrent ? 'page' : 'false');
   });
   if (screenId === 'stats-screen') renderStats();
   if (screenId === 'bookmark-screen') renderBookmarks();
   if (screenId === 'quiz-screen') renderQuestion();
+  if (screenId === 'result-screen') renderResult();
 }
 
 function renderHome() {
@@ -63,20 +72,32 @@ function renderHome() {
   });
 }
 
-function startQuiz({ categoryId } = {}) {
-  const filtered = filterQuestions(allQuestions, { categoryId });
-  currentSession = shuffle(filtered);
+// 出題を始めるときの共通の準備(点数や答えた記録をまっさらに戻す)
+function beginSession(questions, emptyMessage, starter) {
+  currentSession = shuffle(questions);
   currentIndex = 0;
-  emptySessionMessage = 'このカテゴリーにはまだ問題がありません。';
+  sessionCorrectCount = 0;
+  answeredInSession = new Set();
+  emptySessionMessage = emptyMessage;
+  lastQuizStarter = starter;
   showScreen('quiz-screen');
+}
+
+function startQuiz({ categoryId } = {}) {
+  beginSession(
+    filterQuestions(allQuestions, { categoryId }),
+    'このカテゴリーにはまだ問題がありません。',
+    () => startQuiz({ categoryId })
+  );
 }
 
 function startWeakPointQuiz() {
   const wrongIds = storage.getWrongQuestionIds();
-  currentSession = shuffle(getWeakPointQuestions(allQuestions, wrongIds));
-  currentIndex = 0;
-  emptySessionMessage = '間違えた問題はまだありません。まずはカテゴリーを選んで解いてみましょう。';
-  showScreen('quiz-screen');
+  beginSession(
+    getWeakPointQuestions(allQuestions, wrongIds),
+    '間違えた問題はまだありません。まずはカテゴリーを選んで解いてみましょう。',
+    startWeakPointQuiz
+  );
 }
 
 function renderQuestion() {
@@ -115,11 +136,18 @@ function renderQuestion() {
 
 function onAnswer(question, selectedIndex, selectedButton) {
   const isCorrect = checkAnswer(question, selectedIndex);
-  const today = getTodayLocalDate();
 
-  storage.recordAnswer(question.id, isCorrect, today);
-  storage.updateStreakOnAnswer(today);
-  renderStreak();
+  // 同じ問題を1回の出題の中で二度答えた場合、成績を二重に数えない。
+  // (画面を切り替えて戻ってきたときに、もう一度答えられてしまうため)
+  if (!answeredInSession.has(question.id)) {
+    answeredInSession.add(question.id);
+    if (isCorrect) sessionCorrectCount += 1;
+
+    const today = getTodayLocalDate();
+    storage.recordAnswer(question.id, isCorrect, today);
+    storage.updateStreakOnAnswer(today);
+    renderStreak();
+  }
 
   // 選んだボタンと、正解のボタンに色をつける
   const buttons = document.querySelectorAll('#choice-list button');
@@ -166,10 +194,32 @@ function onAnswer(question, selectedIndex, selectedButton) {
 
 function onNextQuestion() {
   currentIndex += 1;
+  // 最後の問題まで解き終えたら、1問目に戻さず結果画面を出す
   if (currentIndex >= currentSession.length) {
-    currentIndex = 0;
+    showScreen('result-screen');
+    return;
   }
   renderQuestion();
+}
+
+function renderResult() {
+  const total = currentSession.length;
+  const correct = sessionCorrectCount;
+
+  // 「3問中 2問正解」の、数字の部分だけ大きく見せる
+  const scoreEl = document.getElementById('result-score');
+  scoreEl.textContent = '';
+  const countEl = document.createElement('span');
+  countEl.className = 'result-count';
+  countEl.textContent = `${correct}`;
+  scoreEl.append(`${total}問中 `, countEl, '問正解');
+
+  // 間違いがあった人には、そのまま弱点復習につなげる案内を出す
+  const wrongCount = total - correct;
+  document.getElementById('result-comment').textContent =
+    wrongCount === 0
+      ? '全問正解です。この調子で次のカテゴリーに進みましょう。'
+      : `間違えた${wrongCount}問は、ホームの「弱点復習モード」で解き直せます。`;
 }
 
 function onToggleBookmark() {
@@ -263,6 +313,11 @@ function setupNav() {
   document.getElementById('weak-point-button').addEventListener('click', startWeakPointQuiz);
   document.getElementById('next-question-button').addEventListener('click', onNextQuestion);
   document.getElementById('bookmark-toggle-button').addEventListener('click', onToggleBookmark);
+  // 結果画面のボタン
+  document.getElementById('retry-button').addEventListener('click', () => {
+    if (lastQuizStarter) lastQuizStarter(); // 直前と同じ内容をもう一度出題する
+  });
+  document.getElementById('back-home-button').addEventListener('click', () => showScreen('home-screen'));
 }
 
 async function init() {
