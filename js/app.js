@@ -73,6 +73,10 @@ function renderQuestion() {
   const feedback = document.getElementById('answer-feedback');
   feedback.hidden = true;
 
+  // 前の問題で正解して押された判子が残っていたら消しておく
+  const existingHanko = document.getElementById('hanko-mark');
+  if (existingHanko) existingHanko.remove();
+
   if (currentSession.length === 0) {
     document.getElementById('question-text').textContent = '出題できる問題がありません。';
     document.getElementById('choice-list').innerHTML = '';
@@ -112,6 +116,17 @@ function onAnswer(question, selectedIndex, selectedButton) {
   buttons[question.correctIndex].classList.add('correct');
   if (!isCorrect) selectedButton.classList.add('incorrect');
   buttons.forEach((b) => (b.disabled = true));
+
+  // 正解したときだけ、判子(はんこ)が押される演出を出す
+  if (isCorrect) {
+    const hanko = document.createElement('div');
+    hanko.id = 'hanko-mark';
+    hanko.className = 'hanko';
+    const hankoText = document.createElement('span');
+    hankoText.textContent = '正';
+    hanko.appendChild(hankoText);
+    document.getElementById('quiz-screen').appendChild(hanko);
+  }
 
   document.getElementById('feedback-result').textContent = isCorrect ? '正解!' : '不正解';
   document.getElementById('feedback-explanation').textContent = question.explanation;
@@ -163,12 +178,29 @@ function renderStats() {
   const container = document.getElementById('stats-list');
   container.innerHTML = '';
   result.forEach((row) => {
-    const wrapper = document.createElement('div');
-    wrapper.innerHTML = `
-      <p>${row.categoryName}: ${row.correct} / ${row.answered} 問正解(${row.accuracyPercent}%)</p>
-      <div class="bar-track"><div class="bar-fill" style="width: ${row.accuracyPercent}%"></div></div>
-    `;
-    container.appendChild(wrapper);
+    // カテゴリー名・棒グラフ・パーセントを横に並べた、帳簿の1行のような見た目にする
+    const rowEl = document.createElement('div');
+    rowEl.className = 'stats-row';
+    // マウスを乗せる(スマホでは長押しする)と、正解数の内訳が見られるようにしておく
+    rowEl.title = `${row.correct} / ${row.answered} 問正解`;
+
+    const nameEl = document.createElement('span');
+    nameEl.className = 'stats-name';
+    nameEl.textContent = row.categoryName;
+
+    const trackEl = document.createElement('div');
+    trackEl.className = 'bar-track';
+    const fillEl = document.createElement('div');
+    fillEl.className = 'bar-fill';
+    fillEl.style.width = `${row.accuracyPercent}%`;
+    trackEl.appendChild(fillEl);
+
+    const pctEl = document.createElement('span');
+    pctEl.className = 'stats-pct';
+    pctEl.textContent = `${row.accuracyPercent}%`;
+
+    rowEl.append(nameEl, trackEl, pctEl);
+    container.appendChild(rowEl);
   });
 }
 
@@ -182,9 +214,21 @@ function renderBookmarks() {
     return;
   }
   bookmarked.forEach((q) => {
-    const item = document.createElement('p');
-    item.textContent = q.question;
-    container.appendChild(item);
+    // 控え(レシート)のように、カテゴリー名のタグ+問題文を1行にする
+    const rowEl = document.createElement('div');
+    rowEl.className = 'bookmark-row';
+
+    const category = categories.find((c) => c.id === q.category);
+    const tagEl = document.createElement('span');
+    tagEl.className = 'bookmark-tag';
+    tagEl.textContent = category ? category.name : q.category;
+
+    const textEl = document.createElement('div');
+    textEl.className = 'bookmark-text';
+    textEl.textContent = q.question;
+
+    rowEl.append(tagEl, textEl);
+    container.appendChild(rowEl);
   });
 }
 

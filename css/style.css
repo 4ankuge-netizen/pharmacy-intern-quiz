@@ -1,66 +1,238 @@
-/* 全体の基本スタイル。細かい見た目の作り込みは後の「デザイン仕上げ」で行う。今はまず使えることを優先。 */
+/*
+  デザインのルール(トークン)をまとめておく場所。
+  色や文字の種類をあちこちに直接書かず、ここで決めた名前(変数)を使い回すことで、
+  後で「やっぱりこの緑をもう少し濃く」のような調整が1箇所で済むようにしている。
+
+  配色の由来:
+  - 深藍(紺) … 教科書や公式文書のような、きちんとした印象の色
+  - 調剤薬局の緑 … 病院の赤十字とは別に、日本の薬局の看板でよく使われる緑
+  - 処方箋紙の白 … 真っ白ではなく、少し温かみのある紙の色
+  - 朱色(判子) … 正解したときに押される判子の色
+*/
+:root {
+  --color-navy: #1B2A4A;
+  --color-green: #1F8A70;
+  --color-paper: #FAF8F3;
+  --color-vermillion: #B5483D;
+  --color-gray: #8B8578;
+  --color-ink: #24211D;
+  --color-line: #E4DFD2;
+  --color-line-dashed: #C9C2AF;
+
+  --font-display: 'Shippori Mincho', serif; /* 見出し専用の明朝体 */
+  --font-body: 'Zen Kaku Gothic New', system-ui, -apple-system, "Hiragino Sans", sans-serif; /* 本文用のゴシック体 */
+}
+
 * { box-sizing: border-box; }
+
 body {
-  font-family: system-ui, -apple-system, "Hiragino Sans", sans-serif;
+  font-family: var(--font-body);
   margin: 0;
   padding: 0;
-  background: #f5f5f7;
-  color: #1c1c1e;
+  background: var(--color-paper);
+  color: var(--color-ink);
 }
+
+/* ヘッダー(アプリ名の帯) */
 .app-header {
-  padding: 16px;
-  background: #2f6fed;
-  color: white;
+  padding: 18px 16px 14px;
+  background: var(--color-navy);
+  color: var(--color-paper);
 }
-.app-header h1 { margin: 0; font-size: 1.2rem; }
-.streak-display { margin: 4px 0 0; font-size: 0.9rem; }
+.app-header h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+.streak-display {
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: #9FD8C4; /* 薄い緑。連続日数の表示だけ少し目立たせる */
+}
+
+/* 画面切り替えのナビゲーション */
 .app-nav {
   display: flex;
-  gap: 8px;
-  padding: 8px 16px;
   background: white;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-line);
 }
 .app-nav button {
   flex: 1;
-  padding: 8px;
+  padding: 12px 4px;
   border: none;
-  background: #eee;
-  border-radius: 8px;
+  background: none;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-right: 1px solid var(--color-line);
 }
-main { padding: 16px; }
+.app-nav button:last-child { border-right: none; }
+
+main { padding: 16px; max-width: 480px; margin: 0 auto; }
+
+main h2 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0 0 12px;
+}
+
 .screen[hidden] { display: none; }
+
+/* クイズ画面全体。判子を絶対配置で重ねるための基準位置にする */
+#quiz-screen { position: relative; }
+
+#quiz-progress {
+  font-size: 0.75rem;
+  color: var(--color-gray);
+  margin: 0 0 4px;
+}
+
+/* 選択肢のボタン */
 #choice-list button {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: left;
-  padding: 12px;
+  padding: 11px 12px;
   margin-bottom: 8px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid var(--color-line);
+  border-radius: 5px;
   background: white;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-ink);
 }
-#choice-list button.correct { background: #d4f7d4; border-color: #2ecc71; }
-#choice-list button.incorrect { background: #fbd4d4; border-color: #e74c3c; }
+#choice-list button:disabled { opacity: 1; } /* 解答後も文字が薄くならないようにする */
+
+/* 正解の選択肢には緑の枠+チェック印、選んだ不正解には朱色の枠+バツ印をつける */
+#choice-list button.correct { border-color: var(--color-green); background: #EEF6F2; }
+#choice-list button.correct::after { content: '✓'; color: var(--color-green); font-weight: 700; }
+#choice-list button.incorrect { border-color: var(--color-vermillion); background: #FBEEEC; }
+#choice-list button.incorrect::after { content: '✕'; color: var(--color-vermillion); font-weight: 700; }
+
+#answer-feedback { margin-top: 6px; }
+#feedback-result { font-family: var(--font-body); font-weight: 700; font-size: 0.9rem; margin: 4px 0; }
+#feedback-explanation { font-size: 0.85rem; color: var(--color-ink); line-height: 1.7; }
+#feedback-source { font-size: 0.78rem; color: var(--color-gray); }
+#feedback-source a { color: var(--color-green); }
+
+#bookmark-toggle-button,
+#next-question-button {
+  padding: 10px 14px;
+  border: 1px solid var(--color-line);
+  border-radius: 5px;
+  background: white;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+#next-question-button {
+  background: var(--color-green);
+  color: var(--color-paper);
+  border-color: var(--color-green);
+  font-weight: 700;
+}
+
+/* 正解したときだけ現れる「判子」の演出 */
+.hanko {
+  position: absolute;
+  top: 34px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2.5px solid var(--color-vermillion);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-9deg);
+  opacity: 0.88;
+  pointer-events: none; /* 判子はただの飾りなので、クリック操作の邪魔をしないようにする */
+}
+.hanko span {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-vermillion);
+}
+
+/* ホーム画面のカテゴリー一覧。個別の箱ではなく、罫線で区切った1本のリストにする */
+#category-list {
+  border-top: 1px solid var(--color-line);
+}
 .category-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 10px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 8px;
+  padding: 11px 2px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-line);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-ink);
   text-align: left;
 }
+.category-item::after { content: '▸'; color: var(--color-green); }
+
+#weak-point-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 11px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-green);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* 正答率画面。カルテや帳簿の罫線のような、事務的で見やすい表にする */
+.stats-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.stats-name { width: 6.5em; flex-shrink: 0; font-size: 0.85rem; }
 .bar-track {
-  background: #e0e0e0;
-  border-radius: 6px;
-  height: 12px;
-  overflow: hidden;
-  margin: 4px 0 12px;
+  flex: 1;
+  background: var(--color-line);
+  height: 7px;
 }
-.bar-fill {
-  background: #2f6fed;
-  height: 100%;
+.bar-fill { background: var(--color-green); height: 100%; }
+.stats-pct {
+  width: 3em;
+  text-align: right;
+  font-variant-numeric: tabular-nums; /* 数字の幅を揃えて、桁がずれて見えないようにする */
+  font-weight: 700;
+  font-size: 0.85rem;
 }
+
+/* ブックマーク画面。控え・レシートのように点線で区切る */
+.bookmark-row {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--color-line-dashed);
+}
+.bookmark-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+  border-radius: 2px;
+  padding: 1px 6px;
+  margin-bottom: 4px;
+}
+.bookmark-text { font-size: 0.85rem; line-height: 1.6; }
