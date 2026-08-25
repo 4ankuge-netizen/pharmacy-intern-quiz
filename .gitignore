@@ -3,3 +3,4 @@ node_modules/
 *.log
 .superpowers/
 .claude/scheduled_tasks.lock
+.pmda-cache/
