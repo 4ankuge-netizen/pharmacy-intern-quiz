@@ -187,13 +187,18 @@ init();
 
 // service-worker.js を登録する。オフライン対応と自動更新のために必要。
 if ('serviceWorker' in navigator) {
+  // 登録処理を始める「前」に、すでに動いていたService Workerがあったかどうかを記録しておく。
+  // (activate時のclients.claim()の影響で、初回インストールでも後からcontrollerが
+  //  真になってしまうため、「更新かどうか」の判定はこの時点の状態を先に覚えておく必要がある)
+  const hadController = Boolean(navigator.serviceWorker.controller);
+
   navigator.serviceWorker.register('./service-worker.js').then((registration) => {
     registration.addEventListener('updatefound', () => {
       const newWorker = registration.installing;
       newWorker.addEventListener('statechange', () => {
-        // すでに動いていたService Workerがある状態で新しいものが有効になった場合だけ、
+        // 登録前からすでに動いていたService Workerがあった場合だけ、
         // 「新しいバージョンに切り替わった」とみなして再読み込みする
-        if (newWorker.state === 'activated' && navigator.serviceWorker.controller) {
+        if (newWorker.state === 'activated' && hadController) {
           window.location.reload();
         }
       });
