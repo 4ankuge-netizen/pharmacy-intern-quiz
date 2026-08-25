@@ -11,6 +11,10 @@ let allQuestions = [];
 let categories = [];
 let currentSession = []; // 今出題中の問題の配列
 let currentIndex = 0;
+// 出題できる問題が0件だったときに表示する案内文。
+// 「まだクイズを始めていない」のか「弱点がない」のかで文言を変えたいので、
+// 出題を始めるたびにその状況に合った文をここに入れておく
+let emptySessionMessage = 'ホームからカテゴリーを選んでください。';
 
 // 端末の現地時間で「今日」を求める(UTCの日付を使うと、日本時間では朝9時まで前日扱いになってしまうため)
 function getTodayLocalDate() {
@@ -36,6 +40,12 @@ function showScreen(screenId) {
   document.querySelectorAll('.screen').forEach((el) => {
     el.hidden = el.id !== screenId;
   });
+  // 今いる画面のタブに印を付けて、現在地が分かるようにする
+  document.querySelectorAll('.app-nav button').forEach((button) => {
+    const isCurrent = button.dataset.screen === screenId;
+    button.classList.toggle('active', isCurrent);
+    button.setAttribute('aria-current', isCurrent ? 'page' : 'false');
+  });
   if (screenId === 'stats-screen') renderStats();
   if (screenId === 'bookmark-screen') renderBookmarks();
   if (screenId === 'quiz-screen') renderQuestion();
@@ -57,28 +67,28 @@ function startQuiz({ categoryId } = {}) {
   const filtered = filterQuestions(allQuestions, { categoryId });
   currentSession = shuffle(filtered);
   currentIndex = 0;
+  emptySessionMessage = 'このカテゴリーにはまだ問題がありません。';
   showScreen('quiz-screen');
-  renderQuestion();
 }
 
 function startWeakPointQuiz() {
   const wrongIds = storage.getWrongQuestionIds();
   currentSession = shuffle(getWeakPointQuestions(allQuestions, wrongIds));
   currentIndex = 0;
+  emptySessionMessage = '間違えた問題はまだありません。まずはカテゴリーを選んで解いてみましょう。';
   showScreen('quiz-screen');
-  renderQuestion();
 }
 
 function renderQuestion() {
   const feedback = document.getElementById('answer-feedback');
   feedback.hidden = true;
 
-  // 前の問題で正解して押された判子が残っていたら消しておく
-  const existingHanko = document.getElementById('hanko-mark');
-  if (existingHanko) existingHanko.remove();
+  // 前の問題で押された判子が残っていたら消しておく
+  document.getElementById('hanko-slot').innerHTML = '';
 
   if (currentSession.length === 0) {
-    document.getElementById('question-text').textContent = '出題できる問題がありません。';
+    // 出題できる問題がないときは、次に何をすればいいかが分かる案内を出す
+    document.getElementById('question-text').textContent = emptySessionMessage;
     document.getElementById('choice-list').innerHTML = '';
     document.getElementById('quiz-progress').textContent = '';
     return;
@@ -117,7 +127,7 @@ function onAnswer(question, selectedIndex, selectedButton) {
   if (!isCorrect) selectedButton.classList.add('incorrect');
   buttons.forEach((b) => (b.disabled = true));
 
-  // 正解したときだけ、判子(はんこ)が押される演出を出す
+  // 正解したときだけ、問題番号の横に判子(はんこ)が押される演出を出す
   if (isCorrect) {
     const hanko = document.createElement('div');
     hanko.id = 'hanko-mark';
@@ -125,7 +135,7 @@ function onAnswer(question, selectedIndex, selectedButton) {
     const hankoText = document.createElement('span');
     hankoText.textContent = '正';
     hanko.appendChild(hankoText);
-    document.getElementById('quiz-screen').appendChild(hanko);
+    document.getElementById('hanko-slot').appendChild(hanko);
   }
 
   document.getElementById('feedback-result').textContent = isCorrect ? '正解!' : '不正解';
@@ -179,10 +189,16 @@ function renderStats() {
   container.innerHTML = '';
   result.forEach((row) => {
     // カテゴリー名・棒グラフ・パーセントを横に並べた、帳簿の1行のような見た目にする
+    // まだ1問も解いていないカテゴリーかどうか。
+    // 「全問間違えて0%」と「未回答」を同じ0%と表示すると誤解を生むので区別する
+    const isUnanswered = row.answered === 0;
+
     const rowEl = document.createElement('div');
     rowEl.className = 'stats-row';
     // マウスを乗せる(スマホでは長押しする)と、正解数の内訳が見られるようにしておく
-    rowEl.title = `${row.correct} / ${row.answered} 問正解`;
+    rowEl.title = isUnanswered
+      ? 'まだ解いていません'
+      : `${row.correct} / ${row.answered} 問正解`;
 
     const nameEl = document.createElement('span');
     nameEl.className = 'stats-name';
@@ -192,12 +208,12 @@ function renderStats() {
     trackEl.className = 'bar-track';
     const fillEl = document.createElement('div');
     fillEl.className = 'bar-fill';
-    fillEl.style.width = `${row.accuracyPercent}%`;
+    fillEl.style.width = isUnanswered ? '0%' : `${row.accuracyPercent}%`;
     trackEl.appendChild(fillEl);
 
     const pctEl = document.createElement('span');
-    pctEl.className = 'stats-pct';
-    pctEl.textContent = `${row.accuracyPercent}%`;
+    pctEl.className = isUnanswered ? 'stats-pct unanswered' : 'stats-pct';
+    pctEl.textContent = isUnanswered ? '未回答' : `${row.accuracyPercent}%`;
 
     rowEl.append(nameEl, trackEl, pctEl);
     container.appendChild(rowEl);
@@ -234,7 +250,10 @@ function renderBookmarks() {
 
 function renderStreak() {
   const streak = storage.getStreak();
-  document.getElementById('streak-display').textContent = `🔥 連続学習 ${streak}日目`;
+  // まだ1問も解いていないときに「0日目」と出ると不自然なので、
+  // その場合は誘い文句に切り替える
+  document.getElementById('streak-display').textContent =
+    streak === 0 ? '今日から始めましょう' : `連続学習 ${streak}日目`;
 }
 
 function setupNav() {

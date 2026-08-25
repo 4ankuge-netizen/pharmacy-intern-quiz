@@ -35,7 +35,12 @@
     </section>
 
     <section id="quiz-screen" class="screen" hidden>
-      <p id="quiz-progress"></p>
+      <!-- 問題番号と、正解時に判子が現れる場所を横に並べた帯。
+           判子はこの帯の中だけに出るので、問題文や選択肢の上に重なることがない -->
+      <div class="quiz-topbar">
+        <p id="quiz-progress"></p>
+        <div id="hanko-slot"></div>
+      </div>
       <h2 id="question-text"></h2>
       <div id="choice-list"></div>
       <div id="answer-feedback" hidden>

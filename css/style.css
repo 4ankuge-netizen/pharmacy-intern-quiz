@@ -70,6 +70,12 @@ body {
   border-right: 1px solid var(--color-line);
 }
 .app-nav button:last-child { border-right: none; }
+/* 今いる画面のタブに、下線と色を付けて現在地が分かるようにする */
+.app-nav button.active {
+  color: var(--color-navy);
+  font-weight: 700;
+  box-shadow: inset 0 -3px 0 var(--color-green);
+}
 
 main { padding: 16px; max-width: 480px; margin: 0 auto; }
 
@@ -83,13 +89,31 @@ main h2 {
 
 .screen[hidden] { display: none; }
 
-/* クイズ画面全体。判子を絶対配置で重ねるための基準位置にする */
-#quiz-screen { position: relative; }
+/* 問題番号と判子を並べる帯。判子のぶんの高さをあらかじめ確保しておくことで、
+   判子が出ても下の問題文が押し下げられたり、文字に重なったりしない */
+.quiz-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 52px;
+  margin-bottom: 4px;
+}
 
 #quiz-progress {
   font-size: 0.75rem;
   color: var(--color-gray);
-  margin: 0 0 4px;
+  margin: 0;
+}
+
+/* 問題文。見出しタグだが、長い症例文でも読みやすいよう本文用のゴシック体にする
+   (明朝体はアプリ名と画面タイトルだけに絞る) */
+#question-text {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  line-height: 1.75;
+  margin: 0 0 14px;
 }
 
 /* 選択肢のボタン */
@@ -140,13 +164,11 @@ main h2 {
   font-weight: 700;
 }
 
-/* 正解したときだけ現れる「判子」の演出 */
+/* 正解したときだけ現れる「判子」の演出。
+   帯の中に収まるので、問題文や選択肢の文字に重ならない */
 .hanko {
-  position: absolute;
-  top: 34px;
-  right: 16px;
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: 2.5px solid var(--color-vermillion);
   display: flex;
@@ -154,13 +176,24 @@ main h2 {
   justify-content: center;
   transform: rotate(-9deg);
   opacity: 0.88;
-  pointer-events: none; /* 判子はただの飾りなので、クリック操作の邪魔をしないようにする */
+  pointer-events: none; /* 判子はただの飾りなので、タップ操作の邪魔をしないようにする */
+  animation: hanko-press 0.28s ease-out; /* 押した瞬間の手応えを出す */
 }
 .hanko span {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 27px;
   font-weight: 700;
   color: var(--color-vermillion);
+}
+/* 判子が上から降りてきて「ポン」と押される動き。
+   拡大率を上げすぎると、動いている一瞬だけ画面の右端からはみ出すため1.35倍までに抑える */
+@keyframes hanko-press {
+  from { transform: rotate(-9deg) scale(1.35); opacity: 0; }
+  to   { transform: rotate(-9deg) scale(1);    opacity: 0.88; }
+}
+/* 端末側で「動きを減らす」設定にしている人には、アニメーションを出さない */
+@media (prefers-reduced-motion: reduce) {
+  .hanko { animation: none; }
 }
 
 /* ホーム画面のカテゴリー一覧。個別の箱ではなく、罫線で区切った1本のリストにする */
@@ -214,11 +247,18 @@ main h2 {
 }
 .bar-fill { background: var(--color-green); height: 100%; }
 .stats-pct {
-  width: 3em;
+  width: 3.6em;
   text-align: right;
   font-variant-numeric: tabular-nums; /* 数字の幅を揃えて、桁がずれて見えないようにする */
   font-weight: 700;
   font-size: 0.85rem;
+}
+/* まだ1問も解いていないカテゴリー。「0%(全問不正解)」と見分けがつくよう、
+   数字ではなく「未回答」と薄い文字で表示する */
+.stats-pct.unanswered {
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 0.72rem;
 }
 
 /* ブックマーク画面。控え・レシートのように点線で区切る */
