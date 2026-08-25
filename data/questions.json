@@ -567,27 +567,6 @@
   "verified": true
  },
  {
-  "id": "cancer-beginner-028",
-  "category": "cancer",
-  "difficulty": "beginner",
-  "type": "single",
-  "question": "エポエチンアルファなどエリスロポエチン製剤ががん患者に用いられる目的として正しいのはどれか。",
-  "choices": [
-   "血小板減少症の改善",
-   "悪心・嘔吐の予防",
-   "好中球減少症の改善",
-   "化学療法に伴う貧血の改善"
-  ],
-  "correctIndex": 3,
-  "explanation": "エリスロポエチン製剤は赤血球産生を促進し、化学療法に伴う貧血の改善に用いられることがあります。",
-  "source": {
-   "name": "エポエチンアルファ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
-  },
-  "verified": false
- },
- {
   "id": "cancer-beginner-029",
   "category": "cancer",
   "difficulty": "beginner",
