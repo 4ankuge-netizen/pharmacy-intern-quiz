@@ -266,11 +266,11 @@
   "correctIndex": 3,
   "explanation": "フルオロウラシルはピリミジン代謝拮抗薬に分類され、多くの固形がんに用いられます。",
   "source": {
-   "name": "フルオロウラシル注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フルオロウラシル注250mg「トーワ」 添付文書 18.1 作用機序(チミジル酸合成酵素上でdeoxyUMPと拮抗)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4223401A3030_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-014",
@@ -392,11 +392,11 @@
   "correctIndex": 2,
   "explanation": "ニボルマブはPD-1を標的とする免疫チェックポイント阻害薬で、免疫を介した抗腫瘍効果を発揮します。",
   "source": {
-   "name": "ニボルマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オプジーボ点滴静注20mg ／ 添付文書 18.1 作用機序(ヒトPD-1に対する抗体・PD-L1/L2との結合を阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291427A1024_1_75/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-020",
@@ -518,11 +518,11 @@
   "correctIndex": 1,
   "explanation": "ラスブリカーゼは尿酸分解酵素製剤で、腫瘍崩壊症候群に伴う高尿酸血症の治療に用いられます。",
   "source": {
-   "name": "ラスブリカーゼ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラスリテック点滴静注用1.5mg 添付文書 4. 効能又は効果・5.1(腫瘍崩壊症候群の発症リスクを考慮)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3959415F1025_1_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-026",
@@ -539,11 +539,11 @@
   "correctIndex": 2,
   "explanation": "アロプリノールはキサンチンオキシダーゼを阻害し尿酸産生を抑えることで、腫瘍崩壊症候群による高尿酸血症を予防します。",
   "source": {
-   "name": "アロプリノール錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アロプリノール錠100mg「杏林」 添付文書 18.1 作用機序(キサンチンオキシダーゼ拮抗・尿酸の生合成を抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3943001F1551_3_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-027",
@@ -560,11 +560,11 @@
   "correctIndex": 2,
   "explanation": "ペグフィルグラスチムはフィルグラスチムをペグ化した持続型G-CSF製剤で、1化学療法サイクルあたり1回の投与で効果が持続します。",
   "source": {
-   "name": "ペグフィルグラスチム注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジーラスタ皮下注3.6mg 添付文書 17. 臨床成績(1サイクルあたり1回皮下投与 vs フィルグラスチム連日投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399410G1020_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-028",
@@ -623,11 +623,11 @@
   "correctIndex": 3,
   "explanation": "アナモレリンはグレリン様作用を持つ薬剤で、がん悪液質に伴う食欲不振・体重減少の改善に用いられます。",
   "source": {
-   "name": "アナモレリン塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エドルミズ錠50mg 添付文書 4. 効能又は効果(がん悪液質)・18.1 作用機序(食欲を亢進し体重を増加)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999054F1028_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-031",
