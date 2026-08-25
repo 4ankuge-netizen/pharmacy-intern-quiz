@@ -51,6 +51,38 @@ test('difficultyが不正な値だとエラーになる', () => {
   assert.ok(errors.some((e) => e.includes('difficulty')));
 });
 
+test('correctIndexがNaNだとエラーになる', () => {
+  const badQuestion = {
+    id: 'sample-004',
+    category: 'cancer',
+    difficulty: 'beginner',
+    type: 'single',
+    question: 'サンプル問題文',
+    choices: ['A', 'B', 'C', 'D'],
+    correctIndex: NaN,
+    explanation: 'サンプル解説',
+    source: { name: 'サンプル資料', url: '', confirmedDate: '2026-08-25' },
+  };
+  const errors = validateQuestion(badQuestion);
+  assert.ok(errors.some((e) => e.includes('correctIndex')));
+});
+
+test('correctIndexが小数だとエラーになる', () => {
+  const badQuestion = {
+    id: 'sample-005',
+    category: 'cancer',
+    difficulty: 'beginner',
+    type: 'single',
+    question: 'サンプル問題文',
+    choices: ['A', 'B', 'C', 'D'],
+    correctIndex: 1.5,
+    explanation: 'サンプル解説',
+    source: { name: 'サンプル資料', url: '', confirmedDate: '2026-08-25' },
+  };
+  const errors = validateQuestion(badQuestion);
+  assert.ok(errors.some((e) => e.includes('correctIndex')));
+});
+
 test('サンプルデータ全体が正しい形式になっている', () => {
   const raw = readFileSync(new URL('../data/questions-sample.json', import.meta.url));
   const questions = JSON.parse(raw);

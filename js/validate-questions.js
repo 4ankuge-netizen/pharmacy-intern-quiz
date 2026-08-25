@@ -34,7 +34,7 @@ export function validateQuestion(q) {
   }
   // correctIndexの検証
   if (
-    typeof q.correctIndex !== 'number' ||
+    !Number.isInteger(q.correctIndex) ||
     !Array.isArray(q.choices) ||
     q.correctIndex < 0 ||
     q.correctIndex >= q.choices.length
