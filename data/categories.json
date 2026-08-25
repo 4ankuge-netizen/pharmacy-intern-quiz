@@ -1,0 +1,12 @@
+[
+  { "id": "cancer", "name": "がん" },
+  { "id": "hypertension", "name": "高血圧症" },
+  { "id": "diabetes", "name": "糖尿病" },
+  { "id": "heart-disease", "name": "心疾患" },
+  { "id": "cerebrovascular", "name": "脳血管障害" },
+  { "id": "psychiatric", "name": "精神神経疾患" },
+  { "id": "immune-allergy", "name": "免疫・アレルギー疾患" },
+  { "id": "infection", "name": "感染症" },
+  { "id": "calculation", "name": "計算問題" },
+  { "id": "ethics", "name": "社会常識・倫理観" }
+]
