@@ -61,6 +61,7 @@ function main() {
   }
 
   let count = 0;
+  const entries = [];
   for (const r of revisions) {
     const q = byId.get(r.id);
     if (!q) { console.error(`問題が見つかりません: ${r.id}`); process.exit(1); }
@@ -91,7 +92,7 @@ function main() {
     }
     if (r.explanation) q.explanation = r.explanation;
 
-    // 変更前の内容を先に記録する
+    // 変更前の内容を控えておく(書き込みが成功したあとでまとめて記録する)
     const entry = [
       `\n## ${r.id}  (${today})`,
       '',
@@ -110,8 +111,7 @@ function main() {
       `- 解説: ${q.explanation}`,
       '',
     ].join('\n');
-    appendFileSync(LOG_PATH, entry, 'utf8');
-
+    entries.push(entry);
     count++;
   }
 

@@ -13181,11 +13181,11 @@
   "correctIndex": 0,
   "explanation": "糖尿病治療では、食事療法・運動療法を基本とし、必要に応じて薬物療法を組み合わせます。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病の治療ってどんなものがあるの？」(食事療法・運動療法・薬物療法)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/040/010/01.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-011",
@@ -13402,21 +13402,21 @@
   "category": "diabetes",
   "difficulty": "beginner",
   "type": "single",
-  "question": "SMBG(血糖自己測定)の目的として正しいのはどれか。",
+  "question": "血糖自己測定(SMBG)を行う対象として説明されているのはどれか。",
   "choices": [
-   "日常生活における血糖値の変動を把握し治療に役立てる",
-   "診断を確定するために毎回医療機関で行う検査である",
-   "治療とは無関係な検査である",
-   "HbA1cの代わりに用いる長期指標である"
+   "血糖値を下げる注射薬を使用している方や妊娠している方",
+   "糖尿病のない健康な成人すべて",
+   "内服薬を使っていない糖尿病予備群のみ",
+   "入院中の患者のみ"
   ],
   "correctIndex": 0,
-  "explanation": "SMBGは患者自身が日常生活の中で血糖値を測定し、食事・運動・薬物療法の調整に役立てるための検査です。",
+  "explanation": "血糖自己測定は、血糖値を下げる注射薬を使用している方や妊娠している方が行います。診察時の血糖値だけでなく日常生活の中の血糖値を知ることで、よりよい血糖マネジメントを目指せます。低血糖の時やシックデイの時の対応にも重要な指標となります。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「血糖自己測定について」(対象となる方)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/100/040/04.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-022",
@@ -13433,11 +13433,11 @@
   "correctIndex": 0,
   "explanation": "HbA1cはヘモグロビンに結合したブドウ糖の割合を示し、過去1〜2か月程度の平均的な血糖状態を反映する指標です。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病と関連する検査」(HbA1cは過去1,2か月分の血糖値のあらましを反映)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/030/010/02.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-023",
@@ -13454,11 +13454,11 @@
   "correctIndex": 2,
   "explanation": "糖尿病の食事療法は極端な制限ではなく、適正エネルギー量とバランスの良い栄養摂取を基本とします。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病の食事のはなし(基本編)」(適正なエネルギー量でバランスの良い食事)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/040/020/02-1.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-024",
@@ -13475,11 +13475,11 @@
   "correctIndex": 2,
   "explanation": "ウォーキングなどの有酸素運動はインスリン感受性を改善するなど血糖コントロールに有用であり、運動療法として推奨されています。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病の運動のはなし」(中等度の強度の有酸素運動)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/040/040/03.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-025",
@@ -13580,11 +13580,11 @@
   "correctIndex": 1,
   "explanation": "糖尿病の細小血管合併症である網膜症、腎症、神経障害は糖尿病の三大合併症として知られています。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病の慢性合併症」(細小血管症: 神経障害・網膜症・腎症=しめじ)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/060/020/02.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-030",
@@ -13601,32 +13601,32 @@
   "correctIndex": 3,
   "explanation": "糖尿病は動脈硬化を進展させ、心筋梗塞や脳梗塞などの大血管合併症のリスクを高めることが知られています。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「大血管症」(冠動脈の病気、心筋梗塞の危険度は数倍)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/060/030/01.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-031",
   "category": "diabetes",
   "difficulty": "beginner",
   "type": "single",
-  "question": "低血糖の代表的な症状として正しいのはどれか。",
+  "question": "低血糖における血糖値の目安と症状の関係として正しいのはどれか。",
   "choices": [
-   "冷や汗、動悸、手指の震え",
-   "発熱、咳嗽",
-   "口渇、多飲、多尿",
-   "便秘、体重増加"
+   "およそ70mg/dL以下で交感神経症状、50mg/dL程度で中枢神経症状が現れる",
+   "およそ200mg/dL以上で交感神経症状が現れる",
+   "血糖値と症状の間に関係はない",
+   "50mg/dL程度でまず交感神経症状が現れる"
   ],
   "correctIndex": 0,
-  "explanation": "低血糖では交感神経刺激症状として冷や汗、動悸、手指の震えなどがみられることが代表的です。",
+  "explanation": "血糖値がおよそ70mg/dL以下になると交感神経症状があらわれ、さらに50mg/dL程度まで下がると中枢神経症状があらわれます。ただし普段から低血糖がよく起こる方や自覚が少ない方では、汗をかくなどの交感神経症状が出ないまま無自覚性低血糖になることがあります。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「低血糖」(70mg/dL以下で交感神経症状、50mg/dL程度で中枢神経症状)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/040/050/05.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-032",
@@ -13643,11 +13643,11 @@
   "correctIndex": 3,
   "explanation": "高血糖では浸透圧利尿により口渇、多飲、多尿などの症状がみられることが代表的です。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病とは」(高血糖の症状: 喉が渇く・水をよく飲む・尿の回数が増える)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/010/010/01.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-033",
@@ -13717,42 +13717,42 @@
   "category": "diabetes",
   "difficulty": "beginner",
   "type": "single",
-  "question": "1型糖尿病における治療の基本として正しいのはどれか。",
+  "question": "1型糖尿病のインスリン治療の基本となるのはどれか。",
   "choices": [
-   "インスリン療法が生命維持に必須である",
-   "経口血糖降下薬が第一選択となる",
-   "食事療法のみで治療が完結する",
-   "治療の必要はなく経過観察でよい"
+   "基礎分泌と追加分泌を注射薬で補う強化インスリン療法",
+   "経口血糖降下薬の単独療法",
+   "食事療法のみ",
+   "運動療法のみ"
   ],
   "correctIndex": 0,
-  "explanation": "1型糖尿病はインスリン分泌がほぼ枯渇するため、インスリン療法が生命維持のために必須の治療となります。",
+  "explanation": "糖尿病でない人のインスリン分泌には1日を通して分泌される基礎分泌と、食事のときに分泌される追加分泌があります。インスリンが分泌できない1型糖尿病では、この両方を注射薬で補う強化インスリン療法が基本です。方法にはペン型注入器による頻回注射法と、インスリンポンプによる持続皮下インスリン注入法があります。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「1型糖尿病の治療について」(強化インスリン療法)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/050/020/02.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-037",
   "category": "diabetes",
   "difficulty": "beginner",
   "type": "single",
-  "question": "2型糖尿病治療における生活習慣改善の位置づけとして正しいのはどれか。",
+  "question": "糖尿病の運動療法が血糖値を下げる仕組みとして説明されているのはどれか。",
   "choices": [
-   "生活習慣改善は薬物療法開始後は不要になる",
-   "生活習慣改善は補助的なものであり治療の中心ではない",
-   "薬物療法とあわせて治療の基本となる",
-   "生活習慣改善に血糖改善効果は乏しい"
+   "運動で糖が使われ、筋肉量が増えて糖を取り込みやすくなり、脂肪が減ってインスリンが効きやすくなる",
+   "運動によってインスリンの分泌が完全に停止するため",
+   "運動で体温が上がり糖が汗として排出されるため",
+   "運動と血糖値には関係がない"
   ],
-  "correctIndex": 2,
-  "explanation": "2型糖尿病治療では、食事療法・運動療法などの生活習慣改善が薬物療法とあわせて治療の基本に位置づけられています。",
+  "correctIndex": 0,
+  "explanation": "運動によって糖が使われます。また筋肉の量が増えることで糖をからだに取り込みやすくします。その上、脂肪が減ることで血糖値を下げるインスリンが効果を発揮しやすい環境を作ります。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病の治療ってどんなものがあるの？」(運動療法の仕組み)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/040/010/01.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-038",
@@ -13769,11 +13769,11 @@
   "correctIndex": 3,
   "explanation": "糖尿病治療の目標は、合併症の発症・進展を予防し、健康な人と変わらない日常生活の質と寿命を確保することとされています。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病の治療の目的」(糖尿病がない人と同じ健康寿命を保つ)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/040/010/01.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-039",
@@ -13811,11 +13811,11 @@
   "correctIndex": 1,
   "explanation": "血糖自己測定器は患者自身が日常的に血糖値を把握し、治療の調整や生活管理に役立てる意義があります。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「血糖自己測定について」(日常生活の中での血糖値を知る)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/100/040/04.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-041",
@@ -13853,11 +13853,11 @@
   "correctIndex": 0,
   "explanation": "シックデイとは、発熱・下痢・嘔吐・食欲不振などで体調が悪化し、血糖コントロールが乱れやすい日のことを指します。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「シックデイ」(感染症・発熱・下痢・嘔吐・食欲不振で食事ができないとき)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/040/060/06.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-043",
@@ -13958,11 +13958,11 @@
   "correctIndex": 0,
   "explanation": "糖尿病の診断には空腹時血糖値、75g経口ブドウ糖負荷試験(OGTT)、HbA1cなどの血糖関連検査が用いられます。",
   "source": {
-   "name": "糖尿病診療ガイドライン2024(日本糖尿病学会編・著、南江堂)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立国際医療研究センター 糖尿病情報センター「糖尿病は早く見つけましょう」(空腹時血糖値・HbA1c・75g経口ブドウ糖負荷試験)",
+   "url": "https://dmic.ncgm.go.jp/general/about-dm/030/010/01.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-048",
