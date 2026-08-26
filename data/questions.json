@@ -1799,11 +1799,11 @@
   "correctIndex": 1,
   "explanation": "アビラテロンはアンドロゲン合成を阻害する過程で鉱質コルチコイド過剰症状(高血圧、低カリウム血症等)を来しうるため、ステロイド併用で抑制します。",
   "source": {
-   "name": "アビラテロン酢酸エステル錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アビラテロン酢酸エステル錠250mg「 添付文書 6.用法及び用量(プレドニゾロンとの併用)・CYP17阻害に伴う鉱質コルチコイド濃度の上昇",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291033F1091_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-038",
@@ -1820,11 +1820,11 @@
   "correctIndex": 3,
   "explanation": "エンザルタミドはけいれん発作のリスクが報告されており、けいれんの既往がある患者では特に注意が必要です。",
   "source": {
-   "name": "エンザルタミド錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イクスタンジ錠40mg ／ 添付文書 8.2 重要な基本的注意・9.1.1(痙攣発作)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291031F1025_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-039",
@@ -1883,32 +1883,32 @@
   "correctIndex": 0,
   "explanation": "オキサリプラチンは反復投与により過敏反応(アレルギー反応)のリスクが高まることがあり、投与時の観察が重要です。",
   "source": {
-   "name": "オキサリプラチン注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オキサリプラチン点滴静注液50mg「N 添付文書 8.4 重要な基本的注意(重篤な過敏症状は複数回投与後に発現する場合がある)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291410A1169_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-042",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "腎機能が低下したがん患者に制吐薬を選択する際の注意点として正しいのはどれか。",
+  "question": "メトクロプラミドを腎機能障害患者に投与する際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "肝機能のみを考慮すればよい",
-   "制吐薬に腎機能を考慮する必要はない",
-   "腎機能にかかわらず用量調整は不要である",
-   "腎排泄型の薬剤では用量調整が必要な場合がある"
+   "高い血中濃度が持続するおそれがある",
+   "血中濃度が上がらず効果が期待できない",
+   "腎機能によらず影響はない",
+   "腎機能障害患者には投与できない"
   ],
-  "correctIndex": 3,
-  "explanation": "制吐薬の中には腎排泄の関与があるものもあり、腎機能低下患者では添付文書に基づいた用量調整の要否を確認する必要があります。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.2に、腎機能障害患者では高い血中濃度が持続するおそれがあると記載されています。本剤は主として腎臓から排泄されるため、高齢者でも副作用(錐体外路症状等)の発現に注意し、用量並びに投与間隔に留意して慎重に投与するとされています。",
   "source": {
-   "name": "メトクロプラミド錠 添付文書(腎機能障害患者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メトクロプラミド錠5mg「NIG」 添付文書 9.2 腎機能障害患者",
+   "url": "https://www.info.pmda.go.jp/go/pack/2399004F1286_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-043",
@@ -2062,21 +2062,21 @@
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "制吐薬メトクロプラミドを高用量・長期に使用する際に注意すべき副作用はどれか。",
+  "question": "メトクロプラミドの投与により注意すべき副作用として添付文書8.1に挙げられているのはどれか。",
   "choices": [
-   "高カリウム血症",
-   "錐体外路症状",
-   "歯肉増生",
-   "骨痛"
+   "内分泌機能異常(プロラクチン値上昇)、錐体外路症状",
+   "難聴、耳鳴",
+   "出血傾向",
+   "高血糖"
   ],
-  "correctIndex": 1,
-  "explanation": "メトクロプラミドはドパミン受容体拮抗作用を持つため、高用量・長期使用では錐体外路症状のリスクに注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.1に、本剤の投与により内分泌機能異常(プロラクチン値上昇)、錐体外路症状等の副作用があらわれることがあるので、有効性と安全性を十分考慮のうえ投与することと記載されています。錐体外路症状には手指振戦、筋硬直、頸・顔部の攣縮、眼球回転発作などがあり、症状が強い場合は抗パーキンソン剤の投与等を行います。",
   "source": {
-   "name": "メトクロプラミド錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メトクロプラミド錠5mg「NIG」 添付文書 8.1 重要な基本的注意・11.2 その他の副作用(錐体外路症状)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2399004F1286_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-001",
@@ -7165,21 +7165,21 @@
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ACE阻害薬に特徴的な副作用として正しいのはどれか。",
+  "question": "エナラプリル(ACE阻害薬)の副作用として添付文書の呼吸器の項に記載されているのはどれか。",
   "choices": [
-   "浮腫",
-   "空咳(乾性咳嗽)",
-   "低カリウム血症",
-   "歯肉増生"
+   "咳嗽",
+   "無呼吸",
+   "肺線維症",
+   "気胸"
   ],
-  "correctIndex": 1,
-  "explanation": "ACE阻害薬はブラジキニンの分解を抑制するため、空咳(乾性咳嗽)が特徴的な副作用として知られています。",
+  "correctIndex": 0,
+  "explanation": "添付文書11.2その他の副作用の呼吸器の項に、咳嗽、咽(喉)頭炎(0.1〜5%未満)、喘息、嗄声(0.1%未満)が記載されています。ACE阻害薬では乾いた咳が特徴的な副作用として知られています。",
   "source": {
-   "name": "エナラプリルマレイン酸塩錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エナラプリルマレイン酸塩錠2.5mg「 添付文書 11.2 その他の副作用(呼吸器: 咳嗽)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2144002F1296_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-002",
@@ -7196,11 +7196,11 @@
   "correctIndex": 3,
   "explanation": "ARBは胎児の腎機能障害などのリスクがあるため、妊婦には禁忌とされています。",
   "source": {
-   "name": "カンデサルタン シレキセチル錠(ブロプレス)インタビューフォーム(第15版・2025年9月改訂) Ⅷ.2.禁忌内容とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カンデサルタン錠2mg「あすか」 添付文書 2.2 禁忌(妊婦又は妊娠している可能性のある女性)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149040F1034_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-003",
@@ -7217,11 +7217,11 @@
   "correctIndex": 0,
   "explanation": "グレープフルーツジュースは腸管のCYP3A4を阻害するため、一部のCa拮抗薬の血中濃度が上昇し降圧作用が増強することがあります。",
   "source": {
-   "name": "アムロジピン錠 インタビューフォーム(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アムロジピン錠2.5mg「あすか」 添付文書 10.2 併用注意(グレープフルーツジュース)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171022F1193_2_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-004",
@@ -7259,11 +7259,11 @@
   "correctIndex": 2,
   "explanation": "サイアザイド系利尿薬は尿酸排泄を抑制する作用があり、尿酸値を上昇させることがあるため痛風の既往がある患者では注意が必要です。",
   "source": {
-   "name": "ヒドロクロロチアジド錠 添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「ト 添付文書 9.1.2(痛風・糖尿病のある患者、高尿酸血症・高血糖症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2132004F1103_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-006",
@@ -7280,11 +7280,11 @@
   "correctIndex": 3,
   "explanation": "β遮断薬の急な中止は交感神経系の反応性亢進によりリバウンド性の血圧上昇や狭心症悪化を招くことがあり、漸減が推奨されます。",
   "source": {
-   "name": "ビソプロロールフマル酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビソプロロールフマル酸塩錠0.625mg 添付文書 8.2 重要な基本的注意(急な中止による症状悪化・心筋梗塞の報告)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-007",
@@ -7301,11 +7301,11 @@
   "correctIndex": 2,
   "explanation": "両側腎動脈狭窄症では、ACE阻害薬・ARBの投与により急激な腎機能悪化を招くおそれがあるため注意が必要です。",
   "source": {
-   "name": "エナラプリルマレイン酸塩錠 添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エナラプリルマレイン酸塩錠2.5mg「 添付文書 9.1.1 両側性腎動脈狭窄のある患者又は片腎で腎動脈狭窄のある患者",
+   "url": "https://www.info.pmda.go.jp/go/pack/2144002F1296_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-008",
