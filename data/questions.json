@@ -22967,11 +22967,11 @@
   "correctIndex": 0,
   "explanation": "抗精神病薬はドパミン受容体遮断作用により、振戦やアカシジアなどの錐体外路症状を起こすことがあります。",
   "source": {
-   "name": "リスペリドン錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リスペリドン錠1mg「サワイ」 添付文書 11.2 その他の副作用(神経系障害: アカシジア、振戦、パーキンソニズム、錐体外路障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179038C1094_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-008",
@@ -22988,11 +22988,11 @@
   "correctIndex": 1,
   "explanation": "ベンゾジアゼピン系薬は中枢神経抑制作用により眠気やふらつきを起こしやすく、長期使用で依存性にも注意が必要です。",
   "source": {
-   "name": "ジアゼパム錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジアゼパム錠2「サワイ」 添付文書 11.1.1 依存性・離脱症状 / 11.2 その他の副作用(眠気、ふらつき)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1124017F2046_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-009",
@@ -23051,11 +23051,11 @@
   "correctIndex": 2,
   "explanation": "オランザピンは非定型抗精神病薬で、統合失調症や双極性障害の治療に用いられます。",
   "source": {
-   "name": "オランザピン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オランザピン錠2.5mg「日新」 添付文書 薬効分類名(抗精神病薬・双極性障害治療薬)・4. 効能又は効果(統合失調症、双極性障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179044F1169_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-012",
@@ -23072,11 +23072,11 @@
   "correctIndex": 3,
   "explanation": "アリピプラゾールはドパミンD2受容体部分作動薬という特徴的な機序を持つ非定型抗精神病薬です。",
   "source": {
-   "name": "アリピプラゾール錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アリピプラゾール錠3mg「JG」 添付文書 18.1 作用機序(ドパミンD2受容体部分アゴニスト作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179045F1031_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-013",
@@ -23114,11 +23114,11 @@
   "correctIndex": 1,
   "explanation": "パロキセチンはSSRIに分類される抗うつ薬で、うつ病や不安障害の治療に用いられます。",
   "source": {
-   "name": "パロキセチン塩酸塩水和物錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "パロキセチン錠5mg「YD」 ／ 添付文書 薬効分類名(選択的セロトニン再取り込み阻害剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179041F1165_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-015",
@@ -23135,11 +23135,11 @@
   "correctIndex": 0,
   "explanation": "デュロキセチンはSNRI(セロトニン・ノルアドレナリン再取り込み阻害薬)に分類される抗うつ薬です。",
   "source": {
-   "name": "デュロキセチン塩酸塩カプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュロキセチンカプセル20mg「オー 添付文書 薬効分類名(セロトニン・ノルアドレナリン再取り込み阻害剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179052M1081_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-016",
@@ -23156,11 +23156,11 @@
   "correctIndex": 1,
   "explanation": "ミルタザピンはNaSSAに分類される抗うつ薬で、他の抗うつ薬とは異なる作用機序を持ちます。",
   "source": {
-   "name": "ミルタザピン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミルタザピン錠15mg「ケミファ」 添付文書 薬効分類名(ノルアドレナリン・セロトニン作動性抗うつ剤)・18.1(シナプス前α2受容体拮抗)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179051F1118_2_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-017",
@@ -23177,11 +23177,11 @@
   "correctIndex": 3,
   "explanation": "カルバマゼピンは抗てんかん薬であり、双極性障害の気分安定薬としても用いられます。",
   "source": {
-   "name": "カルバマゼピン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルバマゼピン錠100mg「アメル」 添付文書 薬効分類名(向精神作用性てんかん治療剤・躁状態治療剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139002C1066_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-018",

@@ -40,6 +40,42 @@ function guessRelevantSections(question) {
   return [...new Set(picks)].slice(0, 2);
 }
 
+/*
+  保存してある添付文書の本文から、目当ての項目を切り出す。
+
+  添付文書は「11.1 重大な副作用」「11.2 その他の副作用」のように番号付きの
+  見出しで区切られている。単に「副作用」で探すと、警告文や見出しの前置きに
+  出てくる「副作用」に当たってしまい、肝心の一覧にたどり着けない。
+  そこで項目ごとに、狙うべき見出しを決めておく。
+*/
+const SECTION_ANCHORS = {
+  '禁忌': [/\n\s*2\.\s*禁忌/, /禁忌（次の患者には投与しないこと）/],
+  '効能又は効果': [/\n\s*4\.\s*効能又は効果/, /効能又は効果/],
+  '用法及び用量': [/\n\s*6\.\s*用法及び用量/, /用法及び用量/],
+  '相互作用': [/\n\s*10\.\s*相互作用/, /10\.1\s*併用禁忌/],
+  '副作用': [/11\.2\s*その他の副作用/, /11\.1\s*重大な副作用/],
+  '薬効薬理': [/\n\s*18\.\s*薬効薬理/, /18\.1\s*作用機序/],
+  '特定の背景': [/\n\s*9\.\s*特定の背景/],
+};
+
+function sliceSection(doc, key) {
+  const anchors = SECTION_ANCHORS[key];
+  if (!anchors) return null;
+  const textFile = join(CACHE_DIR, `${toFileName(doc.drugName)}.txt`);
+  if (!existsSync(textFile)) return null;
+  const text = readFileSync(textFile, 'utf8');
+
+  for (const anchor of anchors) {
+    const m = text.match(anchor);
+    if (m) {
+      // 副作用は一覧が長いので、重大な副作用とその他の副作用の両方が入る長さを取る
+      const length = key === '副作用' ? 2600 : 1800;
+      return text.slice(m.index, m.index + length);
+    }
+  }
+  return null;
+}
+
 // 添付文書の抜粋から、問題に関係しそうな行だけを拾って短くする
 function condense(section, question, maxChars) {
   const lines = section.split('\n').map((l) => l.trim()).filter(Boolean);
@@ -101,7 +137,10 @@ function main() {
     if (classMatch) console.log(`[薬効分類名] ${classMatch[1].trim()}`);
 
     for (const key of guessRelevantSections(q)) {
-      const section = doc.sections?.[key];
+      // 保存してある本文から直接切り出す。
+      // (見出しの手前に「副作用」という語が何度も出てくるため、
+      //  番号付きの見出し「11.2 その他の副作用」などを狙って探す)
+      const section = sliceSection(doc, key) || doc.sections?.[key];
       if (section) {
         console.log(`[${key}] ${condense(section, q, 420).replace(/\n+/g, ' / ')}`);
       }
