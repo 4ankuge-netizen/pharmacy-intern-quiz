@@ -20951,11 +20951,11 @@
   "correctIndex": 0,
   "explanation": "オザグレルナトリウムは抗血小板作用を持つため、他の抗血栓薬と同様に出血傾向の増強に注意が必要です。",
   "source": {
-   "name": "オザグレルナトリウム注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オザグレルNa点滴静注20mgシリンジ 添付文書 2.1・2.2 禁忌(出血している患者、出血性脳梗塞が発現しやすい患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999411G1044_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-015",
@@ -20972,32 +20972,32 @@
   "correctIndex": 2,
   "explanation": "アルガトロバンは抗トロンビン作用を持つため、投与中は出血傾向の観察や凝固関連検査値の確認が重要です。",
   "source": {
-   "name": "アルガトロバン注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルガトロバン注射液10mg「サワイ 添付文書 2.1 禁忌・警告(臨床症状及びCTによる観察、出血時は直ちに投与中止)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190408A1089_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-016",
   "category": "cerebrovascular",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "マンニトールや濃グリセリンなど高浸透圧薬投与時に注意すべき電解質異常として正しいのはどれか。",
+  "question": "マンニトール注射液の重大な副作用として添付文書に記載されている電解質異常はどれか。",
   "choices": [
-   "高ナトリウム血症などの電解質異常",
-   "高カリウム血症のみ",
-   "低カリウム血症のみ",
-   "低カルシウム血症のみ"
+   "代謝性アシドーシス、高カリウム血症、低ナトリウム血症",
+   "代謝性アルカローシス、低カリウム血症、高ナトリウム血症",
+   "高カルシウム血症のみ",
+   "電解質異常は起こらない"
   ],
   "correctIndex": 0,
-  "explanation": "高浸透圧薬は利尿作用に伴い、高ナトリウム血症などの電解質異常を来すことがあり、定期的なモニタリングが必要です。",
+  "explanation": "添付文書11.1.2に、重大な副作用として電解質異常(代謝性アシドーシス、高カリウム血症、低ナトリウム血症)が記載されています。また悪寒、電解質失調等の脱水症状にも注意が必要です。効能又は効果は急性腎不全の予防及び治療、脳圧降下及び脳容積の縮小、眼内圧降下です。",
   "source": {
-   "name": "マンニトール注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "20%マンニットール注射液「YD」 添付文書 11.1.2 重大な副作用(電解質異常)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190400A5037_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-017",
@@ -21077,11 +21077,11 @@
   "correctIndex": 1,
   "explanation": "rt-PAは出血リスクを高める病態(重篤な出血性素因、最近の大手術歴、頭蓋内出血の既往など)がある場合は禁忌とされています。",
   "source": {
-   "name": "アルテプラーゼ注射液 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アクチバシン注600万 ／ 添付文書 2.禁忌(頭蓋内出血の既往・出血性素因、大手術後14日以内)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3959402D1027_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-021",
@@ -21098,11 +21098,11 @@
   "correctIndex": 1,
   "explanation": "ワルファリン内服中の患者へのrt-PA投与可否は、PT-INR値が治療域の基準を超えていないかなどを確認して判断されます。",
   "source": {
-   "name": "アルテプラーゼ注射液 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アクチバシン注600万 ／ 添付文書 2.9 禁忌(PT-INRが1.7を超える患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3959402D1027_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-022",
@@ -23891,11 +23891,11 @@
   "correctIndex": 3,
   "explanation": "SSRIとMAO阻害薬の併用はセロトニン症候群のリスクを高めるため、併用禁忌とされています。",
   "source": {
-   "name": "セルトラリン塩酸塩錠 添付文書(併用禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セルトラリン錠25mg「トーワ」 添付文書 2.2 禁忌・10.1 併用禁忌(MAO阻害剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179046F1176_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-002",
@@ -23912,11 +23912,11 @@
   "correctIndex": 1,
   "explanation": "抗精神病薬は悪性症候群(高熱、筋強剛、意識障害など)を起こすことがあり、早期発見・対応が重要です。",
   "source": {
-   "name": "リスペリドン錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リスペリドン錠1mg「サワイ」 添付文書 重大な副作用(悪性症候群)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179038C1094_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-003",
@@ -23933,11 +23933,11 @@
   "correctIndex": 1,
   "explanation": "リチウムは治療域が狭く、リチウム中毒(振戦、意識障害など)を防ぐため定期的な血中濃度モニタリングが重要です。",
   "source": {
-   "name": "炭酸リチウム錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "炭酸リチウム錠100mg「大正」 添付文書 血清リチウム濃度の測定(投与初期は週1回、維持量では2〜3ヵ月に1回)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179017F1080_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-004",
@@ -23954,32 +23954,32 @@
   "correctIndex": 0,
   "explanation": "ベンゾジアゼピン系薬とアルコールはいずれも中枢神経抑制作用を持つため、併用により作用が増強され過鎮静のリスクが高まります。",
   "source": {
-   "name": "ジアゼパム錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジアゼパム錠2「サワイ」 添付文書 10.2 併用注意(中枢神経抑制剤・アルコール(飲酒))",
+   "url": "https://www.info.pmda.go.jp/go/pack/1124017F2046_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-005",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "バルプロ酸が禁忌となる代表的な患者は誰か。",
+  "question": "バルプロ酸ナトリウムの効能共通の禁忌として添付文書に記載されているのはどれか。",
   "choices": [
-   "痛風患者",
-   "気管支喘息患者",
-   "妊婦",
-   "高尿酸血症患者"
+   "重篤な肝障害のある患者、カルバペネム系抗生物質を投与中の患者、尿素サイクル異常症の患者",
+   "高血圧のある患者",
+   "糖尿病のある患者",
+   "高齢者すべて"
   ],
-  "correctIndex": 2,
-  "explanation": "バルプロ酸は催奇形性のリスクが報告されており、妊婦(妊娠する可能性のある場合を含む)には特に注意・原則禁忌とされています。",
+  "correctIndex": 0,
+  "explanation": "添付文書2.の効能共通の禁忌として、重篤な肝障害のある患者、カルバペネム系抗生物質を投与中の患者、尿素サイクル異常症の患者(重篤な高アンモニア血症があらわれることがある)が挙げられています。妊婦又は妊娠している可能性のある女性が禁忌となるのは、片頭痛発作の発症抑制の効能に限られます。",
   "source": {
-   "name": "バルプロ酸ナトリウム錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バルプロ酸ナトリウム錠100mg「アメ 添付文書 2.禁忌(効能共通)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1088_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-006",
@@ -23996,11 +23996,11 @@
   "correctIndex": 2,
   "explanation": "ドネペジルはコリン作動性の作用により徐脈を助長するおそれがあるため、徐脈や房室ブロックなどの心疾患がある患者では注意が必要です。",
   "source": {
-   "name": "ドネペジル塩酸塩錠 添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドネペジル塩酸塩錠3mg「NP」 添付文書 9.1.2(洞不全症候群等の心疾患)・重大な副作用(高度徐脈・心ブロック)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190012F1085_3_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-007",
