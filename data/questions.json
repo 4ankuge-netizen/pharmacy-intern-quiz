@@ -14252,11 +14252,11 @@
   "correctIndex": 1,
   "explanation": "SGLT2阻害薬とループ利尿薬はいずれも利尿作用を持つため、併用により脱水のリスクが高まることがあり注意が必要です。",
   "source": {
-   "name": "エンパグリフロジン錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジャディアンス錠10mg ／ 添付文書 9.1.2(脱水を起こしやすい患者: 利尿剤併用患者等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969023F1023_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-012",
@@ -14284,21 +14284,21 @@
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ピオグリタゾンが禁忌となる代表的な病態はどれか。",
+  "question": "ピオグリタゾンが禁忌となる患者として添付文書に記載されているのはどれか。",
   "choices": [
-   "心不全(NYHA分類の一定以上)",
-   "痛風",
-   "高尿酸血症",
-   "気管支喘息"
+   "心不全の患者及び心不全の既往歴のある患者",
+   "軽度の高血圧のある患者",
+   "軽度の脂質異常症のある患者",
+   "喫煙者"
   ],
   "correctIndex": 0,
-  "explanation": "ピオグリタゾンは水分貯留作用により心不全を悪化させるおそれがあるため、一定以上の心不全患者には禁忌とされています。",
+  "explanation": "添付文書2.1に、心不全の患者及び心不全の既往歴のある患者は禁忌と記載されています。動物試験で循環血漿量の増加に伴う代償性の変化と考えられる心重量の増加がみられ、臨床的にも心不全を増悪あるいは発症したとの報告があるためです。",
   "source": {
-   "name": "ピオグリタゾン塩酸塩錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アクトス錠15 ／ アクト 添付文書 2.1 禁忌(心不全の患者及び心不全の既往歴のある患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969007F1024_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-014",
@@ -14315,11 +14315,11 @@
   "correctIndex": 1,
   "explanation": "ピオグリタゾンは膀胱がんとの関連が一部報告されており、既往歴のある患者などでは注意が必要とされています。",
   "source": {
-   "name": "ピオグリタゾン塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アクトス錠15 ／ アクト 添付文書 8.5 重要な基本的注意(膀胱癌の発生リスク)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969007F1024_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-015",
@@ -14368,42 +14368,42 @@
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "グリニド系薬剤がSU薬と比較して食後高血糖是正に適するとされる理由として正しいのはどれか。",
+  "question": "ナテグリニド(速効型インスリン分泌促進薬)の効能又は効果として正しいのはどれか。",
   "choices": [
-   "SU薬より低血糖リスクが高いため",
-   "作用発現が速く、食後の血糖上昇に合わせて効果を発揮しやすいため",
-   "作用時間がSU薬より長いため",
-   "経口投与ができないため"
+   "2型糖尿病における食後血糖推移の改善",
+   "1型糖尿病における基礎インスリンの補充",
+   "糖尿病性ケトアシドーシスの治療",
+   "低血糖の治療"
   ],
-  "correctIndex": 1,
-  "explanation": "グリニド系薬剤はSU薬より作用発現が速く消失も速いため、食後の血糖上昇のタイミングに合わせた使用に適するとされています。",
+  "correctIndex": 0,
+  "explanation": "ナテグリニドの薬効分類名は速効型インスリン分泌促進薬で、効能又は効果は2型糖尿病における食後血糖推移の改善です。18.2.1では、健康成人に毎食前に投与した場合に毎食後の早期のインスリン分泌を促進し血糖上昇を抑制したことが示されています。",
   "source": {
-   "name": "ナテグリニド錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナテグリニド錠30mg「日医工」 添付文書 薬効分類名(速効型インスリン分泌促進薬)・4.効能又は効果・18.2",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969006F1062_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-018",
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "腎機能が低下した患者へのナテグリニド投与で注意すべき点はどれか。",
+  "question": "ナテグリニドが禁忌となる腎臓の状態として添付文書に記載されているのはどれか。",
   "choices": [
-   "低血糖のリスクが高まることがある",
-   "腎機能低下患者には禁忌である",
-   "効果がまったく発現しなくなる",
-   "腎機能にかかわらず用量調整は不要である"
+   "透析を必要とするような重篤な腎機能障害のある患者",
+   "軽度の腎機能障害のある患者",
+   "腎結石の既往がある患者",
+   "腎機能が正常な患者"
   ],
   "correctIndex": 0,
-  "explanation": "腎機能低下患者ではナテグリニドの代謝物が蓄積しやすく、低血糖のリスクが高まることがあるため注意が必要です。",
+  "explanation": "添付文書2.2に、透析を必要とするような重篤な腎機能障害のある患者は禁忌と記載されています。9.2の腎機能障害患者の項でも、重篤な腎機能障害のある患者では低血糖を起こすおそれがあるとされています。",
   "source": {
-   "name": "ナテグリニド錠 添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナテグリニド錠30mg「日医工」 添付文書 2.2 禁忌(透析を必要とするような重篤な腎機能障害)・9.2",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969006F1062_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-019",
@@ -14420,11 +14420,11 @@
   "correctIndex": 1,
   "explanation": "GLP-1受容体作動薬とインスリンの併用は血糖降下作用が重なるため、低血糖リスクの増加に注意が必要です。",
   "source": {
-   "name": "リラグルチド注射液 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビクトーザ皮下注18mg 添付文書 10.2 併用注意(糖尿病用薬: 特にSU剤・インスリン製剤との併用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499410G1021_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-020",
@@ -14441,32 +14441,32 @@
   "correctIndex": 0,
   "explanation": "インスリン依存状態でSGLT2阻害薬を使用する場合、インスリンの不適切な減量などにより正常血糖ケトアシドーシスのリスクが高まることがあります。",
   "source": {
-   "name": "エンパグリフロジン錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジャディアンス錠10mg ／ 添付文書 インスリン分泌能の低下・インスリン製剤の減量や中止時のケトアシドーシス",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969023F1023_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-021",
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "高齢のSU薬服用患者で低血糖が遷延しやすい理由として正しいのはどれか。",
+  "question": "グリメピリドで低血糖を起こすおそれのある患者・状態として添付文書に列挙されているのはどれか。",
   "choices": [
-   "高齢者ではインスリン分泌が亢進するため",
-   "高齢者ではSU薬の吸収が低下するため",
-   "肝・腎機能低下により薬剤の代謝・排泄が遅延しやすいため",
-   "高齢者では低血糖症状が出現しやすいため薬剤が早く代謝されるため"
+   "脳下垂体機能不全、栄養不良状態、激しい筋肉運動、過度のアルコール摂取、高齢者",
+   "肥満、高血圧、脂質異常症",
+   "喫煙、睡眠不足",
+   "軽度の貧血"
   ],
-  "correctIndex": 2,
-  "explanation": "高齢者は肝・腎機能の低下により、SU薬の代謝・排泄が遅延し、低血糖が遷延・重症化しやすいことに注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.1.1に、低血糖を起こすおそれのある患者・状態として脳下垂体機能不全又は副腎機能不全、栄養不良状態・飢餓状態・不規則な食事摂取・食事摂取量の不足又は衰弱状態、激しい筋肉運動、過度のアルコール摂取、高齢者が挙げられています。重篤な腎機能障害・肝機能障害のある患者は投与しないこととされています。",
   "source": {
-   "name": "グリメピリド錠 添付文書(高齢者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グリメピリド錠0.5mg「AA」 ／ 添付文書 9.1.1(低血糖を起こすおそれのある患者・状態)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3961008F1039_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-022",
@@ -14483,32 +14483,32 @@
   "correctIndex": 3,
   "explanation": "DPP-4阻害薬の中には腎排泄の関与が大きい薬剤があり、腎機能に応じた用量調整が必要とされています(リナグリプチンなど一部は調整不要)。",
   "source": {
-   "name": "シタグリプチンリン酸塩水和物錠 添付文書(腎機能障害患者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グラクティブ錠12.5mg ／ 添付文書 7.1 用法及び用量に関連する注意(腎機能障害時の用量調節)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969010F1026_1_36/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-023",
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "一部のSGLT2阻害薬で注意喚起されている骨折リスクに関する理解として正しいのはどれか。",
+  "question": "カナグリフロジンの副作用として添付文書に記載されている骨関連の事象はどれか。",
   "choices": [
-   "骨折リスクとSGLT2阻害薬は無関係であることが確立している",
-   "骨密度やカルシウム代謝への影響が指摘されている薬剤がある",
-   "骨折リスクは小児にのみ関連する",
-   "SGLT2阻害薬はすべて骨折リスクを低下させる"
+   "転倒、上腕骨骨折",
+   "骨肉腫",
+   "骨粗鬆症の改善",
+   "関節リウマチ"
   ],
-  "correctIndex": 1,
-  "explanation": "一部のSGLT2阻害薬では骨密度やカルシウム代謝への影響から骨折リスクが指摘されており、注意喚起がなされています。",
+  "correctIndex": 0,
+  "explanation": "カナグル錠の添付文書には、副作用として転倒、上腕骨骨折が記載されています。SGLT2阻害剤は尿糖排泄を増やすことで体液量が減少しやすく、脱水やそれに伴う転倒にも注意が必要です。",
   "source": {
-   "name": "カナグリフロジン錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カナグル錠100mg ／ カナ 添付文書 副作用(転倒、上腕骨骨折)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969022F1029_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-024",
@@ -14525,11 +14525,11 @@
   "correctIndex": 2,
   "explanation": "ピオグリタゾンは骨代謝への影響から、特に女性患者において骨折リスクの上昇が報告されています。",
   "source": {
-   "name": "ピオグリタゾン塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アクトス錠15 ／ アクト 添付文書 副作用(女性における骨折の発現頻度上昇)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969007F1024_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-025",
@@ -14567,11 +14567,11 @@
   "correctIndex": 0,
   "explanation": "アルコールは肝臓での糖新生を抑制するため低血糖を助長し、ビグアナイド薬服用中は乳酸アシドーシスリスクの増強にも注意が必要です。",
   "source": {
-   "name": "メトホルミン塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メトホルミン塩酸塩錠250mgMT「トー 添付文書 乳酸アシドーシスのリスク因子(過度のアルコール摂取を避けること)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3962002F2086_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-027",
