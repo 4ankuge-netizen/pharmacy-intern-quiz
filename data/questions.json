@@ -13895,11 +13895,11 @@
   "correctIndex": 3,
   "explanation": "レパグリニドはグリニド系薬剤に分類され、食後高血糖の改善を目的に食直前投与されます。",
   "source": {
-   "name": "レパグリニド錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レパグリニド錠0.25mg「サワイ」 添付文書 薬効分類名(速効型インスリン分泌促進剤)・18.1(SU受容体を介しATP感受性Kチャネルを閉鎖)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969013F1038_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-045",
@@ -13916,11 +13916,11 @@
   "correctIndex": 0,
   "explanation": "イメグリミンはミトコンドリアへの作用を介してインスリン分泌促進とインスリン抵抗性改善をあわせ持つとされる新規作用機序の薬剤です。",
   "source": {
-   "name": "イメグリミン塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ツイミーグ錠500mg 添付文書 18.1 作用機序(その作用機序はミトコンドリアへの作用を介するものと想定される)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969026F1027_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-046",
@@ -13937,11 +13937,11 @@
   "correctIndex": 1,
   "explanation": "チルゼパチドはGIP受容体とGLP-1受容体の両方に作用するデュアルアゴニストであり、血糖改善と体重減少が期待されます。",
   "source": {
-   "name": "チルゼパチド注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "マンジャロ皮下注2.5mgアテオス 添付文書 薬効分類名(持続性GIP/GLP-1受容体作動薬)・18.1(両受容体に結合して活性化)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499422G1024_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-047",
@@ -13979,11 +13979,11 @@
   "correctIndex": 2,
   "explanation": "ビルダグリプチンはDPP-4阻害薬に分類され、インクレチンの分解を抑制して血糖降下作用を示します。",
   "source": {
-   "name": "ビルダグリプチン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビルダグリプチン錠50mg「JG」 添付文書 薬効分類名(選択的DPP-4阻害薬)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969011F1039_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-049",
@@ -14000,11 +14000,11 @@
   "correctIndex": 2,
   "explanation": "ミグリトールはα-グルコシダーゼ阻害薬に分類され、小腸での糖質分解を遅らせます。",
   "source": {
-   "name": "ミグリトール錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミグリトール錠25mg「トーワ」 添付文書 18.1 作用機序(二糖類水解酵素(α-グルコシダーゼ)を阻害し糖質の消化・吸収を遅延)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969009F1031_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-050",
@@ -23387,11 +23387,11 @@
   "correctIndex": 2,
   "explanation": "アトモキセチンは非中枢神経刺激薬タイプのADHD治療薬です。",
   "source": {
-   "name": "アトモキセチン塩酸塩カプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ストラテラカプセル5mg ／ 添付文書 薬効分類名(注意欠陥/多動性障害治療剤)・4. 効能又は効果(AD/HD)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179050M1023_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-028",
@@ -23408,11 +23408,11 @@
   "correctIndex": 3,
   "explanation": "ジスルフィラムはアルデヒド脱水素酵素を阻害し、飲酒後の不快な症状を起こすことで断酒を補助する抗酒薬です。",
   "source": {
-   "name": "ジスルフィラム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ノックビン原末 添付文書 薬効分類名(抗酒癖剤)・4. 効能又は効果(慢性アルコール中毒に対する抗酒療法)・18.1.1",
+   "url": "https://www.info.pmda.go.jp/go/pack/3939001B1034_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-029",
@@ -23807,11 +23807,11 @@
   "correctIndex": 2,
   "explanation": "トラゾドンは鎮静作用のある抗うつ薬で、うつ病に伴う不眠などにも配慮しつつ用いられます。",
   "source": {
-   "name": "トラゾドン塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "トラゾドン塩酸塩錠25mg「アメル」 添付文書 薬効分類名(うつ病・うつ状態治療剤)・18.4 抗うつ、抗不安・鎮静作用の検討・8.1(眠気)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179037F1053_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-048",
@@ -23828,11 +23828,11 @@
   "correctIndex": 2,
   "explanation": "フェニトインは古くから用いられる抗てんかん薬で、部分発作や全般強直間代発作などに用いられます。",
   "source": {
-   "name": "フェニトイン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレビアチン散10％ 添付文書 薬効分類名(抗てんかん剤)・4. 効能又は効果(てんかんのけいれん発作)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1132002B1060_1_23/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-049",
@@ -26285,11 +26285,11 @@
   "correctIndex": 0,
   "explanation": "モンテルカストはロイコトリエン受容体拮抗薬に分類され、気管支喘息やアレルギー性鼻炎に用いられます。",
   "source": {
-   "name": "モンテルカストナトリウム錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "モンテルカスト錠5mg「サンド」 添付文書 薬効分類名(ロイコトリエン受容体拮抗剤)・18.1(CysLT1受容体)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490026F2210_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-012",
@@ -26327,11 +26327,11 @@
   "correctIndex": 2,
   "explanation": "デュピルマブはIL-4・IL-13のシグナルを阻害する生物学的製剤で、アトピー性皮膚炎や気管支喘息などに用いられます。",
   "source": {
-   "name": "デュピルマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュピクセント皮下注300mgペン 添付文書 薬効分類名(ヒト型抗ヒトIL-4/13受容体モノクローナル抗体)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490405G1024_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-014",
@@ -26348,11 +26348,11 @@
   "correctIndex": 3,
   "explanation": "メポリズマブは抗IL-5抗体で、好酸球性の重症喘息などに用いられる生物学的製剤です。",
   "source": {
-   "name": "メポリズマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヌーカラ皮下注100mgペン ／ 添付文書 薬効分類名(ヒト化抗IL-5モノクローナル抗体)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2290401G1026_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-015",
@@ -26369,11 +26369,11 @@
   "correctIndex": 1,
   "explanation": "アダリムマブはTNF-αを標的とする生物学的製剤で、関節リウマチなどの治療に用いられます。",
   "source": {
-   "name": "アダリムマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダリムマブBS皮下注20mgシリンジ0. 添付文書 薬効分類名(ヒト型抗ヒトTNFαモノクローナル抗体製剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999457G1020_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-016",
@@ -26390,11 +26390,11 @@
   "correctIndex": 0,
   "explanation": "サラゾスルファピリジンは抗リウマチ薬の一つで、関節リウマチの治療に用いられます。",
   "source": {
-   "name": "サラゾスルファピリジン腸溶錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "サラゾスルファピリジン腸溶錠250mg 添付文書 薬効分類名(抗リウマチ剤)・4. 効能又は効果(関節リウマチ)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6219001H1102_2_01/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-017",
@@ -26411,11 +26411,11 @@
   "correctIndex": 0,
   "explanation": "ヒドロキシクロロキンはもともと抗マラリア薬ですが、全身性エリテマトーデスなどの自己免疫疾患治療にも用いられます。",
   "source": {
-   "name": "ヒドロキシクロロキン硫酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロキシクロロキン硫酸塩錠200mg 添付文書 4. 効能又は効果(皮膚エリテマトーデス、全身性エリテマトーデス)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999038F1037_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-018",
@@ -26432,11 +26432,11 @@
   "correctIndex": 1,
   "explanation": "タクロリムスは全身投与では免疫抑制薬として、臓器移植後の拒絶反応抑制や関節リウマチなどの治療に用いられます。",
   "source": {
-   "name": "タクロリムスカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タクロリムスカプセル5mg「JG」 添付文書 薬効分類名(免疫抑制剤)・4. 効能又は効果(臓器移植における拒絶反応の抑制・潰瘍性大腸炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999014M3041_1_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-019",
@@ -26453,11 +26453,11 @@
   "correctIndex": 0,
   "explanation": "プレドニゾロンは経口・注射などで全身投与される代表的な合成副腎皮質ステロイド薬です。",
   "source": {
-   "name": "プレドニゾロン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プレドニゾロン錠5mg「ミタ」 添付文書 薬効分類名(合成副腎皮質ホルモン剤)・4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2456001F1396_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-020",
@@ -26831,11 +26831,11 @@
   "correctIndex": 2,
   "explanation": "JAK阻害薬は経口投与可能な分子標的治療薬で、メトトレキサート等で効果不十分な関節リウマチの治療選択肢の一つです。",
   "source": {
-   "name": "トファシチニブクエン酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゼルヤンツ錠5mg 添付文書 薬効分類名(ヤヌスキナーゼ(JAK)阻害剤)・4. 効能又は効果(既存治療で効果不十分な関節リウマチ)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999034F1020_2_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-038",
@@ -26999,11 +26999,11 @@
   "correctIndex": 3,
   "explanation": "インフリキシマブは点滴静注で投与されるTNF阻害薬で、関節リウマチなどの治療に用いられます。",
   "source": {
-   "name": "インフリキシマブ注射液 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レミケード点滴静注用100 添付文書 製品名(レミケード点滴静注用)・6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/2399402F1026_1_49/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-046",
@@ -27020,11 +27020,11 @@
   "correctIndex": 3,
   "explanation": "シクロスポリンはカルシニューリン阻害薬に分類される免疫抑制薬で、臓器移植後の拒絶反応抑制や乾癬・関節リウマチなどに用いられます。",
   "source": {
-   "name": "シクロスポリンカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "シクロスポリンカプセル10mg「サン 添付文書 薬効分類名(免疫抑制剤)・4. 効能又は効果(臓器移植の拒絶反応抑制・ベーチェット病・尋常性乾癬等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999004M3137_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-047",
