@@ -4,3 +4,4 @@ node_modules/
 .superpowers/
 .claude/scheduled_tasks.lock
 .pmda-cache/
+.guideline-cache/
