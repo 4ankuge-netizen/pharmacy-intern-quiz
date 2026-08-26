@@ -7322,32 +7322,32 @@
   "correctIndex": 2,
   "explanation": "ジヒドロピリジン系Ca拮抗薬は主に血管平滑筋のカルシウムチャネルを阻害し、血管を拡張させて血圧を下げます。",
   "source": {
-   "name": "アムロジピン錠 インタビューフォーム(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アムロジピン錠2.5mg「あすか」 添付文書 18.1 作用機序(冠血管・末梢血管の平滑筋を弛緩、血管選択性)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171022F1193_2_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-009",
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "スピロノラクトン(抗アルドステロン薬)の代表的な副作用はどれか。",
+  "question": "スピロノラクトンが禁忌となる患者として添付文書に記載されているのはどれか。",
   "choices": [
-   "歯肉増生、頻脈",
-   "高カリウム血症、女性化乳房",
-   "空咳、浮腫",
-   "低カリウム血症、脱毛"
+   "高カリウム血症の患者",
+   "低カリウム血症の患者",
+   "高血圧の患者",
+   "浮腫のある患者"
   ],
-  "correctIndex": 1,
-  "explanation": "スピロノラクトンはアルドステロン受容体拮抗作用により高カリウム血症を、抗アンドロゲン作用により女性化乳房を起こすことがあります。",
+  "correctIndex": 0,
+  "explanation": "スピロノラクトンは遠位尿細管のアルドステロン依存性ナトリウム-カリウム交換部位に働き、ナトリウムと水の排泄を促進してカリウムの排泄を抑制します。このため高カリウム血症の患者、無尿又は急性腎不全の患者、アジソン病の患者は禁忌とされています。",
   "source": {
-   "name": "スピロノラクトン錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スピロノラクトン錠25mg「NP」 添付文書 2.禁忌(高カリウム血症の患者)・18.薬効薬理",
+   "url": "https://www.info.pmda.go.jp/go/pack/2133001F1654_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-010",
@@ -7375,21 +7375,21 @@
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ロサルタンが他のARBと異なる特徴的な作用として知られているのはどれか。",
+  "question": "ロサルタンの副作用として添付文書に記載されている検査値の変動はどれか。",
   "choices": [
-   "強い利尿作用が主作用である",
-   "著明な血糖降下作用がある",
-   "β受容体を遮断する作用がある",
-   "尿酸値をやや低下させる作用がある"
+   "血中尿酸値上昇",
+   "血中尿酸値低下",
+   "血糖値の著しい低下",
+   "血中カルシウム値低下"
   ],
-  "correctIndex": 3,
-  "explanation": "ロサルタンは尿酸トランスポーターに対する作用により、他のARBと異なり尿酸値をやや低下させる作用が知られています。",
+  "correctIndex": 0,
+  "explanation": "ロサルタンカリウム錠の添付文書には、その他の副作用としてほてり、倦怠感、浮腫、筋肉痛、総コレステロール上昇、CK上昇とともに血中尿酸値上昇が記載されています。効能又は効果は高血圧症と、高血圧及び蛋白尿を伴う2型糖尿病における糖尿病性腎症です。",
   "source": {
-   "name": "ロサルタンカリウム錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ロサルタンカリウム錠25mg「アメル 添付文書 11.2 その他の副作用(血中尿酸値上昇)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149039F1244_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-012",
@@ -7406,11 +7406,11 @@
   "correctIndex": 0,
   "explanation": "エプレレノンはカリウム保持作用があるため、高カリウム血症や重度腎機能障害のある患者では禁忌とされています。",
   "source": {
-   "name": "エプレレノン錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エプレレノン錠25mg「杏林」 添付文書 2.2・2.3 禁忌(高カリウム血症、重度の腎機能障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149045F1037_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-013",
@@ -7448,11 +7448,11 @@
   "correctIndex": 3,
   "explanation": "α1遮断薬は血管拡張作用により起立性低血圧を起こしやすく、特に投与初期のめまい・立ちくらみに注意が必要です。",
   "source": {
-   "name": "ドキサゾシンメシル酸塩錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドキサゾシン錠0.5mg「テバ」 添付文書 11.2 その他の副作用(循環器: 起立性低血圧)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149026F1239_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-015",
@@ -7469,32 +7469,32 @@
   "correctIndex": 1,
   "explanation": "クロニジンは急な中止により交感神経活動が急激に亢進し、リバウンド性の血圧上昇を来すことがあるため漸減が必要です。",
   "source": {
-   "name": "クロニジン塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠75µg ／ カ 添付文書 8.2 重要な基本的注意(急な中止によるリバウンド現象)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149001F1034_2_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-016",
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ヒドララジンの代表的な副作用として正しいのはどれか。",
+  "question": "ヒドララジンの重大な副作用として添付文書に記載されているのはどれか。",
   "choices": [
-   "高カリウム血症",
-   "徐脈",
-   "歯肉増生",
-   "頻脈、狼瘡様症候群"
+   "SLE様症状(発熱、紅斑、関節痛、胸部痛等)",
+   "重度の低血糖",
+   "難聴",
+   "高血糖"
   ],
-  "correctIndex": 3,
-  "explanation": "ヒドララジンは反射性の頻脈や、長期使用で狼瘡様症候群を来すことが知られています。",
+  "correctIndex": 0,
+  "explanation": "添付文書11.1.1に、SLE様症状(発熱、紅斑、関節痛、胸部痛等)が重大な副作用として記載されています。その他の副作用には頻脈、心悸亢進、起立性低血圧、LE細胞陽性などがあります。ヒドララジンは末梢細動脈の血管平滑筋に直接作用して血管を拡張します。",
   "source": {
-   "name": "ヒドララジン塩酸塩錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン注射用20mg 添付文書 11.1.1 重大な副作用(SLE様症状)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2142400D1049_2_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-017",
@@ -7511,32 +7511,32 @@
   "correctIndex": 3,
   "explanation": "ニカルジピン注射液は急激な降圧を来しうるため、持続的な血圧モニタリングのもとで投与速度を慎重に調整します。",
   "source": {
-   "name": "ニカルジピン塩酸塩注射液 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニカルジピン塩酸塩注射液2mg「サ 添付文書 6.用法及び用量(血圧をモニターしながら点滴速度を調節)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149400A1132_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-018",
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "カルベジロールが他のβ遮断薬と比較して代謝面で注目される特徴として正しいのはどれか。",
+  "question": "カルベジロール投与時の血糖への影響として添付文書に記載されているのはどれか。",
   "choices": [
-   "代謝への影響は報告されていない",
-   "糖・脂質代謝への悪影響が特に強いとされる",
-   "必ず低血糖を誘発するとされる",
-   "糖・脂質代謝への悪影響が比較的少ないとされる"
+   "投与初期・増量時に血糖値の変動が起こりやすく、低血糖症状をマスクしやすい",
+   "血糖値にはまったく影響しない",
+   "必ず血糖値を下げる",
+   "糖尿病患者には安全に使える"
   ],
-  "correctIndex": 3,
-  "explanation": "カルベジロールはα1遮断作用をあわせ持つことなどから、他のβ遮断薬と比較して糖・脂質代謝への悪影響が少ないとされています。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.6に、投与初期及び増量時は心不全の悪化、浮腫、体重増加、めまい、低血圧、徐脈、血糖値の変動及び腎機能の悪化が起こりやすいと記載されています。また9.1.1に、特発性低血糖症・コントロール不十分な糖尿病等の患者では低血糖症状を起こしやすく、かつその症状をマスクしやすいため血糖値に注意することとされています。",
   "source": {
-   "name": "カルベジロール錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルベジロール錠1.25mg「JG」 添付文書 8.6 重要な基本的注意・9.1.1(血糖値の変動、低血糖症状のマスク)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149032F1137_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-019",
@@ -7553,11 +7553,11 @@
   "correctIndex": 1,
   "explanation": "アテノロールは腎排泄の関与が大きいため、腎機能低下患者では排泄遅延による作用増強を考慮した用量調整が必要です。",
   "source": {
-   "name": "アテノロール錠 添付文書(腎機能障害患者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アテノロール錠25mg「日新」 添付文書 9.2 腎機能障害患者(クレアチニン・クリアランス35mL/分以下では投与間隔をのばす)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123011F1295_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-020",
@@ -7574,32 +7574,32 @@
   "correctIndex": 1,
   "explanation": "インダパミドはチアジド系類似の利尿薬であり、低ナトリウム血症や低カリウム血症などの電解質異常に注意が必要です。",
   "source": {
-   "name": "インダパミド錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠1 ／ ナ 添付文書 2.3 禁忌・8.2(低ナトリウム血症・低カリウム血症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149012F1059_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-021",
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ドキサゾシンなどα1遮断薬の投与初期に注意すべき現象として正しいのはどれか。",
+  "question": "ドキサゾシン投与時の血圧測定について添付文書が求めているのはどれか。",
   "choices": [
-   "初回投与時に急激な血圧低下(first-dose phenomenon)が生じることがある",
-   "初回投与時の注意は特に必要ない",
-   "初回投与時に血圧が上昇することが多い",
-   "投与初期に高カリウム血症が生じやすい"
+   "臥位のみならず立位又は坐位でも測定し、体位変換による血圧変化を考慮する",
+   "臥位でのみ測定すればよい",
+   "血圧測定は不要である",
+   "1日1回朝のみ測定する"
   ],
   "correctIndex": 0,
-  "explanation": "α1遮断薬は投与初期に急激な血圧低下(first-dose phenomenon)を起こすことがあるため、少量から開始し就寝前投与などが工夫されます。",
+  "explanation": "添付文書8.1に、起立性低血圧があらわれることがあるので臥位のみならず立位又は坐位で血圧測定を行い、体位変換による血圧変化を考慮して坐位にて血圧をコントロールすることと記載されています。用法は1日1回0.5mgから開始し1〜2週間の間隔で漸増します。",
   "source": {
-   "name": "ドキサゾシンメシル酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドキサゾシン錠0.5mg「テバ」 添付文書 8.1 重要な基本的注意(臥位・立位又は坐位での血圧測定)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149026F1239_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-022",
@@ -7616,32 +7616,32 @@
   "correctIndex": 3,
   "explanation": "NSAIDsは腎血流を維持するプロスタグランジン産生を抑制するため、ARB・ACE阻害薬との併用で腎機能低下や降圧効果減弱のリスクがあります。",
   "source": {
-   "name": "カンデサルタン シレキセチル錠(ブロプレス)インタビューフォーム(第15版・2025年9月改訂) Ⅷ.7.(2)非ステロイド性消炎鎮痛剤(NSAIDs)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カンデサルタン錠2mg「あすか」 添付文書 10.2 併用注意(非ステロイド性消炎鎮痛剤による降圧作用の減弱)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149040F1034_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-023",
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ジヒドロピリジン系Ca拮抗薬と非ジヒドロピリジン系Ca拮抗薬を併用する際の注意点はどれか。",
+  "question": "ベラパミルとクラスI抗不整脈剤やβ遮断剤を併用する際に注意すべきこととして添付文書に記載されているのはどれか。",
   "choices": [
-   "併用により降圧効果は必ず消失する",
-   "相互作用は報告されていない",
-   "徐脈や心抑制などの副作用が増強するおそれがある",
-   "併用が積極的に推奨されている組み合わせである"
+   "心機能低下、高度の徐脈、房室ブロックがあらわれることがある",
+   "降圧作用が完全に失われる",
+   "肝機能障害のみが問題となる",
+   "併用による影響はない"
   ],
-  "correctIndex": 2,
-  "explanation": "非ジヒドロピリジン系Ca拮抗薬は心抑制作用を持つため、他のCa拮抗薬との併用で徐脈や心抑制が増強するおそれがあります。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.3に、クラスI抗不整脈剤・β遮断剤との併用により心機能低下、高度の徐脈、房室ブロックがあらわれることがあり、ジギタリスとの併用でも高度の徐脈・房室ブロックがあらわれることがあると記載されています。併用時は自覚症状に注意し定期的に心電図検査を行います。",
   "source": {
-   "name": "ベラパミル塩酸塩錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ベラパミル塩酸塩錠40mg「JG」 添付文書 8.3 重要な基本的注意(クラスI抗不整脈剤・β遮断剤との併用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171008F1118_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-024",
