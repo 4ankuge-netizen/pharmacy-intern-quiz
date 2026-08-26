@@ -1285,42 +1285,42 @@
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ドキソルビシンなどアントラサイクリン系薬剤で総投与量の管理が重要とされる理由はどれか。",
+  "question": "ドキソルビシン塩酸塩の総投与量の上限として添付文書が定めているのはどれか。",
   "choices": [
-   "総投与量は腎毒性のみに関係するため",
-   "総投与量の管理は不要とされているため",
-   "累積投与量に応じて心毒性のリスクが高まるため",
-   "累積投与量にかかわらず心毒性は生じないため"
+   "500mg(力価)/m2(体表面積)以下",
+   "50mg(力価)/m2以下",
+   "5,000mg(力価)/m2以下",
+   "上限は定められていない"
   ],
-  "correctIndex": 2,
-  "explanation": "アントラサイクリン系薬剤は累積投与量に応じて心筋障害のリスクが高まるため、総投与量の管理と心機能モニタリングが重要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書の用法及び用量に、ドキソルビシン塩酸塩の総投与量は500mg(力価)/m2(体表面積)以下とすると記載されています。また禁忌には心機能異常又はその既往歴のある患者(心筋障害があらわれることがある)が挙げられており、総投与量の管理と心機能の確認が重要です。",
   "source": {
-   "name": "ドキソルビシン塩酸塩注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドキソルビシン塩酸塩注射液10mg「 添付文書 6.用法及び用量(総投与量の上限)・2.1 禁忌",
+   "url": "https://www.info.pmda.go.jp/go/pack/4235402A2021_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-014",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "オキサリプラチンの末梢神経障害に特徴的な誘因として正しいのはどれか。",
+  "question": "オキサリプラチンの末梢神経症状・咽頭喉頭感覚異常について、添付文書が患者に指導するよう求めている内容はどれか。",
   "choices": [
-   "寒冷刺激により症状が誘発・増悪しやすい",
-   "運動により症状が改善しやすい",
-   "温熱刺激により症状が誘発されやすい",
-   "日光曝露により症状が誘発されやすい"
+   "低温や冷たいものへの曝露で誘発・悪化するため、冷たい飲み物や氷を避け、低温時に皮膚を露出しない",
+   "高温環境を避けること",
+   "水分摂取を制限すること",
+   "特に指導は不要である"
   ],
   "correctIndex": 0,
-  "explanation": "オキサリプラチンによる末梢神経障害は寒冷刺激で誘発・増悪しやすいという特徴があり、患者指導が重要です。",
+  "explanation": "添付文書8.1に、末梢神経症状・咽頭喉頭感覚異常は特に低温又は冷たいものへの曝露により誘発又は悪化すること、多くは投与毎にあらわれるが休薬により回復する場合が多いことを患者に十分説明し、冷たい飲み物や氷の使用を避け、低温時には皮膚を露出しないよう指導することと記載されています。",
   "source": {
-   "name": "オキサリプラチン注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オキサリプラチン点滴静注液50mg「N 添付文書 8.1 重要な基本的注意(低温・冷たいものへの曝露)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291410A1169_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-015",
@@ -1337,11 +1337,11 @@
   "correctIndex": 1,
   "explanation": "イリノテカンによる早発性下痢はコリン作動性作用による腸管運動亢進が関与し、遅発性下痢とは機序が異なります。",
   "source": {
-   "name": "イリノテカン塩酸塩水和物注射液 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イリノテカン塩酸塩点滴静注液40mg 添付文書 副作用(早発型下痢はコリン作動性と考えられる)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240404A1067_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-016",
@@ -1358,11 +1358,11 @@
   "correctIndex": 3,
   "explanation": "ベバシズマブは血管新生阻害作用により、高血圧、出血、消化管穿孔などの重大な副作用に注意が必要です。",
   "source": {
-   "name": "ベバシズマブ注射液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アバスチン点滴静注用100mg/4mL 添付文書 11.1 重大な副作用(消化管穿孔・出血)・11.2(高血圧)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291413A1022_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-017",
@@ -1379,11 +1379,11 @@
   "correctIndex": 3,
   "explanation": "トラスツズマブは心毒性のリスクがあるため、投与前後に心エコーなどによる心機能評価が推奨されます。",
   "source": {
-   "name": "トラスツズマブ注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ハーセプチン注射用60 添付文書 8. 重要な基本的注意(投与前の心機能確認、投与中の心エコー・LVEF)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291406D5024_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-018",
@@ -1400,11 +1400,11 @@
   "correctIndex": 0,
   "explanation": "リツキシマブは初回投与時にinfusion reactionを起こしやすいため、抗ヒスタミン薬などの前投薬が行われます。",
   "source": {
-   "name": "リツキシマブ注射液 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リツキサン点滴静注100mg 添付文書 7.1 用法及び用量に関連する注意(30分前の抗ヒスタミン剤・解熱鎮痛剤の前投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291407A1035_2_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-019",
@@ -1442,11 +1442,11 @@
   "correctIndex": 1,
   "explanation": "イマチニブは主にCYP3A4で代謝されるため、CYP3A4を阻害するアゾール系抗真菌薬との併用で血中濃度上昇に注意が必要です。",
   "source": {
-   "name": "イマチニブ錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イマチニブ錠100mg「JG」 添付文書 10.2 併用注意(アゾール系抗真菌剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291011F1141_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-021",
@@ -1484,32 +1484,32 @@
   "correctIndex": 1,
   "explanation": "タモキシフェンはCYP2D6により活性代謝物に変換されるため、CYP2D6阻害作用の強いSSRIとの併用で効果減弱が懸念されます。",
   "source": {
-   "name": "タモキシフェンクエン酸塩錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ノルバデックス錠10mg 添付文書 10.2 併用注意(SSRI・パロキセチン等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291003F1163_1_20/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-023",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ロイプロレリンなどGnRHアゴニスト投与初期に生じる「フレアアップ現象」として正しいのはどれか。",
+  "question": "リュープロレリン酢酸塩の投与初期にみられることがある現象として添付文書に記載されているのはどれか。",
   "choices": [
-   "アレルギー反応の総称",
-   "骨髄抑制の別名",
-   "投与直後から急激にホルモンが低下する現象",
-   "一過性にテストステロンなどのホルモンが上昇し症状が悪化しうる現象"
+   "下垂体-性腺系刺激作用による血清エストロゲン濃度の上昇に伴う骨疼痛の一過性増悪",
+   "投与直後の重度の低血糖",
+   "投与初期の急激な血圧上昇",
+   "投与初期の脱毛"
   ],
-  "correctIndex": 3,
-  "explanation": "GnRHアゴニストは投与初期に一過性のホルモン上昇(フレアアップ)を来すことがあり、前立腺がんでは骨痛増悪などに注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.9に、初回投与初期に高活性LH-RH誘導体としての下垂体-性腺系刺激作用による血清エストロゲン濃度の上昇に伴って骨疼痛の一過性増悪等がみられることがあると記載されています。また4週を超える間隔で投与すると性腺ホルモン濃度が再度上昇し臨床所見が一過性に悪化するおそれがあるため、4週に1回の用法を守ります。",
   "source": {
-   "name": "リュープロレリン酢酸塩注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リュープロレリン酢酸塩注射用キ 添付文書 8.9 重要な基本的注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499407G1046_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-024",
