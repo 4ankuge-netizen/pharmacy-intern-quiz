@@ -6335,11 +6335,11 @@
   "correctIndex": 2,
   "explanation": "ニフェジピンはジヒドロピリジン系Ca拮抗薬で、血管を拡張させて血圧を下げます。",
   "source": {
-   "name": "ニフェジピン徐放錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニフェジピンCR錠10mg「三和」 添付文書 薬効分類名(持続性Ca拮抗剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171014G3120_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-012",
@@ -6377,11 +6377,11 @@
   "correctIndex": 1,
   "explanation": "テルミサルタンはARBに分類され、半減期が長く1日1回投与で用いられます。",
   "source": {
-   "name": "テルミサルタン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テルミサルタン錠20mg「FFP」 添付文書 薬効分類名(胆汁排泄型持続性AT1受容体ブロッカー)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149042F1050_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-014",
@@ -6398,11 +6398,11 @@
   "correctIndex": 1,
   "explanation": "バルサルタンはARBに分類され、アンジオテンシンII受容体を選択的に遮断します。",
   "source": {
-   "name": "バルサルタン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バルサルタン錠20mg「JG」 ／ 添付文書 薬効分類名(選択的AT1受容体ブロッカー)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149041F1080_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-015",
@@ -6419,11 +6419,11 @@
   "correctIndex": 2,
   "explanation": "イミダプリルはACE阻害薬に分類され、アンジオテンシン変換酵素を阻害します。",
   "source": {
-   "name": "イミダプリル塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イミダプリル塩酸塩錠10mg「PH」 添付文書 薬効分類名(アンジオテンシン変換選択性阻害剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2144008F3105_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-016",
@@ -6440,11 +6440,11 @@
   "correctIndex": 0,
   "explanation": "ペリンドプリルはACE阻害薬に分類される降圧薬です。",
   "source": {
-   "name": "ペリンドプリルエルブミン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペリンドプリルエルブミン錠2mg「 添付文書 薬効分類名(持続性組織ACE阻害剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2144012F1095_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-017",
@@ -6650,11 +6650,11 @@
   "correctIndex": 3,
   "explanation": "アジルサルタンはARBに分類され、強力な降圧効果を持つとされています。",
   "source": {
-   "name": "アジルサルタン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠10mg「JG」 ／ 添付文書 薬効分類名(持続性AT1レセプターブロッカー)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149048F1030_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-027",
@@ -13202,11 +13202,11 @@
   "correctIndex": 0,
   "explanation": "ダパグリフロジンはSGLT2阻害薬に分類され、尿中への糖排泄を促進します。",
   "source": {
-   "name": "ダパグリフロジン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ダパグリフロジン錠5mg「EP」 添付文書 薬効分類名(選択的SGLT2阻害剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969019F1051_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-012",
@@ -13244,11 +13244,11 @@
   "correctIndex": 3,
   "explanation": "リナグリプチンはDPP-4阻害薬に分類され、主に胆汁排泄される点が他のDPP-4阻害薬と異なる特徴です。",
   "source": {
-   "name": "リナグリプチン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リナグリプチン錠5mg「ZE」 添付文書 薬効分類名(胆汁排泄型選択的DPP-4阻害剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/39690B3F1074_1_01/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-014",
@@ -13286,11 +13286,11 @@
   "correctIndex": 1,
   "explanation": "セマグルチドはGLP-1受容体作動薬に分類され、注射薬と経口薬の両方の剤形があります。",
   "source": {
-   "name": "セマグルチド注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オゼンピック皮下注2mg 添付文書 薬効分類名(2型糖尿病治療剤 持続性GLP-1受容体作動薬)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499418G4027_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-016",
@@ -13307,11 +13307,11 @@
   "correctIndex": 3,
   "explanation": "デュラグルチドは週1回投与のGLP-1受容体作動薬で、患者の投与負担軽減が特徴です。",
   "source": {
-   "name": "デュラグルチド注射液 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "トルリシティ皮下注0.75mgアテオス 添付文書 薬効分類名(持続性GLP-1受容体作動薬)・7.1(週1回投与する薬剤であり同一曜日に投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499416G1029_1_23/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-017",
@@ -13391,11 +13391,11 @@
   "correctIndex": 3,
   "explanation": "グルカゴン注射薬は肝グリコーゲンの分解を促進し血糖値を上昇させるため、意識障害を伴う重症低血糖時の緊急治療に用いられます。",
   "source": {
-   "name": "グルカゴン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グルカゴンGノボ注射用1mg 添付文書 4.効能又は効果(低血糖時の救急処置)",
+   "url": "https://www.info.pmda.go.jp/go/pack/7229402D1036_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-021",
@@ -13874,11 +13874,11 @@
   "correctIndex": 1,
   "explanation": "ボグリボースはα-グルコシダーゼ阻害薬に分類され、食後の急激な血糖上昇を抑えます。",
   "source": {
-   "name": "ボグリボース錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ボグリボース錠0.2mg「杏林」 添付文書 18.1.1 作用機序(二糖類水解酵素(α-グルコシダーゼ)を阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969004F1306_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-044",
@@ -17003,11 +17003,11 @@
   "correctIndex": 2,
   "explanation": "一部のスタチンはコレステロール合成が高まる夜間に効果を発揮しやすいことから、就寝前の服用が指定されることがあります。",
   "source": {
-   "name": "シンバスタチン錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "シンバスタチン錠5mg「あすか」 添付文書 7. 用法及び用量に関連する注意(コレステロールの生合成は夜間に亢進・1日1回夕食後投与が望ましい)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2189011F1289_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-035",
@@ -17234,11 +17234,11 @@
   "correctIndex": 2,
   "explanation": "ベラプロストはプロスタサイクリン誘導体で、血管拡張作用と抗血小板作用をあわせ持つ薬剤です。",
   "source": {
-   "name": "ベラプロストナトリウム錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ベラプロストナトリウム錠20μg「JG 添付文書 薬効分類名(経口プロスタグランジンI2誘導体製剤)・18.1(抗血小板作用、血管拡張作用等を示す)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399005F1277_1_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-046",
@@ -17255,11 +17255,11 @@
   "correctIndex": 3,
   "explanation": "ノルアドレナリンは強力な血管収縮作用により血圧を上昇させる昇圧薬で、ショック状態などの緊急時に用いられます。",
   "source": {
-   "name": "ノルアドレナリン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ノルアドリナリン注1mg 添付文書 薬効分類名(血圧上昇剤)・4.効能又は効果(急性低血圧またはショック時の補助治療)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2451401A1034_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-047",
@@ -19901,11 +19901,11 @@
   "correctIndex": 0,
   "explanation": "濃グリセリンは浸透圧利尿作用により脳浮腫を軽減し、頭蓋内圧亢進の管理に用いられます。",
   "source": {
-   "name": "濃グリセリン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グリセオール注 ／ グリ 添付文書 薬効分類名(頭蓋内圧亢進・頭蓋内浮腫治療剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190501A4084_3_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-015",
@@ -19964,11 +19964,11 @@
   "correctIndex": 1,
   "explanation": "脳循環代謝改善薬は脳梗塞後遺症に伴うめまいなどの症状改善を目的として慢性期に用いられることがあります。",
   "source": {
-   "name": "イブジラストカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ケタスカプセル10mg 添付文書 4. 効能又は効果(脳梗塞後遺症に伴う慢性脳循環障害によるめまいの改善)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490010N1021_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-018",
@@ -29456,11 +29456,11 @@
   "correctIndex": 1,
   "explanation": "オセルタミビルはノイラミニダーゼ阻害薬で、インフルエンザウイルス感染症の治療・予防に用いられます。",
   "source": {
-   "name": "オセルタミビルリン酸塩カプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タミフルカプセル75 添付文書 薬効分類名(抗インフルエンザウイルス剤)・4.効能又は効果(A型又はB型インフルエンザウイルス感染症及びその予防)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250021M1027_1_40/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-006",
@@ -29729,11 +29729,11 @@
   "correctIndex": 1,
   "explanation": "メトロニダゾールは嫌気性菌感染症やトリコモナス症などの原虫感染症の治療に用いられます。",
   "source": {
-   "name": "メトロニダゾール錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フラジール内服錠250mg 添付文書 4.効能・効果(トリコモナス症・嫌気性菌感染症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6419002F1131_2_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-019",
@@ -29750,11 +29750,11 @@
   "correctIndex": 1,
   "explanation": "クリンダマイシンはリンコマイシン系抗菌薬に分類され、嫌気性菌を含む感染症治療に用いられます。",
   "source": {
-   "name": "クリンダマイシン塩酸塩カプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ダラシンカプセル75mg ／ 添付文書 2.1 禁忌(本剤の成分又はリンコマイシン系抗生物質に対し過敏症)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/6112001M1031_3_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-020",
@@ -29771,11 +29771,11 @@
   "correctIndex": 3,
   "explanation": "ドキシサイクリンはテトラサイクリン系抗菌薬に分類されます。",
   "source": {
-   "name": "ドキシサイクリン塩酸塩水和物錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビブラマイシン錠50mg ／ 添付文書 薬効分類名(テトラサイクリン系抗生物質)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6152004F1074_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-021",
@@ -29813,11 +29813,11 @@
   "correctIndex": 1,
   "explanation": "メロペネムはカルバペネム系抗菌薬に分類され、幅広い抗菌スペクトルを持つ注射用抗菌薬です。",
   "source": {
-   "name": "メロペネム水和物注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メロペン点滴用バイアル0.25g 添付文書 薬効分類名(カルバペネム系抗生物質製剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/6139400D1033_2_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-023",
@@ -29855,11 +29855,11 @@
   "correctIndex": 2,
   "explanation": "ゲンタマイシンはアミノグリコシド系抗菌薬に分類され、グラム陰性菌を含む感染症治療に用いられます。",
   "source": {
-   "name": "ゲンタマイシン硫酸塩注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゲンタマイシン硫酸塩注射液10mg「 添付文書 薬効分類名(アミノグリコシド系抗生物質製剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/6134407A1040_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-025",

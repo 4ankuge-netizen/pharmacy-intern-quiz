@@ -107,6 +107,22 @@ function main() {
   if (difficulty) pool = pool.filter((q) => q.difficulty === difficulty);
   if (onlyUnverified) pool = pool.filter((q) => !q.verified);
 
+  /*
+    「このままでは確認できない」と判断済みの問題を毎回表示しないようにする。
+    出典の差し替えや問題文の見直しが要るものは docs/verification-notes.md に
+    IDを記録してあるので、そこに載っているIDは飛ばす。
+
+    (同じ問題が何度も出てくると、確認できる問題にたどり着くまでの手間が増えるため)
+  */
+  const notesPath = join(HERE, '..', 'docs', 'verification-notes.md');
+  if (existsSync(notesPath) && !args.includes('--include-known-issues')) {
+    const notes = readFileSync(notesPath, 'utf8');
+    const knownIssueIds = new Set(
+      [...notes.matchAll(/`([a-z-]+-(?:beginner|intermediate|advanced)-\d{3})`/g)].map((m) => m[1])
+    );
+    pool = pool.filter((q) => !knownIssueIds.has(q.id));
+  }
+
   // 添付文書が手元にある問題だけを対象にする
   const ready = [];
   for (const q of pool) {
