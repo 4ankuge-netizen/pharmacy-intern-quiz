@@ -71,7 +71,16 @@ function main() {
     // (検証は、その保存済みの文書を実際に読んで行っているため一致する)
     let url = d.url;
     let sourceName = d.sourceName;
-    if (!url) {
+
+    // 書籍(教科書・成書)を出典にする場合はURLがない。
+    // うっかりURLを書き忘れた場合と区別するため、noUrl を明示したときだけ許す。
+    if (d.noUrl) {
+      if (!sourceName) {
+        console.error(`書籍を出典にする場合は sourceName(書名・版・ページ)が必要です: ${d.id}`);
+        process.exit(1);
+      }
+      url = '';
+    } else if (!url) {
       const doc = loadCachedDoc(q);
       if (!doc) {
         console.error(`URLが指定されておらず、添付文書も見つかりません: ${d.id}`);
