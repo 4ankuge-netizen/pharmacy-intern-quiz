@@ -77,11 +77,11 @@
   "correctIndex": 1,
   "explanation": "デキサメタゾンはステロイドですが制吐作用も持ち、5-HT3拮抗薬などと併用して制吐療法に用いられます。",
   "source": {
-   "name": "デキサメタゾン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デカドロン錠0.5mg 添付文書 4.効能又は効果(抗悪性腫瘍剤投与に伴う消化器症状(悪心・嘔吐))",
+   "url": "https://www.info.pmda.go.jp/go/pack/2454002F1183_3_18/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-005",
@@ -644,11 +644,11 @@
   "correctIndex": 0,
   "explanation": "酸化マグネシウムは浸透圧性(塩類)下剤に分類され、腸管内に水分を引き込むことで便通を改善します。",
   "source": {
-   "name": "酸化マグネシウム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "酸化マグネシウム錠200mg「ヨシダ」 添付文書 18.1 作用機序(浸透圧維持のため腸壁から水分を奪い腸管内容物を軟化し緩下作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2344009F3046_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-033",
@@ -896,11 +896,11 @@
   "correctIndex": 0,
   "explanation": "制吐目的のデキサメタゾンは経口または静脈内投与で用いられることが一般的です。",
   "source": {
-   "name": "デキサメタゾン錠・注射液 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デカドロン錠0.5mg / デカドロン注射液1.65mg 添付文書 4.効能・効果(経口剤および静脈内注射・点滴静脈内注射)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2454405H1024_3_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-045",
@@ -19733,11 +19733,11 @@
   "correctIndex": 1,
   "explanation": "脳梗塞は成因によりアテローム血栓性脳梗塞、ラクナ梗塞、心原性脳塞栓症などに分類されます。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳卒中(脳梗塞の分類: ラクナ梗塞・アテローム血栓性脳梗塞・心原性脳塞栓)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-007",
@@ -19796,11 +19796,11 @@
   "correctIndex": 1,
   "explanation": "高血圧は脳出血・脳梗塞のいずれにおいても最も重要な危険因子の一つとされています。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳卒中(脳出血の主な原因は高血圧・脳梗塞の危険因子に高血圧)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-010",
@@ -20132,11 +20132,11 @@
   "correctIndex": 2,
   "explanation": "FASTは顔(Face)、腕(Arm)、言葉(Speech)、時間(Time)から脳卒中を疑うサインをまとめた啓発ツールで、早期受診の重要性を伝えます。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳卒中(FASTで脳卒中を疑おう: 顔の麻痺・腕の麻痺・言葉の障害)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-026",
@@ -20279,11 +20279,11 @@
   "correctIndex": 1,
   "explanation": "脳梗塞の診断には頭部CT検査や頭部MRI検査が用いられ、出血の有無や梗塞範囲などを評価します。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳卒中(検査: 頭部CT・頭部MRI)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-033",
@@ -20300,11 +20300,11 @@
   "correctIndex": 3,
   "explanation": "TIAは一時的な脳血流低下により神経症状が出現し、通常は短時間で症状が消失する病態ですが、脳梗塞発症の警告サインとされます。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳卒中(一過性脳虚血発作: 症状が短時間で消失)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-034",
@@ -20321,11 +20321,11 @@
   "correctIndex": 3,
   "explanation": "脳卒中リハビリテーションには、運動機能を担当する理学療法士、日常生活動作を担当する作業療法士、言語・嚥下を担当する言語聴覚士などが関わります。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳血管リハビリテーション科(理学療法士・作業療法士・言語聴覚士)",
+   "url": "https://www.ncvc.go.jp/hospital/section/treatment/cerebro_rehabilitation/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-035",
@@ -20405,11 +20405,11 @@
   "correctIndex": 3,
   "explanation": "脳出血の主な原因の一つは高血圧による血管の脆弱化であり、血圧管理が予防に重要です。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳卒中(脳出血の主な原因は高血圧と脳アミロイド血管症)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-039",
@@ -20426,11 +20426,11 @@
   "correctIndex": 0,
   "explanation": "くも膜下出血の多くは脳動脈瘤の破裂によって生じ、突然の激しい頭痛を特徴とします。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター 脳卒中(くも膜下出血: 脳動脈瘤が破れることにより)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-040",
