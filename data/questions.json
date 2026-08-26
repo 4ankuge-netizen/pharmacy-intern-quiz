@@ -19880,11 +19880,11 @@
   "correctIndex": 2,
   "explanation": "アルガトロバンは抗トロンビン薬で、発症early期の脳血栓症(心原性を除く)の治療に用いられます。",
   "source": {
-   "name": "アルガトロバン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルガトロバン注射液10mg「サワイ 添付文書 薬効分類名(抗トロンビン剤)・4. 効能又は効果(発症後48時間以内の脳血栓症急性期)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190408A1089_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-014",
@@ -19922,11 +19922,11 @@
   "correctIndex": 3,
   "explanation": "マンニトールは浸透圧利尿薬で、脳浮腫による頭蓋内圧亢進の管理に用いられます。",
   "source": {
-   "name": "マンニトール注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "20%マンニットール注射液「YD」 添付文書 薬効分類名(脳圧降下・浸透圧利尿剤)・4. 効能又は効果(脳圧降下及び脳容積の縮小)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190400A5037_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-016",
@@ -20594,11 +20594,11 @@
   "correctIndex": 0,
   "explanation": "納豆などに含まれるビタミンKはワルファリンの抗凝固作用に拮抗するため、摂取量が変動すると効果が不安定になります。",
   "source": {
-   "name": "ワルファリンカリウム錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワルファリンK錠0.5mg「トーワ」 添付文書 18.1 作用機序(ビタミンK作用に拮抗し凝固因子の生合成を抑制)・2.8 禁忌(ビタミンK2製剤投与中の患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3332001F1083_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-048",
@@ -20615,11 +20615,11 @@
   "correctIndex": 3,
   "explanation": "rt-PA投与後は出血性合併症(特に頭蓋内出血)のリスクがあるため、神経症状や血圧などの継続的なモニタリングが重要です。",
   "source": {
-   "name": "アルテプラーゼ注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アクチバシン注600万 ／ 添付文書 1.2 警告(頭蓋内出血等の出血性有害事象の発現に十分注意して経過観察)・11.1.1 重篤な出血",
+   "url": "https://www.info.pmda.go.jp/go/pack/3959402D1027_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-049",
@@ -22841,11 +22841,11 @@
   "correctIndex": 3,
   "explanation": "リスペリドンは非定型抗精神病薬で、統合失調症の治療に用いられます。",
   "source": {
-   "name": "リスペリドン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リスペリドン錠1mg「サワイ」 添付文書 薬効分類名(抗精神病剤)・4. 効能又は効果(統合失調症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179038C1094_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-002",
@@ -22862,11 +22862,11 @@
   "correctIndex": 2,
   "explanation": "ドネペジルはコリンエステラーゼ阻害薬で、アルツハイマー型認知症の治療に用いられます。",
   "source": {
-   "name": "ドネペジル塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドネペジル塩酸塩錠3mg「NP」 添付文書 薬効分類名(アルツハイマー型、レビー小体型認知症治療剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190012F1085_3_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-003",
@@ -22883,11 +22883,11 @@
   "correctIndex": 0,
   "explanation": "SSRIはセロトニンの再取り込みを選択的に阻害し、うつ病や各種不安障害の治療に用いられます。",
   "source": {
-   "name": "セルトラリン塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セルトラリン錠25mg「トーワ」 添付文書 薬効分類名(選択的セロトニン再取り込み阻害剤)・4. 効能又は効果(うつ病・うつ状態、パニック障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179046F1176_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-004",
@@ -22904,11 +22904,11 @@
   "correctIndex": 0,
   "explanation": "バルプロ酸は抗てんかん薬であり、双極性障害の気分安定薬としても用いられます。",
   "source": {
-   "name": "バルプロ酸ナトリウム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バルプロ酸ナトリウム錠100mg「アメ 添付文書 薬効分類名(抗てんかん剤、躁病・躁状態治療剤)・4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1088_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-005",
@@ -22946,11 +22946,11 @@
   "correctIndex": 3,
   "explanation": "リチウムは双極性障害の気分安定薬として、躁状態やうつ状態の再発予防に広く用いられます。",
   "source": {
-   "name": "炭酸リチウム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "炭酸リチウム錠100mg「大正」 添付文書 薬効分類名(躁病・躁状態治療剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179017F1080_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-007",
