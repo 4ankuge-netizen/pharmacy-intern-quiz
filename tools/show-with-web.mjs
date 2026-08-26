@@ -23,6 +23,18 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const CACHE_DIR = join(HERE, '..', '.guideline-cache');
 const toFileName = (n) => n.replace(/[^\p{L}\p{N}]/gu, '_').slice(0, 80);
 
+// 文章を3文字ずつのかたまりに切り出す(助詞だけのかたまりなどは手がかりにならないので除く)
+function ngrams(text) {
+  const cleaned = text.replace(/[、。()（）「」・,.\s]+/g, '');
+  const stop = /^[はがのにをでとやもへか、。ですますこれそれどれのはとしてれかいるあるためよいれる]+$/;
+  const out = new Set();
+  for (let i = 0; i + 3 <= cleaned.length; i++) {
+    const g = cleaned.slice(i, i + 3);
+    if (!stop.test(g)) out.add(g);
+  }
+  return [...out];
+}
+
 function main() {
   const pairs = JSON.parse(readFileSync(process.argv[2], 'utf8'));
   const questions = JSON.parse(readFileSync(join(HERE, '..', 'data', 'questions.json'), 'utf8'));
@@ -40,11 +52,16 @@ function main() {
     if (!existsSync(`${base}.txt`)) { console.log(`【${p.page}: 未取得】`); continue; }
     const text = readFileSync(`${base}.txt`, 'utf8');
 
-    // 探す言葉: 指定があればそれ、なければ問題文と正解から2文字以上のかたまりを拾う
-    const keywords = p.keywords
-      ? p.keywords
-      : [...new Set((q.question + ' ' + q.choices[q.correctIndex])
-          .split(/[、。()（）「」・,.\s]+/).filter((w) => w.length >= 2))];
+    /*
+      探す言葉の作り方。
+
+      日本語の文は英語と違って単語の間に空白がないので、記号で区切るだけでは
+      文がまるごと1つの「言葉」になってしまい、何にも一致しない。
+      そこで、問題文と正解を3文字ずつずらしながら切り出して手がかりにする
+      (「心房細動が」→「心房細」「房細動」「細動が」…)。
+      こうすると、言い回しが多少違っても共通する部分で拾える。
+    */
+    const keywords = p.keywords ? p.keywords : ngrams(q.question + q.choices[q.correctIndex]);
 
     const lines = text.split('\n').map((l) => l.trim()).filter((l) => l.length > 4);
     const hits = lines

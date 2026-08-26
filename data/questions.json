@@ -19670,11 +19670,11 @@
   "correctIndex": 1,
   "explanation": "心房細動などによる心原性脳塞栓症の予防には、ワルファリンやDOACなどの抗凝固薬が用いられます。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(心原性脳塞栓には抗凝固薬。CHADS2スコア2点以上でDOACまたはワルファリン)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-004",
@@ -19765,21 +19765,21 @@
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "スタチン系薬剤の脳血管障害領域での位置づけとして正しいのはどれか。",
+  "question": "スタチン(HMG-CoA還元酵素阻害薬)と脳卒中に関する報告として正しいのはどれか。",
   "choices": [
-   "てんかん発作の抑制に用いられる",
-   "急性期の血栓溶解に用いられる",
-   "脳出血の止血に用いられる",
-   "脳梗塞の再発予防にも用いられる"
+   "スタチンで治療した場合、脳卒中の発症が23%低下する報告がある",
+   "スタチンは脳卒中の発症率を上げる",
+   "スタチンと脳卒中に関連はない",
+   "スタチンは脳卒中の急性期に電気的治療として用いる"
   ],
-  "correctIndex": 3,
-  "explanation": "スタチン系薬剤はコレステロール低下作用に加え、動脈硬化進展抑制の観点から脳梗塞の再発予防にも用いられます。",
+  "correctIndex": 0,
+  "explanation": "血液中の脂質は血管を詰まらせる原因になります。総コレステロール値が1mmol/L(38.7mg/dL)増えると脳梗塞の発症率が25%増加することが明らかになっており、スタチンで治療した場合は脳卒中の発症が23%低下する報告があります。特にLDLコレステロールが高い人は脂肪の摂取制限が必要です。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(スタチン治療で脳卒中の発症が23%低下する報告)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-009",
@@ -19807,21 +19807,21 @@
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "脳卒中急性期のリハビリテーション開始のタイミングとして推奨されるのはどれか。",
+  "question": "脳卒中の急性期に、血圧・体温・脈拍などの全身状態の管理と並行して行われるのはどれか。",
   "choices": [
-   "リハビリテーションは慢性期のみ行う",
-   "リハビリテーションは薬物療法と無関係である",
-   "全身状態が安定していれば、できるだけ早期に開始する",
-   "発症から1か月以上経過してから開始する"
+   "日常生活動作の改善を目的としたリハビリテーション",
+   "手術による根治治療のみ",
+   "積極的な運動制限と安静保持のみ",
+   "食事の完全中止"
   ],
-  "correctIndex": 2,
-  "explanation": "脳卒中では全身状態が安定していれば、廃用症候群の予防や機能回復のためできるだけ早期にリハビリテーションを開始することが推奨されています。",
+  "correctIndex": 0,
+  "explanation": "脳卒中急性期では、血圧・体温・脈拍などの全身状態の管理を行いながら、日常生活動作の改善を目的にリハビリテーションも並行して行っていきます。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(急性期は全身状態の管理と並行してリハビリテーション)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-011",
@@ -20038,63 +20038,63 @@
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "脳卒中による高次脳機能障害の説明として正しいのはどれか。",
+  "question": "脳卒中の主な合併症として挙げられているのはどれか。",
   "choices": [
-   "感覚障害のみを指す用語である",
-   "運動麻痺のみを指す用語である",
-   "記憶障害や注意障害など認知機能に関わる障害を指す",
-   "高次脳機能障害は脳卒中とは無関係である"
+   "脳血管性認知症、脳卒中後てんかん、うつ病、サルコペニア、摂食嚥下障害",
+   "喘息、花粉症、蕁麻疹",
+   "白内障、緑内障、難聴",
+   "胃潰瘍、胆石症、痔核"
   ],
-  "correctIndex": 2,
-  "explanation": "高次脳機能障害は、脳卒中などにより記憶・注意・遂行機能など認知機能に関わる働きが障害された状態を指します。",
+  "correctIndex": 0,
+  "explanation": "急性期脳卒中治療の発展により脳卒中による死亡率は改善していますが、超高齢化社会では発症する人が多く、後遺症や合併症と付き合っていく必要があります。主な合併症として脳血管性認知症、脳卒中後てんかん、うつ病、サルコペニア、摂食嚥下障害などが挙げられています。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(脳卒中の主な合併症)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-022",
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "脳卒中による失語症の説明として正しいのはどれか。",
+  "question": "脳梗塞・脳出血・くも膜下出血に共通してみられる症状として挙げられているのはどれか。",
   "choices": [
-   "嚥下機能のみが障害された状態",
-   "言葉の理解や表出が障害された状態",
-   "筋力低下のみを指す状態",
-   "視力障害のみを指す状態"
+   "半身麻痺、言葉の障害、意識の障害",
+   "発熱、咳、鼻水",
+   "関節の腫れと朝のこわばり",
+   "皮膚のかゆみと発疹"
   ],
-  "correctIndex": 1,
-  "explanation": "失語症は言語中枢の障害により、言葉の理解や表出(話す、書くなど)が困難になる状態を指します。",
+  "correctIndex": 0,
+  "explanation": "脳卒中には、血管が詰まっておこる脳梗塞、血管が破れておこる脳出血とくも膜下出血の3つが含まれます。これらのいずれによっても半身麻痺(まひ)、言葉の障害、意識の障害など、脳卒中に共通する症状が起きますが、病気の起き方が違うため治療法や経過も異なります。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(脳卒中に共通する症状: 半身麻痺・言葉の障害・意識の障害)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-023",
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "脳卒中でみられる片麻痺の説明として正しいのはどれか。",
+  "question": "脳梗塞で脳への血流が不十分になったときに現れる代表的な症状として挙げられているのはどれか。",
   "choices": [
-   "身体の片側に生じる運動麻痺",
-   "言語障害のみを指す用語である",
-   "感覚障害のみを指す用語である",
-   "両側性にみられる運動麻痺"
+   "半身麻痺",
+   "両側の足のむくみ",
+   "全身の発疹",
+   "難聴"
   ],
   "correctIndex": 0,
-  "explanation": "片麻痺は脳卒中などにより、身体の左右いずれか片側に運動麻痺が生じる状態を指します。",
+  "explanation": "脳梗塞は脳卒中の過半を占める病気です。脳の血管が詰まり血流が十分に脳細胞に行き渡らなくなると、すぐに脳細胞の働きが悪くなり、半身麻痺などの症状が出ます。血流が悪いまま数時間たつと脳細胞は死んでしまいますが、数時間以内に血流を再開できれば症状が軽くなったり消えたりすることが期待できます。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(脳梗塞では半身麻痺などの症状が出る)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-024",
@@ -20111,11 +20111,11 @@
   "correctIndex": 2,
   "explanation": "脳卒中による嚥下障害は誤嚥性肺炎のリスクを高めるため、嚥下機能評価に基づいた食形態の調整などの対応が重要です。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(嚥下状態に合わせた食形態・姿勢の調整、誤嚥性肺炎の予防)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-025",
@@ -20153,11 +20153,11 @@
   "correctIndex": 2,
   "explanation": "心房細動では心房内の血流がよどみ血栓が形成されやすく、それが脳血管に運ばれ心原性脳塞栓症を起こすことがあります。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(心房に生じた血栓が脳血管に飛び脳梗塞につながる)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-027",
@@ -20174,11 +20174,11 @@
   "correctIndex": 2,
   "explanation": "脂質異常症は動脈硬化を進展させ、脳血管の狭窄・閉塞につながることで脳梗塞のリスクを高めます。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(動脈硬化が原因の脳梗塞、総コレステロール上昇と脳梗塞発症率)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-028",
@@ -20195,11 +20195,11 @@
   "correctIndex": 2,
   "explanation": "喫煙は血管内皮障害や動脈硬化進展を介して脳卒中リスクを高めるため、禁煙が重要な予防策とされています。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(ニコチンが血圧を上昇させ動脈硬化を促進、禁煙が強く勧められる)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-029",
@@ -20237,11 +20237,11 @@
   "correctIndex": 0,
   "explanation": "脳卒中後うつは脳卒中発症後に生じやすい抑うつ状態で、リハビリへの意欲や生活の質に影響しうるため注意が必要です。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(脳卒中後うつ病は患者の約30%にみられ、意欲や活動性が低下する)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-031",
@@ -20374,21 +20374,21 @@
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "脳梗塞発症後の再発予防における基本的な考え方として正しいのはどれか。",
+  "question": "ラクナ梗塞・アテローム血栓性脳梗塞の治療で重要とされるのはどれか。",
   "choices": [
-   "生活習慣の改善と薬物療法を継続的に組み合わせる",
-   "再発予防には薬物療法のみで十分であり生活改善は不要である",
-   "再発予防は発症後1年間のみ行えばよい",
-   "再発予防に特別な取り組みは不要である"
+   "生活習慣病のコントロールと抗血小板薬",
+   "抗菌薬の長期投与",
+   "免疫抑制薬の投与",
+   "インスリンの単独投与"
   ],
   "correctIndex": 0,
-  "explanation": "脳梗塞の再発予防には、降圧・脂質・血糖などの生活習慣管理と抗血栓療法などの薬物療法を継続的に組み合わせることが重要です。",
+  "explanation": "ラクナ梗塞とアテローム血栓性脳梗塞は脳や頸部の動脈硬化が原因です。治療は生活習慣病(高血圧、糖尿病、脂質異常症、肥満症、喫煙、大量飲酒、腎機能障害、メタボリックシンドロームなど)のコントロールが重要で、抗血小板薬を使うことが多いとされています。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(ラクナ梗塞・アテローム血栓性脳梗塞は生活習慣病コントロールと抗血小板薬)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-038",
@@ -20447,11 +20447,11 @@
   "correctIndex": 0,
   "explanation": "脳卒中は動脈硬化などを背景とするため、加齢とともに発症リスクが高まることが知られています。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(脳卒中は誰にでも、特に高齢者に起こる可能性がある)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-041",
@@ -20489,11 +20489,11 @@
   "correctIndex": 3,
   "explanation": "「Time is brain」は、脳梗塞治療の開始が早いほど救済できる脳組織が多く予後が良好になるという、迅速な対応の重要性を表す考え方です。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(Time is brain: 1分の遅れで190万の細胞が失われる)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-043",
@@ -20510,11 +20510,11 @@
   "correctIndex": 0,
   "explanation": "脳卒中患者は嚥下機能低下により誤嚥性肺炎のリスクが高いため、口腔内を清潔に保つ口腔ケアが重要な予防策となります。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(摂食嚥下障害から誤嚥性肺炎をきたすことが問題となる)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-044",
@@ -20552,11 +20552,11 @@
   "correctIndex": 0,
   "explanation": "嚥下調整食は、とろみをつけるなど形態を調整することで誤嚥のリスクを減らしながら必要な栄養を確保することを目的としています。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(嚥下状態に合わせた食形態で栄養をしっかり確保する)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-046",
@@ -20626,21 +20626,21 @@
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "脳卒中患者の退院後フォローアップが重要とされる理由として正しいのはどれか。",
+  "question": "高齢の脳卒中発症者で問題となる「サルコペニア」の説明として正しいのはどれか。",
   "choices": [
-   "退院後は治療の必要がなくなるため",
-   "フォローアップは入院期間中のみ必要であるため",
-   "再発予防や合併症の早期発見のため継続的な管理が必要となるため",
-   "退院後のフォローアップは再発予防と無関係であるため"
+   "筋力が低下し筋肉量が減少していく状態で、歩行障害・転倒や誤嚥性肺炎のリスクとなる",
+   "血液中のコレステロールが増える状態",
+   "記憶が失われていく状態",
+   "血圧が急激に上がる状態"
   ],
-  "correctIndex": 2,
-  "explanation": "脳卒中患者は再発リスクが高く合併症管理も必要なため、退院後も定期受診などによる継続的なフォローアップが重要です。",
+  "correctIndex": 0,
+  "explanation": "加齢や、病気・手術による長期安静、栄養不足により筋力が低下し筋肉量が減少していく状態をサルコペニアといいます。高齢の脳卒中発症者の約30〜40%がサルコペニアを有し、脳卒中発症をきっかけにさらに進む可能性があります。体を動かす力や食べる力が低下し、歩行障害・転倒や誤嚥性肺炎などのリスクとなるため対策が必要です。",
   "source": {
-   "name": "脳卒中治療ガイドライン2021〔改訂2025〕(日本脳卒中学会脳卒中ガイドライン委員会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「脳卒中」(高齢の脳卒中発症者の約30〜40%がサルコペニアを有する)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/stroke-2/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-050",
