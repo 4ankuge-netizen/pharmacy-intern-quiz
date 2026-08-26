@@ -23261,11 +23261,11 @@
   "correctIndex": 2,
   "explanation": "ラメルテオンはメラトニン受容体を刺激し、自然な眠りに近い形で入眠を促す睡眠薬です。",
   "source": {
-   "name": "ラメルテオン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラメルテオン錠8mg「JG」 添付文書 薬効分類名(メラトニン受容体アゴニスト)・18.1(MT1及びMT2受容体への高い親和性)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190016F1040_1_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-022",
@@ -23765,11 +23765,11 @@
   "correctIndex": 2,
   "explanation": "エスシタロプラムはSSRIに分類される抗うつ薬で、うつ病や不安障害の治療に用いられます。",
   "source": {
-   "name": "エスシタロプラムシュウ酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エスシタロプラム錠10mg「JG」 添付文書 薬効分類名(選択的セロトニン再取り込み阻害剤(SSRI))・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179054F1030_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-046",
@@ -23870,11 +23870,11 @@
   "correctIndex": 0,
   "explanation": "アカンプロサートはグルタミン酸系に作用し、アルコール依存症患者の断酒維持を補助する薬剤です。",
   "source": {
-   "name": "アカンプロサートカルシウム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レグテクト錠333mg 添付文書 薬効分類名(アルコール依存症 断酒補助剤)・4. 効能又は効果(断酒維持の補助)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190022H1020_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-001",
@@ -26222,11 +26222,11 @@
   "correctIndex": 3,
   "explanation": "タクロリムス軟膏は免疫抑制作用を持つ外用薬で、アトピー性皮膚炎の治療、特に顔面・頸部などに用いられます。",
   "source": {
-   "name": "タクロリムス軟膏 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タクロリムス軟膏0.1％「PP」 添付文書 薬効分類名(アトピー性皮膚炎治療剤)・18.1.1(カルシニューリン阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2699709M1044_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-009",
@@ -26747,11 +26747,11 @@
   "correctIndex": 2,
   "explanation": "セクキヌマブはIL-17を標的とする生物学的製剤で、尋常性乾癬などの治療に用いられます。",
   "source": {
-   "name": "セクキヌマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コセンティクス皮下注150mgペン 添付文書 薬効分類名(ヒト型抗ヒトIL-17Aモノクローナル抗体製剤)・4. 効能又は効果(尋常性乾癬等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999439G3024_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-034",
@@ -26789,11 +26789,11 @@
   "correctIndex": 1,
   "explanation": "ステロイドパルス療法は、自己免疫疾患などの急性増悪期に短期間大量のステロイドを点滴投与する治療法です。",
   "source": {
-   "name": "メチルプレドニゾロンコハク酸エステルナトリウム注射液 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ソル・メドロール静注用40mg 添付文書 6. 用法及び用量(1日1回最大1000mgを1〜3日間点滴静注・ネフローゼ症候群で1日500〜1000mg)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2456400D1067_3_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-036",
@@ -29372,11 +29372,11 @@
   "correctIndex": 1,
   "explanation": "アモキシシリンはペニシリン系抗菌薬に分類され、細菌の細胞壁合成を阻害することで抗菌作用を示します。",
   "source": {
-   "name": "アモキシシリン水和物カプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "サワシリンカプセル125 添付文書 薬効分類名(合成ペニシリン製剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6131001C1210_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-002",
@@ -29393,11 +29393,11 @@
   "correctIndex": 0,
   "explanation": "セファレキシンはセフェム系抗菌薬に分類され、ペニシリン系と同様に細胞壁合成阻害により抗菌作用を示します。",
   "source": {
-   "name": "セファレキシンカプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セファレキシンカプセル250mg「トー 添付文書 薬効分類名(経口用セフェム系抗生物質製剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6132002M2175_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-003",
@@ -29414,11 +29414,11 @@
   "correctIndex": 0,
   "explanation": "アジスロマイシンはマクロライド系抗菌薬に分類され、細菌のタンパク質合成を阻害します。",
   "source": {
-   "name": "アジスロマイシン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジスロマイシン錠250mg「DSEP」 添付文書 薬効分類名(15員環マクロライド系抗生物質製剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6149004F1036_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-004",
@@ -29435,11 +29435,11 @@
   "correctIndex": 0,
   "explanation": "レボフロキサシンはニューキノロン系抗菌薬に分類され、細菌のDNA複製に関わる酵素を阻害します。",
   "source": {
-   "name": "レボフロキサシン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レボフロキサシン錠250mg「CH」 添付文書 9.1.2(キノロン系抗菌薬に対し過敏症の既往歴のある患者)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/6241013F2047_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-005",
@@ -29498,11 +29498,11 @@
   "correctIndex": 0,
   "explanation": "ペニシリン系抗菌薬はアレルギー反応(発疹からアナフィラキシーまで)が代表的な副作用として知られています。",
   "source": {
-   "name": "アモキシシリン水和物カプセル 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "サワシリンカプセル125 添付文書 8.2 重要な基本的注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/6131001C1210_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-008",
@@ -29519,11 +29519,11 @@
   "correctIndex": 3,
   "explanation": "バンコマイシンはグリコペプチド系抗菌薬で、MRSAなど耐性グラム陽性菌感染症の治療に用いられる注射薬です。",
   "source": {
-   "name": "バンコマイシン塩酸塩注射用 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "塩酸バンコマイシン点滴静注用 添付文書 4. 効能・効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/6113400A1200_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-009",
@@ -29540,11 +29540,11 @@
   "correctIndex": 0,
   "explanation": "フルコナゾールはトリアゾール系抗真菌薬で、カンジダ症などの真菌感染症治療に用いられます。",
   "source": {
-   "name": "フルコナゾールカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フルコナゾールカプセル50mg「アメ 添付文書 薬効分類名(深在性真菌症治療剤)・4. 効能又は効果(カンジダ属及びクリプトコッカス属)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6290002M1100_2_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-010",
@@ -29582,11 +29582,11 @@
   "correctIndex": 2,
   "explanation": "アシクロビルは抗ヘルペスウイルス薬で、単純ヘルペスウイルスや水痘・帯状疱疹ウイルス感染症の治療に用いられます。",
   "source": {
-   "name": "アシクロビル錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アシクロビル錠200mg「サワイ」 添付文書 薬効分類名(抗ウイルス化学療法剤)・4. 効能又は効果(単純疱疹・単純ヘルペスウイルス感染症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250002F1238_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-012",
@@ -29645,11 +29645,11 @@
   "correctIndex": 0,
   "explanation": "バロキサビルはキャップ依存性エンドヌクレアーゼ阻害薬で、1回の内服で治療が完結する特徴を持つ抗インフルエンザウイルス薬です。",
   "source": {
-   "name": "バロキサビル マルボキシル錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾフルーザ錠10mg ／ ゾ 添付文書 6. 用法・用量(通常、以下の用量を単回経口投与する)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250047F1022_1_20/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-015",
@@ -29666,11 +29666,11 @@
   "correctIndex": 3,
   "explanation": "ミカファンギンはキャンディン系抗真菌薬に分類され、真菌の細胞壁合成を阻害します。",
   "source": {
-   "name": "ミカファンギンナトリウム注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ファンガード点滴用25mg ／ 添付文書 薬効分類名(キャンディン系抗真菌剤)・18.1(1,3-β-D-glucanの生合成を阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6179400D1020_4_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-016",
@@ -29687,11 +29687,11 @@
   "correctIndex": 0,
   "explanation": "アムホテリシンBは幅広い抗真菌スペクトルを持つ薬剤で、重症真菌感染症の治療に用いられます。",
   "source": {
-   "name": "アムホテリシンB注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ファンギゾン注射用50mg 添付文書 薬効分類名(ポリエンマクロライド系)・4. 効能又は効果(アスペルギルス、カンジダ、ムコール等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6173400D1035_3_01/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-017",
@@ -29708,11 +29708,11 @@
   "correctIndex": 1,
   "explanation": "イベルメクチンは抗寄生虫薬で、疥癬や糞線虫症などの治療に用いられます。",
   "source": {
-   "name": "イベルメクチン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ストロメクトール錠3mg 添付文書 薬効分類名(駆虫剤)・4. 効能又は効果(腸管糞線虫症・疥癬)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6429008F1020_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-018",
