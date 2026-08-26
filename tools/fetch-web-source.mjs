@@ -44,6 +44,12 @@ const ALLOWED_HOSTS = [
   'jshp.or.jp',          // 日本病院薬剤師会
   'pmda.go.jp',
   'minds.jcqhc.or.jp',   // Minds(日本医療機能評価機構)
+  'jihs.go.jp',          // 国立健康危機管理研究機構(感染研・国際医療研究センターの後継)
+  'erca.go.jp',          // 環境再生保全機構(ぜん息などの解説)
+  'allergyportal.jp',    // アレルギーポータル(日本アレルギー学会・厚生労働省)
+  'jsa-web.org',         // 日本脳卒中協会
+  'nittokyo.or.jp',      // 日本糖尿病協会
+  'jpn-geriat-soc.or.jp',// 日本老年医学会
 ];
 
 function toFileName(name) {

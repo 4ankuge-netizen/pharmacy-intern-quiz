@@ -23471,11 +23471,11 @@
   "correctIndex": 3,
   "explanation": "統合失調症の陽性症状には、幻覚や妄想など通常みられない症状が新たに出現することが含まれます。",
   "source": {
-   "name": "統合失調症薬物治療ガイドライン2022(日本神経精神薬理学会・日本臨床精神神経薬理学会編)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 統合失調症(陽性症状の典型は幻覚と妄想)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=tQtLd1xVUp1wHJMQ",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-032",
@@ -23492,11 +23492,11 @@
   "correctIndex": 3,
   "explanation": "統合失調症の陰性症状には、意欲低下や感情表出の乏しさなど、本来ある機能が失われる症状が含まれます。",
   "source": {
-   "name": "統合失調症薬物治療ガイドライン2022(日本神経精神薬理学会・日本臨床精神神経薬理学会編)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 統合失調症(陰性症状は意欲の低下、感情表現が少なくなる)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=tQtLd1xVUp1wHJMQ",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-033",
@@ -23513,11 +23513,11 @@
   "correctIndex": 0,
   "explanation": "うつ病の中心的な症状として、抑うつ気分や興味・喜びの喪失(アンヘドニア)が挙げられます。",
   "source": {
-   "name": "日本うつ病学会治療ガイドラインII.うつ病(DSM-5)/大うつ病性障害2016(2024年3月一部修正)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 うつ病(一日中気分が落ち込む、何をしても楽しめない)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=9D2BdBaF8nGgVLbL",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-034",
@@ -23534,11 +23534,11 @@
   "correctIndex": 2,
   "explanation": "パニック障害は突然の強い不安発作(パニック発作)とともに動悸、呼吸困難感、めまいなどの身体症状を伴うことが特徴です。",
   "source": {
-   "name": "パニック症の診療ガイドライン第1版(日本不安症学会・日本神経精神薬理学会、2025年9月)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 不安症(パニック発作: 強い不安と動悸・呼吸困難・震え・発汗が急激に生じる)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=BLA9JV0KhiWPIMzX",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-035",
@@ -23555,11 +23555,11 @@
   "correctIndex": 3,
   "explanation": "強迫性障害は、繰り返し浮かぶ強迫観念と、それを打ち消すための強迫行為(手洗い、確認など)の繰り返しを特徴とします。",
   "source": {
-   "name": "強迫症の診療ガイドライン第1版(日本不安症学会・日本神経精神薬理学会、2025年11月)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 強迫性障害(強迫観念と強迫行為)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=MiyHEH6ZUZDxDeYX",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-036",
@@ -23576,32 +23576,32 @@
   "correctIndex": 1,
   "explanation": "認知症の中核症状は記憶障害や見当識障害など、脳の器質的な障害によって直接生じる認知機能の障害を指します。",
   "source": {
-   "name": "認知症疾患診療ガイドライン2017(日本神経学会監修、医学書院)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 認知症(中核症状: 記憶障害・見当識障害・理解力や判断力の低下)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=WwE9LLpYbVZTIDMI",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-037",
   "category": "psychiatric",
   "difficulty": "beginner",
   "type": "single",
-  "question": "BPSD(認知症の行動・心理症状)の説明として正しいのはどれか。",
+  "question": "認知症の行動・心理症状(BPSD)として挙げられているのはどれか。",
   "choices": [
-   "徘徊、興奮、幻覚など中核症状に伴って生じる行動・心理面の症状",
-   "記憶障害そのものを指す用語である",
-   "BPSDは認知症とは独立した別の疾患である",
-   "BPSDは薬物療法のみで完全に消失する"
+   "幻視、もの盗られ妄想、怒りっぽくなる",
+   "記憶障害、見当識障害",
+   "理解力・判断力の低下",
+   "手足の麻痺"
   ],
   "correctIndex": 0,
-  "explanation": "BPSDは中核症状に伴って生じる徘徊、興奮、幻覚、妄想などの行動・心理症状で、環境調整や薬物療法などによる対応が検討されます。",
+  "explanation": "認知症の症状は、記憶障害・見当識障害・理解力や判断力の低下などの中核症状と、行動・心理症状(BPSD)に大別されます。BPSDには、不安、憂うつでふさぎこむ、怒りっぽくなる、誰もいないのに誰かがいると主張する(幻視)、自分のものを誰かに盗まれたと疑う(もの盗られ妄想)、外出しても途中で忘れて帰れなくなるなどがあります。BPSDに対してはまず非薬物療法が中心となります。",
   "source": {
-   "name": "認知症疾患診療ガイドライン2017(日本神経学会監修、医学書院)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 認知症(行動・心理症状BPSDの例)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=WwE9LLpYbVZTIDMI",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-038",
@@ -23618,11 +23618,11 @@
   "correctIndex": 1,
   "explanation": "てんかん発作は脳の一部から始まる部分発作(焦点発作)と、脳全体が同時に興奮する全般発作に大別されます。",
   "source": {
-   "name": "てんかん診療ガイドライン2018追補版2022(日本神経学会監修、医学書院)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 てんかん(焦点発作(部分発作)と全般発作)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=7tp2bnu63ESgWu5I",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-039",
@@ -23639,11 +23639,11 @@
   "correctIndex": 3,
   "explanation": "精神科の薬物療法を自己判断で中断すると、症状の再燃・悪化や離脱症状などのリスクがあるため、医師への相談が重要です。",
   "source": {
-   "name": "統合失調症薬物治療ガイドライン2022(日本神経精神薬理学会・日本臨床精神神経薬理学会編)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 統合失調症(自己判断での減量・中止は再発を誘発し重症化の危険を高める)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=tQtLd1xVUp1wHJMQ",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-040",
@@ -23660,32 +23660,32 @@
   "correctIndex": 3,
   "explanation": "睡眠衛生指導は、規則正しい生活リズムの確立やカフェイン・アルコール摂取の見直しなど、非薬物療法的なアプローチとして重要です。",
   "source": {
-   "name": "睡眠薬の適正な使用と休薬のための診療ガイドライン(2013年6月策定、厚生労働科学研究班・日本睡眠学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 不眠症(睡眠衛生: 寝る前のカフェイン・ニコチン・寝酒の見直し)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=XpsDJBKfyaGD0mIx",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-041",
   "category": "psychiatric",
   "difficulty": "beginner",
   "type": "single",
-  "question": "抗うつ薬の効果発現に関する一般的な理解として正しいのはどれか。",
+  "question": "うつ病における抗うつ薬の服薬について正しいのはどれか。",
   "choices": [
-   "服用開始翌日には必ず効果が現れる",
-   "効果発現に時間経過は関与しない",
-   "抗うつ薬は頓用で用いる薬剤である",
-   "効果発現には通常数週間程度を要することが多い"
+   "継続して服用する必要があり、服用を開始してもすぐには効果が現れない",
+   "服用したその日のうちに効果が現れる",
+   "症状が軽くなったら自分の判断で中止してよい",
+   "効果が足りなければ自分の判断で増量してよい"
   ],
-  "correctIndex": 3,
-  "explanation": "抗うつ薬は効果発現までに通常2〜4週間程度を要することが多く、性急な効果判定を避けることが重要です。",
+  "correctIndex": 0,
+  "explanation": "うつ病で主に使われる治療薬は抗うつ薬です。抗うつ薬は継続して服用する必要があり、服用を開始してもすぐに効果は現れません。主治医の指示に従い、自分の判断で薬の量を増やしたり減らしたり中断したりせず、焦らずに服薬を継続することが大切です。",
   "source": {
-   "name": "日本うつ病学会治療ガイドラインII.うつ病(DSM-5)/大うつ病性障害2016(2024年3月一部修正)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立精神・神経医療研究センター「こころの情報サイト」 うつ病(抗うつ薬は継続服用が必要で、すぐには効果が現れない)",
+   "url": "https://kokoro.ncnp.go.jp/disease.php?@uid=9D2BdBaF8nGgVLbL",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-042",
@@ -23702,11 +23702,11 @@
   "correctIndex": 0,
   "explanation": "ベンゾジアゼピン系薬は長期使用により身体的・精神的依存が形成されることがあり、漫然とした長期処方は避けることが推奨されます。",
   "source": {
-   "name": "睡眠薬の適正な使用と休薬のための診療ガイドライン(2013年6月策定、厚生労働科学研究班・日本睡眠学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジアゼパム錠 添付文書 8.2 重要な基本的注意(連用により薬物依存を生じることがある)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1124017F2046_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-043",
