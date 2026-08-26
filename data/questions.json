@@ -8089,21 +8089,21 @@
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "フロセミドなどループ利尿薬でも尿酸値上昇に注意が必要な理由として正しいのはどれか。",
+  "question": "フロセミドを投与する際に、本人や家族に痛風・糖尿病がある患者で注意すべきこととして添付文書に記載されているのはどれか。",
   "choices": [
-   "ループ利尿薬は痛風治療薬として用いられるため",
-   "尿酸の再吸収促進などにより尿酸値が上昇することがあるため",
-   "尿酸値は必ず低下するため注意不要",
-   "ループ利尿薬は尿酸値に影響しないため"
+   "痛風発作を起こすおそれ、糖尿病を悪化するおそれがある",
+   "低血糖を起こしやすい",
+   "尿酸値が低下しすぎる",
+   "特に注意は不要である"
   ],
-  "correctIndex": 1,
-  "explanation": "ループ利尿薬もサイアザイド系利尿薬と同様に尿酸値を上昇させることがあり、痛風の既往がある患者では注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.1.2に、本人又は両親、兄弟に痛風、糖尿病のある患者では痛風発作を起こすおそれがあり、糖尿病を悪化するおそれがあると記載されています。",
   "source": {
-   "name": "フロセミド錠 添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フロセミド錠40mg「トーワ」 添付文書 9.1.2(痛風・糖尿病のある患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2139005F2407_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-046",
@@ -8120,32 +8120,32 @@
   "correctIndex": 2,
   "explanation": "エサキセレノンは糖尿病合併患者において腎機能や尿蛋白の程度に応じた投与制限が添付文書に定められています。",
   "source": {
-   "name": "エサキセレノン錠 添付文書(効能・効果に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠1.25mg ／ ミネ 添付文書 7.2 用法及び用量に関連する注意・9.1.1(アルブミン尿又は蛋白尿を伴う糖尿病患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149049F1027_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-047",
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "β遮断薬をインスリン療法中の糖尿病患者に用いる際に注意すべき点として正しいのはどれか。",
+  "question": "ビソプロロールを特発性低血糖症やコントロール不十分な糖尿病の患者に用いる際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "低血糖からの回復を早める作用がある",
-   "インスリンの効果を完全に無効化する",
-   "相互作用は報告されていない",
-   "低血糖からの回復を遅らせるおそれがある"
+   "低血糖の前駆症状である頻脈等の交感神経系反応をマスクしやすい",
+   "低血糖を起こさなくなる",
+   "血糖値が必ず上昇する",
+   "糖尿病患者には影響がない"
   ],
-  "correctIndex": 3,
-  "explanation": "β遮断薬は低血糖からの回復に関与するカテコラミン作用を抑制するため、回復を遅らせるおそれがあり注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.1.2に、特発性低血糖症、コントロール不十分な糖尿病、長期間絶食状態の患者では血糖値に注意すること、低血糖の前駆症状である頻脈等の交感神経系反応をマスクしやすいことが記載されています。",
   "source": {
-   "name": "ビソプロロールフマル酸塩錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビソプロロールフマル酸塩錠0.625mg 添付文書 9.1.2(低血糖の前駆症状のマスク)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-048",
@@ -8162,11 +8162,11 @@
   "correctIndex": 0,
   "explanation": "一部のCa拮抗薬はジゴキシンの血中濃度を上昇させることがあり、ジギタリス中毒のリスクに注意が必要です。",
   "source": {
-   "name": "ジゴキシン錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジゴキシン錠0.0625「KYO」 ／ 添付文書 10.2 併用注意(カルシウム拮抗剤・ベラパミル)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2113003F1065_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-049",
@@ -8183,32 +8183,32 @@
   "correctIndex": 1,
   "explanation": "ARB・ACE阻害薬は妊娠中期以降で胎児への影響が懸念されるため、妊娠が判明した場合は速やかに相談するよう説明することが重要です。",
   "source": {
-   "name": "カンデサルタン シレキセチル錠(ブロプレス)インタビューフォーム(第15版・2025年9月改訂) Ⅷ.6.(1)9.4.1妊娠する可能性のある女性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カンデサルタン錠2mg「あすか」 添付文書 9.5 妊婦(妊娠が判明した場合は直ちに投与を中止)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149040F1034_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-050",
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "サイアザイド系利尿薬がカルシウム代謝に与える影響として正しいのはどれか。",
+  "question": "ヒドロクロロチアジドの作用機序として添付文書に記載されているのはどれか。",
   "choices": [
-   "尿中カルシウム排泄を減少させ、血清カルシウム値がやや上昇することがある",
-   "必ず重篤な高カルシウム血症を来す",
-   "尿中カルシウム排泄を増加させ、低カルシウム血症を来しやすい",
-   "カルシウム代謝には影響しない"
+   "腎遠位尿細管におけるNa+とCl-の再吸収を抑制し、水の排泄を促進する",
+   "近位尿細管でのグルコース再吸収を阻害する",
+   "ヘンレ係蹄上行脚のNa-K-2Cl共輸送体を阻害する",
+   "アルドステロン受容体を遮断する"
   ],
   "correctIndex": 0,
-  "explanation": "サイアザイド系利尿薬は尿中カルシウム排泄を減少させる作用があり、血清カルシウム値がやや上昇することがあります。",
+  "explanation": "添付文書18.1に、腎遠位尿細管におけるNa+とCl-の再吸収を抑制し水の排泄を促進させること、炭酸脱水酵素阻害作用も有することが記載されています。降圧作用は初期には循環血流量の低下により、長期的には末梢血管の拡張によると考えられています。",
   "source": {
-   "name": "ヒドロクロロチアジド錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「ト 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2132004F1103_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-001",
@@ -14042,11 +14042,11 @@
   "correctIndex": 2,
   "explanation": "メトホルミンは腎機能が高度に低下した患者で乳酸アシドーシスのリスクが高まるため禁忌であり、ヨード造影剤検査前後は休薬が必要です。",
   "source": {
-   "name": "メトホルミン塩酸塩錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メトホルミン塩酸塩錠250mgMT「トー 添付文書 2.1 禁忌(重度の腎機能障害等)・ヨード造影剤検査時の一時中止",
+   "url": "https://www.info.pmda.go.jp/go/pack/3962002F2086_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-002",
@@ -14063,32 +14063,32 @@
   "correctIndex": 3,
   "explanation": "SGLT2阻害薬は尿中への糖排泄を促進するため尿路感染症・性器感染症のリスクが高まり、利尿作用による脱水にも注意が必要です。",
   "source": {
-   "name": "エンパグリフロジン錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジャディアンス錠10mg ／ 添付文書 11.2 その他の副作用(尿路感染・外陰部腟カンジダ症・体液量減少)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969023F1023_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-003",
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "SU薬の副作用として体重への影響はどれか。",
+  "question": "グリメピリド(SU薬)の作用機序として添付文書に記載されているのはどれか。",
   "choices": [
-   "必ず著明な体重減少を来す",
-   "体重には影響しない",
-   "体重増加を来しやすい",
-   "体重減少を来しやすい"
+   "主に膵β細胞の刺激による内因性インスリン分泌の促進",
+   "腎臓での糖の再吸収阻害",
+   "小腸での二糖類の消化・吸収の遅延",
+   "インクレチンの分解抑制"
   ],
-  "correctIndex": 2,
-  "explanation": "SU薬はインスリン分泌を強く促進するため、体重増加を来しやすいことが知られています。",
+  "correctIndex": 0,
+  "explanation": "添付文書18.1に、グリメピリドは主に膵β細胞の刺激による内因性インスリン分泌の促進(膵作用)により血糖降下作用を発現すると考えられ、in vitro試験では糖輸送担体の活性化等の関与も示されていると記載されています。",
   "source": {
-   "name": "グリメピリド錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グリメピリド錠0.5mg「AA」 ／ 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/3961008F1039_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-004",
@@ -14105,11 +14105,11 @@
   "correctIndex": 0,
   "explanation": "DPP-4阻害薬はSU薬と併用するとインスリン分泌促進作用が重なり、低血糖のリスクが増加することがあります。",
   "source": {
-   "name": "シタグリプチンリン酸塩水和物錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グラクティブ錠12.5mg ／ 添付文書 10.2 併用注意(糖尿病用薬: 低血糖の発現に注意)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969010F1026_1_36/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-005",
@@ -14137,21 +14137,21 @@
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "GLP-1受容体作動薬で注意が必要な既往歴はどれか。",
+  "question": "リラグルチド(GLP-1受容体作動薬)の急性膵炎について、添付文書が患者に指導するよう求めている内容はどれか。",
   "choices": [
-   "気管支喘息の既往",
-   "急性膵炎の既往",
-   "高尿酸血症の既往",
-   "骨粗鬆症の既往"
+   "嘔吐を伴う持続的な激しい腹痛等の初期症状があらわれたら使用を中止し速やかに医師の診断を受ける",
+   "腹痛があっても投与を続ける",
+   "腹痛は必ず一過性なので様子をみる",
+   "特に指導は不要である"
   ],
-  "correctIndex": 1,
-  "explanation": "GLP-1受容体作動薬は急性膵炎の発現が報告されており、膵炎の既往がある患者では注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.5に、急性膵炎の初期症状(嘔吐を伴う持続的な激しい腹痛等)があらわれた場合は使用を中止し、速やかに医師の診断を受けるよう指導することと記載されています。また8.6で、胃腸障害が発現した場合は急性膵炎の可能性を考慮し、必要に応じて画像検査等による原因精査を考慮するとされています。",
   "source": {
-   "name": "リラグルチド注射液 添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビクトーザ皮下注18mg 添付文書 8.5・8.6 重要な基本的注意(急性膵炎の初期症状)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499410G1021_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-007",
@@ -14189,11 +14189,11 @@
   "correctIndex": 1,
   "explanation": "SGLT2阻害薬では、血糖値が正常~軽度上昇にとどまるにもかかわらずケトアシドーシスを来す「正常血糖ケトアシドーシス」に注意が必要です。",
   "source": {
-   "name": "エンパグリフロジン錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジャディアンス錠10mg ／ 添付文書 血糖コントロールが良好でもケトアシドーシスに至ることがある",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969023F1023_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-009",
@@ -14210,11 +14210,11 @@
   "correctIndex": 0,
   "explanation": "α-グルコシダーゼ阻害薬はショ糖の分解を阻害するため、低血糖時はブドウ糖を摂取する必要があります。",
   "source": {
-   "name": "アカルボース錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アカルボース錠50mg「サワイ」 添付文書 低血糖時はショ糖ではなくブドウ糖を投与する",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969003F1093_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-010",
