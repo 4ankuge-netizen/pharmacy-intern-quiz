@@ -123,6 +123,13 @@ function main() {
   }
 
   writeFileSync(QUESTIONS_PATH, JSON.stringify(questions, null, 1) + '\n', 'utf8');
+
+  /*
+    変更履歴は、問題データの書き込みが成功したあとで残す。
+    先に書いてしまうと、途中で入力の誤りに気づいて中止したときに
+    「実際には変えていない変更」が履歴に残ってしまうため。
+  */
+  for (const entry of entries) appendFileSync(LOG_PATH, entry, 'utf8');
   console.log(`修正した問題: ${count}問`);
   console.log(`変更履歴: ${LOG_PATH}`);
 }
