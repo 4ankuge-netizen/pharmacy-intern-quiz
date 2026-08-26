@@ -1547,32 +1547,32 @@
   "correctIndex": 3,
   "explanation": "エリスロポエチン製剤は赤血球増加に伴い血栓塞栓症のリスクが上昇することがあり、過度なヘモグロビン上昇を避ける必要があります。",
   "source": {
-   "name": "エポエチンアルファ注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エポエチンアルファBS注750シリンジ 添付文書 9.1.1・11.1.3(心筋梗塞・肺梗塞・脳梗塞)・血栓塞栓症の発現頻度",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999427A1026_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-026",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "パロノセトロンが遅発性の悪心・嘔吐にも効果が期待される理由として正しいのはどれか。",
+  "question": "パロノセトロン(アロキシ)の消失半減期として添付文書に記載されているのはどれか。",
   "choices": [
-   "ドパミン受容体を遮断するため",
-   "NK1受容体を遮断するため",
-   "制吐作用の機序がまったく異なるため",
-   "他の5-HT3受容体拮抗薬より半減期が長いため"
+   "約40時間",
+   "約4時間",
+   "約4日",
+   "約10分"
   ],
-  "correctIndex": 3,
-  "explanation": "パロノセトロンは他の5-HT3受容体拮抗薬と比較して半減期が長く、遅発性の悪心・嘔吐への効果も期待されます。",
+  "correctIndex": 0,
+  "explanation": "添付文書7.2に、本剤の消失半減期は約40時間であり、短期間に反復投与を行うと過度に血中濃度が上昇するおそれがあるため1週間未満の間隔での反復投与は避けることと記載されています。効能又は効果は抗悪性腫瘍剤投与に伴う消化器症状(悪心、嘔吐)で、遅発期を含みます。",
   "source": {
-   "name": "パロノセトロン塩酸塩注射液 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アロキシ静注0.75mg ／ ア 添付文書 7.2 用法及び用量に関連する注意(消失半減期 約40時間)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2391404A1020_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-027",
@@ -1589,11 +1589,11 @@
   "correctIndex": 2,
   "explanation": "オランザピンは抗精神病薬であり、制吐目的で用いる場合も傾眠や血糖値上昇などの副作用に注意が必要です。",
   "source": {
-   "name": "オランザピン錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オランザピン錠2.5mg「日新」 添付文書 8.1 重要な基本的注意(著しい血糖値の上昇)・11.2 その他の副作用(傾眠22.3%)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179044F1169_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-028",
@@ -1610,32 +1610,32 @@
   "correctIndex": 3,
   "explanation": "アナモレリンは心電図異常の報告があり、投与中は心電図モニタリングなどの注意が必要とされています。",
   "source": {
-   "name": "アナモレリン塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エドルミズ錠50mg 添付文書 8.1 重要な基本的注意(心電図異常・定期的な心電図測定)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999054F1028_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-029",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "デュロキセチンとタモキシフェンを併用する際に考慮すべき点として正しいのはどれか。",
+  "question": "デュロキセチンの代謝と酵素阻害作用について、添付文書に記載されているのはどれか。",
   "choices": [
-   "デュロキセチンのCYP2D6阻害作用がタモキシフェンの活性代謝物産生に影響しうる",
-   "併用は推奨される組み合わせとされている",
-   "デュロキセチンの効果のみが影響を受ける",
-   "相互作用は報告されていない"
+   "主にCYP1A2で代謝され、CYP2D6を競合的に阻害する",
+   "主にCYP2D6で代謝され、CYP3A4を誘導する",
+   "代謝を受けずそのまま排泄される",
+   "薬物代謝酵素とは関わらない"
   ],
   "correctIndex": 0,
-  "explanation": "デュロキセチンはCYP2D6阻害作用を持つため、タモキシフェンの活性代謝物産生に影響を与える可能性があり注意が必要です。",
+  "explanation": "添付文書10.相互作用に、本剤の代謝には主として肝代謝酵素CYP1A2が関与しCYP2D6も一部寄与していること、また本剤はCYP2D6を競合的に阻害することが記載されています。CYP2D6で代謝される薬剤との併用では注意が必要です。",
   "source": {
-   "name": "デュロキセチン塩酸塩カプセル 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュロキセチンカプセル20mg「オー 添付文書 10.相互作用(CYP1A2で代謝、CYP2D6を競合的に阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179052M1081_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-030",
@@ -1663,42 +1663,42 @@
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "腎機能低下患者へのヒドロモルフォン投与における特徴として正しいのはどれか。",
+  "question": "腎機能障害患者にヒドロモルフォンを投与したときの薬物動態として、添付文書に記載されているのはどれか。",
   "choices": [
-   "経口投与ができない薬剤である",
-   "モルヒネと比較して代謝物の影響が少ないとされる",
-   "腎機能にかかわらず用量調整は不要である",
-   "腎機能低下患者には禁忌である"
+   "腎機能正常者と比べてクリアランスが軽度で約30%、中等度・重度で約50%減少する",
+   "腎機能によらずクリアランスは変わらない",
+   "クリアランスが2倍に増加する",
+   "腎機能障害患者には使用できない"
   ],
-  "correctIndex": 1,
-  "explanation": "ヒドロモルフォンはモルヒネと比較して活性代謝物の蓄積による影響が少ないとされ、腎機能低下患者での選択肢の一つとなります。",
+  "correctIndex": 0,
+  "explanation": "添付文書16.6.1に、がん疼痛患者にヒドロモルフォン注射剤を持続静脈内投与したとき、腎機能正常者と比べて軽度腎機能障害患者ではヒドロモルフォンクリアランスが約30%、中等度及び重度腎機能障害患者では約50%減少したと記載されています。",
   "source": {
-   "name": "ヒドロモルフォン塩酸塩錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナルラピド錠1mg ／ ナル 添付文書 16.6.1 腎機能障害患者の薬物動態",
+   "url": "https://www.info.pmda.go.jp/go/pack/8119003F1023_2_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-032",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "シクロホスファミドによる出血性膀胱炎対策として行われる標準的な対応はどれか。",
+  "question": "シクロホスファミド(エンドキサン)の出血性膀胱炎の防止として添付文書に記載されている対応はどれか。",
   "choices": [
-   "制吐薬の増量のみ",
-   "メスナ投与と大量補液・頻回排尿",
-   "G-CSFの増量のみ",
-   "オピオイドの中止のみ"
+   "尿量の増加を図る",
+   "水分摂取を制限する",
+   "利尿薬をすべて中止する",
+   "尿を我慢させる"
   ],
-  "correctIndex": 1,
-  "explanation": "シクロホスファミドの代謝物アクロレインが膀胱粘膜を傷害するため、メスナの併用と大量補液・頻回排尿による対策が行われます。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.1に、骨髄抑制、出血性膀胱炎等の重篤な副作用が起こることがあるので頻回に臨床検査(血液検査、尿検査、肝機能・腎機能検査等)を行い患者の状態を十分に観察すること、出血性膀胱炎の防止のため尿量の増加を図ることと記載されています。",
   "source": {
-   "name": "シクロホスファミド水和物注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンドキサン錠50mg 添付文書 8.1 重要な基本的注意(出血性膀胱炎の防止のため尿量の増加)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4211002F1044_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-033",
@@ -1715,11 +1715,11 @@
   "correctIndex": 0,
   "explanation": "ゲムシタビンは間質性肺炎などの重大な肺障害が報告されており、呼吸器症状の観察が重要です。",
   "source": {
-   "name": "ゲムシタビン塩酸塩注射液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゲムシタビン点滴静注液200mg/5mL「 添付文書 11.1.2 重大な副作用(間質性肺炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4224403A1026_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-034",
@@ -1736,11 +1736,11 @@
   "correctIndex": 0,
   "explanation": "ゲフィチニブなどEGFR阻害薬は間質性肺疾患のリスクがあり、致死的経過をたどることもあるため早期発見が重要です。",
   "source": {
-   "name": "ゲフィチニブ錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゲフィチニブ錠250mg「JG」 添付文書 11.1.1 重大な副作用(急性肺障害、間質性肺炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291013F1043_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-035",
@@ -1778,11 +1778,11 @@
   "correctIndex": 1,
   "explanation": "UGT1A1遺伝子多型を有する患者ではイリノテカンの活性代謝物の代謝が遅延し、重篤な副作用のリスクが高まることが知られています。",
   "source": {
-   "name": "イリノテカン塩酸塩水和物注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イリノテカン塩酸塩点滴静注液40mg 添付文書 5.効能又は効果に関連する注意(UGT1A1遺伝子多型)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240404A1130_3_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-037",
