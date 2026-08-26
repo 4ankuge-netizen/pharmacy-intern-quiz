@@ -35,32 +35,32 @@
   "correctIndex": 2,
   "explanation": "G-CSF製剤は好中球の産生を促すサイトカイン製剤で、抗がん剤治療による好中球減少症の治療・予防に用いられます。",
   "source": {
-   "name": "フィルグラスチム(遺伝子組換え)注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グラン注射液75 添付文書 薬効分類名(G-CSF製剤)・4.効能又は効果(がん化学療法による好中球減少症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399405A1027_4_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-003",
   "category": "cancer",
   "difficulty": "beginner",
   "type": "single",
-  "question": "がん性疼痛の治療で用いられる代表的な強オピオイドはどれか。",
+  "question": "中等度から高度の疼痛を伴う各種癌における鎮痛に用いられるオピオイド鎮痛薬はどれか。",
   "choices": [
+   "モルヒネ",
    "ロキソプロフェン",
    "アセトアミノフェン",
-   "モルヒネ",
    "ジクロフェナク"
   ],
-  "correctIndex": 2,
-  "explanation": "モルヒネは代表的な強オピオイド鎮痛薬で、中等度から高度のがん性疼痛に用いられます。",
+  "correctIndex": 0,
+  "explanation": "モルヒネ塩酸塩内服液(オプソ内服液)の薬効分類名はがん疼痛治療用内服液剤で、効能又は効果は中等度から高度の疼痛を伴う各種癌における鎮痛です。ロキソプロフェンやジクロフェナクはNSAIDs、アセトアミノフェンは解熱鎮痛剤で、いずれもオピオイドではありません。",
   "source": {
-   "name": "モルヒネ塩酸塩製剤 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オプソ内服液5mg 添付文書 4.効能又は効果(中等度から高度の疼痛を伴う各種癌における鎮痛)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8114005S1024_1_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-004",
@@ -151,21 +151,21 @@
   "category": "cancer",
   "difficulty": "beginner",
   "type": "single",
-  "question": "リン酸コデインの分類として正しいのはどれか。",
+  "question": "コデインリン酸塩錠の効能又は効果に含まれるのはどれか。",
   "choices": [
-   "弱オピオイド鎮痛薬",
-   "G-CSF製剤",
-   "非ステロイド性抗炎症薬(NSAIDs)",
-   "ステロイド性抗炎症薬"
+   "各種呼吸器疾患における鎮咳・鎮静",
+   "好中球減少症の治療",
+   "悪心・嘔吐の予防",
+   "高血圧症"
   ],
   "correctIndex": 0,
-  "explanation": "リン酸コデインは弱オピオイドに分類され、軽度から中等度の疼痛や鎮咳目的にも用いられます。",
+  "explanation": "コデインリン酸塩錠の薬効分類名は鎮咳剤で、効能又は効果は各種呼吸器疾患における鎮咳・鎮静、疼痛時における鎮痛、激しい下痢症状の改善です。連用により薬物依存を生じることがあるため慎重な投与が必要です。",
   "source": {
-   "name": "リン酸コデイン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コデインリン酸塩錠5mg「VTRS」 添付文書 薬効分類名(鎮咳剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2242001F1071_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-009",
@@ -277,21 +277,21 @@
   "category": "cancer",
   "difficulty": "beginner",
   "type": "single",
-  "question": "ドキソルビシンの分類として正しいのはどれか。",
+  "question": "ドキソルビシンで特に注意すべき、総投与量に関連した副作用として正しいのはどれか。",
   "choices": [
-   "タキサン系抗悪性腫瘍薬",
-   "白金製剤",
-   "代謝拮抗薬",
-   "アントラサイクリン系抗悪性腫瘍薬"
+   "心筋障害・心不全",
+   "間質性肺炎",
+   "出血性膀胱炎",
+   "末梢神経障害"
   ],
-  "correctIndex": 3,
-  "explanation": "ドキソルビシンはアントラサイクリン系抗悪性腫瘍薬で、心毒性(心筋障害)が特徴的な副作用として知られています。",
+  "correctIndex": 0,
+  "explanation": "ドキソルビシンは総投与量が500mg/m2を超えると重篤な心筋障害を起こすことが多くなるとされ、重大な副作用に心筋障害・心不全が挙げられています。治療終了後も定期的な心機能検査が望ましいとされています。",
   "source": {
-   "name": "ドキソルビシン塩酸塩注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドキソルビシン塩酸塩注射液10mg「 添付文書 8.3(総投与量が500mg/m2を超えると重篤な心筋障害)・11.1.1 心筋障害、心不全",
+   "url": "https://www.info.pmda.go.jp/go/pack/4235402A2021_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-015",
@@ -329,11 +329,11 @@
   "correctIndex": 3,
   "explanation": "トラスツズマブはHER2を標的とする分子標的薬で、HER2陽性乳がんなどに用いられます。",
   "source": {
-   "name": "トラスツズマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ハーセプチン注射用60 添付文書 薬効分類名(抗HER2 ヒト化モノクローナル抗体 抗悪性腫瘍剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291406D5024_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-017",
@@ -403,21 +403,21 @@
   "category": "cancer",
   "difficulty": "beginner",
   "type": "single",
-  "question": "タモキシフェンの主な使用目的として正しいのはどれか。",
+  "question": "タモキシフェンの位置づけとして正しいのはどれか。",
   "choices": [
-   "ホルモン受容体陽性乳がんの治療",
-   "前立腺がんの治療",
-   "大腸がんの治療",
-   "悪性リンパ腫の治療"
+   "乳癌に用いられる内分泌療法剤である",
+   "白金製剤に分類される抗悪性腫瘍薬である",
+   "免疫チェックポイント阻害薬である",
+   "G-CSF製剤である"
   ],
   "correctIndex": 0,
-  "explanation": "タモキシフェンは選択的エストロゲン受容体modulatorで、ホルモン受容体陽性乳がんの治療に用いられます。",
+  "explanation": "タモキシフェンの薬効分類名は抗乳癌剤で、効能又は効果は乳癌です。添付文書には『本剤は内分泌療法剤であり』と記載されています。",
   "source": {
-   "name": "タモキシフェンクエン酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ノルバデックス錠10mg ／ 添付文書 薬効分類名(抗乳癌剤)・4.効能又は効果(乳癌)・8.1(本剤は内分泌療法剤であり)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291003F1163_1_20/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-021",
@@ -497,11 +497,11 @@
   "correctIndex": 3,
   "explanation": "高用量メトトレキサート療法では、ホリナートカルシウムによるレスキュー療法で正常細胞への毒性を軽減します。",
   "source": {
-   "name": "ホリナートカルシウム注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ロイコボリン注3mg 添付文書 4.効能又は効果(葉酸代謝拮抗剤の毒性軽減)・6.用法及び用量(メトトレキサート療法)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3929403A1034_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-025",
@@ -655,21 +655,21 @@
   "category": "cancer",
   "difficulty": "beginner",
   "type": "single",
-  "question": "モルヒネ経口液(速放性製剤)ががん性疼痛治療で用いられる場面として正しいのはどれか。",
+  "question": "モルヒネ塩酸塩内服液を臨時追加投与(レスキュー・ドーズ)として使う場合、添付文書が示す1回量の目安はどれか。",
   "choices": [
-   "突出痛に対するレスキュー薬として用いられる",
-   "制吐目的で用いられる",
-   "好中球減少症治療に用いられる",
-   "定時投与のみに用いられ頓用はしない"
+   "定時投与中のモルヒネ経口製剤の1日量の1/6量",
+   "定時投与中のモルヒネ経口製剤の1日量と同量",
+   "定時投与中のモルヒネ経口製剤の1日量の2倍量",
+   "体重にかかわらず一律100mg"
   ],
   "correctIndex": 0,
-  "explanation": "速放性のモルヒネ経口液は効果発現が速いため、突出痛に対するレスキュー薬として用いられます。",
+  "explanation": "添付文書7.1に、臨時追加投与(レスキュー・ドーズ)として使用する場合、本剤の1回量は定時投与中のモルヒネ経口製剤の1日量の1/6量を目安として投与することと記載されています。定時投与では1日量を6分割し4時間ごとに投与します。",
   "source": {
-   "name": "モルヒネ塩酸塩内服液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オプソ内服液5mg 添付文書 7.1 用法及び用量に関連する注意(レスキュー・ドーズ)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8114005S1024_1_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-034",
@@ -865,21 +865,21 @@
   "category": "cancer",
   "difficulty": "beginner",
   "type": "single",
-  "question": "経口抗がん剤服用中の患者に一般的に指導される内容として正しいのはどれか。",
+  "question": "カペシタビン(ゼローダ)の投与中にGrade2の副作用が初めて発現した場合、添付文書の休薬・減量の規定として正しいのはどれか。",
   "choices": [
-   "効果がなければ自己判断で増量する",
-   "決められた用法・用量、休薬期間を自己判断で変えない",
-   "副作用が出ても報告せず様子を見る",
-   "飲み忘れた分はまとめて2回分服用する"
+   "Grade0-1に軽快するまで休薬する",
+   "そのまま同じ用量で投与を続ける",
+   "直ちに増量する",
+   "以後は再投与できない"
   ],
-  "correctIndex": 1,
-  "explanation": "経口抗がん剤は決められたスケジュールを守ることが重要で、自己判断での変更は行わないよう指導します。",
+  "correctIndex": 0,
+  "explanation": "添付文書7.2の休薬・減量の規定では、Grade1では休薬・減量不要ですが、Grade2が初回発現した場合はGrade0-1に軽快するまで休薬し、治療再開時の減量は不要とされています。Grade2の4回目の発現やGrade3の3回目の発現では投与中止・再投与不可となります。",
   "source": {
-   "name": "ゼローダ錠(カペシタビン) 添付文書(用法及び用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゼローダ錠300 添付文書 7.2 用法及び用量に関連する注意(休薬・減量の規定)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4223005F1022_2_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-beginner-044",
@@ -1012,21 +1012,21 @@
   "category": "cancer",
   "difficulty": "beginner",
   "type": "single",
-  "question": "アセトアミノフェンのがん疼痛治療における位置づけとして正しいのはどれか。",
+  "question": "アセトアミノフェンの薬効分類として正しいのはどれか。",
   "choices": [
-   "非オピオイド鎮痛薬としてオピオイドと併用されることがある",
-   "G-CSF製剤の代替として用いられる",
-   "強オピオイドの代替として単独で高度疼痛に用いる",
-   "制吐薬として用いられる"
+   "解熱鎮痛剤",
+   "オピオイド鎮痛薬",
+   "非ステロイド性抗炎症薬(NSAIDs)",
+   "副腎皮質ホルモン剤"
   ],
   "correctIndex": 0,
-  "explanation": "アセトアミノフェンは非オピオイド鎮痛薬であり、オピオイドと併用することで鎮痛効果を高める目的で用いられます。",
+  "explanation": "アセトアミノフェンの薬効分類名は解熱鎮痛剤で、効能又は効果は各種疾患及び症状における鎮痛、ならびに急性上気道炎等の解熱・鎮痛です。",
   "source": {
-   "name": "アセトアミノフェン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アセトアミノフェン錠200mg「ケンエ 添付文書 薬効分類名(解熱鎮痛剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/1141007F1241_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-001",
@@ -6314,11 +6314,11 @@
   "correctIndex": 2,
   "explanation": "β遮断薬は気管支のβ2受容体も遮断しうるため、気管支喘息患者では気管支攣縮を誘発するおそれがあり注意が必要です。",
   "source": {
-   "name": "ビソプロロールフマル酸塩錠 添付文書(禁忌・慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プロプラノロール塩酸塩錠10mg 添付文書 2.2 禁忌(気管支喘息、気管支痙攣のおそれのある患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123008F1277_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-011",
@@ -6493,21 +6493,21 @@
   "category": "hypertension",
   "difficulty": "beginner",
   "type": "single",
-  "question": "インダパミドの薬効分類として正しいのはどれか。",
+  "question": "インダパミドが主に作用する腎臓の部位として正しいのはどれか。",
   "choices": [
-   "β遮断薬",
-   "ARB",
-   "Ca拮抗薬",
-   "利尿薬(チアジド系類似薬)"
+   "遠位尿細管",
+   "ヘンレ係蹄",
+   "集合管",
+   "糸球体"
   ],
-  "correctIndex": 3,
-  "explanation": "インダパミドはチアジド系類似の利尿薬で、降圧目的に用いられます。",
+  "correctIndex": 0,
+  "explanation": "インダパミドは尿細管(特に遠位尿細管)におけるNaおよび水の再吸収を抑制し、利尿作用に基づく循環血量の減少と末梢血管平滑筋の収縮抑制により降圧作用を示します。",
   "source": {
-   "name": "インダパミド錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠1 ／ ナ 添付文書 18.1 作用機序(尿細管(特に遠位尿細管)におけるNa及び水再吸収率の抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149012F1059_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-020",
@@ -6587,11 +6587,11 @@
   "correctIndex": 1,
   "explanation": "アリスキレンはレニンを直接阻害する降圧薬です。",
   "source": {
-   "name": "アリスキレンフマル酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠150mg 添付文書 薬効分類名(直接的レニン阻害剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149047F1028_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-024",
@@ -13150,21 +13150,21 @@
   "category": "diabetes",
   "difficulty": "beginner",
   "type": "single",
-  "question": "GLP-1受容体作動薬(リラグルチドなど)の特徴として正しいのはどれか。",
+  "question": "GLP-1受容体作動薬(リラグルチドなど)のインスリン分泌に対する作用として正しいのはどれか。",
   "choices": [
-   "経口血糖降下薬であり注射薬はない",
-   "血糖依存的にインスリン分泌を促進し、体重減少効果も期待できる",
-   "血糖値にかかわらず一定のインスリン分泌を促進する",
-   "低血糖を高頻度に起こす薬剤である"
+   "グルコース濃度依存的にインスリン分泌を促進する",
+   "グルコース濃度に関係なく一定量のインスリン分泌を促進する",
+   "インスリン分泌を抑制する",
+   "インスリン受容体を直接刺激する"
   ],
-  "correctIndex": 1,
-  "explanation": "GLP-1受容体作動薬は血糖値に応じてインスリン分泌を促進するため低血糖を起こしにくく、食欲抑制による体重減少効果も期待されます。",
+  "correctIndex": 0,
+  "explanation": "GLP-1受容体作動薬はGLP-1受容体を介してcAMPを増加させ、グルコース濃度依存的にインスリン分泌を促進します。さらにグルコース濃度依存的にグルカゴン分泌を抑制します。",
   "source": {
-   "name": "リラグルチド注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビクトーザ皮下注18mg 添付文書 18.1 作用機序(血糖濃度依存的なインスリン分泌促進)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499410G1021_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-010",
@@ -13328,11 +13328,11 @@
   "correctIndex": 3,
   "explanation": "インスリングラルギンは作用が長時間持続する持効型インスリン製剤で、基礎インスリン補充に用いられます。",
   "source": {
-   "name": "インスリングラルギン注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランタス注ソロスター 添付文書 薬効分類名(持効型溶解インスリンアナログ製剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492416G2024_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-018",
@@ -13349,11 +13349,11 @@
   "correctIndex": 3,
   "explanation": "インスリンアスパルトは作用発現が速い超速効型インスリン製剤で、食後高血糖の是正に用いられます。",
   "source": {
-   "name": "インスリンアスパルト注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ノボラピッド注 フレックスタッチ 添付文書 薬効分類名(超速効型インスリンアナログ注射液)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492415G1031_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-019",
@@ -13549,21 +13549,21 @@
   "category": "diabetes",
   "difficulty": "beginner",
   "type": "single",
-  "question": "経口血糖降下薬の飲み忘れに気づいた際の一般的な対応として適切なのはどれか。",
+  "question": "グリメピリドの使用にあたって、添付文書が患者及びその家族に十分説明するよう求めている内容はどれか。",
   "choices": [
-   "自己判断でまとめて2回分を服用しない",
-   "飲み忘れについては特に注意する必要はない",
-   "飲み忘れた分は次の食事後にまとめて服用する",
-   "気づいた時点で必ず2回分をまとめて服用する"
+   "低血糖症状及びその対処方法",
+   "注射手技",
+   "食物アレルギーの検査方法",
+   "血圧計の使い方"
   ],
   "correctIndex": 0,
-  "explanation": "飲み忘れに気づいても自己判断で2回分をまとめて服用すると低血糖などのリスクが高まるため、指示に従った対応が必要です。",
+  "explanation": "添付文書8.1に、本剤の使用にあたっては患者及びその家族に対し低血糖症状及びその対処方法について十分説明することと記載されています。また8.3で、重篤かつ遷延性の低血糖を起こすことがあるため、高所作業や自動車の運転等に従事している患者への投与には注意が必要とされています。",
   "source": {
-   "name": "グリメピリド錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グリメピリド錠0.5mg「AA」 ／ 添付文書 8.1 重要な基本的注意(低血糖症状及びその対処方法の説明)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3961008F1039_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-029",
@@ -13706,11 +13706,11 @@
   "correctIndex": 0,
   "explanation": "経口セマグルチドは吸収性の観点から、起床時空腹時に少量の水(約120mL以下)とともに服用することとされています。",
   "source": {
-   "name": "セマグルチド錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リベルサス錠3mg 添付文書 7.1(1日のうちの最初の食事又は飲水の前に空腹の状態で服用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499014F1021_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-036",
@@ -14021,11 +14021,11 @@
   "correctIndex": 3,
   "explanation": "インスリンデグルデクは作用が非常に長時間持続する持効型インスリン製剤です。",
   "source": {
-   "name": "インスリンデグルデク注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "トレシーバ注 フレックスタッチ 添付文書 薬効分類名(持効型溶解インスリンアナログ注射液)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492419G1021_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-001",
@@ -16331,11 +16331,11 @@
   "correctIndex": 1,
   "explanation": "ニトログリセリンは硝酸薬で、舌下投与などにより冠血管を拡張し狭心症発作時の症状緩和に用いられます。",
   "source": {
-   "name": "ニトログリセリン舌下錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニトロペン舌下錠0.3mg 添付文書 薬効分類名(狭心症用舌下錠)・4.効能又は効果(狭心症の一時的緩解)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171018K1039_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-003",
@@ -16344,19 +16344,19 @@
   "type": "single",
   "question": "ワルファリンの主な使用目的として正しいのはどれか。",
   "choices": [
-   "狭心症発作時の頓用治療",
-   "高血圧の第一選択治療",
-   "心不全のうっ血症状改善",
-   "心房細動における脳梗塞などの血栓塞栓症の予防"
+   "血栓塞栓症の治療及び予防",
+   "高血圧症の治療",
+   "不整脈発作の停止",
+   "心不全における強心作用"
   ],
-  "correctIndex": 3,
-  "explanation": "ワルファリンは抗凝固薬で、心房細動患者における血栓塞栓症(脳梗塞など)の予防に用いられます。",
+  "correctIndex": 0,
+  "explanation": "ワルファリンは経口抗凝固剤で、効能又は効果は血栓塞栓症(静脈血栓症、心筋梗塞症、肺塞栓症、脳塞栓症、緩徐に進行する脳血栓症等)の治療及び予防です。ビタミンK作用に拮抗して凝固因子の生合成を抑制します。",
   "source": {
-   "name": "ワルファリンカリウム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワルファリンK錠0.5mg「トーワ」 添付文書 4.効能又は効果(血栓塞栓症の治療及び予防)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3332001F1083_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-004",
@@ -16478,11 +16478,11 @@
   "correctIndex": 0,
   "explanation": "ニトログリセリンは血管拡張作用により血圧が低下し、投与後に立ちくらみを起こすことがあるため注意が必要です。",
   "source": {
-   "name": "ニトログリセリン舌下錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニトロペン舌下錠0.3mg 添付文書 8.2 重要な基本的注意(起立性低血圧)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171018K1039_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-010",
@@ -16730,11 +16730,11 @@
   "correctIndex": 1,
   "explanation": "リドカイン注射液は局所麻酔薬としてだけでなく、静注により重症心室性不整脈の治療にも用いられます。",
   "source": {
-   "name": "リドカイン塩酸塩注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "静注用キシロカイン2% 添付文書 薬効分類名(抗不整脈剤)・4.効能又は効果(心室性期外収縮・発作性頻拍(心室性)等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1214401A5022_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-022",
@@ -16877,11 +16877,11 @@
   "correctIndex": 3,
   "explanation": "ニトログリセリン舌下錠は口腔粘膜からの速やかな吸収を目的とし、飲み込まず舌下で溶かして使用します。",
   "source": {
-   "name": "ニトログリセリン舌下錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニトロペン舌下錠0.3mg 添付文書 6.用法及び用量(舌下投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171018K1039_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-029",
@@ -16951,42 +16951,42 @@
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "抗凝固薬服用中の患者への服薬指導として重要な内容はどれか。",
+  "question": "ワルファリン服用中に特に注意すべき重大な副作用はどれか。",
   "choices": [
-   "自己判断で服用を中止してよいと伝える",
-   "普段と違うあざや出血がみられたら医療者に相談するよう伝える",
-   "出血予防のため運動を完全に禁止する必要があると伝える",
-   "出血症状は無視してよいと伝える"
+   "出血(脳出血等の臓器内出血、粘膜出血、皮下出血)",
+   "重度の高血圧",
+   "高血糖",
+   "難聴"
   ],
-  "correctIndex": 1,
-  "explanation": "抗凝固薬服用中は出血リスクが高まるため、普段と異なるあざや出血がみられた場合は速やかに相談するよう指導することが重要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書の11.1重大な副作用の筆頭が出血で、脳出血、脾破裂に至る脾臓出血等の臓器内出血、粘膜出血、皮下出血等を生じることがあると記載されています。抗凝固作用を急速に減少させる必要がある場合は投与を中止し、ビタミンK製剤の投与を考慮します。",
   "source": {
-   "name": "ワルファリンカリウム錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワルファリンK錠0.5mg「トーワ」 添付文書 11.1.1 重大な副作用(出血)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3332001F1083_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-033",
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "抗血小板薬服用中の患者が手術・抜歯を予定している場合の対応として適切なのはどれか。",
+  "question": "クロピドグレル服用中の患者が、血小板凝集抑制が問題となる手術を受ける場合の対応として添付文書に記載されているのはどれか。",
   "choices": [
-   "手術予定があっても服用継続について相談する必要はない",
-   "必ず自己判断で数日前から中止する",
-   "抗血小板薬は手術と無関係である",
-   "自己判断で中止せず、事前に医師・歯科医師に相談する"
+   "14日以上前に投与を中止することが望ましい",
+   "手術当日まで通常どおり服用してよい",
+   "手術直前に倍量を投与する",
+   "手術との関連はないため考慮しなくてよい"
   ],
-  "correctIndex": 3,
-  "explanation": "抗血小板薬の休薬は出血リスクと血栓リスクのバランスを考慮して判断されるため、自己判断せず事前に相談することが重要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.2に、本剤による血小板凝集抑制が問題となるような手術の場合には14日以上前に投与を中止することが望ましいと記載されています。十分な休薬期間を設けられない場合は重大な出血のリスクが高まるとされ、中止期間中の血栓症・塞栓症リスクが高い症例では適切な発症抑制策を講じます。",
   "source": {
-   "name": "クロピドグレル硫酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラビックス錠25mg ／ 添付文書 8.2 重要な基本的注意(手術時は14日以上前に投与中止)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399008F1025_1_31/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-034",
@@ -17014,21 +17014,21 @@
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "β遮断薬服用中の患者が自己で脈拍を測定する意義として正しいのはどれか。",
+  "question": "ビソプロロールの投与が長期にわたる場合に、添付文書が定期的に行うよう求めている検査はどれか。",
   "choices": [
-   "過度な徐脈がないかを確認できる",
-   "脈拍が速いほど薬が効いていると判断できる",
-   "脈拍測定によって血圧が分かる",
-   "脈拍測定は治療と無関係である"
+   "脈拍・血圧・心電図などの心機能検査",
+   "視力検査",
+   "聴力検査",
+   "骨密度検査"
   ],
   "correctIndex": 0,
-  "explanation": "β遮断薬は心拍数を低下させる作用があるため、自己での脈拍測定により過度な徐脈がないかを確認することが有用です。",
+  "explanation": "添付文書8.1に、投与が長期にわたる場合は心機能検査(脈拍、血圧、心電図、X線等)を定期的に行うこと、徐脈又は低血圧の症状があらわれた場合には減量又は投与を中止することと記載されています。",
   "source": {
-   "name": "ビソプロロールフマル酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビソプロロールフマル酸塩錠0.625mg 添付文書 8.1 重要な基本的注意(定期的な心機能検査)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-036",
@@ -17266,21 +17266,21 @@
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "アデノシン三リン酸(ATP)注射液が用いられる場面として正しいのはどれか。",
+  "question": "アデノシン三リン酸二ナトリウム(ATP)注射液の日本での薬効分類名として正しいのはどれか。",
   "choices": [
-   "脂質異常症の治療",
-   "発作性上室頻拍の停止目的",
-   "高血圧の第一選択治療",
-   "慢性心不全の維持療法"
+   "代謝賦活剤",
+   "抗不整脈剤",
+   "抗血小板剤",
+   "利尿剤"
   ],
-  "correctIndex": 1,
-  "explanation": "ATP注射液は房室結節の伝導を一過性に抑制する作用があり、発作性上室頻拍の停止目的で用いられます。",
+  "correctIndex": 0,
+  "explanation": "ATP注射液の薬効分類名は代謝賦活剤で、効能又は効果は頭部外傷後遺症、心不全、耳鳴・難聴、慢性肝疾患における肝機能の改善などに伴う諸症状の改善です。発作性上室頻拍の停止は、日本の添付文書の効能又は効果には含まれていません。",
   "source": {
-   "name": "アデノシン三リン酸二ナトリウム注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ATP注20mg「イセイ」 添付文書 薬効分類名(代謝賦活剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/3992400A2090_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-048",
@@ -20363,11 +20363,11 @@
   "correctIndex": 1,
   "explanation": "抗血小板薬服用中は出血リスクが高まるため、普段と異なるあざや出血に気づいたら相談するよう指導することが重要です。",
   "source": {
-   "name": "クロピドグレル硫酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラビックス錠25mg ／ 添付文書 8.7 重要な基本的注意(異常な出血時は医師に連絡するよう注意を促す)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399008F1025_1_31/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-037",
@@ -22915,21 +22915,21 @@
   "category": "psychiatric",
   "difficulty": "beginner",
   "type": "single",
-  "question": "ジアゼパムなどベンゾジアゼピン系薬の主な使用目的として正しいのはどれか。",
+  "question": "ジアゼパムの効能又は効果に含まれるものとして正しいのはどれか。",
   "choices": [
-   "認知症の根本的治療",
-   "統合失調症の治療",
-   "てんかん重積状態以外での長期第一選択治療",
-   "抗不安・睡眠導入"
+   "神経症における不安・緊張・抑うつ",
+   "統合失調症の陽性症状",
+   "アルツハイマー型認知症の進行抑制",
+   "気管支喘息の発作予防"
   ],
-  "correctIndex": 3,
-  "explanation": "ベンゾジアゼピン系薬は抗不安作用・鎮静催眠作用を持ち、不安障害や不眠症治療に用いられます。",
+  "correctIndex": 0,
+  "explanation": "ジアゼパムはGABA-A受容体のベンゾジアゼピン結合部位に作用して神経機能抑制を促進し、神経症やうつ病における不安・緊張、心身症の身体症候、筋緊張の軽減、麻酔前投薬に用いられます。",
   "source": {
-   "name": "ジアゼパム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジアゼパム錠2「サワイ」 添付文書 4. 効能又は効果(神経症における不安・緊張・抑うつ)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/1124017F2046_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-006",
@@ -23083,21 +23083,21 @@
   "category": "psychiatric",
   "difficulty": "beginner",
   "type": "single",
-  "question": "ハロペリドールの分類として正しいのはどれか。",
+  "question": "ハロペリドールの主な作用機序として正しいのはどれか。",
   "choices": [
-   "定型抗精神病薬",
-   "抗うつ薬",
-   "抗てんかん薬",
-   "非定型抗精神病薬"
+   "中枢神経系のドパミン作動性神経に対する抑制作用",
+   "セロトニン再取り込みの選択的阻害",
+   "GABA-A受容体機能の促進",
+   "アセチルコリンエステラーゼの阻害"
   ],
   "correctIndex": 0,
-  "explanation": "ハロペリドールは定型抗精神病薬に分類され、強力なドパミン受容体遮断作用を持ちます。",
+  "explanation": "ハロペリドールは中枢神経系におけるドパミン作動性・ノルアドレナリン作動性神経等に対する抑制作用により効果を示すと考えられており、統合失調症・躁病に用いられます。",
   "source": {
-   "name": "ハロペリドール錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ハロペリドール錠0.75mg「ヨシトミ 添付文書 18.1 作用機序(中枢神経系におけるドパミン作動性・ノルアドレナリン作動性神経等に対する抑制作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179020F1260_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-014",
@@ -23230,21 +23230,21 @@
   "category": "psychiatric",
   "difficulty": "beginner",
   "type": "single",
-  "question": "ゾルピデムの分類として正しいのはどれか。",
+  "question": "ゾルピデムの作用機序として正しいのはどれか。",
   "choices": [
-   "抗精神病薬",
-   "ベンゾジアゼピン系抗不安薬",
-   "非ベンゾジアゼピン系睡眠薬",
-   "抗うつ薬"
+   "ω1(BZD1)受容体への選択的な親和性によりGABA-A系の抑制機構を増強する",
+   "メラトニン受容体を刺激する",
+   "オレキシン受容体を遮断する",
+   "ヒスタミンH1受容体を遮断する"
   ],
-  "correctIndex": 2,
-  "explanation": "ゾルピデムは非ベンゾジアゼピン系(Z薬)の睡眠薬に分類されます。",
+  "correctIndex": 0,
+  "explanation": "ゾルピデムはω1(BZD1)受容体に対して選択的な親和性を示し、GABA-A系の抑制機構を増強することで催眠作用を示します。効能又は効果は不眠症です。",
   "source": {
-   "name": "ゾルピデム酒石酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾルピデム酒石酸塩錠5mg「JG」 添付文書 18.1 作用機序(ω1(BZD1)受容体に対して選択的な親和性・GABA-A系の抑制機構を増強)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1129009F1114_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-021",
@@ -23345,11 +23345,11 @@
   "correctIndex": 3,
   "explanation": "リバスチグミンは貼付剤としても用いられるコリンエステラーゼ阻害薬で、経口摂取が困難な患者にも使用しやすい特徴があります。",
   "source": {
-   "name": "リバスチグミン貼付剤 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イクセロンパッチ4.5mg 添付文書 18.1 作用機序(コリンエステラーゼ阻害)・貼付剤",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190700S1029_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-026",
@@ -23366,11 +23366,11 @@
   "correctIndex": 3,
   "explanation": "メチルフェニデートは中枢神経刺激薬で、ADHD治療薬として用いられます(製剤により適応が異なります)。",
   "source": {
-   "name": "メチルフェニデート塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コンサータ錠18mg 添付文書 4.効能又は効果(注意欠陥/多動性障害(AD/HD))",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179009G1022_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-027",
@@ -23744,11 +23744,11 @@
   "correctIndex": 1,
   "explanation": "クエチアピンは非定型抗精神病薬で、統合失調症や双極性障害の治療に用いられます。",
   "source": {
-   "name": "クエチアピンフマル酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビプレッソ徐放錠50mg 添付文書 4.効能又は効果(双極性障害におけるうつ症状の改善) / クエチアピン錠 添付文書 4.効能又は効果(統合失調症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179042G1025_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-045",
@@ -23786,11 +23786,11 @@
   "correctIndex": 0,
   "explanation": "ベンラファキシンはSNRIに分類される抗うつ薬です。",
   "source": {
-   "name": "ベンラファキシン塩酸塩徐放カプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イフェクサーSRカプセル37.5mg 添付文書 薬効分類名(セロトニン・ノルアドレナリン再取り込み阻害剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179055N1021_3_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-047",
@@ -23839,21 +23839,21 @@
   "category": "psychiatric",
   "difficulty": "beginner",
   "type": "single",
-  "question": "エスゾピクロンの分類として正しいのはどれか。",
+  "question": "エスゾピクロンの説明として正しいのはどれか。",
   "choices": [
-   "抗精神病薬",
-   "非ベンゾジアゼピン系睡眠薬",
-   "オレキシン受容体拮抗薬",
-   "メラトニン受容体作動薬"
+   "ゾピクロンの一方のエナンチオマーであり不眠症に用いられる",
+   "ベンゾジアゼピン骨格を有する抗不安薬である",
+   "メラトニン受容体作動薬である",
+   "オレキシン受容体拮抗薬である"
   ],
-  "correctIndex": 1,
-  "explanation": "エスゾピクロンはゾルピデムと同様、非ベンゾジアゼピン系(Z薬)の睡眠薬に分類されます。",
+  "correctIndex": 0,
+  "explanation": "エスゾピクロンはラセミ体であるゾピクロンの一方のエナンチオマー((S)-エナンチオマー)で、効能又は効果は不眠症です。",
   "source": {
-   "name": "エスゾピクロン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エスゾピクロン錠1mg「アメル」 添付文書 18.1 作用機序(ゾピクロンの一方のエナンチオマー)・4.効能又は効果(不眠症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1129010F1087_1_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-050",
@@ -26065,21 +26065,21 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "フェキソフェナジンなど第2世代抗ヒスタミン薬の特徴として正しいのはどれか。",
+  "question": "フェキソフェナジンの作用機序として正しいのはどれか。",
   "choices": [
-   "主にステロイド外用薬に分類される",
-   "抗ヒスタミン作用を持たない",
-   "第1世代と比べて眠気が強い",
-   "第1世代と比べて眠気が少ない"
+   "ケミカルメディエーターの遊離を抑制し、ヒスタミンのH1作用に拮抗する",
+   "ヒスタミンのH2受容体を遮断する",
+   "ロイコトリエン受容体を遮断する",
+   "副腎皮質ホルモン受容体を刺激する"
   ],
-  "correctIndex": 3,
-  "explanation": "第2世代抗ヒスタミン薬は中枢移行性が低く、第1世代と比較して眠気などの中枢性副作用が少ないとされています。",
+  "correctIndex": 0,
+  "explanation": "添付文書18.1に、抗原抗体反応に伴って起こる肥満細胞からのヒスタミンなどのケミカルメディエーターの遊離を抑制するとともに、ヒスタミンのH1作用に拮抗することによりアレルギー症状を緩和すると記載されています。効能又は効果はアレルギー性鼻炎、蕁麻疹、皮膚疾患に伴うそう痒です。",
   "source": {
-   "name": "フェキソフェナジン塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フェキソフェナジン塩酸塩錠30mg「 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490023F1210_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-002",
@@ -26117,11 +26117,11 @@
   "correctIndex": 3,
   "explanation": "アドレナリン自己注射はアナフィラキシーが疑われる場合に緊急的に使用する薬剤です。",
   "source": {
-   "name": "アドレナリン自己注射薬 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エピペン注射液0.15mg 添付文書 薬効分類名(アナフィラキシー補助治療剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2451402G2020_4_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-004",
@@ -26569,21 +26569,21 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "コルヒチンの主な使用目的として正しいのはどれか。",
+  "question": "コルヒチンの効能又は効果として正しいのはどれか。",
   "choices": [
-   "ベーチェット病の治療",
-   "花粉症の治療",
-   "気管支喘息の治療",
-   "アナフィラキシーの緊急治療"
+   "痛風発作の緩解及び予防",
+   "ベーチェット病の眼症状",
+   "関節リウマチ",
+   "全身性エリテマトーデス"
   ],
   "correctIndex": 0,
-  "explanation": "コルヒチンは抗炎症作用を持ち、ベーチェット病の口腔内潰瘍などの症状抑制に用いられます。",
+  "explanation": "コルヒチンの薬効分類名は痛風・家族性地中海熱治療剤で、効能又は効果は痛風発作の緩解及び予防と家族性地中海熱です。微小管タンパク質に結合して顆粒球の遊走を抑制します。",
   "source": {
-   "name": "コルヒチン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コルヒチン錠0.5mg「タカタ」 添付文書 薬効分類名(痛風・家族性地中海熱治療剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/3941001F1077_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-026",
@@ -26726,11 +26726,11 @@
   "correctIndex": 2,
   "explanation": "ウステキヌマブはIL-12/23を標的とする生物学的製剤で、尋常性乾癬などの治療に用いられます。",
   "source": {
-   "name": "ウステキヌマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ステラーラ皮下注45mgシリンジ 添付文書 4.効能又は効果(尋常性乾癬、乾癬性関節炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999431G1025_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-033",
@@ -29593,21 +29593,21 @@
   "category": "infection",
   "difficulty": "beginner",
   "type": "single",
-  "question": "バラシクロビルの特徴として正しいのはどれか。",
+  "question": "バラシクロビルの説明として正しいのはどれか。",
   "choices": [
-   "抗菌薬に分類される",
-   "アシクロビルのプロドラッグであり吸収性が改善されている",
-   "抗インフルエンザ薬に分類される",
-   "抗真菌薬に分類される"
+   "体内でアシクロビルに変換されて作用する",
+   "アシクロビルとは異なる作用機序を持つ",
+   "抗菌薬であり細菌感染症に用いる",
+   "インフルエンザウイルスに用いる"
   ],
-  "correctIndex": 1,
-  "explanation": "バラシクロビルはアシクロビルのプロドラッグで、経口吸収性が改善された抗ヘルペスウイルス薬です。",
+  "correctIndex": 0,
+  "explanation": "バラシクロビルを経口投与すると体内でアシクロビルとなって作用します。添付文書では、バラシクロビル1000mg単回経口投与後のアシクロビルの生物学的利用率が54.2%と報告されています。効能又は効果は単純疱疹、帯状疱疹等です。",
   "source": {
-   "name": "バラシクロビル塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バラシクロビル錠500mg「JG」 添付文書 16.2.2 吸収(バラシクロビル投与後のアシクロビルの生物学的利用率)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250019F1098_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-013",
@@ -29624,11 +29624,11 @@
   "correctIndex": 0,
   "explanation": "ザナミビルはノイラミニダーゼ阻害薬で、吸入により投与する抗インフルエンザウイルス薬です。",
   "source": {
-   "name": "ザナミビル水和物吸入剤 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リレンザ 添付文書 薬効分類名(抗インフルエンザウイルス剤)・6.用法及び用量(吸入)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250702G1028_1_24/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-014",
@@ -29792,11 +29792,11 @@
   "correctIndex": 0,
   "explanation": "ST合剤はニューモシスチス肺炎の治療・予防をはじめ、幅広い細菌感染症に用いられる抗菌薬です。",
   "source": {
-   "name": "スルファメトキサゾール・トリメトプリム配合錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バクタ配合錠 添付文書 4.効能又は効果(ニューモシスチス肺炎の治療及び発症抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6290100D1088_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-022",
@@ -29834,11 +29834,11 @@
   "correctIndex": 0,
   "explanation": "ピペラシリン・タゾバクタムは、βラクタマーゼ阻害薬タゾバクタムを配合することで耐性菌にも効果を発揮するよう工夫された注射用抗菌薬です。",
   "source": {
-   "name": "ピペラシリンナトリウム・タゾバクタムナトリウム注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾシン静注用2.25 添付文書 薬効分類名(β-ラクタマーゼ阻害剤配合抗生物質製剤)・2.1禁忌(ペニシリン系抗生物質)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6139505F3020_1_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-024",
