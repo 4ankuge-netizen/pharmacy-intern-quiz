@@ -6734,11 +6734,11 @@
   "correctIndex": 2,
   "explanation": "高血圧治療ガイドライン(JSH2019)では、診察室血圧140/90mmHg以上を高血圧と定義しています。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「高血圧」(診察室血圧 最高140mmHg以上/最低90mmHg以上で高血圧と診断)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/hypertension/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-031",
@@ -6755,11 +6755,11 @@
   "correctIndex": 3,
   "explanation": "高血圧治療ガイドラインでは、1日の食塩摂取量を6g未満に抑えることが推奨されています。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "日本高血圧学会 減塩・栄養委員会「食塩の知識」(食塩摂取量1日6g未満の目標)",
+   "url": "https://www.jpnsh.jp/general_salt_02.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-032",
@@ -6776,11 +6776,11 @@
   "correctIndex": 3,
   "explanation": "肥満、過度の飲酒、喫煙などは高血圧のリスクを高める生活習慣として知られています。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「高血圧」(喫煙・大量飲酒・肥満と血圧)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/hypertension/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-033",
@@ -6797,11 +6797,11 @@
   "correctIndex": 2,
   "explanation": "家庭血圧測定は一般に朝(起床後排尿後、朝食前)と晩(就寝前)の1日2回の測定が推奨されています。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「高血圧」(家庭血圧の測定: 起床後1時間以内と就寝前)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/hypertension/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-034",
@@ -6955,21 +6955,21 @@
   "category": "hypertension",
   "difficulty": "beginner",
   "type": "single",
-  "question": "高血圧患者に推奨される運動療法として適切なのはどれか。",
+  "question": "高血圧患者の運動について、国立循環器病研究センターの解説で挙げられている軽い運動はどれか。",
   "choices": [
-   "高強度の無酸素運動のみ",
-   "運動は血圧に影響しないため不要",
-   "ウォーキングなどの有酸素運動",
-   "激しい運動を短時間に集中して行う"
+   "散歩やジョギング、ラジオ体操、自転車に乗ること",
+   "無酸素の高強度筋力トレーニング",
+   "運動は血圧を上げるため一切行わない",
+   "息切れがしても続けるべき激しい運動"
   ],
-  "correctIndex": 2,
-  "explanation": "高血圧治療ガイドラインでは、ウォーキングなどの中等度の有酸素運動を定期的に行うことが推奨されています。",
+  "correctIndex": 0,
+  "explanation": "軽い運動(散歩・自分のペースでのジョギング・ラジオ体操・自転車にのる)は血液の流れを良くし、肥満防止や気分転換にもつながるとされています。ただし運動の可否や程度は高血圧の重症度や合併症の有無と関連するため、まず医師に相談します。息切れや動悸、ふらつきがある場合は医師に相談します。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「高血圧」(運動や労作について)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/hypertension/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-042",
@@ -6986,11 +6986,11 @@
   "correctIndex": 2,
   "explanation": "未治療の高血圧は動脈硬化を進行させ、脳卒中、心疾患、腎疾患などのリスクを高めることが知られています。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「高血圧」(高血圧による動脈硬化と合併症: 脳出血・脳梗塞・腎硬化症・心筋梗塞・心不全)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/hypertension/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-043",
@@ -7112,11 +7112,11 @@
   "correctIndex": 2,
   "explanation": "肥満は高血圧の重要な危険因子であり、適正体重の維持・減量が降圧に寄与するとされています。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「高血圧」(肥満について: 太り過ぎは血圧を上げる、BMI25未満を目標)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/hypertension/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-049",
@@ -7133,11 +7133,11 @@
   "correctIndex": 0,
   "explanation": "喫煙はニコチンなどにより血管収縮を来し、血圧上昇や動脈硬化の進展に関与するため禁煙が推奨されます。",
   "source": {
-   "name": "高血圧治療ガイドライン(JSH2019)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「高血圧」(喫煙により血管が収縮し血圧が上がり動脈硬化の原因となる)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/hypertension/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-beginner-050",
@@ -13066,21 +13066,21 @@
   "category": "diabetes",
   "difficulty": "beginner",
   "type": "single",
-  "question": "インスリン製剤の分類として正しい組み合わせはどれか。",
+  "question": "インスリン アスパルト(ノボラピッド注)とインスリン グラルギン(ランタス注)の薬効分類名の組み合わせとして正しいのはどれか。",
   "choices": [
-   "経口インスリンのみ",
-   "内服型・外用型・吸入型のみ",
-   "短時間型・長時間型の2種類のみ",
-   "超速効型・速効型・中間型・持効型"
+   "超速効型 と 持効型溶解",
+   "持効型溶解 と 超速効型",
+   "中間型 と 速効型",
+   "どちらも超速効型"
   ],
-  "correctIndex": 3,
-  "explanation": "インスリン製剤は作用発現の速さと持続時間により、超速効型・速効型・中間型・持効型などに分類されます。",
+  "correctIndex": 0,
+  "explanation": "ノボラピッド注の薬効分類名は超速効型インスリンアナログ注射液で毎食直前に投与し、ランタス注の薬効分類名は持効型溶解インスリンアナログ製剤で1日1回投与して基礎インスリンを補充します。",
   "source": {
-   "name": "インスリン製剤 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ノボラピッド注 フレックスタッチ 添付文書 薬効分類名(超速効型インスリンアナログ注射液)/ランタス注ソロスター 薬効分類名(持効型溶解インスリンアナログ製剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492415G1031_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-006",
@@ -13538,11 +13538,11 @@
   "correctIndex": 0,
   "explanation": "未使用のインスリン製剤は品質保持のため、一般に冷蔵庫(凍結を避けた状態)での保管が推奨されます。",
   "source": {
-   "name": "インスリン製剤 添付文書(取扱い上の注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランタス注ソロスター 添付文書 貯法(凍結を避け、2〜8℃で保存)・20.取扱い上の注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492416G2024_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-beginner-028",
@@ -16405,21 +16405,21 @@
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "β遮断薬が慢性心不全治療にも用いられる理由として正しいのはどれか。",
+  "question": "ビソプロロールの作用機序として添付文書に記載されているのはどれか。",
   "choices": [
-   "心臓への交感神経の過剰な負荷を軽減するため",
-   "血液を固まりにくくするため",
-   "心拍数を上昇させるため",
-   "利尿作用により体液貯留を改善するため"
+   "選択性が高いβ1アンタゴニストで、降圧作用・抗狭心症作用・抗不整脈作用を示す",
+   "α1受容体を遮断して血管を拡張する",
+   "カルシウムチャネルを遮断する",
+   "アンジオテンシンII受容体を遮断する"
   ],
   "correctIndex": 0,
-  "explanation": "β遮断薬は交感神経の過剰な刺激を抑え、少量から慎重に導入することで慢性心不全患者の予後改善に寄与するとされています。",
+  "explanation": "添付文書18.1に、選択性が高いβ1アンタゴニストでISA(内因性交感神経刺激作用)はなく、降圧作用、抗狭心症作用、抗不整脈(心室性期外収縮)作用を示すと記載されています。β1受容体への親和性はβ2受容体に比べ23倍強く、他のβ遮断薬より選択性が高いとされています。",
   "source": {
-   "name": "2025年改訂版心不全診療ガイドライン(日本循環器学会・日本心不全学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビソプロロールフマル酸塩錠 添付文書 18.1 作用機序(選択性の高いβ1アンタゴニスト)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2123016F1123_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-007",
@@ -16814,11 +16814,11 @@
   "correctIndex": 1,
   "explanation": "ペースメーカーは徐脈性不整脈などに対し、電気刺激により心臓の拍動を補助する医療機器です。",
   "source": {
-   "name": "2020年改訂版不整脈薬物治療ガイドライン(日本循環器学会・日本不整脈心電学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「不整脈」(脈が遅く失神やふらつきがある場合はペースメーカー植え込み)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/arrhythmia.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-026",
@@ -16846,21 +16846,21 @@
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "冠動脈疾患(狭心症・心筋梗塞)の主な危険因子として正しいのはどれか。",
+  "question": "心筋梗塞の4大冠危険因子として挙げられている組み合わせはどれか。",
   "choices": [
-   "花粉症、アレルギー性鼻炎",
-   "低血圧、低体重、非喫煙",
-   "高血圧、脂質異常症、喫煙",
-   "骨粗鬆症、難聴"
+   "高血圧、高脂血症、糖尿病、喫煙",
+   "低血圧、貧血、低体重、不眠",
+   "高血圧、貧血、難聴、便秘",
+   "低血糖、低血圧、脱水、発熱"
   ],
-  "correctIndex": 2,
-  "explanation": "高血圧、脂質異常症、喫煙、糖尿病などは動脈硬化を進展させ、冠動脈疾患の主要な危険因子となります。",
+  "correctIndex": 0,
+  "explanation": "心筋梗塞の危険因子のうち、高血圧・高脂血症・糖尿病・喫煙は特に4大冠危険因子とされています。そのほか肥満、高尿酸血症、ストレス、家族歴、加齢などもリスクとなります。心筋梗塞は再発も多く、禁煙・食生活の改善・適度な運動が再発予防になります。",
   "source": {
-   "name": "急性冠症候群ガイドライン(2023年改訂版、日本循環器学会・日本心血管インターベンション治療学会・日本心臓病学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「虚血性心疾患」(心筋梗塞の4大冠危険因子)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/ischemic-heart-disease.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-028",
@@ -16888,21 +16888,21 @@
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "心筋梗塞急性期治療において重要とされる基本方針はどれか。",
+  "question": "急性心筋梗塞の治療として必須とされているのはどれか。",
   "choices": [
-   "症状が落ち着くまで薬物療法を行わない",
-   "再灌流療法は慢性期にのみ行う",
-   "できるだけ早期に閉塞した冠動脈の血流を再開させる(再灌流療法)",
-   "急性期は経過観察のみを行う"
+   "冠動脈カテーテル治療(プライマリーPCI)",
+   "経過観察のみ",
+   "利尿薬の内服のみ",
+   "リハビリテーションのみ"
   ],
-  "correctIndex": 2,
-  "explanation": "急性心筋梗塞では、できるだけ早期に閉塞した冠動脈の血流を再開させる再灌流療法(カテーテル治療や血栓溶解療法)が重要とされます。",
+  "correctIndex": 0,
+  "explanation": "急性心筋梗塞の治療は冠動脈カテーテル治療(プライマリーPCI)が必須とされています。心臓カテーテル手術を行うようになって死亡率は劇的に改善し、後遺症も少なくなりました。一方、発症から治療までの時間が長い症例では心臓破裂などの合併症が起こることがあり、早期の受診・治療が重要です。",
   "source": {
-   "name": "急性冠症候群ガイドライン(2023年改訂版、日本循環器学会・日本心血管インターベンション治療学会・日本心臓病学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「虚血性心疾患」(急性心筋梗塞の治療はプライマリーPCIが必須)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/ischemic-heart-disease.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-030",
@@ -16919,11 +16919,11 @@
   "correctIndex": 2,
   "explanation": "心不全では心臓のポンプ機能低下によるうっ血や循環不全から、息切れ、浮腫、倦怠感などの症状がみられます。",
   "source": {
-   "name": "2025年改訂版心不全診療ガイドライン(日本循環器学会・日本心不全学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「心不全」(息切れ・むくみ・疲れやすさ)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/heart-failure.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-031",
@@ -16940,11 +16940,11 @@
   "correctIndex": 3,
   "explanation": "不整脈では脈の乱れに伴い、動悸やめまい、失神などの症状がみられることがあります。",
   "source": {
-   "name": "2020年改訂版不整脈薬物治療ガイドライン(日本循環器学会・日本不整脈心電学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「不整脈」(頻脈では動悸・息切れ・胸痛・めまい・失神)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/arrhythmia.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-032",
@@ -17087,11 +17087,11 @@
   "correctIndex": 3,
   "explanation": "心不全患者の急激な体重増加は体液貯留(うっ血)の悪化を示唆することがあり、毎日の体重測定による早期発見が重要です。",
   "source": {
-   "name": "2025年改訂版心不全診療ガイドライン(日本循環器学会・日本心不全学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「心不全」(体重が1週間で2〜3キロ増加、血圧・体重を毎日記録)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/heart-failure.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-039",
@@ -17108,32 +17108,32 @@
   "correctIndex": 1,
   "explanation": "過剰な塩分摂取は体液貯留を助長し、心不全のうっ血症状を悪化させるおそれがあるため塩分制限が推奨されます。",
   "source": {
-   "name": "2025年改訂版心不全診療ガイドライン(日本循環器学会・日本心不全学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「心不全」(塩分を取り過ぎると体に水分を溜め込み心臓に負担)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/heart-failure.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-040",
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "重度の心不全患者に水分制限が必要となる場合がある理由として正しいのはどれか。",
+  "question": "心不全でうっ血が進んだときにみられる、呼吸が苦しくて横になって眠れない状態を何というか。",
   "choices": [
-   "過剰な水分摂取が体液貯留を助長するおそれがあるため",
-   "水分制限は不整脈治療のために行うため",
-   "水分制限は血圧を上昇させるために行うため",
-   "水分摂取は心不全に一切影響しないため"
+   "起坐呼吸",
+   "過換気症候群",
+   "無呼吸発作",
+   "チェーンストークス呼吸"
   ],
   "correctIndex": 0,
-  "explanation": "重度の心不全では過剰な水分摂取が体液貯留を助長するおそれがあるため、病態に応じて水分制限が指導されることがあります。",
+  "explanation": "心不全で水分が体内に貯留すると足の甲やすねがむくみ、体重が1週間で2〜3キロ増加することがあります。さらに体の中で血液が滞る「うっ血」が進むと、腹部膨満や、呼吸が苦しくて横になって眠れない「起坐呼吸」といった状態になることもあります。",
   "source": {
-   "name": "2025年改訂版心不全診療ガイドライン(日本循環器学会・日本心不全学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「心不全」(うっ血が進むと起坐呼吸になることがある)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/heart-failure.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-041",
@@ -17287,42 +17287,42 @@
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "心不全患者の増悪因子として特に注意すべきものはどれか。",
+  "question": "心不全悪化の原因として最も多いものの一つとして挙げられているのはどれか。",
   "choices": [
+   "内服(服薬)の中断",
    "適度な運動",
-   "感染症、塩分・水分摂取過多、服薬アドヒアランス不良",
-   "バランスの良い食事",
-   "十分な休息"
+   "定期的な体重測定",
+   "減塩の実施"
   ],
-  "correctIndex": 1,
-  "explanation": "感染症や塩分・水分摂取過多、服薬アドヒアランス不良などは心不全増悪の代表的な誘因として知られています。",
+  "correctIndex": 0,
+  "explanation": "調子が良くなると内服を忘れたりやめてしまいがちですが、心不全悪化の原因として内服の中断は最も多い原因の一つです。心機能を改善させる薬をやめた患者では、良くなった心臓の動きが短期間で元通り悪くなることが示されています。薬が合わないと感じても自己判断で中止せず主治医に相談します。",
   "source": {
-   "name": "2025年改訂版心不全診療ガイドライン(日本循環器学会・日本心不全学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「心不全」(心不全悪化の原因として内服の中断は最も多い原因の一つ)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/heart-failure.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-049",
   "category": "heart-disease",
   "difficulty": "beginner",
   "type": "single",
-  "question": "心臓の血流を評価する代表的な画像検査として正しいのはどれか。",
+  "question": "狭心症・心筋梗塞で冠動脈の状態を調べ、必要に応じて治療も行える検査・手技はどれか。",
   "choices": [
-   "聴力検査",
-   "眼底検査",
+   "冠動脈カテーテル検査(心臓カテーテル)",
+   "腹部超音波検査",
    "骨密度検査",
-   "心臓カテーテル検査(冠動脈造影)"
+   "肺機能検査"
   ],
-  "correctIndex": 3,
-  "explanation": "心臓カテーテル検査(冠動脈造影)は冠動脈の狭窄・閉塞などを直接評価できる代表的な検査です。",
+  "correctIndex": 0,
+  "explanation": "冠動脈の狭窄が強い場合や完全に詰まっている場合は、冠動脈カテーテル治療(PCI)や冠動脈バイパス手術が選択されます。最近ではFFR(冠血流予備比)検査で治療の必要性を評価してから治療することがガイドラインで推奨されています。",
   "source": {
-   "name": "急性冠症候群ガイドライン(2023年改訂版、日本循環器学会・日本心血管インターベンション治療学会・日本心臓病学会合同ガイドライン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "国立循環器病研究センター「虚血性心疾患」(冠動脈カテーテル検査・治療、FFR)",
+   "url": "https://www.ncvc.go.jp/hospital/pub/knowledge/disease/ischemic-heart-disease.html",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-050",
@@ -19933,21 +19933,21 @@
   "category": "cerebrovascular",
   "difficulty": "beginner",
   "type": "single",
-  "question": "ニモジピンが用いられる目的として正しいのはどれか。",
+  "question": "ファスジル塩酸塩水和物(エリル点滴静注液)が用いられる目的として正しいのはどれか。",
   "choices": [
+   "くも膜下出血術後の脳血管攣縮およびこれに伴う脳虚血症状の改善",
    "脳梗塞慢性期の再発予防",
    "てんかん発作の抑制",
-   "高血圧の第一選択治療",
-   "くも膜下出血後の脳血管攣縮に伴う症状の改善"
+   "高血圧の第一選択治療"
   ],
-  "correctIndex": 3,
-  "explanation": "ニモジピンはCa拮抗薬の一種で、くも膜下出血後の脳血管攣縮に伴う脳虚血症状の改善に用いられます。",
+  "correctIndex": 0,
+  "explanation": "エリル点滴静注液30mgの薬効分類名は蛋白リン酸化酵素阻害剤で、効能又は効果はくも膜下出血術後の脳血管攣縮およびこれに伴う脳虚血症状の改善です。くも膜下出血術後早期に開始し2週間投与することが望ましいとされています。",
   "source": {
-   "name": "ニモジピン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エリル点滴静注液30mg 添付文書 薬効分類名(蛋白リン酸化酵素阻害剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190414A1033_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-017",
@@ -23020,21 +23020,21 @@
   "category": "psychiatric",
   "difficulty": "beginner",
   "type": "single",
-  "question": "抗てんかん薬の服薬指導で重要な説明として正しいのはどれか。",
+  "question": "抗てんかん薬(バルプロ酸ナトリウム)の投与を中止する場合の注意として、添付文書に記載されているのはどれか。",
   "choices": [
-   "効果がなければすぐに中止してよい",
-   "症状がなければ服用を自己判断で中止してよい",
-   "自己判断で急に中止すると発作が再燃するおそれがある",
-   "抗てんかん薬に服薬継続の重要性はない"
+   "てんかん重積状態があらわれることがあるため徐々に減量する",
+   "効果がなければただちに中止してよい",
+   "症状がなければいつ中止してもよい",
+   "中止時に特別な注意は不要である"
   ],
-  "correctIndex": 2,
-  "explanation": "抗てんかん薬を自己判断で急に中止すると、発作が再燃・悪化するおそれがあるため、継続の重要性を説明します。",
+  "correctIndex": 0,
+  "explanation": "デパケン錠の添付文書に、急激な減少ないし投与の中止によりてんかん重積状態があらわれることがあるので、投与を中止する場合には徐々に減量するなど慎重に行うことと記載されています。自己判断での中断は危険です。",
   "source": {
-   "name": "抗てんかん薬 各種添付文書",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デパケン錠100mg 添付文書 8. 重要な基本的注意(急激な減量・中止によるてんかん重積状態)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1096_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-011",
@@ -26086,21 +26086,21 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "ステロイド外用薬の主な使用目的として正しいのはどれか。",
+  "question": "ステロイド外用薬(ベタメタゾン吉草酸エステル軟膏など)の効能又は効果に含まれるのはどれか。",
   "choices": [
-   "血糖値を下げる",
-   "アトピー性皮膚炎などの炎症を抑える",
-   "感染症を直接治療する",
-   "血圧を下げる"
+   "湿疹・皮膚炎群などの皮膚の炎症性疾患",
+   "血糖値の低下",
+   "細菌感染症の直接治療",
+   "血圧の低下"
   ],
-  "correctIndex": 1,
-  "explanation": "ステロイド外用薬は抗炎症作用を持ち、アトピー性皮膚炎などの皮膚炎症を抑える目的で使用されます。",
+  "correctIndex": 0,
+  "explanation": "リンデロン-V軟膏の薬効分類名は皮膚外用合成副腎皮質ホルモン剤で、効能又は効果には湿疹・皮膚炎群、皮膚そう痒症、痒疹群などの皮膚の炎症性疾患が挙げられています。",
   "source": {
-   "name": "ステロイド外用薬 各種添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リンデロン−V軟膏0.12% 添付文書 薬効分類名(皮膚外用合成副腎皮質ホルモン剤)・4.効能又は効果(湿疹・皮膚炎群)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2646701M2156_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-003",
@@ -26170,21 +26170,21 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "第1世代抗ヒスタミン薬の代表的な副作用として正しいのはどれか。",
+  "question": "第1世代抗ヒスタミン薬(d-クロルフェニラミンマレイン酸塩)の副作用として添付文書に記載されているのはどれか。",
   "choices": [
+   "眠気・鎮静",
    "甲状腺機能異常",
    "高血圧",
-   "低血糖",
-   "強い眠気"
+   "低血糖"
   ],
-  "correctIndex": 3,
-  "explanation": "第1世代抗ヒスタミン薬は中枢移行性が高く、強い眠気を起こしやすいという特徴があります。",
+  "correctIndex": 0,
+  "explanation": "ポララミンの添付文書11.2その他の副作用の精神神経系に、鎮静、眠気、めまい等が記載されています。第1世代抗ヒスタミン薬は中枢神経系の副作用に注意が必要です。",
   "source": {
-   "name": "第1世代抗ヒスタミン薬 各種添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ポララミン散1% 添付文書 11.2 その他の副作用(精神神経系: 鎮静、眠気等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4419002B1033_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-007",
@@ -26306,11 +26306,11 @@
   "correctIndex": 2,
   "explanation": "クロモグリク酸ナトリウムは肥満細胞からのヒスタミンなどの遊離を抑制する薬剤で、アレルギー疾患の予防的治療に用いられます。",
   "source": {
-   "name": "クロモグリク酸ナトリウム点鼻液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "インタール吸入液1% 添付文書 18.1 作用機序(マスト細胞からの化学伝達物質の遊離抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2259701G1063_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-013",
@@ -26474,11 +26474,11 @@
   "correctIndex": 0,
   "explanation": "点鼻ステロイド薬は鼻粘膜の炎症を抑え、アレルギー性鼻炎の症状(鼻づまり、鼻水など)改善に用いられます。",
   "source": {
-   "name": "点鼻ステロイド薬 各種添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナゾネックス点鼻液50μg56噴霧用 添付文書 薬効分類名(定量噴霧式アレルギー性鼻炎治療剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/1329710Q1027_2_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-021",
@@ -26495,32 +26495,32 @@
   "correctIndex": 0,
   "explanation": "点眼抗アレルギー薬はアレルギー性結膜炎に伴うかゆみや充血などの症状改善に用いられます。",
   "source": {
-   "name": "点眼抗アレルギー薬 各種添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "パタノール点眼液0.1% 添付文書 薬効分類名(抗アレルギー点眼剤)・4.効能又は効果(アレルギー性結膜炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1319752Q1024_2_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-022",
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "舌下免疫療法薬(スギ花粉舌下錠など)の特徴として正しいのはどれか。",
+  "question": "スギ花粉舌下錠(シダキュア)の位置づけとして正しいのはどれか。",
   "choices": [
-   "即効性があり数日で症状が消失する薬剤である",
+   "スギ花粉症に対する減感作療法(アレルゲン免疫療法)の薬剤である",
    "注射で投与する薬剤である",
-   "対症療法のみを目的とした薬剤である",
-   "アレルゲンを舌下から少量ずつ投与し体質改善を目指す薬剤である"
+   "服用後数日で症状が消失する即効性の薬剤である",
+   "発作時にのみ頓用する対症療法薬である"
   ],
-  "correctIndex": 3,
-  "explanation": "舌下免疫療法薬はアレルゲンを舌下から継続的に投与し、免疫寛容の誘導による体質改善を目指す治療薬です。",
+  "correctIndex": 0,
+  "explanation": "シダキュアスギ花粉舌下錠の薬効分類名はスギ花粉症の減感作療法(アレルゲン免疫療法)薬で、効能又は効果はスギ花粉症(減感作療法)です。投与開始前には皮膚反応テスト又は特異的IgE抗体検査でスギ花粉症の確定診断を行います。",
   "source": {
-   "name": "舌下免疫療法薬 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "シダキュアスギ花粉舌下錠2,000JAU 添付文書 薬効分類名(スギ花粉症の減感作療法(アレルゲン免疫療法)薬)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490035F1027_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-023",
@@ -26642,11 +26642,11 @@
   "correctIndex": 1,
   "explanation": "免疫抑制薬は免疫機能を抑えるため、易感染性(感染症にかかりやすい状態)に注意が必要です。",
   "source": {
-   "name": "免疫抑制薬 各種添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プログラフカプセル5mg 添付文書 8.6・8.7 重要な基本的注意(感染症の発現又は増悪、感染に対する感受性の上昇)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999014M3025_3_35/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-029",
@@ -26663,11 +26663,11 @@
   "correctIndex": 2,
   "explanation": "免疫抑制薬服用中は生ワクチンによる感染症発症のリスクがあるため、接種を避けることが推奨されます。",
   "source": {
-   "name": "免疫抑制薬 各種添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プログラフカプセル5mg 添付文書 禁忌(生ワクチンを接種しないこと)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999014M3025_3_35/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-030",
@@ -29467,21 +29467,21 @@
   "category": "infection",
   "difficulty": "beginner",
   "type": "single",
-  "question": "抗菌薬治療の基本原則として正しいのはどれか。",
+  "question": "抗菌薬の使用にあたり、耐性菌の発現等を防ぐために添付文書が求めている内容はどれか。",
   "choices": [
-   "指示された期間・回数を守り、自己判断で中止しない",
+   "原則として感受性を確認し、疾病の治療上必要な最小限の期間の投与にとどめる",
    "効果がなければ自己判断で倍量にする",
    "余った薬は次回の感染症にも自由に使用してよい",
-   "症状が軽くなったらすぐに中止する"
+   "症状が軽くなった時点で必ず中止する"
   ],
   "correctIndex": 0,
-  "explanation": "抗菌薬は指示された期間・用法用量を守って服用することが、治療効果の確保と耐性菌出現の防止に重要です。",
+  "explanation": "バクタ配合錠をはじめ多くの抗菌薬の添付文書に、耐性菌の発現等を防ぐため、原則として感受性を確認し、疾病の治療上必要な最小限の期間の投与にとどめることと記載されています。",
   "source": {
-   "name": "抗菌薬 各種添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バクタ配合錠 添付文書 8. 重要な基本的注意(耐性菌の発現等を防ぐための注意)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6290100D1088_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-007",
