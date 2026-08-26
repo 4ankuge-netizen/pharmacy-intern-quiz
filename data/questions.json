@@ -26138,11 +26138,11 @@
   "correctIndex": 1,
   "explanation": "吸入ステロイド薬は気道炎症を抑える長期管理薬(コントローラー)として、気管支喘息の基本治療に用いられます。",
   "source": {
-   "name": "喘息予防・管理ガイドライン2024(日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「成人のぜん息」(長期管理薬: 吸入ステロイド薬等)",
+   "url": "https://allergyportal.jp/knowledge/adult-asthma/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-005",
@@ -26159,11 +26159,11 @@
   "correctIndex": 3,
   "explanation": "SABAは気管支を速やかに拡張させる作用があり、喘息発作時の頓用薬として用いられます。",
   "source": {
-   "name": "喘息予防・管理ガイドライン2024(日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「成人のぜん息」(発作止めの薬: 短時間作用性β2刺激薬)",
+   "url": "https://allergyportal.jp/knowledge/adult-asthma/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-006",
@@ -26201,11 +26201,11 @@
   "correctIndex": 1,
   "explanation": "ステロイド外用薬は効力の強さによりランク分けされており、症状の程度や使用部位に応じて使い分けられます。",
   "source": {
-   "name": "アトピー性皮膚炎診療ガイドライン2024(日本皮膚科学会・日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「アトピー性皮膚炎」(ステロイド外用薬の5段階のランク)",
+   "url": "https://allergyportal.jp/knowledge/atopic-dermatitis/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-008",
@@ -26233,42 +26233,42 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "アナフィラキシーの主な症状として正しいのはどれか。",
+  "question": "アナフィラキシーの症状の特徴として正しいのはどれか。",
   "choices": [
-   "徐脈のみ",
-   "骨痛のみ",
-   "便秘、口渇のみ",
-   "蕁麻疹、呼吸困難、血圧低下"
+   "皮膚が赤くなる・息苦しくなる・激しい嘔吐など、複数の症状が同時に急激に進行する",
+   "皮膚症状のみが数日かけてゆっくり出る",
+   "発熱だけが唯一の症状である",
+   "症状は必ず1つの臓器にとどまる"
   ],
-  "correctIndex": 3,
-  "explanation": "アナフィラキシーは複数の臓器症状(皮膚症状、呼吸器症状、循環器症状など)を伴う急性の重篤なアレルギー反応です。",
+  "correctIndex": 0,
+  "explanation": "アレルギー反応によって複数の臓器に強い症状があらわれることをアナフィラキシーと呼びます。皮膚が赤くなる、息苦しくなる、激しい嘔吐をするなど複数の症状が同時に急激に進行します。特に血圧が低下してぐったりしたり意識がもうろうとする場合はアナフィラキシーショックの可能性が高く、迅速な対応が必要です。",
   "source": {
-   "name": "アナフィラキシーガイドライン2022(日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「アナフィラキシー」(複数の症状が同時に急激に進行)",
+   "url": "https://allergyportal.jp/knowledge/anaphylaxis/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-010",
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "花粉症治療における抗アレルギー薬の使い方として推奨されるのはどれか。",
+  "question": "花粉症に対するアレルゲン免疫療法の開始時期として正しいのはどれか。",
   "choices": [
-   "症状が完全に消失してから開始する",
-   "症状の強さにかかわらず投与量は一定である",
-   "花粉飛散終了後に開始する",
-   "花粉飛散開始前から予防的に投与を開始することがある"
+   "花粉が飛散していない時期から治療を開始する",
+   "花粉飛散のピーク時に開始する",
+   "症状が出てから開始する",
+   "開始時期に決まりはない"
   ],
-  "correctIndex": 3,
-  "explanation": "花粉症治療では、花粉飛散開始前から抗アレルギー薬の投与を開始する初期療法により、症状を軽減できるとされています。",
+  "correctIndex": 0,
+  "explanation": "アレルゲン免疫療法は、特に対症療法では効果が不十分な方に推奨されるもので、花粉が飛散していない時期から治療を開始する必要があります。",
   "source": {
-   "name": "鼻アレルギー診療ガイドライン2024年版-通年性鼻炎と花粉症-(日本耳鼻咽喉科頭頸部外科学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「花粉症」(アレルゲン免疫療法は花粉が飛散していない時期から開始)",
+   "url": "https://allergyportal.jp/knowledge/hay-fever/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-011",
@@ -26537,11 +26537,11 @@
   "correctIndex": 1,
   "explanation": "蕁麻疹治療では、多くの場合抗ヒスタミン薬が第一選択として用いられます。",
   "source": {
-   "name": "蕁麻疹診療ガイドライン2018(日本皮膚科学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「じんましん・血管性浮腫」(抗ヒスタミン薬・抗アレルギー薬が中心)",
+   "url": "https://allergyportal.jp/knowledge/hives-angioedema/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-024",
@@ -26558,11 +26558,11 @@
   "correctIndex": 3,
   "explanation": "接触性皮膚炎は原因となる物質の特定・除去を行いつつ、ステロイド外用薬などで炎症を抑える治療が基本です。",
   "source": {
-   "name": "接触皮膚炎診療ガイドライン2020(日本皮膚科学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「接触皮膚炎」(原因物質の回避と短期的なステロイド外用薬)",
+   "url": "https://allergyportal.jp/knowledge/contact-dermatitis/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-025",
@@ -26674,42 +26674,42 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "臓器移植医療における「拒絶反応」の説明として正しいのはどれか。",
+  "question": "タクロリムス(プログラフ)の効能又は効果に含まれる臓器移植の組み合わせとして正しいのはどれか。",
   "choices": [
-   "拒絶反応は薬物療法では予防できない",
-   "移植された臓器が正常に機能する反応である",
-   "移植された臓器を体の免疫システムが異物として攻撃する反応である",
-   "拒絶反応は免疫抑制薬とは無関係に生じる"
+   "腎移植、肝移植、心移植、肺移植、膵移植、小腸移植",
+   "腎移植のみ",
+   "肝移植と心移植のみ",
+   "移植医療には用いられない"
   ],
-  "correctIndex": 2,
-  "explanation": "拒絶反応は、移植された臓器を自己の免疫系が異物として認識し攻撃する反応で、免疫抑制薬により予防・治療されます。",
+  "correctIndex": 0,
+  "explanation": "プログラフの効能又は効果には、腎移植・肝移植・心移植・肺移植・膵移植・小腸移植における拒絶反応の抑制が含まれます。ほかに骨髄移植における拒絶反応及び移植片対宿主病の抑制、難治性の活動期潰瘍性大腸炎、細胞移植に伴う免疫反応の抑制があります。",
   "source": {
-   "name": "日本移植学会が示す臓器移植・免疫抑制療法の基本的な考え方",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プログラフカプセル 添付文書 4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999014M3025_3_35/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-031",
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "移植片対宿主病(GVHD)の説明として正しいのはどれか。",
+  "question": "骨髄移植においてタクロリムス(プログラフ)が抑制の対象とするものはどれか。",
   "choices": [
-   "レシピエントの免疫がドナー臓器を攻撃する病態(拒絶反応)である",
-   "GVHDは臓器移植には無関係である",
-   "GVHDは感染症の別名である",
-   "移植されたドナー由来の免疫細胞がレシピエントの体を攻撃する病態"
+   "拒絶反応及び移植片対宿主病(GVHD)",
+   "感染症",
+   "貧血",
+   "高血糖"
   ],
-  "correctIndex": 3,
-  "explanation": "GVHD(移植片対宿主病)は、造血幹細胞移植などでドナー由来の免疫細胞がレシピエントの組織を異物として攻撃する病態です。",
+  "correctIndex": 0,
+  "explanation": "プログラフの効能又は効果には『骨髄移植における拒絶反応及び移植片対宿主病の抑制』が含まれます。なおHLA適合同胞間移植では本剤を第一選択薬としないこととされています。",
   "source": {
-   "name": "GVHDガイドライン第6版(2025年5月、日本造血・免疫細胞療法学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プログラフカプセル 添付文書 4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999014M3025_3_35/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-032",
@@ -26852,11 +26852,11 @@
   "correctIndex": 2,
   "explanation": "アレルギー性鼻炎の治療では、抗ヒスタミン薬や点鼻ステロイド薬などを症状の程度に応じて選択することが基本です。",
   "source": {
-   "name": "鼻アレルギー診療ガイドライン2024年版-通年性鼻炎と花粉症-(日本耳鼻咽喉科頭頸部外科学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「アレルギー性鼻炎」(抗ヒスタミン薬・点鼻ステロイド薬等)",
+   "url": "https://allergyportal.jp/knowledge/allergic-rhinitis/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-039",
@@ -26873,32 +26873,32 @@
   "correctIndex": 2,
   "explanation": "食物アレルギーの基本対応は原因食品の除去であり、重症例ではアナフィラキシーに備えたアドレナリン自己注射の携帯も重要です。",
   "source": {
-   "name": "食物アレルギー診療ガイドライン2021(日本小児アレルギー学会編、協和企画)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「食物アレルギー」(誤食の回避とアドレナリン自己投与薬)",
+   "url": "https://allergyportal.jp/knowledge/food/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-040",
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "アナフィラキシーの既往がある患者にアレルゲン情報カードなどの携帯が推奨される理由として正しいのはどれか。",
+  "question": "アナフィラキシーの再発を防ぐために推奨されることとして正しいのはどれか。",
   "choices": [
-   "アナフィラキシーの既往があれば携帯の必要はないため",
-   "緊急時に周囲や医療者へ迅速に情報を伝えられるため",
-   "情報カードの携帯は法律で禁止されているため",
-   "情報カードは治療とは無関係であるため"
+   "原因を特定し、それを周囲の人たちと共有し、徹底的に回避する",
+   "原因が分かっても周囲には知らせない",
+   "原因物質を少しずつ自己判断で摂取する",
+   "特に対策は必要ない"
   ],
-  "correctIndex": 1,
-  "explanation": "アレルゲン情報カードなどの携帯は、緊急時に周囲や医療者へ迅速かつ正確にアレルギー情報を伝える手段として推奨されます。",
+  "correctIndex": 0,
+  "explanation": "アナフィラキシーの再発を防ぐためには、原因を特定し、それを周囲の人たちと共有し、徹底的に回避することが重要とされています。アドレナリン自己注射薬などを持っている場合は、一刻を争うためすぐに使用し、必ず救急車を呼んで医療機関を受診します。",
   "source": {
-   "name": "アナフィラキシーガイドライン2022(日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「アナフィラキシー」(再発予防: 原因の特定・共有・回避)",
+   "url": "https://allergyportal.jp/knowledge/anaphylaxis/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-041",
@@ -26968,21 +26968,21 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "気管支喘息の重積発作時に全身ステロイド投与が行われる理由として正しいのはどれか。",
+  "question": "吸入ステロイド薬/長時間作用性β2刺激薬配合剤に含まれる成分の役割の組み合わせとして正しいのはどれか。",
   "choices": [
-   "全身ステロイドは発作予防にのみ使用するため",
-   "重積発作には抗ヒスタミン薬のみで対応するため",
-   "全身ステロイドは重積発作には無効であるため",
-   "気道の強い炎症を速やかに抑える必要があるため"
+   "気道の炎症をしずめる薬と、気管支を拡げる薬",
+   "気管支を細くする薬と、痰を増やす薬",
+   "どちらも気管支を拡げる薬",
+   "どちらも炎症をしずめる薬"
   ],
-  "correctIndex": 3,
-  "explanation": "喘息重積発作では気道の強い炎症を速やかに抑える必要があり、全身性ステロイドの投与が治療の重要な柱となります。",
+  "correctIndex": 0,
+  "explanation": "吸入ステロイド薬/長時間作用性β2刺激薬配合剤は、気道のアレルギー性の炎症をしずめる吸入ステロイド薬と、気管支を拡げる気管支拡張薬である長時間作用性β2刺激薬が合わさった薬です。長時間作用性β2刺激薬は長期管理薬として処方されるときは、この配合剤として処方されます。",
   "source": {
-   "name": "喘息予防・管理ガイドライン2024(日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「成人のぜん息」(吸入ステロイド薬/長時間作用性β2刺激薬配合剤)",
+   "url": "https://allergyportal.jp/knowledge/adult-asthma/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-045",
@@ -27031,21 +27031,21 @@
   "category": "immune-allergy",
   "difficulty": "beginner",
   "type": "single",
-  "question": "アトピー性皮膚炎治療における保湿剤の位置づけとして正しいのはどれか。",
+  "question": "アトピー性皮膚炎のプロアクティブ療法の説明として正しいのはどれか。",
   "choices": [
-   "保湿剤は乳児には使用しない",
-   "炎症の有無にかかわらず基本的なスキンケアとして継続的に用いる",
-   "保湿剤は炎症が強い時期のみ使用する",
-   "保湿剤はステロイド外用薬に優先して炎症を治す薬である"
+   "十分な抗炎症治療で症状をおさえた後、保湿外用薬でスキンケアしながらステロイド外用薬等を週2〜3回定期的に塗る",
+   "症状が出たときだけ薬を塗り、それ以外は何もしない",
+   "保湿剤を一切使わずステロイド外用薬のみを毎日塗る",
+   "症状が消えたらすべての外用薬をやめる"
   ],
-  "correctIndex": 1,
-  "explanation": "保湿剤はアトピー性皮膚炎の基本的なスキンケアとして、炎症の有無にかかわらず継続的に使用することが推奨されます。",
+  "correctIndex": 0,
+  "explanation": "アトピー性皮膚炎では、炎症が軽快して正常にみえても皮膚の深い部分に炎症が残り再び炎症が生じやすい状態にあることが多いため、十分な抗炎症治療で症状をおさえた後、保湿外用薬によるスキンケアを行いながらステロイド外用薬やタクロリムス外用薬を週2〜3回定期的に塗り、落ち着いた状態を維持します。",
   "source": {
-   "name": "アトピー性皮膚炎診療ガイドライン2024(日本皮膚科学会・日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「アトピー性皮膚炎」(プロアクティブ療法)",
+   "url": "https://allergyportal.jp/knowledge/atopic-dermatitis/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-048",
@@ -27062,11 +27062,11 @@
   "correctIndex": 1,
   "explanation": "アレルギー性結膜炎では目のかゆみや充血、涙目などの症状が代表的です。",
   "source": {
-   "name": "鼻アレルギー診療ガイドライン2024年版-通年性鼻炎と花粉症-(日本耳鼻咽喉科頭頸部外科学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「アレルギー性結膜炎」(目のかゆみ・充血・流涙)",
+   "url": "https://allergyportal.jp/knowledge/allergic-conjunctivitis/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-beginner-049",
@@ -27104,11 +27104,11 @@
   "correctIndex": 3,
   "explanation": "アレルゲンとは、花粉やダニ、食物成分などアレルギー反応を引き起こす原因となる物質を指します。",
   "source": {
-   "name": "アレルギー総合ガイドライン2022(日本アレルギー学会)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレルギーポータル(日本アレルギー学会・厚生労働省) 「アレルギーの基礎知識」(アレルゲンとIgE抗体)",
+   "url": "https://allergyportal.jp/knowledge/about/",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-001",
