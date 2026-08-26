@@ -17759,11 +17759,11 @@
   "correctIndex": 2,
   "explanation": "イバブラジンは洞調律を保ち、標準治療下でも安静時心拍数が一定以上残る慢性心不全患者が主な適応とされています。",
   "source": {
-   "name": "イバブラジン塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コララン錠2.5mg ／ コラ 添付文書 4.効能又は効果(洞調律かつ安静時心拍数75回/分以上の慢性心不全)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190039F1020_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-021",
@@ -17780,32 +17780,32 @@
   "correctIndex": 3,
   "explanation": "ニコランジルは口腔内潰瘍や消化管潰瘍が特徴的な副作用として知られています。",
   "source": {
-   "name": "ニコランジル錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニコランジル錠5mg「サワイ」 添付文書 11.1.3 重大な副作用(口内潰瘍・舌潰瘍・肛門潰瘍・消化管潰瘍)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171017F2156_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-022",
   "category": "heart-disease",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "硝酸薬の連用で生じることがある「耐性」への対策として正しいのはどれか。",
+  "question": "一硝酸イソソルビド錠の使用について添付文書に記載されているのはどれか。",
   "choices": [
-   "用量を継続的に増やし続けることのみで対応する",
-   "1日のうち一定の休薬時間(nitrate-free interval)を設けることがある",
-   "耐性が生じたら他の硝酸薬に切り替えても意味がない",
-   "耐性は硝酸薬には生じないため対策不要である"
+   "狭心症の発作寛解を目的とした治療には不適で、その場合は速効性の硝酸・亜硝酸エステル系薬剤を使用する",
+   "狭心症発作時の頓用に適している",
+   "発作時にも予防にも同じように使える",
+   "狭心症には用いない"
   ],
-  "correctIndex": 1,
-  "explanation": "硝酸薬は連用により効果が減弱する耐性が生じることがあり、1日のうち休薬時間を設けることで耐性形成を防ぐ工夫がされます。",
+  "correctIndex": 0,
+  "explanation": "添付文書5.効能又は効果に関連する注意に、本剤は狭心症の発作寛解を目的とした治療には不適であるので、この目的のためには速効性の硝酸・亜硝酸エステル系薬剤を使用することと記載されています。用法は1回20mg1日2回の経口投与です。",
   "source": {
-   "name": "硝酸イソソルビド錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "一硝酸イソソルビド錠10mg「サワイ 添付文書 5.効能又は効果に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171023F1082_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-023",
@@ -17822,11 +17822,11 @@
   "correctIndex": 3,
   "explanation": "アミオダロンは半減期が非常に長く、中止後も体内に長期間残存するため、相互作用や副作用が遷延することがあります。",
   "source": {
-   "name": "アミオダロン塩酸塩錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アミオダロン塩酸塩錠100mg「サワイ 添付文書 消失半減期19〜53日と極めて長く、中止後も長期間存在する",
+   "url": "https://www.info.pmda.go.jp/go/pack/2129010F1030_3_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-024",
@@ -17854,21 +17854,21 @@
   "category": "heart-disease",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "リドカイン中毒でみられる代表的な症状として正しいのはどれか。",
+  "question": "リドカイン塩酸塩注射液の投与に際して添付文書が求めている備えはどれか。",
   "choices": [
-   "甲状腺機能異常",
-   "痙攣などの中枢神経症状",
-   "高血糖",
-   "歯肉増生"
+   "ショックあるいは中毒症状に備え、直ちに救急処置がとれるよう常時準備し、事前の静脈路確保が望ましい",
+   "特別な準備は不要である",
+   "投与後に患者を帰宅させてよい",
+   "問診は省略してよい"
   ],
-  "correctIndex": 1,
-  "explanation": "リドカインの過量投与では、中枢神経系への作用により痙攣などの中毒症状が生じることがあります。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.1に、まれにショックあるいは中毒症状を起こすことがあるので、投与に際しては十分な問診により患者の全身状態を把握するとともに、異常が認められた場合に直ちに救急処置のとれるよう常時準備しておくこと、事前の静脈路確保が望ましいと記載されています。",
   "source": {
-   "name": "リドカイン塩酸塩注射液 添付文書(過量投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リドカイン塩酸塩注射液0.5%「VTRS」 添付文書 8.1 重要な基本的注意(ショック・中毒症状への備え)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1214400A5087_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-026",
@@ -17885,11 +17885,11 @@
   "correctIndex": 3,
   "explanation": "ドブタミンは強心作用により不整脈や過度の血圧変動を来すことがあるため、投与中は血行動態の継続的なモニタリングが重要です。",
   "source": {
-   "name": "ドブタミン塩酸塩注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドブタミン持続静注50mgシリンジ「 添付文書 8.2 重要な基本的注意(血圧・心拍数・心電図・尿量等の観察)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2119404G5059_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-027",
@@ -17927,11 +17927,11 @@
   "correctIndex": 2,
   "explanation": "トルバプタンは水利尿作用により急激な血清ナトリウム上昇(浸透圧性脱髄症候群のリスク)を来すことがあるため、入院下での開始が推奨されます。",
   "source": {
-   "name": "トルバプタン錠 添付文書(警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "サムタス点滴静注用8mg 添付文書 入院下で投与を開始・増量・再開すること(急激な血清ナトリウム濃度上昇)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2139403D1020_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-029",
@@ -17948,11 +17948,11 @@
   "correctIndex": 3,
   "explanation": "イコサペント酸エチルは抗血小板作用を併せ持つため、他の抗血小板薬・抗凝固薬との併用で出血傾向が増強するおそれがあります。",
   "source": {
-   "name": "イコサペント酸エチルカプセル 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イコサペント酸エチルカプセル300mg 添付文書 10.2 併用注意(抗凝固剤・血小板凝集を抑制する薬剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399004M1352_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-030",
@@ -18011,11 +18011,11 @@
   "correctIndex": 3,
   "explanation": "アスピリン喘息の既往がある患者では、アスピリンやNSAIDsの投与により重篤な気管支攣縮発作を誘発するおそれがあり禁忌です。",
   "source": {
-   "name": "アスピリン錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バイアスピリン錠100mg 添付文書 2.4 禁忌(アスピリン喘息又はその既往歴)・9.1.4",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399007H1021_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-033",
@@ -18053,11 +18053,11 @@
   "correctIndex": 0,
   "explanation": "スタチンとフィブラート系薬剤の併用は横紋筋融解症のリスクを増強することが知られており、慎重な併用が必要です。",
   "source": {
-   "name": "アトルバスタチンカルシウム水和物錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アトルバスタチン錠5mg「Me」 添付文書 10.2 併用注意(フィブラート系薬剤: 横紋筋融解症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2189015F1236_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-035",
@@ -18074,11 +18074,11 @@
   "correctIndex": 2,
   "explanation": "一部のマクロライド系抗菌薬はCYP3A4を阻害するため、同酵素で代謝されるスタチンの血中濃度上昇による副作用リスク増強に注意が必要です。",
   "source": {
-   "name": "アトルバスタチンカルシウム水和物錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アトルバスタチン錠5mg「Me」 添付文書 10.2 併用注意(エリスロマイシン等のCYP3A阻害作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2189015F1236_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-036",
