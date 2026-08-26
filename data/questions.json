@@ -17150,11 +17150,11 @@
   "correctIndex": 1,
   "explanation": "低用量のアスピリンは血小板のシクロオキシゲナーゼを選択的に阻害し、抗血小板作用が主な目的で用いられます。",
   "source": {
-   "name": "アスピリン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バイアスピリン錠100mg 添付文書 薬効分類名(抗血小板剤)・18.1 作用機序(低用量アスピリンはCOX-1を阻害しTXA2産生を抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399007H1021_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-042",
@@ -17171,11 +17171,11 @@
   "correctIndex": 0,
   "explanation": "PT-INRはワルファリンの抗凝固効果の指標であり、治療域を維持できているかを定期的に確認するために測定されます。",
   "source": {
-   "name": "ワルファリンカリウム錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワルファリンK錠0.5mg「トーワ」 添付文書 6. 用法及び用量(血液凝固能検査(プロトロンビン時間及びトロンボテスト)の検査値に基づき目標治療域に入るよう用量調節)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3332001F1083_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-043",
@@ -17213,11 +17213,11 @@
   "correctIndex": 3,
   "explanation": "エドキサバンは第Xa因子を直接阻害するDOACに分類される抗凝固薬です。",
   "source": {
-   "name": "エドキサバントシル酸塩水和物錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リクシアナ錠15mg ／ リ 添付文書 薬効分類名(経口FXa阻害剤)・18.1 作用機序(FXaを競合的かつ選択的に阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339002F1020_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-045",
@@ -19628,11 +19628,11 @@
   "correctIndex": 3,
   "explanation": "アスピリンは血小板凝集を抑制する抗血小板薬で、非心原性脳梗塞の再発予防に用いられます。",
   "source": {
-   "name": "アスピリン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バイアスピリン錠100mg 添付文書 薬効分類名(抗血小板剤)・4. 効能又は効果(虚血性脳血管障害における血栓・塞栓形成の抑制)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399007H1021_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-002",
@@ -19649,11 +19649,11 @@
   "correctIndex": 1,
   "explanation": "クロピドグレルはP2Y12受容体を阻害する抗血小板薬で、脳梗塞の再発予防などに用いられます。",
   "source": {
-   "name": "クロピドグレル硫酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラビックス錠25mg ／ 添付文書 薬効分類名(抗血小板剤)・18.1 作用機序(ADP受容体P2Y12に作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399008F1025_1_31/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-003",
@@ -19691,11 +19691,11 @@
   "correctIndex": 0,
   "explanation": "エダラボンはフリーラジカルスカベンジャーとして脳保護作用を持ち、急性期脳梗塞の治療に用いられます。",
   "source": {
-   "name": "エダラボン注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジカット注30mg 添付文書 薬効分類名(フリーラジカルスカベンジャー)・4. 効能又は効果(脳梗塞急性期)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190401A1023_3_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-005",
@@ -19712,11 +19712,11 @@
   "correctIndex": 0,
   "explanation": "rt-PA(アルテプラーゼ)は血栓を溶解する薬剤で、発症早期の脳梗塞に対する血栓溶解療法に用いられます。",
   "source": {
-   "name": "アルテプラーゼ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アクチバシン注600万 ／ 添付文書 薬効分類名(血栓溶解剤(rt-PA製剤))・4. 効能又は効果(虚血性脳血管障害急性期・発症後4.5時間以内)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3959402D1027_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-006",
@@ -19754,11 +19754,11 @@
   "correctIndex": 2,
   "explanation": "抗血小板薬は血小板の働きを抑えるため、出血傾向(消化管出血や皮下出血など)が代表的な副作用です。",
   "source": {
-   "name": "クロピドグレル硫酸塩錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラビックス錠25mg ／ 添付文書 11.1.1 出血(頭蓋内出血・胃腸出血・眼底出血等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399008F1025_1_31/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-008",
@@ -19838,11 +19838,11 @@
   "correctIndex": 0,
   "explanation": "シロスタゾールはホスホジエステラーゼ3(PDE3)阻害作用を持つ抗血小板薬で、脳梗塞再発予防に用いられます。",
   "source": {
-   "name": "シロスタゾール錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "シロスタゾール錠100mg「YD」 添付文書 薬効分類名(抗血小板剤)・18.1.2(血小板及び血管平滑筋PDE3を選択的に阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399002F2342_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-012",
@@ -19859,11 +19859,11 @@
   "correctIndex": 1,
   "explanation": "オザグレルナトリウムはトロンボキサンA2合成酵素阻害作用を持つ抗血小板薬で、脳血栓症急性期の治療に用いられます。",
   "source": {
-   "name": "オザグレルナトリウム注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オザグレルNa点滴静注20mgシリンジ 添付文書 薬効分類名(トロンボキサン合成酵素阻害剤)・4. 効能又は効果(脳血栓症(急性期))",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999411G1044_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-013",
