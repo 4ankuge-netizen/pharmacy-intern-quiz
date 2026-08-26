@@ -16541,11 +16541,11 @@
   "correctIndex": 2,
   "explanation": "プラスグレルはクロピドグレルと同じP2Y12阻害薬に分類される抗血小板薬です。",
   "source": {
-   "name": "プラスグレル塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エフィエント錠2.5mg ／ 添付文書 薬効分類名(抗血小板剤)・18.1 作用機序(ADP受容体P2Y12を選択的かつ非可逆的に阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399009F1020_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-013",
@@ -16562,11 +16562,11 @@
   "correctIndex": 2,
   "explanation": "ダビガトランはトロンビンを直接阻害するDOAC(直接経口抗凝固薬)です。",
   "source": {
-   "name": "ダビガトランエテキシラートメタンスルホン酸塩カプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラザキサカプセル75mg ／ 添付文書 薬効分類名(直接トロンビン阻害剤)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339001M1024_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-014",
@@ -16583,11 +16583,11 @@
   "correctIndex": 2,
   "explanation": "リバーロキサバンは第Xa因子を直接阻害するDOACに分類されます。",
   "source": {
-   "name": "リバーロキサバン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リバーロキサバン錠10mg「バイエル 添付文書 薬効分類名(選択的直接作用型第Xa因子阻害剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339003F1040_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-015",
@@ -16604,11 +16604,11 @@
   "correctIndex": 1,
   "explanation": "アピキサバンは第Xa因子を直接阻害するDOACに分類される抗凝固薬です。",
   "source": {
-   "name": "アピキサバン錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エリキュース錠2.5mg ／ 添付文書 薬効分類名(経口FXa阻害剤)・18.1 作用機序(第Xa因子を阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339004F1029_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-016",
@@ -16625,11 +16625,11 @@
   "correctIndex": 0,
   "explanation": "サクビトリルバルサルタンはARNIに分類され、慢性心不全治療の基本薬の一つとして用いられます。",
   "source": {
-   "name": "サクビトリルバルサルタンナトリウム水和物錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンレスト錠50mg ／ エ 添付文書 薬効分類名(アンジオテンシン受容体ネプリライシン阻害薬(ARNI))・4. 効能又は効果(慢性心不全)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190041F1027_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-017",
@@ -16646,11 +16646,11 @@
   "correctIndex": 1,
   "explanation": "イバブラジンは洞結節のHCNチャネルを遮断し、血圧に大きく影響せず心拍数のみを低下させる薬剤です。",
   "source": {
-   "name": "イバブラジン塩酸塩錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コララン錠2.5mg ／ コラ 添付文書 薬効分類名(HCNチャネル遮断薬)・18.1 作用機序(洞結節のペースメーカー電流If)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190039F1020_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-018",
@@ -16667,11 +16667,11 @@
   "correctIndex": 3,
   "explanation": "ニコランジルは冠血管拡張作用を持ち、狭心症の治療に用いられます。",
   "source": {
-   "name": "ニコランジル錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニコランジル錠5mg「サワイ」 添付文書 18.1 作用機序(冠血管拡張作用・冠血管平滑筋のグアニル酸サイクラーゼ活性化)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171017F2156_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-019",
@@ -16688,11 +16688,11 @@
   "correctIndex": 1,
   "explanation": "硝酸イソソルビドはニトログリセリンと同様の硝酸薬に分類され、狭心症治療に用いられます。",
   "source": {
-   "name": "硝酸イソソルビド錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニトロール錠5mg 添付文書 18.1 作用機序(硝酸・亜硝酸エステル系薬剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171016F1082_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-020",
@@ -16709,11 +16709,11 @@
   "correctIndex": 0,
   "explanation": "アミオダロンは幅広い抗不整脈作用を持つ薬剤で、致死性不整脈などの治療に用いられます。",
   "source": {
-   "name": "アミオダロン塩酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アミオダロン塩酸塩錠100mg「サワイ 添付文書 薬効分類名(不整脈治療剤)・18.1 作用機序(K+チャネル遮断作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2129010F1030_3_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-021",
@@ -16751,11 +16751,11 @@
   "correctIndex": 0,
   "explanation": "ドブタミンはβ1受容体刺激作用により心収縮力を高める強心薬で、急性心不全の治療に注射で用いられます。",
   "source": {
-   "name": "ドブタミン塩酸塩注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドブタミン持続静注50mgシリンジ「 添付文書 4. 効能又は効果(急性循環不全における心収縮力増強)・18.1.1(β1受容体に直接作用し心収縮力を増強)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2119404G5059_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-023",
@@ -16772,11 +16772,11 @@
   "correctIndex": 3,
   "explanation": "トルバプタンはバソプレシンV2受容体拮抗薬で、既存の利尿薬で効果不十分な心不全のうっ血症状改善に用いられます。",
   "source": {
-   "name": "トルバプタン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "サムタス点滴静注用8mg 添付文書 4. 効能又は効果(他の利尿薬で効果不十分な心不全における体液貯留)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2139403D1020_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-024",
@@ -16793,11 +16793,11 @@
   "correctIndex": 1,
   "explanation": "イコサペント酸エチルは中性脂肪低下などの脂質改善作用に加え、抗血小板作用も報告されている薬剤です。",
   "source": {
-   "name": "イコサペント酸エチルカプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イコサペント酸エチルカプセル300mg 添付文書 4. 効能又は効果(高脂血症)・18.1(脂質の生合成・分泌を抑制)・18.2 抗血小板作用",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399004M1352_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-26"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-025",
