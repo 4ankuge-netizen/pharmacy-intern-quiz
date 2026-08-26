@@ -17381,11 +17381,11 @@
   "correctIndex": 2,
   "explanation": "ジゴキシンは治療域が狭く、中毒では悪心・嘔吐、不整脈、黄視症などの色覚異常が代表的な症状として知られています。",
   "source": {
-   "name": "ジゴキシン錠 添付文書(過量投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジゴキシン錠0.0625「KYO」 ／ 添付文書 8.4 重要な基本的注意・副作用(視覚異常: 黄視、緑視等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2113003F1065_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-003",
@@ -17402,11 +17402,11 @@
   "correctIndex": 1,
   "explanation": "ループ利尿薬はカリウム排泄を促進し、強力な利尿作用により低カリウム血症や脱水を来しやすいことが知られています。",
   "source": {
-   "name": "フロセミド錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フロセミド錠40mg「トーワ」 添付文書 8.1 重要な基本的注意(脱水)・11.2 その他の副作用(低カリウム血症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2139005F2407_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-004",
@@ -17486,11 +17486,11 @@
   "correctIndex": 3,
   "explanation": "アミオダロンはヨウ素を含む構造から甲状腺機能異常を来しやすく、間質性肺炎などの肺障害にも注意が必要です。",
   "source": {
-   "name": "アミオダロン塩酸塩錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アミオダロン塩酸塩錠100mg「サワイ 添付文書 警告(間質性肺炎・肺線維症・甲状腺機能亢進症・甲状腺炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2129010F1030_3_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-008",
@@ -17507,11 +17507,11 @@
   "correctIndex": 2,
   "explanation": "スタチン系薬剤は筋肉痛や脱力を伴う横紋筋融解症のリスクがあり、特にフィブラート系薬剤との併用で注意が必要です。",
   "source": {
-   "name": "アトルバスタチンカルシウム水和物錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アトルバスタチン錠5mg「Me」 添付文書 9.1.2(横紋筋融解症があらわれやすい患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2189015F1236_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-009",
@@ -17539,21 +17539,21 @@
   "category": "heart-disease",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "カリウム保持性利尿薬とACE阻害薬/ARBを併用する際に注意すべき点はどれか。",
+  "question": "スピロノラクトンと併用禁忌とされている薬剤はどれか。",
   "choices": [
-   "効果が完全に打ち消される",
-   "低カリウム血症のリスクが高まる",
-   "高カリウム血症のリスクが高まる",
-   "併用は問題なく行える"
+   "タクロリムス、エプレレノン、エサキセレノン",
+   "ループ利尿薬",
+   "β遮断薬",
+   "スタチン"
   ],
-  "correctIndex": 2,
-  "explanation": "カリウム保持性利尿薬とACE阻害薬/ARBはいずれも血清カリウムを上昇させる方向に働くため、併用時は高カリウム血症に注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書10.1に、タクロリムス(プログラフ)、エプレレノン(セララ)、エサキセレノン(ミネブロ)が併用禁忌として挙げられており、相加・相乗作用により血清カリウム値が上昇し高カリウム血症が発現することがあるとされています。ミトタン(オペプリム)も本剤が薬効を阻害するため併用禁忌です。",
   "source": {
-   "name": "スピロノラクトン錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スピロノラクトン錠25mg「NP」 添付文書 10.1 併用禁忌(タクロリムス、エプレレノン、エサキセレノン)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2133001F1654_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-011",
@@ -17570,32 +17570,32 @@
   "correctIndex": 3,
   "explanation": "クロピドグレルは主にCYP2C19で活性代謝物に変換されるため、同酵素を阻害するプロトンポンプ阻害薬との併用で効果減弱が懸念されています。",
   "source": {
-   "name": "クロピドグレル硫酸塩錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラビックス錠25mg ／ 添付文書 10.2 併用注意(CYP2C19を阻害する薬剤: オメプラゾール)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399008F1025_1_31/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-012",
   "category": "heart-disease",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "プラスグレルがクロピドグレルと比較して注意すべき点として正しいのはどれか。",
+  "question": "プラスグレル(抗血小板剤)の作用機序として添付文書に記載されているのはどれか。",
   "choices": [
-   "抗血小板作用が強力な分、出血リスクがより高いとされる",
-   "効果発現に個人差がほとんどない点のみが特徴である",
-   "相互作用のリスクがまったくない",
-   "出血リスクはクロピドグレルより明らかに低い"
+   "プロドラッグであり、活性代謝物が血小板膜上のADP受容体P2Y12を選択的かつ非可逆的に阻害する",
+   "シクロオキシゲナーゼを不可逆的に阻害する",
+   "トロンビンを直接阻害する",
+   "ビタミンK作用に拮抗する"
   ],
   "correctIndex": 0,
-  "explanation": "プラスグレルはクロピドグレルより強力かつ安定した抗血小板作用を持つ一方、出血リスクがより高いとされ注意が必要です。",
+  "explanation": "添付文書18.1に、プラスグレル塩酸塩はプロドラッグであり生体内で活性代謝物に変換された後、血小板膜上のADP受容体P2Y12を選択的かつ非可逆的に阻害することで血小板凝集を抑制すると記載されています。効能又は効果はPCIが適用される虚血性心疾患などです。",
   "source": {
-   "name": "プラスグレル塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エフィエント錠2.5mg ／ 添付文書 18.1 作用機序(ADP受容体P2Y12の選択的・非可逆的阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399009F1020_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-013",
@@ -17623,21 +17623,21 @@
   "category": "heart-disease",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ダビガトランが重度腎機能障害患者に投与制限される理由として正しいのはどれか。",
+  "question": "ダビガトラン(プラザキサ)が禁忌となる腎機能の状態として添付文書に記載されているのはどれか。",
   "choices": [
-   "主に腎排泄されるため、腎機能低下時に薬剤が蓄積し出血リスクが高まるため",
-   "肝代謝のみのため腎機能は無関係であるため",
-   "効果が腎機能低下時に消失するため",
-   "腎機能低下患者ではむしろ増量が必要となるため"
+   "透析患者を含む高度の腎障害(クレアチニンクリアランス30mL/min未満)",
+   "軽度の腎障害",
+   "腎機能が正常な状態",
+   "クレアチニンクリアランス80mL/min以上"
   ],
   "correctIndex": 0,
-  "explanation": "ダビガトランは腎排泄の関与が大きいため、重度腎機能障害患者では薬剤蓄積による出血リスク増加のおそれがあり投与制限があります。",
+  "explanation": "添付文書2.2に、透析患者を含む高度の腎障害(クレアチニンクリアランス30mL/min未満)のある患者は禁忌と記載されています。中等度の腎障害(クレアチニンクリアランス30-50mL/min)のある患者では減量を考慮するなどの注意が必要です。",
   "source": {
-   "name": "ダビガトランエテキシラートメタンスルホン酸塩カプセル 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラザキサカプセル75mg ／ 添付文書 2.2 禁忌(高度の腎障害: CCr30mL/min未満)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339001M1024_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-015",
@@ -17654,11 +17654,11 @@
   "correctIndex": 3,
   "explanation": "リバーロキサバンは用量によって吸収性が食事の影響を受けるため、食後投与が推奨される場合があります。",
   "source": {
-   "name": "リバーロキサバン錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リバーロキサバン錠10mg「バイエル 添付文書 6.用法及び用量(非弁膜症性心房細動では15mgを1日1回食後)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339003F1040_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-016",
@@ -17675,11 +17675,11 @@
   "correctIndex": 2,
   "explanation": "アピキサバンは年齢、体重、血清クレアチニン値などの基準に基づき減量の要否が判断されます。",
   "source": {
-   "name": "アピキサバン錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エリキュース錠2.5mg ／ 添付文書 6.用法及び用量(80歳以上・体重60kg以下等による減量)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339004F1029_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-017",
@@ -17696,11 +17696,11 @@
   "correctIndex": 2,
   "explanation": "DOACはいずれも抗凝固作用を持つため、消化管出血をはじめとする出血性副作用に共通して注意が必要です。",
   "source": {
-   "name": "リバーロキサバン錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リバーロキサバン錠10mg「バイエル 添付文書 11.2 その他の副作用(各部位の出血)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3339003F1040_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-018",
@@ -17728,21 +17728,21 @@
   "category": "heart-disease",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "サクビトリルバルサルタンとACE阻害薬を併用してはいけない理由として正しいのはどれか。",
+  "question": "サクビトリルバルサルタン(エンレスト)とACE阻害薬の関係について添付文書に記載されているのはどれか。",
   "choices": [
-   "血管浮腫のリスクが高まるため併用禁忌とされる",
-   "効果が完全に打ち消されるため",
-   "ACE阻害薬の効果を無効化するため",
-   "降圧効果が強すぎるため一時的に併用禁止なだけである"
+   "血管性浮腫があらわれるおそれがあるため、投与開始の少なくとも36時間前にACE阻害薬を中止する",
+   "同時に併用してよい",
+   "ACE阻害薬中止後すぐに開始してよい",
+   "ACE阻害薬との関係は記載されていない"
   ],
   "correctIndex": 0,
-  "explanation": "サクビトリルバルサルタンとACE阻害薬の併用はブラジキニン分解抑制が重なり血管浮腫のリスクが高まるため、併用禁忌かつ切替え時のウォッシュアウト期間が必要です。",
+  "explanation": "添付文書2.2に、ACE阻害薬を投与中の患者あるいは投与中止から36時間以内の患者は禁忌と記載されています。8.1では、血管性浮腫があらわれるおそれがあるため本剤投与開始の少なくとも36時間前にACE阻害薬を中止すること、本剤投与終了後にACE阻害薬を投与する場合は本剤の最終投与から36時間後までは投与しないこととされています。",
   "source": {
-   "name": "サクビトリルバルサルタンナトリウム水和物錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンレスト錠50mg ／ エ 添付文書 2.2 禁忌・8.1 重要な基本的注意(ACE阻害薬中止から36時間)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190041F1027_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-020",
