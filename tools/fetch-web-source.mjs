@@ -50,6 +50,8 @@ const ALLOWED_HOSTS = [
   'jsa-web.org',         // 日本脳卒中協会
   'nittokyo.or.jp',      // 日本糖尿病協会
   'jpn-geriat-soc.or.jp',// 日本老年医学会
+  'nanbyou.or.jp',       // 難病情報センター(難病医学研究財団)
+  'ryumachi-jp.com',     // 日本リウマチ学会
 ];
 
 function toFileName(name) {
