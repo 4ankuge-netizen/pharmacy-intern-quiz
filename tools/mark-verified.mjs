@@ -87,7 +87,18 @@ function main() {
         process.exit(1);
       }
       url = doc.packUrl;
-      const product = String(doc.selectedProductName || '').replace(/\s*\.\.\.$/, '').trim();
+      /*
+        PMDAの製品名は長いと途中で切れて渡ってくることがある。
+        そのまま使うと鉤括弧が閉じない出典名になってしまうので、
+        閉じていない「以降(メーカー名の途中)は落として整える。
+      */
+      let product = String(doc.selectedProductName || '')
+        .split('／')[0]
+        .replace(/\s*\.\.\.\s*/g, ' ')
+        .trim();
+      if ((product.match(/「/g) || []).length > (product.match(/」/g) || []).length) {
+        product = product.slice(0, product.lastIndexOf('「')).trim();
+      }
       // 「どの製品の、どの項目で確認したか」が後から分かる形にする
       sourceName = sourceName || `${product} 添付文書${d.section ? ' ' + d.section : ''}`;
     }
