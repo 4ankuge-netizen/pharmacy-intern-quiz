@@ -24227,32 +24227,32 @@
   "correctIndex": 2,
   "explanation": "カルバマゼピンは重篤な皮膚障害(Stevens-Johnson症候群)や無顆粒球症などの血液障害のリスクがあり注意が必要です。",
   "source": {
-   "name": "カルバマゼピン錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルバマゼピン錠100mg「アメル」 添付文書 11.1.1・11.1.2 重大な副作用(無顆粒球症、Stevens-Johnson症候群等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139002C1066_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-018",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "カルバマゼピンの酵素誘導作用が関わる相互作用として正しいのはどれか。",
+  "question": "カルバマゼピンの作用機序として添付文書に記載されているのはどれか。",
   "choices": [
-   "カルバマゼピンは酵素阻害作用のみを持つ",
-   "経口避妊薬の効果が減弱することがある",
-   "相互作用は報告されていない",
-   "経口避妊薬の効果が増強することがある"
+   "神経細胞の電位依存性ナトリウムチャネルの活動を制限し、過剰な興奮を抑制する",
+   "GABA受容体を直接刺激する",
+   "ドパミンD2受容体を遮断する",
+   "セロトニン再取り込みを阻害する"
   ],
-  "correctIndex": 1,
-  "explanation": "カルバマゼピンは肝代謝酵素を誘導する作用があり、経口避妊薬など他剤の代謝を促進し効果を減弱させることがあります。",
+  "correctIndex": 0,
+  "explanation": "添付文書18.1に、カルバマゼピンは神経細胞の電位依存性ナトリウムチャンネルの活動を制限し、その過剰な興奮を抑制することにより抗てんかん作用を現すと考えられていると記載されています。効能又は効果は精神運動発作、強直間代発作、躁病・躁うつ病の躁状態、統合失調症の興奮状態、三叉神経痛です。",
   "source": {
-   "name": "カルバマゼピン錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルバマゼピン錠100mg「アメル」 添付文書 18.1 作用機序(電位依存性ナトリウムチャネル)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139002C1066_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-019",
@@ -24269,11 +24269,11 @@
   "correctIndex": 3,
   "explanation": "ラモトリギンは急速な増量により重篤な皮膚障害(Stevens-Johnson症候群等)のリスクが高まるため、緩徐な漸増が求められます。",
   "source": {
-   "name": "ラモトリギン錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラモトリギン錠小児用2mg 添付文書 1.1 警告(用法及び用量を超えると皮膚障害の発現率が高い)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139009F1072_2_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-020",
@@ -24290,53 +24290,53 @@
   "correctIndex": 0,
   "explanation": "レベチラセタムは易刺激性や易怒性などの精神症状が副作用として報告されており、患者・家族への説明が重要です。",
   "source": {
-   "name": "レベチラセタム錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レベチラセタム錠250mg「JG」 添付文書 11.2 その他の副作用(精神神経系: 易刺激性等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139010F1032_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-021",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "フェニトインの薬物動態上の特徴として正しいのはどれか。",
+  "question": "フェニトインの過量投与の徴候として添付文書に挙げられている症状はどれか。",
   "choices": [
-   "用量に応じてクリアランスが変化する非線形性を示す",
-   "血中濃度モニタリングの必要がない薬剤である",
-   "常に用量に比例した血中濃度上昇を示す線形動態である",
-   "代謝経路は関与しない薬剤である"
+   "眼振、構音障害、運動失調、眼筋麻痺",
+   "高熱と発疹",
+   "重度の低血糖",
+   "高血圧"
   ],
   "correctIndex": 0,
-  "explanation": "フェニトインは肝代謝酵素の飽和により、用量調整時に血中濃度が予測より大きく変動する非線形の薬物動態を示します。",
+  "explanation": "添付文書7.用法及び用量に関連する注意に、眼振、構音障害、運動失調、眼筋麻痺等の症状は過量投与の徴候であることが記載されています。フェニトインは血中濃度が上がりやすく、これらの症状に注意しながら用量を調節します。",
   "source": {
-   "name": "フェニトイン錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレビアチン散10％ 添付文書 7.用法及び用量に関連する注意(過量投与の徴候)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1132002B1060_1_23/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-022",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ゾルピデムなど非ベンゾジアゼピン系睡眠薬で注意すべき症状として正しいのはどれか。",
+  "question": "ゾルピデム服用後にあらわれることがある症状として添付文書に記載されているのはどれか。",
   "choices": [
-   "甲状腺機能異常",
-   "歯肉増生",
-   "高血糖",
-   "奇異反応や健忘(服薬後の記憶がない等)"
+   "もうろう状態、睡眠随伴症状(夢遊症状等)、入眠までや中途覚醒時の出来事を記憶していないこと",
+   "高熱と筋強剛",
+   "重度の低血糖",
+   "難聴"
   ],
-  "correctIndex": 3,
-  "explanation": "ゾルピデムなどの睡眠薬は、まれに奇異反応(興奮など)や服薬後の健忘が生じることがあり注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書に、本剤の服用後にもうろう状態、睡眠随伴症状(夢遊症状等)があらわれることがあり、また入眠までの、あるいは中途覚醒時の出来事を記憶していないことがあるので注意することと記載されています。これらは用量依存的にあらわれるため1回5mgから開始し、10mgを超えないこととされています。",
   "source": {
-   "name": "ゾルピデム酒石酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾルピデム酒石酸塩錠5mg「JG」 添付文書 重要な基本的注意・7.1(もうろう状態、睡眠随伴症状)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1129009F1114_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-023",
@@ -24353,11 +24353,11 @@
   "correctIndex": 3,
   "explanation": "スボレキサントは主にCYP3A4で代謝されるため、強いCYP3A4阻害薬との併用で血中濃度上昇・作用増強のおそれがあります。",
   "source": {
-   "name": "スボレキサント錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ベルソムラ錠10mg 添付文書 10.1 併用禁忌(CYP3Aを阻害する薬剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190023F1024_1_20/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-024",
@@ -24374,53 +24374,53 @@
   "correctIndex": 3,
   "explanation": "メマンチンは腎排泄の関与があるため、重度腎機能障害患者では用量調整が必要とされています。",
   "source": {
-   "name": "メマンチン塩酸塩錠 添付文書(腎機能障害患者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メマンチン塩酸塩錠5mg 添付文書 7.2 用法及び用量に関連する注意(高度の腎機能障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190018F1074_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-025",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ガランタミンやリバスチグミンなどコリンエステラーゼ阻害薬で高頻度にみられる副作用として正しいのはどれか。",
+  "question": "ガランタミン(コリンエステラーゼ阻害薬)の血中濃度が上昇した場合に起こりうる症状として添付文書に記載されているのはどれか。",
   "choices": [
+   "悪心、嘔吐等",
    "高血糖",
-   "歯肉増生",
-   "悪心・嘔吐などの消化器症状",
-   "甲状腺機能異常"
+   "難聴",
+   "多尿"
   ],
-  "correctIndex": 2,
-  "explanation": "コリンエステラーゼ阻害薬はコリン作動性作用の増強により、悪心・嘔吐などの消化器症状が高頻度にみられます。",
+  "correctIndex": 0,
+  "explanation": "添付文書の相互作用の項に、本剤の血中濃度が上昇し悪心、嘔吐等がおこる可能性があると記載されています。ガランタミンはアセチルコリンエステラーゼを競合的に阻害して脳内アセチルコリン濃度を上昇させ、さらにニコチン性アセチルコリン受容体へのAPL作用により脳内コリン機能を増強させます。",
   "source": {
-   "name": "ガランタミン臭化水素酸塩錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ガランタミンOD錠4mg「アメル」 添付文書 10.相互作用(血中濃度上昇による悪心・嘔吐)・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190019F4060_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-026",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "メチルフェニデートの管理において重要とされる制度上の対応はどれか。",
+  "question": "メチルフェニデート(リタリン)の服薬時刻について添付文書が求めているのはどれか。",
   "choices": [
-   "依存・乱用防止のための登録流通管理システムのもとで処方される",
-   "メチルフェニデートには特別な管理制度は存在しない",
-   "一般の医薬品と同様に自由に処方・入手できる",
-   "処方には制限がなく市販薬として購入できる"
+   "覚醒効果があるため不眠に注意し、夕刻以後の服薬は原則として避けさせる",
+   "就寝直前に服用させる",
+   "夕食後に服用させる",
+   "服薬時刻の定めはない"
   ],
   "correctIndex": 0,
-  "explanation": "メチルフェニデートは依存・乱用のリスクがあるため、ADHD適正流通管理システムなどの登録された医師・薬局でのみ取り扱われます。",
+  "explanation": "添付文書7.用法及び用量に関連する注意に、覚醒効果があるので不眠に注意し、夕刻以後の服薬は原則として避けさせることと記載されています。リタリン錠の効能又は効果はナルコレプシーです。",
   "source": {
-   "name": "メチルフェニデート塩酸塩錠 添付文書(取扱い上の注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リタリン錠10mg 添付文書 7.用法及び用量に関連する注意(夕刻以後の服薬を避ける)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179009F1035_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-027",
