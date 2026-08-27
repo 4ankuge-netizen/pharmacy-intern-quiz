@@ -16,11 +16,22 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 
 // 出典から薬剤名を取り出す。添付文書・インタビューフォーム由来のものだけが対象。
 // (ガイドライン由来の出典はPMDAの添付文書検索では確認できないため除く)
+/*
+  出典の書き方と、PMDAで実際に添付文書が見つかる製品名が違うことがある。
+   - 「抗菌薬」「ステロイド外用薬」のように薬の種類でしか書かれていない
+   - 一般名では検索に当たらない(チカグレロル錠 → 販売名はブリリンタ錠)
+  その読み替え表が tools/drug-aliases.json。
+*/
+const ALIASES = JSON.parse(
+  readFileSync(join(dirname(fileURLToPath(import.meta.url)), 'drug-aliases.json'), 'utf8')
+);
+
 export function extractDrugName(sourceName) {
   if (!/添付文書|インタビューフォーム/.test(sourceName)) return null;
   let head = String(sourceName).split(/\s+/)[0];
   head = head.replace(/(添付文書|インタビューフォーム).*$/, '').trim();
-  return head || null;
+  if (!head) return null;
+  return ALIASES[head] || head;
 }
 
 function main() {
