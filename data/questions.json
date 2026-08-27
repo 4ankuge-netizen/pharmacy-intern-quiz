@@ -24679,21 +24679,21 @@
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "妊娠中のリチウム使用に関する注意点として正しいのはどれか。",
+  "question": "妊婦への炭酸リチウム投与について添付文書に記載されているのはどれか。",
   "choices": [
-   "リチウムは妊娠中に積極的に増量すべきとされる",
-   "リチウムは胎児に一切影響しない",
-   "胎児の心奇形(Ebstein奇形等)のリスクが指摘されている",
-   "妊娠中も安全性に問題はないとされる"
+   "治療上やむを得ないと判断される場合を除き投与しない。ヒトで心奇形の発現が報告されている",
+   "妊婦にも安全に使用できる",
+   "妊娠中は増量する",
+   "妊娠中の使用に関する記載はない"
   ],
-  "correctIndex": 2,
-  "explanation": "リチウムは妊娠初期の使用でEbstein奇形などの心奇形リスクが指摘されており、妊娠中の使用は慎重な検討が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.5.1に、妊婦又は妊娠している可能性のある女性には治療上やむを得ないと判断される場合を除き投与しないこと、動物実験(ラット・マウス)で催奇形作用が、またヒトで心奇形の発現が報告されていると記載されています。",
   "source": {
-   "name": "炭酸リチウム錠 添付文書(妊婦、産婦、授乳婦等への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "炭酸リチウム錠100mg「大正」 添付文書 9.5.1 妊婦(ヒトで心奇形の発現が報告)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179017F1080_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-040",
@@ -24710,11 +24710,11 @@
   "correctIndex": 2,
   "explanation": "バルプロ酸は重篤な肝機能障害を来すことがあるため、投与中は定期的な肝機能検査によるモニタリングが推奨されます。",
   "source": {
-   "name": "バルプロ酸ナトリウム錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バルプロ酸ナトリウム錠100mg 添付文書 2.1 禁忌・8.1 重要な基本的注意(投与初期6ヵ月間は定期的に肝機能検査)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1088_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-041",
@@ -24731,11 +24731,11 @@
   "correctIndex": 0,
   "explanation": "カルバマゼピンは無顆粒球症や再生不良性貧血などの重篤な血液障害を来すことがあり、定期的な血液検査によるモニタリングが重要です。",
   "source": {
-   "name": "カルバマゼピン錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルバマゼピン錠100mg「アメル」 添付文書 2.2 禁忌(重篤な血液障害)・8.1(定期的な血液検査)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139002C1066_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-042",
@@ -24752,11 +24752,11 @@
   "correctIndex": 3,
   "explanation": "コリンエステラーゼ阻害薬は急激な増量により悪心などの消化器症状が出やすいため、少量から漸増することが一般的です。",
   "source": {
-   "name": "ドネペジル塩酸塩錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドネペジル塩酸塩錠3mg「NP」 添付文書 7.1 用法及び用量に関連する注意(3mg/日は消化器系副作用を抑える目的)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190012F1085_3_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-043",
@@ -24794,11 +24794,11 @@
   "correctIndex": 1,
   "explanation": "ベンゾジアゼピン系薬とオピオイドはいずれも中枢神経抑制作用を持つため、併用により呼吸抑制のリスクが相加的に高まります。",
   "source": {
-   "name": "ジアゼパム錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジアゼパム錠2「サワイ」 添付文書 10.2 併用注意(中枢神経抑制剤・オピオイド鎮痛剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1124017F2046_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-045",
@@ -24815,32 +24815,32 @@
   "correctIndex": 3,
   "explanation": "ナルメフェンは完全な断酒ではなく、飲酒量の低減を目的として用いられるアルコール依存症治療薬です。",
   "source": {
-   "name": "ナルメフェン塩酸塩水和物錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セリンクロ錠10mg 添付文書 薬効分類名(アルコール依存症 飲酒量低減薬)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190025F1023_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-046",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ADHD治療薬(メチルフェニデート等)投与中にモニタリングすべき項目として正しいのはどれか。",
+  "question": "メチルフェニデート(リタリン)が禁忌となる患者として添付文書に記載されているのはどれか。",
   "choices": [
-   "視力",
-   "骨密度",
-   "聴力",
-   "心拍数・血圧などの心血管系指標"
+   "甲状腺機能亢進のある患者、褐色細胞腫又はパラガングリオーマのある患者",
+   "軽度の高血圧のある患者",
+   "軽度の貧血のある患者",
+   "高齢者すべて"
   ],
-  "correctIndex": 3,
-  "explanation": "中枢神経刺激薬は心拍数・血圧上昇のリスクがあるため、投与中は心血管系のモニタリングが推奨されます。",
+  "correctIndex": 0,
+  "explanation": "添付文書2.3に甲状腺機能亢進のある患者(循環器系に影響を及ぼすことがある)、2.8に褐色細胞腫又はパラガングリオーマのある患者(血圧を上昇させるおそれがある)が禁忌として記載されています。",
   "source": {
-   "name": "メチルフェニデート塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リタリン錠10mg 添付文書 2.3・2.8 禁忌",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179009F1035_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-047",
@@ -24878,32 +24878,32 @@
   "correctIndex": 1,
   "explanation": "SSRI/SNRIは血小板機能に影響しうるため、NSAIDsとの併用で消化管出血のリスクが増加することが報告されています。",
   "source": {
-   "name": "セルトラリン塩酸塩錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セルトラリン錠25mg「トーワ」 添付文書 9.1.7(出血の危険性を高める薬剤の併用、胃腸出血等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179046F1176_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-049",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "抗てんかん薬の血中濃度モニタリングが重要とされる理由として正しいのはどれか。",
+  "question": "高齢者にバルプロ酸を投与する際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "血中濃度は発作予防効果と無関係であるため",
-   "モニタリングは初回投与時のみ必要であるため",
-   "有効域が狭く個人差が大きい薬剤があるため",
-   "抗てんかん薬はすべて血中濃度と無関係に効果が一定であるため"
+   "血漿アルブミンが減少していることが多く、遊離の薬物の血中濃度が高くなるおそれがある",
+   "高齢者では血中濃度が必ず低下する",
+   "高齢者では蛋白結合の影響はない",
+   "高齢者には投与できない"
   ],
-  "correctIndex": 2,
-  "explanation": "一部の抗てんかん薬は有効域が狭く、代謝の個人差も大きいため、血中濃度モニタリングにより有効かつ安全な用量を確認します。",
+  "correctIndex": 0,
+  "explanation": "添付文書に、本剤は血漿アルブミンとの結合性が強いが、高齢者では血漿アルブミンが減少していることが多いため、遊離の薬物の血中濃度が高くなるおそれがあると記載されています。総血中濃度だけでは判断しきれない点に注意が必要です。",
   "source": {
-   "name": "抗てんかん薬 各種インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デパケン錠100mg 添付文書 9.8 高齢者(血漿アルブミン減少と遊離薬物濃度)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1096_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-050",
@@ -24920,11 +24920,11 @@
   "correctIndex": 3,
   "explanation": "認知症高齢者への抗精神病薬使用は死亡リスク増加との関連が報告されており、必要最小限の使用にとどめる慎重な判断が求められます。",
   "source": {
-   "name": "リスペリドン錠 添付文書(警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リスペリドン錠1mg「サワイ」 添付文書 15.その他の注意(高齢認知症患者で死亡率が1.6〜1.7倍)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179038C1094_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-001",
