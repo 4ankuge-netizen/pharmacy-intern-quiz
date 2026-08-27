@@ -30422,11 +30422,11 @@
   "correctIndex": 3,
   "explanation": "ペニシリン系とセフェム系は化学構造が類似する部分があり、交差アレルギーが生じる可能性があるため使用時は注意が必要です。",
   "source": {
-   "name": "セフェム系抗菌薬 各種添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フロモックス錠75mg 添付文書 9.1.2(ペニシリン系抗生物質に対する過敏症の既往歴)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6132016F1023_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-002",
@@ -30443,11 +30443,11 @@
   "correctIndex": 0,
   "explanation": "ニューキノロン系抗菌薬はCa、Mg、Feなどの金属イオンとキレートを形成しやすく、同時服用により吸収が低下することがあります。",
   "source": {
-   "name": "レボフロキサシン錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レボフロキサシン錠250mg「CH」 添付文書 10.2 併用注意(アルミニウム・マグネシウム含有制酸薬、鉄剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6241013F2047_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-003",
@@ -30464,32 +30464,32 @@
   "correctIndex": 1,
   "explanation": "一部のマクロライド系抗菌薬はCYP3A4を阻害するため、同酵素で代謝される薬剤の血中濃度上昇に注意が必要です。",
   "source": {
-   "name": "マクロライド系抗菌薬 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "クラリス錠200 添付文書 10.2 併用注意(CYP3A阻害作用による血中濃度上昇)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6149003F2038_1_38/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-004",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "バンコマイシン投与時にTDM(治療薬物モニタリング)が重要とされる理由として正しいのはどれか。",
+  "question": "腎機能障害患者にバンコマイシン点滴静注用を投与する際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "腎障害や聴器毒性のリスクがあり、有効かつ安全な血中濃度を維持する必要があるため",
-   "経口投与のため血中濃度モニタリングは不要なため",
-   "効果に個人差がまったくないため",
-   "TDMを行わなくても安全性に問題はないため"
+   "健康者より血中濃度の半減期が延長するため、クレアチニンクリアランスから投与量を修正する",
+   "腎機能によらず同じ投与量でよい",
+   "腎機能障害では半減期が短縮する",
+   "腎機能障害患者には投与できない"
   ],
   "correctIndex": 0,
-  "explanation": "バンコマイシンは腎障害・聴器毒性のリスクがあり、有効性と安全性を両立する血中濃度を維持するためTDMが重要とされています。",
+  "explanation": "添付文書7.2に、腎機能障害患者では健康者より血中濃度の半減期が延長するので投与量を修正して使用する必要があり、クレアチニンクリアランスから投与量を修正する目安が示されていると記載されています。また1回分をそれぞれ60分以上かけて点滴静注します。",
   "source": {
-   "name": "バンコマイシン塩酸塩注射用 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "塩酸バンコマイシン点滴静注用0.5g 添付文書 7.2 用法・用量に関連する注意(腎機能障害患者での投与量修正)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6113400A1200_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-005",
@@ -30506,11 +30506,11 @@
   "correctIndex": 0,
   "explanation": "ニューキノロン系抗菌薬は腱障害(アキレス腱炎・断裂など)が報告されており、高齢者やステロイド併用患者では特に注意が必要です。",
   "source": {
-   "name": "レボフロキサシン錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レボフロキサシン錠250mg「CH」 添付文書 9.8.1 高齢者(腱障害)・10.2 併用注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/6241013F2047_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-006",
@@ -30548,11 +30548,11 @@
   "correctIndex": 2,
   "explanation": "オセルタミビルを含む抗インフルエンザ薬では異常行動の報告があり、特に未成年患者では少なくとも数日間の見守りが推奨されています。",
   "source": {
-   "name": "オセルタミビルリン酸塩カプセル 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タミフルカプセル75 添付文書 8.1 重要な基本的注意(異常行動)・11.1.7",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250021M1027_1_40/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-008",
@@ -30580,21 +30580,21 @@
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ワルファリン服用患者にニューキノロン系・マクロライド系抗菌薬を投与する際の注意点として正しいのはどれか。",
+  "question": "ワルファリン服用中の患者にマクロライド系抗生物質(エリスロマイシン、クラリスロマイシン)を併用する際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "抗菌薬投与中はワルファリンの中止が必須である",
-   "必ずワルファリンの効果が減弱する",
-   "ワルファリンの効果とは無関係である",
-   "PT-INRが変動し出血リスクが高まることがある"
+   "ワルファリンの作用が増強することがあるため、血液凝固能の変動に十分注意しながら投与する",
+   "ワルファリンの作用が減弱する",
+   "併用は禁忌である",
+   "相互作用はない"
   ],
-  "correctIndex": 3,
-  "explanation": "一部の抗菌薬はワルファリンの代謝や腸内細菌叢に影響し、PT-INRの変動による出血リスク増加に注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書の併用注意に、マクロライド系(エリスロマイシン、クラリスロマイシン)との併用で本剤の作用が増強することがあるため、併用する場合には血液凝固能の変動に十分注意しながら投与することと記載されています。",
   "source": {
-   "name": "ワルファリンカリウム錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワルファリンK錠0.5mg「トーワ」 添付文書 10.2 併用注意(マクロライド系: 本剤の作用が増強)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3332001F1083_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-010",
@@ -30622,42 +30622,42 @@
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "腎機能が低下した患者へのアシクロビル投与で注意すべき点として正しいのはどれか。",
+  "question": "アシクロビル点滴静注用を投与する際に特に注意が必要な患者として添付文書に記載されているのはどれか。",
   "choices": [
-   "効果がまったく発現しなくなる",
-   "結晶が腎尿細管に沈着し急性腎障害を来すことがある",
-   "腎機能低下患者には禁忌である",
-   "腎機能にかかわらず用量調整は不要である"
+   "脱水症状をおこしやすいと考えられる患者(腎障害のある患者、腎機能が低下している患者、高齢者等)",
+   "軽度の高血圧のある患者",
+   "軽度の貧血のある患者",
+   "喫煙者"
   ],
-  "correctIndex": 1,
-  "explanation": "アシクロビルは急速静注や腎機能低下時に結晶が腎尿細管に沈着し、急性腎障害を来すことがあるため注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.1.1に、脱水症状をおこしやすいと考えられる患者(腎障害のある患者又は腎機能が低下している患者、高齢者等)への注意が記載されています。9.2.1でも腎障害のある患者・腎機能が低下している患者への注意が示されています。",
   "source": {
-   "name": "アシクロビル注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾビラックス点滴静注用250 添付文書 9.1.1・9.2.1(脱水症状をおこしやすい患者、腎障害のある患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250401F1155_W_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-012",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "バラシクロビルがアシクロビルより有利とされる点として正しいのはどれか。",
+  "question": "バラシクロビル1000mgを単回経口投与したときのアシクロビルの生物学的利用率として添付文書に記載されている値はどれか。",
   "choices": [
-   "注射薬としてのみ使用できる",
-   "抗ウイルススペクトルが全く異なる",
-   "プロドラッグ化により経口吸収性(生物学的利用能)が改善されている",
-   "副作用が完全にない"
+   "54.2%",
+   "5.4%",
+   "94.2%",
+   "24.2%"
   ],
-  "correctIndex": 2,
-  "explanation": "バラシクロビルはアシクロビルのプロドラッグで、経口投与時の生物学的利用能がアシクロビルより改善されています。",
+  "correctIndex": 0,
+  "explanation": "添付文書16.2.2に、健康成人にバラシクロビル1000mgを単回経口投与した場合のアシクロビルの生物学的利用率は54.2%であったと記載されています。バラシクロビルは体内でアシクロビルに変換されるプロドラッグです。",
   "source": {
-   "name": "バラシクロビル塩酸塩錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バラシクロビル錠500mg「JG」 添付文書 16.2.2 バイオアベイラビリティ",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250019F1098_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-013",
