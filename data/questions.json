@@ -14357,11 +14357,11 @@
   "correctIndex": 2,
   "explanation": "超速効型インスリンは作用発現が速いため、食直前に投与し食後高血糖を抑えることを目的に使用されます。",
   "source": {
-   "name": "インスリンアスパルト注射液 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ノボラピッド注 フレックスタッチ 添付文書 7.1 用法及び用量に関連する注意(作用発現が速いため食直前に投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492415G1031_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-017",
@@ -14536,21 +14536,21 @@
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "インスリン療法中にまれにみられるインスリン抗体形成の臨床的意義として正しいのはどれか。",
+  "question": "ヒトインスリンに対する獲得抗体を有し高用量のインスリンを必要としている患者に、他のインスリン製剤からインスリン グラルギンへ変更する場合の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "インスリン抗体は臨床的に無視できる現象である",
-   "インスリン抗体は治療効果を必ず増強する",
-   "インスリン抗体形成は経口薬にのみ生じる現象である",
-   "インスリンの効果が減弱し血糖コントロールが不安定になることがある"
+   "本剤の需要量が急激に変化することがあるので、経過を観察しながら慎重に投与する",
+   "変更しても必要量は変わらない",
+   "必ず倍量から開始する",
+   "抗体を有する患者には使用できない"
   ],
-  "correctIndex": 3,
-  "explanation": "まれにインスリンに対する抗体が形成されると、インスリンの効果が減弱し血糖コントロールが不安定になることがあります。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.4に、ヒトインスリンに対する獲得抗体を有し高用量のインスリンを必要としている患者では、他のインスリン製剤から本剤に変更することによって本剤の需要量が急激に変化することがあるので、経過を観察しながら慎重に投与することと記載されています。",
   "source": {
-   "name": "インスリン製剤 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランタス注ソロスター 添付文書 8.4 重要な基本的注意(獲得抗体を有する患者での製剤変更)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492416G2024_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-026",
@@ -14788,21 +14788,21 @@
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "インスリン療法中に低血糖が生じる代表的な原因として正しいのはどれか。",
+  "question": "中間型インスリン製剤からインスリン グラルギンへ切り替える際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "水分摂取量の不足",
-   "食事摂取量の増加",
-   "安静にしすぎること",
-   "食事摂取量の不足や運動量の増加"
+   "切り替え直後に低血糖を起こすことがあり、併用薬の投与量やスケジュールの調整が必要となることがある",
+   "切り替え直後は必ず高血糖になる",
+   "調整はまったく不要である",
+   "切り替えはできない"
   ],
-  "correctIndex": 3,
-  "explanation": "インスリン療法中の低血糖は、食事摂取量の不足やインスリン量に対して運動量が多すぎる場合などに生じやすくなります。",
+  "correctIndex": 0,
+  "explanation": "添付文書7.4に、インスリン グラルギン300単位/mL製剤又は中間型インスリン製剤から本剤への切り替え直後に低血糖を起こすことがあるため、中間型又は持続型インスリン製剤から本剤に変更する場合は、併用している速効型・超速効型インスリンアナログ製剤や他の糖尿病用薬の投与量及び投与スケジュールの調整が必要となることがあると記載されています。",
   "source": {
-   "name": "インスリン製剤 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランタス注ソロスター 添付文書 7.4 用法及び用量に関連する注意(切り替え直後の低血糖)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492416G2024_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-038",
@@ -17444,11 +17444,11 @@
   "correctIndex": 0,
   "explanation": "硝酸薬とPDE5阻害薬はいずれも血管拡張作用を持ち、併用すると相加的に血圧が低下し重篤な低血圧を来すため併用禁忌です。",
   "source": {
-   "name": "ニトログリセリン舌下錠 添付文書(併用禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニトロペン舌下錠0.3mg 添付文書 10.1 併用禁忌(ホスホジエステラーゼ5阻害作用を有する薬剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171018K1039_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-006",
@@ -17612,11 +17612,11 @@
   "correctIndex": 1,
   "explanation": "チカグレロルは他の抗血小板薬と異なる機序により、呼吸困難感が特徴的な副作用として報告されています。",
   "source": {
-   "name": "チカグレロル錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ブリリンタ錠60mg 添付文書 9.1.7(呼吸器疾患を有する患者、呼吸困難の発現)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399011F1027_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-014",
@@ -17843,11 +17843,11 @@
   "correctIndex": 0,
   "explanation": "ソタロールはβ遮断作用に加えカリウムチャネル遮断作用も持つため、QT延長・torsades de pointesのリスクに注意が必要です。",
   "source": {
-   "name": "ソタロール塩酸塩錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ソタコール錠40mg 添付文書 18.1 作用機序(ClassII β受容体遮断作用とClassIII 不応期延長作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2129013F1026_3_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-025",
@@ -17906,11 +17906,11 @@
   "correctIndex": 0,
   "explanation": "ミルリノンはPDE3(ホスホジエステラーゼ3)を阻害し、心収縮力増強(強心作用)と血管拡張作用をあわせ持つ薬剤です。",
   "source": {
-   "name": "ミルリノン注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミルリーラ注射液10mg 添付文書 18.薬効薬理(ホスホジエステラーゼIII選択的阻害による心筋収縮力増強・血管拡張)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2119408A1024_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-028",
@@ -18158,11 +18158,11 @@
   "correctIndex": 2,
   "explanation": "ジルチアゼムは非ジヒドロピリジン系Ca拮抗薬であり、β遮断薬との併用で過度な徐脈や房室ブロックのリスクが高まります。",
   "source": {
-   "name": "ジルチアゼム塩酸塩錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヘルベッサー錠30 添付文書 10.2 併用注意(β遮断剤: 心刺激生成・伝導抑制作用の増強)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171006F1224_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-040",
@@ -18221,11 +18221,11 @@
   "correctIndex": 1,
   "explanation": "硝酸薬とアルコールはいずれも血管拡張作用を持つため、併用により血圧低下が増強することがあります。",
   "source": {
-   "name": "ニトログリセリン舌下錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニトロペン舌下錠0.3mg 添付文書 10.2 併用注意(アルコール摂取)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171018K1039_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-intermediate-043",
@@ -20825,11 +20825,11 @@
   "correctIndex": 2,
   "explanation": "ファスジル塩酸塩水和物はくも膜下出血後の脳血管攣縮に伴う脳虚血症状の改善を目的として用いられます。",
   "source": {
-   "name": "ファスジル塩酸塩水和物注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エリル点滴静注液30mg 添付文書 4.効能又は効果(くも膜下出血術後の脳血管攣縮)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190414A1033_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-009",
@@ -20930,11 +20930,11 @@
   "correctIndex": 0,
   "explanation": "チクロピジンは投与初期に血栓性血小板減少性紫斑病や無顆粒球症、重篤な肝障害を来すことがあり、定期的な血液検査が必須とされています。",
   "source": {
-   "name": "チクロピジン塩酸塩錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "パナルジン錠100mg 添付文書 1.1 警告(TTP・無顆粒球症・重篤な肝障害、投与開始後2ヵ月以内)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399001C1027_6_01/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-014",
