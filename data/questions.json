@@ -1064,53 +1064,53 @@
   "correctIndex": 0,
   "explanation": "フィルグラスチムは骨髄における顆粒球産生を促進するため、骨痛が代表的な副作用として知られています。",
   "source": {
-   "name": "フィルグラスチム(遺伝子組換え)注射液 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グラン注射液75 添付文書 11.2 その他の副作用(筋・骨格: 骨痛、腰痛)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399405A1027_4_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-003",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "腎機能が低下したがん患者へのモルヒネ投与で注意すべき点はどれか。",
+  "question": "腎機能障害のある患者にモルヒネを投与する際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "肝臓のみで完全に代謝され問題は生じない",
-   "経口投与のみ禁忌となる",
-   "代謝物が蓄積し、副作用が増強しやすい",
-   "効果がまったく発現しなくなる"
+   "排泄が遅延し、副作用があらわれるおそれがある",
+   "排泄が速まり効果が弱くなる",
+   "腎機能の影響は受けない",
+   "腎機能障害患者には投与できない"
   ],
-  "correctIndex": 2,
-  "explanation": "モルヒネの活性代謝物は腎排泄されるため、腎機能低下患者では代謝物が蓄積し、眠気やせん妄などの副作用が強く出ることがあります。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.2に、腎機能障害患者では排泄が遅延し副作用があらわれるおそれがあると記載されています。また9.3.1で重篤な肝機能障害のある患者には投与しないこと(昏睡に陥ることがある)、9.3.2でそれ以外の肝機能障害では代謝が遅延し副作用があらわれるおそれがあるとされています。",
   "source": {
-   "name": "モルヒネ塩酸塩製剤 添付文書(慎重投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オプソ内服液5mg 添付文書 9.2 腎機能障害患者",
+   "url": "https://www.info.pmda.go.jp/go/pack/8114005S1024_1_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-004",
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "オキシコドンがモルヒネと比較して腎機能低下患者で使いやすいとされる理由はどれか。",
+  "question": "モルヒネ経口製剤からオキシコドン徐放錠へ変更する場合の1日投与量の目安として添付文書に記載されているのはどれか。",
   "choices": [
-   "活性代謝物の蓄積による影響が比較的少ないとされるため",
-   "効果がモルヒネよりはるかに弱いため",
-   "腎臓からまったく排泄されないため",
-   "経口投与ができないため"
+   "モルヒネ製剤1日投与量の2/3量",
+   "モルヒネ製剤1日投与量と同量",
+   "モルヒネ製剤1日投与量の2倍量",
+   "体重にかかわらず一律40mg"
   ],
   "correctIndex": 0,
-  "explanation": "オキシコドンはモルヒネに比べて活性代謝物の蓄積による影響が比較的少ないとされ、腎機能低下患者で選択されることがあります。",
+  "explanation": "添付文書7.1.2に、モルヒネ製剤の経口投与を本剤に変更する場合には、モルヒネ製剤1日投与量の2/3量を1日投与量の目安とすることが望ましいと記載されています。オピオイド鎮痛薬を使用していない患者では10〜20mgを1日投与量とすることが望ましいとされています。",
   "source": {
-   "name": "オキシコドン塩酸塩製剤 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オキシコンチンTR錠5mg 添付文書 7.1.2 用法及び用量に関連する注意(モルヒネ製剤からの変更)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8119002G5020_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-005",
@@ -1463,11 +1463,11 @@
   "correctIndex": 0,
   "explanation": "NSAIDsは腎血流やメトトレキサートの尿細管分泌に影響し、メトトレキサートの排泄遅延による毒性増強のおそれがあります。",
   "source": {
-   "name": "メトトレキサート注射液 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メソトレキセート点滴静注液200mg 添付文書 10.2 併用注意(非ステロイド性抗炎症剤: 腎排泄の競合的阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4222400A1036_3_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-022",
@@ -1852,21 +1852,21 @@
   "category": "cancer",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "G-CSF投与に伴う骨痛への対症的対応として一般的なのはどれか。",
+  "question": "フィルグラスチム(G-CSF製剤)投与中の血液検査について添付文書が求めているのはどれか。",
   "choices": [
-   "骨修飾薬を追加する",
-   "G-CSFを直ちに永続的に中止する",
-   "強オピオイドを第一選択とする",
-   "NSAIDsなどの鎮痛薬で対症療法を行う"
+   "定期的に血液検査を行い、必要以上の好中球(白血球)が増加しないよう注意する",
+   "血液検査は不要である",
+   "好中球はいくら増えても問題ない",
+   "赤血球数のみを確認する"
   ],
-  "correctIndex": 3,
-  "explanation": "G-CSFによる骨痛はNSAIDsなどの鎮痛薬による対症療法で対応されることが一般的です。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.1に、本剤投与中は定期的に血液検査を行い、必要以上の好中球(白血球)が増加しないよう十分注意すること、必要以上の増加が認められた場合は減量・休薬などの適切な処置をとることと記載されています。副作用には骨痛・腰痛が挙げられています。",
   "source": {
-   "name": "フィルグラスチム(遺伝子組換え)注射液 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "グラン注射液75 添付文書 8.1 重要な基本的注意(定期的な血液検査)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399405A1027_4_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-041",
@@ -1946,11 +1946,11 @@
   "correctIndex": 3,
   "explanation": "徐放性製剤は粉砕・かみ砕きにより急激な薬剤放出(用量ダンピング)を来す危険があるため、そのまま服用する必要があります。",
   "source": {
-   "name": "オキシコドン塩酸塩徐放錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オキシコンチンTR錠5mg 添付文書 7.用法及び用量に関連する注意(割らない・砕かない・かみ砕かない)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8119002G5020_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-045",
@@ -2051,11 +2051,11 @@
   "correctIndex": 0,
   "explanation": "デノスマブは破骨細胞の働きを強力に抑制するため低カルシウム血症を来しやすく、カルシウム・ビタミンD製剤の補充が推奨されます。",
   "source": {
-   "name": "デノスマブ注射液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランマーク皮下注120mg 添付文書 1.1 警告(重篤な低カルシウム血症、カルシウム及びビタミンDの経口補充)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999435A1020_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-intermediate-050",
@@ -7417,21 +7417,21 @@
   "category": "hypertension",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "アリスキレンとACE阻害薬・ARBを併用する際の注意点として正しいのはどれか。",
+  "question": "アリスキレン(ラジレス)が禁忌となる併用として添付文書に記載されているのはどれか。",
   "choices": [
-   "併用により相互作用は生じない",
-   "降圧効果が消失するため併用が推奨される",
-   "併用により低カリウム血症のリスクのみが高まる",
-   "レニン-アンジオテンシン系の二重阻害となり高カリウム血症・腎機能悪化のリスクが高まる"
+   "ACE阻害剤又はARBを投与中の糖尿病患者",
+   "利尿薬を投与中のすべての患者",
+   "β遮断薬を投与中のすべての患者",
+   "スタチンを投与中の患者"
   ],
-  "correctIndex": 3,
-  "explanation": "アリスキレンとACE阻害薬・ARBの併用はレニン-アンジオテンシン系の二重阻害となり、高カリウム血症や腎機能悪化のリスクが高まるため注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書2.4に、ACE阻害剤又はARBを投与中の糖尿病患者(ただしそれらを含む他の降圧治療を行ってもなお血圧のコントロールが著しく不良の患者を除く)は禁忌と記載されています。アリスキレンは直接的レニン阻害剤で、レニンを阻害してアンジオテンシンI・IIの濃度を低下させます。",
   "source": {
-   "name": "アリスキレンフマル酸塩錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠150mg 添付文書 2.4 禁忌(ACE阻害剤又はARBを投与中の糖尿病患者)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2149047F1028_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-014",
@@ -14126,11 +14126,11 @@
   "correctIndex": 3,
   "explanation": "インスリンと経口血糖降下薬(特にSU薬など)の併用は血糖降下作用が重なり、低血糖リスクが増加することがあります。",
   "source": {
-   "name": "インスリン製剤 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランタス注ソロスター 添付文書 10.2 併用注意(糖尿病用薬: 血糖降下作用の増強による低血糖)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492416G2024_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-006",
@@ -14221,21 +14221,21 @@
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "インスリン自己注射における注射部位管理として適切なのはどれか。",
+  "question": "インスリン グラルギン(ランタス)の注射時刻について添付文書に記載されているのはどれか。",
   "choices": [
-   "注射部位を毎回少しずつずらす(ローテーションする)",
-   "注射部位は腹部以外は使用しない",
-   "注射針は複数回使用しても問題ない",
-   "毎回まったく同じ場所に注射する"
+   "朝食前又は就寝前のいずれでもよいが、毎日一定とする",
+   "毎回異なる時刻に注射する",
+   "食後30分以内に限る",
+   "時刻の定めはない"
   ],
   "correctIndex": 0,
-  "explanation": "同一部位への繰り返し注射は皮下硬結(リポハイパートロフィー)を起こし吸収が不安定になるため、注射部位のローテーションが重要です。",
+  "explanation": "添付文書6.用法及び用量に、通常成人では初期は1日1回4〜20単位を皮下注射し、注射時刻は朝食前又は就寝前のいずれでもよいが毎日一定とすると記載されています。副作用には注射部位反応(3.4%)が報告されています。",
   "source": {
-   "name": "インスリン製剤 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランタス注ソロスター 添付文書 6.用法及び用量(注射時刻は毎日一定とする)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492416G2024_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-011",
@@ -14326,21 +14326,21 @@
   "category": "diabetes",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "持効型インスリン(グラルギンなど)が中間型インスリン(NPH)と比較して有利とされる点はどれか。",
+  "question": "インスリン グラルギン(ランタス)の作用の特徴として添付文書に記載されているのはどれか。",
   "choices": [
-   "低血糖リスクがまったくない",
-   "作用のピークが目立たず血中濃度がより安定している",
-   "作用発現が非常に速い",
-   "経口投与が可能である"
+   "皮下注射により明らかなピークを示さず、ほぼ24時間持続する",
+   "注射後30分で明らかなピークを示す",
+   "作用は約6時間で消失する",
+   "作用時間は患者ごとにまったく異なり一定しない"
   ],
-  "correctIndex": 1,
-  "explanation": "持効型インスリンは中間型インスリンと比較して明瞭な作用ピークが少なく、より安定した基礎インスリン補充が可能とされています。",
+  "correctIndex": 0,
+  "explanation": "添付文書7.6に、本剤の作用は皮下に注射することにより明らかなピークを示さず、ほぼ24時間持続する特徴を有することから、特に他のインスリン製剤からの切り替え時などは低血糖発現状態の変化に十分注意することと記載されています。",
   "source": {
-   "name": "インスリングラルギン注射液 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ランタス注ソロスター 添付文書 7.6 用法及び用量に関連する注意(明らかなピークを示さずほぼ24時間持続)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2492416G2024_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-intermediate-016",
