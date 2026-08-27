@@ -21025,21 +21025,21 @@
   "category": "cerebrovascular",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "抗てんかん薬と抗凝固薬(ワルファリンなど)を併用する際の注意点として正しいのはどれか。",
+  "question": "バルプロ酸とワルファリンを併用した場合の相互作用として添付文書に記載されているのはどれか。",
   "choices": [
-   "抗てんかん薬はワルファリンの効果を必ず増強する",
-   "相互作用は報告されていない",
-   "抗凝固薬の効果には一切影響しない",
-   "酵素誘導・阻害作用により抗凝固薬の血中濃度が変動することがある"
+   "遊離型のワルファリンの血中濃度が上昇し、ワルファリンの作用が増強することがある",
+   "ワルファリンの作用が減弱する",
+   "バルプロ酸の作用のみが増強する",
+   "相互作用はない"
   ],
-  "correctIndex": 3,
-  "explanation": "一部の抗てんかん薬は肝代謝酵素を誘導・阻害するため、併用するワルファリンなどの血中濃度・効果が変動することがあります。",
+  "correctIndex": 0,
+  "explanation": "添付文書の併用注意に、ベンゾジアゼピン系薬剤(ジアゼパム等)やワルファリンについて『左記薬剤の作用が増強することがある』『遊離型の左記薬剤の血中濃度を上昇させる』と記載されています。蛋白結合からの置換による遊離型濃度の上昇が機序です。",
   "source": {
-   "name": "抗てんかん薬 各種インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デパケン錠100mg 添付文書 10.2 併用注意(ワルファリン: 遊離型の血中濃度上昇)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1096_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-intermediate-019",
@@ -24007,21 +24007,21 @@
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "SSRIを急に中止した場合に生じうる症状として正しいのはどれか。",
+  "question": "セルトラリン(SSRI)を突然中止した場合にあらわれることが報告されている症状として、添付文書に記載されているのはどれか。",
   "choices": [
-   "高血糖",
-   "歯肉増生",
-   "めまい、しびれ感などの中断症候群",
-   "急激な血圧上昇のみ"
+   "不安、焦燥、興奮、浮動性めまい、錯感覚、頭痛及び悪心等",
+   "高熱と筋強剛",
+   "重度の低血糖",
+   "難聴"
   ],
-  "correctIndex": 2,
-  "explanation": "SSRIの急な中止はめまいやしびれ感などの中断症候群を起こすことがあるため、減量は徐々に行うことが推奨されます。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.6に、投与中止(突然の中止)により不安、焦燥、興奮、浮動性めまい、錯感覚、頭痛及び悪心等があらわれることが報告されていると記載されています。投与を中止する場合には突然の中止を避け、患者の状態を観察しながら徐々に減量します。",
   "source": {
-   "name": "セルトラリン塩酸塩錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セルトラリン錠25mg「トーワ」 添付文書 8.6 重要な基本的注意(突然の中止による症状)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179046F1176_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-008",
@@ -24038,53 +24038,53 @@
   "correctIndex": 3,
   "explanation": "抗精神病薬の長期使用では、不随意運動を特徴とする遅発性ジスキネジアが生じることがあり、注意深い観察が必要です。",
   "source": {
-   "name": "リスペリドン錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リスペリドン錠1mg「サワイ」 添付文書 11.1.2 重大な副作用(遅発性ジスキネジア)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179038C1094_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-009",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "抗てんかん薬同士を併用する際に注意すべき点はどれか。",
+  "question": "バルプロ酸とサリチル酸系薬剤(アスピリン等)を併用した場合の相互作用として添付文書に記載されているのはどれか。",
   "choices": [
-   "併用により副作用は必ず軽減する",
-   "相互作用は一切生じない",
-   "酵素誘導・阻害により互いの血中濃度が変動することがある",
-   "併用により効果が必ず増強される"
+   "遊離型バルプロ酸濃度が上昇し代謝も阻害されるため、バルプロ酸の作用が増強される",
+   "バルプロ酸の作用が減弱する",
+   "アスピリンの作用のみが減弱する",
+   "相互作用はない"
   ],
-  "correctIndex": 2,
-  "explanation": "抗てんかん薬の中には肝代謝酵素を誘導・阻害するものがあり、併用薬の血中濃度が変動することがあるため注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書の併用注意に、サリチル酸系薬剤(アスピリン等)との併用でバルプロ酸の作用が増強されることがあり、機序は遊離型バルプロ酸濃度が上昇すること、およびバルプロ酸の代謝が阻害されることと記載されています。エリスロマイシンやシメチジンでも肝チトクロームP-450を介した代謝への影響で作用が増強されます。",
   "source": {
-   "name": "抗てんかん薬 各種インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デパケン錠100mg 添付文書 10.2 併用注意(サリチル酸系薬剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1096_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-010",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "高齢者へのベンゾジアゼピン系睡眠薬使用で特に注意すべき点はどれか。",
+  "question": "高齢者にジアゼパムを投与する際の注意として添付文書に記載されているのはどれか。",
   "choices": [
-   "効果がまったく発現しない",
-   "若年者よりも副作用が少ない",
-   "転倒・骨折のリスクが高まる",
-   "認知機能への影響はない"
+   "少量から投与を開始するなど慎重に投与する。運動失調等の副作用が発現しやすい",
+   "高齢者では通常量の倍量から開始する",
+   "高齢者には影響がない",
+   "高齢者には禁忌である"
   ],
-  "correctIndex": 2,
-  "explanation": "高齢者はベンゾジアゼピン系薬の代謝が遅延しやすく、ふらつきによる転倒・骨折のリスクが高まることに注意が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書9.8に、高齢者では少量から投与を開始するなど慎重に投与すること、運動失調等の副作用が発現しやすいことが記載されています。また8.2で連用により薬物依存を生じることがあるため長期使用を避けることとされています。",
   "source": {
-   "name": "ジアゼパム錠 添付文書(高齢者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジアゼパム錠2「サワイ」 添付文書 9.8 高齢者",
+   "url": "https://www.info.pmda.go.jp/go/pack/1124017F2046_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-011",
@@ -24101,11 +24101,11 @@
   "correctIndex": 0,
   "explanation": "オランザピン・クエチアピンは体重増加や血糖値上昇などの代謝系副作用が知られており、糖尿病患者では禁忌とされています。",
   "source": {
-   "name": "オランザピン錠 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オランザピン錠2.5mg「日新」 添付文書 8.4 重要な基本的注意・副作用(体重増加20.1%)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179044F1169_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-012",
@@ -24122,53 +24122,53 @@
   "correctIndex": 2,
   "explanation": "アリピプラゾールはドパミン部分作動薬という機序から、アカシジア(じっとしていられない感覚)が比較的多くみられます。",
   "source": {
-   "name": "アリピプラゾール錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アリピプラゾール錠3mg「JG」 添付文書 副作用(アカシジア21.7%、振戦20.8%)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179045F1031_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-013",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ハロペリドールなど定型抗精神病薬が非定型抗精神病薬と比較して注意すべき点はどれか。",
+  "question": "ハロペリドールが禁忌となる患者として添付文書に記載されているのはどれか。",
   "choices": [
-   "効果発現が非定型薬より遅い",
-   "錐体外路症状のリスクがまったくない",
-   "錐体外路症状の頻度が高い傾向がある",
-   "代謝系副作用のみが問題となる"
+   "パーキンソン病又はレビー小体型認知症の患者",
+   "高血圧のある患者",
+   "糖尿病のある患者",
+   "喘息のある患者"
   ],
-  "correctIndex": 2,
-  "explanation": "定型抗精神病薬はドパミン受容体遮断作用が強く、非定型抗精神病薬と比較して錐体外路症状の頻度が高い傾向があります。",
+  "correctIndex": 0,
+  "explanation": "添付文書2.4に、パーキンソン病又はレビー小体型認知症の患者は錐体外路症状が悪化するおそれがあるため禁忌と記載されています。ハロペリドールの作用機序は中枢神経系におけるドパミン作動性・ノルアドレナリン作動性神経等に対する抑制作用によると考えられています。",
   "source": {
-   "name": "ハロペリドール錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ハロペリドール錠0.75mg 添付文書 2.4 禁忌(パーキンソン病又はレビー小体型認知症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179020F1260_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-014",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "パロキセチンがSSRIの中でも中断症候群を起こしやすいとされる理由として正しいのはどれか。",
+  "question": "パロキセチン錠5mgの使い方として添付文書に記載されているのはどれか。",
   "choices": [
-   "半減期が非常に長いため中断症候群は起こりにくいため",
-   "中断症候群はパロキセチンには生じないため",
-   "半減期が比較的短いため血中濃度が急激に低下しやすいとされる",
-   "パロキセチンには抗コリン作用がないため"
+   "原則として減量又は中止時のみに使用する",
+   "初回導入時の標準用量として使用する",
+   "維持量として使用する",
+   "使用制限はない"
   ],
-  "correctIndex": 2,
-  "explanation": "パロキセチンは他のSSRIと比較して半減期が短く、中止時に血中濃度が急激に低下しやすいため中断症候群が生じやすいとされています。",
+  "correctIndex": 0,
+  "explanation": "添付文書7.2に、原則として5mg錠は減量又は中止時のみに使用することと記載されています。SSRIは突然の中止を避けて徐々に減量する必要があるため、減量のための小容量規格が用意されています。",
   "source": {
-   "name": "パロキセチン塩酸塩水和物錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "パロキセチン錠5mg「YD」 添付文書 7.2 用法及び用量に関連する注意(5mg錠は減量又は中止時のみ)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179041F1165_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-015",
@@ -24185,32 +24185,32 @@
   "correctIndex": 3,
   "explanation": "デュロキセチンは抗コリン作用により眼圧上昇のおそれがあるため、コントロール不良の閉塞隅角緑内障には禁忌とされています。",
   "source": {
-   "name": "デュロキセチン塩酸塩カプセル 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュロキセチンカプセル20mg 添付文書 2.5 禁忌(コントロール不良の閉塞隅角緑内障)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179052M1081_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-016",
   "category": "psychiatric",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ミルタザピンが低用量で鎮静作用が強く出やすいとされる理由として正しいのはどれか。",
+  "question": "ミルタザピンの薬効分類と作用に関する記載として正しいのはどれか。",
   "choices": [
-   "低用量ではヒスタミンH1受容体遮断作用が相対的に強く出るため",
-   "ミルタザピンには鎮静作用がないため",
-   "ミルタザピンはSSRIと同一の機序であるため",
-   "高用量の方が必ず鎮静作用が弱くなるため"
+   "ノルアドレナリン・セロトニン作動性抗うつ剤で、ノルアドレナリン放出を促進する",
+   "選択的セロトニン再取り込み阻害剤である",
+   "ドパミン受容体を遮断する抗精神病薬である",
+   "GABA受容体に作用する抗不安薬である"
   ],
   "correctIndex": 0,
-  "explanation": "ミルタザピンは低用量ではヒスタミンH1受容体遮断作用が相対的に強く出るため、鎮静・眠気が生じやすいとされています。",
+  "explanation": "ミルタザピン錠の薬効分類名はノルアドレナリン・セロトニン作動性抗うつ剤で、添付文書には本剤がノルアドレナリン放出を促進することが記載されています。",
   "source": {
-   "name": "ミルタザピン錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミルタザピン錠15mg「ケミファ」 添付文書 薬効分類名(ノルアドレナリン・セロトニン作動性抗うつ剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179051F1118_2_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-intermediate-017",
