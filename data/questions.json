@@ -30601,21 +30601,21 @@
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "妊婦へのニューキノロン系・テトラサイクリン系抗菌薬使用が避けられる理由として正しいのはどれか。",
+  "question": "妊婦・小児にテトラサイクリン系抗菌薬(ミノサイクリン)の使用を避ける理由として添付文書に記載されているのはどれか。",
   "choices": [
-   "胎児への影響(軟骨・骨・歯への影響など)が懸念されるため",
-   "母体への影響が特に強いため",
-   "薬価が高いため使用を避ける",
-   "効果が妊婦では期待できないため"
+   "胎児や歯牙形成期の小児に、一過性の骨発育不全や歯牙の着色・エナメル質形成不全を起こすことがあるため",
+   "重度の低血糖を起こすため",
+   "難聴を起こすため",
+   "血糖値が上昇するため"
   ],
   "correctIndex": 0,
-  "explanation": "ニューキノロン系は胎児の軟骨への影響、テトラサイクリン系は歯・骨への影響が懸念されるため、妊婦への使用は避けられる傾向があります。",
+  "explanation": "添付文書9.5に、妊婦では胎児に一過性の骨発育不全、歯牙の着色・エナメル質形成不全を起こすことがあると記載されています。9.7でも、特に歯牙形成期にある8歳未満の小児に投与した場合、歯牙の着色・エナメル質形成不全や一過性の骨発育不全を起こすことがあるとされ、他の薬剤が使用できないか無効の場合にのみ適用を考慮するとされています。",
   "source": {
-   "name": "抗菌薬 各種添付文書(妊婦への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミノマイシン錠50mg 添付文書 9.5 妊婦・9.7 小児等(歯牙の着色・骨発育不全)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6152005F1052_3_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-011",
@@ -30674,32 +30674,32 @@
   "correctIndex": 3,
   "explanation": "ザナミビルは吸入薬であるため、気管支喘息などの基礎疾患がある患者では気管支攣縮のリスクに注意が必要です。",
   "source": {
-   "name": "ザナミビル水和物吸入剤 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リレンザ 添付文書 9.1.3(慢性呼吸器疾患のある患者、気管支攣縮)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250702G1028_1_24/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-014",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ミカファンギンが他の抗真菌薬と比較して比較的安全性が高いとされる理由として正しいのはどれか。",
+  "question": "ミカファンギン(キャンディン系抗真菌剤)の作用機序として添付文書に記載されているのはどれか。",
   "choices": [
-   "ミカファンギンには副作用が一切報告されていない",
-   "肝腎機能への影響が最も強い薬剤であるため",
-   "相互作用が最も多い薬剤であるため",
-   "ヒト細胞に存在しない真菌細胞壁を標的とするため副作用が少ない傾向がある"
+   "真菌細胞壁の主要構成成分である1,3-β-D-グルカンの生合成を非競合的に阻害する",
+   "真菌細胞膜のエルゴステロールと結合して膜障害を起こす",
+   "エルゴステロールの生合成を阻害する",
+   "真菌のDNA合成を阻害する"
   ],
-  "correctIndex": 3,
-  "explanation": "ミカファンギンはヒト細胞に存在しない真菌の細胞壁合成を標的とするため、他の抗真菌薬と比較して比較的副作用が少ない傾向があります。",
+  "correctIndex": 0,
+  "explanation": "添付文書18.1に、真菌細胞壁の主要構成成分である1,3-β-D-glucanの生合成を非競合的に阻害すると記載されています。深在性真菌症の主要起因菌であるカンジダ属及びアスペルギルス属に対して幅広い抗真菌スペクトルを有します。",
   "source": {
-   "name": "ミカファンギンナトリウム注射液 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ファンガード点滴用25mg 添付文書 18.1 作用機序(1,3-β-D-グルカン生合成阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6179400D1020_4_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-015",
@@ -30716,32 +30716,32 @@
   "correctIndex": 0,
   "explanation": "アムホテリシンBは腎毒性が強く、低カリウム血症などの電解質異常にも注意が必要な薬剤です。",
   "source": {
-   "name": "アムホテリシンB注射液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ファンギゾン注射用50mg 添付文書 重要な基本的注意(定期的な腎機能・血清電解質検査、総投与量5g)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6173400D1035_3_01/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-016",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "リポソーマル製剤化されたアムホテリシンBの意義として正しいのはどれか。",
+  "question": "リポソーマルアムホテリシンB(アムビゾーム)投与中に定期的に行うよう添付文書が求めている検査はどれか。",
   "choices": [
-   "腎毒性などの副作用軽減が期待される",
-   "効果がまったく異なる薬剤になる",
-   "抗真菌スペクトルが完全に変化する",
-   "経口投与が可能になる"
+   "腎機能、血清電解質(特にカリウム、マグネシウム)の検査",
+   "眼科的検査のみ",
+   "聴力検査のみ",
+   "検査は不要である"
   ],
   "correctIndex": 0,
-  "explanation": "アムホテリシンBのリポソーム製剤化は、腎臓への薬剤到達を減らすことで腎毒性などの副作用軽減を図ったものです。",
+  "explanation": "添付文書8.1に、腎機能障害があらわれることがあるので定期的に腎機能、血清電解質(特にカリウム、マグネシウム)の検査を行うなど観察を十分に行うことと記載されています。アムホテリシンBは真菌細胞膜のエルゴステロールと結合して膜障害を起こします。",
   "source": {
-   "name": "リポソーマルアムホテリシンB注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アムビゾーム点滴静注用50mg 添付文書 8.1 重要な基本的注意(定期的な腎機能・血清電解質検査)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6173400D2023_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-017",
@@ -30758,32 +30758,32 @@
   "correctIndex": 2,
   "explanation": "ボリコナゾールは投与初期に一過性の視覚異常(光がまぶしく感じる、色が変わって見える等)を来すことが知られています。",
   "source": {
-   "name": "ボリコナゾール錠 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ボリコナゾール錠50mg「JG」 添付文書 1.3 警告・8.5 重要な基本的注意(羞明、霧視、視覚障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6179001F1040_1_20/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-018",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ボリコナゾールの血中濃度に個人差が大きい理由として正しいのはどれか。",
+  "question": "ボリコナゾールの代謝と酵素阻害作用について添付文書に記載されているのはどれか。",
   "choices": [
-   "ボリコナゾールは代謝を受けず尿中に排泄されるため",
-   "代謝に関わるCYP2C19の遺伝子多型の影響を受けやすいため",
-   "すべての患者で同一の血中濃度になるため",
-   "食事の影響のみで個人差が生じるため"
+   "CYP2C19、2C9及び3A4で代謝され、これらの阻害作用を有する(CYP3Aに対する阻害作用は強い)",
+   "代謝を受けずそのまま排泄される",
+   "CYP3A4のみで代謝され阻害作用はない",
+   "薬物代謝酵素とは関わらない"
   ],
-  "correctIndex": 1,
-  "explanation": "ボリコナゾールは主にCYP2C19で代謝されるため、遺伝子多型により血中濃度に大きな個人差が生じることが知られています。",
+  "correctIndex": 0,
+  "explanation": "添付文書10.相互作用に、本剤は肝代謝酵素CYP2C19、2C9及び3A4で代謝され、CYP2C19、2C9及び3A4の阻害作用を有すること、CYP3Aに対する阻害作用は強いことが記載されています。多くの薬剤と相互作用を起こすため併用薬の確認が重要です。",
   "source": {
-   "name": "ボリコナゾール錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ボリコナゾール錠50mg「JG」 添付文書 10.相互作用(CYP2C19・2C9・3A4での代謝と阻害作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6179001F1040_1_20/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-019",
@@ -30800,32 +30800,32 @@
   "correctIndex": 1,
   "explanation": "イベルメクチンは食事により吸収が増加することがあるため、空腹時の服用が推奨されています。",
   "source": {
-   "name": "イベルメクチン錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ストロメクトール錠3mg 添付文書 7.用法及び用量に関連する注意(空腹時に投与)・16.2(高脂肪食でAUC約2.6倍)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6429008F1020_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-020",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "メトロニダゾール服用中のアルコール摂取で注意すべき反応として正しいのはどれか。",
+  "question": "メトロニダゾール(フラジール)服用中の飲酒について添付文書に記載されているのはどれか。",
   "choices": [
-   "ジスルフィラム様反応(顔面紅潮、動悸等)",
-   "歯肉増生",
-   "低血糖",
-   "強い眠気のみ"
+   "腹部の疝痛、嘔吐、潮紅があらわれることがあるので、投与期間中は飲酒を避ける",
+   "飲酒しても問題ない",
+   "少量の飲酒であれば推奨される",
+   "飲酒により薬の効果が高まる"
   ],
   "correctIndex": 0,
-  "explanation": "メトロニダゾールはアルデヒド脱水素酵素を阻害する作用があり、アルコール摂取によりジスルフィラム様反応を来すことがあります。",
+  "explanation": "添付文書10.2の併用注意に、アルコールとの併用で腹部の疝痛、嘔吐、潮紅があらわれることがあるので投与期間中は飲酒を避けることと記載されています。機序は、本剤がアルコールの代謝過程においてアルデヒド脱水素酵素を阻害し、血中アセトアルデヒド濃度を上昇させることです。",
   "source": {
-   "name": "メトロニダゾール錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フラジール内服錠250mg 添付文書 10.2 併用注意(アルコール)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6419002F1131_2_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-021",
@@ -30842,11 +30842,11 @@
   "correctIndex": 0,
   "explanation": "メトロニダゾールはワルファリンの代謝を阻害し抗凝固作用を増強することがあるため、併用時はPT-INRのモニタリングが重要です。",
   "source": {
-   "name": "ワルファリンカリウム錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワルファリンK錠0.5mg「トーワ」 添付文書 10.2 併用注意(メトロニダゾール)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3332001F1083_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-022",
