@@ -27115,21 +27115,21 @@
   "category": "immune-allergy",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "ステロイド全身投与を長期に行った場合に注意すべき副作用として正しいのはどれか。",
+  "question": "プレドニゾロンの投与にあたって注意が必要とされる重篤な副作用として添付文書8.1に挙げられているのはどれか。",
   "choices": [
-   "骨粗鬆症、糖尿病、易感染性",
-   "味覚障害のみ",
-   "低血圧のみ",
-   "脱毛のみ"
+   "誘発感染症、続発性副腎皮質機能不全、消化管潰瘍、糖尿病、精神障害",
+   "難聴、耳鳴",
+   "出血傾向のみ",
+   "低血糖のみ"
   ],
   "correctIndex": 0,
-  "explanation": "ステロイドの長期全身投与では、骨粗鬆症、糖尿病、易感染性、満月様顔貌など多岐にわたる副作用に注意が必要です。",
+  "explanation": "添付文書8.1に、本剤の投与により誘発感染症、続発性副腎皮質機能不全、消化管潰瘍、糖尿病、精神障害等の重篤な副作用があらわれることがあると記載されています。9.1.3では糖尿病の患者への注意も示されています。",
   "source": {
-   "name": "ステロイド全身投与薬 各種添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プレドニン錠5mg 添付文書 8.1 重要な基本的注意(重篤な副作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2456001F1310_4_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-002",
@@ -27167,32 +27167,32 @@
   "correctIndex": 1,
   "explanation": "アドレナリン自己注射は大腿外側の筋肉内に、アナフィラキシーが疑われた際に速やかに注射することが推奨されています。",
   "source": {
-   "name": "アドレナリン自己注射薬 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エピペン注射液0.15mg 添付文書 14.3.2 適用上の注意(大腿部の前外側から注射)・5.2(注射時期の目安)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2451402G2020_4_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-004",
   "category": "immune-allergy",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "抗ヒスタミン薬服用時に注意すべき生活指導として正しいのはどれか。",
+  "question": "フェキソフェナジンの副作用として添付文書に記載されている精神神経系の症状はどれか。",
   "choices": [
-   "服用中は水分摂取を控える",
-   "運転への影響はまったくない",
-   "服用後は必ず入浴を避ける",
-   "眠気を感じることがあるため、車の運転などに注意する"
+   "頭痛、眠気、めまい、不眠",
+   "痙攣、意識障害",
+   "幻覚、妄想",
+   "難聴"
   ],
-  "correctIndex": 3,
-  "explanation": "抗ヒスタミン薬(特に第1世代)は眠気を起こすことがあり、自動車の運転や機械操作への注意喚起が必要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書のその他の副作用に、頭痛、眠気、疲労、倦怠感、めまい、不眠、神経過敏が記載されています。過量服用の報告では、3600mgを服用した症例でめまい、眠気及び口渇がみられたとされています。",
   "source": {
-   "name": "抗ヒスタミン薬 各種添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フェキソフェナジン塩酸塩錠30mg 添付文書 11.2 その他の副作用(精神神経系)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490023F1210_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-005",
@@ -27230,11 +27230,11 @@
   "correctIndex": 1,
   "explanation": "オマリズマブは抗IgE抗体製剤で、IgEを介するアレルギー反応を抑制することで重症喘息や慢性蕁麻疹に用いられます。",
   "source": {
-   "name": "オマリズマブ注射液 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾレア皮下注用150mg 添付文書 薬効分類名(ヒト化抗ヒトIgEモノクローナル抗体製剤)・4.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2290400D1033_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-007",
@@ -27251,11 +27251,11 @@
   "correctIndex": 2,
   "explanation": "ステロイド外用薬の長期使用では、皮膚萎縮や酒さ様皮膚炎などの局所性副作用に注意が必要です。",
   "source": {
-   "name": "ステロイド外用薬 各種添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リンデロン−V軟膏0.12% 添付文書 11.2 その他の副作用(ステロイド酒さ・ステロイド皮膚(皮膚萎縮))",
+   "url": "https://www.info.pmda.go.jp/go/pack/2646701M2156_2_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-008",
@@ -27272,11 +27272,11 @@
   "correctIndex": 2,
   "explanation": "免疫抑制薬使用中は生ワクチンにより感染症を発症するリスクがあるため、生ワクチン接種は避けることが推奨されます。",
   "source": {
-   "name": "シクロスポリンカプセル 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "シクロスポリンカプセル10mg 添付文書 2.4 禁忌(生ワクチンを接種しないこと)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999004M3137_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-009",
@@ -27325,21 +27325,21 @@
   "category": "immune-allergy",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "モンテルカストで注意喚起されている副作用として正しいのはどれか。",
+  "question": "モンテルカストの副作用として添付文書の精神神経系の項に記載されているのはどれか。",
   "choices": [
-   "歯肉増生",
+   "異夢、易刺激性、情緒不安、幻覚、夢遊症等",
+   "難聴、耳鳴",
    "高血糖",
-   "甲状腺機能異常",
-   "神経精神症状(悪夢、不安など)"
+   "出血傾向"
   ],
-  "correctIndex": 3,
-  "explanation": "モンテルカストは悪夢や不安、興奮などの神経精神症状が報告されており、特に小児での観察が重要とされています。",
+  "correctIndex": 0,
+  "explanation": "添付文書11.2の精神神経系に、頭痛・傾眠(0.1〜5%未満)のほか、異夢、易刺激性、情緒不安、痙攣、不眠、幻覚、めまい、感覚異常、激越、振戦、夢遊症、失見当識、集中力低下、記憶障害、せん妄、強迫性症状(頻度不明)が記載されています。",
   "source": {
-   "name": "モンテルカストナトリウム錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "モンテルカスト錠5mg「サンド」 添付文書 11.2 その他の副作用(精神神経系)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490026F2210_1_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-012",
@@ -27356,32 +27356,32 @@
   "correctIndex": 0,
   "explanation": "デュピルマブはアトピー性皮膚炎治療において結膜炎の副作用が比較的よくみられることが知られています。",
   "source": {
-   "name": "デュピルマブ注射液 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュピクセント皮下注300mgペン 添付文書 11.2 その他の副作用(結膜炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490405G1024_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-013",
   "category": "immune-allergy",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "メポリズマブやベンラリズマブなど抗IL-5系薬剤で生じる検査値の変化として正しいのはどれか。",
+  "question": "メポリズマブ(ヌーカラ)の適応患者選択について添付文書に記載されているのはどれか。",
   "choices": [
-   "末梢血好酸球数の著明な減少",
-   "白血球数の著明な減少",
-   "末梢血好酸球数の著明な増加",
-   "血小板数の著明な増加"
+   "投与前の血中好酸球数が多いほど喘息増悪の抑制効果が大きい傾向があり、血中好酸球数を考慮して選択する",
+   "血中好酸球数は考慮しない",
+   "血中好酸球数が少ないほど効果が大きい",
+   "好酸球とは無関係の薬剤である"
   ],
   "correctIndex": 0,
-  "explanation": "抗IL-5系薬剤は好酸球の産生・活性化を抑制するため、末梢血好酸球数が著明に減少することが知られています。",
+  "explanation": "添付文書5.2に、投与前の血中好酸球数が多いほど本剤の気管支喘息増悪発現に対する抑制効果が大きい傾向が認められており、投与前の血中好酸球数が少ない患者では十分な抑制効果が得られない可能性があるため、患者の血中好酸球数を考慮した上で適応患者の選択を行うことと記載されています。",
   "source": {
-   "name": "メポリズマブ注射液 添付文書(薬理作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヌーカラ皮下注100mgペン 添付文書 5.2 効能又は効果に関連する注意(血中好酸球数と有効性)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2290401G1026_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-014",
@@ -27398,11 +27398,11 @@
   "correctIndex": 3,
   "explanation": "TNF阻害薬は結核などの潜在感染を顕在化させるリスクがあるため、投与開始前に結核感染の有無を確認することが必須とされています。",
   "source": {
-   "name": "アダリムマブ注射液 添付文書(警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダリムマブBS皮下注20mgシリンジ0 . 添付文書 1.警告(結核を含む重篤な感染症)・1.2.2 結核",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999457G1020_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-intermediate-015",
