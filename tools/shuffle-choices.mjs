@@ -1,5 +1,5 @@
 /*
-  問題データの選択肢の並び順を、いったん機械的に混ぜ直す道具です。
+  問題データの選択肢の並び順を整え直す道具です。
 
   使い方:
     node tools/shuffle-choices.mjs [--dry-run]
@@ -11,9 +11,15 @@
     「中身を読まずに位置で当てられる」状態をデータとして残さないために、
     保存されている並び順そのものも散らしておきます。
 
-  混ぜ方:
-    問題ID から決まる種(seed)を使って混ぜます。同じデータに何度実行しても
-    同じ結果になるので、あとから差分を追いやすくなります。
+  やり方:
+    問題をID順に並べ、0番目・1番目・2番目・3番目…と順ぐりに正解の置き場所を
+    決めて、そこへ正解を移します。乱数を使わないので、
+     - 4つの位置にきっちり均等に散る
+     - 何度実行しても同じ結果になる(差分を追いやすい)
+    という2つを同時に満たせます。
+
+  ※ 選択肢の並びに意味がある問題(「上記すべて」など)は今のところありません。
+     もし作る場合は、この道具の対象から外す仕組みが必要になります。
 */
 
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -24,43 +30,22 @@ import { validateQuestions } from '../js/validate-questions.js';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const QUESTIONS_PATH = join(HERE, '..', 'data', 'questions.json');
 
-// 問題IDから種(数値)を作る
-function seedFrom(id) {
-  let h = 2166136261;
-  for (let i = 0; i < id.length; i++) {
-    h ^= id.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return h >>> 0 || 1;
-}
-
-// 同じ種なら必ず同じ並びになる乱数(xorshift32)
-function makeRandom(seed) {
-  let x = seed;
-  return () => {
-    x ^= x << 13; x >>>= 0;
-    x ^= x >> 17;
-    x ^= x << 5; x >>>= 0;
-    return x / 0x100000000;
-  };
-}
-
 function main() {
   const dryRun = process.argv.includes('--dry-run');
   const questions = JSON.parse(readFileSync(QUESTIONS_PATH, 'utf8'));
 
-  for (const q of questions) {
-    const answer = q.choices[q.correctIndex];
-    const rnd = makeRandom(seedFrom(q.id));
-    const shuffled = [...q.choices];
-    // Fisher-Yates シャッフル
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(rnd() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    q.choices = shuffled;
-    q.correctIndex = shuffled.indexOf(answer);
-  }
+  // ID順に並べたときの順番で置き場所を決める(データ内の並び順に左右されないように)
+  const order = [...questions].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+
+  order.forEach((q, i) => {
+    const target = i % q.choices.length;
+    if (q.correctIndex === target) return;
+    const choices = [...q.choices];
+    // 正解と、置きたい場所にあるものを入れ替える
+    [choices[q.correctIndex], choices[target]] = [choices[target], choices[q.correctIndex]];
+    q.choices = choices;
+    q.correctIndex = target;
+  });
 
   const counts = [0, 0, 0, 0];
   questions.forEach((q) => { counts[q.correctIndex] += 1; });
@@ -75,7 +60,7 @@ function main() {
 
   if (dryRun) { console.log('--dry-run のため書き込みませんでした。'); return; }
   writeFileSync(QUESTIONS_PATH, JSON.stringify(questions, null, 1) + '\n', 'utf8');
-  console.log('選択肢の並び順を混ぜ直しました。');
+  console.log('選択肢の並び順を整え直しました。');
 }
 
 main();
