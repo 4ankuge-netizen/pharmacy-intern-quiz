@@ -30853,21 +30853,21 @@
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "クリンダマイシンで特に注意すべき副作用として正しいのはどれか。",
+  "question": "クリンダマイシン投与により生じることがある重篤な大腸炎として添付文書に記載されているのはどれか。",
   "choices": [
-   "甲状腺機能異常",
-   "高カリウム血症",
-   "偽膜性大腸炎(クロストリディオイデス・ディフィシル感染症)",
-   "歯肉増生"
+   "偽膜性大腸炎(発熱、腹痛、白血球増多、粘液・血液便を伴う激症下痢)",
+   "虚血性大腸炎",
+   "潰瘍性大腸炎",
+   "クローン病"
   ],
-  "correctIndex": 2,
-  "explanation": "クリンダマイシンは腸内細菌叢への影響が大きく、偽膜性大腸炎のリスクが比較的高い抗菌薬として知られています。",
+  "correctIndex": 0,
+  "explanation": "添付文書8.2に、まれに発熱、腹痛、白血球増多、粘液・血液便を伴う激症下痢を主症状とする重篤な大腸炎で、内視鏡検査により偽膜斑等の形成をみる偽膜性大腸炎があらわれることがあると記載されています。発症後直ちに投与を中止しなければ電解質失調、低蛋白血症等に陥り、特に高齢者や衰弱患者では予後不良となることがあります。",
   "source": {
-   "name": "クリンダマイシン塩酸塩カプセル 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ダラシンカプセル75mg 添付文書 5.2・8.2 重要な基本的注意(偽膜性大腸炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6112001M1031_3_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-023",
@@ -30884,11 +30884,11 @@
   "correctIndex": 1,
   "explanation": "テトラサイクリン系抗菌薬は乳製品や制酸剤に含まれるカルシウムなどの金属イオンとキレートを形成し、吸収が低下することがあります。",
   "source": {
-   "name": "ドキシサイクリン塩酸塩水和物錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビブラマイシン錠50mg 添付文書 10.2 併用注意(カルシウム・マグネシウム・アルミニウム・鉄剤等)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6152004F1074_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-024",
@@ -30905,11 +30905,11 @@
   "correctIndex": 1,
   "explanation": "テトラサイクリン系抗菌薬は光線過敏症を来すことがあるため、服用中は紫外線対策(日焼け止め等)の指導が重要です。",
   "source": {
-   "name": "ドキシサイクリン塩酸塩水和物錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビブラマイシン錠50mg 添付文書 11.2 その他の副作用(光線過敏症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6152004F1074_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-025",
@@ -30926,11 +30926,11 @@
   "correctIndex": 1,
   "explanation": "ST合剤はサルファ剤を含むため、重症薬疹(Stevens-Johnson症候群等)や骨髄抑制などの重大な副作用に注意が必要です。",
   "source": {
-   "name": "スルファメトキサゾール・トリメトプリム配合錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バクタ配合錠 添付文書 11.1.1 重大な副作用(骨髄抑制系)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6290100D1088_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-026",
@@ -30947,11 +30947,11 @@
   "correctIndex": 1,
   "explanation": "ST合剤はワルファリンの代謝を阻害し抗凝固作用を増強することがあるため、併用時は注意が必要です。",
   "source": {
-   "name": "スルファメトキサゾール・トリメトプリム配合錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バクタ配合錠 添付文書 10.2 併用注意(クマリン系抗凝血剤・ワルファリンカリウム)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6290100D1088_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-027",
@@ -30968,11 +30968,11 @@
   "correctIndex": 2,
   "explanation": "カルバペネム系抗菌薬はバルプロ酸の血中濃度を著しく低下させることがあり、てんかん患者では発作再燃のリスクに特に注意が必要です。",
   "source": {
-   "name": "バルプロ酸ナトリウム錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バルプロ酸ナトリウム錠100mg 添付文書 10.1 併用禁忌(カルバペネム系抗生物質)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1088_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-028",
@@ -30989,11 +30989,11 @@
   "correctIndex": 0,
   "explanation": "ピペラシリン・タゾバクタムは腎排泄の関与が大きいため、腎機能低下患者では投与量・間隔の調整が必要です。",
   "source": {
-   "name": "ピペラシリンナトリウム・タゾバクタムナトリウム注射液 添付文書(腎機能障害患者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾシン静注用2.25 添付文書 8.2・9.2 腎機能障害患者",
+   "url": "https://www.info.pmda.go.jp/go/pack/6139505F3020_1_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-029",
@@ -31010,11 +31010,11 @@
   "correctIndex": 2,
   "explanation": "アミノグリコシド系抗菌薬は腎毒性・聴器毒性(難聴、平衡感覚障害)のリスクがあり、TDMによる血中濃度管理が重要です。",
   "source": {
-   "name": "ゲンタマイシン硫酸塩注射液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゲンタマイシン硫酸塩注射液10mg 添付文書 7.1・8.3(第8脳神経障害・腎障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6134407A1040_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-030",
@@ -31031,11 +31031,11 @@
   "correctIndex": 0,
   "explanation": "リネゾリドは弱いモノアミン酸化酵素阻害作用を持つため、SSRI/SNRIとの併用でセロトニン症候群のリスクに注意が必要です。",
   "source": {
-   "name": "リネゾリド錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リネゾリド錠600mg「明治」 添付文書 10.2 併用注意(セロトニン作動薬・SNRI)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6249002F1032_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-031",
@@ -31052,11 +31052,11 @@
   "correctIndex": 2,
   "explanation": "リネゾリドは長期投与時に血小板減少などの骨髄抑制を来すことがあり、定期的な血液検査が推奨されます。",
   "source": {
-   "name": "リネゾリド錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リネゾリド錠600mg「明治」 添付文書 9.1.1(骨髄抑制、14日を超える投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6249002F1032_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-032",
@@ -31073,11 +31073,11 @@
   "correctIndex": 1,
   "explanation": "ダプトマイシンは筋障害のリスクがあるため、投与中は定期的なCK値のモニタリングが推奨されます。",
   "source": {
-   "name": "ダプトマイシン注射液 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "キュビシン静注用350mg 添付文書 7.2・8.2(CK上昇)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6119402D1021_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-033",
@@ -31094,11 +31094,11 @@
   "correctIndex": 1,
   "explanation": "ダプトマイシンは肺サーファクタントによって不活化されるため、肺炎の治療には用いられないことが知られています。",
   "source": {
-   "name": "ダプトマイシン注射液 添付文書(効能・効果に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "キュビシン静注用350mg 添付文書 5.2 効能又は効果に関連する注意(肺サーファクタントに結合し不活性化)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6119402D1021_1_13/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-034",
@@ -31210,42 +31210,42 @@
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "マクロライド系抗菌薬の少量長期投与がびまん性汎細気管支炎などで行われる理由として正しいのはどれか。",
+  "question": "クラリスロマイシンの作用機序として添付文書に記載されているのはどれか。",
   "choices": [
-   "少量投与は保険適用外であるため行われない",
-   "抗菌作用とは別に抗炎症作用が期待されるため",
-   "通常量より強い抗菌効果を得るため",
-   "副作用を完全に回避できるため"
+   "細菌の70Sリボソームの50Sサブユニットと結合し、蛋白合成を阻害する",
+   "細菌の細胞壁合成を阻害する",
+   "DNAジャイレースを阻害する",
+   "葉酸の生合成を阻害する"
   ],
-  "correctIndex": 1,
-  "explanation": "マクロライド系抗菌薬の少量長期投与は、抗菌作用とは別に気道の慢性炎症を抑える抗炎症作用が期待され用いられています。",
+  "correctIndex": 0,
+  "explanation": "添付文書18.1に、細菌の70Sリボソームの50Sサブユニットと結合し蛋白合成を阻害すると記載されています。適応菌種にはレジオネラ属、クラミジア属、マイコプラズマ属など、細胞内寄生菌も含まれます。",
   "source": {
-   "name": "マクロライド系抗菌薬 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "クラリス錠200 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/6149003F2038_1_38/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-040",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "抗結核薬イソニアジドで注意すべき副作用として正しいのはどれか。",
+  "question": "イソニアジドの重大な副作用として添付文書に記載されている神経系の障害はどれか。",
   "choices": [
-   "末梢神経障害(ビタミンB6の併用で予防することがある)",
-   "甲状腺機能亢進症",
-   "歯肉増生",
-   "高血糖"
+   "末梢神経炎",
+   "脳梗塞",
+   "重症筋無力症",
+   "パーキンソン病"
   ],
   "correctIndex": 0,
-  "explanation": "イソニアジドはビタミンB6(ピリドキシン)代謝に影響し末梢神経障害を来すことがあるため、予防的にビタミンB6が併用されることがあります。",
+  "explanation": "添付文書11.1.10に重大な副作用として末梢神経炎が記載されています。また相互作用の項では、併用により本剤の血中濃度が上昇し末梢神経炎等の副作用が生じやすくなることが記されています。ほかに8.1で定期的な肝機能検査が求められています。",
   "source": {
-   "name": "イソニアジド錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イスコチン原末 添付文書 11.1.10 重大な副作用(末梢神経炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6222001F3037_3_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-041",
@@ -31262,32 +31262,32 @@
   "correctIndex": 1,
   "explanation": "リファンピシンは強力な肝代謝酵素(CYP3A4等)誘導作用を持つため、多くの併用薬の血中濃度を低下させる相互作用が問題となります。",
   "source": {
-   "name": "リファンピシンカプセル 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リファンピシンカプセル150mg 添付文書 10.2 併用注意(CYP3A4誘導作用による代謝促進)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6164001M1186_1_25/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-042",
   "category": "infection",
   "difficulty": "intermediate",
   "type": "single",
-  "question": "リファンピシン服用中の患者に説明すべき特徴的な現象として正しいのはどれか。",
+  "question": "リファンピシン服用中の患者に説明すべき現象として添付文書に記載されているのはどれか。",
   "choices": [
-   "尿量が著しく減少する",
-   "体液の色に変化は生じない",
-   "涙が出なくなる",
-   "尿や涙などの体液が赤橙色になることがある"
+   "尿、便、唾液、痰、汗、涙液が橙赤色等に着色し、ソフトコンタクトレンズが変色することもある",
+   "尿が青く着色する",
+   "皮膚が白くなる",
+   "着色は起こらない"
   ],
-  "correctIndex": 3,
-  "explanation": "リファンピシンは尿や涙、汗などの体液を赤橙色に着色することがあり、事前の説明がないと患者が驚くことがあるため指導が重要です。",
+  "correctIndex": 0,
+  "explanation": "添付文書に、尿・便・唾液・痰・汗・涙液がリファンピシン及びその代謝物により橙赤色等に着色すること、血清も同様の着色を示すこと、ソフトコンタクトレンズが変色することもあると記載されています。あらかじめ説明しておくと患者の不安を防げます。",
   "source": {
-   "name": "リファンピシンカプセル 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リファジンカプセル150mg 添付文書(尿・便・唾液・涙液等の橙赤色着色)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6164001M1216_1_18/?view=body&lang=ja",
+   "confirmedDate": "2026-08-27"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-intermediate-043",
