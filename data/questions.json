@@ -9905,11 +9905,11 @@
   "correctIndex": 0,
   "explanation": "ヒトAT1受容体発現細胞膜を用いた検討で、[125I]-Sar1-Ile8-AII結合に対するアジルサルタンのIC50値は、薬物存在下(洗浄前)で2.6nmol/L、洗浄5時間後で7.4nmol/Lであり、その比は3倍にとどまりました。一方、オルメサルタンは36倍、テルミサルタンは37倍、バルサルタンは223倍超、イルベサルタンは635倍超であり、アジルサルタンは化合物洗浄後もAT1受容体結合作用が持続することが示されています。",
   "source": {
-   "name": "アジルサルタン錠(アジルバ)インタビューフォーム(第4版・2026年3月改訂、T'sファーマ株式会社/武田薬品工業株式会社) Ⅵ.2.(2)4)AT1受容体結合作用の薬物洗浄後の持続性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠(アジルバ) インタビューフォーム Ⅵ.2.(2)4)AT1受容体結合作用の薬物洗浄後の持続性",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400256_2149048F1022_1_018_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-082",
@@ -9926,11 +9926,11 @@
   "correctIndex": 1,
   "explanation": "Ⅰ度・Ⅱ度本態性高血圧症患者を対象とした二重盲検比較試験(CCT-005)において、治療期終了時(16週、LOCF)のトラフ時座位拡張期血圧の変化量はアジルサルタン群で-12.4mmHg、カンデサルタン シレキセチル群で-9.8mmHgであり、投与群間差の両側95%信頼区間の上限値が0を下回り、アジルサルタン群のカンデサルタン群に対する統計学的有意性が検証されました。",
   "source": {
-   "name": "アジルサルタン錠(アジルバ)インタビューフォーム(第4版・2026年3月改訂) Ⅴ.5.(4)1)二重盲検比較試験(CCT-005)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠(アジルバ) インタビューフォーム Ⅴ.5.(4)1)二重盲検比較試験(CCT-005)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400256_2149048F1022_1_018_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-083",
@@ -9947,11 +9947,11 @@
   "correctIndex": 2,
   "explanation": "アジルサルタンは脱炭酸によりM-Ⅰに、O-脱エチル化によりM-Ⅱに代謝されます。ヒトCYP分子種発現ミクロソームを用いた検討で、アジルサルタンは主にCYP2C9によりM-Ⅱへと代謝され、他のCYP分子種ミクロソームではほとんど代謝されませんでした。なお、代謝物M-Ⅰ及びM-ⅡのAT1受容体結合阻害作用はいずれも未変化体の約1/1000でした。",
   "source": {
-   "name": "アジルサルタン錠(アジルバ)インタビューフォーム(第4版・2026年3月改訂) Ⅶ.6.(1)代謝部位及び代謝経路/(2)代謝に関与する酵素(CYP等)の分子種、寄与率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠(アジルバ) インタビューフォーム Ⅶ.6.(1)代謝部位及び代謝経路/(2)代謝に関与する酵素(CYP等)の分子種、寄与率",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400256_2149048F1022_1_018_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-084",
@@ -9968,11 +9968,11 @@
   "correctIndex": 3,
   "explanation": "外国人データにおいて、健康成人男子8例を対象に[14C]アジルサルタン40mgを単回経口投与したとき、[14C]アジルサルタン由来放射能は主に糞便中に排泄され、投与312時間後までの平均累積放射能の回収率は尿+糞便中81.9%(糞便中52.6%、尿中29.3%)でした。",
   "source": {
-   "name": "アジルサルタン錠(アジルバ)インタビューフォーム(第4版・2026年3月改訂) Ⅶ.7.排泄◇排泄部位及び経路",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠(アジルバ) インタビューフォーム Ⅶ.7.排泄◇排泄部位及び経路",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400256_2149048F1022_1_018_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-085",
@@ -9989,11 +9989,11 @@
   "correctIndex": 0,
   "explanation": "外国人データにおいて、軽度~中等度肝機能障害者(Child-Pughスコア5~6の軽度8例、7~9の中等度8例)を対象にアジルサルタン メドキソミル(国内未承認のプロドラッグ体)40mgを反復投与したとき、健康成人と比べて中等度肝機能障害者のCmaxは17.9%、AUCは64.4%増加しました。なお、高度な肝機能障害患者(Child-Pughスコア10以上)は臨床試験では除外されていました。",
   "source": {
-   "name": "アジルサルタン錠(アジルバ)インタビューフォーム(第4版・2026年3月改訂) Ⅷ.6.(3)肝機能障害患者(9.3)/Ⅶ.10.(2)肝機能障害者での検討",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠(アジルバ) インタビューフォーム Ⅷ.6.(3)肝機能障害患者(9.3)/Ⅶ.10.(2)肝機能障害者での検討",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400256_2149048F1022_1_018_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-086",
@@ -10010,11 +10010,11 @@
   "correctIndex": 1,
   "explanation": "重篤な腎機能障害(eGFR 15mL/min/1.73m2未満)のある患者では、低用量から投与を開始し、増量する場合は徐々に行うなど慎重に投与することとされています。腎障害の程度が異なる高血圧症患者を対象とした薬物動態試験で、重度腎機能障害者では正常~軽度腎機能障害者と比較してCmax、AUCの上昇が認められています(禁忌ではなく慎重投与)。",
   "source": {
-   "name": "アジルサルタン錠(アジルバ)インタビューフォーム(第4版・2026年3月改訂) Ⅷ.6.(2)腎機能障害患者9.2.1/Ⅶ.10.(1)腎障害を伴う患者での検討",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠(アジルバ) インタビューフォーム Ⅷ.6.(2)腎機能障害患者9.2.1/Ⅶ.10.(1)腎障害を伴う患者での検討",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400256_2149048F1022_1_018_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-087",
@@ -10031,11 +10031,11 @@
   "correctIndex": 2,
   "explanation": "摘出したウサギ胸部大動脈の螺旋状標本を用いた検討で、アジルサルタン10μmol/LはKCl、ノルエピネフリン、セロトニン、プロスタグランジンF2αによる血管収縮に対する阻害率がいずれもわずか(-3.9~6.4%)であった一方、アンジオテンシンⅡによる収縮を濃度依存的に抑制し、AII収縮に選択的な抑制作用を示すと考えられました。",
   "source": {
-   "name": "アジルサルタン錠(アジルバ)インタビューフォーム(第4版・2026年3月改訂) Ⅵ.2.(2)5)ウサギ大動脈標本のAII収縮に対する抑制作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アジルサルタン錠(アジルバ) インタビューフォーム Ⅵ.2.(2)5)ウサギ大動脈標本のAII収縮に対する抑制作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400256_2149048F1022_1_018_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-088",
@@ -10052,11 +10052,11 @@
   "correctIndex": 3,
   "explanation": "本剤がレニン・アンジオテンシン・アルドステロン系においてアンジオテンシン変換酵素(ACE)を阻害して降圧作用を示すことより、Renin(レニン)のRENI、Vasodilation(血管拡張)のV、Angiotensin Converting EnzymeのACEを合わせてRENIVACE®と命名されました。",
   "source": {
-   "name": "レニベース錠インタビューフォーム(第23版・2025年9月改訂、オルガノン株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レニベース錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/181615_2144002F1024_3_023_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-089",
@@ -10073,11 +10073,11 @@
   "correctIndex": 0,
   "explanation": "in vitro試験においてエナラプリルマレイン酸塩の活性代謝物であるジアシド体はブタの血漿から精製したACEに対して強い阻害作用を示し(IC50=1.2nM)、その作用はカプトプリルの約17倍強いことが確認されています。また正常血圧ラットの血漿及び組織中のACEに対してもカプトプリルより約20倍強い阻害作用を示します。",
   "source": {
-   "name": "レニベース錠インタビューフォーム(第23版・2025年9月改訂) Ⅵ.2.(2)1)アンジオテンシン変換酵素(ACE)阻害作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レニベース錠 インタビューフォーム Ⅵ.2.(2)1)アンジオテンシン変換酵素(ACE)阻害作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/181615_2144002F1024_3_023_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-090",
@@ -10094,11 +10094,11 @@
   "correctIndex": 1,
   "explanation": "エナラプリルマレイン酸塩はプロドラッグであり、経口吸収後carboxylesterasesにより加水分解されて活性代謝物であるジアシド体(エナラプリラト)に変換されます。このジアシド体がアンジオテンシン変換酵素を阻害することで降圧効果を発揮しますが、この代謝過程はP-450(CYP)による代謝を受けません。",
   "source": {
-   "name": "レニベース錠インタビューフォーム(第23版・2025年9月改訂) Ⅶ.6.(1)代謝部位及び代謝経路/(2)代謝に関与する酵素(CYP等)の分子種、寄与率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レニベース錠 インタビューフォーム Ⅶ.6.(1)代謝部位及び代謝経路/(2)代謝に関与する酵素(CYP等)の分子種、寄与率",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/181615_2144002F1024_3_023_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-091",
@@ -10115,11 +10115,11 @@
   "correctIndex": 2,
   "explanation": "外国データにおいて、健康成人12名にエナラプリルマレイン酸塩10mgを1回経口投与した場合、投与後96時間までに投与量の94%が尿・糞中に排泄されました(ジアシド体として尿中に43%、糞中に27%、エナラプリルとして尿中に18%、糞中に6%)。",
   "source": {
-   "name": "レニベース錠インタビューフォーム(第23版・2025年9月改訂) Ⅶ.7.(2)排泄率(参考)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レニベース錠 インタビューフォーム Ⅶ.7.(2)排泄率(参考)",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/181615_2144002F1024_3_023_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-092",
@@ -10136,11 +10136,11 @@
   "correctIndex": 3,
   "explanation": "本剤を含めACE阻害剤を服用中の患者がアクリロニトリルメタリルスルホン酸ナトリウム膜(AN69)による血液透析を受けた際に、血管性浮腫、嘔吐、低血圧等のアナフィラキシーが発現したとの報告があり、併用禁忌とされています。AN69とACE阻害剤の両者がブラジキニン濃度を上昇させることなどが機序として考えられています。",
   "source": {
-   "name": "レニベース錠インタビューフォーム(第23版・2025年9月改訂) Ⅷ.2.禁忌内容とその理由2.4/Ⅷ.7.(1)併用禁忌とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レニベース錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由2.4/Ⅷ.7.(1)併用禁忌とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/181615_2144002F1024_3_023_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-093",
@@ -10157,11 +10157,11 @@
   "correctIndex": 0,
   "explanation": "エナラプリルマレイン酸塩は血液透析により除去され、透析率は活性代謝物であるジアシド体で66%、エナラプリルで34%でした。エナラプリラト(ジアシド体)の透析クリアランスは62mL/分でした。ただし、AN69膜を用いた血液透析は併用禁忌とされています。",
   "source": {
-   "name": "レニベース錠インタビューフォーム(第23版・2025年9月改訂) Ⅶ.9.(2)血液透析",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レニベース錠 インタビューフォーム Ⅶ.9.(2)血液透析",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/181615_2144002F1024_3_023_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-094",
@@ -10178,11 +10178,11 @@
   "correctIndex": 1,
   "explanation": "モルモットの摘出回腸を用いた検討で、ブラジキニンによる収縮に対する50%増強濃度は、エナラプリルマレイン酸塩のジアシド体では0.077nMであり、カプトプリルより約31倍強い増強作用を示しました。これはACE阻害剤に共通するブラジキニン分解阻害作用を反映しています。",
   "source": {
-   "name": "レニベース錠インタビューフォーム(第23版・2025年9月改訂) Ⅵ.2.(2)2)ブラジキニン収縮反応の増強作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レニベース錠 インタビューフォーム Ⅵ.2.(2)2)ブラジキニン収縮反応の増強作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/181615_2144002F1024_3_023_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-095",
@@ -10199,11 +10199,11 @@
   "correctIndex": 2,
   "explanation": "田辺製薬のACE阻害剤という意味で、TANA(田辺)(T)RIL(ACE阻害剤のステム)から命名されました。",
   "source": {
-   "name": "タナトリル錠インタビューフォーム(第11版・2025年12月改訂、田辺ファーマ株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タナトリル錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2144008F3024_1_110_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-096",
@@ -10220,11 +10220,11 @@
   "correctIndex": 3,
   "explanation": "イミダプリル塩酸塩は日本で初めて糖尿病性腎症(1型糖尿病に伴う糖尿病性腎症)の効能・効果を取得したACE阻害薬で、有意に尿中微量アルブミンを減少させます。ただし、この適応はタナトリル錠2.5、錠5のみが有しており、タナトリル錠10には設定されていません。",
   "source": {
-   "name": "タナトリル錠インタビューフォーム(第11版・2025年12月改訂) Ⅰ.2.製品の治療学的特性/Ⅴ.1.効能又は効果",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タナトリル錠 インタビューフォーム Ⅰ.2.製品の治療学的特性/Ⅴ.1.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2144008F3024_1_110_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-097",
@@ -10241,11 +10241,11 @@
   "correctIndex": 0,
   "explanation": "ブタ腎皮質及びヒト血清由来ACEに対する阻害活性(in vitro)の検討で、ブタ腎皮質由来ACEに対するIC50はイミダプリルが1.4×10⁻⁷Mであったのに対し、活性代謝物イミダプリラートは4.0×10⁻¹⁰M(Ki=6.7×10⁻¹¹M)であり、プロドラッグ体のイミダプリルよりはるかに強い阻害活性を示しました。",
   "source": {
-   "name": "タナトリル錠インタビューフォーム(第11版・2025年12月改訂) Ⅶ.6.(4)代謝物の活性の有無及び活性比、存在比率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タナトリル錠 インタビューフォーム Ⅶ.6.(4)代謝物の活性の有無及び活性比、存在比率",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2144008F3024_1_110_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-098",
@@ -10262,11 +10262,11 @@
   "correctIndex": 1,
   "explanation": "健康成人にイミダプリル10mgを単回経口投与した場合、投与後24時間までの尿中総排泄率は投与量の25.5%でした。",
   "source": {
-   "name": "タナトリル錠インタビューフォーム(第11版・2025年12月改訂) Ⅶ.7.排泄率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タナトリル錠 インタビューフォーム Ⅶ.7.排泄率",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2144008F3024_1_110_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-099",
@@ -10283,11 +10283,11 @@
   "correctIndex": 2,
   "explanation": "血液透析患者に合併した高血圧症の治療でイミダプリル塩酸塩を投与した時、活性代謝物のイミダプリラートは血液透析により透析時間が3時間と4時間でそれぞれ約50%、約65%が除去されました。",
   "source": {
-   "name": "タナトリル錠インタビューフォーム(第11版・2025年12月改訂) Ⅶ.9.透析等による除去率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タナトリル錠 インタビューフォーム Ⅶ.9.透析等による除去率",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2144008F3024_1_110_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-100",
@@ -10304,11 +10304,11 @@
   "correctIndex": 3,
   "explanation": "モルモットを用いたDMPP誘発咳嗽反射試験で、イミダプリルは5、20mg/kg/日で咳嗽反射を誘発するDMPP閾値用量を低下させる個体は認められませんでしたが、エナラプリル、デラプリルは同用量でそれぞれ25、50%及び22.2、33.3%の個体で閾値を低下させました。またクエン酸エアロゾル誘発咳嗽でも、イミダプリルは50mg/kg/日でようやく増強傾向を示したのに対し、エナラプリル、デラプリルは20mg/kg/日で有意な増強作用を示しました。",
   "source": {
-   "name": "タナトリル錠インタビューフォーム(第11版・2025年12月改訂) Ⅸ.1.(2)4)咳嗽増強作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タナトリル錠 インタビューフォーム Ⅸ.1.(2)4)咳嗽増強作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2144008F3024_1_110_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-101",
@@ -10325,11 +10325,11 @@
   "correctIndex": 0,
   "explanation": "1型糖尿病に伴う糖尿病性腎症では、投与初期(1ヵ月以内)に急速に腎機能の悪化や高カリウム血症が発現するおそれがあるため、投与初期は血清クレアチニン値及び血清カリウム値を測定し、急速な腎機能の悪化や血清カリウム値の上昇が認められた場合には減量あるいは投与中止などの適切な処置を行うこととされています。",
   "source": {
-   "name": "タナトリル錠インタビューフォーム(第11版・2025年12月改訂) Ⅷ.5.重要な基本的注意8.3",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タナトリル錠 インタビューフォーム Ⅷ.5.重要な基本的注意8.3",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2144008F3024_1_110_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-102",
@@ -10346,11 +10346,11 @@
   "correctIndex": 1,
   "explanation": "変換を意味するconversionとACE阻害剤の一般名の語尾のイルを用いて命名されました。",
   "source": {
-   "name": "コバシル錠インタビューフォーム(第3版・2025年9月改訂、協和キリン株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コバシル錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/230124_2144012F1028_3_008_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-103",
@@ -10367,11 +10367,11 @@
   "correctIndex": 2,
   "explanation": "in vitro試験において、ペリンドプリルの活性代謝物であるペリンドプリラートは、ヒト血清ACEに対してエナラプリラートに比べ強い阻害作用を示しました(IC50:ペリンドプリラート1.9nmol/L、エナラプリラート4.5nmol/L)。",
   "source": {
-   "name": "コバシル錠インタビューフォーム(第3版・2025年9月改訂) Ⅵ.2.(2)1.アンジオテンシン変換酵素(ACE)阻害作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コバシル錠 インタビューフォーム Ⅵ.2.(2)1.アンジオテンシン変換酵素(ACE)阻害作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/230124_2144012F1028_3_008_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-104",
@@ -10388,11 +10388,11 @@
   "correctIndex": 3,
   "explanation": "本態性高血圧症患者において、通常用量の1日1回経口投与により血圧の日内プロフィール及び変動幅に影響を与えることなく24時間安定した降圧効果を示しました。トラフ/ピーク比は本態性高血圧症患者を対象とした単盲検比較試験においてエナラプリルの約70%に対し、本剤では約100%でした(外国人データ)。",
   "source": {
-   "name": "コバシル錠インタビューフォーム(第3版・2025年9月改訂) Ⅵ.2.(3)作用発現時間・持続時間",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コバシル錠 インタビューフォーム Ⅵ.2.(3)作用発現時間・持続時間",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/230124_2144012F1028_3_008_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-105",
@@ -10409,11 +10409,11 @@
   "correctIndex": 0,
   "explanation": "14C-ペリンドプリル及び14C-ペリンドプリラートのヒト血漿蛋白に対する結合性をin vitro(平衡透析法)で検討したところ、ヒト血漿蛋白結合率はそれぞれ59.9~61.0%及び10.2~18.2%でした。",
   "source": {
-   "name": "コバシル錠インタビューフォーム(第3版・2025年9月改訂) Ⅶ.2.(7)血漿蛋白結合率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コバシル錠 インタビューフォーム Ⅶ.2.(7)血漿蛋白結合率",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/230124_2144012F1028_3_008_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-106",
@@ -10430,11 +10430,11 @@
   "correctIndex": 1,
   "explanation": "海外データにおいて、健常成人にペリンドプリルを経口あるいは静脈内投与し、AUCを基に算出した未変化体の絶対バイオアベイラビリティは約94%であり、未変化体からペリンドプリラートへの生体内変換率は投与量の約23%でした。",
   "source": {
-   "name": "コバシル錠インタビューフォーム(第3版・2025年9月改訂) Ⅶ.2.(3)バイオアベイラビリティ",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コバシル錠 インタビューフォーム Ⅶ.2.(3)バイオアベイラビリティ",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/230124_2144012F1028_3_008_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-107",
@@ -10451,11 +10451,11 @@
   "correctIndex": 2,
   "explanation": "SHRにペリンドプリル、エナラプリルを経口投与し血漿中ACEに対する活性阻害作用を検討した結果、ペリンドプリル1mg/kgとエナラプリル3mg/kgがほぼ同等の最大阻害作用(約96%)を示しましたが、ACE活性が投与前値の50%に回復するまでの作用持続時間は、ペリンドプリル1mg/kgで約12時間、3mg/kgで24時間以上であったのに対し、エナラプリルは1mg/kgで約4時間、3mg/kgで約8時間にとどまりました。",
   "source": {
-   "name": "コバシル錠インタビューフォーム(第3版・2025年9月改訂) Ⅵ.2.(2)1.アンジオテンシン変換酵素(ACE)阻害作用2)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コバシル錠 インタビューフォーム Ⅵ.2.(2)1.アンジオテンシン変換酵素(ACE)阻害作用2)",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/230124_2144012F1028_3_008_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-108",
@@ -10472,11 +10472,11 @@
   "correctIndex": 3,
   "explanation": "老年の本態性高血圧症患者4例(平均年齢76.0歳)と壮年の同患者3例(平均年齢52.3歳)にペリンドプリル4mgを単回経口投与したところ、未変化体の血漿中濃度のCmaxは老年群が92.3ng/mL、壮年群が31.6ng/mLであり、活性代謝物でも老年群が高値(老年群7.9ng/mL、壮年群2.4ng/mL)でした。欧州でも同様に老年患者の血漿中濃度が高いことが知られており、老年ではペリンドプリラートの腎クリアランスが低下する傾向にあることが指摘されています。",
   "source": {
-   "name": "コバシル錠インタビューフォーム(第3版・2025年9月改訂) Ⅶ.1.(3)3.1)老年の本態性高血圧症患者",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コバシル錠 インタビューフォーム Ⅶ.1.(3)3.1)老年の本態性高血圧症患者",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/230124_2144012F1028_3_008_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-109",
@@ -10493,11 +10493,11 @@
   "correctIndex": 0,
   "explanation": "名称の由来は「アルダクトン－Aldosteroneから来ている。A－Absorption(吸収)の意」と記載されています。",
   "source": {
-   "name": "アルダクトンA錠インタビューフォーム(第14版・2025年3月改訂、ファイザー株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルダクトンA錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/672212_2133001C1097_3_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-110",
@@ -10514,11 +10514,11 @@
   "correctIndex": 1,
   "explanation": "(外国人データ)スピロノラクトンは主に肝臓で代謝されます。まず脱アセチル化を受けてチオール中間体が生成し、この中間体は速やかに脱チオール化してカンレノンを、又はチオメチル化して7α-チオメチルスピロノラクトンを生成します。なお、尿中には未代謝のスピロノラクトンは検出されませんでした。",
   "source": {
-   "name": "アルダクトンA錠インタビューフォーム(第14版・2025年3月改訂) Ⅶ.6.(1)代謝部位及び代謝経路",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルダクトンA錠 インタビューフォーム Ⅶ.6.(1)代謝部位及び代謝経路",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/672212_2133001C1097_3_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-111",
@@ -10535,11 +10535,11 @@
   "correctIndex": 2,
   "explanation": "健康成人男性12名にスピロノラクトン50mgを単回経口投与したところ、投与2~10時間後の効力はスピロノラクトン1に対して、7α-チオメチルスピロノラクトンは0.33でした。",
   "source": {
-   "name": "アルダクトンA錠インタビューフォーム(第14版・2025年3月改訂) Ⅶ.6.(4)代謝物の活性の有無及び活性比、存在比率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルダクトンA錠 インタビューフォーム Ⅶ.6.(4)代謝物の活性の有無及び活性比、存在比率",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/672212_2133001C1097_3_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-112",
@@ -10556,11 +10556,11 @@
   "correctIndex": 3,
   "explanation": "(外国人データ)慢性肝疾患患者5例にスピロノラクトン200mgを単回経口投与したところ、代謝産物であるカンレノンの平均半減期は59.4hrとなり、健康成人における半減期(平均20.5hr)の約3倍でした。",
   "source": {
-   "name": "アルダクトンA錠インタビューフォーム(第14版・2025年3月改訂) Ⅶ.10.(1)肝障害患者における検討",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルダクトンA錠 インタビューフォーム Ⅶ.10.(1)肝障害患者における検討",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/672212_2133001C1097_3_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-113",
@@ -10577,11 +10577,11 @@
   "correctIndex": 0,
   "explanation": "(外国人データ)健康成人男性5名に[20-3H]スピロノラクトン200mgを空腹時に単回経口投与したところ、投与後24時間以内に放射活性の19.2%が尿中に排泄されました。投与5日後には放射活性の31.6%が尿中に、22.7%が糞中に排泄されました。",
   "source": {
-   "name": "アルダクトンA錠インタビューフォーム(第14版・2025年3月改訂) Ⅶ.7.(3)排泄速度",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルダクトンA錠 インタビューフォーム Ⅶ.7.(3)排泄速度",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/672212_2133001C1097_3_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-114",
@@ -10598,11 +10598,11 @@
   "correctIndex": 1,
   "explanation": "本剤による女性型乳房の発現機序のひとつとして、テストステロン合成系の酵素の阻害による血中テストステロン濃度の減少があげられます。また、デヒドロテストステロンは強力なアンドロゲンであり、細胞質内に存在するデヒドロテストステロン受容体と本剤が結合し、そのアンドロゲン作用を阻害することによるとも考えられています。",
   "source": {
-   "name": "アルダクトンA錠インタビューフォーム(第14版・2025年3月改訂) Ⅷ.8.基礎疾患等背景別の副作用発現頻度〈副作用発生原因及び処置方法〉",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルダクトンA錠 インタビューフォーム Ⅷ.8.基礎疾患等背景別の副作用発現頻度〈副作用発生原因及び処置方法〉",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/672212_2133001C1097_3_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-115",
@@ -10619,11 +10619,11 @@
   "correctIndex": 2,
   "explanation": "ラットにスピロノラクトン50、150、500mg/kg/日を78週間投与し、肝重量の増加、雄性副性器重量の減少がみられました。大量投与群で甲状腺、睾丸腫瘍の発生がありましたが、その他には異常はありませんでした。なお、サルにスピロノラクトン20、50、250mg/kg/日を52週間投与したところ、腫瘍の発生は認められませんでした。",
   "source": {
-   "name": "アルダクトンA錠インタビューフォーム(第14版・2025年3月改訂) Ⅸ.2.(2)反復投与毒性試験(慢性毒性)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アルダクトンA錠 インタビューフォーム Ⅸ.2.(2)反復投与毒性試験(慢性毒性)",
+   "url": "https://www.info.pmda.go.jp/go/interview/3/672212_2133001C1097_3_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-116",
@@ -10640,11 +10640,11 @@
   "correctIndex": 3,
   "explanation": "名称の由来は「薬効分類名「ミネラルコルチコイド受容体ブロッカー」より「ミネブロ」と命名した」と記載されています。",
   "source": {
-   "name": "ミネブロ錠インタビューフォーム(第10版・2025年1月改訂、第一三共株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_2149049F1027_1_M10_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-117",
@@ -10661,11 +10661,11 @@
   "correctIndex": 0,
   "explanation": "ラットMRに対する結合性(in vitro)試験において、エサキセレノン、スピロノラクトン及びエプレレノンの50%阻害濃度(IC50)はそれぞれ9.43×10⁻⁹、3.57×10⁻⁸、及び7.13×10⁻⁷Mであり、エサキセレノンが最も強い結合親和性を示しました。",
   "source": {
-   "name": "ミネブロ錠インタビューフォーム(第10版・2025年1月改訂) Ⅵ.2.(2)1)①ラットMRに対する結合性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠 インタビューフォーム Ⅵ.2.(2)1)①ラットMRに対する結合性",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_2149049F1027_1_M10_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-118",
@@ -10682,11 +10682,11 @@
   "correctIndex": 1,
   "explanation": "ラット及びウサギの各種ステロイドホルモン受容体に対する結合性(in vitro)試験において、エサキセレノンは1×10⁻⁵Mまでアンドロゲン受容体(AR)、グルココルチコイド受容体(GR)及びプロゲステロン受容体(PR)に対する拮抗作用を示しませんでした。",
   "source": {
-   "name": "ミネブロ錠インタビューフォーム(第10版・2025年1月改訂) Ⅵ.2.(2)1)③ラット及びウサギの各種ステロイドホルモン受容体に対する結合性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠 インタビューフォーム Ⅵ.2.(2)1)③ラット及びウサギの各種ステロイドホルモン受容体に対する結合性",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_2149049F1027_1_M10_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-119",
@@ -10703,11 +10703,11 @@
   "correctIndex": 2,
   "explanation": "本態性高血圧症患者を対象とした国内第Ⅲ相試験(CS3150-A-J301)において、PPSを対象とした解析で、エプレレノン50mg群とエサキセレノン2.5mg群の群間差の両側95%信頼区間の上限が非劣性マージンを下回ったため、エサキセレノン2.5mg群のエプレレノン50mg群に対する非劣性が検証されました。",
   "source": {
-   "name": "ミネブロ錠インタビューフォーム(第10版・2025年1月改訂) Ⅴ.5.(4)1)②国内第Ⅲ相試験(CS3150-A-J301)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠 インタビューフォーム Ⅴ.5.(4)1)②国内第Ⅲ相試験(CS3150-A-J301)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_2149049F1027_1_M10_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-120",
@@ -10724,11 +10724,11 @@
   "correctIndex": 3,
   "explanation": "健康成人男性23例にエサキセレノン5mgを空腹時あるいは食後に単回経口投与、又は単回静脈内投与した試験で、食事はエサキセレノン単回経口投与時の薬物動態に影響を及ぼさないことが示されました。生物学的利用率は、空腹時経口投与で89.0%、食後経口投与で90.8%でした。",
   "source": {
-   "name": "ミネブロ錠インタビューフォーム(第10版・2025年1月改訂) Ⅶ.1.(4)1)食事の影響及び生物学的利用率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠 インタビューフォーム Ⅶ.1.(4)1)食事の影響及び生物学的利用率",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_2149049F1027_1_M10_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-121",
@@ -10745,11 +10745,11 @@
   "correctIndex": 0,
   "explanation": "(外国人データ)健康成人男性6例に14C-エサキセレノンを単回経口投与したマスバランス試験では、投与後288時間までに、投与された放射能のそれぞれ54.0%及び38.5%が糞中及び尿中に排泄され、総排泄率は92.5%でした。エサキセレノンの酸化代謝物の生成に関与する主なCYP分子種はCYP3A4及びCYP3A5であることが示されています。",
   "source": {
-   "name": "ミネブロ錠インタビューフォーム(第10版・2025年1月改訂) Ⅶ.6.(2)代謝に関与する酵素の分子種、Ⅶ.7.排泄",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠 インタビューフォーム Ⅶ.6.(2)代謝に関与する酵素の分子種、Ⅶ.7.排泄",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_2149049F1027_1_M10_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-122",
@@ -10766,11 +10766,11 @@
   "correctIndex": 1,
   "explanation": "「2.禁忌」の項に「重度の腎機能障害(eGFR 30mL/min/1.73m2未満)のある患者」と記載されており、高カリウム血症を誘発させるおそれがあること、また重度の腎機能障害のある患者を対象とした臨床試験は実施していないことから禁忌とされています。",
   "source": {
-   "name": "ミネブロ錠インタビューフォーム(第10版・2025年1月改訂) Ⅷ.2.禁忌内容とその理由2.3",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミネブロ錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由2.3",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_2149049F1027_1_M10_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-123",
@@ -10787,11 +10787,11 @@
   "correctIndex": 2,
   "explanation": "名称の由来は「セレクティブ アルドステロン レセプター アンタゴニストに由来する」と記載されています。",
   "source": {
-   "name": "セララ錠インタビューフォーム(第9版・2025年5月改訂、ヴィアトリス製薬合同会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セララ錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149045F1029_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-124",
@@ -10808,11 +10808,11 @@
   "correctIndex": 3,
   "explanation": "ラットミネラルコルチコイド受容体に対する結合及び特異性の検討において、エプレレノンの非標識リガンド(アルドステロン)に対する相対的親和性は0.51%であり、スピロノラクトン(11.0%)と比較して1/20程度でした。",
   "source": {
-   "name": "セララ錠インタビューフォーム(第9版・2025年5月改訂) Ⅵ.2.(1)1)①ラットミネラルコルチコイド受容体に対する結合及び特異性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セララ錠 インタビューフォーム Ⅵ.2.(1)1)①ラットミネラルコルチコイド受容体に対する結合及び特異性",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149045F1029_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-125",
@@ -10829,11 +10829,11 @@
   "correctIndex": 0,
   "explanation": "外国人慢性心不全患者を対象とした第Ⅲ相試験(EMPHASIS-HF試験)において、主要評価項目である心血管死又は心不全による入院は本剤群18.3%(249/1364例)、プラセボ群25.9%(356/1373例)であり、本剤群でプラセボ群に比べて相対リスクが37.0%低下し有意な差が認められました(ハザード比0.630、p<0.0001)。",
   "source": {
-   "name": "セララ錠インタビューフォーム(第9版・2025年5月改訂) Ⅴ.5.(7)2)①外国人慢性心不全患者を対象とした第Ⅲ相試験(EMPHASIS-HF試験)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セララ錠 インタビューフォーム Ⅴ.5.(7)2)①外国人慢性心不全患者を対象とした第Ⅲ相試験(EMPHASIS-HF試験)",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149045F1029_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-126",
@@ -10850,11 +10850,11 @@
   "correctIndex": 1,
   "explanation": "外国人の健康成人男性を対象に、ケトコナゾール(経口剤:本邦未発売)200mgを1日2回反復投与し、7日目に本剤100mg/日を併用単回投与した試験で、本剤単独投与時と比較して、ケトコナゾール併用時では本剤のAUC0-∞は約5.4倍、Cmaxは約1.7倍に増加しました。",
   "source": {
-   "name": "セララ錠インタビューフォーム(第9版・2025年5月改訂) Ⅷ.7.(1)併用禁忌とその理由〈解説〉2)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セララ錠 インタビューフォーム Ⅷ.7.(1)併用禁忌とその理由〈解説〉2)",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149045F1029_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-127",
@@ -10871,11 +10871,11 @@
   "correctIndex": 2,
   "explanation": "本態性高血圧症患者を対象とした国際共同実薬対照二重盲検比較試験において、投与24週間後の拡張期血圧(DBP)は本剤群で-11.2mmHg、エナラプリル群で-11.3mmHgと低下し、群間差の片側95%信頼区間の信頼下限は非劣性マージンよりも大きいことから、本剤群のエナラプリル群に対する非劣性が検証されました。",
   "source": {
-   "name": "セララ錠インタビューフォーム(第9版・2025年5月改訂) Ⅴ.5.(4)1)①本態性高血圧症患者を対象としたエナラプリルとの比較試験",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セララ錠 インタビューフォーム Ⅴ.5.(4)1)①本態性高血圧症患者を対象としたエナラプリルとの比較試験",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149045F1029_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-128",
@@ -10892,11 +10892,11 @@
   "correctIndex": 3,
   "explanation": "重大な副作用として高カリウム血症が、高血圧症の場合(1.7%)、慢性心不全の場合(7.3%)の発現率で認められています。高血圧症の適応承認時までの国内及び外国臨床試験では3,353例中57例(1.7%)、慢性心不全の適応申請時までの臨床試験では1,471例中107例(7.3%)に認められました。",
   "source": {
-   "name": "セララ錠インタビューフォーム(第9版・2025年5月改訂) Ⅷ.8.(1)重大な副作用と初期症状11.1.1高カリウム血症",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セララ錠 インタビューフォーム Ⅷ.8.(1)重大な副作用と初期症状11.1.1高カリウム血症",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149045F1029_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-129",
@@ -10913,11 +10913,11 @@
   "correctIndex": 0,
   "explanation": "「2.禁忌」の項に「イトラコナゾール、ボリコナゾール、ポサコナゾール、リトナビル含有製剤及びエンシトレルビル フマル酸を投与中の患者」と記載されており、これらの強力なCYP3A4阻害薬は本剤の血漿中濃度を著しく上昇させ、血清カリウム値の上昇を誘発するおそれがあることから併用禁忌とされています。",
   "source": {
-   "name": "セララ錠インタビューフォーム(第9版・2025年5月改訂) Ⅷ.2.禁忌内容とその理由2.6",
-   "url": "",
-   "confirmedDate": ""
+   "name": "セララ錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由2.6",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149045F1029_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-130",
@@ -10934,11 +10934,11 @@
   "correctIndex": 1,
   "explanation": "インダパミドは、フランスのセルヴィエ研究所において、4-chloro-3-sulfamoyl benzamideとindolineあるいはisoindoline骨格とが結合した多くの化合物の中から、利尿作用と降圧作用の分離を目的としてスクリーニングされ、1968年に降圧活性が強くかつ持続性で利尿作用が比較的弱い化合物として選び出されました。",
   "source": {
-   "name": "ナトリックス錠インタビューフォーム(第11版・2026年4月改訂、住友ファーマ株式会社) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/230099_2149012F1059_1_011_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-131",
@@ -10955,11 +10955,11 @@
   "correctIndex": 2,
   "explanation": "「Ⅱ.名称に関する項目」の(3)ステムに「スルファモイルベンズアミド系利尿剤：-pamide」と記載されています。",
   "source": {
-   "name": "ナトリックス錠インタビューフォーム(第11版・2026年4月改訂) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠 インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/230099_2149012F1059_1_011_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-132",
@@ -10976,11 +10976,11 @@
   "correctIndex": 3,
   "explanation": "尿細管(特に遠位尿細管)におけるNa及び水再吸収率の抑制による利尿作用に基づく循環血量の減少並びに末梢血管平滑筋の収縮抑制(反応性の低下)によって降圧作用を示すと考えられています。",
   "source": {
-   "name": "ナトリックス錠インタビューフォーム(第11版・2026年4月改訂) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠 インタビューフォーム Ⅵ.2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/230099_2149012F1059_1_011_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-133",
@@ -10997,11 +10997,11 @@
   "correctIndex": 0,
   "explanation": "インダパミドは正常ラットにおいて0.1mg/kg経口投与から用量依存的な利尿作用を示し、0.05mg/kg経口投与から尿中へのナトリウム排泄量増加を示しましたが、尿中へのカリウム排泄作用は比較的軽度であり、尿量及びカリウム排泄量はトリクロルメチアジド、ヒドロクロロチアジドに比べて少なかったと記載されています。",
   "source": {
-   "name": "ナトリックス錠インタビューフォーム(第11版・2026年4月改訂) Ⅵ.2.(2)2)利尿作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠 インタビューフォーム Ⅵ.2.(2)2)利尿作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/230099_2149012F1059_1_011_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-134",
@@ -11018,11 +11018,11 @@
   "correctIndex": 1,
   "explanation": "「Ⅶ.薬物動態に関する項目」の(6)血漿蛋白結合率に「約83%(ヒト血清、平衡透析法)」と記載されています。",
   "source": {
-   "name": "ナトリックス錠インタビューフォーム(第11版・2026年4月改訂) Ⅶ.5.(6)血漿蛋白結合率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠 インタビューフォーム Ⅶ.5.(6)血漿蛋白結合率",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/230099_2149012F1059_1_011_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-135",
@@ -11039,11 +11039,11 @@
   "correctIndex": 2,
   "explanation": "ヒトにインダパミドを経口投与したとき尿中に認められる代謝物は6種類で、主要代謝物は5-OH-IDPと4-chloro-3-sulfamoylbenzoic acid(CSBA)でした。5-OH-IDPは大部分がグルクロン酸抱合されて排泄され、血中代謝物としてはDehydro-IDPのみが検出されました。",
   "source": {
-   "name": "ナトリックス錠インタビューフォーム(第11版・2026年4月改訂) Ⅶ.6.(1)代謝部位及び代謝経路",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠 インタビューフォーム Ⅶ.6.(1)代謝部位及び代謝経路",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/230099_2149012F1059_1_011_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-136",
@@ -11060,11 +11060,11 @@
   "correctIndex": 3,
   "explanation": "「10.1 併用禁忌」の項にデスモプレシン酢酸塩水和物(ミニリンメルト、男性における夜間多尿による夜間頻尿)が挙げられており、いずれも低ナトリウム血症が発現するおそれがあることから併用禁忌とされています。",
   "source": {
-   "name": "ナトリックス錠インタビューフォーム(第11版・2026年4月改訂) Ⅷ.7.(1)併用禁忌とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ナトリックス錠 インタビューフォーム Ⅷ.7.(1)併用禁忌とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/230099_2149012F1059_1_011_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-137",
