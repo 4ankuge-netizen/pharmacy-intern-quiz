@@ -9611,11 +9611,11 @@
   "correctIndex": 2,
   "explanation": "テルミサルタンはAT1受容体親和性が高く(Ki=3.7nM)、受容体から容易に解離しません。摘出ウサギ大動脈標本を用いた検討では、標本洗浄120分後においても有意な血管収縮抑制作用を示し、作用が持続的であることが確認されています。",
   "source": {
-   "name": "テルミサルタン錠「FFP」インタビューフォーム(第4版・2025年10月改訂、先発品ミカルディスカプセル承認時申請資料に基づく記載を含む) Ⅵ.2.(1)作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミカルディス錠 インタビューフォーム Ⅵ.2.(1)作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/650168_2149042F1025_1_259_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-068",
@@ -9632,32 +9632,32 @@
   "correctIndex": 3,
   "explanation": "テルミサルタンは主としてUGT酵素によるグルクロン酸抱合によって代謝される点が特徴で、ロサルタンなど主にCYP2C9・CYP3A4で代謝される他の多くのARBとは代謝経路が異なります。",
   "source": {
-   "name": "テルミサルタン錠「FFP」インタビューフォーム(第4版・2025年10月改訂) Ⅷ.7.相互作用(冒頭)/Ⅶ.6.(1)代謝",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミカルディス錠 インタビューフォーム Ⅷ.7.相互作用(冒頭)/Ⅶ.6.(1)代謝",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/650168_2149042F1025_1_259_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-069",
   "category": "hypertension",
   "difficulty": "advanced",
   "type": "single",
-  "question": "テルミサルタン(ミカルディス)の排泄経路に関して、インタビューフォームに記載されている内容として正しいのはどれか。",
+  "question": "テルミサルタン(ミカルディス)の排泄について、インタビューフォームに記載されている内容として正しいのはどれか。",
   "choices": [
-   "吸収されたテルミサルタンの大部分が胆汁を介して糞中に排泄され、尿中排泄率は0.02%以下と極めて低い",
-   "呼気中に大部分が排泄される",
-   "主に腎臓から尿中に未変化体のまま排泄される",
-   "尿中と糞中にほぼ均等に排泄される"
+   "尿中にはほとんど排泄されず、尿中累積排泄率は全ての被験者で0.1%未満であり、大部分が胆汁を介して糞中に排泄される",
+   "大部分が未変化体として尿中に排泄される",
+   "尿中と糞中にほぼ半分ずつ排泄される",
+   "主に呼気中に排泄される"
   ],
   "correctIndex": 0,
-  "explanation": "健康成人男子に14C-テルミサルタンを投与した検討で、投与後144時間までの放射能の尿中及び糞中総排泄率はそれぞれ約0.5%及び102%であり、吸収されたテルミサルタンの大部分が胆汁を介して糞中に排泄されることが確認されています。未変化体の尿中排泄率はいずれの投与量でも0.02%以下でした。この胆汁排泄型の特性から、本剤は「胆汁排泄型持続性AT1受容体ブロッカー」と称されます。",
+  "explanation": "ミカルディス錠のインタビューフォーム「Ⅶ.7.排泄」には、尿中にはほとんど排泄されず大部分が胆汁を介して糞中に排泄されること、健康成人男子での尿中累積排泄率は全ての被験者で0.1%未満であったことが記載されています。また14C-テルミサルタン40mg投与後144時間までの尿中及び糞中総排泄率はそれぞれ約0.5%及び102%でした。胆汁排泄が主な経路であることが、胆汁の分泌が極めて悪い患者や重篤な肝障害のある患者が禁忌とされている理由につながります。",
   "source": {
-   "name": "テルミサルタン錠「FFP」インタビューフォーム(第4版・2025年10月改訂) Ⅶ.7.排泄",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミカルディス錠 インタビューフォーム Ⅶ.7.排泄",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/650168_2149042F1025_1_259_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-070",
@@ -9674,11 +9674,11 @@
   "correctIndex": 1,
   "explanation": "健康成人男子にテルミサルタン40mgを単回経口投与した検討で、空腹時投与は食後投与に比べCmaxが57%、AUCが32%高値を示しました。食後に服用している患者が急に空腹時服用に変更すると血中濃度が上昇し副作用が発現するおそれがあるため、毎日食後に服用するよう注意を与えることとされています。",
   "source": {
-   "name": "テルミサルタン錠「FFP」インタビューフォーム(第4版・2025年10月改訂) Ⅶ.4.吸収/Ⅷ.11.適用上の注意(14.1.2)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミカルディス錠 インタビューフォーム Ⅶ.4.吸収/Ⅷ.11.適用上の注意(14.1.2)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/650168_2149042F1025_1_259_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-071",
@@ -9695,11 +9695,11 @@
   "correctIndex": 2,
   "explanation": "外国人の肝障害患者(Child-Pugh分類A(軽症)8例、B(中等症)4例)にテルミサルタンを投与した検討で、健康成人と比較しCmaxは4.5倍及び3倍、AUCは2.5倍及び2.7倍高い値を示しました。本剤は主に胆汁中に排泄されるためクリアランスが低下することから、肝障害のある患者に投与する場合の最大投与量は1日1回40mgとされています。",
   "source": {
-   "name": "テルミサルタン錠「FFP」インタビューフォーム(第4版・2025年10月改訂) Ⅶ.10.(2)肝機能障害患者/Ⅴ.4.用法及び用量に関連する注意",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミカルディス錠 インタビューフォーム Ⅶ.10.(2)肝機能障害患者/Ⅴ.4.用法及び用量に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/650168_2149042F1025_1_259_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-072",
@@ -9716,11 +9716,11 @@
   "correctIndex": 3,
   "explanation": "本剤は吸収後、大部分が胆汁を介して糞中に排泄される胆汁排泄型の薬剤であるため、胆汁の分泌が極めて悪い患者又は重篤な肝障害のある患者は禁忌とされています。",
   "source": {
-   "name": "テルミサルタン錠「FFP」インタビューフォーム(第4版・2025年10月改訂) Ⅷ.2.禁忌内容とその理由(2.3)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミカルディス錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由(2.3)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/650168_2149042F1025_1_259_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-073",
@@ -9737,11 +9737,11 @@
   "correctIndex": 0,
   "explanation": "テルミサルタンとジゴキシンの併用により血中ジゴキシン濃度が上昇したとの報告がありますが、その機序は明確にされていません(併用注意)。",
   "source": {
-   "name": "テルミサルタン錠「FFP」インタビューフォーム(第4版・2025年10月改訂) Ⅷ.7.(2)併用注意とその理由(ジゴキシン)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ミカルディス錠 インタビューフォーム Ⅷ.7.(2)併用注意とその理由(ジゴキシン)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/650168_2149042F1025_1_259_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-074",
@@ -11081,11 +11081,11 @@
   "correctIndex": 0,
   "explanation": "ドイツ・ヘキスト社(現サノフィ社)の研究室でベンゾールスルフォンアミドの数多くの製剤について数年間合成、その他の試験を重ねているうちに、その中でアントラニル酸誘導体フロセミドが動物実験上、チアジド系利尿剤に著しく優る利尿効果を有することが得られました。",
   "source": {
-   "name": "ラシックス注100mgインタビューフォーム(第12版・2026年4月改訂、製造販売元:サノフィ株式会社) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラシックス注100mg インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/780069_2139401A1033_1_013_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-138",
@@ -11102,11 +11102,11 @@
   "correctIndex": 1,
   "explanation": "「Ⅱ.名称に関する項目」の(3)ステムに「フロセミド系の利尿薬：-semide」と記載されています。",
   "source": {
-   "name": "ラシックス注100mgインタビューフォーム(第12版・2026年4月改訂) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラシックス注100mg インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/780069_2139401A1033_1_013_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-139",
@@ -11123,11 +11123,11 @@
   "correctIndex": 2,
   "explanation": "本剤の利尿作用は、イヌを用いた実験で腎尿細管全域(近位、遠位尿細管及びヘンレ係蹄)におけるNa、Clの再吸収抑制作用に基づくことが認められています。なお炭酸脱水酵素阻害作用については、治療用量では阻害作用はないと考えられると記載されています。",
   "source": {
-   "name": "ラシックス注100mgインタビューフォーム(第12版・2026年4月改訂) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラシックス注100mg インタビューフォーム Ⅵ.2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/780069_2139401A1033_1_013_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-140",
@@ -11144,11 +11144,11 @@
   "correctIndex": 3,
   "explanation": "「Ⅴ.治療に関する項目」の1.効能又は効果に「急性又は慢性腎不全による乏尿」と記載されています。",
   "source": {
-   "name": "ラシックス注100mgインタビューフォーム(第12版・2026年4月改訂) Ⅴ.1.効能又は効果",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラシックス注100mg インタビューフォーム Ⅴ.1.効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/780069_2139401A1033_1_013_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-141",
@@ -11165,11 +11165,11 @@
   "correctIndex": 0,
   "explanation": "「7.用法及び用量に関連する注意」に「難聴をきたすことがあるので、静脈注射又は点滴静脈注射する場合は、用法及び用量に従い毎分4mg以下となるよう投与速度を調節すること」と記載されています。",
   "source": {
-   "name": "ラシックス注100mgインタビューフォーム(第12版・2026年4月改訂) Ⅴ.4.用法及び用量に関連する注意",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラシックス注100mg インタビューフォーム Ⅴ.4.用法及び用量に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/780069_2139401A1033_1_013_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-142",
@@ -11186,11 +11186,11 @@
   "correctIndex": 1,
   "explanation": "「10.1 併用禁忌」の項にデスモプレシン酢酸塩水和物(ミニリンメルト、男性における夜間多尿による夜間頻尿)が挙げられており、いずれも低ナトリウム血症が発現するおそれがあることから併用禁忌とされています。アミノグリコシド系抗生物質は併用注意(第8脳神経障害増強のおそれ)に分類されています。",
   "source": {
-   "name": "ラシックス注100mgインタビューフォーム(第12版・2026年4月改訂) Ⅷ.7.(1)併用禁忌とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラシックス注100mg インタビューフォーム Ⅷ.7.(1)併用禁忌とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/780069_2139401A1033_1_013_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-143",
@@ -11207,11 +11207,11 @@
   "correctIndex": 2,
   "explanation": "「16.3.1 蛋白結合率」に、本剤の血中濃度、血清アルブミン濃度に左右されるが、健康成人での蛋白結合率は91~99%で、主にアルブミンと結合すると記載されています(外国人データ)。",
   "source": {
-   "name": "ラシックス注100mgインタビューフォーム(第12版・2026年4月改訂) Ⅶ.5.(6)血漿蛋白結合率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラシックス注100mg インタビューフォーム Ⅶ.5.(6)血漿蛋白結合率",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/780069_2139401A1033_1_013_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-144",
@@ -11228,11 +11228,11 @@
   "correctIndex": 3,
   "explanation": "名称の由来として「β-antagonistのMain state(中心的な位置)を占める」と記載されています。",
   "source": {
-   "name": "メインテート錠インタビューフォーム(第15版・2026年5月改訂、田辺ファーマ株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メインテート錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2123016F1107_1_150_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-145",
@@ -11249,11 +11249,11 @@
   "correctIndex": 0,
   "explanation": "ビソプロロールフマル酸塩はドイツのMerck KGaA社において開発されたβ1アンタゴニストで、本邦においては田辺製薬株式会社(現 田辺ファーマ株式会社)が1982年より開発を開始し、1990年9月に本態性高血圧症、狭心症及び心室性期外収縮の治療薬としてメインテート錠(2.5mgと5mg)の承認を得ました。",
   "source": {
-   "name": "メインテート錠インタビューフォーム(第15版・2026年5月改訂) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メインテート錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2123016F1107_1_150_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-146",
@@ -11270,11 +11270,11 @@
   "correctIndex": 1,
   "explanation": "β受容体に対する親和性の比較において、ビソプロロールのβ1受容体(イヌ心室筋)に対する親和性は、β2受容体(イヌ肺)に比べ23倍高く、アテノロールは4.4倍、メトプロロールは5.1倍であり、ビソプロロールが最もβ1選択性が高かったと記載されています。",
   "source": {
-   "name": "メインテート錠インタビューフォーム(第15版・2026年5月改訂) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メインテート錠 インタビューフォーム Ⅵ.2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2123016F1107_1_150_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-147",
@@ -11291,11 +11291,11 @@
   "correctIndex": 2,
   "explanation": "「1.警告」に〈慢性心不全〉として「1.1 慢性心不全治療の経験が十分にある医師のもとで使用すること。」「1.2 投与初期及び増量時に症状が悪化することに注意し、慎重に用量調節を行うこと。」と記載されています。",
   "source": {
-   "name": "メインテート錠インタビューフォーム(第15版・2026年5月改訂) Ⅷ.1.警告内容とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メインテート錠 インタビューフォーム Ⅷ.1.警告内容とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2123016F1107_1_150_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-148",
@@ -11312,11 +11312,11 @@
   "correctIndex": 3,
   "explanation": "通常、成人にはビソプロロールフマル酸塩として、1日1回0.625mg経口投与から開始する。1日1回0.625mgの用量で2週間以上経口投与し、忍容性がある場合には、1日1回1.25mgに増量する。その後忍容性がある場合には、4週間以上の間隔で忍容性をみながら段階的に増量するが、最高投与量は1日1回5mgを超えないことと記載されています。",
   "source": {
-   "name": "メインテート錠インタビューフォーム(第15版・2026年5月改訂) Ⅴ.3.用法及び用量",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メインテート錠 インタビューフォーム Ⅴ.3.用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2123016F1107_1_150_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-149",
@@ -11333,11 +11333,11 @@
   "correctIndex": 0,
   "explanation": "ビソプロロールは、CYP2D6とCYP3A4に代謝され、ほとんど初回通過効果を受けない(<10%)と記載されています。",
   "source": {
-   "name": "メインテート錠インタビューフォーム(第15版・2026年5月改訂) Ⅶ.6.(2)(3)代謝に関与する酵素・初回通過効果",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メインテート錠 インタビューフォーム Ⅶ.6.(2)(3)代謝に関与する酵素・初回通過効果",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2123016F1107_1_150_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-150",
@@ -11354,11 +11354,11 @@
   "correctIndex": 1,
   "explanation": "CIBIS Ⅱ試験(海外臨床試験)の主要有効性評価項目である「総死亡」について、プラセボ群に対する本薬群のハザード比(95%信頼区間)は0.66(0.54-0.81)[本薬群11.8%、プラセボ群17.3%、p<0.0001]であり、死亡リスクの減少が認められたと記載されています。",
   "source": {
-   "name": "メインテート錠インタビューフォーム(第15版・2026年5月改訂) Ⅴ.5.(4)2)②海外臨床試験(CIBIS Ⅱ)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "メインテート錠 インタビューフォーム Ⅴ.5.(4)2)②海外臨床試験(CIBIS Ⅱ)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/400315_2123016F1107_1_150_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-151",
@@ -11375,11 +11375,11 @@
   "correctIndex": 2,
   "explanation": "「名称の由来」に、Artistには芸術家という意味のほかに、その道の名人・達人という意味もあり、高血圧症及び狭心症を創造的かつ個性的に治療するという意味からこの名がつけられたと記載されています。",
   "source": {
-   "name": "アーチスト錠インタビューフォーム(第20版・2024年7月改訂、第一三共株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アーチスト錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/430574_2149032F1021_2_A20_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-152",
@@ -11396,11 +11396,11 @@
   "correctIndex": 3,
   "explanation": "ドイツのベーリンガー・マンハイム(BM)社(現F.ホフマン・ラ・ロシュ社)において、1970年代前半より血管拡張作用とβ受容体遮断作用を併有する薬剤の探索研究が進められ、カルベジロールはその過程において選択されたα受容体遮断作用を併有するβ受容体遮断薬であると記載されています。",
   "source": {
-   "name": "アーチスト錠インタビューフォーム(第20版・2024年7月改訂) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アーチスト錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/430574_2149032F1021_2_A20_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-153",
@@ -11417,11 +11417,11 @@
   "correctIndex": 0,
   "explanation": "作用部位・作用機序の項に、α:β受容体遮断効力比=1:8(健康成人)と記載されており、カルベジロールはα1受容体遮断作用を主体とする末梢血管拡張作用とβ受容体遮断作用による心拍出量の低下により降圧作用を示すとされています。",
   "source": {
-   "name": "アーチスト錠インタビューフォーム(第20版・2024年7月改訂) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アーチスト錠 インタビューフォーム Ⅵ.2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/430574_2149032F1021_2_A20_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-154",
@@ -11438,11 +11438,11 @@
   "correctIndex": 1,
   "explanation": "「1.警告」の項に〈虚血性心疾患又は拡張型心筋症に基づく慢性心不全〉として「慢性心不全治療の経験が十分にある医師のもとで使用すること。」と記載されています。",
   "source": {
-   "name": "アーチスト錠インタビューフォーム(第20版・2024年7月改訂) Ⅷ.1.警告内容とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アーチスト錠 インタビューフォーム Ⅷ.1.警告内容とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/430574_2149032F1021_2_A20_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-155",
@@ -11459,11 +11459,11 @@
   "correctIndex": 2,
   "explanation": "MUCHA試験において、左室駆出率の用量依存的な改善(プラセボ群+6.6%、5mg/日群+8.7%、20mg/日群+13.2%)、並びに心血管系の理由による入院率の用量依存的な低下(プラセボ群24.5%、5mg/日群4.3%、20mg/日群3.9%)が認められたと記載されています。",
   "source": {
-   "name": "アーチスト錠インタビューフォーム(第20版・2024年7月改訂) Ⅴ.5.(4)1)②c)ⅰ)国内第Ⅱ相試験(MUCHA試験)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アーチスト錠 インタビューフォーム Ⅴ.5.(4)1)②c)ⅰ)国内第Ⅱ相試験(MUCHA試験)",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/430574_2149032F1021_2_A20_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-156",
@@ -11480,11 +11480,11 @@
   "correctIndex": 3,
   "explanation": "カルベジロールとして、通常、成人1回1.25mg、1日2回食後経口投与から開始する。1回1.25mg、1日2回の用量に忍容性がある場合には、1週間以上の間隔で忍容性をみながら段階的に増量し、通常、維持量として1回2.5~10mgを1日2回食後経口投与すると記載されています。",
   "source": {
-   "name": "アーチスト錠インタビューフォーム(第20版・2024年7月改訂) Ⅴ.3.用法及び用量",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アーチスト錠 インタビューフォーム Ⅴ.3.用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/430574_2149032F1021_2_A20_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-157",
@@ -11501,11 +11501,11 @@
   "correctIndex": 0,
   "explanation": "「2.禁忌」の項に「気管支喘息、気管支痙攣のおそれのある患者」が挙げられており、気管支筋を収縮させることがあるので喘息症状の誘発、悪化を起こすおそれがあることから禁忌とされています。",
   "source": {
-   "name": "アーチスト錠インタビューフォーム(第20版・2024年7月改訂) Ⅷ.2.禁忌内容とその理由2.1",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アーチスト錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由2.1",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/430574_2149032F1021_2_A20_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-158",
@@ -11522,11 +11522,11 @@
   "correctIndex": 1,
   "explanation": "「名称の由来」に「Ten:高血圧 Hypertension、normin:正常な normal」と記載されています。",
   "source": {
-   "name": "テノーミン錠インタビューフォーム(第16版・2021年7月改訂、太陽ファルマ株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テノーミン錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/431010_2123011F1155_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-159",
@@ -11543,11 +11543,11 @@
   "correctIndex": 2,
   "explanation": "英国ICI社(現アストラゼネカ社)ではプロプラノロール開発後、臨床上より優れたβ遮断薬の開発を進め、1968年に長時間作用型で心臓選択性β1遮断作用が強く、膜安定化作用や内因性交感神経刺激作用のない親水性のアテノロールが合成されたと記載されています。",
   "source": {
-   "name": "テノーミン錠インタビューフォーム(第16版・2021年7月改訂) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テノーミン錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/431010_2123011F1155_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-160",
@@ -11564,11 +11564,11 @@
   "correctIndex": 3,
   "explanation": "ヒトの心房及び気管支の筋肉標本を用いたin vitro実験で、アテノロールのβ1選択性はプロプラノロール塩酸塩、ピンドロール、メトプロロールより高く、アセブトロールとほぼ同等であったと記載されています。",
   "source": {
-   "name": "テノーミン錠インタビューフォーム(第16版・2021年7月改訂) Ⅵ.2.(2)2)心臓選択性(β1選択性)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テノーミン錠 インタビューフォーム Ⅵ.2.(2)2)心臓選択性(β1選択性)",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/431010_2123011F1155_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-161",
@@ -11585,11 +11585,11 @@
   "correctIndex": 0,
   "explanation": "アテノロールはプロプラノロール、メトプロロールに比べ脳内移行が少ないことが脳外科手術を必要とした患者7例について示されており、脳/血漿中濃度比はアテノロール0.1、プロプラノロール17、メトプロロール14であったと記載されています(外国人での試験成績)。",
   "source": {
-   "name": "テノーミン錠インタビューフォーム(第16版・2021年7月改訂) Ⅶ.4.(1)血液-脳関門通過性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テノーミン錠 インタビューフォーム Ⅶ.4.(1)血液-脳関門通過性",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/431010_2123011F1155_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-162",
@@ -11606,11 +11606,11 @@
   "correctIndex": 1,
   "explanation": "アテノロールは肝臓でほとんど代謝をうけないと記載されており、経口投与により約50%が消化管から速やかに吸収され、肝臓における初回通過効果を受けずに体循環に入るとされています(外国人での試験成績)。",
   "source": {
-   "name": "テノーミン錠インタビューフォーム(第16版・2021年7月改訂) Ⅶ.5.(1)(3)代謝部位及び代謝経路・初回通過効果の有無及びその割合",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テノーミン錠 インタビューフォーム Ⅶ.5.(1)(3)代謝部位及び代謝経路・初回通過効果の有無及びその割合",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/431010_2123011F1155_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-163",
@@ -11627,11 +11627,11 @@
   "correctIndex": 2,
   "explanation": "禁忌の項に「未治療の褐色細胞腫の患者」が挙げられており、褐色細胞腫の患者にβ遮断剤を単独投与すると交感神経α受容体刺激による血管収縮が優位となり、著明な血圧上昇がみられることがあるため、本剤を単独で投与しないこととされています。",
   "source": {
-   "name": "テノーミン錠インタビューフォーム(第16版・2021年7月改訂) Ⅷ.2.禁忌内容とその理由(9)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テノーミン錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由(9)",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/431010_2123011F1155_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-164",
@@ -11648,11 +11648,11 @@
   "correctIndex": 3,
   "explanation": "慎重投与の項に「重篤な腎障害のある患者」が挙げられており、薬物の排泄が影響をうける可能性があるため、クレアチニン・クリアランス値が35mL/分、糸球体ろ過値が35mL/分以下の場合は投与間隔をのばすなど、慎重に投与することと記載されています。",
   "source": {
-   "name": "テノーミン錠インタビューフォーム(第16版・2021年7月改訂) Ⅷ.5.慎重投与内容とその理由(5)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テノーミン錠 インタビューフォーム Ⅷ.5.慎重投与内容とその理由(5)",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/431010_2123011F1155_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-165",
@@ -11669,11 +11669,11 @@
   "correctIndex": 0,
   "explanation": "「名称の由来」に「Ader〔á:der〕血管、脈管;adult〔adúlt/lat〕成人の、などの医学関連用語を含む用語を用いたコンピュータ合成による。CRはControlled Releaseを示す」と記載されています。",
   "source": {
-   "name": "アダラートCR錠インタビューフォーム(第11版・2025年1月改訂、バイエル薬品株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダラートCR錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_2171014G3022_1_002_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-166",
@@ -11690,11 +11690,11 @@
   "correctIndex": 1,
   "explanation": "1948年ドイツ・バイエル社の化学者Bossertはセリ科の薬草Ammi visnagaの果実の有効成分であるケリンを基礎に冠血流障害の治療に適した薬剤の研究を開始し、薬理学者Vaterの協力を得て、強力な冠血管拡張作用を示す1,4-ジヒドロピリジン誘導体ニフェジピンが1966年発見されたと記載されています。",
   "source": {
-   "name": "アダラートCR錠インタビューフォーム(第11版・2025年1月改訂) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダラートCR錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_2171014G3022_1_002_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-167",
@@ -11711,11 +11711,11 @@
   "correctIndex": 2,
   "explanation": "「ステム」の項に「ジヒドロピリジン系Ca拮抗薬:-dipine」と記載されています。",
   "source": {
-   "name": "アダラートCR錠インタビューフォーム(第11版・2025年1月改訂) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダラートCR錠 インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_2171014G3022_1_002_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-168",
@@ -11732,11 +11732,11 @@
   "correctIndex": 3,
   "explanation": "アダラートCR錠は、ニフェジピンを一定速度で放出する浸食性マトリックスを用いた外層部と、外層部に比べニフェジピンの放出速度が速やかな内核錠の2つの徐放性部分から成る有核二層錠であると記載されています。なお、GITS製剤は薬物動態の項に承認外剤形として参考記載されている別製剤です。",
   "source": {
-   "name": "アダラートCR錠インタビューフォーム(第11版・2025年1月改訂) Ⅳ.1.(2)製剤の外観及び性状",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダラートCR錠 インタビューフォーム Ⅳ.1.(2)製剤の外観及び性状",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_2171014G3022_1_002_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-169",
@@ -11753,11 +11753,11 @@
   "correctIndex": 0,
   "explanation": "「代謝に関与する酵素(CYP等)の分子種、寄与率」の項に「主にチトクロームP450 3A4(CYP3A4)により代謝される」と記載されており、外国人において肝での初回通過効果により30~40%が代謝されるとされています。",
   "source": {
-   "name": "アダラートCR錠インタビューフォーム(第11版・2025年1月改訂) Ⅶ.6.(2)(3)代謝に関与する酵素・初回通過効果",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダラートCR錠 インタビューフォーム Ⅶ.6.(2)(3)代謝に関与する酵素・初回通過効果",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_2171014G3022_1_002_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-170",
@@ -11774,11 +11774,11 @@
   "correctIndex": 1,
   "explanation": "併用注意の項に「グレープフルーツジュース」が挙げられており、グレープフルーツジュース中に含まれるフラノクマリン誘導体が小腸上皮細胞中のCYP3A4を阻害し、本剤のクリアランスを低下させるため血中濃度が上昇し作用が増強されることがあるので、同時服用をしないように注意することとされています。",
   "source": {
-   "name": "アダラートCR錠インタビューフォーム(第11版・2025年1月改訂) Ⅷ.7.(2)併用注意とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダラートCR錠 インタビューフォーム Ⅷ.7.(2)併用注意とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_2171014G3022_1_002_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-171",
@@ -11795,11 +11795,11 @@
   "correctIndex": 2,
   "explanation": "禁忌の項に「心原性ショックの患者」が挙げられており、本剤の血圧低下作用により一層の血圧低下を来し、症状の悪化を招くおそれがあるため投与を避けることとされています。",
   "source": {
-   "name": "アダラートCR錠インタビューフォーム(第11版・2025年1月改訂) Ⅷ.2.禁忌内容とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アダラートCR錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_2171014G3022_1_002_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-172",
