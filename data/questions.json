@@ -3143,11 +3143,11 @@
   "correctIndex": 2,
   "explanation": "ペムブロリズマブはPD-1を標的とする免疫チェックポイント阻害薬で、悪性黒色腫や非小細胞肺癌など複数のがん種に適応があります。",
   "source": {
-   "name": "キイトルーダ点滴静注 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "キイトルーダ点滴静注 インタビューフォーム Ⅱ.5.本質／Ⅰ.2.製品の治療学的特性(1)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170050_4291435A2025_1_039_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-052",
@@ -3164,11 +3164,11 @@
   "correctIndex": 3,
   "explanation": "ペムブロリズマブでは間質性肺疾患、大腸炎・小腸炎、皮膚症状、末梢性ニューロパチー、肝機能障害、甲状腺機能異常、下垂体・副腎機能障害など、免疫の過剰活性化による多彩なirAEが重大な副作用として報告されています。",
   "source": {
-   "name": "キイトルーダ点滴静注 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "キイトルーダ点滴静注 インタビューフォーム Ⅰ.2.製品の治療学的特性(2)安全性 重大な副作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170050_4291435A2025_1_039_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-053",
@@ -5474,11 +5474,11 @@
   "correctIndex": 1,
   "explanation": "未治療の進行腎細胞癌に対し、ペムブロリズマブとアキシチニブの併用など免疫チェックポイント阻害薬とチロシンキナーゼ阻害薬の併用療法がスニチニブ単独と比較して生存期間を延長することが示され、一次治療の標準治療の選択肢となっています。",
   "source": {
-   "name": "キイトルーダ点滴静注 添付文書(臨床成績)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "キイトルーダ点滴静注 インタビューフォーム Ⅴ.3.(2)用法及び用量の設定経緯・根拠〈腎細胞癌〉",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170050_4291435A2025_1_039_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-163",
@@ -5705,11 +5705,11 @@
   "correctIndex": 0,
   "explanation": "レゴラフェニブは1日1回160mgを食後に3週間連日経口投与し、その後1週間休薬する4週間を1サイクルとして投与します。",
   "source": {
-   "name": "スチバーガ錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スチバーガ錠 インタビューフォーム 臨床開発(160mgを1日1回3週間投与／1週間休薬)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/630004_4291029F1028_1_013_2F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-174",
@@ -5726,11 +5726,11 @@
   "correctIndex": 1,
   "explanation": "トラスツズマブ デルクステカンはHER2低発現(IHC法1+又は2+かつISH法陰性)の手術不能又は再発乳癌にも適応が拡大され、従来HER2陰性として抗HER2療法の対象外だった患者にも治療選択肢が広がりました。",
   "source": {
-   "name": "エンハーツ点滴静注用 添付文書(効能・効果に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンハーツ点滴静注用 インタビューフォーム Ⅰ.2.製品の治療学的特性(HER2低発現の対象規定)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_4291452D1029_1_E14_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-175",
@@ -5747,11 +5747,11 @@
   "correctIndex": 2,
   "explanation": "トラスツズマブ デルクステカンはがん種により用量が異なり、乳癌では5.4mg/kg、胃癌では6.4mg/kgを3週間間隔で点滴静注することとされています。",
   "source": {
-   "name": "エンハーツ点滴静注用 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンハーツ点滴静注用 インタビューフォーム Ⅳ.製剤に関する項目(体重別投与量:乳癌5.4mg/kg・胃癌6.4mg/kg)",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/430574_4291452D1029_1_E14_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-176",
