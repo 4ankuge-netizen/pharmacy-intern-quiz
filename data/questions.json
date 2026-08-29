@@ -11816,11 +11816,11 @@
   "correctIndex": 3,
   "explanation": "「名称の由来」に「冠血管を拡張するもの(Vasodilator)より名づけた」と記載されています。",
   "source": {
-   "name": "ワソラン静注5mgインタビューフォーム(第14版・2025年2月改訂、エーザイ株式会社) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワソラン静注5mg インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170033_2129402A1040_1_015_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-173",
@@ -11837,11 +11837,11 @@
   "correctIndex": 0,
   "explanation": "本剤の主成分であるベラパミル塩酸塩は1962年ドイツのHaasらにより初めて報告され、パパベリンの合成中に発見された。1963年にドイツのクノール社がIsoptinの商標で発売し、1965年9月には日本でエーザイがワソラン錠(現・ワソラン錠40mg)として発売したと記載されています。",
   "source": {
-   "name": "ワソラン静注5mgインタビューフォーム(第14版・2025年2月改訂) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワソラン静注5mg インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170033_2129402A1040_1_015_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-174",
@@ -11858,11 +11858,11 @@
   "correctIndex": 1,
   "explanation": "「ステム」の項に「冠拡張剤、ベラパミル誘導体:-pamil」と記載されています。",
   "source": {
-   "name": "ワソラン静注5mgインタビューフォーム(第14版・2025年2月改訂) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワソラン静注5mg インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170033_2129402A1040_1_015_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-175",
@@ -11879,11 +11879,11 @@
   "correctIndex": 2,
   "explanation": "ベラパミルの主作用であるCa++拮抗作用は1969年にドイツのフライブルグ大学Fleckensteinらがベラパミル、D-600(ベラパミルの誘導体Gallopamil)及びprenylamineが従来の心臓作用薬とは異なる新しい作用機序、すなわちCa++拮抗作用を有すると報告し、世界中の注目を集めたと記載されています。",
   "source": {
-   "name": "ワソラン静注5mgインタビューフォーム(第14版・2025年2月改訂) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワソラン静注5mg インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170033_2129402A1040_1_015_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-176",
@@ -11900,11 +11900,11 @@
   "correctIndex": 3,
   "explanation": "警告の項に「新生児及び乳児に使用する際には、生命に危険があり、他の治療で効果がない場合にのみ投与すること」と記載されています。新生児、乳児はCa++拮抗剤への感受性が高く、徐脈、心停止等を生じる危険性が大きいためとされています。",
   "source": {
-   "name": "ワソラン静注5mgインタビューフォーム(第14版・2025年2月改訂) Ⅷ.1.警告内容とその理由1.2",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワソラン静注5mg インタビューフォーム Ⅷ.1.警告内容とその理由1.2",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170033_2129402A1040_1_015_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-177",
@@ -11921,11 +11921,11 @@
   "correctIndex": 0,
   "explanation": "併用禁忌の項に「静注用β-遮断剤(プロプラノロール塩酸塩)」が挙げられており、β遮断剤は本剤と同様に陰性変力作用や徐脈作用を有し、両者の心抑制作用が相互に増強されるため、心機能の低下や徐脈があらわれることがあるとされています。",
   "source": {
-   "name": "ワソラン静注5mgインタビューフォーム(第14版・2025年2月改訂) Ⅷ.7.(1)併用禁忌とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワソラン静注5mg インタビューフォーム Ⅷ.7.(1)併用禁忌とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170033_2129402A1040_1_015_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-178",
@@ -11942,11 +11942,11 @@
   "correctIndex": 1,
   "explanation": "「相互作用」の項に「本剤は主として肝代謝酵素CYP3A4で代謝される。本剤はCYP3A及びP-糖蛋白の基質であるとともにCYP3A4及びP-糖蛋白に対して阻害作用を有する」と記載されています。",
   "source": {
-   "name": "ワソラン静注5mgインタビューフォーム(第14版・2025年2月改訂) Ⅷ.7.相互作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ワソラン静注5mg インタビューフォーム Ⅷ.7.相互作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/170033_2129402A1040_1_015_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-179",
@@ -11963,11 +11963,11 @@
   "correctIndex": 2,
   "explanation": "「開発の経緯」に「山之内製薬(現 アステラス製薬)中央研究所では、1971年以降、光に対して安定でかつ水に溶ける性質を有する多くの1,4-ジヒドロピリジン誘導体を合成し、脳血管拡張作用、血圧低下作用、カルシウム拮抗作用及び急性毒性を検討し、1972年に静脈内投与及び経口投与可能なニカルジピン塩酸を見出した」と記載されています。",
   "source": {
-   "name": "ペルジピン錠インタビューフォーム(第22版・2023年5月改訂、LTLファーマ株式会社) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペルジピン錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/171911_2149019B1059_2_003_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-180",
@@ -11984,11 +11984,11 @@
   "correctIndex": 3,
   "explanation": "「ステム」の項に「ニフェジピン系カルシウムチャネル拮抗薬:-dipine」と記載されています。",
   "source": {
-   "name": "ペルジピン錠インタビューフォーム(第22版・2023年5月改訂) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペルジピン錠 インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/171911_2149019B1059_2_003_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-181",
@@ -12005,11 +12005,11 @@
   "correctIndex": 0,
   "explanation": "「作用部位・作用機序」に「ニカルジピン塩酸塩は、血管平滑筋細胞中へのCa2+の取り込みを抑制することにより、血管拡張作用を発揮する。ニカルジピン塩酸塩は、血管平滑筋において心筋の30,000倍の強いカルシウム拮抗作用を示し、血管選択性は他のカルシウム拮抗薬(ニフェジピン、ベラパミル、ジルチアゼム)より高かった」と記載されています。",
   "source": {
-   "name": "ペルジピン錠インタビューフォーム(第22版・2023年5月改訂) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペルジピン錠 インタビューフォーム Ⅵ.2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/171911_2149019B1059_2_003_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-182",
@@ -12026,11 +12026,11 @@
   "correctIndex": 1,
   "explanation": "「薬効を裏付ける試験成績」の血管平滑筋弛緩作用の項に「ニカルジピン塩酸塩は、イヌ摘出冠動脈での実験においてKイオンにより誘発された収縮を用量依存的に弛緩した。その作用はニフェジピンの約10倍、ベラパミルの約1,000倍強かった」と記載されています。",
   "source": {
-   "name": "ペルジピン錠インタビューフォーム(第22版・2023年5月改訂) Ⅵ.2.(2)3)血管平滑筋弛緩作用",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペルジピン錠 インタビューフォーム Ⅵ.2.(2)3)血管平滑筋弛緩作用",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/171911_2149019B1059_2_003_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-183",
@@ -12047,11 +12047,11 @@
   "correctIndex": 2,
   "explanation": "「食事・併用薬の影響」の項に、健康成人男子を対象とした試験の結果として「本剤は食後の方が空腹時よりも最高血漿中濃度到達時間が遅れ、その濃度も低く、血漿中濃度曲線下面積(AUC)も小さいことが認められた」と記載されています。",
   "source": {
-   "name": "ペルジピン錠インタビューフォーム(第22版・2023年5月改訂) Ⅶ.1.(4)1)食事の影響",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペルジピン錠 インタビューフォーム Ⅶ.1.(4)1)食事の影響",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/171911_2149019B1059_2_003_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-184",
@@ -12068,11 +12068,11 @@
   "correctIndex": 3,
   "explanation": "「代謝物の活性の有無及び活性比、存在比率」の項に「ニカルジピンの代謝物M-1~M-9とM-11の血管拡張作用はニカルジピンの1/100以下であるが、M-10には1/10の作用が認められたことから、M-10について血漿中濃度を測定した。その結果、本剤40mg(20mg錠2錠)を健康人に投与したときの血漿中にはM-10は検出されなかった。従って、ニカルジピンを投与したときの血管拡張作用に代謝物はほとんど関与していないと考えられた」と記載されています。",
   "source": {
-   "name": "ペルジピン錠インタビューフォーム(第22版・2023年5月改訂) Ⅶ.6.(4)代謝物の活性の有無及び活性比、存在比率",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペルジピン錠 インタビューフォーム Ⅶ.6.(4)代謝物の活性の有無及び活性比、存在比率",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/171911_2149019B1059_2_003_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-185",
@@ -12089,11 +12089,11 @@
   "correctIndex": 0,
   "explanation": "禁忌の項に「頭蓋内出血で止血が完成していないと推定される患者」が挙げられており、その理由として「出血が促進する可能性がある」と記載されています。あわせて「脳卒中急性期で頭蓋内圧が亢進している患者」「妊婦又は妊娠している可能性のある女性」も禁忌とされています。",
   "source": {
-   "name": "ペルジピン錠インタビューフォーム(第22版・2023年5月改訂) Ⅷ.2.禁忌内容とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ペルジピン錠 インタビューフォーム Ⅷ.2.禁忌内容とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/171911_2149019B1059_2_003_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-186",
@@ -12110,11 +12110,11 @@
   "correctIndex": 1,
   "explanation": "「開発の経緯」に「ドキサゾシンは1977年ファイザー社中央研究所(英国)に於いて開発された化合物で、交感神経α1受容体を選択的に遮断して末梢血管抵抗を減少させる降圧薬である。その構造上の特徴は、母核にキナゾリン核を有し、その側鎖中にベンゾジオキサン環を有することにより、母化合物であるプラゾシンよりさらに選択性の高いα1受容体遮断作用が得られ、また、血中濃度半減期も10~16時間と長く、臨床的に1日1回投与による治療効果が期待された」と記載されています。",
   "source": {
-   "name": "カルデナリン錠インタビューフォーム(第5版・2026年3月改訂、ヴィアトリス製薬合同会社) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルデナリン錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149026F1026_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-187",
@@ -12131,11 +12131,11 @@
   "correctIndex": 2,
   "explanation": "「名称の由来」に「心血管系(cardiovascular)に作用することを意味する英語と、アドレナリンを減少させる(deadrenaline)という意味合いを合成して命名した」と記載されています。",
   "source": {
-   "name": "カルデナリン錠インタビューフォーム(第5版・2026年3月改訂) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルデナリン錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149026F1026_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-188",
@@ -12152,11 +12152,11 @@
   "correctIndex": 3,
   "explanation": "「ステム」の項に「プラゾシン系降圧薬:-azosin」「ベンゾジオキサン類:-oxan(e)」と記載されています。",
   "source": {
-   "name": "カルデナリン錠インタビューフォーム(第5版・2026年3月改訂) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルデナリン錠 インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149026F1026_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-189",
@@ -12173,11 +12173,11 @@
   "correctIndex": 0,
   "explanation": "「薬効を裏付ける試験成績」に「ウサギ摘出肺動脈を用いた実験でドキサゾシンのα1受容体への選択性指数(α2/α1)は600以上、プラゾシン289、フェントラミンでは0.12であり、ドキサゾシンの選択性はプラゾシンの2倍、フェントラミンの約5000倍優れている」と記載されています。",
   "source": {
-   "name": "カルデナリン錠インタビューフォーム(第5版・2026年3月改訂) Ⅵ.2.(2)1)α1受容体選択性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルデナリン錠 インタビューフォーム Ⅵ.2.(2)1)α1受容体選択性",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149026F1026_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-190",
@@ -12194,11 +12194,11 @@
   "correctIndex": 1,
   "explanation": "「製品の治療学的特性」に「主に胆汁排泄であるため、腎機能障害を伴う高血圧症患者にも通常用量投与が可能である」と記載されています。腎機能正常の高血圧症患者と腎機能障害を伴う高血圧症患者で血漿中濃度の推移に有意差を認めなかったことが臨床試験でも確認されています。",
   "source": {
-   "name": "カルデナリン錠インタビューフォーム(第5版・2026年3月改訂) Ⅰ.2.製品の治療学的特性(3)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルデナリン錠 インタビューフォーム Ⅰ.2.製品の治療学的特性(3)",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149026F1026_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-191",
@@ -12215,11 +12215,11 @@
   "correctIndex": 2,
   "explanation": "併用注意の項に「ホスホジエステラーゼ5阻害作用を有する薬剤(バルデナフィル塩酸塩水和物、タダラフィル、シルデナフィルクエン酸塩)」が挙げられており、「併用によりめまい等の自覚症状を伴う症候性低血圧を来したとの報告がある」「血管拡張作用による降圧作用を有するため、本剤の降圧作用を増強することがある」と記載されています。",
   "source": {
-   "name": "カルデナリン錠インタビューフォーム(第5版・2026年3月改訂) Ⅷ.7.(2)併用注意とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルデナリン錠 インタビューフォーム Ⅷ.7.(2)併用注意とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149026F1026_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-192",
@@ -12236,11 +12236,11 @@
   "correctIndex": 3,
   "explanation": "「過量投与」の項に「13.1 症状 過量投与により低血圧を起こす可能性がある。13.2 処置 本剤は蛋白結合率が高いため、透析は有用ではない」と記載されています。",
   "source": {
-   "name": "カルデナリン錠インタビューフォーム(第5版・2026年3月改訂) Ⅷ.10.過量投与",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルデナリン錠 インタビューフォーム Ⅷ.10.過量投与",
+   "url": "https://www.info.pmda.go.jp/go/interview/4/671450_2149026F1026_4_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-193",
@@ -12257,11 +12257,11 @@
   "correctIndex": 0,
   "explanation": "「開発の経緯」に「クロニジン塩酸塩はドイツBoehringer Ingelheim社により1966年に開発された高血圧症治療薬である。我国においては、カタプレス錠の販売名で1969年5月に輸入承認を取得し、1970年7月より発売された」と記載されています。",
   "source": {
-   "name": "カタプレス錠インタビューフォーム(第1版・2022年5月作成、株式会社Medical Parkland) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/785117_2149001F1034_2_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-194",
@@ -12278,11 +12278,11 @@
   "correctIndex": 1,
   "explanation": "「名称の由来」に「Cut-Pressureの意に因んだもの」と記載されています。",
   "source": {
-   "name": "カタプレス錠インタビューフォーム(第1版・2022年5月作成) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/785117_2149001F1034_2_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-195",
@@ -12299,11 +12299,11 @@
   "correctIndex": 2,
   "explanation": "「ステム」の項に「降圧剤，クロニジン誘導体：－onidine」と記載されています。",
   "source": {
-   "name": "カタプレス錠インタビューフォーム(第1版・2022年5月作成) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠 インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/785117_2149001F1034_2_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-196",
@@ -12320,11 +12320,11 @@
   "correctIndex": 3,
   "explanation": "「作用部位・作用機序」に「脳幹部のα2受容体に選択的に作用して、交感神経緊張を抑制することにより、末梢血管を拡張させ血圧を降下させる」と記載されています。作用部位は延髄の血管運動中枢とされています。",
   "source": {
-   "name": "カタプレス錠インタビューフォーム(第1版・2022年5月作成) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠 インタビューフォーム Ⅵ.2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/785117_2149001F1034_2_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-197",
@@ -12341,11 +12341,11 @@
   "correctIndex": 0,
   "explanation": "「重要な基本的注意」に「本剤を投与している患者で急に投与を中止すると、まれに血圧の上昇、神経過敏、頻脈、不安感、頭痛等のリバウンド現象があらわれることがあるので、投与を中止しなければならない場合には、高血圧治療で、一般に行われているように、投与量を徐々に減らすこと」と記載されています。",
   "source": {
-   "name": "カタプレス錠インタビューフォーム(第1版・2022年5月作成) Ⅷ.6.重要な基本的注意とその理由及び処置方法",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠 インタビューフォーム Ⅷ.6.重要な基本的注意とその理由及び処置方法",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/785117_2149001F1034_2_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-198",
@@ -12362,11 +12362,11 @@
   "correctIndex": 1,
   "explanation": "併用注意の項に「β遮断剤」が挙げられており、「本剤の投与中止後のリバウンド現象が強められる可能性があるので、本剤の投与を中止する場合には、β遮断剤を先に中止し、数日間経過を観察した後、本剤の投与を中止すること」と記載されています。機序として、本剤の急激な中止により血中ノルエピネフリンが上昇し、β遮断剤併用時はβ受容体が遮断されているためノルエピネフリンのα受容体刺激作用が増強され血圧が急激に上昇するとされています。",
   "source": {
-   "name": "カタプレス錠インタビューフォーム(第1版・2022年5月作成) Ⅷ.7.(2)併用注意とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠 インタビューフォーム Ⅷ.7.(2)併用注意とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/785117_2149001F1034_2_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-199",
@@ -12383,11 +12383,11 @@
   "correctIndex": 2,
   "explanation": "「過量投与」の症状の項に「過量投与した場合、交感神経抑制によって一般的に認められる瞳孔収縮、嗜眠、徐脈、低血圧、低体温、昏睡、無呼吸等の症状が発現する。また、末梢のα1受容体の刺激による血圧上昇が起こる可能性もある」と記載されています。処置は注意深くモニタリングし、必要に応じて対症療法を行うこととされています。",
   "source": {
-   "name": "カタプレス錠インタビューフォーム(第1版・2022年5月作成) Ⅷ.13.過量投与",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カタプレス錠 インタビューフォーム Ⅷ.13.過量投与",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/785117_2149001F1034_2_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-200",
@@ -12404,11 +12404,11 @@
   "correctIndex": 3,
   "explanation": "「開発の経緯」に「ヒドララジンは抗ヒスタミン作用を持つヒドララジン誘導体を探求する目的で1950年にCIBA社（現ノバルティス ファーマ株式会社）Drueyらにより合成された化合物である。ヒドララジンは抗ヒスタミン作用より、血圧降下作用の強いことが見いだされ…1954年に国内で承認を受け発売された」と記載されています。なお2016年11月よりサンファーマ株式会社が承継、販売移管を受けました。",
   "source": {
-   "name": "アプレゾリン錠インタビューフォーム(第9版・2021年12月改訂、サンファーマ株式会社) Ⅰ-1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン錠 インタビューフォーム Ⅰ-1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480866_2142004F2025_1_4F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-201",
@@ -12425,11 +12425,11 @@
   "correctIndex": 0,
   "explanation": "「Ⅱ-1.販売名 (3)名称の由来」の項には「特になし」と記載されており、他の多くの医薬品と異なり、名称の由来について特段の説明は付されていません。",
   "source": {
-   "name": "アプレゾリン錠インタビューフォーム(第9版・2021年12月改訂) Ⅱ-1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン錠 インタビューフォーム Ⅱ-1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480866_2142004F2025_1_4F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-202",
@@ -12446,11 +12446,11 @@
   "correctIndex": 1,
   "explanation": "「作用部位・作用機序」に「降圧作用については、まだ十分に解明されていないが、末梢細動脈の血管平滑筋に直接作用し、血管を拡張することが主作用であると考えられている」と記載されています。",
   "source": {
-   "name": "アプレゾリン錠インタビューフォーム(第9版・2021年12月改訂) Ⅵ-2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン錠 インタビューフォーム Ⅵ-2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480866_2142004F2025_1_4F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-203",
@@ -12467,11 +12467,11 @@
   "correctIndex": 2,
   "explanation": "「代謝部位及び代謝経路」に「主に肝臓でN-acetyltransferaseによりアセチル化され不活化する」「ヒトでの代謝経路としてはN-アセチル化が重要であり、アセチル化能が生体内利用率に影響を及ぼすと考えられている」と記載されています。慎重投与の項でも、腎・肝機能障害のある患者ではこの代謝・排泄の遅延により降圧作用及び副作用が増大するおそれがあるとされています。",
   "source": {
-   "name": "アプレゾリン錠インタビューフォーム(第9版・2021年12月改訂) Ⅶ-5.(1)代謝部位及び代謝経路",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン錠 インタビューフォーム Ⅶ-5.(1)代謝部位及び代謝経路",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480866_2142004F2025_1_4F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-204",
@@ -12488,11 +12488,11 @@
   "correctIndex": 3,
   "explanation": "「禁忌」の項に「虚血性心疾患のある患者〔反射性交感神経亢進により、心臓の仕事量が増加し、症状を悪化させるおそれがある。〕」と明記されています。ほかに大動脈弁狭窄等による心不全のある患者、解離性大動脈瘤のある患者、頭蓋内出血急性期の患者等も禁忌とされています。",
   "source": {
-   "name": "アプレゾリン錠インタビューフォーム(第9版・2021年12月改訂) Ⅷ-2.禁忌内容(原則禁忌を含む)とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン錠 インタビューフォーム Ⅷ-2.禁忌内容(原則禁忌を含む)とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480866_2142004F2025_1_4F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-205",
@@ -12509,11 +12509,11 @@
   "correctIndex": 0,
   "explanation": "「乳汁中への移行性」の項に「移行する」とあり、参考として「出産8週後の32歳女性、ヒドララジン150mgを1日3回分割投与し、ヒドララジン投与2時間後の血漿中ヒドララジン濃度は580nmol/Lに対し、乳汁中濃度は792nmol/Lであったとする報告がある。この時のmilk/plasma比は1.4であった」と記載されています。「妊婦、産婦、授乳婦等への投与」の項でも、本剤投与中は授乳を避けさせることとされています。",
   "source": {
-   "name": "アプレゾリン錠インタビューフォーム(第9版・2021年12月改訂) Ⅶ-4.(3)乳汁中への移行性",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン錠 インタビューフォーム Ⅶ-4.(3)乳汁中への移行性",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480866_2142004F2025_1_4F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-206",
@@ -12530,11 +12530,11 @@
   "correctIndex": 1,
   "explanation": "「過量投与」の項に「徴候・症状:主要な症状は心血管系障害（頻脈、心悸亢進、低血圧、心筋虚血、不整脈、狭心症、循環虚脱、ショック等）である。他に乏尿、無尿、意識障害、振戦、痙攣、低体温、嘔吐、全身潮紅、発汗等」と記載されています。処置としては催吐・胃内容物吸引・胃洗浄・活性炭投与のほか、低血圧には両下肢挙上等の対症療法が挙げられています。",
   "source": {
-   "name": "アプレゾリン錠インタビューフォーム(第9版・2021年12月改訂) Ⅷ-13.過量投与",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アプレゾリン錠 インタビューフォーム Ⅷ-13.過量投与",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480866_2142004F2025_1_4F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-207",
@@ -12551,11 +12551,11 @@
   "correctIndex": 2,
   "explanation": "「開発の経緯」に「ラジレスの有効成分であるアリスキレンは、1994年にチバガイギー社（現ノバルティスファーマ社）で合成されたオクタンアミド化合物で…レニンを直接的に阻害する新規の作用機序を有する経口降圧薬である」「日本においては、高血圧症を適応症として2009年7月に承認された」と記載されています。なお2018年1月に株式会社オーファンパシフィックが製造販売承認を承継しました。",
   "source": {
-   "name": "ラジレス錠インタビューフォーム(第14版・2025年9月改訂、株式会社オーファンパシフィック) Ⅰ.1.開発の経緯",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠 インタビューフォーム Ⅰ.1.開発の経緯",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/181251_2149047F1028_2_01_04F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-208",
@@ -12572,11 +12572,11 @@
   "correctIndex": 3,
   "explanation": "「名称の由来」に「レニン-アンジオテンシン系（RAS）を抑制する（less）。（ラテン語から由来）」と記載されています。",
   "source": {
-   "name": "ラジレス錠インタビューフォーム(第14版・2025年9月改訂) Ⅱ.1.(3)名称の由来",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠 インタビューフォーム Ⅱ.1.(3)名称の由来",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/181251_2149047F1028_2_01_04F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-209",
@@ -12593,11 +12593,11 @@
   "correctIndex": 0,
   "explanation": "「ステム」の項に「レニン阻害薬：－kiren」と記載されています。",
   "source": {
-   "name": "ラジレス錠インタビューフォーム(第14版・2025年9月改訂) Ⅱ.2.(3)ステム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠 インタビューフォーム Ⅱ.2.(3)ステム",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/181251_2149047F1028_2_01_04F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-210",
@@ -12614,11 +12614,11 @@
   "correctIndex": 1,
   "explanation": "「絶対バイオアベイラビリティ（生物学的利用率）」の項に「約2～3％〔2.6±0.8％、外国人健康成人9例を対象に、空腹時にアリスキレン20mgを単回静脈内投与又は75mg（カプセル剤）を単回経口投与し、未変化体のAUCより算出〕」と記載されています。「重要な基本的注意」でも、本剤はバイオアベイラビリティが低く個体間及び個体内変動が大きいため、臨床用量で推定される血中濃度を上回る可能性があるとされています。",
   "source": {
-   "name": "ラジレス錠インタビューフォーム(第14版・2025年9月改訂) Ⅶ.4.(1)絶対バイオアベイラビリティ",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠 インタビューフォーム Ⅶ.4.(1)絶対バイオアベイラビリティ",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/181251_2149047F1028_2_01_04F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-211",
@@ -12635,11 +12635,11 @@
   "correctIndex": 2,
   "explanation": "「代謝部位及び代謝経路」に「アリスキレンを経口投与したときの代謝の程度は非常に小さく、血漿及び排泄物中の主要構成成分はアリスキレン未変化体で、代謝されるのは少量であると考えられる…アリスキレンの主な代謝酵素はCYP3A4である」と記載されています。",
   "source": {
-   "name": "ラジレス錠インタビューフォーム(第14版・2025年9月改訂) Ⅶ.6.(1)代謝部位及び代謝経路",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠 インタビューフォーム Ⅶ.6.(1)代謝部位及び代謝経路",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/181251_2149047F1028_2_01_04F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-212",
@@ -12656,11 +12656,11 @@
   "correctIndex": 3,
   "explanation": "「併用禁忌」にイトラコナゾールが挙げられ、「本剤の血中濃度が上昇するおそれがある」「本剤のP糖蛋白（Pgp）を介した排出がこれらの薬剤により抑制されると考えられる」と記載されています。外国人データでは、イトラコナゾール100mgと本剤150mgを併用投与したとき、アリスキレンのCmaxは約5.8倍、AUCは約6.5倍に増加したとされています。",
   "source": {
-   "name": "ラジレス錠インタビューフォーム(第14版・2025年9月改訂) Ⅷ.7.(1)併用禁忌とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠 インタビューフォーム Ⅷ.7.(1)併用禁忌とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/181251_2149047F1028_2_01_04F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-213",
@@ -12677,11 +12677,11 @@
   "correctIndex": 0,
   "explanation": "「アンジオテンシン変換酵素阻害剤、アンジオテンシンⅡ受容体拮抗剤」との併用禁忌の解説に「心血管及び腎イベントの発症リスクの高い、腎障害又は腎機能低下を伴った2型糖尿病患者を対象に実施した国際共同試験ALTITUDE…の第二次中間解析で、アンジオテンシン変換酵素阻害剤又はアンジオテンシンⅡ受容体拮抗剤を含む十分な標準治療に本剤を上乗せ投与した場合、非致死性脳卒中、腎機能障害、高カリウム血症及び低血圧のリスクが高まる可能性が示唆されたため」独立データモニタリング委員会が試験の中止を勧告したと記載されています。これを踏まえ、ACE阻害剤又はARBを投与中の糖尿病患者(他の降圧治療でもなお血圧コントロールが著しく不良の患者を除く)への本剤投与は禁忌とされています。",
   "source": {
-   "name": "ラジレス錠インタビューフォーム(第14版・2025年9月改訂) Ⅷ.7.(1)併用禁忌とその理由<参考>ALTITUDE試験",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ラジレス錠 インタビューフォーム Ⅷ.7.(1)併用禁忌とその理由<参考>ALTITUDE試験",
+   "url": "https://www.info.pmda.go.jp/go/interview/2/181251_2149047F1028_2_01_04F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-214",
@@ -12698,11 +12698,11 @@
   "correctIndex": 1,
   "explanation": "「開発の経緯」に「ヒドロクロロチアジド錠及びヒドロクロロチアジド口腔内崩壊錠は降圧利尿剤であり、本邦では1959年(普通錠)に上市されている」と記載され、「国際誕生年月日」も1959年1月とされています。",
   "source": {
-   "name": "ヒドロクロロチアジド錠12.5mg/25mg「トーワ」及びヒドロクロロチアジドOD錠12.5mg「トーワ」インタビューフォーム(第19版・2024年5月改訂、東和薬品株式会社) Ⅰ.1.開発の経緯/Ⅹ.9.国際誕生年月日 ※先発品ダイクロトライド錠は販売中止のため、本設問は現在国内で入手可能な後発医薬品(東和薬品)のインタビューフォームを情報源としている",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 インタビューフォーム Ⅰ.1.開発の経緯/Ⅹ.9.国際誕生年月日",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480235_2132004F1103_1_191_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-215",
@@ -12719,11 +12719,11 @@
   "correctIndex": 2,
   "explanation": "「同一成分・同効薬」の項に「同一成分:ダイクロトライド錠25mg(販売中止)」と明記されています。",
   "source": {
-   "name": "ヒドロクロロチアジド錠「トーワ」インタビューフォーム(第19版・2024年5月改訂) Ⅹ.8.同一成分・同効薬",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 インタビューフォーム Ⅹ.8.同一成分・同効薬",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480235_2132004F1103_1_191_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-216",
@@ -12740,11 +12740,11 @@
   "correctIndex": 3,
   "explanation": "「作用部位・作用機序」に「腎遠位曲尿細管におけるNa+とCl-の再吸収を抑制し、水の排泄を促進させる。炭酸脱水酵素阻害作用も有する。降圧作用は、初期には循環血流量の低下により、長期的には末梢血管の拡張によると考えられている」と記載されています。",
   "source": {
-   "name": "ヒドロクロロチアジド錠「トーワ」インタビューフォーム(第19版・2024年5月改訂) Ⅵ.2.(1)作用部位・作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 インタビューフォーム Ⅵ.2.(1)作用部位・作用機序",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480235_2132004F1103_1_191_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-217",
@@ -12761,11 +12761,11 @@
   "correctIndex": 0,
   "explanation": "「禁忌」の項に「無尿の患者〔本剤の効果が期待できない。〕」と記載されています。ほかに急性腎不全の患者、体液中のナトリウム・カリウムが明らかに減少している患者、チアジド系薬剤又はその類似化合物に対する過敏症の既往歴のある患者等も禁忌です。",
   "source": {
-   "name": "ヒドロクロロチアジド錠「トーワ」インタビューフォーム(第19版・2024年5月改訂) Ⅷ.2.禁忌内容とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 インタビューフォーム Ⅷ.2.禁忌内容とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480235_2132004F1103_1_191_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-218",
@@ -12782,11 +12782,11 @@
   "correctIndex": 1,
   "explanation": "「併用禁忌」にデスモプレシン酢酸塩水和物(ミニリンメルト、男性における夜間多尿による夜間頻尿)が挙げられ、「低ナトリウム血症が発現するおそれがある」「いずれも低ナトリウム血症が発現するおそれがある」と記載されています。",
   "source": {
-   "name": "ヒドロクロロチアジド錠「トーワ」インタビューフォーム(第19版・2024年5月改訂) Ⅷ.7.(1)併用禁忌とその理由",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 インタビューフォーム Ⅷ.7.(1)併用禁忌とその理由",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480235_2132004F1103_1_191_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-219",
@@ -12803,11 +12803,11 @@
   "correctIndex": 2,
   "explanation": "「その他の注意」に「海外で実施された疫学研究において、ヒドロクロロチアジドを投与された患者で、基底細胞癌及び有棘細胞癌のリスクが増加することが報告されている」と記載されています。",
   "source": {
-   "name": "ヒドロクロロチアジド錠「トーワ」インタビューフォーム(第19版・2024年5月改訂) Ⅷ.15.その他の注意",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 インタビューフォーム Ⅷ.15.その他の注意",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480235_2132004F1103_1_191_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-220",
@@ -12824,11 +12824,11 @@
   "correctIndex": 3,
   "explanation": "重大な副作用として「急性近視、閉塞隅角緑内障:急性近視(霧視、視力低下等を含む)、閉塞隅角緑内障があらわれることがあるので、急激な視力の低下や眼痛等の異常が認められた場合には投与を中止し、速やかに眼科医の診察を受けるよう、患者に指導すること」と記載されています。",
   "source": {
-   "name": "ヒドロクロロチアジド錠「トーワ」インタビューフォーム(第19版・2024年5月改訂) Ⅷ.8.(2)重大な副作用と初期症状",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヒドロクロロチアジド錠12.5mg「トーワ」 インタビューフォーム Ⅷ.8.(2)重大な副作用と初期症状",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/480235_2132004F1103_1_191_1F.pdf",
+   "confirmedDate": "2026-08-29"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-221",
