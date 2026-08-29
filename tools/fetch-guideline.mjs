@@ -64,9 +64,15 @@ async function main() {
   const buf = Buffer.from(await res.arrayBuffer());
   writeFileSync(pdfPath, buf);
 
-  // PDFを検索できるテキストに変換する。-layout で段組みの読み順を保ちやすくする
+ /*
+    PDFを検索できるテキストに変換する。
+    -layout は付けない。診療ガイドラインは二段組みのものが多く、
+    -layout を付けると左右の段が1行ずつ交互に混ざってしまい、
+    文として読めなくなるため(推奨文の途中に別の段の文が割り込む)。
+    -layout なしだと読む順どおりに出てくる。
+  */
   try {
-    execFileSync('pdftotext', ['-layout', '-enc', 'UTF-8', pdfPath, txtPath]);
+    execFileSync('pdftotext', ['-enc', 'UTF-8', pdfPath, txtPath]);
   } catch (e) {
     console.error('pdftotext での変換に失敗しました:', e.message);
     process.exit(1);
