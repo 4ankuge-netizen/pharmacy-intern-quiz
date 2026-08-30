@@ -3185,11 +3185,11 @@
   "correctIndex": 0,
   "explanation": "オラパリブはPARPを阻害して塩基除去修復を妨げ、相同組換え修復ができないBRCA変異等を有するがん細胞では二本鎖切断が修復できずアポトーシスに至る(合成致死)機序で効果を発揮します。",
   "source": {
-   "name": "リムパーザ錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リムパーザ錠100mg 添付文書 薬効分類名(PARP阻害剤)・18. 薬効薬理",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291052F1027_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-054",
@@ -3206,11 +3206,11 @@
   "correctIndex": 1,
   "explanation": "オラパリブは卵巣癌・乳癌・前立腺癌・膵癌など複数のがん種でBRCA遺伝子変異陽性であることがコンパニオン診断により確認された患者に投与されます。",
   "source": {
-   "name": "リムパーザ錠 添付文書(効能・効果に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "リムパーザ錠100mg 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291052F1027_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-055",
@@ -3227,11 +3227,11 @@
   "correctIndex": 2,
   "explanation": "ドセタキセルは体液貯留による浮腫や、アナフィラキシーを含む過敏症反応が重大な副作用として知られています。",
   "source": {
-   "name": "ドセタキセル点滴静注液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドセタキセル点滴静注液20mg/2mL 添付文書 11.1 重大な副作用",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240405A5024_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-056",
@@ -3248,11 +3248,11 @@
   "correctIndex": 3,
   "explanation": "ドセタキセル投与前のステロイド前投薬は、過敏症反応の軽減とあわせて、体液貯留による浮腫の発現・程度を軽減する目的で行われます。",
   "source": {
-   "name": "ドセタキセル点滴静注液 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ドセタキセル点滴静注液20mg/2mL 添付文書 15. その他の注意(外国における前投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240405A5024_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-057",
@@ -15880,21 +15880,21 @@
   "category": "diabetes",
   "difficulty": "advanced",
   "type": "single",
-  "question": "SGLT2阻害薬服用中の患者における周術期のケトアシドーシス予防対策として重要なのはどれか。",
+  "question": "SGLT2阻害薬エンパグリフロジン(ジャディアンス錠)の添付文書で、手術に関連して禁忌とされている患者はどれか。",
   "choices": [
-   "SGLT2阻害薬は周術期のケトアシドーシスと無関係である",
-   "休薬は不要でありむしろ増量する",
-   "手術前の一定期間、SGLT2阻害薬を休薬することが推奨される",
-   "周術期も休薬せず継続することが推奨される"
+   "重症感染症、手術前後、重篤な外傷のある患者",
+   "手術の既往がある患者すべて",
+   "局所麻酔の手術を受けた患者",
+   "内視鏡検査を受ける患者"
   ],
-  "correctIndex": 2,
-  "explanation": "SGLT2阻害薬は周術期の絶食や手術侵襲と相まってケトアシドーシスのリスクを高めることがあるため、手術前の一定期間の休薬が推奨されています。",
+  "correctIndex": 0,
+  "explanation": "ジャディアンス錠(エンパグリフロジン)の添付文書2.3には、重症感染症、手術前後、重篤な外傷のある患者が禁忌として挙げられており、理由は「糖尿病を有する患者ではインスリン注射による血糖管理が望まれるので本剤の投与は適さない」と記載されています。手術の前後は体の状態が大きく変わるため、SGLT2阻害薬ではなくインスリンで血糖を管理する、という考え方です。同じ2.2には重症ケトーシス・糖尿病性昏睡又は前昏睡も禁忌として挙げられています。",
   "source": {
-   "name": "エンパグリフロジン錠 添付文書(手術前後の投与に関する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジャディアンス錠10mg 添付文書 2.3 禁忌",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969023F1023_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-040",
@@ -16142,32 +16142,32 @@
   "correctIndex": 2,
   "explanation": "イプラグリフロジンは1型糖尿病にインスリン製剤との併用で用いられますが、インスリンの代替薬ではないため、本剤投与を理由にインスリンを中止すると急激な高血糖やケトアシドーシスを来すおそれがあります。",
   "source": {
-   "name": "スーグラ錠 添付文書(効能・効果に関連する使用上の注意、警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スーグラ錠25mg 添付文書 7.1 用法及び用量に関連する注意〈1型糖尿病〉",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969018F1022_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-052",
   "category": "diabetes",
   "difficulty": "advanced",
   "type": "single",
-  "question": "リキシセナチド(リキスミア)の特徴として正しいのはどれか。",
+  "question": "インスリン グラルギン/リキシセナチド配合剤(ソリクア配合注)の添付文書に記載されている、リキシセナチドの作用機序として正しいのはどれか。",
   "choices": [
-   "SGLT2阻害薬に分類される",
-   "経口投与のGLP-1受容体作動薬である",
-   "週1回投与のGLP-1受容体作動薬である",
-   "1日1回投与のGLP-1受容体作動薬で、胃排出速度を遅らせる作用が強く食後血糖是正に適するとされる"
+   "GLP-1受容体に結合して細胞内cAMPを上昇させ、グルコース濃度依存的にインスリン分泌を刺激する",
+   "インスリン受容体に直接結合してインスリンと同じ作用を示す",
+   "腎尿細管でのグルコース再吸収を阻害する",
+   "αグルコシダーゼを阻害して糖の吸収を遅らせる"
   ],
-  "correctIndex": 3,
-  "explanation": "リキシセナチドは1日1回朝食前に投与するGLP-1受容体作動薬で、胃排出速度を遅らせる作用が比較的強く、食後血糖の是正に適するとされています。",
+  "correctIndex": 0,
+  "explanation": "ソリクア配合注の添付文書18.1には、リキシセナチドは44個のアミノ酸で構成されるペプチドで、トカゲ由来のエキセンディン-4と類似した合成GLP-1受容体作動薬であり、GLP-1受容体に結合することにより細胞内cAMPを上昇させ、グルコース濃度依存的にインスリン分泌を刺激すると記載されています。N末端の変換によりDPP-4による分解に抵抗性を示す点も特徴です。「グルコース濃度依存的」であるため、低グルコース濃度下では作用を示さないことが灌流ラット膵標本の試験で確認されています。",
   "source": {
-   "name": "リキスミア皮下注 添付文書(用法・用量、薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ソリクア配合注ソロスター 添付文書 18.1 作用機序(リキシセナチド)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969501G1023_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-053",
@@ -16184,11 +16184,11 @@
   "correctIndex": 0,
   "explanation": "ソリクア(インスリン グラルギン+リキシセナチド)とゾルトファイ(インスリン デグルデク+リラグルチド)は、いずれも基礎インスリン製剤とGLP-1受容体作動薬を1本のペン型注入器に配合した注射剤です。",
   "source": {
-   "name": "ソリクア配合注 添付文書(効能・効果、薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ソリクア配合注ソロスター 添付文書 薬効分類名・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969501G1023_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-054",
@@ -16205,11 +16205,11 @@
   "correctIndex": 1,
   "explanation": "チルゼパチドはGIP受容体とGLP-1受容体の両方に結合して活性化する世界初の持続性GIP/GLP-1受容体作動薬(デュアルアゴニスト)です。",
   "source": {
-   "name": "マンジャロ皮下注 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "マンジャロ皮下注2.5mgアテオス 添付文書 薬効分類名・薬効薬理",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499422G1024_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-055",
@@ -16226,11 +16226,11 @@
   "correctIndex": 2,
   "explanation": "チルゼパチドは週1回2.5mgから投与を開始し、4週間投与後に週1回5mgへ増量するなど、患者の状態に応じて2.5mg単位で増量する皮下注射製剤です(最大週1回15mg)。",
   "source": {
-   "name": "マンジャロ皮下注 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "マンジャロ皮下注2.5mgアテオス 添付文書 6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499422G1024_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-056",
@@ -16247,11 +16247,11 @@
   "correctIndex": 3,
   "explanation": "チルゼパチドは悪心・嘔吐・下痢・便秘・食欲減退などの消化器症状が比較的高頻度にみられ、急性膵炎などの重大な副作用にも注意が必要です。",
   "source": {
-   "name": "マンジャロ皮下注 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "マンジャロ皮下注2.5mgアテオス 添付文書 11.2 その他の副作用",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499422G1024_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-057",
@@ -16268,11 +16268,11 @@
   "correctIndex": 0,
   "explanation": "イメグリミンはミトコンドリアへの作用を介して、膵β細胞からのインスリン分泌促進と、肝臓・骨格筋におけるインスリン抵抗性改善の両方の作用を併せ持つ新規クラスの経口血糖降下薬です。",
   "source": {
-   "name": "ツイミーグ錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ツイミーグ錠500mg 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969026F1027_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "diabetes-advanced-058",
@@ -16289,11 +16289,11 @@
   "correctIndex": 1,
   "explanation": "イメグリミンはeGFRが10mL/min/1.73m²未満の患者(透析患者を含む)への投与は推奨されないとされており、腎機能に応じた慎重な投与判断が必要です。",
   "source": {
-   "name": "ツイミーグ錠 添付文書(腎機能障害患者に関する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ツイミーグ錠500mg 添付文書 7. 用法及び用量に関連する注意(腎機能障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969026F1027_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-beginner-001",
@@ -25991,11 +25991,11 @@
   "correctIndex": 3,
   "explanation": "炭酸リチウムの添付文書における効能・効果は「躁病及び躁うつ病の躁状態」であり、双極性障害の躁状態に対する治療薬として用いられます。",
   "source": {
-   "name": "炭酸リチウム錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "炭酸リチウム錠100mg「大正」 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179017F1080_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-052",
@@ -26012,11 +26012,11 @@
   "correctIndex": 0,
   "explanation": "炭酸リチウムは治療域が狭く、血清濃度2.0mEq/Lを超えると振戦・運動失調・意識障害などの中毒症状のリスクが高まるため、定期的な血中濃度モニタリングに基づき減量・休薬が検討されます。",
   "source": {
-   "name": "炭酸リチウム錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "炭酸リチウム錠100mg「大正」 添付文書 7. 用法及び用量に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179017F1080_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-053",
@@ -26033,11 +26033,11 @@
   "correctIndex": 1,
   "explanation": "NSAIDsはプロスタグランジン合成抑制、利尿薬はナトリウム排泄促進を介してリチウムの腎排泄を低下させ、血中濃度上昇による中毒リスクを高めるおそれがあるため併用時は注意が必要です。",
   "source": {
-   "name": "炭酸リチウム錠 添付文書(相互作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "炭酸リチウム錠100mg「大正」 添付文書 10.2 併用注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179017F1080_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-054",
@@ -29225,11 +29225,11 @@
   "correctIndex": 2,
   "explanation": "デュピルマブはIL-4とIL-13が共有するIL-4受容体αサブユニットに結合し、両サイトカインのシグナル伝達を阻害するヒト化モノクローナル抗体です。",
   "source": {
-   "name": "デュピクセント皮下注 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュピクセント皮下注300mgペン 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490405G1024_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-advanced-052",
@@ -29246,11 +29246,11 @@
   "correctIndex": 3,
   "explanation": "デュピルマブはアトピー性皮膚炎、気管支喘息、鼻茸を伴う慢性副鼻腔炎、結節性痒疹、慢性蕁麻疹など複数のアレルギー・免疫疾患に適応を持つ薬剤です。",
   "source": {
-   "name": "デュピクセント皮下注 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュピクセント皮下注300mgペン 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490405G1024_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-advanced-053",
@@ -29267,11 +29267,11 @@
   "correctIndex": 0,
   "explanation": "デュピルマブはアレルギー性結膜炎などの眼症状が特にアトピー性皮膚炎患者で報告されており、注意すべき副作用の一つとされています。",
   "source": {
-   "name": "デュピクセント皮下注 添付文書(副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "デュピクセント皮下注300mgペン 添付文書 11.2 その他の副作用(眼障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4490405G1024_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-advanced-054",
