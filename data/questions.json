@@ -8267,11 +8267,11 @@
   "correctIndex": 2,
   "explanation": "「効能又は効果に関連する注意」5.1に「本剤は、アンジオテンシン変換酵素阻害薬又はアンジオテンシンⅡ受容体拮抗薬から切り替えて投与すること」と記載されています。本剤はACE阻害薬又はARBの前治療により忍容性が確認された患者に、それらから切り替えて投与する薬剤として承認されています。",
   "source": {
-   "name": "エンレスト錠50mg/100mg/200mg他 インタビューフォーム(第8版・2024年3月改訂、ノバルティスファーマ株式会社/大塚製薬株式会社) Ⅴ-2.効能又は効果に関連する注意 5.1",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンレスト錠50mg 添付文書 5.1 効能又は効果に関連する注意〈成人の慢性心不全〉",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190041F1027_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-004",
@@ -8813,11 +8813,11 @@
   "correctIndex": 0,
   "explanation": "「用法及び用量に関連する注意」7.6に「慢性心不全を合併する高血圧症患者では、原則として慢性心不全の用法及び用量に従うこととするが、慢性心不全の発症に先んじて高血圧症の治療目的で本剤を使用している場合等は、患者の状態に応じて適切に用法及び用量を選択すること」と記載されています。",
   "source": {
-   "name": "エンレスト錠50mg/100mg/200mg・粒状錠小児用12.5mg/31.25mg インタビューフォーム(第8版・2024年3月改訂、ノバルティスファーマ株式会社/大塚製薬株式会社) Ⅴ-4.用法及び用量に関連する注意 7.6",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンレスト錠50mg 添付文書 7.6 用法及び用量に関連する注意〈高血圧症〉",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190041F1027_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-030",
@@ -8834,11 +8834,11 @@
   "correctIndex": 1,
   "explanation": "フォシーガ錠の添付文書「18.薬効薬理 18.1作用機序」には、「上記の作用が浸透圧利尿による、体液過剰の補正、血圧低下、前負荷及び後負荷の軽減等の血行動態の改善作用と組み合わさって、腎灌流を改善することが関連している可能性がある」と記載されています。",
   "source": {
-   "name": "フォシーガ錠5mg/フォシーガ錠10mg 添付文書(アストラゼネカ株式会社、2021年8月改訂第3版) 18.薬効薬理 18.1作用機序",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フォシーガ錠5mg 添付文書 18.1 作用機序(慢性腎臓病に対する薬理作用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3969019F1027_2_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-advanced-031",
@@ -15882,12 +15882,12 @@
   "type": "single",
   "question": "SGLT2阻害薬エンパグリフロジン(ジャディアンス錠)の添付文書で、手術に関連して禁忌とされている患者はどれか。",
   "choices": [
-   "重症感染症、手術前後、重篤な外傷のある患者",
-   "手術の既往がある患者すべて",
    "局所麻酔の手術を受けた患者",
+   "手術の既往がある患者すべて",
+   "重症感染症、手術前後、重篤な外傷のある患者",
    "内視鏡検査を受ける患者"
   ],
-  "correctIndex": 0,
+  "correctIndex": 2,
   "explanation": "ジャディアンス錠(エンパグリフロジン)の添付文書2.3には、重症感染症、手術前後、重篤な外傷のある患者が禁忌として挙げられており、理由は「糖尿病を有する患者ではインスリン注射による血糖管理が望まれるので本剤の投与は適さない」と記載されています。手術の前後は体の状態が大きく変わるため、SGLT2阻害薬ではなくインスリンで血糖を管理する、という考え方です。同じ2.2には重症ケトーシス・糖尿病性昏睡又は前昏睡も禁忌として挙げられています。",
   "source": {
    "name": "ジャディアンス錠10mg 添付文書 2.3 禁忌",
@@ -16155,12 +16155,12 @@
   "type": "single",
   "question": "インスリン グラルギン/リキシセナチド配合剤(ソリクア配合注)の添付文書に記載されている、リキシセナチドの作用機序として正しいのはどれか。",
   "choices": [
-   "GLP-1受容体に結合して細胞内cAMPを上昇させ、グルコース濃度依存的にインスリン分泌を刺激する",
+   "αグルコシダーゼを阻害して糖の吸収を遅らせる",
    "インスリン受容体に直接結合してインスリンと同じ作用を示す",
    "腎尿細管でのグルコース再吸収を阻害する",
-   "αグルコシダーゼを阻害して糖の吸収を遅らせる"
+   "GLP-1受容体に結合して細胞内cAMPを上昇させ、グルコース濃度依存的にインスリン分泌を刺激する"
   ],
-  "correctIndex": 0,
+  "correctIndex": 3,
   "explanation": "ソリクア配合注の添付文書18.1には、リキシセナチドは44個のアミノ酸で構成されるペプチドで、トカゲ由来のエキセンディン-4と類似した合成GLP-1受容体作動薬であり、GLP-1受容体に結合することにより細胞内cAMPを上昇させ、グルコース濃度依存的にインスリン分泌を刺激すると記載されています。N末端の変換によりDPP-4による分解に抵抗性を示す点も特徴です。「グルコース濃度依存的」であるため、低グルコース濃度下では作用を示さないことが灌流ラット膵標本の試験で確認されています。",
   "source": {
    "name": "ソリクア配合注ソロスター 添付文書 18.1 作用機序(リキシセナチド)",
@@ -19460,11 +19460,11 @@
   "correctIndex": 0,
   "explanation": "トルバプタンはバソプレシンV2受容体拮抗薬(アクアレティック)で、ループ利尿薬等の他の利尿薬で効果不十分な心不全の体液貯留に用いられます。",
   "source": {
-   "name": "トルバプタン錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "サムタス点滴静注用8mg 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2139403D1020_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-advanced-052",
@@ -19481,11 +19481,11 @@
   "correctIndex": 1,
   "explanation": "カルペリチドはヒト心房性ナトリウム利尿ペプチド(hANP)製剤で、血管拡張作用とナトリウム利尿作用により急性心不全(慢性心不全の急性増悪期を含む)の静注治療に用いられます。",
   "source": {
-   "name": "カルペリチド(遺伝子組換え)注射用 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ハンプ注射用1000 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2179400D1022_3_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-advanced-053",
@@ -19502,11 +19502,11 @@
   "correctIndex": 2,
   "explanation": "サクビトリルバルサルタンはネプリライシン阻害薬とARBの合剤(ARNI)で、ACE阻害薬と併用または直後の切り替えは血管浮腫リスクが高まるため、ACE阻害薬中止後36時間以上の休薬期間を空けて投与を開始する必要があります。",
   "source": {
-   "name": "サクビトリルバルサルタンナトリウム水和物錠 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンレスト錠50mg 添付文書 2.2 禁忌(ACE阻害薬投与中止から36時間以内)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190041F1027_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-advanced-054",
@@ -19523,32 +19523,32 @@
   "correctIndex": 3,
   "explanation": "イバブラジンは洞房結節のIf電流(HCNチャネル)を阻害し心拍数のみを低下させる薬剤で、洞調律かつ投与開始時の安静時心拍数が75回/分以上の慢性心不全患者(β遮断薬を含む標準治療下)に用いられます。心房細動には適応がありません。",
   "source": {
-   "name": "イバブラジン塩酸塩錠 添付文書(効能・効果、効能・効果に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "コララン錠2.5mg 添付文書 4. 効能又は効果・5.1 効能又は効果に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190039F1020_1_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-advanced-055",
   "category": "heart-disease",
   "difficulty": "advanced",
   "type": "single",
-  "question": "ニコランジルの薬理作用と代表的な副作用の組み合わせとして正しいのはどれか。",
+  "question": "ニコランジル錠の添付文書に記載されている作用機序と重大な副作用の組み合わせとして正しいのはどれか。",
   "choices": [
-   "NO供与作用とATP感受性Kチャネル開口作用を併せ持ち、口内・肛門潰瘍が重大な副作用として知られる",
-   "β受容体遮断作用を持ち、徐脈が代表的な副作用である",
-   "強心配糖体作用を持ち、不整脈が代表的な副作用である",
-   "Ca拮抗作用のみを持ち、歯肉増殖が代表的な副作用である"
+   "冠血管平滑筋のグアニル酸サイクラーゼ活性化によるcyclic-GMP産生増大と膜部位の過分極が考えられており、重大な副作用に口内潰瘍・舌潰瘍・肛門潰瘍・消化管潰瘍がある",
+   "カルシウム拮抗作用が主体で、重大な副作用は低血糖である",
+   "β受容体遮断作用が主体で、重大な副作用は気管支痙攣である",
+   "利尿作用が主体で、重大な副作用は低カリウム血症である"
   ],
   "correctIndex": 0,
-  "explanation": "ニコランジルは硝酸薬同様のNO供与作用とATP感受性Kチャネル開口作用を併せ持つ狭心症治療薬で、長期投与により口内潰瘍・舌潰瘍・肛門潰瘍などの消化管潰瘍が重大な副作用として知られています。",
+  "explanation": "ニコランジル錠の添付文書18.1には、冠血管拡張作用については亜硝酸薬と同様に冠血管平滑筋のグアニル酸サイクラーゼ活性化によるcyclic-GMP産生量の増大が考えられ、これに加えて冠血流増加作用及び冠血管攣縮抑制作用では膜部位の過分極などが検討されていると記載されています。重大な副作用は11.1.1肝機能障害・黄疸、11.1.2血小板減少、11.1.3口内潰瘍・舌潰瘍・肛門潰瘍・消化管潰瘍です。原因不明の口内炎や肛門の痛みを訴える患者では、この薬を服用していないか確認する価値があります。",
   "source": {
-   "name": "ニコランジル錠 添付文書(効能・効果、重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ニコランジル錠5mg「サワイ」 添付文書 18.1 作用機序・11.1 重大な副作用",
+   "url": "https://www.info.pmda.go.jp/go/pack/2171017F2156_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-advanced-056",
@@ -19565,11 +19565,11 @@
   "correctIndex": 1,
   "explanation": "PCSK9阻害薬はPCSK9によるLDL受容体の分解を抑制することで肝細胞表面のLDL受容体を増加させ、血中LDLコレステロールの取り込みを促進して低下させます。",
   "source": {
-   "name": "レパーサ皮下注 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レパーサ皮下注140mgペン 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2189401G2026_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-advanced-057",
@@ -19586,11 +19586,11 @@
   "correctIndex": 2,
   "explanation": "エボロクマブは家族性高コレステロール血症、及び心血管イベントの発現リスクが高くHMG-CoA還元酵素阻害薬(スタチン)で効果不十分または適さない高コレステロール血症に適応があります。",
   "source": {
-   "name": "レパーサ皮下注 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レパーサ皮下注140mgペン 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2189401G2026_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "heart-disease-advanced-058",
@@ -19607,11 +19607,11 @@
   "correctIndex": 3,
   "explanation": "インクリシランはPCSK9をコードするmRNAを標的とするsiRNA医薬品で、肝細胞内でPCSK9 mRNAの分解を促進し、初回投与後は年2回程度の皮下注射で効果が持続する点が抗体医薬(エボロクマブ等)との大きな違いです。",
   "source": {
-   "name": "レクビオ皮下注 添付文書(薬効薬理、用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レクビオ皮下注300mgシリンジ 添付文書 18.1 作用機序・6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/2189403G1029_1_01/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-beginner-001",
@@ -22337,11 +22337,11 @@
   "correctIndex": 0,
   "explanation": "イダルシズマブはダビガトランに対する特異的中和剤で、重篤な出血時や緊急手術時に用いられます。",
   "source": {
-   "name": "イダルシズマブ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プリズバインド静注液2.5g 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399412A1027_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-advanced-031",
@@ -22358,11 +22358,11 @@
   "correctIndex": 1,
   "explanation": "アンデキサネット アルファは第Xa因子阻害薬に対する中和剤として、重篤な出血時の対応に用いられます。",
   "source": {
-   "name": "アンデキサネット アルファ注射液 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オンデキサ静注用200mg 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399414D1022_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-advanced-032",
@@ -22589,11 +22589,11 @@
   "correctIndex": 0,
   "explanation": "CYP2C19の低代謝型を持つ患者では、クロピドグレルの活性代謝物産生が低下し抗血小板効果が減弱する可能性が指摘されています。",
   "source": {
-   "name": "クロピドグレル硫酸塩錠 添付文書(薬物動態)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "プラビックス錠25mg 添付文書 10. 相互作用(CYP2C19)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3399008F1025_1_31/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-advanced-043",
@@ -22778,11 +22778,11 @@
   "correctIndex": 1,
   "explanation": "クラゾセンタンはエンドセリン受容体拮抗薬で、脳動脈瘤によるくも膜下出血術後の脳血管攣縮及びそれに伴う脳梗塞・脳虚血症状の発症抑制を目的として、発症後早期から持続静注で投与されます。",
   "source": {
-   "name": "クラゾセンタンナトリウム点滴静注用 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ピヴラッツ点滴静注液150mg 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190418A1023_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-advanced-052",
@@ -22799,11 +22799,11 @@
   "correctIndex": 2,
   "explanation": "クラゾセンタンはエンドセリン受容体拮抗薬で、血管収縮作用を持つエンドセリンの働きを抑制することで脳血管攣縮を抑制します。",
   "source": {
-   "name": "クラゾセンタンナトリウム点滴静注用 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ピヴラッツ点滴静注液150mg 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190418A1023_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cerebrovascular-advanced-053",
@@ -22820,11 +22820,11 @@
   "correctIndex": 3,
   "explanation": "クラゾセンタンは体液貯留(胸水・肺水腫・脳浮腫)や頭蓋内出血、硬膜外血腫などが重大な副作用として知られており、投与中の観察が重要です。",
   "source": {
-   "name": "クラゾセンタンナトリウム点滴静注用 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ピヴラッツ点滴静注液150mg 添付文書 11.1.1 重大な副作用(体液貯留)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2190418A1023_1_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-beginner-001",
@@ -24962,11 +24962,11 @@
   "correctIndex": 2,
   "explanation": "クロザピンは治療抵抗性統合失調症に有効とされますが、無顆粒球症のリスクがあるため定期的な血液検査によるモニタリングが必須です。",
   "source": {
-   "name": "統合失調症薬物治療ガイドライン2022(日本神経精神薬理学会・日本臨床精神神経薬理学会編)、クロザピン錠 添付文書",
-   "url": "",
-   "confirmedDate": ""
+   "name": "クロザリル錠(クロザピン) 添付文書 薬効分類名(治療抵抗性統合失調症治療薬)・1.1 警告(CPMS)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179049F1021_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-003",
@@ -25403,11 +25403,11 @@
   "correctIndex": 3,
   "explanation": "クロザピンは無顆粒球症のリスクがあるため、登録制の血液モニタリングプログラムに基づく定期的な血液検査が治療継続の必須条件とされています。",
   "source": {
-   "name": "クロザピン錠 添付文書(警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "クロザリル錠25mg 添付文書 1.1 警告(CPMS)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1179049F1021_1_22/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-024",
@@ -25487,11 +25487,11 @@
   "correctIndex": 3,
   "explanation": "バルプロ酸は血中濃度と効果・副作用に一定の関連があるとされ、モニタリングにより発作抑制効果と副作用のバランスを確認します。",
   "source": {
-   "name": "バルプロ酸ナトリウム錠 インタビューフォーム",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バルプロ酸ナトリウム錠100mg 添付文書 16.8.1 有効血中濃度",
+   "url": "https://www.info.pmda.go.jp/go/pack/1139004F1088_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-028",
@@ -25739,11 +25739,11 @@
   "correctIndex": 3,
   "explanation": "遅発性ジスキネジアに対しては、VMAT2阻害薬(バルベナジンなど)が治療選択肢として承認されています。",
   "source": {
-   "name": "ジスバルカプセル(バルベナジン)添付文書(効能・効果、用法及び用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ジスバルカプセル20mg 添付文書 4. 効能又は効果(遅発性ジスキネジア)",
+   "url": "https://www.info.pmda.go.jp/go/pack/1190031M1028_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "psychiatric-advanced-040",
@@ -29288,32 +29288,32 @@
   "correctIndex": 1,
   "explanation": "経口JAK阻害薬は静脈血栓塞栓症(肺塞栓症・深部静脈血栓症)や悪性腫瘍、重篤な感染症などが重大な副作用として添付文書に記載されています。",
   "source": {
-   "name": "トファシチニブクエン酸塩錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゼルヤンツ錠5mg 添付文書 11.1 重大な副作用(静脈血栓塞栓症)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999034F1020_2_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-advanced-055",
   "category": "immune-allergy",
   "difficulty": "advanced",
   "type": "single",
-  "question": "心血管リスク因子を有する関節リウマチ患者へのJAK阻害薬使用に関する近年の知見として正しいのはどれか。",
+  "question": "トファシチニブ(JAK阻害薬)の添付文書「効能又は効果に関連する注意」に、心血管系のリスクについて記載されている内容として正しいのはどれか。",
   "choices": [
-   "心血管リスクとJAK阻害薬の関連は否定されている",
-   "心血管リスク因子の評価は薬剤選択に影響しない",
-   "TNF阻害薬と比較して心血管イベントや静脈血栓塞栓症の頻度が高い傾向が海外臨床試験で示された",
-   "JAK阻害薬は心血管疾患予防効果を持つとされる"
+   "心血管系事象のリスク因子がある患者にこそ優先的に投与する",
+   "心血管系事象のリスクは低く、特段の注意は不要である",
+   "心血管系事象のリスク因子を有する患者に投与する際には、心筋梗塞等の心血管系事象、静脈血栓塞栓症があらわれるおそれがあるので、他の治療法を考慮する",
+   "心血管系のリスクについての記載はない"
   ],
   "correctIndex": 2,
-  "explanation": "ORAL Surveillance試験などの海外臨床試験で、心血管リスク因子を有する患者においてJAK阻害薬はTNF阻害薬と比較し心血管イベント・静脈血栓塞栓症の頻度が高い傾向が示され、添付文書にも反映されています。",
+  "explanation": "トファシチニブクエン酸塩錠の添付文書5.1(効能又は効果に関連する注意〈効能共通〉)には、心血管系事象のリスク因子を有する患者に本剤を投与する際には、心筋梗塞等の心血管系事象、静脈血栓塞栓症があらわれるおそれがあるので他の治療法を考慮することと記載されています。また重大な副作用には静脈血栓塞栓症(肺塞栓症・深部静脈血栓症)が挙げられており、1.警告では重篤な感染症や悪性腫瘍の発現についても注意が促されています。",
   "source": {
-   "name": "トファシチニブクエン酸塩錠 添付文書(警告)、日本リウマチ学会JAK阻害薬に関する解説",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゼルヤンツ錠5mg 添付文書 5.1 効能又は効果に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999034F1020_2_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-advanced-056",
@@ -29330,11 +29330,11 @@
   "correctIndex": 3,
   "explanation": "メポリズマブはIL-5に結合してその作用を中和する抗IL-5抗体、ベンラリズマブは好酸球表面のIL-5受容体αに結合し抗体依存性細胞傷害(ADCC)により好酸球を減少させる抗IL-5受容体α抗体で、作用機序が異なります。",
   "source": {
-   "name": "ヌーカラ皮下注、ファセンラ皮下注 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ファセンラ皮下注 添付文書 18.1 作用機序・18.2 アポトーシス誘導作用(ヌーカラ皮下注 18.1 と対比)",
+   "url": "https://www.info.pmda.go.jp/go/pack/2290402G1020_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "immune-allergy-advanced-057",
@@ -29351,11 +29351,11 @@
   "correctIndex": 0,
   "explanation": "メポリズマブ・ベンラリズマブはいずれも重症好酸球性喘息に加え、好酸球性多発血管炎性肉芽腫症(EGPA)への適応拡大がなされています。",
   "source": {
-   "name": "ヌーカラ皮下注、ファセンラ皮下注 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヌーカラ皮下注100mgペン 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2290401G1026_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-beginner-001",
@@ -32459,11 +32459,11 @@
   "correctIndex": 0,
   "explanation": "一部のフルオロキノロン系・マクロライド系抗菌薬はQT延長作用を持ち、重篤な心室性不整脈のリスクがあるためモニタリングが重要です。",
   "source": {
-   "name": "レボフロキサシン錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レボフロキサシン錠250mg「CH」 添付文書 9.1.3 合併症・既往歴等のある患者・11.1 重大な副作用(QT延長)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6241013F2047_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-advanced-049",
@@ -32480,11 +32480,11 @@
   "correctIndex": 1,
   "explanation": "ST合剤は免疫不全患者におけるニューモシスチス肺炎の予防投与に広く用いられています。",
   "source": {
-   "name": "スルファメトキサゾール・トリメトプリム配合錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "バクタ配合錠 添付文書 4. 効能・効果(ニューモシスチス肺炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6290100D1088_2_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-advanced-050",
@@ -32522,11 +32522,11 @@
   "correctIndex": 3,
   "explanation": "パキロビッドパックはSARS-CoV-2の3CLプロテアーゼを阻害するニルマトレルビルと、CYP3A阻害作用によりニルマトレルビルの血中濃度を維持するブースターとして配合されたリトナビルの合剤です。",
   "source": {
-   "name": "パキロビッドパック 添付文書(効能・効果、薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "パキロビッドパック600 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250120X1027_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-advanced-052",
@@ -32543,11 +32543,11 @@
   "correctIndex": 0,
   "explanation": "リトナビルは強力なCYP3A阻害作用を持つため、CYP3Aで代謝される多くの薬剤(一部のスタチン、Ca拮抗薬等)の血中濃度上昇のおそれがあり、処方前の詳細な併用薬確認と用量調整・中止の判断が必要です。また中等度腎機能障害では減量、重度腎機能障害には投与は推奨されません。",
   "source": {
-   "name": "パキロビッドパック 添付文書(相互作用、腎機能障害患者への投与)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "パキロビッドパック600 添付文書 10. 相互作用・10.1 併用禁忌",
+   "url": "https://www.info.pmda.go.jp/go/pack/6250120X1027_1_10/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-advanced-053",
@@ -32564,11 +32564,11 @@
   "correctIndex": 1,
   "explanation": "セフィデロコルはセフェム系抗菌薬でありながら3価鉄と結合できるシデロフォア構造を持ち、細菌の鉄取り込み機構(トロイの木馬機構)を利用して外膜を通過し、多剤耐性グラム陰性菌にも抗菌活性を示します。",
   "source": {
-   "name": "フェトロージャ点滴静注用 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フェトロージャ点滴静注用1g 添付文書 薬効分類名・18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/6129401D1023_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-advanced-054",
@@ -32585,11 +32585,11 @@
   "correctIndex": 2,
   "explanation": "セフィデロコルはカルバペネム系抗菌薬に耐性を示す株を含む多剤耐性グラム陰性菌感染症に対して承認されており、既存治療の選択肢が限られる症例における治療選択肢として位置づけられます。",
   "source": {
-   "name": "フェトロージャ点滴静注用 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フェトロージャ点滴静注用1g 添付文書 4. 効能又は効果(適応菌種)",
+   "url": "https://www.info.pmda.go.jp/go/pack/6129401D1023_1_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-advanced-055",
@@ -32606,11 +32606,11 @@
   "correctIndex": 3,
   "explanation": "コリスチンはβラクタム系、フルオロキノロン系、アミノ配糖体系など複数系統の抗菌薬に耐性を示す多剤耐性グラム陰性菌感染症に対し、他に有効な治療選択肢がない場合の最終手段的な薬剤として位置づけられています。",
   "source": {
-   "name": "オルドレブ点滴静注用 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オルドレブ点滴静注用150mg 添付文書 4. 効能又は効果・5.1 効能又は効果に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/6125400D4029_1_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "infection-advanced-056",
@@ -32627,11 +32627,11 @@
   "correctIndex": 0,
   "explanation": "コリスチンは腎機能障害の発現頻度が比較的高いことが知られており、投与中は腎機能の慎重なモニタリングが必要です。",
   "source": {
-   "name": "オルドレブ点滴静注用 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オルドレブ点滴静注用150mg 添付文書 11.1.1 重大な副作用",
+   "url": "https://www.info.pmda.go.jp/go/pack/6125400D4029_1_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "hypertension-intermediate-051",
