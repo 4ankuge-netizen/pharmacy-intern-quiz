@@ -2135,11 +2135,11 @@
   "correctIndex": 2,
   "explanation": "ナルデメジンは末梢のμオピオイド受容体を選択的に拮抗し、鎮痛効果を維持したままオピオイド誘発性便秘を改善します。",
   "source": {
-   "name": "ナルデメジントシル酸塩錠 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スインプロイク錠0.2mg 添付文書 薬効分類名(経口末梢性μオピオイド受容体拮抗薬)・4. 効能・効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/2359007F1020_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-004",
@@ -2219,11 +2219,11 @@
   "correctIndex": 2,
   "explanation": "ゾレドロン酸やデノスマブなどの骨修飾薬は顎骨壊死のリスクがあり、投与前の歯科受診など口腔管理が重要です。",
   "source": {
-   "name": "ゾレドロン酸水和物注射液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゾレドロン酸点滴静注4mg 添付文書 8.4 重要な基本的注意(顎骨壊死・顎骨骨髄炎)",
+   "url": "https://www.info.pmda.go.jp/go/pack/3999423A1109_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-008",
@@ -2303,11 +2303,11 @@
   "correctIndex": 2,
   "explanation": "経口抗がん剤は決められた投与・休薬スケジュールを守ることが重要で、自己判断での変更は副作用増強や効果低下につながります。",
   "source": {
-   "name": "テガフール・ギメラシル・オテラシルカリウム配合カプセル 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エスワンタイホウ配合OD錠T20 添付文書 7.1 用法及び用量に関連する注意(休薬期間)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4229101F1050_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-012",
@@ -2324,11 +2324,11 @@
   "correctIndex": 3,
   "explanation": "カルボプラチンなどはCalvert式のように腎機能(クレアチニンクリアランス)に基づいて投与量を設定する薬剤があり、腎機能評価が重要です。",
   "source": {
-   "name": "カルボプラチン注射液 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "カルボプラチン注射液50mg 添付文書 9.2.2 腎機能障害患者(GFRを考慮した投与量選択)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291403A1126_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-013",
@@ -2513,11 +2513,11 @@
   "correctIndex": 0,
   "explanation": "ソラフェニブは軽度(Child-Pugh分類A)・中等度(Child-Pugh分類B)の肝機能障害患者でAUCの変動が報告されている一方、重度(Child-Pugh分類C)の肝機能障害患者は臨床試験で除外されており、投与の可否は個別に慎重な判断が必要です。",
   "source": {
-   "name": "ネクサバール錠200mg 添付文書(薬物動態・警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ネクサバール錠200mg 添付文書 9.3.1 肝機能障害患者(Child-Pugh分類C)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291017F1025_1_33/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-022",
@@ -2534,11 +2534,11 @@
   "correctIndex": 1,
   "explanation": "添付文書の用法及び用量に関連する注意には、放射線肺臓炎についてGrade1では状態に応じて継続又は休薬、Grade2ではGrade1以下に回復するまで休薬し4週間以内に回復すれば減量のうえ再開、Grade3以上では中止することが定められています。",
   "source": {
-   "name": "タグリッソ錠40mg/80mg 添付文書(用法及び用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タグリッソ錠40mg 添付文書 7. 用法及び用量に関連する注意(休薬・減量・中止基準)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291045F1027_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-023",
@@ -3038,11 +3038,11 @@
   "correctIndex": 1,
   "explanation": "高脂肪食とともに投与した場合、空腹時と比べAUCが約4.3倍に増加したとの報告があり、添付文書では食事の影響を避けるため食事の1時間以上前又は食後1時間以降の服用が指定されています。",
   "source": {
-   "name": "タイケルブ錠250mg 添付文書(薬物動態・用法及び用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タイケルブ錠250mg 添付文書 7.3 用法及び用量に関連する注意(食事の影響)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291022F1026_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-047",
@@ -3269,11 +3269,11 @@
   "correctIndex": 0,
   "explanation": "レンバチニブはVEGF受容体などを標的とするマルチキナーゼ阻害薬で、肝細胞癌、腎細胞癌、甲状腺癌などに用いられます。",
   "source": {
-   "name": "レンビマカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レンビマカプセル4mg 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291039M1020_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-058",
@@ -3290,11 +3290,11 @@
   "correctIndex": 1,
   "explanation": "レンバチニブは血管新生阻害作用により高血圧の発現頻度が高く、投与中の血圧モニタリングと降圧薬による管理が重要です。",
   "source": {
-   "name": "レンビマカプセル 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レンビマカプセル4mg 添付文書 11.1.1 重大な副作用(高血圧)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291039M1020_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-059",
@@ -3311,11 +3311,11 @@
   "correctIndex": 2,
   "explanation": "パルボシクリブはCDK4/6を選択的に阻害し細胞周期を停止させる分子標的薬で、内分泌療法剤と併用してホルモン受容体陽性乳癌に用いられます。",
   "source": {
-   "name": "イブランスカプセル 添付文書(効能・効果、薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イブランス錠25mg 添付文書 薬効分類名(抗悪性腫瘍剤・CDK4/6阻害剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291051F1022_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-060",
@@ -3332,11 +3332,11 @@
   "correctIndex": 3,
   "explanation": "パルボシクリブは内分泌療法剤との併用において、1日1回125mgを3週間連続経口投与し、その後1週間休薬する4週間を1サイクルとして投与します。",
   "source": {
-   "name": "イブランスカプセル 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "イブランス錠25mg 添付文書 6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291051F1022_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-061",
@@ -3353,11 +3353,11 @@
   "correctIndex": 0,
   "explanation": "アテゾリズマブはがん細胞などが発現するPD-L1に結合し、T細胞による免疫応答を増強することで抗腫瘍効果を発揮する免疫チェックポイント阻害薬です。",
   "source": {
-   "name": "テセントリク点滴静注 添付文書(効能・効果、薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テセントリク点滴静注840mg 添付文書 薬効分類名(抗PD-L1ヒト化モノクローナル抗体)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291441A1024_1_23/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-062",
@@ -3374,11 +3374,11 @@
   "correctIndex": 1,
   "explanation": "セツキシマブはRAS遺伝子野生型の治癒切除不能な進行・再発の結腸・直腸癌などに適応があり、RAS遺伝子変異型では効果が期待できないとされています。",
   "source": {
-   "name": "アービタックス注射液 添付文書(効能・効果に関連する使用上の注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アービタックス注射液100mg 添付文書 4. 効能又は効果(RAS遺伝子野生型)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291415A1021_1_18/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-063",
@@ -3395,11 +3395,11 @@
   "correctIndex": 2,
   "explanation": "セツキシマブは抗体製剤特有のinfusion reactionを起こすことがあり、重度の場合は直ちに投与を中止し、再投与を行わないこととされています。",
   "source": {
-   "name": "アービタックス注射液 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アービタックス注射液100mg 添付文書 1.2 警告・7.2 用法及び用量に関連する注意(infusion reaction)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291415A1021_1_18/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-064",
@@ -3416,11 +3416,11 @@
   "correctIndex": 3,
   "explanation": "アナストロゾールはアロマターゼを阻害してエストロゲン産生を抑制するアロマターゼ阻害薬で、閉経後乳癌に用いられます。",
   "source": {
-   "name": "アリミデックス錠 添付文書(効能・効果、薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アリミデックス錠1mg 添付文書 薬効分類名(アロマターゼ阻害剤/閉経後乳癌治療剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291010F1031_1_18/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-065",
@@ -3437,11 +3437,11 @@
   "correctIndex": 0,
   "explanation": "ボルテゾミブは末梢神経障害(末梢性ニューロパチー、感覚減退など)の発現頻度が高く、皮下投与への変更などにより軽減が図られることがあります。",
   "source": {
-   "name": "ベルケイド注射用 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ベルケイド注射用3mg 添付文書 8.4 重要な基本的注意(末梢神経障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291412D1024_1_21/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-066",
@@ -3458,11 +3458,11 @@
   "correctIndex": 1,
   "explanation": "レナリドミドはサリドマイド誘導体でヒトに催奇形性を有する可能性があるため、妊婦への投与は禁忌とされ、妊娠可能な女性への投与では妊娠検査と避妊の徹底など厳格な管理手順が求められます。",
   "source": {
-   "name": "レブラミドカプセル 添付文書(警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "レブラミドカプセル2.5mg 添付文書 1.1 警告(サリドマイド誘導体・催奇形性)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291024M1024_2_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-067",
@@ -3479,11 +3479,11 @@
   "correctIndex": 2,
   "explanation": "クリゾチニブは、承認された体外診断薬を用いた検査でALK融合遺伝子陽性又はROS1融合遺伝子陽性が確認された切除不能な進行・再発非小細胞肺癌に投与されます。",
   "source": {
-   "name": "ザーコリカプセル 添付文書(効能・効果に関連する使用上の注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ザーコリカプセル200mg 添付文書 4. 効能又は効果・5.1 効能又は効果に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291026M1023_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-068",
@@ -3500,11 +3500,11 @@
   "correctIndex": 3,
   "explanation": "ダラツムマブは形質細胞などに高発現するCD38に結合し、補体依存性細胞傷害や抗体依存性細胞傷害などを介して多発性骨髄腫細胞の増殖を抑制します。",
   "source": {
-   "name": "ダラザレックス点滴静注 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ダラザレックス点滴静注100mg 添付文書 薬効分類名(ヒト型抗CD38モノクローナル抗体)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291437A1028_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-069",
@@ -3521,11 +3521,11 @@
   "correctIndex": 0,
   "explanation": "ダラツムマブはinfusion reactionの頻度が高いため、投与開始1〜3時間前にステロイド・解熱鎮痛剤・抗ヒスタミン薬を前投与し、低い投与速度から開始することが推奨されています。",
   "source": {
-   "name": "ダラザレックス点滴静注 添付文書(用法・用量に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ダラザレックス点滴静注100mg 添付文書 7.5 用法及び用量に関連する注意(infusion reaction軽減の前投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291437A1028_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-070",
@@ -3542,11 +3542,11 @@
   "correctIndex": 1,
   "explanation": "ペメトレキセドは葉酸代謝拮抗作用を持つため、葉酸・ビタミンB12を併用することでホモシステインなどの欠乏マーカーを低下させ、骨髄抑制などの副作用を軽減します。",
   "source": {
-   "name": "アリムタ注射用 添付文書(用法・用量に関連する使用上の注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アリムタ注射用100mg 添付文書 1.2 警告(葉酸及びビタミンB12の投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4229401D1020_1_17/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-071",
@@ -3563,11 +3563,11 @@
   "correctIndex": 2,
   "explanation": "テモゾロミドはDNAアルキル化により抗腫瘍効果を示すアルキル化薬で、悪性神経膠腫の治療に放射線療法と併用または単独で用いられます。",
   "source": {
-   "name": "テモダールカプセル 添付文書(効能・効果、薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "テモダールカプセル20mg 添付文書 4. 効能又は効果・18.1 作用機序(一価アルキル化薬)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4219004M1024_2_02/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-072",
@@ -3584,11 +3584,11 @@
   "correctIndex": 3,
   "explanation": "エベロリムスは細胞内のmTORを阻害することで細胞増殖シグナルを遮断し、腎細胞癌や神経内分泌腫瘍などに用いられる分子標的薬です。",
   "source": {
-   "name": "アフィニトール錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アフィニトール錠2.5mg 添付文書 18.1 作用機序(mTOR阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291023F1020_1_28/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-073",
@@ -3605,11 +3605,11 @@
   "correctIndex": 0,
   "explanation": "エベロリムスは間質性肺疾患(死亡例を含む)が重大な副作用として報告されており、定期的な胸部CT検査などによるモニタリングが重要です。",
   "source": {
-   "name": "アフィニトール錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アフィニトール錠2.5mg 添付文書 11.1.1 重大な副作用(間質性肺疾患)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291023F1020_1_28/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-074",
@@ -3626,11 +3626,11 @@
   "correctIndex": 1,
   "explanation": "ニボルマブは免疫関連有害事象として劇症1型糖尿病を含む1型糖尿病を発症することがあり、急激な高血糖や意識障害がみられた場合は早急な対応が必要とされています。",
   "source": {
-   "name": "オプジーボ点滴静注 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オプジーボ点滴静注20mg 添付文書 11.1.4 重大な副作用(1型糖尿病)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291427A1024_1_75/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-075",
@@ -3647,11 +3647,11 @@
   "correctIndex": 2,
   "explanation": "エリブリンは好中球減少の発現頻度が高く、投与14日目前後に最低値となることが多いため、血球数のモニタリングに基づく休薬・減量が行われます。",
   "source": {
-   "name": "ハラヴェン静注 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ハラヴェン静注1mg 添付文書 11.1.1 重大な副作用(骨髄抑制・好中球減少)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291420A1022_1_09/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-076",
@@ -3668,11 +3668,11 @@
   "correctIndex": 3,
   "explanation": "アキシチニブはVEGF受容体などのチロシンキナーゼを阻害するマルチキナーゼ阻害薬で、腎細胞癌の血管新生を抑制します。",
   "source": {
-   "name": "インライタ錠 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "インライタ錠1mg 添付文書 18.1.1 作用機序(VEGFR-1〜3のリン酸化阻害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291027F1029_2_05/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-077",
@@ -3689,11 +3689,11 @@
   "correctIndex": 0,
   "explanation": "ダブラフェニブ(BRAF阻害薬)とトラメチニブ(MEK阻害薬)の併用療法は、BRAF遺伝子変異を有する非小細胞肺癌や悪性黒色腫などに用いられます。",
   "source": {
-   "name": "タフィンラーカプセル 添付文書(効能・効果に関連する注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "タフィンラーカプセル50mg 添付文書 4. 効能又は効果(BRAF遺伝子変異)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291046M1020_1_16/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-078",
@@ -3710,11 +3710,11 @@
   "correctIndex": 1,
   "explanation": "エンコラフェニブ(BRAF阻害薬)とビニメチニブ(MEK阻害薬)の併用は、BRAF遺伝子陽性の根治切除不能な悪性黒色腫に対する治療選択肢です。",
   "source": {
-   "name": "ビラフトビカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビラフトビカプセル50mg 添付文書 4. 効能又は効果・6. 用法及び用量(ビニメチニブとの併用)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291057M1029_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-079",
@@ -3731,11 +3731,11 @@
   "correctIndex": 2,
   "explanation": "ビンクリスチンは髄腔内投与により重篤な神経障害・死亡を来すことが知られており、髄腔内投与は絶対禁忌とされています。",
   "source": {
-   "name": "オンコビン注射用 添付文書(禁忌)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オンコビン注射用1mg 添付文書 2.3 禁忌(髄腔内には投与しないこと)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240400D1030_2_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-080",
@@ -3752,11 +3752,11 @@
   "correctIndex": 3,
   "explanation": "ビンクリスチンは自律神経障害により著しい便秘や腹部膨満などの腸管麻痺を来し、麻痺性イレウスに移行することがあるため注意が必要です。",
   "source": {
-   "name": "オンコビン注射用 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "オンコビン注射用1mg 添付文書 11.1.4 重大な副作用(イレウス・腸管麻痺)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240400D1030_2_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-081",
@@ -3773,11 +3773,11 @@
   "correctIndex": 0,
   "explanation": "ビノレルビンは血管痛・静脈炎・血管外漏出のリスクがあるため適切な希釈と投与後の十分な後洗浄が必要で、血管外漏出時は患部を温める対応が取られます。",
   "source": {
-   "name": "ロゼウス静注液 添付文書(適用上の注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ロゼウス静注液10mg 添付文書 14.1.1・14.2.4 適用上の注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/4240407A1036_1_06/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-082",
@@ -3794,11 +3794,11 @@
   "correctIndex": 1,
   "explanation": "アザシチジンはDNAメチル化阻害作用を持つ薬剤で、骨髄異形成症候群及び急性骨髄性白血病に対して皮下投与または点滴静注で用いられます。",
   "source": {
-   "name": "ビダーザ注射用 添付文書(効能・効果、用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ビダーザ注射用100mg 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291419D1026_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-083",
@@ -3815,11 +3815,11 @@
   "correctIndex": 2,
   "explanation": "ダサチニブは他のBCR-ABLチロシンキナーゼ阻害薬と比較して胸水の発現頻度が高いことが知られており、呼吸器症状の観察が重要です。",
   "source": {
-   "name": "スプリセル錠 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スプリセル錠20mg 添付文書 11.1.3 重大な副作用(体液貯留・胸水)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291020F1027_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-084",
@@ -3836,11 +3836,11 @@
   "correctIndex": 3,
   "explanation": "フルベストラントは2筒(500mg)を左右の臀部に1筒ずつ筋肉内投与し、初回・2週後・4週後、その後4週ごとに投与を繰り返します。",
   "source": {
-   "name": "フェソロデックス筋注 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "フェソロデックス筋注250mg 添付文書 6. 用法及び用量・7.1 用法及び用量に関連する注意",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291421G1020_1_15/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-085",
@@ -3857,11 +3857,11 @@
   "correctIndex": 0,
   "explanation": "スニチニブは心不全等の重篤な心障害により死亡に至った例が報告されており、投与開始前および投与中の心機能評価が重要とされています。",
   "source": {
-   "name": "スーテントカプセル 添付文書(重大な副作用)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スーテントカプセル12.5mg 添付文書 1.2 警告(心不全等の重篤な心障害)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291018M1029_3_04/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-086",
@@ -3878,11 +3878,11 @@
   "correctIndex": 1,
   "explanation": "レゴラフェニブは手足症候群の発現頻度が高く、重症化するとTENや皮膚粘膜眼症候群に至ることもあるため注意深い観察が必要です。",
   "source": {
-   "name": "スチバーガ錠 添付文書(重要な基本的注意)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "スチバーガ錠40mg 添付文書 7.3 用法及び用量に関連する注意(手足症候群の用量調節)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291029F1028_1_14/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-087",
@@ -3899,11 +3899,11 @@
   "correctIndex": 2,
   "explanation": "パゾパニブは食後に服用すると曝露量が上昇するため、食事の1時間以上前又は食後2時間以降の空腹時に服用することとされています。",
   "source": {
-   "name": "ヴォトリエント錠 添付文書(用法・用量)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ヴォトリエント錠200mg 添付文書 6. 用法及び用量(空腹時投与)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291028F1023_2_07/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-088",
@@ -3920,32 +3920,32 @@
   "correctIndex": 3,
   "explanation": "アレクチニブはALKチロシンキナーゼ活性を阻害する分子標的薬で、ALK融合遺伝子陽性の非小細胞肺癌などに用いられます。",
   "source": {
-   "name": "アレセンサカプセル 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "アレセンサカプセル150mg 添付文書 薬効分類名(抗悪性腫瘍剤/ALK阻害剤)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291032M3021_1_08/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-089",
   "category": "cancer",
   "difficulty": "advanced",
   "type": "single",
-  "question": "GnRHアンタゴニストであるデガレリクス(ゴナックス)がGnRHアゴニストと異なる特徴として正しいのはどれか。",
+  "question": "デガレリクス(ゴナックス皮下注用)の添付文書に記載されている作用機序として正しいのはどれか。",
   "choices": [
-   "投与初期のテストステロン一過性上昇(フレアアップ)を回避できる",
-   "効果発現に数週間を要し即効性がない",
-   "経口投与が可能である",
-   "投与初期にテストステロンの一過性上昇を来す"
+   "GnRHアンタゴニストとして下垂体GnRHレセプターと可逆的に結合し、LHの放出を抑制して精巣からのテストステロン分泌を抑制する",
+   "GnRHアゴニストとして下垂体を持続刺激し、受容体をダウンレギュレーションさせる",
+   "アンドロゲン受容体を直接遮断する",
+   "副腎でのアンドロゲン合成酵素CYP17を阻害する"
   ],
   "correctIndex": 0,
-  "explanation": "デガレリクスはGnRH受容体に直接拮抗するため、GnRHアゴニストで生じる投与初期のテストステロン一過性上昇(フレアアップ)を回避できる特徴があります。",
+  "explanation": "ゴナックス皮下注用の添付文書18.1には、デガレリクスは性腺刺激ホルモン放出ホルモン(GnRH)アンタゴニストであり、下垂体GnRHレセプターと可逆的に結合することにより下垂体からの黄体形成ホルモン(LH)の放出を抑制する結果、精巣からのテストステロン分泌を抑制すると記載されています。18.2では、正常雄性ラット及びサルへの単回皮下投与で血清テストステロン値を外科的去勢と同程度まで低下させたことが示されています。アゴニストではなくアンタゴニストである点が、この薬の位置づけを理解する鍵です。",
   "source": {
-   "name": "ゴナックス皮下注用 添付文書(薬効薬理)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ゴナックス皮下注用80mg 添付文書 18.1 作用機序",
+   "url": "https://www.info.pmda.go.jp/go/pack/2499412D3027_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-090",
@@ -3962,11 +3962,11 @@
   "correctIndex": 1,
   "explanation": "エヌトレクチニブはNTRK融合遺伝子陽性の進行・再発固形癌及びROS1融合遺伝子陽性の非小細胞肺癌に用いられる分子標的薬です。",
   "source": {
-   "name": "ロズリートレクカプセル 添付文書(効能・効果)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "ロズリートレクカプセル100mg 添付文書 4. 効能又は効果",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291061M1025_1_11/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-091",
@@ -3983,11 +3983,11 @@
   "correctIndex": 2,
   "explanation": "トラスツズマブ デルクステカンは間質性肺疾患が重要な副作用とされ、致死的な経過をたどることもあるため、治療開始前に患者・家族への十分な説明が求められています。",
   "source": {
-   "name": "エンハーツ点滴静注用 添付文書(警告)",
-   "url": "",
-   "confirmedDate": ""
+   "name": "エンハーツ点滴静注用100mg 添付文書 1.2 警告(間質性肺疾患)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291452D1029_1_12/?view=body&lang=ja",
+   "confirmedDate": "2026-08-30"
   },
-  "verified": false
+  "verified": true
  },
  {
   "id": "cancer-advanced-092",
