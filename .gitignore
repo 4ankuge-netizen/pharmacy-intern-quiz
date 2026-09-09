@@ -6,3 +6,4 @@ node_modules/
 .pmda-cache/
 .guideline-cache/
 .pmda-if/
+.law-cache/
