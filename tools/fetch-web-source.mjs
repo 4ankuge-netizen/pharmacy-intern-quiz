@@ -52,6 +52,10 @@ const ALLOWED_HOSTS = [
   'jpn-geriat-soc.or.jp',// 日本老年医学会
   'nanbyou.or.jp',       // 難病情報センター(難病医学研究財団)
   'ryumachi-jp.com',     // 日本リウマチ学会
+  'asas.or.jp',          // 日本移植学会
+  'jsnp-org.jp',         // 日本神経精神薬理学会
+  'jpos-society.org',    // 日本サイコオンコロジー学会
+  'jsaweb.jp',           // 日本アレルギー学会
 ];
 
 function toFileName(name) {
