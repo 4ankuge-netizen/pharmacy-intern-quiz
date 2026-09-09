@@ -34333,5 +34333,845 @@
    "confirmedDate": "2026-09-09"
   },
   "verified": true
+ },
+ {
+  "id": "calculation-advanced-001",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "Calvert式を用いて、目標AUC 5mg・min/mL、糸球体ろ過値(GFR)75mL/minの患者のカルボプラチン投与量を求めるといくらか。",
+  "choices": [
+   "500mg",
+   "375mg",
+   "425mg",
+   "625mg"
+  ],
+  "correctIndex": 0,
+  "explanation": "Calvert式は「総投与量(mg)=目標AUC×(GFR+25)」で表され、カルボプラチン注射液のインタビューフォームに記載されています。5×(75+25)=5×100=500mgとなります。カルボプラチンは腎排泄型で、腎機能によって血中濃度の推移が大きく変わるため、体表面積ではなく腎機能を基準に投与量を決める方法が確立しています。パラプラチン注射液の添付文書でも、卵巣癌などで「1日1回AUC5〜6mg・min/mL相当量を投与し、少なくとも3週間休薬する」といったAUCを用いた用量が定められており、AUC目標値及び腎機能に基づく投与量は関連学会の最新のガイドライン等を参考に設定することとされています。",
+  "source": {
+   "name": "カルボプラチン注射液 インタビューフォーム(Calvert式:総投与量(mg)=目標AUC×(GFR+25))",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/530169_4291403A1126_1_018_1F.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-002",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "Calvert式を用いて、目標AUC 6mg・min/mL、糸球体ろ過値(GFR)60mL/minの患者のカルボプラチン投与量を求めるといくらか。",
+  "choices": [
+   "360mg",
+   "510mg",
+   "600mg",
+   "425mg"
+  ],
+  "correctIndex": 1,
+  "explanation": "Calvert式「総投与量(mg)=目標AUC×(GFR+25)」にあてはめると、6×(60+25)=6×85=510mgです。計算のポイントは、GFRにそのまま目標AUCを掛けるのではなく、腎外クリアランスを表す定数25を足してから掛けることです。この25を忘れると6×60=360mgとなり、約3割の過少投与になります。カルボプラチンは主な用量規制毒性が血小板減少であり、投与量が過多でも過少でも治療に影響するため、計算の手順を正確に踏むことが重要です。",
+  "source": {
+   "name": "カルボプラチン注射液 インタビューフォーム(Calvert式:総投与量(mg)=目標AUC×(GFR+25))",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/530169_4291403A1126_1_018_1F.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-003",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "Calvert式によるカルボプラチンの投与量算出について正しいのはどれか。",
+  "choices": [
+   "投与量は体重あたり(mg/kg)として算出される",
+   "投与量は体表面積あたり(mg/m2)として算出される",
+   "投与量はmg単位の総投与量として算出され、体表面積あたり(mg/m2)ではない",
+   "投与量は目標AUCとGFRの積のみで、定数は加えない"
+  ],
+  "correctIndex": 2,
+  "explanation": "カルボプラチン注射液のインタビューフォームでは、Calvert式で算出されるのは総投与量(mg)であり、mg/m2ではないことが明記されています。式は「総投与量(mg)=目標AUC×(GFR+25)」で、GFRに腎外クリアランスに相当する定数25を加えてから目標AUCを掛けます。同じカルボプラチンでも、添付文書には体表面積あたりの用量(1日1回300〜400mg/m2)を用いる効能と、AUCを用いる効能の両方が定められています。処方の根拠がどちらの方式かを確認しないと、単位の取り違えによる重大な投与量誤りにつながります。",
+  "source": {
+   "name": "カルボプラチン注射液 インタビューフォーム(Calvert式)／カルボプラチン注射液50mg「日医工」 添付文書 6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/530169_4291403A1126_1_018_1F.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-004",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "同じ目標AUC 5mg・min/mLでカルボプラチンを投与する場合、糸球体ろ過値(GFR)50mL/minの患者と100mL/minの患者では、Calvert式による投与量はそれぞれいくらか。",
+  "choices": [
+   "500mgと1000mg",
+   "250mgと500mg",
+   "400mgと600mg",
+   "375mgと625mg"
+  ],
+  "correctIndex": 3,
+  "explanation": "Calvert式「総投与量(mg)=目標AUC×(GFR+25)」より、GFR50では5×(50+25)=375mg、GFR100では5×(100+25)=625mgとなります。GFRが2倍になっても投与量は2倍にはならず、375mgから625mgへと約1.7倍にとどまります。これは腎外クリアランスに相当する定数25が加わっているためで、腎機能がゼロに近い患者でも一定量は投与される計算になります。この非線形の関係を理解しておくと、腎機能が変動したときの投与量の変化を見積もりやすくなります。",
+  "source": {
+   "name": "カルボプラチン注射液 インタビューフォーム(Calvert式:総投与量(mg)=目標AUC×(GFR+25))",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/530169_4291403A1126_1_018_1F.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-005",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "ペムブロリズマブ及びゲムシタビンとの併用で、カルボプラチンを目標AUC 2mg・min/mLで投与する。糸球体ろ過値(GFR)が80mL/minのとき、Calvert式による投与量はいくらか。",
+  "choices": [
+   "210mg",
+   "160mg",
+   "250mg",
+   "105mg"
+  ],
+  "correctIndex": 0,
+  "explanation": "Calvert式より2×(80+25)=2×105=210mgです。パラプラチン注射液の添付文書では、PD-L1陽性のホルモン受容体陰性かつHER2陰性の手術不能又は再発乳癌に対するペムブロリズマブ及びゲムシタビン塩酸塩との併用について「通常、成人にはカルボプラチンとして、1日1回AUC2mg・min/mL相当量を投与する。週1回投与を2週連続し、3週目は休薬する」と定められています。同じカルボプラチンでもレジメンによって目標AUCは1.5、2、5、6などと異なるため、どのレジメンかを確認したうえで計算します。",
+  "source": {
+   "name": "パラプラチン注射液50mg 添付文書 6. 用法及び用量／カルボプラチン注射液 インタビューフォーム(Calvert式)",
+   "url": "https://www.info.pmda.go.jp/go/pack/4291403A1088_3_05/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-006",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "体重60kgの患者にバンコマイシンの負荷投与を25mg/kgで行う。抗菌薬TDM臨床実践ガイドライン2022に基づく負荷投与量は何mgか。",
+  "choices": [
+   "1000mg",
+   "1500mg",
+   "1800mg",
+   "600mg"
+  ],
+  "correctIndex": 1,
+  "explanation": "25mg/kg×60kg=1500mgです。抗菌薬TDM臨床実践ガイドライン2022では、初日から目標濃度到達率と治療成功率を高めるため、腎機能にかかわらず初回のみ負荷投与を行うこととし、負荷投与量は実測体重あたり25〜30mg/kgと示されています。ただし3gを超える負荷投与量については安全性の情報が限られているとされています。ここで重要なのは、負荷投与量は腎機能で減らさないという点です。腎機能は薬の「出ていく速さ」に関わるのに対し、負荷投与量は体内に薬を行きわたらせるための量なので、体格で決まるためです。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) CQ6 バンコマイシンの負荷投与",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-007",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "体重110kgの患者にバンコマイシンの負荷投与を30mg/kgで計算した。抗菌薬TDM臨床実践ガイドライン2022の記載を踏まえた評価として正しいのはどれか。",
+  "choices": [
+   "1100mgとなり、肥満患者では理想体重で計算するため問題ない",
+   "3300mgとなり、上限の定めはないためそのまま投与してよい",
+   "3300mgとなるが、3gを超える負荷投与量は安全性に関する情報が限られており慎重な検討が必要である",
+   "負荷投与は腎機能が正常な患者には行わない"
+  ],
+  "correctIndex": 2,
+  "explanation": "30mg/kg×110kg=3300mgです。抗菌薬TDM臨床実践ガイドライン2022では、初回のみ実測体重あたり25〜30mg/kgの負荷投与を行うとしたうえで、3gより多い負荷投与量については安全性に関する情報が限られていると注記されています。したがって計算値が3gを超える高体重の患者では、そのまま採用するのではなく上限を意識した検討が必要です。なお同ガイドラインでは、負荷投与は腎機能にかかわらず初回のみ行うこととされており、腎機能が正常でも実施します。また負荷投与だけでは定常状態の目標濃度到達は難しいとも述べられています。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) CQ6 バンコマイシンの負荷投与",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-008",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "バンコマイシン投与中の患者でAUCが480μg・h/mLと推定された。原因菌のMICが1μg/mLのとき、AUC/MICの値と、抗菌薬TDM臨床実践ガイドライン2022の目標に照らした評価の組合せとして正しいのはどれか。",
+  "choices": [
+   "480で、安全性の上限(600)を超えている",
+   "480だが、有効性の目標を下回っている",
+   "240で、有効性の目標を下回っている",
+   "480で、有効性の目標(400以上)を満たしている"
+  ],
+  "correctIndex": 3,
+  "explanation": "AUC/MIC=480÷1=480です。抗菌薬TDM臨床実践ガイドライン2022では、MRSA感染症治療の有効性を高めるためにAUC/MICの目標値を400以上とし、あわせて腎障害のリスクを下げるためAUCは600未満とすることから、目標AUCを400〜600μg・h/mL(MIC=1μg/mLのとき)としています。この患者のAUC 480はこの範囲に収まっており、AUC/MICも480で目標を満たしています。同ガイドラインでは、有効性と安全性の両方を担保できる目標トラフ濃度は設定できないとの結論から、トラフ値ではなくAUCに基づく投与設計へ移行したことが示されています。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) バンコマイシンの目標AUC・AUC/MIC",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-009",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "バンコマイシン投与中の患者でAUCが480μg・h/mLと推定された。原因菌のMICが2μg/mLであった場合、AUC/MICの値と評価の組合せとして正しいのはどれか。",
+  "choices": [
+   "240で、AUC/MIC 400以上という目標を下回っている",
+   "240だが、目標を満たしている",
+   "960で、目標を満たしている",
+   "480で、目標を満たしている"
+  ],
+  "correctIndex": 0,
+  "explanation": "AUC/MIC=480÷2=240となり、抗菌薬TDM臨床実践ガイドライン2022が示す目標(400以上)を下回ります。同じAUCでもMICが2倍になればAUC/MICは半分になるため、菌のMICを確認せずにAUCだけを見て「目標達成」と判断することはできません。ただし同ガイドラインでは、安全性の面からAUC 600μg・h/mLの上限は守るべきであり、MICが高い菌ではAUC/MIC 400を達成できない場合もあることが述べられています。また、MIC測定の変動を考慮して、実際にはMIC=1μg/mLと想定してAUC 400以上を目標とする運用が現実的であるとも示されています。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) バンコマイシンの目標AUC・AUC/MIC",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-010",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "抗菌薬TDM臨床実践ガイドライン2022がバンコマイシンの目標AUCを400〜600μg・h/mLと設定した理由として正しいのはどれか。",
+  "choices": [
+   "400以上は腎障害の予防、600未満は肝障害の予防のために必要とされたため",
+   "400以上は臨床効果、600未満は腎障害リスクの低減のために必要とされたため",
+   "トラフ値15〜20μg/mLに換算した値がこの範囲になるため",
+   "海外の添付文書に定められた値をそのまま採用したため"
+  ],
+  "correctIndex": 1,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、系統的レビューとメタ解析の結果、臨床効果の面ではAUC/MIC 400以上が、腎障害リスクを下げる面ではAUC 600未満が必要であることが示され、目標AUCが400〜600μg・h/mL(MIC=1μg/mLのとき)に設定されたと説明されています。同時に、トラフ値では15μg/mL以上で高い臨床効果が得られる一方、15〜20μg/mLは腎障害のリスクとなることも示され、有効性と安全性を両立する目標トラフ濃度は設定できないと結論づけられました。これがトラフ値による投与設計からAUCに基づく投与設計へ移行した根拠です。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) 序文・バンコマイシンの目標AUC",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-011",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "バンコマイシンのAUCを2ポイント採血で評価する場合、ピーク値の採血時期として抗菌薬TDM臨床実践ガイドライン2022が示すのはどれか。",
+  "choices": [
+   "点滴終了直後",
+   "点滴開始直後",
+   "点滴終了1〜2時間後",
+   "次回投与の直前"
+  ],
+  "correctIndex": 2,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、ピーク値は組織への分布が完了した時点の血中濃度として、点滴終了1〜2時間後に採血すると示されています。点滴終了直後は薬が組織へ移動している途中なので、実際より高い値になり評価を誤ります。次回投与の直前に採るのはトラフ値です。同ガイドラインでは、1日2回投与の症例ではトラフ値とピーク値の2ポイント採血が最も精度が高く、複雑性感染症では2ポイントが推奨される一方、非複雑性感染症ではトラフ値のみでも許容されるとされています。採血のタイミングを誤ると、計算式が正しくても結果は使えません。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) バンコマイシンの採血時期",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-012",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "テイコプラニンの目標トラフ値について、抗菌薬TDM臨床実践ガイドライン2022が示す組合せとして正しいのはどれか。",
+  "choices": [
+   "いずれも一律に10〜15μg/mL",
+   "非複雑性は5〜10μg/mL、複雑性・重症例は10〜20μg/mL",
+   "非複雑性は20〜40μg/mL、複雑性・重症例は15〜30μg/mL",
+   "非複雑性のMRSA感染症は15〜30μg/mL、心内膜炎や骨関節感染症などの複雑性・重症例は20〜40μg/mL"
+  ],
+  "correctIndex": 3,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、非複雑性のMRSA感染症に対してトラフ値15〜30μg/mLを推奨し、心内膜炎や骨関節感染症などの複雑性感染症や重症例では目標トラフ値20〜40μg/mLを考慮するとしています。バンコマイシンがAUCに基づく投与設計へ移行したのに対し、テイコプラニンは引き続きトラフ値で管理する点が異なります。テイコプラニンは蛋白結合率が高く、低アルブミン血症では遊離型の割合が増えて分布容積が大きくなるため、目標濃度に達しにくくなることも同ガイドラインで指摘されています。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) テイコプラニンの目標トラフ値",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-013",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "持続的血液濾過透析(CHDF)を受けている体重55kgの患者に、目標トラフ値15〜30μg/mLでテイコプラニンを開始する。抗菌薬TDM臨床実践ガイドライン2022が示す初期投与設計(1回10mg/kgを初日2回)に従うときの1回量はどれか。",
+  "choices": [
+   "550mg",
+   "275mg",
+   "660mg",
+   "1100mg"
+  ],
+  "correctIndex": 0,
+  "explanation": "10mg/kg×55kg=550mgです。抗菌薬TDM臨床実践ガイドライン2022では、CHDFを受けている患者の初期投与設計として、目標トラフ値15〜30μg/mLとする場合は1回10mg/kgを初日2回、2日目と3日目は1回投与、目標トラフ値20〜40μg/mLとする場合は1回12mg/kgを用いる方法が示されています。またTDMのタイミングとして初回TDMは4日目に行うとされています。テイコプラニンは半減期が長く、負荷投与を行わないと数日経っても目標濃度に届かないため、この初期投与設計が重要になります。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) テイコプラニン CQ10(CHDFでの投与設計)",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-014",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "ゲンタマイシンのピーク濃度(Cpeak)の目標について、抗菌薬TDM臨床実践ガイドライン2022が示すのはどれか。",
+  "choices": [
+   "MICにかかわらず一律にCpeak 5μg/mL以上",
+   "MIC=2μg/mLではCpeak 15〜20μg/mL以上、MIC 1μg/mL以下ではCpeak 8〜10μg/mL以上",
+   "MIC=2μg/mLではCpeak 5〜8μg/mL以上、MIC 1μg/mL以下ではCpeak 3〜5μg/mL以上",
+   "Cpeakの目標は設定されていない"
+  ],
+  "correctIndex": 1,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、ゲンタマイシン・トブラマイシンについて臨床効果が期待される濃度として、MIC=2μg/mLではCpeak 15〜20μg/mL以上、MIC 1μg/mL以下ではCpeak 8〜10μg/mL以上を目標としています。アミノグリコシド系は濃度依存的に殺菌するため、Cpeak/MICが8〜10以上必要とされ、MICが高い菌ほど高いピーク濃度が求められます。この考え方が、1日量を分割せず1日1回にまとめて投与する方法(1日単回投与)の根拠になっています。なお、グラム陽性菌に対する感染性心内膜炎の併用治療では目標が異なり、Cpeak 3〜5μg/mLとされています。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) アミノグリコシド系薬(GM/TOB)の目標濃度",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-015",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "抗菌薬TDM臨床実践ガイドライン2022が示すゲンタマイシンの目標トラフ値の組合せとして正しいのはどれか。",
+  "choices": [
+   "投与回数にかかわらず10μg/mL未満",
+   "1日1回投与では2μg/mL未満、1日複数回分割投与では1μg/mL未満",
+   "1日1回投与では1μg/mL未満、1日複数回分割投与では2μg/mL未満",
+   "投与回数にかかわらず5μg/mL未満"
+  ],
+  "correctIndex": 2,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、ゲンタマイシン・トブラマイシンについて、腎障害リスク低減のため1日複数回投与ではトラフ値2μg/mL未満を目標とし、同ガイドラインが推奨する1日単回投与ではさらに低い1μg/mL未満を目標としています。アミノグリコシド系の腎毒性・聴器毒性は、高い濃度が持続する時間と関係するため、次の投与前までに濃度を十分下げることが安全性につながります。なおアミカシンでは1日複数回分割投与でトラフ値10μg/mL未満が目標とされており、薬剤ごとに値が異なります。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) アミノグリコシド系薬の目標トラフ値",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-016",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "アミカシンについて、抗菌薬TDM臨床実践ガイドライン2022が示す臨床効果が期待されるピーク濃度(Cpeak)の目標はどれか。",
+  "choices": [
+   "MIC=8μg/mLではCpeak 100μg/mL以上",
+   "MIC=8μg/mLではCpeak 15〜20μg/mL以上、MIC 4μg/mL以下ではCpeak 8〜10μg/mL以上",
+   "MICにかかわらずCpeak 20μg/mL以上",
+   "MIC=8μg/mLではCpeak 50〜60μg/mL以上、MIC 4μg/mL以下ではCpeak 41〜49μg/mL以上"
+  ],
+  "correctIndex": 3,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、アミカシンについてMIC=8μg/mLではCpeak 50〜60μg/mL以上、MIC 4μg/mL以下ではCpeak 41〜49μg/mL以上を目標としています。ゲンタマイシンの目標(MIC=2でCpeak 15〜20μg/mL以上)と比べて数値が大きいのは、アミカシンの方が同じ菌に対するMICが高い水準にあるためで、Cpeak/MICを8〜10以上にするという考え方は共通です。同ガイドラインでは、CLSIの臨床的ブレイクポイント(アミカシン16μg/mL)のMICを示す菌株に有効なCpeakを得ることは薬物動態の面から困難であるとも指摘されています。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) アミカシンの目標濃度",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-017",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "体重50kgの患者にイノバン注0.3%シリンジ(ドパミン塩酸塩3mg/mL)を用いて3μg/kg/分で持続静注する。シリンジポンプに設定する速度は何mL/時か。",
+  "choices": [
+   "3mL/時",
+   "1mL/時",
+   "9mL/時",
+   "18mL/時"
+  ],
+  "correctIndex": 0,
+  "explanation": "順を追って単位をそろえます。(1)1分あたりの投与量:3μg/kg/分×50kg=150μg/分。(2)1時間あたりに直す:150μg/分×60分=9000μg/時=9mg/時。(3)濃度で割る:9mg/時÷3mg/mL=3mL/時。ドパミン塩酸塩注射液(イノバン注シリンジ)の添付文書では「通常ドパミン塩酸塩として1分間あたり1〜5μg/kgを持続静脈投与し、患者の病態に応じ20μg/kgまで増量することができる」と定められており、3μg/kg/分はこの範囲内です。μgとmg、分と時間という2種類の単位換算が同時に必要なため、順序を決めて計算することが誤りを防ぎます。",
+  "source": {
+   "name": "イノバン注0.3%シリンジ 添付文書 3.1 組成・6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/2119402P3030_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-018",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "体重60kgの患者にイノバン注0.1%シリンジ(ドパミン塩酸塩1mg/mL)を用いて5μg/kg/分で持続静注する。シリンジポンプに設定する速度は何mL/時か。",
+  "choices": [
+   "6mL/時",
+   "18mL/時",
+   "30mL/時",
+   "3mL/時"
+  ],
+  "correctIndex": 1,
+  "explanation": "(1)1分あたり:5μg/kg/分×60kg=300μg/分。(2)1時間あたり:300μg/分×60分=18000μg/時=18mg/時。(3)濃度で割る:18mg/時÷1mg/mL=18mL/時。同じ5μg/kg/分でも、0.3%シリンジ(3mg/mL)を使えば18mg/時÷3mg/mL=6mL/時となり、設定値は3分の1になります。濃度が違えば同じ投与量でも設定するmL/時は変わるため、製剤の規格を確認せずに前回と同じ速度を入力することは重大な誤りにつながります。ドパミン塩酸塩注射液の添付文書では1〜5μg/kg/分から投与し、病態に応じ20μg/kgまで増量できるとされています。",
+  "source": {
+   "name": "イノバン注0.1%シリンジ／イノバン注0.3%シリンジ 添付文書 3.1 組成・6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/2119402P3030_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-019",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "体重50kgの患者にイノバン注0.3%シリンジ(ドパミン塩酸塩3mg/mL)を6mL/時で持続静注している。この患者への投与量は何μg/kg/分か。",
+  "choices": [
+   "12μg/kg/分",
+   "3μg/kg/分",
+   "6μg/kg/分",
+   "18μg/kg/分"
+  ],
+  "correctIndex": 2,
+  "explanation": "設定速度から逆にたどります。(1)1時間あたりの薬の量:6mL/時×3mg/mL=18mg/時。(2)1分あたりに直す:18mg/時÷60分=0.3mg/分=300μg/分。(3)体重で割る:300μg/分÷50kg=6μg/kg/分。ドパミン塩酸塩注射液の添付文書では「1分間あたり1〜5μg/kgを持続静脈投与し、患者の病態に応じ20μg/kgまで増量することができる」とされているため、6μg/kg/分は開始量の範囲(1〜5μg/kg/分)を超えていますが、増量できる範囲(20μg/kgまで)には収まっています。ポンプの設定値から投与量を読み取れると、指示との整合性を確認できます。",
+  "source": {
+   "name": "イノバン注0.3%シリンジ 添付文書 3.1 組成・6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/2119402P3030_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-020",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "体重50kgの患者にイノバン注0.3%シリンジ(ドパミン塩酸塩3mg/mL)を用いる。添付文書に示された増量の上限(20μg/kg/分)で投与する場合、シリンジポンプの設定速度は何mL/時か。",
+  "choices": [
+   "6mL/時",
+   "10mL/時",
+   "60mL/時",
+   "20mL/時"
+  ],
+  "correctIndex": 3,
+  "explanation": "(1)1分あたり:20μg/kg/分×50kg=1000μg/分=1mg/分。(2)1時間あたり:1mg/分×60分=60mg/時。(3)濃度で割る:60mg/時÷3mg/mL=20mL/時。ドパミン塩酸塩注射液の添付文書では「通常ドパミン塩酸塩として1分間あたり1〜5μg/kgを持続静脈投与し、患者の病態に応じ20μg/kgまで増量することができる。投与量は患者の血圧、脈拍数および尿量により適宜増減する」と定められています。1シリンジは50mLなので、20mL/時では2時間半でシリンジ1本を使い切る計算になり、交換の準備も見込む必要があります。",
+  "source": {
+   "name": "イノバン注0.3%シリンジ 添付文書 3.1 組成・6. 用法及び用量",
+   "url": "https://www.info.pmda.go.jp/go/pack/2119402P3030_2_03/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-021",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "がん疼痛に対し経口モルヒネ60mg/日を使用中の患者を、フェンタニルクエン酸塩1日用テープ(フェントステープ)に切り替える。添付文書の換算表に基づく初回貼付用量はどれか。",
+  "choices": [
+   "2mg",
+   "0.5mg",
+   "1mg",
+   "4mg"
+  ],
+  "correctIndex": 0,
+  "explanation": "フェントステープの添付文書では、初回貼付用量を選択する換算表について「経口モルヒネ量60mg/日(坐剤の場合30mg/日、注射の場合20mg/日)、経口オキシコドン量40mg/日、フェンタニル経皮吸収型製剤(3日貼付型製剤)4.2mg(25μg/hr;フェンタニル0.6mg/日)に対して本剤2mgへ切り替えるものとして設定している」と明記されています。換算表では経口モルヒネ30〜89mg/日が本剤2mgの区分にあたり、60mg/日はこの中に入ります。オピオイドの切り替えは、換算を誤ると鎮痛不足または過量投与(呼吸抑制)につながるため、換算表の区分を必ず確認します。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1 換算表(オピオイド鎮痛剤から本剤へ切り替える際の推奨貼付用量)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-022",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "がん疼痛に対しモルヒネ注射剤(静脈内投与)20mg/日を使用中の患者を、フェントステープに切り替える。添付文書の換算表に基づく初回貼付用量はどれか。",
+  "choices": [
+   "0.5mg",
+   "2mg",
+   "1mg",
+   "6mg"
+  ],
+  "correctIndex": 1,
+  "explanation": "フェントステープの添付文書の換算表では、モルヒネ注射剤/静脈内投与10〜29mg/日が本剤2mgの区分とされており、20mg/日はこの中に入ります。同添付文書には「経口モルヒネ量60mg/日(坐剤の場合30mg/日、注射の場合20mg/日)…に対して本剤2mgへ切り替えるものとして設定している」と明記されています。すなわち経口モルヒネ60mg/日と注射モルヒネ20mg/日が同等とされており、経口から注射に変えるときは約3分の1の量になるという関係が読み取れます。投与経路によって必要量が大きく変わるため、換算表では経路ごとに別の行が設けられています。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1 換算表",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-023",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "経口オキシコドン40mg/日を使用中のがん疼痛患者を、フェントステープに切り替える。添付文書の換算表に基づく初回貼付用量はどれか。",
+  "choices": [
+   "4mg",
+   "1mg",
+   "2mg",
+   "0.5mg"
+  ],
+  "correctIndex": 2,
+  "explanation": "フェントステープの添付文書の換算表では、オキシコドン経口剤20〜59mg/日が本剤2mgの区分とされており、40mg/日はこの中に入ります。同添付文書には「経口オキシコドン量40mg/日…に対して本剤2mgへ切り替えるものとして設定している」と明記されています。経口モルヒネ60mg/日と経口オキシコドン40mg/日が同じ2mgに対応することから、経口オキシコドンは経口モルヒネのおよそ1.5倍の力価をもつ関係が読み取れます。異なるオピオイド間の切り替えでは、この力価の違いを踏まえた換算が必要です。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1 換算表",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-024",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "経口モルヒネ120mg/日を使用中のがん疼痛患者を、フェントステープに切り替える。添付文書の換算表に基づく初回貼付用量はどれか。",
+  "choices": [
+   "8mg",
+   "2mg",
+   "6mg",
+   "4mg"
+  ],
+  "correctIndex": 3,
+  "explanation": "フェントステープの添付文書の換算表では、モルヒネ経口剤について15mg/日以下が0.5mg、16〜29mg/日が1mg、30〜89mg/日が2mg、90〜149mg/日が4mg、150〜209mg/日が6mgの区分と示されています。120mg/日は「90〜149」にあたるため4mgです。同添付文書では、成人のがん疼痛において初回貼付用量として本剤8mgは推奨されない(6mgを超える使用経験が少ない)とされています。また8mgの定常状態における推定平均吸収量はフェンタニルとして2.4mg/日に相当すると注記されています。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1 換算表",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-025",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "経口モルヒネ200mg/日を使用中のがん疼痛患者を、フェントステープに切り替える。添付文書の換算表に基づく初回貼付用量はどれか。",
+  "choices": [
+   "6mg",
+   "4mg",
+   "8mg",
+   "2mg"
+  ],
+  "correctIndex": 0,
+  "explanation": "フェントステープの添付文書の換算表では、モルヒネ経口剤150〜209mg/日が本剤6mgの区分にあたるため、200mg/日は6mgです。同添付文書では、成人のがん疼痛について「初回貼付用量として、本剤8mgは推奨されない(初回貼付用量として6mgを超える使用経験は少ない)」と明記されており、換算表上6mgを超える計算になる場合でも、初回は6mgまでにとどめることになります。切り替え後は症状や状態により適宜増減するとされているため、初回は控えめに設定し、レスキュー薬の使用状況を見ながら調整するのが安全です。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 6. 用法及び用量・7.1.1 換算表",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-026",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "経口オキシコドン80mg/日を使用中のがん疼痛患者を、フェントステープに切り替える。添付文書の換算表に基づく初回貼付用量はどれか。",
+  "choices": [
+   "2mg",
+   "4mg",
+   "6mg",
+   "8mg"
+  ],
+  "correctIndex": 1,
+  "explanation": "フェントステープの添付文書の換算表では、オキシコドン経口剤について10mg/日以下が0.5mg、11〜19mg/日が1mg、20〜59mg/日が2mg、60〜99mg/日が4mg、100〜139mg/日が6mgの区分と示されています。80mg/日は「60〜99」にあたるため4mgです。経口モルヒネの4mgの区分が90〜149mg/日であることと見比べると、オキシコドンの方が少ない量で同じ区分になることが分かります。換算表は薬剤ごとに行が分かれているため、どの薬の行を見ているかを取り違えないことが重要です。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1 換算表",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-027",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "フェントステープの添付文書に示された、本剤1日貼付用量と定常状態における推定平均吸収量(フェンタニルとして)の対応として正しいのはどれか。",
+  "choices": [
+   "2mgは0.15mg/日、6mgは0.6mg/日",
+   "2mgは2mg/日、6mgは6mg/日",
+   "2mgは0.6mg/日、6mgは1.8mg/日",
+   "2mgは1.2mg/日、6mgは2.4mg/日"
+  ],
+  "correctIndex": 2,
+  "explanation": "フェントステープの添付文書の換算表では、本剤1日貼付用量0.5mg・1mg・2mg・4mg・6mgに対する定常状態における推定平均吸収量が、それぞれフェンタニルとして0.15mg/日・0.3mg/日・0.6mg/日・1.2mg/日・1.8mg/日と示されています。貼付用量の3割程度が実際に吸収される計算です。また同添付文書には、8mgは初回貼付用量としては推奨されないものの推定平均吸収量はフェンタニルとして2.4mg/日に相当すると注記されています。貼付剤に含まれる量と実際に体内に入る量は異なるため、他剤との比較では吸収量で考えます。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1 換算表(定常状態における推定平均吸収量)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-028",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "フェントステープの添付文書の換算表の基準では、経口モルヒネ・モルヒネ坐剤・モルヒネ注射剤の1日量はどのような比になるか。",
+  "choices": [
+   "経口60mg:坐剤40mg:注射30mg(=6:4:3)",
+   "経口60mg:坐剤60mg:注射60mg(=1:1:1)",
+   "経口20mg:坐剤30mg:注射60mg(=2:3:6)",
+   "経口60mg:坐剤30mg:注射20mg(=6:3:2)"
+  ],
+  "correctIndex": 3,
+  "explanation": "フェントステープの添付文書では「初回貼付用量を選択する換算表は、経口モルヒネ量60mg/日(坐剤の場合30mg/日、注射の場合20mg/日)、経口オキシコドン量40mg/日、フェンタニル経皮吸収型製剤(3日貼付型製剤)4.2mg…に対して本剤2mgへ切り替えるものとして設定している」と明記されており、経口60mg・坐剤30mg・注射20mgが同等とされています。比にすると6:3:2です。経口投与では消化管吸収と初回通過効果を経るため、同じ効果を得るのに注射より多くの量が必要になります。投与経路を変更する際は、この比を用いて量を計算し直します。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1(換算表の設定根拠)",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-029",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "3日貼付型のフェンタニル経皮吸収型製剤4.2mg(25μg/hr)を使用中の患者を、1日貼付型のフェントステープに切り替える。添付文書の換算表に基づく初回貼付用量はどれか。",
+  "choices": [
+   "2mg",
+   "4.2mg",
+   "1mg",
+   "4mg"
+  ],
+  "correctIndex": 0,
+  "explanation": "フェントステープの添付文書では「フェンタニル経皮吸収型製剤(3日貼付型製剤)4.2mg(25μg/hr;フェンタニル0.6mg/日)に対して本剤2mgへ切り替えるものとして設定している」と明記されており、換算表でも3日貼付型4.2mgの列が本剤2mgに対応しています。同じフェンタニルの貼付剤どうしでも、表示されている数値(4.2mgと2mg)は製剤に含まれる量であって同じ意味ではありません。共通の指標となるのは1日あたりの吸収量(いずれもフェンタニルとして0.6mg/日)です。数字が大きいほど強いと考えると誤った切り替えになります。",
+  "source": {
+   "name": "フェントステープ0.5mg〜8mg 添付文書 7.1.1 換算表",
+   "url": "https://www.info.pmda.go.jp/go/pack/8219701S1025_1_27/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-030",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "ブドウ糖注射液の生理食塩液に対する浸透圧比について、添付文書の記載として正しい組合せはどれか。",
+  "choices": [
+   "5%は約1、10%は約1、20%は約2、40%は約3",
+   "5%は約1、10%は約2、20%は約5、40%は約9",
+   "5%は約2、10%は約4、20%は約8、40%は約16",
+   "濃度にかかわらずいずれも約1"
+  ],
+  "correctIndex": 1,
+  "explanation": "大塚糖液の添付文書の製剤の性状では、生理食塩液に対する浸透圧比が5%で約1、10%で約2、20%で約5、40%で約9と記載されています。浸透圧比が約1(等張)である5%ブドウ糖液は末梢静脈から投与できますが、濃度が高くなるほど浸透圧比が大きくなり、末梢投与では血管痛や静脈炎、血管外漏出時の組織障害のリスクが高まります。高濃度のブドウ糖液を含む高カロリー輸液が中心静脈から投与されるのはこのためです。輸液を選ぶときは、含まれる糖の量だけでなく浸透圧比も確認します。",
+  "source": {
+   "name": "大塚糖液5%／10%／20%／40% 添付文書 3.2 製剤の性状",
+   "url": "https://www.info.pmda.go.jp/go/pack/3231401A1094_1_19/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-031",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "KCL注20mEqキット「テルモ」の生理食塩液に対する浸透圧比は約6である。この値が示す意味と、添付文書が求める取扱いの組合せとして正しいのはどれか。",
+  "choices": [
+   "生理食塩液と同程度の浸透圧であり、希釈は不要である",
+   "生理食塩液の約6分の1の浸透圧であり、そのまま静注できる",
+   "生理食塩液の約6倍の浸透圧であり、必ず希釈して(カリウム濃度40mEq/L以下)投与する",
+   "浸透圧比は投与経路と関係がないため、原液を急速静注してよい"
+  ],
+  "correctIndex": 2,
+  "explanation": "KCL注20mEqキットの添付文書の製剤の性状では浸透圧比が「約6(生理食塩液に対する比)」と記載されており、生理食塩液のおよそ6倍の浸透圧であることを意味します。同添付文書7.1では「本剤は電解質の補正用製剤であるため、必ず希釈して使用すること(カリウムイオン濃度として40mEq/L以下に必ず希釈し、十分に混和した後に投与すること)」と定められています。カリウム製剤の原液や高濃度での急速投与は心停止につながる重大な事故として繰り返し報告されており、7.2の投与速度20mEq/hr以下、7.3の1日100mEq以下とあわせて厳守すべき規定です。",
+  "source": {
+   "name": "KCL注20mEqキット「テルモ」 添付文書 3.2 製剤の性状・7.1・7.2・7.3",
+   "url": "https://www.info.pmda.go.jp/go/pack/3319402G3028_1_05/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-032",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "抗菌薬TDM臨床実践ガイドライン2022が示すボリコナゾールの目標トラフ濃度はどれか。",
+  "choices": [
+   "有効性の面から0.1μg/mL以上、安全性の面から1μg/mL未満",
+   "有効性の面から4μg/mL以上、安全性の面から10μg/mL未満",
+   "有効性の面から10μg/mL以上、安全性の面から20μg/mL未満",
+   "有効性の面から1μg/mL以上、安全性の面から4μg/mL未満"
+  ],
+  "correctIndex": 3,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、ボリコナゾールのトラフ濃度について有効性の面から1μg/mL以上、安全性の面から4μg/mL未満をカットオフ値とすることが示されています。同ガイドラインでは、リスクの高い患者などではより低い3μg/mL未満を目標とする考え方にも触れられています。ボリコナゾールは肝代謝酵素CYP2C19で代謝され、日本人を含むアジア人では代謝能の低い遺伝型(poor metabolizer)が比較的多く血中濃度が上がりやすいこと、また肝障害や視覚障害などの副作用が濃度に関係することから、TDMの意義が大きい薬剤です。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) ボリコナゾールの目標トラフ濃度",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-033",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "小児にバンコマイシンを投与する場合のTDM目標について、抗菌薬TDM臨床実践ガイドライン2022が示すのはどれか。",
+  "choices": [
+   "AUC評価のソフトウエアが小児では未整備のため、代替指標としてトラフ値10〜15μg/mLを目標とする",
+   "成人と同じく目標AUC 400〜600μg・h/mLをソフトウエアで評価する",
+   "トラフ値15〜20μg/mLを目標とする",
+   "小児ではTDMを行わない"
+  ],
+  "correctIndex": 0,
+  "explanation": "抗菌薬TDM臨床実践ガイドライン2022では、小児に使用できるAUC評価のソフトウエアが開発されていないことから、代替指標としてトラフ値10μg/mL以上を推奨し、一方でトラフ値15μg/mL以上は腎障害のリスクとなるため推奨せず、結論として小児のトラフ目標値を10〜15μg/mLに設定するとしています。成人ではトラフ値による投与設計からAUCに基づく投与設計へ移行したのに対し、小児では評価手段の制約からトラフ値が用いられている点が異なります。同じ薬剤でも年齢によって管理方法が違うことを押さえておく必要があります。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) 小児におけるバンコマイシンのTDM目標値",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-034",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "ヘパリンナトリウム10,000単位を生理食塩液1,000mLに希釈して点滴静注する。この液のヘパリン濃度は何単位/mLか。",
+  "choices": [
+   "1単位/mL",
+   "10単位/mL",
+   "100単位/mL",
+   "1000単位/mL"
+  ],
+  "correctIndex": 1,
+  "explanation": "10,000単位÷1,000mL=10単位/mLです。ヘパリンナトリウム注射液の添付文書の静脈内点滴注射法では「10,000〜30,000単位を5%ブドウ糖注射液、生理食塩液、リンゲル液1,000mLで希釈し」と定められているため、この方法での濃度は10〜30単位/mLの範囲になります。ヘパリンは「単位」で処方され、規格も5千単位/5mL、1万単位/10mL、5万単位/50mL、10万単位/100mLと複数あるため、希釈後の濃度を自分で計算できることが安全確認につながります。",
+  "source": {
+   "name": "ヘパリンナトリウム注5千単位/5mL「YD」 添付文書 3.1 組成・6. 用法及び用量〈静脈内点滴注射法〉",
+   "url": "https://www.info.pmda.go.jp/go/pack/3334401A5089_1_01/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-035",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "ヘパリンナトリウム20,000単位を生理食塩液1,000mLに希釈し、1mLが20滴の輸液セットを用いて1分間に20滴の速度で点滴静注する。1時間あたりに投与されるヘパリンは何単位か。",
+  "choices": [
+   "2,400単位",
+   "600単位",
+   "1,200単位",
+   "20,000単位"
+  ],
+  "correctIndex": 2,
+  "explanation": "順に計算します。(1)濃度:20,000単位÷1,000mL=20単位/mL。(2)速度:1分間20滴÷20滴/mL=1mL/分=60mL/時。(3)1時間あたりの投与量:60mL/時×20単位/mL=1,200単位/時。ヘパリンナトリウム注射液の添付文書の静脈内点滴注射法では「10,000〜30,000単位を…1,000mLで希釈し、最初1分間30滴前後の速度で、続いて全血凝固時間又はWBAPTTが投与前の2〜3倍になれば1分間20滴前後の速度で、静脈内に点滴注射する」と定められています。単位・滴数・容量・時間という4種類の量が混じるため、1つずつ順に換算していくことが確実です。",
+  "source": {
+   "name": "ヘパリンナトリウム注5千単位/5mL「YD」 添付文書 6. 用法及び用量〈静脈内点滴注射法〉",
+   "url": "https://www.info.pmda.go.jp/go/pack/3334401A5089_1_01/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-036",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "ヘパリンナトリウムを静脈内間歇注射法で1回10,000単位、4時間毎に投与する。1日の投与量は何単位か。",
+  "choices": [
+   "80,000単位",
+   "40,000単位",
+   "30,000単位",
+   "60,000単位"
+  ],
+  "correctIndex": 3,
+  "explanation": "4時間毎なので1日の投与回数は24÷4=6回、10,000単位×6回=60,000単位です。ヘパリンナトリウム注射液の添付文書の静脈内間歇注射法では「1回5,000〜10,000単位を4〜8時間毎に静脈内注射する。注射開始3時間後から、2〜4時間毎に全血凝固時間又はWBAPTTを測定し、投与前の2〜3倍になるようにコントロールする」と定められています。同じ範囲でも1回5,000単位を8時間毎(1日3回)なら15,000単位となり、1日量は4倍の開きがあります。ヘパリンは凝固能検査の結果に応じて調節する薬剤であり、量の設定は検査値とセットで判断します。",
+  "source": {
+   "name": "ヘパリンナトリウム注5千単位/5mL「YD」 添付文書 6. 用法及び用量〈静脈内間歇注射法〉",
+   "url": "https://www.info.pmda.go.jp/go/pack/3334401A5089_1_01/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-037",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "体重80kgの患者にバンコマイシンの負荷投与を25mg/kgで行う。抗菌薬TDM臨床実践ガイドライン2022に基づく負荷投与量はどれか。",
+  "choices": [
+   "2000mg",
+   "1600mg",
+   "2400mg",
+   "3000mg"
+  ],
+  "correctIndex": 0,
+  "explanation": "25mg/kg×80kg=2000mgです。抗菌薬TDM臨床実践ガイドライン2022では、負荷投与量は実測体重あたり25〜30mg/kgとされているため、この患者では2000〜2400mgの範囲になります。いずれも3gは超えないため、上限に関する注意には該当しません。負荷投与に実測体重を用いるのは、体格が大きいほど薬が広がる体内の容積が大きく、目標濃度に到達するのに多くの量が必要になるためです。一方、投与を続けるときの維持量は薬が体外へ出ていく速さ(腎機能)に左右されるため、別の考え方で決めます。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) CQ6 バンコマイシンの負荷投与",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-038",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "持続的血液濾過透析(CHDF)を受けている体重60kgの患者に、目標トラフ値20〜40μg/mLでテイコプラニンを開始する。抗菌薬TDM臨床実践ガイドライン2022が示す初期投与設計(1回12mg/kg)に従うときの1回量はどれか。",
+  "choices": [
+   "600mg",
+   "720mg",
+   "360mg",
+   "1200mg"
+  ],
+  "correctIndex": 1,
+  "explanation": "12mg/kg×60kg=720mgです。抗菌薬TDM臨床実践ガイドライン2022では、CHDFを受けている患者の初期投与設計として、目標トラフ値15〜30μg/mLとする場合は1回10mg/kg、20〜40μg/mLとする場合は1回12mg/kgを初日2回投与し、2日目と3日目は1回投与する方法が示されています。目標を高く設定するほど負荷投与量も大きくなります。同ガイドラインでは、心内膜炎や骨関節感染症などの複雑性感染症や重症例で20〜40μg/mLを考慮するとされており、感染巣の性質によって目標値と初期投与量が変わります。",
+  "source": {
+   "name": "抗菌薬TDM臨床実践ガイドライン2022(日本化学療法学会・日本TDM学会) テイコプラニン CQ10(CHDFでの投与設計)",
+   "url": "https://www.chemotherapy.or.jp/uploads/files/guideline/tdm2022.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-039",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "腎機能が低下し糸球体ろ過値(GFR)が40mL/minとなった患者に、目標AUC 5mg・min/mLでカルボプラチンを投与する。Calvert式による投与量はいくらか。",
+  "choices": [
+   "425mg",
+   "200mg",
+   "325mg",
+   "500mg"
+  ],
+  "correctIndex": 2,
+  "explanation": "Calvert式「総投与量(mg)=目標AUC×(GFR+25)」より、5×(40+25)=5×65=325mgです。GFRが75mL/minの患者では500mgとなるので、腎機能の低下に応じて投与量も減ることになります。カルボプラチンは腎排泄型で、腎機能が低下したまま通常量を投与すると血中濃度が上がり、用量規制毒性である血小板減少が強く出ます。パラプラチン注射液の添付文書でも、腎機能の指標としてGFR等を考慮して投与量を選択することが望ましいとされ、AUC目標値及び腎機能に基づく投与量は関連学会の最新のガイドライン等を参考に設定することとされています。",
+  "source": {
+   "name": "カルボプラチン注射液 インタビューフォーム(Calvert式)／パラプラチン注射液50mg 添付文書 7.",
+   "url": "https://www.info.pmda.go.jp/go/interview/1/530169_4291403A1126_1_018_1F.pdf",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
+ },
+ {
+  "id": "calculation-advanced-040",
+  "category": "calculation",
+  "difficulty": "advanced",
+  "type": "single",
+  "question": "通常量が1回60mg(力価)のゲンタマイシン硫酸塩を投与中の患者で、血清クレアチニン値が1.5mg/dLであった。添付文書に示された2つの調節法(投与間隔を調節する方法・1回投与量を調節する方法)で求めた1日量を比べるとどうなるか。",
+  "choices": [
+   "1日量はそれぞれ180mgと120mgになる",
+   "投与間隔を調節する方法のほうが1日量は多くなる",
+   "1回投与量を調節する方法のほうが1日量は多くなる",
+   "どちらも1日120mg(力価)で同じになる"
+  ],
+  "correctIndex": 3,
+  "explanation": "ゲンタシン注の添付文書7.1.1(投与間隔を調節する方法)では「通常量を『血清クレアチニン値(mg/dL)×8』時間毎に投与する」ので、1.5×8=12時間ごと、1日2回×60mg=120mg(力価)です。7.1.2(1回投与量を調節する方法)では「維持量は通常量を血清クレアチニン値で除した用量を8時間毎に投与する」ので、60÷1.5=40mgを8時間ごと、1日3回×40mg=120mg(力価)となります。どちらの方法でも1日量は同じになる設計です。違いは血中濃度の推移で、間隔を延ばす方法はピークを高くトラフを低く保ちやすく、アミノグリコシド系の効果と安全性の考え方に合っています。",
+  "source": {
+   "name": "ゲンタシン注10／ゲンタシン注40／ゲンタシン注60 添付文書 7.1.1・7.1.2",
+   "url": "https://www.info.pmda.go.jp/go/pack/6134407A1024_2_08/?view=body&lang=ja",
+   "confirmedDate": "2026-09-09"
+  },
+  "verified": true
  }
 ]
