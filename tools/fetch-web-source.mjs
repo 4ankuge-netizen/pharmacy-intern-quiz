@@ -56,6 +56,9 @@ const ALLOWED_HOSTS = [
   'jsnp-org.jp',         // 日本神経精神薬理学会
   'jpos-society.org',    // 日本サイコオンコロジー学会
   'jsaweb.jp',           // 日本アレルギー学会
+  'jcog.jp',             // 日本臨床腫瘍研究グループ(JCOG)
+  'jspm.ne.jp',          // 日本緩和医療学会
+  'jstct.or.jp',         // 日本造血・免疫細胞療法学会
 ];
 
 function toFileName(name) {
