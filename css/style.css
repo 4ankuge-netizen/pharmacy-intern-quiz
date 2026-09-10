@@ -1235,6 +1235,92 @@ main h2 {
 }
 
 /* ===========================================================================
+   パソコンの広い画面向けのレイアウト
+
+   スマホ向けの「細い1本の列」をそのまま大画面に出すと、左右が大きく空いて
+   間延びして見える。かといって本文の幅をそのまま広げると、1行が長くなりすぎて
+   読みにくくなる(日本語は1行30〜40字くらいが読みやすい)。
+
+   そこで、
+    - タブを画面左の縦一列(サイドバー)に移して横幅を使う
+    - カードが並ぶ画面(ホーム・ブックマーク)は列を増やして横に広げる
+    - 文章を読む画面(クイズ・結果など)は、幅を抑えたまま中央に置く
+   というように、内容の種類ごとに幅を変えている。
+   =========================================================================== */
+@media (min-width: 1000px) {
+  /*
+    画面全体を「ヘッダー(上に全幅)」「タブ(左)」「本文(右)」の3つに区切る。
+    ページ全体はスクロールさせず、本文の欄だけをスクロールさせることで、
+    ヘッダーとタブが常に見えるアプリらしい画面にする
+  */
+  body {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .app-header {
+    grid-column: 1 / -1; /* ヘッダーは左右いっぱいに広げる */
+    padding: 22px 36px 20px;
+  }
+
+  /* タブを左側の縦一列にする */
+  .app-nav {
+    grid-column: 1;
+    grid-row: 2;
+    position: static;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+    padding: 20px 14px;
+    border: none;
+    border-right: 1px solid var(--line);
+    background: color-mix(in srgb, var(--surface) 55%, transparent);
+    overflow-y: auto;
+  }
+  .app-nav button {
+    flex: 0 0 auto; /* 縦並びなので、余った高さに引き伸ばさない */
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 11px;
+    padding: 11px 14px;
+    font-size: 0.85rem;
+    border-radius: var(--r-md);
+  }
+  .app-nav button::before { width: 19px; height: 19px; }
+
+  /* 本文の欄。ここだけがスクロールする */
+  main {
+    grid-column: 2;
+    grid-row: 2;
+    overflow-y: auto;
+    max-width: none;
+    margin: 0;
+    padding: 30px 40px 56px;
+  }
+
+  /* カードが並ぶ画面は、横幅をたっぷり使う */
+  .screen { max-width: 1120px; margin: 0 auto; }
+  /* 文章を読む画面は、1行が長くなりすぎないように幅を抑える */
+  #quiz-screen,
+  #difficulty-screen,
+  #result-screen,
+  #profile-screen { max-width: 660px; }
+
+  /* ホームのカテゴリーは3列に */
+  #category-list { grid-template-columns: repeat(3, 1fr); }
+  /* ブックマークは2列に */
+  #bookmark-list { display: grid; grid-template-columns: repeat(2, 1fr); align-items: start; }
+}
+
+/* さらに広い画面では、カテゴリーを4列にして余白を減らす */
+@media (min-width: 1400px) {
+  #category-list { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ===========================================================================
    端末側で「動きを減らす」設定にしている人には、アニメーションを出さない
    =========================================================================== */
 @media (prefers-reduced-motion: reduce) {
