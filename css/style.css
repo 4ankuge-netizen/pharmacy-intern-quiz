@@ -200,11 +200,55 @@ body {
   background: linear-gradient(90deg, #9FD8C4, rgba(159, 216, 196, 0.15));
   margin-bottom: 9px;
 }
+/* 利用者名と連続学習日数を、ヘッダーの下段に横並びにする */
+.header-meta {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* 今この端末を使っている人の名前。押すと利用者の切り替え画面へ進む。
+   誰の記録になるかを取り違えないよう、常に見える場所に置いている */
+.profile-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px 5px;
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(243, 239, 230, 0.35);
+  background: rgba(243, 239, 230, 0.12);
+  color: #F3EFE6;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background-color 0.16s ease, border-color 0.16s ease;
+}
+/* 人の形をした小さな印。名前だけだと何の札か分かりにくいため */
+.profile-chip::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10m0 2c-4.4 0-8 2.4-8 5.4V22h16v-2.6c0-3-3.6-5.4-8-5.4'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10m0 2c-4.4 0-8 2.4-8 5.4V22h16v-2.6c0-3-3.6-5.4-8-5.4'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+.profile-chip::after { content: '⌄'; font-size: 0.8rem; line-height: 1; opacity: 0.75; }
+.profile-chip:hover { background: rgba(243, 239, 230, 0.2); border-color: rgba(243, 239, 230, 0.5); }
+
 /* 連続学習日数。丸い札(バッジ)にして目に留まるようにする */
 .streak-display {
   position: relative;
   display: inline-block;
-  margin: 10px 0 0;
+  margin: 0;
   padding: 3px 12px 4px;
   border-radius: var(--r-pill);
   background: rgba(159, 216, 196, 0.14);
@@ -1058,6 +1102,134 @@ main h2 {
   font-size: 0.86rem;
   padding: 26px 0;
   text-align: center;
+}
+
+/* ===========================================================================
+   利用者(プロフィール)の切り替え画面
+   =========================================================================== */
+/* 画面の使い方を説明する、小さな案内文 */
+.screen-note {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin: 0 0 14px;
+}
+
+#profile-list { display: flex; flex-direction: column; gap: 9px; margin-bottom: 14px; }
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.16s ease;
+}
+/* 今使っている人の行。緑の枠と、名前の左のチェック印で示す */
+.profile-row.is-current {
+  border-color: var(--green-500);
+  background: color-mix(in srgb, var(--green-500) 6%, var(--surface));
+}
+
+/* 名前の部分。ここを押すとその人に切り替わるので、押せる範囲を広く取る */
+.profile-switch {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 8px;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+/* 名前の前に置く丸。使用中の人だけ緑に塗り、チェックを入れる */
+.profile-switch::before {
+  content: '';
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--line-strong);
+}
+.profile-row.is-current .profile-switch::before {
+  content: '✓';
+  border-color: var(--green-500);
+  background: var(--green-500);
+  color: var(--on-green);
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-actions { display: flex; gap: 6px; flex-shrink: 0; }
+.profile-action {
+  padding: 6px 11px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: border-color 0.16s ease, color 0.16s ease;
+}
+.profile-action:hover { border-color: var(--ink-faint); color: var(--ink); }
+/* 削除ボタンだけは、押し間違えないよう朱色にしておく */
+.profile-action.is-danger { color: var(--vermillion); border-color: color-mix(in srgb, var(--vermillion) 40%, var(--line-strong)); }
+.profile-action.is-danger:hover { border-color: var(--vermillion); background: var(--vermillion-100); }
+
+/* 「利用者を追加」「成績を書き出す」などの、控えめなボタン */
+.secondary-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1.5px dashed var(--line-strong);
+  border-radius: var(--r-md);
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: border-color 0.16s ease, color 0.16s ease, background-color 0.16s ease;
+}
+.secondary-button:hover {
+  border-color: var(--green-500);
+  color: var(--green-600);
+  background: color-mix(in srgb, var(--green-500) 6%, transparent);
+}
+
+/* 書き出した成績を表示する枠。等幅の文字にして、桁が揃って読めるようにする */
+.export-output {
+  margin: 12px 0;
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow-sm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+  line-height: 1.75;
+  color: var(--ink);
+  white-space: pre-wrap; /* 長い行は折り返す */
+  overflow-x: auto;
+  user-select: text;     /* 手で選んでコピーできるようにする */
+}
+.export-message {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  color: var(--green-600);
+  min-height: 1.2em;
 }
 
 /* ===========================================================================

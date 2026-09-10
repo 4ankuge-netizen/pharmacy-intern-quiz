@@ -87,12 +87,15 @@ function showScreen(screenId) {
   let tabToHighlight = screenId;
   if (screenId === 'result-screen') tabToHighlight = 'quiz-screen';
   if (screenId === 'difficulty-screen') tabToHighlight = 'home-screen';
+  // 利用者の切り替え画面はヘッダーから開くので、どのタブも選択中にしない
+  if (screenId === 'profile-screen') tabToHighlight = null;
   document.querySelectorAll('.app-nav button').forEach((button) => {
     const isCurrent = button.dataset.screen === tabToHighlight;
     button.classList.toggle('active', isCurrent);
     button.setAttribute('aria-current', isCurrent ? 'page' : 'false');
   });
   if (screenId === 'difficulty-screen') renderDifficultyScreen();
+  if (screenId === 'profile-screen') renderProfileScreen();
   if (screenId === 'stats-screen') renderStats();
   if (screenId === 'bookmark-screen') renderBookmarks();
   if (screenId === 'quiz-screen') renderQuestion();
@@ -534,6 +537,166 @@ function renderBookmarks() {
   });
 }
 
+// ---------------------------------------------------------------------------
+// 利用者(プロフィール)まわり。
+// 1台の端末を実習生が交代で使うため、誰の記録なのかを常に見えるようにしている
+// ---------------------------------------------------------------------------
+
+// ヘッダーに「今この端末を使っている人」の名前を出す
+function renderProfileChip() {
+  const profile = storage.getCurrentProfile();
+  document.getElementById('profile-chip').textContent = profile ? profile.name : '利用者';
+}
+
+function renderProfileScreen() {
+  const list = document.getElementById('profile-list');
+  list.innerHTML = '';
+
+  const profiles = storage.listProfiles();
+  const currentId = storage.getCurrentProfile()?.id;
+
+  profiles.forEach((profile) => {
+    const row = document.createElement('div');
+    row.className = 'profile-row';
+    if (profile.id === currentId) row.classList.add('is-current');
+
+    // 名前の部分を押すと、その人に切り替わる
+    const switchButton = document.createElement('button');
+    switchButton.className = 'profile-switch';
+    switchButton.textContent = profile.name;
+    switchButton.addEventListener('click', () => {
+      storage.switchProfile(profile.id);
+      renderProfileChip();
+      renderStreak();
+      renderProfileScreen();
+    });
+
+    // 名前の変更と削除。小さめのボタンで右側に並べる
+    const actions = document.createElement('div');
+    actions.className = 'profile-actions';
+
+    const renameButton = document.createElement('button');
+    renameButton.className = 'profile-action';
+    renameButton.textContent = '名前';
+    renameButton.addEventListener('click', () => {
+      const newName = window.prompt('新しい名前を入力してください', profile.name);
+      if (newName === null) return; // キャンセルされた
+      if (storage.renameProfile(profile.id, newName)) {
+        renderProfileChip();
+        renderProfileScreen();
+      }
+    });
+    actions.appendChild(renameButton);
+
+    // 利用者が1人しかいないときは削除できない(誰もいない状態になってしまうため)
+    if (profiles.length > 1) {
+      const deleteButton = document.createElement('button');
+      deleteButton.className = 'profile-action is-danger';
+      deleteButton.textContent = '削除';
+      deleteButton.addEventListener('click', () => {
+        const ok = window.confirm(
+          `「${profile.name}」の成績・ブックマークをすべて削除します。元に戻せません。よろしいですか。`
+        );
+        if (!ok) return;
+        storage.deleteProfile(profile.id);
+        renderProfileChip();
+        renderStreak();
+        renderProfileScreen();
+      });
+      actions.appendChild(deleteButton);
+    }
+
+    row.append(switchButton, actions);
+    list.appendChild(row);
+  });
+
+  // 利用者を切り替えたときは、前の人の書き出し結果が残らないように消しておく
+  hideExportOutput();
+}
+
+function onAddProfile() {
+  const name = window.prompt('追加する利用者の名前を入力してください');
+  if (name === null) return; // キャンセルされた
+  if (!String(name).trim()) return;
+  storage.addProfile(name, getTodayLocalDate());
+  renderProfileChip();
+  renderStreak();
+  renderProfileScreen();
+}
+
+function hideExportOutput() {
+  document.getElementById('export-output').hidden = true;
+  document.getElementById('copy-export-button').hidden = true;
+  document.getElementById('export-message').textContent = '';
+}
+
+/*
+  今の利用者の成績を、そのまま貼り付けられる文章にまとめる。
+  実習指導者へ提出したり、実習の記録として残したりするためのもの
+*/
+function buildExportText() {
+  const profile = storage.getCurrentProfile();
+  const history = storage.getHistory();
+  const lines = [];
+
+  lines.push('薬学実習クイズ 成績');
+  lines.push(`利用者: ${profile ? profile.name : '(不明)'}`);
+  lines.push(`書き出し日: ${getTodayLocalDate()}`);
+  lines.push(`連続学習: ${storage.getStreak()}日`);
+  lines.push('');
+
+  lines.push('【カテゴリー別】');
+  computeCategoryAccuracy(allQuestions, history, categories).forEach((row) => {
+    lines.push(
+      row.answered === 0
+        ? `${row.categoryName}: 未回答 (全${row.totalQuestions}問)`
+        : `${row.categoryName}: ${row.correct}/${row.answered}問正解 (${row.accuracyPercent}%) ／ 全${row.totalQuestions}問`
+    );
+  });
+  lines.push('');
+
+  lines.push('【難易度別】');
+  DIFFICULTIES.forEach((difficulty) => {
+    const pool = filterQuestions(allQuestions, { difficulty: difficulty.id });
+    const summary = summarizeAccuracy(pool, history);
+    lines.push(
+      summary.answered === 0
+        ? `${difficulty.name}: 未回答 (全${summary.totalQuestions}問)`
+        : `${difficulty.name}: ${summary.correct}/${summary.answered}問正解 (${summary.accuracyPercent}%) ／ 全${summary.totalQuestions}問`
+    );
+  });
+  lines.push('');
+
+  const overall = summarizeAccuracy(allQuestions, history);
+  lines.push(
+    overall.answered === 0
+      ? '合計: まだ回答がありません'
+      : `合計: ${overall.correct}/${overall.answered}問正解 (${overall.accuracyPercent}%) ／ 全${overall.totalQuestions}問`
+  );
+
+  return lines.join('\n');
+}
+
+function onExport() {
+  const output = document.getElementById('export-output');
+  output.textContent = buildExportText();
+  output.hidden = false;
+  document.getElementById('copy-export-button').hidden = false;
+  document.getElementById('export-message').textContent = '';
+}
+
+async function onCopyExport() {
+  const text = document.getElementById('export-output').textContent;
+  const message = document.getElementById('export-message');
+  try {
+    await navigator.clipboard.writeText(text);
+    message.textContent = 'コピーしました。';
+  } catch {
+    // 端末の設定によってはコピーできないことがあるので、手で選べる旨を伝える
+    message.textContent = 'コピーできませんでした。上の文章を長押しして選択してください。';
+  }
+}
+
 function renderStreak() {
   const streak = storage.getStreak();
   // まだ1問も解いていないときに「0日目」と出ると不自然なので、
@@ -549,6 +712,12 @@ function setupNav() {
   document.getElementById('weak-point-button').addEventListener('click', startWeakPointQuiz);
   // 難易度選択画面から、カテゴリー一覧へ戻る
   document.getElementById('difficulty-back-button').addEventListener('click', () => showScreen('home-screen'));
+  // 利用者の切り替え画面
+  document.getElementById('profile-chip').addEventListener('click', () => showScreen('profile-screen'));
+  document.getElementById('profile-back-button').addEventListener('click', () => showScreen('home-screen'));
+  document.getElementById('add-profile-button').addEventListener('click', onAddProfile);
+  document.getElementById('export-button').addEventListener('click', onExport);
+  document.getElementById('copy-export-button').addEventListener('click', onCopyExport);
   document.getElementById('next-question-button').addEventListener('click', onNextQuestion);
   document.getElementById('bookmark-toggle-button').addEventListener('click', onToggleBookmark);
   // 結果画面のボタン
@@ -564,6 +733,7 @@ async function init() {
   await loadData();
   setupNav();
   renderHome();
+  renderProfileChip();
   renderStreak();
   showScreen('home-screen');
 }

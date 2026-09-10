@@ -17,7 +17,11 @@
 <body>
   <header class="app-header">
     <h1>薬学実習クイズ</h1>
-    <p id="streak-display" class="streak-display"></p>
+    <div class="header-meta">
+      <!-- 今この端末を使っている人。押すと利用者の切り替え画面へ進む -->
+      <button id="profile-chip" class="profile-chip" aria-label="利用者を切り替える"></button>
+      <p id="streak-display" class="streak-display"></p>
+    </div>
   </header>
 
   <nav class="app-nav">
@@ -103,6 +107,22 @@
     <section id="bookmark-screen" class="screen" hidden>
       <h2>ブックマークした問題</h2>
       <div id="bookmark-list"></div>
+    </section>
+
+    <!-- 利用者の切り替え画面。1台の端末を複数の実習生で使うためのもの -->
+    <section id="profile-screen" class="screen" hidden>
+      <button id="profile-back-button" class="back-button">ホームに戻る</button>
+      <h2>利用者</h2>
+      <p class="screen-note">この端末では、利用者ごとに成績・ブックマーク・連続学習日数を別々に記録します。名前を押すとその人に切り替わります。</p>
+      <div id="profile-list"></div>
+      <button id="add-profile-button" class="secondary-button">＋ 利用者を追加</button>
+
+      <h3 class="section-title" style="margin-top:28px">成績の書き出し</h3>
+      <p class="screen-note">今の利用者の成績を文字にまとめます。コピーしてメールやメッセージに貼り付けられます。</p>
+      <button id="export-button" class="secondary-button">成績を書き出す</button>
+      <pre id="export-output" class="export-output" hidden></pre>
+      <button id="copy-export-button" class="secondary-button" hidden>コピーする</button>
+      <p id="export-message" class="export-message"></p>
     </section>
   </main>
 
