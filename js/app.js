@@ -78,13 +78,32 @@ function showScreen(screenId) {
   if (screenId === 'result-screen') renderResult();
 }
 
+// カテゴリーごとの色を、その部品に持たせる。
+// CSS側で --cat-cancer のような名前の色をあらかじめ用意してあるので、
+// ここでは「この部品の --cat は、がんの色を使う」と指定するだけでよい。
+// これでホーム・正答率・ブックマークの3画面が同じ色で揃う
+function applyCategoryColor(element, categoryId) {
+  element.style.setProperty('--cat', `var(--cat-${categoryId}, var(--cat-default))`);
+}
+
 function renderHome() {
   const list = document.getElementById('category-list');
   list.innerHTML = '';
   categories.forEach((category) => {
     const button = document.createElement('button');
     button.className = 'category-item';
-    button.textContent = category.name;
+    applyCategoryColor(button, category.id);
+
+    const nameEl = document.createElement('span');
+    nameEl.textContent = category.name;
+
+    // そのカテゴリーに何問入っているかを添えて、選ぶときの目安にしてもらう
+    const count = filterQuestions(allQuestions, { categoryId: category.id }).length;
+    const countEl = document.createElement('span');
+    countEl.className = 'category-count';
+    countEl.textContent = `全${count}問`;
+
+    button.append(nameEl, countEl);
     button.addEventListener('click', () => startQuiz({ categoryId: category.id }));
     list.appendChild(button);
   });
@@ -132,17 +151,22 @@ function renderQuestion() {
   // 前の問題で押された判子が残っていたら消しておく
   document.getElementById('hanko-slot').innerHTML = '';
 
+  const progressFill = document.getElementById('quiz-progress-fill');
+
   if (currentSession.length === 0) {
     // 出題できる問題がないときは、次に何をすればいいかが分かる案内を出す
     document.getElementById('question-text').textContent = emptySessionMessage;
     document.getElementById('choice-list').innerHTML = '';
     document.getElementById('quiz-progress').textContent = '';
+    progressFill.style.width = '0%';
     return;
   }
 
   const question = currentSession[currentIndex];
   document.getElementById('quiz-progress').textContent =
     `${currentIndex + 1} / ${currentSession.length} 問目`;
+  // 進み具合のバーを伸ばす。1問目でも少しは色が見えるよう、今の問題を含めた割合にする
+  progressFill.style.width = `${((currentIndex + 1) / currentSession.length) * 100}%`;
   document.getElementById('question-text').textContent = question.question;
 
   const bookmarkIds = storage.getBookmarkIds();
@@ -197,6 +221,8 @@ function onAnswer(question, selectedIndex, selectedButton) {
   }
 
   document.getElementById('feedback-result').textContent = isCorrect ? '正解!' : '不正解';
+  // 不正解のときだけ解説パネルに目印を付ける。見出しの文字色を朱色にするのはCSS側の役目
+  document.getElementById('answer-feedback').classList.toggle('is-wrong', !isCorrect);
   document.getElementById('feedback-explanation').textContent = question.explanation;
 
   // 出典を表示する。URLがある場合はクリックできるリンクにする
@@ -235,6 +261,11 @@ function onNextQuestion() {
 function renderResult() {
   const total = currentSession.length;
   const correct = sessionCorrectCount;
+
+  // 正答率の円グラフ。--pct に 0〜100 を入れると、その割合だけ緑に塗られる
+  const percent = total === 0 ? 0 : Math.round((correct / total) * 100);
+  document.getElementById('score-ring').style.setProperty('--pct', percent);
+  document.getElementById('score-ring-pct').textContent = `${percent}`;
 
   // 「3問中 2問正解」の、数字の部分だけ大きく見せる
   const scoreEl = document.getElementById('result-score');
@@ -275,6 +306,7 @@ function renderStats() {
 
     const rowEl = document.createElement('div');
     rowEl.className = 'stats-row';
+    applyCategoryColor(rowEl, row.categoryId); // 棒の色をホーム画面のカードと揃える
     // マウスを乗せる(スマホでは長押しする)と、正解数の内訳が見られるようにしておく
     rowEl.title = isUnanswered
       ? 'まだ解いていません'
@@ -313,6 +345,7 @@ function renderBookmarks() {
     // 控え(レシート)のように、カテゴリー名のタグ+問題文を1行にする
     const rowEl = document.createElement('div');
     rowEl.className = 'bookmark-row';
+    applyCategoryColor(rowEl, q.category); // 左端の線とタグの色をカテゴリーに合わせる
 
     const category = categories.find((c) => c.id === q.category);
     const tagEl = document.createElement('span');
