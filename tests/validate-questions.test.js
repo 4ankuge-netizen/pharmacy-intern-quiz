@@ -150,17 +150,30 @@ test('本番の問題データ全体が正しい形式になっている', () =>
 
 test('正解の位置が特定の場所に偏っていない', () => {
   // 以前のデータは全問「正解が1番目」だった。取り込み時に並び替えたので、
-  // 4つの位置にだいたい均等に散らばっているはず。
+  // それぞれの位置にだいたい均等に散らばっているはず。
   // (偏っていると、中身を読まずに位置だけで答えられてしまう)
+  //
+  // 選択肢が4つの問題と、5つの問題(国家試験の必須問題)が混ざっているので、
+  // 「選択肢の数」ごとに分けて偏りを見る。まとめて数えると、
+  // 4択には無い5番目の位置のぶんだけ数が合わなくなってしまう。
   const raw = readFileSync(new URL('../data/questions.json', import.meta.url));
   const questions = JSON.parse(raw);
-  const counts = [0, 0, 0, 0];
-  questions.forEach((q) => { counts[q.correctIndex] += 1; });
-  const expected = questions.length / 4;
-  counts.forEach((count, position) => {
-    assert.ok(
-      count > expected * 0.7 && count < expected * 1.3,
-      `正解が${position}番目の問題が${count}問と偏っています(目安は${Math.round(expected)}問前後)`
-    );
+
+  const countsByLength = new Map();
+  questions.forEach((q) => {
+    const size = q.choices.length;
+    if (!countsByLength.has(size)) countsByLength.set(size, new Array(size).fill(0));
+    countsByLength.get(size)[q.correctIndex] += 1;
   });
+
+  for (const [size, counts] of countsByLength) {
+    const total = counts.reduce((sum, n) => sum + n, 0);
+    const expected = total / size;
+    counts.forEach((count, position) => {
+      assert.ok(
+        count > expected * 0.7 && count < expected * 1.3,
+        `${size}択のうち、正解が${position}番目の問題が${count}問と偏っています(目安は${Math.round(expected)}問前後)`
+      );
+    });
+  }
 });

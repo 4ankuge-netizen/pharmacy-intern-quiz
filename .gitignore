@@ -7,3 +7,6 @@ node_modules/
 .guideline-cache/
 .pmda-if/
 .law-cache/
+
+# 国家試験PDFから取り出したテキスト(再取得できるので追跡しない)
+.exam-cache/

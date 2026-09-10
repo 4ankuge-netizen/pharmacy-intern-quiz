@@ -12,11 +12,15 @@
     保存されている並び順そのものも散らしておきます。
 
   やり方:
-    問題をID順に並べ、0番目・1番目・2番目・3番目…と順ぐりに正解の置き場所を
+    問題をID順に並べ、0番目・1番目・2番目…と順ぐりに正解の置き場所を
     決めて、そこへ正解を移します。乱数を使わないので、
-     - 4つの位置にきっちり均等に散る
+     - それぞれの位置にきっちり均等に散る
      - 何度実行しても同じ結果になる(差分を追いやすい)
     という2つを同時に満たせます。
+
+    選択肢が4つの問題と5つの問題(国家試験の問題)が混ざっているため、
+    「選択肢の数」ごとに別々に数えて散らします。そうしないと、
+    5択の問題だけ特定の位置に寄ってしまうことがあります。
 
   ※ 選択肢の並びに意味がある問題(「上記すべて」など)は今のところありません。
      もし作る場合は、この道具の対象から外す仕組みが必要になります。
@@ -37,8 +41,16 @@ function main() {
   // ID順に並べたときの順番で置き場所を決める(データ内の並び順に左右されないように)
   const order = [...questions].sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
 
-  order.forEach((q, i) => {
-    const target = i % q.choices.length;
+  // 選択肢の数ごとに「何問目か」を数えるための入れ物。
+  // 4択なら0,1,2,3,0,1,2,3…、5択なら0,1,2,3,4,0,1…と置き場所が回っていく
+  const seenByLength = new Map();
+
+  order.forEach((q) => {
+    const size = q.choices.length;
+    const seen = seenByLength.get(size) ?? 0;
+    seenByLength.set(size, seen + 1);
+
+    const target = seen % size;
     if (q.correctIndex === target) return;
     const choices = [...q.choices];
     // 正解と、置きたい場所にあるものを入れ替える
@@ -47,9 +59,17 @@ function main() {
     q.correctIndex = target;
   });
 
-  const counts = [0, 0, 0, 0];
-  questions.forEach((q) => { counts[q.correctIndex] += 1; });
-  console.log(`正解の位置の分布: ${counts.join(' / ')} (目安 ${Math.round(questions.length / 4)} 前後)`);
+  // 選択肢の数ごとに、正解がどの位置に何問あるかを表示する
+  const countsByLength = new Map();
+  questions.forEach((q) => {
+    const size = q.choices.length;
+    if (!countsByLength.has(size)) countsByLength.set(size, new Array(size).fill(0));
+    countsByLength.get(size)[q.correctIndex] += 1;
+  });
+  for (const [size, counts] of [...countsByLength].sort((a, b) => a[0] - b[0])) {
+    const total = counts.reduce((sum, n) => sum + n, 0);
+    console.log(`${size}択(${total}問) 正解の位置: ${counts.join(' / ')} (目安 ${Math.round(total / size)} 前後)`);
+  }
 
   const problems = validateQuestions(questions);
   if (problems.length > 0) {

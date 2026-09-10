@@ -21,6 +21,7 @@ export const VALID_CATEGORY_IDS = [
   'infection',
   'calculation',
   'ethics',
+  'national-exam',
 ];
 
 export function validateQuestion(q) {

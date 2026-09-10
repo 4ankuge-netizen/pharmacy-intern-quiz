@@ -72,6 +72,7 @@
   --cat-infection: #1F8A70;       /* 常磐緑 */
   --cat-calculation: #4A5A7B;     /* 鉄紺 */
   --cat-ethics: #96613F;          /* 落栗(茶) */
+  --cat-national-exam: #96344B;   /* 臙脂(えんじ)。疾患ではなく試験対策なので、赤系の中でも濃い色にした */
   --cat-default: var(--green-500); /* 万一カテゴリーが増えたときの予備 */
 
   /* 難易度ごとの色。やさしい順に、緑 → 青 → 紫と濃くなっていく */
@@ -123,6 +124,7 @@
     --cat-infection: #4FBFA3;
     --cat-calculation: #8C9BBD;
     --cat-ethics: #C89370;
+    --cat-national-exam: #E08D9F;
 
     --lv-beginner: #3FA98B;
     --lv-intermediate: #6C9FDC;
