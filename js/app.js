@@ -9,12 +9,20 @@ import {
   shuffleChoices,
 } from './quiz-engine.js';
 import { createStorage } from './storage.js';
-import { computeCategoryAccuracy } from './stats.js';
+import { computeCategoryAccuracy, summarizeAccuracy } from './stats.js';
 
 const storage = createStorage(window.localStorage);
 
 // 1回の出題で出す問題数。問題プールが増えても、1回分はこの数で区切る
 const QUESTIONS_PER_SESSION = 10;
+
+// 難易度の一覧。表示する名前と、どんな問題かの一言説明をここにまとめておく。
+// 順番もこの配列のとおりに画面へ並ぶ
+const DIFFICULTIES = [
+  { id: 'beginner', name: '初級', description: 'まず押さえておきたい基本' },
+  { id: 'intermediate', name: '中級', description: '実務で判断が必要になる内容' },
+  { id: 'advanced', name: '上級', description: '専門的・応用的な内容' },
+];
 
 // 出題に使う問題(PMDAの一次資料で確認済みのものだけ)
 let allQuestions = [];
@@ -29,10 +37,19 @@ let currentIndex = 0;
 let emptySessionMessage = 'ホームからカテゴリーを選んでください。';
 // 今回の出題での正解数(結果画面で使う)
 let sessionCorrectCount = 0;
-// 今回の出題ですでに答えた問題のID。同じ問題の成績を二重に記録しないための目印
-let answeredInSession = new Set();
+// 今回の出題ですでに答えた問題の記録。
+// 「問題のID → 正解だったか(true/false)」の形で持つ。
+// 二重に成績を記録しないための目印と、結果画面のふりかえり一覧の両方に使う
+let answeredInSession = new Map();
 // 「もう一度解く」で同じ出題内容をやり直せるよう、直前の出題方法を覚えておく
 let lastQuizStarter = null;
+// 難易度選択画面で、今どのカテゴリーを開いているか
+let selectedCategory = null;
+// 結果画面の見出しに出す「がん ・ 初級」のような文字列
+let sessionLabel = '';
+// 今回の出題がカテゴリー選択から始まったか(弱点復習モードなら false)。
+// 結果画面の「別の難易度を選ぶ」ボタンを出すかどうかの判断に使う
+let sessionUsedCategory = false;
 // 今表示している選択肢の並びと、その中で正解が何番目か。
 // 表示のたびに並び替えるため、正解の位置は問題データではなくこちらを見る
 let currentChoices = null;
@@ -65,13 +82,17 @@ function showScreen(screenId) {
     el.hidden = el.id !== screenId;
   });
   // 今いる画面のタブに印を付けて、現在地が分かるようにする。
-  // 結果画面はタブにないが、クイズの流れの一部なので「クイズ」を選択中として扱う
-  const tabToHighlight = screenId === 'result-screen' ? 'quiz-screen' : screenId;
+  // 難易度を選ぶ画面はカテゴリー選びの続きなので「ホーム」、
+  // 結果画面はクイズの流れの一部なので「クイズ」を選択中として扱う
+  let tabToHighlight = screenId;
+  if (screenId === 'result-screen') tabToHighlight = 'quiz-screen';
+  if (screenId === 'difficulty-screen') tabToHighlight = 'home-screen';
   document.querySelectorAll('.app-nav button').forEach((button) => {
     const isCurrent = button.dataset.screen === tabToHighlight;
     button.classList.toggle('active', isCurrent);
     button.setAttribute('aria-current', isCurrent ? 'page' : 'false');
   });
+  if (screenId === 'difficulty-screen') renderDifficultyScreen();
   if (screenId === 'stats-screen') renderStats();
   if (screenId === 'bookmark-screen') renderBookmarks();
   if (screenId === 'quiz-screen') renderQuestion();
@@ -104,44 +125,119 @@ function renderHome() {
     countEl.textContent = `全${count}問`;
 
     button.append(nameEl, countEl);
-    button.addEventListener('click', () => startQuiz({ categoryId: category.id }));
+    // カテゴリーを選んだら、すぐ出題せずに難易度を選ぶ画面へ進む
+    button.addEventListener('click', () => openDifficultyScreen(category));
+    list.appendChild(button);
+  });
+}
+
+// 難易度を選ぶ画面を開く
+function openDifficultyScreen(category) {
+  selectedCategory = category;
+  showScreen('difficulty-screen');
+}
+
+// 難易度を選ぶ画面の中身を作る。
+// 初級・中級・上級それぞれについて「何問あるか」「これまでの正答率」を添える
+function renderDifficultyScreen() {
+  if (!selectedCategory) return;
+
+  document.getElementById('difficulty-title').textContent = `${selectedCategory.name} － 難易度を選んでください`;
+
+  const list = document.getElementById('difficulty-list');
+  list.innerHTML = '';
+  const history = storage.getHistory();
+
+  DIFFICULTIES.forEach((difficulty) => {
+    const pool = filterQuestions(allQuestions, {
+      categoryId: selectedCategory.id,
+      difficulty: difficulty.id,
+    });
+    const summary = summarizeAccuracy(pool, history);
+
+    const button = document.createElement('button');
+    button.className = 'difficulty-item';
+    button.dataset.difficulty = difficulty.id; // 難易度ごとに色を変えるための目印(CSS側で使う)
+
+    const nameEl = document.createElement('span');
+    nameEl.className = 'difficulty-name';
+    nameEl.textContent = difficulty.name;
+
+    const descEl = document.createElement('span');
+    descEl.className = 'difficulty-desc';
+    descEl.textContent = difficulty.description;
+
+    // 問題数と、これまでの正答率(まだ解いていなければ「未回答」)
+    const metaEl = document.createElement('span');
+    metaEl.className = 'difficulty-meta';
+    metaEl.textContent =
+      summary.answered === 0
+        ? `全${summary.totalQuestions}問 ・ 未回答`
+        : `全${summary.totalQuestions}問 ・ 正答率 ${summary.accuracyPercent}%`;
+
+    button.append(nameEl, descEl, metaEl);
+
+    // 問題が1問も入っていない難易度は、押しても出題できないので押せなくする
+    if (pool.length === 0) {
+      button.disabled = true;
+      metaEl.textContent = '準備中';
+    } else {
+      button.addEventListener('click', () =>
+        startQuiz({ categoryId: selectedCategory.id, difficulty: difficulty.id })
+      );
+    }
+
     list.appendChild(button);
   });
 }
 
 // 出題を始めるときの共通の準備(点数や答えた記録をまっさらに戻す)。
 // プール全体からランダムに10問だけ選ぶので、問題が増えても1回分の長さは変わらない
-function beginSession(pool, emptyMessage, starter) {
+function beginSession({ pool, emptyMessage, starter, label, fromCategory = false }) {
   currentSession = pickRandomQuestions(pool, QUESTIONS_PER_SESSION);
   currentIndex = 0;
   sessionCorrectCount = 0;
-  answeredInSession = new Set();
+  answeredInSession = new Map();
   emptySessionMessage = emptyMessage;
   lastQuizStarter = starter;
+  sessionLabel = label;
+  sessionUsedCategory = fromCategory;
   showScreen('quiz-screen');
 }
 
-function startQuiz({ categoryId } = {}) {
-  const pool = filterQuestions(allQuestions, { categoryId });
+function startQuiz({ categoryId, difficulty } = {}) {
+  const pool = filterQuestions(allQuestions, { categoryId, difficulty });
   // 問題自体は入っているのに、確認作業がまだ済んでいないだけ、という場合は
   // その理由が分かる案内にする
-  const unverifiedCount = filterQuestions(allQuestionsIncludingUnverified, { categoryId })
+  const unverifiedCount = filterQuestions(allQuestionsIncludingUnverified, { categoryId, difficulty })
     .filter((q) => !q.verified).length;
   const message =
     unverifiedCount > 0
-      ? `このカテゴリーには確認待ちの問題が${unverifiedCount}問あります。PMDAの資料での確認が済んだものから出題されます。`
-      : 'このカテゴリーにはまだ問題がありません。';
+      ? `ここには確認待ちの問題が${unverifiedCount}問あります。PMDAの資料での確認が済んだものから出題されます。`
+      : 'ここにはまだ問題がありません。';
 
-  beginSession(pool, message, () => startQuiz({ categoryId }));
+  // 結果画面に出す見出し(「がん ・ 初級」など)を作っておく
+  const categoryName = categories.find((c) => c.id === categoryId)?.name ?? '';
+  const difficultyName = DIFFICULTIES.find((d) => d.id === difficulty)?.name ?? '';
+  const label = [categoryName, difficultyName].filter(Boolean).join(' ・ ');
+
+  beginSession({
+    pool,
+    emptyMessage: message,
+    starter: () => startQuiz({ categoryId, difficulty }),
+    label,
+    fromCategory: Boolean(categoryId),
+  });
 }
 
 function startWeakPointQuiz() {
   const wrongIds = storage.getWrongQuestionIds();
-  beginSession(
-    getWeakPointQuestions(allQuestions, wrongIds),
-    '間違えた問題はまだありません。まずはカテゴリーを選んで解いてみましょう。',
-    startWeakPointQuiz
-  );
+  beginSession({
+    pool: getWeakPointQuestions(allQuestions, wrongIds),
+    emptyMessage: '間違えた問題はまだありません。まずはカテゴリーを選んで解いてみましょう。',
+    starter: startWeakPointQuiz,
+    label: '弱点復習モード',
+  });
 }
 
 function renderQuestion() {
@@ -194,7 +290,7 @@ function onAnswer(question, selectedIndex, selectedButton) {
   // 同じ問題を1回の出題の中で二度答えた場合、成績を二重に数えない。
   // (画面を切り替えて戻ってきたときに、もう一度答えられてしまうため)
   if (!answeredInSession.has(question.id)) {
-    answeredInSession.add(question.id);
+    answeredInSession.set(question.id, isCorrect);
     if (isCorrect) sessionCorrectCount += 1;
 
     const today = getTodayLocalDate();
@@ -267,7 +363,7 @@ function renderResult() {
   document.getElementById('score-ring').style.setProperty('--pct', percent);
   document.getElementById('score-ring-pct').textContent = `${percent}`;
 
-  // 「3問中 2問正解」の、数字の部分だけ大きく見せる
+  // 「10問中 8問正解」の、数字の部分だけ大きく見せる
   const scoreEl = document.getElementById('result-score');
   scoreEl.textContent = '';
   const countEl = document.createElement('span');
@@ -275,12 +371,89 @@ function renderResult() {
   countEl.textContent = `${correct}`;
   scoreEl.append(`${total}問中 `, countEl, '問正解');
 
-  // 間違いがあった人には、そのまま弱点復習につなげる案内を出す
   const wrongCount = total - correct;
-  document.getElementById('result-comment').textContent =
-    wrongCount === 0
-      ? '全問正解です。この調子で次のカテゴリーに進みましょう。'
-      : `間違えた${wrongCount}問は、ホームの「弱点復習モード」で解き直せます。`;
+  document.getElementById('result-correct-count').textContent = `${correct}`;
+  document.getElementById('result-wrong-count').textContent = `${wrongCount}`;
+
+  // どのカテゴリー・難易度を解いたのかを、カードの上に小さく出す
+  const eyebrowEl = document.getElementById('result-eyebrow');
+  eyebrowEl.textContent = sessionLabel;
+
+  // 成績に応じてねぎらいの言葉を変える。同じ文面が毎回出ると飽きるため
+  const commentEl = document.getElementById('result-comment');
+  if (total === 0) {
+    commentEl.textContent = '';
+  } else if (wrongCount === 0) {
+    commentEl.textContent = '全問正解です。この調子で次の難易度に進みましょう。';
+  } else if (percent >= 80) {
+    commentEl.textContent = `よくできています。間違えた${wrongCount}問を見直せば完璧です。`;
+  } else if (percent >= 50) {
+    commentEl.textContent = `半分以上正解できました。間違えた${wrongCount}問は「弱点復習モード」で解き直せます。`;
+  } else {
+    commentEl.textContent = '解説を読み返してから、もう一度解いてみましょう。間違えた問題は「弱点復習モード」にたまっています。';
+  }
+
+  // 「別の難易度を選ぶ」は、カテゴリーから始めたときだけ意味があるので、
+  // 弱点復習モードで解いたときは隠しておく
+  document.getElementById('other-difficulty-button').hidden = selectedCategory === null || !sessionUsedCategory;
+
+  renderResultReview();
+}
+
+// 今回出た問題を1行ずつ並べる。行を開くと解説と出典が読める。
+// 解き終えた直後にその場で復習できるようにするための一覧
+function renderResultReview() {
+  const list = document.getElementById('result-review-list');
+  const title = document.getElementById('result-review-title');
+  list.innerHTML = '';
+
+  // 1問も解いていないとき(出題できる問題が無かったとき)は一覧ごと隠す
+  const answered = currentSession.filter((q) => answeredInSession.has(q.id));
+  const isEmpty = answered.length === 0;
+  title.hidden = isEmpty;
+  list.hidden = isEmpty;
+  if (isEmpty) return;
+
+  answered.forEach((question, index) => {
+    const isCorrect = answeredInSession.get(question.id);
+
+    // <details> は、クリックすると中身が開く仕組みがブラウザに元から備わっているタグ。
+    // 自分で開閉の処理を書かなくてよいので、動きが安定する
+    const item = document.createElement('details');
+    item.className = 'review-item';
+    item.dataset.result = isCorrect ? 'correct' : 'wrong';
+
+    const summary = document.createElement('summary');
+    const badge = document.createElement('span');
+    badge.className = 'review-badge';
+    badge.textContent = isCorrect ? '○' : '×';
+    const text = document.createElement('span');
+    text.className = 'review-question';
+    text.textContent = `${index + 1}. ${question.question}`;
+    summary.append(badge, text);
+
+    const body = document.createElement('div');
+    body.className = 'review-body';
+
+    const answerEl = document.createElement('p');
+    answerEl.className = 'review-answer';
+    answerEl.append('正解: ');
+    const answerText = document.createElement('b');
+    answerText.textContent = question.choices[question.correctIndex];
+    answerEl.append(answerText);
+
+    const explanationEl = document.createElement('p');
+    explanationEl.className = 'review-explanation';
+    explanationEl.textContent = question.explanation;
+
+    const sourceEl = document.createElement('p');
+    sourceEl.className = 'review-source';
+    sourceEl.textContent = `出典: ${question.source?.name ?? '不明'}`;
+
+    body.append(answerEl, explanationEl, sourceEl);
+    item.append(summary, body);
+    list.appendChild(item);
+  });
 }
 
 function onToggleBookmark() {
@@ -374,12 +547,16 @@ function setupNav() {
     button.addEventListener('click', () => showScreen(button.dataset.screen));
   });
   document.getElementById('weak-point-button').addEventListener('click', startWeakPointQuiz);
+  // 難易度選択画面から、カテゴリー一覧へ戻る
+  document.getElementById('difficulty-back-button').addEventListener('click', () => showScreen('home-screen'));
   document.getElementById('next-question-button').addEventListener('click', onNextQuestion);
   document.getElementById('bookmark-toggle-button').addEventListener('click', onToggleBookmark);
   // 結果画面のボタン
   document.getElementById('retry-button').addEventListener('click', () => {
     if (lastQuizStarter) lastQuizStarter(); // 直前と同じ内容をもう一度出題する
   });
+  // 解き終わったあと、同じカテゴリーの別の難易度にすぐ移れるようにする
+  document.getElementById('other-difficulty-button').addEventListener('click', () => showScreen('difficulty-screen'));
   document.getElementById('back-home-button').addEventListener('click', () => showScreen('home-screen'));
 }
 

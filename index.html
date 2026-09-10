@@ -34,6 +34,13 @@
       <button id="weak-point-button">弱点復習モードで始める</button>
     </section>
 
+    <!-- カテゴリーを選んだあとに出る、初級・中級・上級を選ぶ画面 -->
+    <section id="difficulty-screen" class="screen" hidden>
+      <button id="difficulty-back-button" class="back-button">カテゴリー一覧に戻る</button>
+      <h2 id="difficulty-title"></h2>
+      <div id="difficulty-list"></div>
+    </section>
+
     <section id="quiz-screen" class="screen" hidden>
       <!-- 問題番号と、正解時に判子が現れる場所を横に並べた帯。
            判子はこの帯の中だけに出るので、問題文や選択肢の上に重なることがない -->
@@ -56,19 +63,36 @@
       </div>
     </section>
 
-    <!-- カテゴリーの問題をすべて解き終えたときに出る結果画面 -->
+    <!-- 10問を解き終えたときに出る結果画面 -->
     <section id="result-screen" class="screen" hidden>
-      <h2>おつかれさまでした</h2>
-      <!-- 正答率を表す円グラフ。緑に塗る割合(--pct)をJavaScriptで指定する -->
-      <div class="score-ring" id="score-ring">
-        <span class="score-ring-inner">
-          <span class="score-ring-pct" id="score-ring-pct">0</span><span class="score-ring-unit">%</span>
-        </span>
+      <!-- 成績のまとめ。1枚のカードにして「区切りがついた」感じを出す -->
+      <div class="result-card">
+        <p class="result-eyebrow" id="result-eyebrow"></p>
+        <h2>おつかれさまでした</h2>
+        <!-- 正答率を表す円グラフ。緑に塗る割合(--pct)をJavaScriptで指定する -->
+        <div class="score-ring" id="score-ring">
+          <span class="score-ring-inner">
+            <span class="score-ring-pct" id="score-ring-pct">0</span><span class="score-ring-unit">%</span>
+          </span>
+        </div>
+        <p id="result-score"></p>
+        <!-- 正解数と不正解数を、色分けした札で並べる -->
+        <div class="result-chips">
+          <span class="result-chip is-correct">正解 <b id="result-correct-count">0</b></span>
+          <span class="result-chip is-wrong">不正解 <b id="result-wrong-count">0</b></span>
+        </div>
+        <p id="result-comment"></p>
       </div>
-      <p id="result-score"></p>
-      <p id="result-comment"></p>
-      <button id="retry-button">もう一度解く</button>
-      <button id="back-home-button">ホームに戻る</button>
+
+      <!-- 今回出た問題の一覧。1行ずつ開くと解説を読み返せる -->
+      <h3 class="section-title" id="result-review-title">今回の問題をふりかえる</h3>
+      <div id="result-review-list"></div>
+
+      <div class="result-actions">
+        <button id="retry-button">もう一度解く</button>
+        <button id="other-difficulty-button">別の難易度を選ぶ</button>
+        <button id="back-home-button">ホームに戻る</button>
+      </div>
     </section>
 
     <section id="stats-screen" class="screen" hidden>

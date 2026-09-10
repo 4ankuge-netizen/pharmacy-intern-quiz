@@ -73,6 +73,11 @@
   --cat-calculation: #4A5A7B;     /* 鉄紺 */
   --cat-ethics: #96613F;          /* 落栗(茶) */
   --cat-default: var(--green-500); /* 万一カテゴリーが増えたときの予備 */
+
+  /* 難易度ごとの色。やさしい順に、緑 → 青 → 紫と濃くなっていく */
+  --lv-beginner: #1B7C64;
+  --lv-intermediate: #2F6BA8;
+  --lv-advanced: #6B4E9B;
 }
 
 /*
@@ -118,6 +123,10 @@
     --cat-infection: #4FBFA3;
     --cat-calculation: #8C9BBD;
     --cat-ethics: #C89370;
+
+    --lv-beginner: #3FA98B;
+    --lv-intermediate: #6C9FDC;
+    --lv-advanced: #A88BD6;
   }
 }
 
@@ -420,6 +429,94 @@ main h2 {
 #weak-point-button:active { transform: translateY(0) scale(0.99); }
 
 /* ===========================================================================
+   難易度を選ぶ画面
+   =========================================================================== */
+/* 「カテゴリー一覧に戻る」ボタン。控えめな文字リンクのような見た目にする */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 0;
+  margin-bottom: 6px;
+  border: none;
+  background: none;
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.16s ease;
+}
+.back-button::before { content: '←'; font-size: 0.95rem; line-height: 1; }
+.back-button:hover { color: var(--green-600); }
+
+#difficulty-list { display: flex; flex-direction: column; gap: 11px; }
+
+/* 初級・中級・上級のカード。横長の1枚ずつにして、押す場所が大きくなるようにしている */
+.difficulty-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  width: 100%;
+  padding: 16px 18px 15px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
+}
+/* カードの左端に、難易度の色の帯を入れる */
+.difficulty-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--lv, var(--green-500));
+}
+.difficulty-item[data-difficulty="beginner"]     { --lv: var(--lv-beginner); }
+.difficulty-item[data-difficulty="intermediate"] { --lv: var(--lv-intermediate); }
+.difficulty-item[data-difficulty="advanced"]     { --lv: var(--lv-advanced); }
+
+.difficulty-item:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: color-mix(in srgb, var(--lv) 45%, var(--line));
+}
+.difficulty-item:not(:disabled):active { transform: translateY(0) scale(0.99); }
+/* まだ問題が入っていない難易度。押せないことが見て分かるように薄くする */
+.difficulty-item:disabled { opacity: 0.5; cursor: default; }
+
+.difficulty-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--lv);
+  letter-spacing: 0.06em;
+  line-height: 1.3;
+}
+.difficulty-desc {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.difficulty-meta {
+  margin-top: 4px;
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* ===========================================================================
    クイズ画面
    =========================================================================== */
 /* 問題番号と判子を並べる帯。判子のぶんの高さをあらかじめ確保しておくことで、
@@ -653,8 +750,144 @@ main h2 {
 /* ===========================================================================
    結果画面 … 成績を大きな円グラフで見せる
    =========================================================================== */
-#result-screen { text-align: center; }
-#result-screen h2 { text-align: center; }
+/* 成績のまとめを載せる1枚のカード。上端に緑の帯を入れて「表彰状」のような佇まいにする */
+.result-card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 22px 20px 24px;
+  margin-bottom: 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-md);
+}
+.result-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--green-600), var(--green-500), var(--lv-intermediate));
+}
+.result-card h2 { text-align: center; margin: 0 0 4px; }
+
+/* カードの一番上に出す「がん ・ 初級」などの小見出し */
+.result-eyebrow {
+  margin: 0 0 6px;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--green-600);
+}
+.result-eyebrow:empty { display: none; }
+
+/* 正解数・不正解数の札を横に並べる */
+.result-chips {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin: 12px 0 14px;
+}
+.result-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: var(--r-pill);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+.result-chip b { font-size: 0.95rem; font-weight: 700; }
+.result-chip.is-correct { background: var(--green-100); color: var(--green-600); }
+.result-chip.is-wrong { background: var(--vermillion-100); color: var(--vermillion); }
+
+/* ふりかえり一覧などの小見出し */
+.section-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.05em;
+  margin: 0 0 12px;
+}
+
+/* --- 今回の問題をふりかえる一覧 --- */
+#result-review-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 26px; }
+
+/* <details> タグ。閉じているときは問題文だけ、開くと解説が出る */
+.review-item {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--lv, var(--green-500));
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.review-item[data-result="correct"] { --lv: var(--green-500); }
+.review-item[data-result="wrong"] { --lv: var(--vermillion); }
+
+.review-item summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  list-style: none; /* ブラウザが自動でつける三角の印を消す */
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+.review-item summary::-webkit-details-marker { display: none; }
+/* 右端に開閉の向きを示す小さな矢印を置く */
+.review-item summary::after {
+  content: '⌄';
+  margin-left: auto;
+  flex-shrink: 0;
+  color: var(--ink-faint);
+  font-size: 0.9rem;
+  line-height: 1.2;
+  transition: transform 0.18s ease;
+}
+.review-item[open] summary::after { transform: rotate(180deg); }
+
+/* ○ か × の丸い印 */
+.review-badge {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--on-green);
+  background: var(--lv);
+}
+.review-item[data-result="wrong"] .review-badge { color: var(--on-vermillion); }
+
+/* 閉じているときは問題文を2行までにして、一覧が縦に伸びすぎないようにする */
+.review-question {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.review-item[open] .review-question { -webkit-line-clamp: unset; }
+
+.review-body {
+  padding: 0 14px 14px 46px;
+  border-top: 1px dashed var(--line-strong);
+  margin-top: 2px;
+  padding-top: 12px;
+}
+.review-answer { margin: 0 0 8px; font-size: 0.83rem; color: var(--ink); }
+.review-answer b { color: var(--green-600); }
+.review-explanation { margin: 0 0 8px; font-size: 0.82rem; line-height: 1.8; color: var(--ink-soft); }
+.review-source { margin: 0; font-size: 0.71rem; color: var(--ink-faint); line-height: 1.55; }
+
+.result-actions { display: flex; flex-direction: column; }
 
 /* 正答率を表す円。--pct(0〜100)の値だけ緑に塗る仕組み */
 .score-ring {
@@ -710,6 +943,7 @@ main h2 {
   max-width: 22em;
 }
 #retry-button,
+#other-difficulty-button,
 #back-home-button {
   display: block;
   width: 100%;
@@ -729,13 +963,17 @@ main h2 {
   box-shadow: 0 4px 14px color-mix(in srgb, var(--green-500) 30%, transparent);
 }
 #retry-button:hover { transform: translateY(-2px); }
+#other-difficulty-button,
 #back-home-button {
   border: 1.5px solid var(--line-strong);
   background: transparent;
   color: var(--ink-soft);
   font-weight: 500;
 }
+#other-difficulty-button:hover,
 #back-home-button:hover { border-color: var(--ink-faint); color: var(--ink); }
+/* 弱点復習モードのときは「別の難易度を選ぶ」に意味がないので、JavaScript側で隠す */
+#other-difficulty-button[hidden] { display: none; }
 
 /* ===========================================================================
    正答率画面 … カテゴリーごとの棒グラフ
