@@ -3,7 +3,7 @@
 
 // キャッシュの名前にバージョン番号をつける。
 // 問題データやコードを更新したら、このバージョン番号を上げること。
-const CACHE_VERSION = 'v8';
+const CACHE_VERSION = 'v9';
 const CACHE_NAME = `pharmacy-quiz-${CACHE_VERSION}`;
 
 // オフラインでも表示できるようにしておきたいファイルの一覧

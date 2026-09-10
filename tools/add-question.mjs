@@ -82,7 +82,8 @@ function main() {
       id,
       category: a.category,
       difficulty: a.difficulty,
-      type: 'single',
+      // 出題の形式。書かなければ、ふつうの1つ選ぶ問題として扱う
+      type: a.type || 'single',
       question: a.question,
       choices: a.choices,
       correctIndex: idx,
@@ -90,6 +91,15 @@ function main() {
       source: { name: a.source.name, url: a.source.url || '', confirmedDate: today },
       verified: a.verified === true,
     };
+    // 疑義照会の問題は「照会が必要かどうか」も一緒に持たせる。
+    // choices と correctIndex は、必要と答えたあとに選ぶ理由の一覧になる
+    if (q.type === 'query') {
+      if (typeof a.needsQuery !== 'boolean') {
+        console.error(`type が query の問題には needsQuery(true / false)が必要です: ${a.question.slice(0, 30)}…`);
+        process.exit(1);
+      }
+      q.needsQuery = a.needsQuery;
+    }
     questions.push(q);
     added.push(id);
     entries.push([
@@ -97,7 +107,9 @@ function main() {
       `**追加した理由**: ${a.note || '(記載なし)'}`, '',
       `- 問題: ${q.question}`,
       `- 選択肢: ${q.choices.join(' / ')}`,
-      `- 正解: ${q.choices[q.correctIndex]}`,
+      q.type === 'query'
+        ? `- 正解: ${q.needsQuery ? '疑義照会が必要 ／ ' + q.choices[q.correctIndex] : '疑義照会は不要'}`
+        : `- 正解: ${q.choices[q.correctIndex]}`,
       `- 解説: ${q.explanation}`,
       `- 出典: ${q.source.name}${q.source.url ? ' / ' + q.source.url : ''}`,
       `- 確認済み: ${q.verified ? 'はい' : 'いいえ'}`, '',

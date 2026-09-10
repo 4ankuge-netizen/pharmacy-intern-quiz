@@ -42,5 +42,9 @@
   {
     "id": "national-exam",
     "name": "国家試験"
+  },
+  {
+    "id": "prescription-query",
+    "name": "疑義照会"
   }
 ]

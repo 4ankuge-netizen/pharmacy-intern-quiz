@@ -3,7 +3,12 @@
 // 気づけるようにするためのものです。
 
 const VALID_DIFFICULTIES = ['beginner', 'intermediate', 'advanced'];
-const VALID_TYPES = ['single', 'case'];
+// 出題の形式。
+//  single … 選択肢から1つ選ぶ、ふつうの問題
+//  case   … 症例を読んで1つ選ぶ問題
+//  query  … 疑義照会の問題。まず「必要か不要か」を選び、
+//           必要と答えた場合だけ、その理由を選ぶ2段階の形式
+const VALID_TYPES = ['single', 'case', 'query'];
 
 // 出題カテゴリーの正式な名前(id)の一覧。
 // data/categories.json と同じ内容にしておく必要があり、
@@ -22,6 +27,7 @@ export const VALID_CATEGORY_IDS = [
   'calculation',
   'ethics',
   'national-exam',
+  'prescription-query',
 ];
 
 export function validateQuestion(q) {
@@ -71,6 +77,12 @@ export function validateQuestion(q) {
   // source.confirmedDateの検証
   if (!q.source || typeof q.source.confirmedDate !== 'string') {
     errors.push('source.confirmedDate が入っていません');
+  }
+  // 疑義照会の問題だけに必要な項目。
+  // 「この処方に疑義照会が必要かどうか」を true / false で持つ。
+  // 書き忘れると、正解の判定ができなくなってしまうため必ず確認する
+  if (q.type === 'query' && typeof q.needsQuery !== 'boolean') {
+    errors.push('type が query の問題には needsQuery が true / false で必要です');
   }
   // verifiedの検証。PMDAの一次資料で内容を確認済みかどうかを表す
   if (typeof q.verified !== 'boolean') {

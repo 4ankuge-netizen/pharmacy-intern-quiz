@@ -73,6 +73,7 @@
   --cat-calculation: #4A5A7B;     /* 鉄紺 */
   --cat-ethics: #96613F;          /* 落栗(茶) */
   --cat-national-exam: #96344B;   /* 臙脂(えんじ)。疾患ではなく試験対策なので、赤系の中でも濃い色にした */
+  --cat-prescription-query: #6B2E5F; /* 葡萄(えびぞめ)。処方監査の訓練という別枠なので、濃い赤紫にした */
   --cat-default: var(--green-500); /* 万一カテゴリーが増えたときの予備 */
 
   /* 難易度ごとの色。やさしい順に、緑 → 青 → 紫と濃くなっていく */
@@ -125,6 +126,7 @@
     --cat-calculation: #8C9BBD;
     --cat-ethics: #C89370;
     --cat-national-exam: #E08D9F;
+    --cat-prescription-query: #C88BB8;
 
     --lv-beginner: #3FA98B;
     --lv-intermediate: #6C9FDC;
@@ -615,6 +617,37 @@ main h2 {
   box-shadow: var(--shadow-sm);
 }
 #question-text:empty { display: none; }
+
+/*
+  疑義照会の問題文。症例と処方せんを、書かれたとおりの改行・字下げで見せる。
+  処方は行の頭がそろっていないと読みにくいため、空白もそのまま残す(pre-wrap)
+*/
+#question-text.is-query {
+  white-space: pre-wrap;
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+/* 解説。疑義照会の問題では「問題点」「リスク」など見出しごとに改行するため、
+   書いたとおりの改行を残す */
+#feedback-explanation,
+.review-explanation { white-space: pre-line; }
+
+/* 疑義照会の2段階目(理由を選ぶ)の前に置く一行 */
+.query-step2-heading {
+  margin: 16px 0 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+/* 2段階目の選択肢の入れ物。
+   ここで番号を0に戻すので、1段階目(A・B)の続きではなくAから数え直される */
+.query-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  counter-reset: choice;
+}
 
 /* --- 選択肢 --- */
 #choice-list {

@@ -272,6 +272,14 @@ function renderQuestion() {
   const bookmarkButton = document.getElementById('bookmark-toggle-button');
   bookmarkButton.textContent = bookmarkIds.includes(question.id) ? '★ ブックマーク解除' : '☆ ブックマーク';
 
+  // 疑義照会の問題は「必要か不要か」を先に選ぶ2段階の形式なので、別の作り方をする
+  if (question.type === 'query') {
+    document.getElementById('question-text').classList.add('is-query');
+    renderQueryStep1(question);
+    return;
+  }
+  document.getElementById('question-text').classList.remove('is-query');
+
   // 選択肢は表示するたびに並び替える。
   // 位置を覚えて答えてしまうのを防ぐため、同じ問題でも毎回並びが変わる
   currentChoices = shuffleChoices(question);
@@ -286,10 +294,109 @@ function renderQuestion() {
   });
 }
 
+/*
+  疑義照会の問題の1段階目。
+  「疑義照会は不要」「疑義照会が必要」の2つだけを出す。
+
+  なぜ2段階に分けるか:
+    処方監査でまず問われるのは「そもそも照会が要るのか」という判断です。
+    理由の選択肢を最初から並べてしまうと、選択肢を見た時点で
+    「何か問題があるらしい」と分かってしまい、その練習になりません。
+*/
+function renderQueryStep1(question) {
+  const choiceList = document.getElementById('choice-list');
+  choiceList.innerHTML = '';
+
+  [
+    { label: '疑義照会は不要', chose: false },
+    { label: '疑義照会が必要', chose: true },
+  ].forEach(({ label, chose }) => {
+    const button = document.createElement('button');
+    button.textContent = label;
+    button.addEventListener('click', () => onQueryStep1(question, chose));
+    choiceList.appendChild(button);
+  });
+}
+
+// 1段階目に答えたときの処理
+function onQueryStep1(question, choseNeedsQuery) {
+  const buttons = [...document.querySelectorAll('#choice-list button')];
+  const correctButton = question.needsQuery ? buttons[1] : buttons[0];
+  const chosenButton = choseNeedsQuery ? buttons[1] : buttons[0];
+
+  // 判断が合っていたかどうかで色を付ける
+  correctButton.classList.add('correct');
+  if (choseNeedsQuery !== question.needsQuery) chosenButton.classList.add('incorrect');
+  buttons.forEach((b) => (b.disabled = true));
+
+  // 「必要」が正解で、実際に「必要」を選べたときだけ、理由を選ぶ2段階目へ進む。
+  // それ以外は、この時点で答え合わせを表示する
+  if (question.needsQuery && choseNeedsQuery) {
+    renderQueryStep2(question);
+    return;
+  }
+  finishAnswer(question, choseNeedsQuery === question.needsQuery);
+}
+
+// 疑義照会の問題の2段階目。照会が必要な理由を5つの中から選ぶ
+function renderQueryStep2(question) {
+  const choiceList = document.getElementById('choice-list');
+
+  // 1段階目の答えを残したまま、その下に理由を出す
+  const heading = document.createElement('p');
+  heading.className = 'query-step2-heading';
+  heading.textContent = '照会が必要な理由として最も適切なのはどれか。';
+  choiceList.appendChild(heading);
+
+  // 理由の選択肢は専用の入れ物にまとめて入れる。
+  // こうしておくと、1段階目のA・Bとは別に、Aから番号を振り直せる
+  const reasonList = document.createElement('div');
+  reasonList.className = 'query-reasons';
+
+  currentChoices = shuffleChoices(question);
+  currentChoices.choices.forEach((choiceText, index) => {
+    const button = document.createElement('button');
+    button.className = 'query-reason';
+    button.textContent = choiceText;
+    button.addEventListener('click', () => onQueryStep2(question, index, button));
+    reasonList.appendChild(button);
+  });
+  choiceList.appendChild(reasonList);
+}
+
+// 2段階目(理由)に答えたときの処理
+function onQueryStep2(question, selectedIndex, selectedButton) {
+  const isCorrect = checkAnswer(currentChoices, selectedIndex);
+  const buttons = [...document.querySelectorAll('#choice-list button.query-reason')];
+
+  buttons[currentChoices.correctIndex].classList.add('correct');
+  if (!isCorrect) selectedButton.classList.add('incorrect');
+  buttons.forEach((b) => (b.disabled = true));
+
+  finishAnswer(question, isCorrect);
+}
+
 function onAnswer(question, selectedIndex, selectedButton) {
   // 正解かどうかは、今表示している並びの中での位置で判定する
   const isCorrect = checkAnswer(currentChoices, selectedIndex);
 
+  // 選んだボタンと、正解のボタンに色をつける
+  const buttons = document.querySelectorAll('#choice-list button');
+  buttons[currentChoices.correctIndex].classList.add('correct');
+  if (!isCorrect) selectedButton.classList.add('incorrect');
+  buttons.forEach((b) => (b.disabled = true));
+
+  finishAnswer(question, isCorrect);
+}
+
+/*
+  答え合わせの共通処理。
+  成績の記録と、解説パネルの表示を行う。
+  ふつうの問題と疑義照会の問題では選択肢の出し方が違うため、
+  「どのボタンに色を付けるか」は呼び出す側で済ませておき、
+  ここでは形式によらず同じ処理だけを行う
+*/
+function finishAnswer(question, isCorrect) {
   // 同じ問題を1回の出題の中で二度答えた場合、成績を二重に数えない。
   // (画面を切り替えて戻ってきたときに、もう一度答えられてしまうため)
   if (!answeredInSession.has(question.id)) {
@@ -301,12 +408,6 @@ function onAnswer(question, selectedIndex, selectedButton) {
     storage.updateStreakOnAnswer(today);
     renderStreak();
   }
-
-  // 選んだボタンと、正解のボタンに色をつける
-  const buttons = document.querySelectorAll('#choice-list button');
-  buttons[currentChoices.correctIndex].classList.add('correct');
-  if (!isCorrect) selectedButton.classList.add('incorrect');
-  buttons.forEach((b) => (b.disabled = true));
 
   // 正解したときだけ、問題番号の横に判子(はんこ)が押される演出を出す
   if (isCorrect) {
@@ -442,7 +543,15 @@ function renderResultReview() {
     answerEl.className = 'review-answer';
     answerEl.append('正解: ');
     const answerText = document.createElement('b');
-    answerText.textContent = question.choices[question.correctIndex];
+    if (question.type === 'query') {
+      // 疑義照会の問題は「必要か不要か」が答え。
+      // 必要な場合は、その理由もあわせて示す
+      answerText.textContent = question.needsQuery
+        ? `疑義照会が必要 ／ ${question.choices[question.correctIndex]}`
+        : '疑義照会は不要';
+    } else {
+      answerText.textContent = question.choices[question.correctIndex];
+    }
     answerEl.append(answerText);
 
     const explanationEl = document.createElement('p');
