@@ -120,9 +120,10 @@
       <div id="send-report-section" hidden>
         <h3 class="section-title" style="margin-top:28px">先生への報告</h3>
         <p class="screen-note">
-          10問解き終わるたびに、成績が自動で先生に届きます。送られるのは利用者名と、
-          どの問題に正解・不正解だったかだけです。電波がないときは、次につながったときに送られます。
+          成績を先生と共有するかどうかを選べます。いつでも変えられます。
+          共有する場合は、10問解き終わるたびに自動で届きます。
         </p>
+        <div id="share-level-list" class="share-list"></div>
         <p id="send-report-status" class="report-status"></p>
       </div>
 
@@ -135,6 +136,16 @@
 
     </section>
 
+    <!-- 利用者を作った直後に、成績を共有するかどうかを1回だけ聞く画面 -->
+    <section id="share-ask-screen" class="screen" hidden>
+      <h2>成績を先生と共有しますか？</h2>
+      <p class="screen-note">
+        <b id="share-ask-name"></b> さんの設定です。
+        あとから「利用者」の画面でいつでも変えられます。迷ったら「共有しない」で構いません。
+      </p>
+      <div id="share-ask-list" class="share-list"></div>
+    </section>
+
     <!-- 先生用。集めた成績を貼り付けて、全員分をまとめて見る画面 -->
     <section id="report-screen" class="screen" hidden>
       <button id="report-back-button" class="back-button">ホームに戻る</button>
@@ -143,6 +154,8 @@
         この画面は先生用です。URLの末尾に <code>#teacher</code> を付けて開いたときだけ表示されます。
         合言葉を入れて「読み込む」を押すと、実習生から届いた成績をまとめて表示します。
         合言葉はこの端末に覚えられるので、次回からは入力不要です。
+        <b>表示されるのは、共有する設定にしている実習生だけです。</b>
+        載っていない人は、共有しない設定にしているか、まだ解いていないかのどちらかです。
       </p>
       <div class="report-key-row">
         <input id="report-key" class="report-key" type="password" placeholder="合言葉"

@@ -1291,6 +1291,46 @@ main h2 {
 }
 .text-button:hover { color: var(--ink); }
 
+/* 共有の段階を選ぶボタン。難易度の選択と同じ見た目に揃えてある */
+.share-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 14px 0 0;
+}
+.share-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+  margin: 0;
+  padding: 13px 15px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--line-strong);
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow-sm);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.16s ease, background-color 0.16s ease;
+}
+.share-item[data-level="none"] { border-left-color: var(--ink-faint); }
+.share-item[data-level="summary"] { border-left-color: var(--lv-intermediate); }
+.share-item[data-level="full"] { border-left-color: var(--green-500); }
+
+/* 今選ばれているものを、はっきり分かるようにする */
+.share-item.is-selected {
+  background: color-mix(in srgb, var(--green-500) 8%, var(--surface));
+  border-color: var(--green-500);
+}
+.share-item.is-selected .share-name::after {
+  content: ' ✓';
+  color: var(--green-600);
+}
+.share-name { font-size: 0.92rem; font-weight: 700; }
+.share-desc { font-size: 0.75rem; color: var(--ink-soft); line-height: 1.6; }
+
 /* 実習生の画面に出す、送信の状況を伝える一行 */
 .report-status {
   margin: 10px 0 0;
@@ -1509,7 +1549,8 @@ main h2 {
   #quiz-screen,
   #difficulty-screen,
   #result-screen,
-  #profile-screen { max-width: 660px; }
+  #profile-screen,
+  #share-ask-screen { max-width: 660px; }
 
   /* ホームのカテゴリーは3列に */
   #category-list { grid-template-columns: repeat(3, 1fr); }

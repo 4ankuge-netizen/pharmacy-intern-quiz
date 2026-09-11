@@ -50,6 +50,24 @@ export async function sendReport(url, { name, code }) {
 }
 
 /**
+ * 先生の集計表から、その人の行を消してもらう。
+ * 「共有しない」に戻したときに、これまで送った分も取り消せるようにするためのもの。
+ */
+export async function deleteReport(url, { name }) {
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({ name, action: 'delete' }),
+    redirect: 'follow',
+  });
+  if (!response.ok) throw new Error(`取り消せませんでした (${response.status})`);
+
+  const result = await response.json();
+  if (!result.ok) throw new Error(result.error || '取り消せませんでした');
+  return result;
+}
+
+/**
  * 先生の画面から、全員分の成績をもらう。
  * 合言葉が合っていないと、向こう側が断ってくる。
  */

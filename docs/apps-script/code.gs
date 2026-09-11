@@ -33,6 +33,7 @@ const READ_KEY = 'ここに合言葉';
 /**
  * アプリから成績が送られてきたときの処理。
  * 同じ名前の行があれば上書きし、なければ新しい行を足す。
+ * action が 'delete' のときは、その人の行を消す(共有をやめたとき)。
  */
 function doPost(e) {
   // 2人が同時に送ってきたときに行が壊れないよう、順番待ちをさせる
@@ -46,12 +47,9 @@ function doPost(e) {
   try {
     const data = JSON.parse(e.postData.contents);
     const name = String(data.name == null ? '' : data.name).trim().slice(0, 50);
-    const code = String(data.code == null ? '' : data.code).trim();
+    const action = String(data.action == null ? 'save' : data.action);
 
-    // 中身がおかしいものは受け付けない
     if (!name) return json({ ok: false, error: '名前がありません' });
-    if (code.indexOf('PQZ1~') !== 0) return json({ ok: false, error: '成績データの形が違います' });
-    if (code.length > 20000) return json({ ok: false, error: '成績データが長すぎます' });
 
     const sheet = getSheet();
     const names = sheet.getRange(1, 1, Math.max(sheet.getLastRow(), 1), 1).getValues();
@@ -63,6 +61,21 @@ function doPost(e) {
         break;
       }
     }
+
+    // 「共有をやめる」を選んだときは、その人の行ごと消す
+    if (action === 'delete') {
+      if (row !== -1) sheet.deleteRow(row);
+      return json({ ok: true, deleted: row !== -1 });
+    }
+
+    const code = String(data.code == null ? '' : data.code).trim();
+
+    // 中身がおかしいものは受け付けない。
+    // 詳しい形式(PQZ1~)と、正答率だけの形式(PQZ1S~)の両方を受け付ける
+    if (code.indexOf('PQZ1~') !== 0 && code.indexOf('PQZ1S~') !== 0) {
+      return json({ ok: false, error: '成績データの形が違います' });
+    }
+    if (code.length > 20000) return json({ ok: false, error: '成績データが長すぎます' });
 
     const values = [[name, new Date(), code]];
     if (row === -1) {

@@ -165,3 +165,37 @@ test('今の利用者の記録だけを消せる', () => {
   // 利用者そのものは残っている
   assert.equal(storage.listProfiles().length, 1);
 });
+
+test('成績の共有は、何も設定していなければ「送らない」', () => {
+  const storage = createStorage(createFakeBackend());
+  assert.equal(storage.getShareLevel(), 'none');
+});
+
+test('共有の設定は利用者ごとに分かれる', () => {
+  const storage = createStorage(createFakeBackend());
+  const first = storage.getCurrentProfile();
+  storage.setShareLevel('full');
+
+  const second = storage.addProfile('2人目');
+  assert.equal(storage.getShareLevel(), 'none', '新しい人は送らないから始まる');
+
+  storage.switchProfile(first.id);
+  assert.equal(storage.getShareLevel(), 'full');
+  assert.equal(storage.getShareLevelOf(second.id), 'none');
+});
+
+test('知らない値を渡されたら「送らない」に倒す', () => {
+  const storage = createStorage(createFakeBackend());
+  assert.equal(storage.setShareLevel('everything'), 'none');
+  assert.equal(storage.getShareLevel(), 'none');
+});
+
+test('利用者を消すと、共有の設定も一緒に消える', () => {
+  const storage = createStorage(createFakeBackend());
+  const extra = storage.addProfile('消される人');
+  storage.setShareLevel('summary');
+  assert.equal(storage.getShareLevelOf(extra.id), 'summary');
+
+  storage.deleteProfile(extra.id);
+  assert.equal(storage.getShareLevelOf(extra.id), 'none');
+});

@@ -14,6 +14,20 @@ const CURRENT_PROFILE_KEY = 'pharmacyQuiz.currentProfile';
 const HISTORY_KEY = 'pharmacyQuiz.history';
 const BOOKMARK_KEY = 'pharmacyQuiz.bookmarks';
 const STREAK_KEY = 'pharmacyQuiz.streak';
+// 成績を先生に送るかどうかの設定
+const SHARE_KEY = 'pharmacyQuiz.share';
+// 前回どこまで送ったか(report-sync.js が使う名前と揃えてある)
+const LAST_SENT_KEY = 'pharmacyQuiz.lastSent';
+
+/*
+  成績を先生に送るかどうかの3段階。
+  見られたくないものは人によって違うので、「全部か無いか」ではなく途中を用意している。
+    none    … 何も送らない(初期値)
+    summary … 分野ごとの正答率だけ送る(間違えた問題は端末から出さない)
+    full    … 間違えた問題も含めて送る
+*/
+export const SHARE_LEVELS = ['none', 'summary', 'full'];
+export const DEFAULT_SHARE_LEVEL = 'none';
 
 // 利用者を1人も作っていない端末で、最初に用意される人の名前
 const DEFAULT_PROFILE_NAME = '利用者1';
@@ -144,7 +158,7 @@ export function createStorage(backend) {
       if (profiles.length <= 1) return false;
       if (!profiles.some((p) => p.id === profileId)) return false;
 
-      for (const baseKey of [HISTORY_KEY, BOOKMARK_KEY, STREAK_KEY]) {
+      for (const baseKey of [HISTORY_KEY, BOOKMARK_KEY, STREAK_KEY, SHARE_KEY, LAST_SENT_KEY]) {
         removeKey(keyFor(baseKey, profileId));
       }
       const remaining = profiles.filter((p) => p.id !== profileId);
@@ -235,6 +249,30 @@ export function createStorage(backend) {
     // 指定した利用者の履歴を取り出す(成績の書き出しで、他の人のぶんも出すために使う)
     getHistoryOf(profileId) {
       return readJSON(keyFor(HISTORY_KEY, profileId), {});
+    },
+
+    // 今の利用者が「成績を先生に送る」をどう設定しているか。
+    // 何も設定していない人は「送らない」として扱う
+    getShareLevel() {
+      return this.getShareLevelOf(currentProfileId());
+    },
+
+    getShareLevelOf(profileId) {
+      const value = backend.getItem(keyFor(SHARE_KEY, profileId));
+      return SHARE_LEVELS.includes(value) ? value : DEFAULT_SHARE_LEVEL;
+    },
+
+    // 設定を変える。知らない値が来たら「送らない」に倒す(安全な側に寄せる)
+    setShareLevel(level) {
+      const safe = SHARE_LEVELS.includes(level) ? level : DEFAULT_SHARE_LEVEL;
+      backend.setItem(keyFor(SHARE_KEY, currentProfileId()), safe);
+      return safe;
+    },
+
+    // 「前回どこまで送ったか」の記録を消す。
+    // 送る設定を変えたときに呼ぶと、次回あらためて送り直される
+    clearLastSent(profileId = currentProfileId()) {
+      removeKey(keyFor(LAST_SENT_KEY, profileId));
     },
   };
 }

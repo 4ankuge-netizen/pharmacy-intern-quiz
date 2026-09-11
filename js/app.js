@@ -10,9 +10,10 @@ import {
 } from './quiz-engine.js';
 import { createStorage } from './storage.js';
 import { computeCategoryAccuracy, summarizeAccuracy } from './stats.js';
-import { encodeReport, decodeReport, parsePastedReports } from './report-code.js';
+import { encodeReport, encodeSummaryReport, decodeAnyReport, parsePastedReports } from './report-code.js';
 import {
   needsSending,
+  deleteReport,
   lastSentKey,
   sendReport,
   fetchReports,
@@ -23,6 +24,29 @@ const storage = createStorage(window.localStorage);
 
 // 1回の出題で出す問題数。問題プールが増えても、1回分はこの数で区切る
 const QUESTIONS_PER_SESSION = 10;
+
+/*
+  成績を先生に送るかどうかの3段階。
+  「全部か無いか」だと、間違えた問題だけ見られたくない人の逃げ場がなくなるため、
+  途中(正答率だけ)を用意している。初期値はいちばん送らない none。
+*/
+const SHARE_OPTIONS = [
+  {
+    id: 'none',
+    name: '共有しない',
+    description: '先生の画面には何も表示されません',
+  },
+  {
+    id: 'summary',
+    name: '正答率だけ共有する',
+    description: '分野ごとの正答率と回答数のみ。間違えた問題は端末から出ません',
+  },
+  {
+    id: 'full',
+    name: 'すべて共有する',
+    description: '間違えた問題も共有します。つまずいた所を一緒に見てもらえます',
+  },
+];
 
 // 難易度の一覧。表示する名前と、どんな問題かの一言説明をここにまとめておく。
 // 順番もこの配列のとおりに画面へ並ぶ
@@ -109,7 +133,9 @@ function showScreen(screenId) {
   if (screenId === 'difficulty-screen') tabToHighlight = 'home-screen';
   // 利用者の切り替え画面はヘッダーから開くので、どのタブも選択中にしない。
   // 先生用の成績まとめ画面もその続きなので同じ扱いにする
-  if (screenId === 'profile-screen' || screenId === 'report-screen') tabToHighlight = null;
+  if (screenId === 'profile-screen' || screenId === 'report-screen' || screenId === 'share-ask-screen') {
+    tabToHighlight = null;
+  }
   document.querySelectorAll('.app-nav button').forEach((button) => {
     const isCurrent = button.dataset.screen === tabToHighlight;
     button.classList.toggle('active', isCurrent);
@@ -687,9 +713,14 @@ function renderProfileScreen() {
   // 送り先が設定されているときだけ「先生への報告」の案内を出す
   document.getElementById('send-report-section').hidden = !reportEndpoint.enabled;
   if (reportEndpoint.enabled) {
+    const level = storage.getShareLevel();
+    renderShareOptions(document.getElementById('share-level-list'), level, changeShareLevel);
+
     const profile = storage.getCurrentProfile();
     const sent = profile ? readLastSent(profile.id) : null;
-    renderSendStatus(sent ? '前回ぶんは送信済みです。' : 'まだ送っていません。10問解くと自動で送られます。');
+    if (level === 'none') renderSendStatus('共有していません。');
+    else if (sent) renderSendStatus('前回ぶんは送信済みです。');
+    else renderSendStatus('まだ送っていません。10問解くと自動で送られます。');
   }
 
   const list = document.getElementById('profile-list');
@@ -761,10 +792,28 @@ function onAddProfile() {
   const name = window.prompt('追加する利用者の名前を入力してください');
   if (name === null) return; // キャンセルされた
   if (!String(name).trim()) return;
-  storage.addProfile(name, getTodayLocalDate());
+  const profile = storage.addProfile(name, getTodayLocalDate());
   renderProfileChip();
   renderStreak();
   renderProfileScreen();
+
+  // 送り先が設定されているときだけ、共有するかどうかを1回聞く。
+  // 設定の奥に置くと誰も気づかないので、名前を決めた直後のここで尋ねる
+  if (reportEndpoint.enabled) openShareAskScreen(profile);
+}
+
+// 「成績を共有しますか？」を1回だけ尋ねる画面を開く
+function openShareAskScreen(profile) {
+  document.getElementById('share-ask-name').textContent = profile.name;
+  renderShareOptions(
+    document.getElementById('share-ask-list'),
+    storage.getShareLevel(),
+    async (level) => {
+      await changeShareLevel(level);
+      showScreen('profile-screen');
+    }
+  );
+  showScreen('share-ask-screen');
 }
 
 function hideExportOutput() {
@@ -844,15 +893,18 @@ async function onCopyExport() {
 //  成績を自動で先生へ送る(実習生側)
 // ============================================================
 
-// 今の成績を短い文字列にまとめる
-function buildReportCode() {
-  return encodeReport({
+// 今の成績を短い文字列にまとめる。
+// 「正答率だけ」を選んでいる人には、間違えた問題を含まない形で作る。
+// 落とすのはこの端末の中なので、そもそも外へ出ていかない
+function buildReportCode(level) {
+  const params = {
     history: storage.getHistory(),
     questions: allQuestions,
     categories,
     date: getTodayLocalDate(),
     streak: storage.getStreak(),
-  });
+  };
+  return level === 'summary' ? encodeSummaryReport(params) : encodeReport(params);
 }
 
 // 送信の状況を利用者画面に出す。押すボタンはないので、状態を伝えるだけ
@@ -889,7 +941,11 @@ async function syncReport() {
   const profile = storage.getCurrentProfile();
   if (!profile) return;
 
-  const code = buildReportCode();
+  // 「共有しない」の人は、ここで何もせずに戻る。これが初期値
+  const level = storage.getShareLevel();
+  if (level === 'none') return;
+
+  const code = buildReportCode(level);
   if (!needsSending(readLastSent(profile.id), code)) return;
 
   try {
@@ -900,6 +956,80 @@ async function syncReport() {
     // 失敗はここで飲み込む。実習生に通信の失敗を見せても対処のしようがないため
     renderSendStatus('まだ送れていません。電波のあるところで開くと自動で送られます。');
   }
+}
+
+/**
+ * 共有の段階を選ぶボタンを並べる。
+ * 利用者画面と、利用者を作った直後の確認画面の両方で使う。
+ */
+function renderShareOptions(container, currentLevel, onChoose) {
+  container.innerHTML = '';
+  SHARE_OPTIONS.forEach((option) => {
+    const button = document.createElement('button');
+    button.className = 'share-item';
+    button.dataset.level = option.id; // 段階ごとに色を変えるための目印(CSS側で使う)
+    if (option.id === currentLevel) button.classList.add('is-selected');
+
+    const name = document.createElement('span');
+    name.className = 'share-name';
+    name.textContent = option.name;
+
+    const desc = document.createElement('span');
+    desc.className = 'share-desc';
+    desc.textContent = option.description;
+
+    button.append(name, desc);
+    button.addEventListener('click', () => onChoose(option.id));
+    container.appendChild(button);
+  });
+}
+
+/**
+ * 共有の設定を変える。
+ *
+ * 「共有する」から「共有しない」に戻したときは、
+ * これまでに送った分も消すかどうかを尋ねる。
+ * 一度送ったら取り消せない、という状態にしないため。
+ */
+async function changeShareLevel(nextLevel) {
+  const profile = storage.getCurrentProfile();
+  const previous = storage.getShareLevel();
+  const alreadySent = profile ? readLastSent(profile.id) : null;
+
+  storage.setShareLevel(nextLevel);
+  // 送る中身が変わるので、前回の記録は捨てて次回あらためて送り直す
+  storage.clearLastSent();
+
+  renderProfileScreen();
+
+  if (nextLevel === 'none') {
+    // まだ一度も送っていなければ、消すものがないので尋ねない
+    if (previous !== 'none' && alreadySent && reportEndpoint.enabled && reportEndpoint.url && profile) {
+      const wantsDelete = window.confirm(
+        `これまでに送った成績も、先生の画面から消しますか？
+
+「OK」を押すと消えます。
+「キャンセル」を押すと、これまでの分は残ったまま、今後の更新だけが止まります。`
+      );
+      if (wantsDelete) {
+        renderSendStatus('これまでの分を消しています…');
+        try {
+          await deleteReport(reportEndpoint.url, { name: profile.name });
+          renderSendStatus('共有していません。これまでに送った分も消しました。');
+          return;
+        } catch (error) {
+          renderSendStatus(`消せませんでした：${error.message}`);
+          return;
+        }
+      }
+    }
+    renderSendStatus('共有していません。');
+    return;
+  }
+
+  // 共有する側に変えたときは、その場で一度送る
+  renderSendStatus('送っています…');
+  await syncReport();
 }
 
 // ============================================================
@@ -961,7 +1091,7 @@ async function onLoadReports() {
   const reports = [];
   let skipped = 0;
   for (const row of rows) {
-    const decoded = decodeReport(row.code, categories);
+    const decoded = decodeAnyReport(row.code, categories);
     if (!decoded) {
       skipped += 1;
       continue;
@@ -1015,16 +1145,54 @@ function onClearReports() {
 
 // 読み込んだ全員分を、表と一覧にして画面に並べる
 function renderReports(reports, output) {
-  // 一人ひとりについて、合計とカテゴリー別をあらかじめ計算しておく
-  const rows = reports.map((report) => ({
-    ...report,
-    overall: summarizeAccuracy(allQuestions, report.history),
-    byCategory: computeCategoryAccuracy(allQuestions, report.history, categories),
-  }));
+  // 一人ひとりについて、合計とカテゴリー別をあらかじめ計算しておく。
+  // 「正答率だけ」を共有している人は問題ごとの記録が届かないので、
+  // 届いた数だけを使って同じ形に整えてから並べる
+  const rows = reports.map((report) =>
+    report.kind === 'summary' ? summarizeFromCounts(report) : summarizeFromHistory(report)
+  );
 
   output.appendChild(renderReportSummary(rows));
   output.appendChild(renderReportCategoryTable(rows));
   rows.forEach((row) => output.appendChild(renderReportWrongList(row)));
+}
+
+// 問題ごとの記録が届いている人(すべて共有)の集計
+function summarizeFromHistory(report) {
+  return {
+    ...report,
+    overall: summarizeAccuracy(allQuestions, report.history),
+    byCategory: computeCategoryAccuracy(allQuestions, report.history, categories),
+  };
+}
+
+// 正答率だけが届いている人の集計。
+// 表の形は揃えておき、間違えた問題の一覧だけ出せない旨を伝える
+function summarizeFromCounts(report) {
+  const byCategory = categories.map((category) => {
+    const counts = report.byCategory.get(category.id) || { correct: 0, answered: 0 };
+    const totalQuestions = allQuestions.filter((q) => q.category === category.id).length;
+    return {
+      categoryId: category.id,
+      categoryName: category.name,
+      correct: counts.correct,
+      answered: counts.answered,
+      totalQuestions,
+      accuracyPercent: counts.answered === 0 ? 0 : Math.round((counts.correct / counts.answered) * 100),
+    };
+  });
+
+  return {
+    ...report,
+    overall: {
+      correct: report.correctCount,
+      answered: report.answeredCount,
+      totalQuestions: allQuestions.length,
+      accuracyPercent:
+        report.answeredCount === 0 ? 0 : Math.round((report.correctCount / report.answeredCount) * 100),
+    },
+    byCategory,
+  };
 }
 
 // (1) ひとまとめの一覧表。誰がどれだけ進んでいるかをまず見る
@@ -1093,6 +1261,21 @@ function renderReportCategoryTable(rows) {
 function renderReportWrongList(row) {
   const section = document.createElement('section');
   section.className = 'report-block';
+
+  // 「正答率だけ」を選んでいる人は、間違えた問題が端末から出ていない。
+  // 空欄にすると「全問正解した」と読み違えるので、はっきり書いておく
+  if (row.kind === 'summary') {
+    const heading = document.createElement('h3');
+    heading.className = 'section-title';
+    heading.textContent = `${row.name} が間違えた問題`;
+    section.appendChild(heading);
+
+    const note = document.createElement('p');
+    note.className = 'screen-note';
+    note.textContent = 'この方は「正答率だけ共有する」を選んでいるため、間違えた問題は届いていません。';
+    section.appendChild(note);
+    return section;
+  }
 
   // 直近の回答が不正解だった問題を集める
   const wrong = allQuestions.filter((q) => row.history[q.id]?.lastResult === 'wrong');

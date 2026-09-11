@@ -1,9 +1,9 @@
 // 成績を「短い文字列」にまとめたり、元に戻したりする部品です。
 //
 // なぜ短くするのか:
-//   実習生の端末から先生の手元へ成績を送るときに、Googleフォームの
-//   URLに成績を埋め込んで開きます。URLには長さの限界があるため、
-//   1,900問ぶんの回答を、できるだけ短い文字に置き換える必要があります。
+//   実習生の端末から先生の集計表へ、回線を通して送るためです。
+//   1,900問ぶんの回答をそのまま送ると重いので、できるだけ短い文字に置き換えます。
+//   (全問に答えた状態でも4千文字ほどに収まります)
 //
 // どう短くしているか:
 //   問題のIDは "prescription-query-intermediate-027" のように長いので、
@@ -18,6 +18,8 @@
 //   (~ * ! . - は化けない。, : | は化ける)
 
 const FORMAT_VERSION = 'PQZ1'; // 形式の版。将来変えたときに見分けるため
+// 「正答率だけ送る」ときの形式。問題ごとの正誤ではなく、まとまりごとの数だけを持つ
+const SUMMARY_VERSION = 'PQZ1S';
 
 const FIELD_SEPARATOR = '~'; // 名前・日付などの大きな区切り
 const GROUP_SEPARATOR = '*'; // カテゴリー×難易度のまとまりの区切り
@@ -195,7 +197,7 @@ export function decodeReport(text, categories) {
     }
   }
 
-  return { date, streak, history, answeredCount };
+  return { kind: 'full', date, streak, history, answeredCount };
 }
 
 /**
@@ -203,7 +205,7 @@ export function decodeReport(text, categories) {
  *
  * 想定している貼り付け方:
  *   - 1行に1人。タブ区切り(表計算からコピーすると自動でタブになる)
- *   - 「PQZ1~...」で始まる列が成績データ、その1つ手前の列が名前
+ *   - 「PQZ1~...」または「PQZ1S~...」で始まる列が成績データ、その1つ手前の列が名前
  *   - 名前の列がなければ「(名前なし)」として扱う
  *
  * @returns {{ reports: Array, skipped: number }}
@@ -218,14 +220,21 @@ export function parsePastedReports(pasted, categories) {
 
     // タブ区切り。表計算以外から貼られた場合に備えて、空白の連続も区切りとみなす
     const columns = line.includes('\t') ? line.split('\t') : [line];
-    const dataIndex = columns.findIndex((c) => c.trim().startsWith(FORMAT_VERSION + FIELD_SEPARATOR));
+    // 詳しい形式(PQZ1~)と要約形式(PQZ1S~)のどちらも受け付ける
+    const dataIndex = columns.findIndex((c) => {
+      const value = c.trim();
+      return (
+        value.startsWith(FORMAT_VERSION + FIELD_SEPARATOR) ||
+        value.startsWith(SUMMARY_VERSION + FIELD_SEPARATOR)
+      );
+    });
 
     if (dataIndex === -1) {
       skipped += 1;
       continue;
     }
 
-    const decoded = decodeReport(columns[dataIndex], categories);
+    const decoded = decodeAnyReport(columns[dataIndex], categories);
     if (!decoded) {
       skipped += 1;
       continue;
@@ -239,4 +248,108 @@ export function parsePastedReports(pasted, categories) {
   return { reports, skipped };
 }
 
+/**
+ * 「正答率だけ」を送るための短い文字列を作る。
+ *
+ * 問題ごとの正誤は入れず、カテゴリー×難易度ごとに
+ * 「何問中、何問正解したか」だけを持たせる。
+ * 間違えた問題が何だったかは、この時点で端末から出ていかない。
+ *
+ * 例: "PQZ1S~2026-09-11~12~a1:9/12*b2:3/5"
+ */
+export function encodeSummaryReport({ history, questions, categories, date, streak }) {
+  const { toCode } = buildCategoryCodes(categories);
+  const byGroup = new Map(); // "a1" → { correct, answered }
+
+  for (const question of questions) {
+    const record = history[question.id];
+    if (!record) continue;
+
+    const categoryCode = toCode.get(question.category);
+    const difficultyCode = DIFFICULTY_CODES[question.difficulty];
+    if (!categoryCode || !difficultyCode) continue;
+
+    const key = categoryCode + difficultyCode;
+    if (!byGroup.has(key)) byGroup.set(key, { correct: 0, answered: 0 });
+    const counts = byGroup.get(key);
+    counts.answered += 1;
+    if (record.lastResult === 'correct') counts.correct += 1;
+  }
+
+  const groups = [];
+  for (const key of [...byGroup.keys()].sort()) {
+    const { correct, answered } = byGroup.get(key);
+    groups.push(`${key}:${correct}/${answered}`);
+  }
+
+  return [SUMMARY_VERSION, date, String(streak), groups.join(GROUP_SEPARATOR)].join(FIELD_SEPARATOR);
+}
+
+/**
+ * 「正答率だけ」の文字列を読み取る。
+ * 形がおかしければ null を返す。
+ */
+export function decodeSummaryReport(text, categories) {
+  if (typeof text !== 'string') return null;
+  const trimmed = text.trim();
+  if (!trimmed.startsWith(SUMMARY_VERSION + FIELD_SEPARATOR)) return null;
+
+  const fields = trimmed.split(FIELD_SEPARATOR);
+  if (fields.length < 4) return null;
+
+  const [, date, streakText, groupsText = ''] = fields;
+  const streak = Number(streakText);
+  if (!Number.isInteger(streak) || streak < 0) return null;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return null;
+
+  const { toId } = buildCategoryCodes(categories);
+  // カテゴリーごとの合計。難易度はまとめてしまう(先生の画面は分野単位で見るため)
+  const byCategory = new Map();
+  let correctTotal = 0;
+  let answeredTotal = 0;
+
+  if (groupsText) {
+    for (const group of groupsText.split(GROUP_SEPARATOR)) {
+      const [head, counts] = group.split(':');
+      if (!head || !counts || head.length !== 2) return null;
+
+      const categoryId = toId.get(head[0]);
+      const difficulty = DIFFICULTY_BY_CODE[head[1]];
+      if (!categoryId || !difficulty) return null;
+
+      const [correctText, answeredText] = counts.split('/');
+      const correct = Number(correctText);
+      const answered = Number(answeredText);
+      if (!Number.isInteger(correct) || !Number.isInteger(answered)) return null;
+      if (correct < 0 || answered < 0 || correct > answered) return null;
+
+      const current = byCategory.get(categoryId) || { correct: 0, answered: 0 };
+      current.correct += correct;
+      current.answered += answered;
+      byCategory.set(categoryId, current);
+
+      correctTotal += correct;
+      answeredTotal += answered;
+    }
+  }
+
+  return {
+    kind: 'summary',
+    date,
+    streak,
+    byCategory,
+    answeredCount: answeredTotal,
+    correctCount: correctTotal,
+  };
+}
+
+/**
+ * どちらの形式かを見分けて読み取る。
+ * 先生の画面は、届いたものがどちらでも同じように扱えるようにしておく。
+ */
+export function decodeAnyReport(text, categories) {
+  return decodeSummaryReport(text, categories) || decodeReport(text, categories);
+}
+
 export const REPORT_FORMAT_VERSION = FORMAT_VERSION;
+export const REPORT_SUMMARY_VERSION = SUMMARY_VERSION;
