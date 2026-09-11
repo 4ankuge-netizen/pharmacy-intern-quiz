@@ -1,7 +1,7 @@
 {
   "_説明": "成績の送信先(Googleフォーム)の設定です。tools/setup-report-form.mjs で自動的に書き込めます。enabled が false のあいだは、アプリに送信ボタンが出ません。",
-  "enabled": false,
-  "formUrl": "",
-  "nameEntryId": "",
-  "dataEntryId": ""
+  "enabled": true,
+  "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf2XYA82Z_v7h3j7SDj0c1LCfcY9fRQud0P1g88lhrIhpmYdA/formResponse",
+  "nameEntryId": "entry.1808174250",
+  "dataEntryId": "entry.723456446"
 }
