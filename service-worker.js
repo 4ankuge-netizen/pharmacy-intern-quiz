@@ -3,7 +3,7 @@
 
 // キャッシュの名前にバージョン番号をつける。
 // 問題データやコードを更新したら、このバージョン番号を上げること。
-const CACHE_VERSION = 'v13';
+const CACHE_VERSION = 'v14';
 const CACHE_NAME = `pharmacy-quiz-${CACHE_VERSION}`;
 
 // オフラインでも表示できるようにしておきたいファイルの一覧
@@ -23,10 +23,18 @@ const APP_SHELL_FILES = [
   './icons/icon.svg',
 ];
 
-// インストール時:一覧のファイルをキャッシュに保存する
+// インストール時:一覧のファイルをキャッシュに保存する。
+//
+// ここで { cache: 'reload' } を付けているのが大事なところ。
+// これを付けないと、ブラウザが少し前にダウンロードして持っている古いファイルを
+// そのまま使ってしまい、「新しい版として保存したのに中身は古い」という
+// ちぐはぐな状態になる(GitHub Pagesは最大10分ほどファイルを持ち回すため)。
+// 'reload' を付けると、必ずサーバーに取りに行き直す。
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL_FILES))
+    caches.open(CACHE_NAME).then((cache) =>
+      cache.addAll(APP_SHELL_FILES.map((url) => new Request(url, { cache: 'reload' })))
+    )
   );
   // 新しいService Workerをすぐに有効化の待機列に進める
   self.skipWaiting();
