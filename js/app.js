@@ -10,7 +10,14 @@ import {
 } from './quiz-engine.js';
 import { createStorage } from './storage.js';
 import { computeCategoryAccuracy, summarizeAccuracy } from './stats.js';
-import { encodeReport, parsePastedReports } from './report-code.js';
+import { encodeReport, decodeReport, parsePastedReports } from './report-code.js';
+import {
+  needsSending,
+  lastSentKey,
+  sendReport,
+  fetchReports,
+  TEACHER_KEY_STORAGE,
+} from './report-sync.js';
 
 const storage = createStorage(window.localStorage);
 
@@ -30,9 +37,9 @@ let allQuestions = [];
 // 確認前のものも含めた全問題。「確認待ちが何問あるか」を案内するために持っておく
 let allQuestionsIncludingUnverified = [];
 let categories = [];
-// 成績の送信先(Googleフォーム)の設定。data/report-form.json から読み込む。
-// enabled が false のあいだは、送信ボタンを出さない
-let reportForm = { enabled: false };
+// 成績の送り先の設定。data/report-endpoint.json から読み込む。
+// enabled が false のあいだは、自動送信も先生用の読み込みも行わない
+let reportEndpoint = { enabled: false };
 let currentSession = []; // 今出題中の問題の配列
 let currentIndex = 0;
 // 出題できる問題が0件だったときに表示する案内文。
@@ -79,13 +86,13 @@ async function loadData() {
   allQuestions = allQuestionsIncludingUnverified.filter((q) => q.verified);
   categories = await categoriesRes.json();
 
-  // 送信先の設定は「あれば使う」扱い。読めなくてもアプリ本体は動かしたいので、
-  // 失敗しても止めずに「送信できない状態」として続ける
+  // 送り先の設定は「あれば使う」扱い。読めなくてもアプリ本体は動かしたいので、
+  // 失敗しても止めずに「送れない状態」として続ける
   try {
-    const res = await fetch('data/report-form.json');
-    if (res.ok) reportForm = await res.json();
+    const res = await fetch('data/report-endpoint.json');
+    if (res.ok) reportEndpoint = await res.json();
   } catch {
-    reportForm = { enabled: false };
+    reportEndpoint = { enabled: false };
   }
 }
 
@@ -110,6 +117,7 @@ function showScreen(screenId) {
   });
   if (screenId === 'difficulty-screen') renderDifficultyScreen();
   if (screenId === 'profile-screen') renderProfileScreen();
+  if (screenId === 'report-screen') renderReportScreen();
   if (screenId === 'stats-screen') renderStats();
   if (screenId === 'bookmark-screen') renderBookmarks();
   if (screenId === 'quiz-screen') renderQuestion();
@@ -476,6 +484,10 @@ function renderResult() {
   const total = currentSession.length;
   const correct = sessionCorrectCount;
 
+  // 解き終わったこの区切りで、成績を先生へ送る。
+  // 待たずに先へ進むので、結果画面の表示が遅くなることはない
+  syncReport();
+
   // 正答率の円グラフ。--pct に 0〜100 を入れると、その割合だけ緑に塗られる
   const percent = total === 0 ? 0 : Math.round((correct / total) * 100);
   document.getElementById('score-ring').style.setProperty('--pct', percent);
@@ -672,9 +684,13 @@ function renderProfileChip() {
 }
 
 function renderProfileScreen() {
-  // 送信先が設定されているときだけ「先生に成績を送る」を出す
-  document.getElementById('send-report-section').hidden = !reportForm.enabled;
-  document.getElementById('send-report-message').textContent = '';
+  // 送り先が設定されているときだけ「先生への報告」の案内を出す
+  document.getElementById('send-report-section').hidden = !reportEndpoint.enabled;
+  if (reportEndpoint.enabled) {
+    const profile = storage.getCurrentProfile();
+    const sent = profile ? readLastSent(profile.id) : null;
+    renderSendStatus(sent ? '前回ぶんは送信済みです。' : 'まだ送っていません。10問解くと自動で送られます。');
+  }
 
   const list = document.getElementById('profile-list');
   list.innerHTML = '';
@@ -825,10 +841,10 @@ async function onCopyExport() {
 }
 
 // ============================================================
-//  先生に成績を送る(実習生側)
+//  成績を自動で先生へ送る(実習生側)
 // ============================================================
 
-// 成績を短い文字列にまとめる。送信にも、先生用画面の動作確認にも使う
+// 今の成績を短い文字列にまとめる
 function buildReportCode() {
   return encodeReport({
     history: storage.getHistory(),
@@ -839,39 +855,134 @@ function buildReportCode() {
   });
 }
 
-// 「先生に成績を送る」を押したとき。
-// 成績を入れた状態でGoogleフォームを開く。送信ボタンを押すのは本人
-function onSendReport() {
-  const message = document.getElementById('send-report-message');
-  const profile = storage.getCurrentProfile();
+// 送信の状況を利用者画面に出す。押すボタンはないので、状態を伝えるだけ
+function renderSendStatus(text) {
+  const el = document.getElementById('send-report-status');
+  if (el) el.textContent = text;
+}
 
-  if (!reportForm.enabled || !reportForm.formUrl) {
-    message.textContent = '送信先がまだ設定されていません。先生に確認してください。';
-    return;
+// 前回どこまで送ったかを読み書きする。利用者ごとに分けて覚える
+function readLastSent(profileId) {
+  try {
+    return window.localStorage.getItem(lastSentKey(profileId));
+  } catch {
+    return null;
   }
+}
+function writeLastSent(profileId, code) {
+  try {
+    window.localStorage.setItem(lastSentKey(profileId), code);
+  } catch {
+    // 保存できなくても動作は続ける(次回また送るだけ)
+  }
+}
+
+/**
+ * 成績を先生へ送る。
+ *
+ * 画面を止めないよう、裏側でそっと実行する。
+ * 電波がないなど失敗した場合も何も言わず、次に開いたときにもう一度試す。
+ */
+async function syncReport() {
+  if (!reportEndpoint.enabled || !reportEndpoint.url) return;
+
+  const profile = storage.getCurrentProfile();
+  if (!profile) return;
 
   const code = buildReportCode();
-  const params = new URLSearchParams();
-  params.set('usp', 'pp_url'); // Googleフォームに「あらかじめ入力した状態で開く」と伝える印
-  params.set(reportForm.nameEntryId, profile ? profile.name : '');
-  params.set(reportForm.dataEntryId, code);
+  if (!needsSending(readLastSent(profile.id), code)) return;
 
-  // formResponse は送信用の住所。あらかじめ入力した状態で「開く」ときは viewform を使う
-  const url = reportForm.formUrl.replace(/\/formResponse$/, '/viewform') + '?' + params.toString();
-
-  // 新しいタブで開く。ブロックされた場合に備えて、戻り値を見て案内を変える
-  const opened = window.open(url, '_blank', 'noopener');
-  message.textContent = opened
-    ? '送信フォームを開きました。内容を確かめて「送信」を押してください。'
-    : 'フォームを開けませんでした。ブラウザのポップアップの設定を確認してください。';
+  try {
+    await sendReport(reportEndpoint.url, { name: profile.name, code });
+    writeLastSent(profile.id, code);
+    renderSendStatus(`最後に送った時刻: ${new Date().toLocaleString('ja-JP')}`);
+  } catch {
+    // 失敗はここで飲み込む。実習生に通信の失敗を見せても対処のしようがないため
+    renderSendStatus('まだ送れていません。電波のあるところで開くと自動で送られます。');
+  }
 }
 
 // ============================================================
 //  みんなの成績をまとめて見る(先生側)
 // ============================================================
 
-// 貼り付けを読み取って画面に出す
-function onLoadReports() {
+// 先生の端末に覚えさせた合言葉を読み書きする
+function readTeacherKey() {
+  try {
+    return window.localStorage.getItem(TEACHER_KEY_STORAGE) || '';
+  } catch {
+    return '';
+  }
+}
+function writeTeacherKey(key) {
+  try {
+    window.localStorage.setItem(TEACHER_KEY_STORAGE, key);
+  } catch {
+    // 覚えられなくても、毎回入力すれば使える
+  }
+}
+
+// 先生の画面を開いたときの下準備。合言葉を覚えていれば入れておく
+function renderReportScreen() {
+  const input = document.getElementById('report-key');
+  if (input && !input.value) input.value = readTeacherKey();
+}
+
+// 合言葉を使って、届いている成績をまとめて受け取る
+async function onLoadReports() {
+  const message = document.getElementById('report-message');
+  const output = document.getElementById('report-output');
+  const key = document.getElementById('report-key').value.trim();
+
+  output.textContent = '';
+
+  if (!reportEndpoint.enabled || !reportEndpoint.url) {
+    message.textContent = '送り先がまだ設定されていません。';
+    return;
+  }
+  if (!key) {
+    message.textContent = '合言葉を入れてください。';
+    return;
+  }
+
+  message.textContent = '読み込んでいます…';
+
+  let rows;
+  try {
+    rows = await fetchReports(reportEndpoint.url, key);
+  } catch (error) {
+    message.textContent = `読み込めませんでした：${error.message}`;
+    return;
+  }
+
+  writeTeacherKey(key); // うまくいったときだけ覚える
+
+  // 受け取った文字列を、正誤の記録に戻す
+  const reports = [];
+  let skipped = 0;
+  for (const row of rows) {
+    const decoded = decodeReport(row.code, categories);
+    if (!decoded) {
+      skipped += 1;
+      continue;
+    }
+    reports.push({ name: row.name, updatedAt: row.updatedAt, ...decoded });
+  }
+
+  if (reports.length === 0) {
+    message.textContent =
+      skipped > 0 ? '届いた成績を読み取れませんでした。' : 'まだ誰からも届いていません。';
+    return;
+  }
+
+  message.textContent =
+    `${reports.length}人分を読み込みました。` + (skipped > 0 ? `（読めなかったものが${skipped}件ありました）` : '');
+
+  renderReports(reports, output);
+}
+
+// 通信を使わず、貼り付けた内容から読む(逃げ道)
+function onPasteReports() {
   const message = document.getElementById('report-message');
   const output = document.getElementById('report-output');
   const pasted = document.getElementById('report-input').value;
@@ -937,13 +1048,13 @@ function renderReportSummary(rows) {
 
   section.appendChild(
     buildTable(
-      ['名前', '回答数', '正答率', '連続学習', '送信日'],
+      ['名前', '回答数', '正答率', '連続学習', '最終更新'],
       rows.map((r) => [
         r.name,
         `${r.overall.answered}問`,
         r.overall.answered === 0 ? '—' : `${r.overall.accuracyPercent}%`,
         `${r.streak}日`,
-        r.date,
+        r.updatedAt || r.date,
       ])
     )
   );
@@ -1085,7 +1196,6 @@ function setupNav() {
   document.getElementById('add-profile-button').addEventListener('click', onAddProfile);
   document.getElementById('export-button').addEventListener('click', onExport);
   document.getElementById('copy-export-button').addEventListener('click', onCopyExport);
-  document.getElementById('send-report-button').addEventListener('click', onSendReport);
 
   // 先生用:みんなの成績をまとめて見る画面。
   // 実習生の画面には入口を置かず、URLの末尾に #teacher を付けて開いたときだけ出す
@@ -1096,6 +1206,7 @@ function setupNav() {
     showScreen('home-screen');
   });
   document.getElementById('report-load-button').addEventListener('click', onLoadReports);
+  document.getElementById('report-paste-button').addEventListener('click', onPasteReports);
   document.getElementById('report-clear-button').addEventListener('click', onClearReports);
   document.getElementById('next-question-button').addEventListener('click', onNextQuestion);
   document.getElementById('bookmark-toggle-button').addEventListener('click', onToggleBookmark);
@@ -1123,6 +1234,8 @@ async function init() {
   renderStreak();
   showScreen('home-screen');
   openTeacherScreenIfRequested();
+  // 前回うまく送れていなかった場合に備えて、起動時にも一度だけ試す
+  syncReport();
   // アプリを開いたままURLの末尾を書き換えた場合にも反応させる
   window.addEventListener('hashchange', openTeacherScreenIfRequested);
 }

@@ -1,0 +1,5 @@
+{
+  "_説明": "成績の送り先(Google Apps Script のウェブアプリ)のURLです。enabled が false のあいだは、自動送信を行いません。",
+  "enabled": false,
+  "url": ""
+}
