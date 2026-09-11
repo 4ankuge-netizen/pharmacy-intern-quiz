@@ -6,8 +6,9 @@
 <title>薬学実習クイズ 案内シート</title>
 <style>
   /* ------------------------------------------------------------------
-     このページは「印刷して実習生に配る / 壁に貼る」ための1枚もの。
-     ブラウザで開いて Ctrl+P (Macは Cmd+P) を押すとA4で印刷できる。
+     実習生に配るA4 1枚の案内。
+     ブラウザで開いて Ctrl+P (Macは Cmd+P) を押すと印刷できる。
+     PDFは tools/make-qr.py で書き出せる。
      ------------------------------------------------------------------ */
 
   :root {
@@ -16,6 +17,7 @@
     --muted: #6B6357;      /* 補足の文字色 */
     --line: #D9D2C4;       /* 罫線 */
     --accent: #6B2E5F;     /* 差し色 */
+    --green: #1B7C64;      /* 「できること」の見出しなど */
   }
 
   * { box-sizing: border-box; }
@@ -35,94 +37,188 @@
     width: 210mm;
     min-height: 297mm;
     background: #fff;
-    padding: 16mm 16mm;
+    padding: 12mm 14mm;
     box-shadow: 0 2px 24px rgba(27, 42, 74, 0.12);
-    display: flex;
-    flex-direction: column;
   }
 
   /* ---- 見出し ---- */
   .eyebrow {
-    font-size: 11pt;
+    font-size: 10pt;
     letter-spacing: 0.18em;
     color: var(--accent);
-    margin: 0 0 6px;
+    margin: 0 0 4px;
     font-weight: 700;
   }
   h1 {
-    font-size: 23pt;
-    margin: 0 0 3px;
+    font-size: 20pt;
+    margin: 0 0 2px;
     letter-spacing: 0.02em;
   }
   .lead {
-    font-size: 10pt;
+    font-size: 9pt;
     color: var(--muted);
-    margin: 0 0 11px;
-    line-height: 1.65;
+    margin: 0;
+    line-height: 1.5;
   }
 
-  /* ---- QRコードの箱 ---- */
+  /* ---- 上段:QRコードと、使い方の手順を左右に並べる ---- */
+  .top {
+    display: grid;
+    grid-template-columns: 62mm 1fr;
+    gap: 7mm;
+    margin-top: 5mm;
+    align-items: start;
+  }
+
   .qr-box {
     border: 1.5px solid var(--line);
-    border-radius: 14px;
-    padding: 12mm 8mm 9mm;
+    border-radius: 12px;
+    padding: 5mm 4mm 4mm;
     text-align: center;
-    background: #fff;
   }
   .qr-box svg {
-    width: 76mm;
-    height: 76mm;
+    width: 48mm;
+    height: 48mm;
     display: block;
-    margin: 0 auto 7px;
+    margin: 0 auto 5px;
   }
   .qr-caption {
-    font-size: 11pt;
+    font-size: 9.5pt;
     font-weight: 700;
-    margin: 0 0 4px;
+    margin: 0 0 3px;
   }
   .url {
     font-family: "SFMono-Regular", Consolas, "Courier New", monospace;
-    font-size: 9.5pt;
+    font-size: 7.5pt;
     color: var(--muted);
-    word-break: break-all;
     margin: 0;
+    line-height: 1.45;
   }
 
-  /* ---- 手順 ---- */
+  /* 使い方の手順。番号を丸で囲んで、順番が目で追えるようにする */
+  .steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+  .steps li {
+    position: relative;
+    padding-left: 9mm;
+    margin-bottom: 3mm;
+    font-size: 9.5pt;
+    line-height: 1.5;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    width: 6mm;
+    height: 6mm;
+    border-radius: 50%;
+    background: var(--ink);
+    color: #fff;
+    font-size: 8.5pt;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .steps b { display: block; }
+  .steps span { color: var(--muted); font-size: 9pt; }
+
+  /* ---- 共通の中見出し ---- */
   h2 {
-    font-size: 12.5pt;
-    margin: 11mm 0 4mm;
-    padding-bottom: 4px;
+    font-size: 11pt;
+    margin: 5mm 0 2.5mm;
+    padding-bottom: 3px;
     border-bottom: 1.5px solid var(--line);
   }
-  .steps {
+
+  /* ---- できること ---- */
+  .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6mm;
-  }
-  .step-card h3 {
-    font-size: 10.5pt;
-    margin: 0 0 4px;
-    color: var(--accent);
-  }
-  ol {
+    gap: 1.2mm 8mm;
     margin: 0;
-    padding-left: 1.3em;
-    font-size: 10pt;
-    line-height: 1.7;
+    padding: 0;
+    list-style: none;
   }
-  ol li + li { margin-top: 2px; }
-
-  /* ---- 注意書き ---- */
-  .note {
-    margin-top: auto;
-    padding-top: 6mm;
+  .features li {
     font-size: 9pt;
+    line-height: 1.45;
+    padding-left: 4.5mm;
+    position: relative;
     color: var(--muted);
-    line-height: 1.7;
   }
-  .note strong { color: var(--ink); }
-  .note ul { margin: 4px 0 0; padding-left: 1.2em; }
+  .features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 2.2mm;
+    height: 2.2mm;
+    border-radius: 50%;
+    background: var(--green);
+  }
+  .features b { color: var(--ink); }
+
+  /* ---- 成績の共有(いちばん伝えたいので枠で囲む) ---- */
+  .share {
+    margin-top: 3mm;
+    border: 1.5px solid var(--accent);
+    border-radius: 12px;
+    padding: 4mm 5mm 4mm;
+  }
+  .share-lead {
+    font-size: 9pt;
+    line-height: 1.55;
+    margin: 0 0 3mm;
+  }
+  .share-lead b { color: var(--accent); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 1.8mm 2.5mm;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  th {
+    background: #F4F1EA;
+    font-weight: 700;
+    font-size: 8.5pt;
+  }
+  td:first-child { width: 38mm; font-weight: 700; white-space: nowrap; }
+  .is-default { color: var(--accent); }
+
+  .share-how {
+    margin: 3mm 0 0;
+    font-size: 8.5pt;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .share-how b { color: var(--ink); }
+  .path {
+    display: inline-block;
+    padding: 0.5mm 2mm;
+    background: #F4F1EA;
+    border-radius: 4px;
+    font-size: 8.5pt;
+  }
+
+  /* ---- 最後の一言 ---- */
+  .footer-note {
+    margin-top: 4mm;
+    padding-top: 3mm;
+    border-top: 1px solid var(--line);
+    font-size: 8.5pt;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .footer-note strong { color: var(--ink); }
 
   /* ---- 印刷のとき ---- */
   @page { size: A4 portrait; margin: 0; }
@@ -138,48 +234,80 @@
   <p class="eyebrow">実習生のみなさんへ</p>
   <h1>薬学実習クイズ</h1>
   <p class="lead">
-    がん・高血圧症・糖尿病など12分野、全1,912問。<br>
-    スマートフォンのカメラで下のQRコードを読み取ると開きます。アプリのインストールは不要です。
+    がん・高血圧症・糖尿病・疑義照会など12分野、全1,912問。すべて添付文書やガイドラインで内容を確認してあります。
   </p>
 
-  <div class="qr-box">
-    <!-- QRコードは画像ファイルではなく図形として直接埋め込んである。
-         そのため、このHTMLファイル1つだけで印刷でき、拡大しても荒れない。 -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" shape-rendering="crispEdges" role="img" aria-label="薬学実習クイズのQRコード"><rect width="49" height="49" fill="#fff"/><g transform="translate(4 4)"><path stroke="#1b2a4a" d="M0 0.5h7m3 0h1m2 0h1m3 0h3m1 0h1m1 0h2m3 0h5m1 0h7m-41 1h1m5 0h1m2 0h1m1 0h1m2 0h2m1 0h1m2 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m3 0h1m2 0h1m3 0h2m2 0h6m3 0h1m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m2 0h2m1 0h1m3 0h1m1 0h1m1 0h2m1 0h1m4 0h2m4 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h3m4 0h2m2 0h2m1 0h6m1 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m5 0h2m1 0h1m2 0h1m1 0h2m1 0h3m2 0h1m1 0h2m2 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m1 0h2m1 0h3m1 0h2m5 0h1m4 0h1m1 0h1m-30 1h2m2 0h3m1 0h6m1 0h1m1 0h2m2 0h1m1 0h6m1 0h3m1 0h1m-37 1h1m1 0h1m1 0h2m2 0h1m2 0h3m1 0h3m2 0h4m4 0h4m2 0h3m1 0h1m1 0h1m-41 1h1m2 0h1m1 0h3m1 0h2m2 0h1m3 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m-39 1h2m4 0h2m1 0h3m2 0h1m1 0h3m12 0h1m2 0h2m-35 1h6m2 0h1m1 0h2m3 0h3m1 0h4m2 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m-41 1h1m3 0h2m1 0h2m1 0h2m2 0h2m3 0h1m3 0h2m1 0h1m1 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-41 1h3m1 0h3m1 0h4m2 0h1m1 0h1m2 0h2m4 0h4m1 0h3m1 0h1m5 0h1m-36 1h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m2 0h3m3 0h1m3 0h1m1 0h4m1 0h2m-40 1h1m3 0h7m1 0h1m2 0h1m1 0h2m1 0h2m2 0h1m1 0h1m2 0h1m5 0h1m-37 1h1m1 0h2m3 0h6m5 0h4m3 0h5m2 0h2m1 0h1m2 0h1m-39 1h2m1 0h2m1 0h3m1 0h3m1 0h3m1 0h6m3 0h4m1 0h3m1 0h1m1 0h2m-40 1h3m1 0h2m1 0h1m2 0h1m1 0h1m2 0h4m4 0h4m2 0h1m2 0h2m1 0h1m1 0h3m-39 1h3m1 0h5m3 0h2m3 0h2m1 0h1m5 0h3m1 0h1m1 0h2m1 0h5m-39 1h1m5 0h3m1 0h2m1 0h2m1 0h3m2 0h4m1 0h1m1 0h3m1 0h4m1 0h2m-40 1h2m3 0h3m3 0h1m4 0h1m2 0h1m1 0h1m1 0h1m4 0h1m5 0h2m1 0h2m-40 1h2m3 0h1m3 0h1m2 0h1m1 0h3m1 0h1m2 0h3m2 0h1m3 0h3m1 0h1m4 0h1m-40 1h1m3 0h1m1 0h2m1 0h4m4 0h1m1 0h7m1 0h3m8 0h1m-39 1h4m1 0h1m3 0h1m3 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h3m1 0h2m1 0h2m1 0h2m1 0h1m-41 1h1m5 0h1m1 0h2m1 0h1m2 0h2m2 0h1m1 0h2m1 0h2m4 0h5m1 0h3m1 0h2m-37 1h1m2 0h9m1 0h2m1 0h3m8 0h2m2 0h1m1 0h1m-37 1h2m1 0h1m1 0h2m1 0h5m2 0h4m1 0h2m2 0h1m1 0h1m2 0h2m1 0h1m2 0h2m2 0h1m-38 1h2m2 0h2m4 0h2m2 0h2m1 0h1m3 0h1m3 0h1m3 0h2m1 0h1m2 0h1m-39 1h1m3 0h3m1 0h3m1 0h1m1 0h1m1 0h5m1 0h1m1 0h1m1 0h2m2 0h1m1 0h5m1 0h1m-35 1h1m2 0h4m1 0h2m3 0h1m1 0h1m1 0h6m2 0h2m1 0h1m1 0h1m2 0h3m-39 1h1m3 0h2m1 0h2m6 0h1m1 0h2m1 0h1m1 0h2m4 0h12m-33 1h4m2 0h1m2 0h1m1 0h2m2 0h2m3 0h3m1 0h1m3 0h1m1 0h3m-41 1h7m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h4m3 0h1m1 0h3m1 0h1m1 0h4m-40 1h1m5 0h1m2 0h3m1 0h8m3 0h1m2 0h2m1 0h1m1 0h1m3 0h1m2 0h1m-40 1h1m1 0h3m1 0h1m2 0h1m2 0h4m1 0h1m1 0h4m2 0h1m1 0h2m1 0h1m1 0h5m1 0h1m-39 1h1m1 0h3m1 0h1m1 0h1m2 0h2m2 0h2m1 0h1m4 0h2m2 0h2m3 0h1m3 0h5m-41 1h1m1 0h3m1 0h1m1 0h2m1 0h2m3 0h1m1 0h1m3 0h1m2 0h1m3 0h4m2 0h1m4 0h1m-41 1h1m5 0h1m2 0h3m2 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h3m1 0h2m1 0h1m-40 1h7m2 0h1m2 0h1m1 0h3m4 0h1m1 0h1m2 0h2m2 0h3m1 0h1m2 0h1m1 0h1"/></g></svg>
-    <p class="qr-caption">カメラで読み取ってください</p>
-    <p class="url">https://4ankuge-netizen.github.io/pharmacy-intern-quiz/</p>
+  <div class="top">
+    <div class="qr-box">
+      <!-- QRコードは画像ではなく図形として直接埋め込んである。
+           このHTMLファイル1つで印刷でき、拡大しても荒れない -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49" shape-rendering="crispEdges" role="img" aria-label="薬学実習クイズのQRコード"><rect width="49" height="49" fill="#fff"/><g transform="translate(4 4)"><path stroke="#1b2a4a" d="M0 0.5h7m3 0h1m2 0h1m3 0h3m1 0h1m1 0h2m3 0h5m1 0h7m-41 1h1m5 0h1m2 0h1m1 0h1m2 0h2m1 0h1m2 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h1m5 0h1m-41 1h1m1 0h3m1 0h1m3 0h1m2 0h1m3 0h2m2 0h6m3 0h1m3 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m2 0h2m1 0h1m3 0h1m1 0h1m1 0h2m1 0h1m4 0h2m4 0h1m1 0h3m1 0h1m-41 1h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h3m4 0h2m2 0h2m1 0h6m1 0h1m1 0h3m1 0h1m-41 1h1m5 0h1m5 0h2m1 0h1m2 0h1m1 0h2m1 0h3m2 0h1m1 0h2m2 0h1m5 0h1m-41 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-33 1h1m1 0h2m1 0h3m1 0h2m5 0h1m4 0h1m1 0h1m-30 1h2m2 0h3m1 0h6m1 0h1m1 0h2m2 0h1m1 0h6m1 0h3m1 0h1m-37 1h1m1 0h1m1 0h2m2 0h1m2 0h3m1 0h3m2 0h4m4 0h4m2 0h3m1 0h1m1 0h1m-41 1h1m2 0h1m1 0h3m1 0h2m2 0h1m3 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m-39 1h2m4 0h2m1 0h3m2 0h1m1 0h3m12 0h1m2 0h2m-35 1h6m2 0h1m1 0h2m3 0h3m1 0h4m2 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h1m-41 1h1m3 0h2m1 0h2m1 0h2m2 0h2m3 0h1m3 0h2m1 0h1m1 0h1m2 0h1m2 0h1m2 0h1m2 0h1m-41 1h3m1 0h3m1 0h4m2 0h1m1 0h1m2 0h2m4 0h4m1 0h3m1 0h1m5 0h1m-36 1h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m2 0h3m3 0h1m3 0h1m1 0h4m1 0h2m-40 1h1m3 0h7m1 0h1m2 0h1m1 0h2m1 0h2m2 0h1m1 0h1m2 0h1m5 0h1m-37 1h1m1 0h2m3 0h6m5 0h4m3 0h5m2 0h2m1 0h1m2 0h1m-39 1h2m1 0h2m1 0h3m1 0h3m1 0h3m1 0h6m3 0h4m1 0h3m1 0h1m1 0h2m-40 1h3m1 0h2m1 0h1m2 0h1m1 0h1m2 0h4m4 0h4m2 0h1m2 0h2m1 0h1m1 0h3m-39 1h3m1 0h5m3 0h2m3 0h2m1 0h1m5 0h3m1 0h1m1 0h2m1 0h5m-39 1h1m5 0h3m1 0h2m1 0h2m1 0h3m2 0h4m1 0h1m1 0h3m1 0h4m1 0h2m-40 1h2m3 0h3m3 0h1m4 0h1m2 0h1m1 0h1m1 0h1m4 0h1m5 0h2m1 0h2m-40 1h2m3 0h1m3 0h1m2 0h1m1 0h3m1 0h1m2 0h3m2 0h1m3 0h3m1 0h1m4 0h1m-40 1h1m3 0h1m1 0h2m1 0h4m4 0h1m1 0h7m1 0h3m8 0h1m-39 1h4m1 0h1m3 0h1m3 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h3m1 0h2m1 0h2m1 0h2m1 0h1m-41 1h1m5 0h1m1 0h2m1 0h1m2 0h2m2 0h1m1 0h2m1 0h2m4 0h5m1 0h3m1 0h2m-37 1h1m2 0h9m1 0h2m1 0h3m8 0h2m2 0h1m1 0h1m-37 1h2m1 0h1m1 0h2m1 0h5m2 0h4m1 0h2m2 0h1m1 0h1m2 0h2m1 0h1m2 0h2m2 0h1m-38 1h2m2 0h2m4 0h2m2 0h2m1 0h1m3 0h1m3 0h1m3 0h2m1 0h1m2 0h1m-39 1h1m3 0h3m1 0h3m1 0h1m1 0h1m1 0h5m1 0h1m1 0h1m1 0h2m2 0h1m1 0h5m1 0h1m-35 1h1m2 0h4m1 0h2m3 0h1m1 0h1m1 0h6m2 0h2m1 0h1m1 0h1m2 0h3m-39 1h1m3 0h2m1 0h2m6 0h1m1 0h2m1 0h1m1 0h2m4 0h12m-33 1h4m2 0h1m2 0h1m1 0h2m2 0h2m3 0h3m1 0h1m3 0h1m1 0h3m-41 1h7m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h4m3 0h1m1 0h3m1 0h1m1 0h4m-40 1h1m5 0h1m2 0h3m1 0h8m3 0h1m2 0h2m1 0h1m1 0h1m3 0h1m2 0h1m-40 1h1m1 0h3m1 0h1m2 0h1m2 0h4m1 0h1m1 0h4m2 0h1m1 0h2m1 0h1m1 0h5m1 0h1m-39 1h1m1 0h3m1 0h1m1 0h1m2 0h2m2 0h2m1 0h1m4 0h2m2 0h2m3 0h1m3 0h5m-41 1h1m1 0h3m1 0h1m1 0h2m1 0h2m3 0h1m1 0h1m3 0h1m2 0h1m3 0h4m2 0h1m4 0h1m-41 1h1m5 0h1m2 0h3m2 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h3m1 0h2m1 0h1m-40 1h7m2 0h1m2 0h1m1 0h3m4 0h1m1 0h1m2 0h2m2 0h3m1 0h1m2 0h1m1 0h1"/></g></svg>
+      <p class="qr-caption">カメラで読み取ってください</p>
+      <p class="url">https://4ankuge-netizen.github.io/<br>pharmacy-intern-quiz/</p>
+    </div>
+
+    <ol class="steps">
+      <li><b>分野を選ぶ</b><span>ホーム画面から、がん・高血圧症・疑義照会などを選びます</span></li>
+      <li><b>難易度を選ぶ</b><span>初級・中級・上級の3段階。初級から始めるのがおすすめです</span></li>
+      <li><b>1回10問に答える</b><span>答えるとその場で正解・不正解が出て、解説と出典が読めます</span></li>
+      <li><b>結果を見返す</b><span>解き終わると正答率が出ます。1問ずつ開いて解説を読み直せます</span></li>
+    </ol>
   </div>
 
-  <h2>ホーム画面に置いて、アプリのように使う</h2>
-  <div class="steps">
-    <div class="step-card">
-      <h3>iPhone / iPad</h3>
-      <ol>
-        <li><strong>Safari</strong> で上のQRコードを開く</li>
-        <li>画面下の共有ボタン（□に↑）を押す</li>
-        <li>メニューを下にたどって<br><strong>「ホーム画面に追加」</strong>を押す</li>
-        <li>右上の「追加」を押す</li>
-      </ol>
-    </div>
-    <div class="step-card">
-      <h3>Android</h3>
-      <ol>
-        <li><strong>Chrome</strong> で上のQRコードを開く</li>
-        <li>右上の「︙」を押す</li>
-        <li><strong>「アプリをインストール」</strong><br>（または「ホーム画面に追加」）を押す</li>
-        <li>「インストール」を押す</li>
-      </ol>
-    </div>
+  <h2>そのほかにできること</h2>
+  <ul class="features">
+    <li><b>弱点復習モード</b> — 間違えた問題だけをもう一度解けます</li>
+    <li><b>ブックマーク</b> — 気になった問題に印を付けて見返せます</li>
+    <li><b>正答率</b> — 分野ごとの成績が棒グラフで見られます</li>
+    <li><b>連続学習日数</b> — 何日続いているかが出ます</li>
+    <li><b>利用者の切り替え</b> — 1台を2人で使っても混ざりません</li>
+    <li><b>電波がなくても使える</b> — 一度開けば圏外でも使えます</li>
+  </ul>
+
+  <h2>成績の共有について</h2>
+  <div class="share">
+    <p class="share-lead">
+      成績を指導者と共有するかどうかは、<b>みなさん自身が選べます。</b>
+      はじめは「共有しない」になっているので、<b>何もしなければ誰にも見られません。</b>
+      いつでも変更できます。
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>選べる3段階</th><th>指導者に見えるもの</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="is-default">共有しない（はじめの設定）</td>
+          <td>何も表示されません</td>
+        </tr>
+        <tr>
+          <td>正答率だけ共有する</td>
+          <td>分野ごとの正答率・回答数・連続学習日数<br>
+            （間違えた問題は端末から送られません）</td>
+        </tr>
+        <tr>
+          <td>すべて共有する</td>
+          <td>上に加えて、間違えた問題の一覧<br>
+            （つまずいた所を一緒に確認してもらえます）</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="share-how">
+      <b>変えかた</b>　画面右上の利用者名を押す
+      → <span class="path">先生への報告</span> から選ぶだけです。<br>
+      <b>あとから取り消せます</b>　「共有しない」に戻すときに、
+      それまでに送った成績も消すかどうかを選べます。消せば指導者の画面からもなくなります。<br>
+      <b>送られるのは</b>　利用者名と、各問題に正解したかどうかだけです。
+      連絡先などは一切含まれません。
+    </p>
   </div>
 
-  <div class="note">
-    <strong>使うときのポイント</strong>
-    <ul>
-      <li>iPhoneでホーム画面に追加するときは、かならず <strong>Safari</strong> で開いてください。Chromeなど他のアプリからでは追加できません。</li>
-      <li>成績は<strong>その端末の中だけ</strong>に保存されます。同じ端末を2人で使う場合は、画面右上の利用者名から利用者を追加して切り替えてください。</li>
-      <li>一度開いたあとは、<strong>電波がなくても</strong>使えます。</li>
-      <li>問題が増えたり直ったりしたときは、次に開いたときに自動で新しくなります。</li>
-    </ul>
+  <div class="footer-note">
+    <strong>覚えておいてほしいこと</strong>　成績は<strong>その端末の中</strong>に保存されます（共有する設定にした分だけが送られます）。
+    問題が増えたり直ったりしたときは、次に開いたときに自動で新しくなります。
+    内容に誤りを見つけたときや、判断に迷う問題があったときは、遠慮なく指導薬剤師に伝えてください。
   </div>
 
 </div>
