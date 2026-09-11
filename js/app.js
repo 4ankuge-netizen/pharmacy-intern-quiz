@@ -1087,9 +1087,14 @@ function setupNav() {
   document.getElementById('copy-export-button').addEventListener('click', onCopyExport);
   document.getElementById('send-report-button').addEventListener('click', onSendReport);
 
-  // 先生用:みんなの成績をまとめて見る画面
-  document.getElementById('open-report-button').addEventListener('click', () => showScreen('report-screen'));
-  document.getElementById('report-back-button').addEventListener('click', () => showScreen('profile-screen'));
+  // 先生用:みんなの成績をまとめて見る画面。
+  // 実習生の画面には入口を置かず、URLの末尾に #teacher を付けて開いたときだけ出す
+  document.getElementById('report-back-button').addEventListener('click', () => {
+    // 戻るときは #teacher を消しておく。付けっぱなしだと、
+    // 次に開いたときにいきなり先生用の画面が出てしまうため
+    history.replaceState(null, '', location.pathname + location.search);
+    showScreen('home-screen');
+  });
   document.getElementById('report-load-button').addEventListener('click', onLoadReports);
   document.getElementById('report-clear-button').addEventListener('click', onClearReports);
   document.getElementById('next-question-button').addEventListener('click', onNextQuestion);
@@ -1103,6 +1108,13 @@ function setupNav() {
   document.getElementById('back-home-button').addEventListener('click', () => showScreen('home-screen'));
 }
 
+// URLの末尾が #teacher なら先生用の画面を出す。
+// 実習生には入口が見えないようにしつつ、先生はこのURLをブックマークしておけば開ける。
+// (あくまで「見えにくくする」だけで、鍵をかけているわけではない)
+function openTeacherScreenIfRequested() {
+  if (location.hash === '#teacher') showScreen('report-screen');
+}
+
 async function init() {
   await loadData();
   setupNav();
@@ -1110,6 +1122,9 @@ async function init() {
   renderProfileChip();
   renderStreak();
   showScreen('home-screen');
+  openTeacherScreenIfRequested();
+  // アプリを開いたままURLの末尾を書き換えた場合にも反応させる
+  window.addEventListener('hashchange', openTeacherScreenIfRequested);
 }
 
 init();
