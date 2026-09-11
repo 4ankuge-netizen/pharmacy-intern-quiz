@@ -128,3 +128,28 @@ test('名前の列がなくても読み取れる', () => {
   assert.equal(reports.length, 1);
   assert.equal(reports[0].name, '(名前なし)');
 });
+
+test('連続学習日数が壊れていても、読み取れる文字列になる', () => {
+  // 保存された値が何かの拍子に壊れていた場合。
+  // ここで弾かないと、送った本人は送信済みに見えるのに
+  // 先生の画面では丸ごと読めない、という気づきにくい状態になる
+  for (const broken of [undefined, null, NaN, '', 'abc', -3, {}]) {
+    const code = encodeReport({
+      history: makeHistory([['cancer-beginner-001', 'correct']]),
+      questions, categories, date: '2026-09-11', streak: broken,
+    });
+    const back = decodeReport(code, categories);
+    assert.notEqual(back, null, `streak=${String(broken)} で読めなくなった: ${code}`);
+    assert.equal(back.streak, 0);
+  }
+});
+
+test('日付が壊れていても、読み取れる文字列になる', () => {
+  for (const broken of [undefined, null, '2026/09/11', 'きょう']) {
+    const code = encodeReport({
+      history: makeHistory([['cancer-beginner-001', 'correct']]),
+      questions, categories, date: broken, streak: 3,
+    });
+    assert.notEqual(decodeReport(code, categories), null, `date=${String(broken)} で読めなくなった: ${code}`);
+  }
+});

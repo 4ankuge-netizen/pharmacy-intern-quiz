@@ -1,5 +1,5 @@
 {
-  "_説明": "成績の送り先(Google Apps Script のウェブアプリ)のURLです。enabled が false のあいだは、自動送信を行いません。",
-  "enabled": false,
-  "url": ""
+  "_説明": "成績の送り先(Google Apps Script のウェブアプリ)のURLです。enabled が false のあいだは、自動送信を行いません。読み出しに必要な合言葉はこのファイルには入れず、Apps Script 側にだけ置いてあります。",
+  "enabled": true,
+  "url": "https://script.google.com/macros/s/AKfycbweiwdgt6wGq24Euu45rgR5t3nLFkmK9_2FPffIv5hfoirtqJhxQdIuz5eG4rakbySGsQ/exec"
 }

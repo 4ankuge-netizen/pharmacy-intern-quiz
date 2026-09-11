@@ -48,6 +48,24 @@ export function buildCategoryCodes(categories) {
   return { toCode, toId };
 }
 
+/*
+  連続学習日数を、安全な整数に直しておく。
+
+  ここで整えておかないと、保存された値が何かの拍子に壊れていたときに
+  "PQZ1~2026-09-11~undefined~..." のような文字列ができてしまう。
+  それを送ると先生の画面では「形が違う」として丸ごと読めなくなり、
+  実習生の側は送信済みに見えるのに先生には何も届かない、という気づきにくい状態になる。
+*/
+function safeStreak(value) {
+  const n = Number(value);
+  return Number.isFinite(n) && n >= 0 ? Math.floor(n) : 0;
+}
+
+// 日付も同じ理由で確かめる。形が違えば送る日の日付を使う
+function safeDate(value) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(value) ? value : new Date().toISOString().slice(0, 10);
+}
+
 // 問題IDの末尾の番号(例: "...-027" の 27)を取り出す
 function idNumber(questionId) {
   const matched = questionId.match(/-(\d+)$/);
@@ -141,7 +159,9 @@ export function encodeReport({ history, questions, categories, date, streak }) {
     groups.push(key + body);
   }
 
-  return [FORMAT_VERSION, date, String(streak), groups.join(GROUP_SEPARATOR)].join(FIELD_SEPARATOR);
+  return [FORMAT_VERSION, safeDate(date), String(safeStreak(streak)), groups.join(GROUP_SEPARATOR)].join(
+    FIELD_SEPARATOR
+  );
 }
 
 /**
@@ -282,7 +302,9 @@ export function encodeSummaryReport({ history, questions, categories, date, stre
     groups.push(`${key}:${correct}/${answered}`);
   }
 
-  return [SUMMARY_VERSION, date, String(streak), groups.join(GROUP_SEPARATOR)].join(FIELD_SEPARATOR);
+  return [SUMMARY_VERSION, safeDate(date), String(safeStreak(streak)), groups.join(GROUP_SEPARATOR)].join(
+    FIELD_SEPARATOR
+  );
 }
 
 /**
