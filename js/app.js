@@ -10,6 +10,7 @@ import {
 } from './quiz-engine.js';
 import { createStorage } from './storage.js';
 import { computeCategoryAccuracy, summarizeAccuracy } from './stats.js';
+import { encodeReport, parsePastedReports } from './report-code.js';
 
 const storage = createStorage(window.localStorage);
 
@@ -29,6 +30,9 @@ let allQuestions = [];
 // 確認前のものも含めた全問題。「確認待ちが何問あるか」を案内するために持っておく
 let allQuestionsIncludingUnverified = [];
 let categories = [];
+// 成績の送信先(Googleフォーム)の設定。data/report-form.json から読み込む。
+// enabled が false のあいだは、送信ボタンを出さない
+let reportForm = { enabled: false };
 let currentSession = []; // 今出題中の問題の配列
 let currentIndex = 0;
 // 出題できる問題が0件だったときに表示する案内文。
@@ -74,6 +78,15 @@ async function loadData() {
   // 未確認の問題は、確認作業が済むまでアプリには出さない
   allQuestions = allQuestionsIncludingUnverified.filter((q) => q.verified);
   categories = await categoriesRes.json();
+
+  // 送信先の設定は「あれば使う」扱い。読めなくてもアプリ本体は動かしたいので、
+  // 失敗しても止めずに「送信できない状態」として続ける
+  try {
+    const res = await fetch('data/report-form.json');
+    if (res.ok) reportForm = await res.json();
+  } catch {
+    reportForm = { enabled: false };
+  }
 }
 
 // 画面切り替え:指定したscreenだけ表示し、他は隠す
@@ -87,8 +100,9 @@ function showScreen(screenId) {
   let tabToHighlight = screenId;
   if (screenId === 'result-screen') tabToHighlight = 'quiz-screen';
   if (screenId === 'difficulty-screen') tabToHighlight = 'home-screen';
-  // 利用者の切り替え画面はヘッダーから開くので、どのタブも選択中にしない
-  if (screenId === 'profile-screen') tabToHighlight = null;
+  // 利用者の切り替え画面はヘッダーから開くので、どのタブも選択中にしない。
+  // 先生用の成績まとめ画面もその続きなので同じ扱いにする
+  if (screenId === 'profile-screen' || screenId === 'report-screen') tabToHighlight = null;
   document.querySelectorAll('.app-nav button').forEach((button) => {
     const isCurrent = button.dataset.screen === tabToHighlight;
     button.classList.toggle('active', isCurrent);
@@ -658,6 +672,10 @@ function renderProfileChip() {
 }
 
 function renderProfileScreen() {
+  // 送信先が設定されているときだけ「先生に成績を送る」を出す
+  document.getElementById('send-report-section').hidden = !reportForm.enabled;
+  document.getElementById('send-report-message').textContent = '';
+
   const list = document.getElementById('profile-list');
   list.innerHTML = '';
 
@@ -806,6 +824,246 @@ async function onCopyExport() {
   }
 }
 
+// ============================================================
+//  先生に成績を送る(実習生側)
+// ============================================================
+
+// 成績を短い文字列にまとめる。送信にも、先生用画面の動作確認にも使う
+function buildReportCode() {
+  return encodeReport({
+    history: storage.getHistory(),
+    questions: allQuestions,
+    categories,
+    date: getTodayLocalDate(),
+    streak: storage.getStreak(),
+  });
+}
+
+// 「先生に成績を送る」を押したとき。
+// 成績を入れた状態でGoogleフォームを開く。送信ボタンを押すのは本人
+function onSendReport() {
+  const message = document.getElementById('send-report-message');
+  const profile = storage.getCurrentProfile();
+
+  if (!reportForm.enabled || !reportForm.formUrl) {
+    message.textContent = '送信先がまだ設定されていません。先生に確認してください。';
+    return;
+  }
+
+  const code = buildReportCode();
+  const params = new URLSearchParams();
+  params.set('usp', 'pp_url'); // Googleフォームに「あらかじめ入力した状態で開く」と伝える印
+  params.set(reportForm.nameEntryId, profile ? profile.name : '');
+  params.set(reportForm.dataEntryId, code);
+
+  // formResponse は送信用の住所。あらかじめ入力した状態で「開く」ときは viewform を使う
+  const url = reportForm.formUrl.replace(/\/formResponse$/, '/viewform') + '?' + params.toString();
+
+  // 新しいタブで開く。ブロックされた場合に備えて、戻り値を見て案内を変える
+  const opened = window.open(url, '_blank', 'noopener');
+  message.textContent = opened
+    ? '送信フォームを開きました。内容を確かめて「送信」を押してください。'
+    : 'フォームを開けませんでした。ブラウザのポップアップの設定を確認してください。';
+}
+
+// ============================================================
+//  みんなの成績をまとめて見る(先生側)
+// ============================================================
+
+// 貼り付けを読み取って画面に出す
+function onLoadReports() {
+  const message = document.getElementById('report-message');
+  const output = document.getElementById('report-output');
+  const pasted = document.getElementById('report-input').value;
+
+  output.textContent = '';
+
+  if (!pasted.trim()) {
+    message.textContent = '先に成績データを貼り付けてください。';
+    return;
+  }
+
+  const { reports, skipped } = parsePastedReports(pasted, categories);
+
+  if (reports.length === 0) {
+    message.textContent = '成績データが見つかりませんでした。「名前」と「成績データ」の列をコピーできているか確認してください。';
+    return;
+  }
+
+  message.textContent =
+    `${reports.length}人分を読み込みました。` + (skipped > 0 ? `（読めなかった行が${skipped}行ありました）` : '');
+
+  renderReports(reports, output);
+}
+
+function onClearReports() {
+  document.getElementById('report-input').value = '';
+  document.getElementById('report-output').textContent = '';
+  document.getElementById('report-message').textContent = '';
+}
+
+// 読み込んだ全員分を、表と一覧にして画面に並べる
+function renderReports(reports, output) {
+  // 一人ひとりについて、合計とカテゴリー別をあらかじめ計算しておく
+  const rows = reports.map((report) => ({
+    ...report,
+    overall: summarizeAccuracy(allQuestions, report.history),
+    byCategory: computeCategoryAccuracy(allQuestions, report.history, categories),
+  }));
+
+  output.appendChild(renderReportSummary(rows));
+  output.appendChild(renderReportCategoryTable(rows));
+  rows.forEach((row) => output.appendChild(renderReportWrongList(row)));
+}
+
+// (1) ひとまとめの一覧表。誰がどれだけ進んでいるかをまず見る
+function renderReportSummary(rows) {
+  const section = document.createElement('section');
+  section.className = 'report-block';
+
+  const heading = document.createElement('h3');
+  heading.className = 'section-title';
+  heading.textContent = '全体';
+  section.appendChild(heading);
+
+  const answeredTotal = rows.reduce((sum, r) => sum + r.overall.answered, 0);
+  const correctTotal = rows.reduce((sum, r) => sum + r.overall.correct, 0);
+  const note = document.createElement('p');
+  note.className = 'screen-note';
+  note.textContent =
+    `${rows.length}人 ／ 合計${answeredTotal}問回答 ／ 全体の正答率 ` +
+    `${answeredTotal === 0 ? 0 : Math.round((correctTotal / answeredTotal) * 100)}%`;
+  section.appendChild(note);
+
+  section.appendChild(
+    buildTable(
+      ['名前', '回答数', '正答率', '連続学習', '送信日'],
+      rows.map((r) => [
+        r.name,
+        `${r.overall.answered}問`,
+        r.overall.answered === 0 ? '—' : `${r.overall.accuracyPercent}%`,
+        `${r.streak}日`,
+        r.date,
+      ])
+    )
+  );
+  return section;
+}
+
+// (2) 分野ごとの正答率を、実習生を横に並べて比べる
+function renderReportCategoryTable(rows) {
+  const section = document.createElement('section');
+  section.className = 'report-block';
+
+  const heading = document.createElement('h3');
+  heading.className = 'section-title';
+  heading.textContent = '分野ごとの正答率';
+  section.appendChild(heading);
+
+  const note = document.createElement('p');
+  note.className = 'screen-note';
+  note.textContent = '「正解数/回答数」と正答率です。まだ答えていない分野は「—」になります。';
+  section.appendChild(note);
+
+  const body = categories.map((category, index) => {
+    const cells = [category.name];
+    rows.forEach((row) => {
+      const stat = row.byCategory[index];
+      cells.push(stat.answered === 0 ? '—' : `${stat.correct}/${stat.answered}（${stat.accuracyPercent}%）`);
+    });
+    return cells;
+  });
+
+  section.appendChild(buildTable(['分野', ...rows.map((r) => r.name)], body));
+  return section;
+}
+
+// (3) 一人ずつ、間違えた問題を並べる。指導のときにそのまま使えるようにする
+function renderReportWrongList(row) {
+  const section = document.createElement('section');
+  section.className = 'report-block';
+
+  // 直近の回答が不正解だった問題を集める
+  const wrong = allQuestions.filter((q) => row.history[q.id]?.lastResult === 'wrong');
+
+  const heading = document.createElement('h3');
+  heading.className = 'section-title';
+  heading.textContent = `${row.name} が間違えた問題（${wrong.length}問）`;
+  section.appendChild(heading);
+
+  if (wrong.length === 0) {
+    const note = document.createElement('p');
+    note.className = 'screen-note';
+    note.textContent = '直近の回答で間違えた問題はありません。';
+    section.appendChild(note);
+    return section;
+  }
+
+  const categoryName = new Map(categories.map((c) => [c.id, c.name]));
+  const difficultyName = new Map(DIFFICULTIES.map((d) => [d.id, d.name]));
+
+  const list = document.createElement('ol');
+  list.className = 'report-wrong-list';
+  wrong.forEach((question) => {
+    const item = document.createElement('li');
+
+    const tag = document.createElement('span');
+    tag.className = 'report-wrong-tag';
+    tag.textContent = `${categoryName.get(question.category) ?? question.category} ・ ${difficultyName.get(question.difficulty) ?? question.difficulty}`;
+    item.appendChild(tag);
+
+    const text = document.createElement('p');
+    text.className = 'report-wrong-question';
+    // 疑義照会は症例が長いので、冒頭だけを見出しとして出す
+    text.textContent =
+      question.question.length > 90 ? question.question.slice(0, 90).replace(/\n/g, ' ') + '…' : question.question;
+    item.appendChild(text);
+
+    const answer = document.createElement('p');
+    answer.className = 'report-wrong-answer';
+    answer.textContent = `正解: ${question.choices[question.correctIndex]}`;
+    item.appendChild(answer);
+
+    list.appendChild(item);
+  });
+  section.appendChild(list);
+  return section;
+}
+
+// 表を組み立てる小さな道具。横に長い表はCSS側で横スクロールさせる
+function buildTable(headers, bodyRows) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'report-table-wrap';
+
+  const table = document.createElement('table');
+  table.className = 'report-table';
+
+  const thead = document.createElement('thead');
+  const headRow = document.createElement('tr');
+  headers.forEach((label) => {
+    const th = document.createElement('th');
+    th.textContent = label;
+    headRow.appendChild(th);
+  });
+  thead.appendChild(headRow);
+  table.appendChild(thead);
+
+  const tbody = document.createElement('tbody');
+  bodyRows.forEach((cells) => {
+    const tr = document.createElement('tr');
+    cells.forEach((value, index) => {
+      const cell = document.createElement(index === 0 ? 'th' : 'td');
+      cell.textContent = value;
+      tr.appendChild(cell);
+    });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+
+  wrapper.appendChild(table);
+  return wrapper;
+}
+
 function renderStreak() {
   const streak = storage.getStreak();
   // まだ1問も解いていないときに「0日目」と出ると不自然なので、
@@ -827,6 +1085,13 @@ function setupNav() {
   document.getElementById('add-profile-button').addEventListener('click', onAddProfile);
   document.getElementById('export-button').addEventListener('click', onExport);
   document.getElementById('copy-export-button').addEventListener('click', onCopyExport);
+  document.getElementById('send-report-button').addEventListener('click', onSendReport);
+
+  // 先生用:みんなの成績をまとめて見る画面
+  document.getElementById('open-report-button').addEventListener('click', () => showScreen('report-screen'));
+  document.getElementById('report-back-button').addEventListener('click', () => showScreen('profile-screen'));
+  document.getElementById('report-load-button').addEventListener('click', onLoadReports);
+  document.getElementById('report-clear-button').addEventListener('click', onClearReports);
   document.getElementById('next-question-button').addEventListener('click', onNextQuestion);
   document.getElementById('bookmark-toggle-button').addEventListener('click', onToggleBookmark);
   // 結果画面のボタン

@@ -117,12 +117,42 @@
       <div id="profile-list"></div>
       <button id="add-profile-button" class="secondary-button">＋ 利用者を追加</button>
 
+      <div id="send-report-section" hidden>
+        <h3 class="section-title" style="margin-top:28px">先生に成績を送る</h3>
+        <p class="screen-note">
+          ボタンを押すと、成績が入った状態で送信フォーム（Googleフォーム）が開きます。
+          内容を確かめて「送信」を押してください。送られるのは名前と、分野ごとの正誤だけです。
+        </p>
+        <button id="send-report-button" class="primary-button">先生に成績を送る</button>
+        <p id="send-report-message" class="export-message"></p>
+      </div>
+
       <h3 class="section-title" style="margin-top:28px">成績の書き出し</h3>
       <p class="screen-note">今の利用者の成績を文字にまとめます。コピーしてメールやメッセージに貼り付けられます。</p>
       <button id="export-button" class="secondary-button">成績を書き出す</button>
       <pre id="export-output" class="export-output" hidden></pre>
       <button id="copy-export-button" class="secondary-button" hidden>コピーする</button>
       <p id="export-message" class="export-message"></p>
+
+      <button id="open-report-button" class="text-button">先生用：みんなの成績をまとめて見る</button>
+    </section>
+
+    <!-- 先生用。集めた成績を貼り付けて、全員分をまとめて見る画面 -->
+    <section id="report-screen" class="screen" hidden>
+      <button id="report-back-button" class="back-button">利用者の画面に戻る</button>
+      <h2>みんなの成績</h2>
+      <p class="screen-note">
+        Googleスプレッドシートで「名前」と「成績データ」の列をまとめて選んでコピーし、下に貼り付けてください。
+        貼り付けた内容はこの端末の外には出ません。
+      </p>
+      <textarea id="report-input" class="report-input" rows="6"
+        placeholder="ここに貼り付けてください（1行に1人）"></textarea>
+      <div class="report-actions">
+        <button id="report-load-button" class="primary-button">読み込む</button>
+        <button id="report-clear-button" class="secondary-button">消す</button>
+      </div>
+      <p id="report-message" class="export-message"></p>
+      <div id="report-output"></div>
     </section>
   </main>
 

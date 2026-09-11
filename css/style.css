@@ -1267,6 +1267,127 @@ main h2 {
   min-height: 1.2em;
 }
 
+/* ---------------------------------------------------------------------------
+   先生用「みんなの成績」画面
+
+   実習生が普段使う画面ではないので、ボタンは目立たせず、
+   表は数字が読み取りやすいことだけを優先している。
+   --------------------------------------------------------------------------- */
+
+/* 枠線も背景もない、控えめなボタン。先生用の入口に使う */
+.text-button {
+  display: block;
+  width: 100%;
+  margin: 26px 0 0;
+  padding: 10px;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  text-align: center;
+  cursor: pointer;
+}
+.text-button:hover { color: var(--ink); }
+
+/* 貼り付け用の入力欄 */
+.report-input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+  line-height: 1.7;
+  resize: vertical;
+}
+.report-input:focus {
+  outline: none;
+  border-color: var(--green-500);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--green-500) 18%, transparent);
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+}
+.report-actions button { flex: 1; margin: 0; }
+
+.report-block { margin-top: 30px; }
+
+/* 表。実習生が増えると横に伸びるので、はみ出したら表だけ横スクロールさせる */
+.report-table-wrap {
+  margin-top: 10px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.report-table th,
+.report-table td {
+  padding: 9px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+.report-table thead th {
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.report-table tbody th {
+  font-weight: 600;
+  color: var(--ink);
+}
+.report-table tbody td { color: var(--ink-soft); }
+.report-table tr:last-child th,
+.report-table tr:last-child td { border-bottom: none; }
+
+/* 間違えた問題の一覧 */
+.report-wrong-list {
+  margin: 10px 0 0;
+  padding-left: 1.4em;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.report-wrong-list li {
+  padding-left: 4px;
+  font-size: 0.82rem;
+}
+.report-wrong-tag {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+}
+.report-wrong-question {
+  margin: 0 0 3px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.report-wrong-answer {
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: var(--green-600);
+}
+
 /* ===========================================================================
    パソコンの広い画面向けのレイアウト
 

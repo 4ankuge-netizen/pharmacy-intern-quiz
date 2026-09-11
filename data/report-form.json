@@ -1,0 +1,7 @@
+{
+  "_説明": "成績の送信先(Googleフォーム)の設定です。tools/setup-report-form.mjs で自動的に書き込めます。enabled が false のあいだは、アプリに送信ボタンが出ません。",
+  "enabled": false,
+  "formUrl": "",
+  "nameEntryId": "",
+  "dataEntryId": ""
+}

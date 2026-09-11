@@ -3,7 +3,7 @@
 
 // キャッシュの名前にバージョン番号をつける。
 // 問題データやコードを更新したら、このバージョン番号を上げること。
-const CACHE_VERSION = 'v10';
+const CACHE_VERSION = 'v11';
 const CACHE_NAME = `pharmacy-quiz-${CACHE_VERSION}`;
 
 // オフラインでも表示できるようにしておきたいファイルの一覧
@@ -15,8 +15,10 @@ const APP_SHELL_FILES = [
   './js/quiz-engine.js',
   './js/storage.js',
   './js/stats.js',
+  './js/report-code.js',
   './data/questions.json',
   './data/categories.json',
+  './data/report-form.json',
   './manifest.json',
   './icons/icon.svg',
 ];
