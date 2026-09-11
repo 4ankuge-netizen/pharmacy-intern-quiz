@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>薬学実習クイズ 作成プロンプト</title>
+<style>
+/* ------------------------------------------------------------------
+   印刷して読む・渡すためのスタイル。
+   日本語は1行が長いと読みにくいので、行間をゆったりとってある。
+   ------------------------------------------------------------------ */
+:root {
+  --ink: #1B2A4A;      /* 本文の濃い紺 */
+  --body: #262421;     /* 本文の文字 */
+  --muted: #6B6357;    /* 補足の文字 */
+  --line: #DCD6C8;     /* 罫線 */
+  --accent: #6B2E5F;   /* 見出しの差し色 */
+  --tint: #F5F2EB;     /* 表の見出しや引用の背景 */
+}
+
+@page {
+  size: A4 portrait;
+  margin: 18mm 17mm 16mm;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  font-size: 10pt;
+  line-height: 1.85;
+  color: var(--body);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* ---- 冒頭のタイトル ---- */
+.doc-title {
+  margin-bottom: 9mm;
+  padding-bottom: 4mm;
+  border-bottom: 2px solid var(--ink);
+}
+.doc-title .eyebrow {
+  margin: 0 0 2mm;
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+.doc-title h1 {
+  margin: 0;
+  font-size: 19pt;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.doc-title .note {
+  margin: 3mm 0 0;
+  font-size: 8.5pt;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+/* ---- 見出し ---- */
+h2, h3 {
+  color: var(--ink);
+  /* 見出しだけが行の終わりに残らないようにする */
+  break-after: avoid;
+  page-break-after: avoid;
+}
+h2 {
+  margin: 9mm 0 3mm;
+  padding-bottom: 2mm;
+  font-size: 13pt;
+  border-bottom: 1.5px solid var(--line);
+}
+h3 {
+  margin: 6mm 0 2mm;
+  font-size: 11pt;
+  color: var(--accent);
+}
+
+p { margin: 0 0 3mm; }
+
+/* ---- 箇条書き ---- */
+ul, ol { margin: 0 0 3mm; padding-left: 5.5mm; }
+li { margin-bottom: 1.5mm; }
+li > ul, li > ol { margin-top: 1.5mm; }
+
+strong { color: var(--ink); }
+
+/* ---- 表 ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 4mm;
+  font-size: 9pt;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 1.8mm 2.5mm;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+th {
+  background: var(--tint);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* ---- コード ---- */
+code {
+  font-family: "SFMono-Regular", Consolas, "Courier New", monospace;
+  font-size: 8.5pt;
+  background: var(--tint);
+  padding: 0.3mm 1.2mm;
+  border-radius: 3px;
+}
+pre {
+  margin: 0 0 4mm;
+  padding: 3mm 4mm;
+  background: var(--tint);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 8pt;
+  line-height: 1.6;
+}
+
+/* ---- 区切り線 ---- */
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 7mm 0;
+}
+</style>
+</head>
+<body>
+<div class="doc-title">
+  <p class="eyebrow">作成依頼</p>
+  <h1>薬学実習クイズ アプリ</h1>
+  <p class="note">
+    このまま生成AIに渡して使う依頼文です。貼り付けて使う場合は、
+    改行が崩れないよう <code>docs/build-prompt.md</code> から本文をコピーしてください。
+  </p>
+</div>
+<p>薬学部の実習生（5〜6年生）向けのクイズアプリを、一緒に作ってください。
+私が指導薬剤師で、実習に来る学生に配ります。</p>
+<h2>私について</h2>
+<ul>
+<li>プログラミングは完全な初心者です。専門用語（配列、state、イベント、DOM など）は
+  できるだけ使わず、身近なものに例えて説明してください。ただし説明は要点だけ簡潔に。
+  聞いていない詳細まで先回りしないでください。</li>
+<li>やり取りはすべて日本語でお願いします。</li>
+<li>コードには、私が後で読み返して分かるよう、各処理に簡単な説明コメントを多めに残してください。
+  （「コメントは書かない」という一般的な原則より、こちらを優先してください）</li>
+</ul>
+<h2>進め方</h2>
+<ul>
+<li><strong>1つの作業が終わったら、そこで必ず止まってください。</strong> 次に何をするか提案するのは
+  構いませんが、私が指示するまで勝手に次へ進まないでください。</li>
+<li><strong>分からないこと・確認していないことを、事実のように答えないでください。</strong>
+  推測なら「推測ですが」と明示してください。存在が不確かなファイル・関数・API・情報は、
+  断定する前に実際に調べてください（コードを読む、検索する、取得して中身を見る）。
+  それでも確認できなければ「分からない」と正直に言ってください。</li>
+<li>作った機能は、<strong>実際に動かして確かめてから</strong>「できました」と言ってください。
+  テストを書いて通す、ブラウザで操作する、生成したファイルの中身を読む、のいずれかです。</li>
+</ul>
+<h2>何を作るか</h2>
+<p>スマートフォンのブラウザで開く、一問一答形式の学習アプリです。</p>
+<h3>技術的な制約（ここは崩さないでください）</h3>
+<ul>
+<li><strong>素の HTML / CSS / JavaScript のみ。</strong> ビルド作業なし、npm の依存パッケージなし。
+  ES モジュール（<code>&lt;script type="module"&gt;</code>）で組んでください。</li>
+<li>開発用の簡易サーバーだけ自作して <code>npm start</code> で動かします（<code>dev-server.js</code>）。</li>
+<li>テストは Node 標準の <code>node --test</code> を使います（<code>npm test</code>）。</li>
+<li><strong>PWA にしてください。</strong> マニフェストとサービスワーカーを用意し、一度開けば
+  電波がなくても使えるようにします。</li>
+<li>最終的に <strong>GitHub Pages</strong> で公開します。URL を知っていれば誰でも開けます。</li>
+</ul>
+<p>理由は、私が保守できる範囲に収めたいからです。ツールが増えるほど、
+何かが壊れたときに私の手に負えなくなります。</p>
+<h2>問題データ</h2>
+<p><code>data/questions.json</code> に、1問を1つのまとまりとして並べます。形はこうしてください。</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;cancer-beginner-001&quot;,
+  &quot;category&quot;: &quot;cancer&quot;,
+  &quot;difficulty&quot;: &quot;beginner&quot;,
+  &quot;type&quot;: &quot;single&quot;,
+  &quot;question&quot;: &quot;アプレピタントの主な使用目的として正しいのはどれか。&quot;,
+  &quot;choices&quot;: [&quot;…&quot;, &quot;…&quot;, &quot;…&quot;, &quot;…&quot;],
+  &quot;correctIndex&quot;: 0,
+  &quot;explanation&quot;: &quot;…&quot;,
+  &quot;source&quot;: {
+    &quot;name&quot;: &quot;アプレピタントカプセル125mg 添付文書 4. 効能又は効果&quot;,
+    &quot;url&quot;: &quot;https://www.info.pmda.go.jp/go/pack/…&quot;,
+    &quot;confirmedDate&quot;: &quot;2026-08-26&quot;
+  },
+  &quot;verified&quot;: true
+}
+</code></pre>
+<ul>
+<li><code>id</code> は <code>カテゴリー-難易度-3桁の番号</code> で固定します。あとで成績を短い文字列に
+  置き換えるときに、この形を前提にします。</li>
+<li><code>difficulty</code> は <code>beginner</code> / <code>intermediate</code> / <code>advanced</code> の3段階。</li>
+<li><code>type</code> は既定が <code>single</code>（4択）。ほかに <code>case</code>（症例つき）と <code>query</code>（後述の疑義照会）。</li>
+<li><strong><code>verified</code> が <code>true</code> の問題だけをアプリに出します。</strong> 確認が済んでいない問題は
+  データには置いても出題しません。</li>
+</ul>
+<h3>カテゴリー</h3>
+<p>疾患8分野に、実習で必要な3つを足した12分野です。</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>名前</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cancer</code></td>
+<td>がん</td>
+</tr>
+<tr>
+<td><code>hypertension</code></td>
+<td>高血圧症</td>
+</tr>
+<tr>
+<td><code>diabetes</code></td>
+<td>糖尿病</td>
+</tr>
+<tr>
+<td><code>heart-disease</code></td>
+<td>心疾患</td>
+</tr>
+<tr>
+<td><code>cerebrovascular</code></td>
+<td>脳血管障害</td>
+</tr>
+<tr>
+<td><code>psychiatric</code></td>
+<td>精神神経疾患</td>
+</tr>
+<tr>
+<td><code>immune-allergy</code></td>
+<td>免疫・アレルギー疾患</td>
+</tr>
+<tr>
+<td><code>infection</code></td>
+<td>感染症</td>
+</tr>
+<tr>
+<td><code>calculation</code></td>
+<td>計算問題</td>
+</tr>
+<tr>
+<td><code>ethics</code></td>
+<td>社会常識・倫理観</td>
+</tr>
+<tr>
+<td><code>national-exam</code></td>
+<td>国家試験（必須問題のみ）</td>
+</tr>
+<tr>
+<td><code>prescription-query</code></td>
+<td>疑義照会</td>
+</tr>
+</tbody>
+</table>
+<p><code>data/categories.json</code> に id と名前だけを並べ、この並び順を正とします。</p>
+<h2>出典と事実確認のルール（このアプリの背骨です）</h2>
+<p><strong>ここが最も大事です。</strong> 実習生は、ここに書いてあることを正しいと思って覚えます。
+間違いを覚えさせるくらいなら、問題を減らしてください。</p>
+<ol>
+<li><strong>すべての問題に、確認できる出典を1つ付けてください。</strong> 出典は次のいずれかです。</li>
+<li>PMDA の添付文書（<code>info.pmda.go.jp/go/pack/…</code>）</li>
+<li>PMDA のインタビューフォーム</li>
+<li>学会の診療ガイドライン</li>
+<li>厚生労働省の通知・指針・国家試験問題</li>
+<li>e-Gov 法令検索の法令・省令</li>
+<li><strong>三次情報（教科書・総説・ガイドライン）を根拠にします。</strong> 個人のブログ、
+   まとめサイト、出典のない一覧表は使わないでください。</li>
+<li><strong>「たぶんこうだったはず」で書かないでください。</strong> 用量・禁忌・適応は、
+   必ず添付文書の該当項を実際に取得して読み、その項番号まで <code>source.name</code> に書いてください。
+   （例:「2.8 禁忌（妊娠後期の女性）」）</li>
+<li><strong>有料・会員限定の資料は使わないでください。</strong> 私も実習生も読み返せません。
+   途中でそういう出典が混ざっていたら、無料で読めるものに差し替え、
+   何をどう変えたかを <code>docs/question-revisions.md</code> に記録してください。</li>
+<li><strong>時間で変わる内容には注意してください。</strong> ガイドラインの版、食事摂取基準の年版、
+   ドーピング禁止表など、毎年変わるものは解説の中でその旨に触れてください。</li>
+<li>資料を取得する道具は <code>tools/</code> に作り、取得先ごとに分けてください
+   （添付文書用・インタビューフォーム用・ガイドラインPDF用・法令用）。
+   取得したファイルは <code>.gitignore</code> に入れて、Git では管理しません（再取得できるため）。</li>
+</ol>
+<h3>問題を追加するときの流れ</h3>
+<p><code>tools/add-question.mjs</code> を作ってください。問題を書いた JSON ファイルを渡すと、</p>
+<ul>
+<li>そのカテゴリー・難易度で空いている次の番号を <code>id</code> に付ける</li>
+<li><code>correctAnswer</code>（正解の文言）から <code>correctIndex</code> を計算する</li>
+<li>書き込む前にデータ全体の形を点検する</li>
+<li>追加した内容と出典を <code>docs/question-revisions.md</code> に追記する</li>
+</ul>
+<p>を行います。<strong>あとから「なぜこの問題が入ったのか」をたどれるようにするため</strong>です。</p>
+<h2>アプリの機能</h2>
+<h3>出題の流れ</h3>
+<ol>
+<li>ホームでカテゴリーを選ぶ（各カテゴリーに何問あるか添える）</li>
+<li>難易度を選ぶ（初級・中級・上級。それぞれ問題数とこれまでの正答率を添える）</li>
+<li><strong>1回10問。</strong> 問題プールが何問に増えても、1回分は10問で区切ります。
+   出題順も選択肢の並びも毎回変えてください。</li>
+<li>答えると、その場で正解・不正解、解説、出典が出ます</li>
+<li>解き終わると結果画面。正答率を円グラフで出し、その回の10問を1問ずつ開いて
+   解説を読み返せるようにしてください</li>
+</ol>
+<h3>そのほか</h3>
+<ul>
+<li><strong>弱点復習モード</strong> — 直近の回答が不正解だった問題だけを出します</li>
+<li><strong>ブックマーク</strong> — 気になった問題に印を付けて後で見返せます</li>
+<li><strong>正答率</strong> — カテゴリー別の正答率を棒グラフで</li>
+<li><strong>連続学習日数</strong> — 何日続いているか</li>
+<li><strong>利用者の切り替え</strong> — 1台の端末を複数の実習生が使います。成績・ブックマーク・
+  連続日数は利用者ごとに分けて保存し、混ざらないようにしてください</li>
+<li><strong>成績の書き出し</strong> — 今の利用者の成績を文字にまとめてコピーできる</li>
+</ul>
+<p>保存先はブラウザの localStorage です。保存するときの名前の後ろに利用者の番号を付けて
+分けてください（例: <code>pharmacyQuiz.history:p_abc123</code>）。
+利用者を分ける仕組みを後から足す場合は、番号が付いていない古いデータを
+1人目に引き継いで、それまでの記録が消えないようにしてください。</p>
+<h3>疑義照会カテゴリーの特別な出題形式</h3>
+<p>このカテゴリーだけ、2段階で答えさせてください。</p>
+<ol>
+<li>症例と処方を読み、<strong>「疑義照会は不要」／「疑義照会が必要」</strong> の2択に答える</li>
+<li>「必要」が正解でそう答えた場合のみ、<strong>理由を5択</strong>から選ぶ</li>
+</ol>
+<p>「不要」を選んだ時点で採点が終わります（理由を聞く必要がないため）。</p>
+<p>問題の中身は次の形式で統一してください。</p>
+<pre><code>【症例】
+患者情報: 年齢 性別
+既往歴: …
+検査値: …
+特記事項: …
+
+【処方内容】
+〈診療科・継続処方か新規処方か〉
+Rp1) 薬剤名 規格  数量
+     用法  日数
+
+【問題】
+この処方について、疑義照会が必要か判断してください。
+</code></pre>
+<p>解説は次の見出しで揃えてください。</p>
+<ul>
+<li>照会が必要な場合: 【問題点】【考えられるリスク】【疑義照会例】【根拠】（必要なら【補足】）</li>
+<li>照会が不要な場合: 【問題点】【考えられるリスク】【薬剤師の対応】【根拠】</li>
+</ul>
+<p><strong>とても大事な点が2つあります。</strong></p>
+<ul>
+<li><strong>疑義照会が「必要」な症例を70%、「不要」な症例を30%にしてください。</strong>
+  不要な症例を混ぜるのは、「何でも照会する」のではなく、本当に必要なケースを
+  見分ける訓練にするためです。</li>
+<li><strong>薬局で処方される薬に絞ってください。</strong> 点滴など病院の中でしか出ない薬は省きます。</li>
+</ul>
+<p>扱う話題は、腎機能による減量漏れ、相互作用、重複投与、用法の誤り、高齢者への
+不適切処方、妊婦・授乳婦・小児の禁忌、投与日数の上限、検査値異常、ハイリスク薬などです。
+同じ薬で「必要な例」と「不要な例」を対にすると、線引きが覚えやすくなります
+（例: コデインを8歳に＝禁忌／15歳に＝問題なし）。</p>
+<h2>成績を指導者に集める仕組み</h2>
+<p>実習生の成績を、私の手元でまとめて見られるようにしてください。
+ただし <strong>実習生が見られたくない場合に断れること</strong> が絶対条件です。</p>
+<h3>実習生が選ぶ3段階</h3>
+<table>
+<thead>
+<tr>
+<th>選択</th>
+<th>指導者に見えるもの</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>共有しない（初期値）</strong></td>
+<td>何も表示されない</td>
+</tr>
+<tr>
+<td>正答率だけ共有する</td>
+<td>分野ごとの正答率・回答数・連続学習日数</td>
+</tr>
+<tr>
+<td>すべて共有する</td>
+<td>上に加えて、間違えた問題の一覧</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>初期値は必ず「共有しない」にしてください。</strong></li>
+<li>「正答率だけ」を選んだときは、<strong>間違えた問題を送信前に端末側で落としてください。</strong>
+  指導者の画面で隠すのでは不十分です。届いていなければ見ようがない、という状態にします。</li>
+<li>利用者を作った直後に1回だけ尋ね、あとは利用者画面でいつでも変えられるようにしてください。</li>
+<li>「共有しない」に戻すときは、<strong>それまでに送った分も消すかどうかを選べる</strong>ようにしてください。
+  一度送ったら取り消せない、という状態にしないでください。</li>
+</ul>
+<h3>送り方</h3>
+<ul>
+<li>ボタンを押させないでください。<strong>10問解き終わるたびに、裏で自動的に送ります。</strong></li>
+<li>電波がなければ送らず、次にアプリを開いたときに送り直してください。</li>
+<li>前回と中身が同じときは通信しないでください。</li>
+</ul>
+<h3>送る中身の作り方</h3>
+<p>問題IDをそのまま並べると長すぎるので、短い文字列に置き換えてください。</p>
+<ul>
+<li>カテゴリーを1文字（categories.json の並び順）、難易度を1桁、あとは番号</li>
+<li>連続した番号は範囲にまとめる</li>
+<li>URLに入れても化けない記号だけを区切りに使う（<code>~ * ! . -</code> は化けない。<code>, : |</code> は化ける）</li>
+</ul>
+<pre><code>すべて共有   PQZ1~2026-09-11~12~a1 3-6.12!8.9
+             （がん・初級の 3,4,5,6,12番が正解、8,9番が不正解）
+正答率だけ   PQZ1S~2026-09-11~12~a1:9/12*b2:3/5
+             （数だけ。どの問題を間違えたかは含まれない）
+</code></pre>
+<p>全1,900問すべてに答えた状態でも4千文字ほどに収まります。</p>
+<p><strong>日付や連続学習日数が壊れていたら、送る前に直してください。</strong> <code>undefined</code> が
+混ざった文字列を送ると、実習生の画面には「送信済み」と出るのに指導者には何も
+届かない、という双方が気づけない壊れ方をします。</p>
+<h3>受け取り側</h3>
+<p>Google スプレッドシートに Google Apps Script を付けて、ウェブアプリとして公開します。</p>
+<ul>
+<li><code>doPost</code> … 成績を受け取り、<strong>1人1行</strong>で上書きします（行が増え続けないように）。
+  <code>action: 'delete'</code> を受け取ったら、その人の行を消します。
+  同時に送られても行が壊れないよう <code>LockService</code> で順番待ちさせてください。</li>
+<li><code>doGet</code> … <strong>合言葉が合っているときだけ</strong>、全員分を返します。</li>
+</ul>
+<p><strong>合言葉は Apps Script 側にだけ置き、アプリのソースコードには入れないでください。</strong>
+ソースコードは公開されるため、URL は誰でも見られます。そのままだと誰でも
+全員の成績を読めてしまいます。書き込みは誰でもできますが（見覚えのない名前が
+混ざっていないか私が確認します）、読み出しは合言葉で守る、という形にしてください。</p>
+<p>ブラウザから送るときは <code>Content-Type: text/plain</code> にしてください。
+<code>application/json</code> にすると送信前の確認通信が発生し、Apps Script はそれに返事をしないため失敗します。</p>
+<h3>指導者用の画面</h3>
+<ul>
+<li>アプリの中に作りますが、<strong>実習生の画面には入口を置かないでください。</strong>
+  URL の末尾に <code>#teacher</code> を付けて開いたときだけ表示します。
+  （鍵をかけているわけではありませんが、この画面は入力されたものを表示するだけなので、
+  開かれても誰かの成績が漏れることはありません）</li>
+<li>合言葉を入れて読み込むと、次の3つを表示します。</li>
+<li>全員の一覧（名前・回答数・正答率・連続学習日数・最終更新）</li>
+<li>分野ごとの正答率を、実習生を横に並べて比較する表</li>
+<li>一人ずつ、間違えた問題の一覧（分野・難易度・問題文・正解）</li>
+<li><strong>「表示されるのは共有する設定にしている実習生だけです」と画面に明記してください。</strong>
+  これがないと、載っていない人を「勉強していない」と誤解します。</li>
+<li>「正答率だけ」の人の欄は空にせず、<strong>なぜ間違えた問題が出ないのかを書いてください。</strong>
+  空欄だと「全問正解」と読み違えます。</li>
+<li>通信がうまくいかないときのために、表計算から貼り付けて読む逃げ道も残してください。</li>
+</ul>
+<h2>見た目</h2>
+<p>「ありがちなテンプレート」に見えないようにしてください。方向性はこうです。</p>
+<ul>
+<li>配色は、教科書や公式文書を思わせる<strong>濃い藍色</strong>をヘッダーに、
+  日本の調剤薬局の看板でよく使われる<strong>緑</strong>を「進む」ボタンに、
+  背景は真っ白ではなく<strong>少し温かみのある紙の色</strong>にしてください。
+  正解したときは<strong>朱色の判子</strong>が押される演出を入れてください。</li>
+<li>見出しだけ<strong>明朝体</strong>にすると、参考書のような佇まいになります。</li>
+<li>カテゴリー12個それぞれに色を割り当て、ホーム・正答率・ブックマークの3画面で
+  同じ色を使ってください。色でカテゴリーを覚えられるようにするためです。</li>
+<li>難易度にも色を割り当ててください（やさしい順に緑→青→紫）。</li>
+<li>色や大きさは CSS の変数にまとめ、あちこちに直接書かないでください。</li>
+<li><strong>ダークモードに対応してください。</strong> 変数の中身を差し替えるだけで済む作りにします。</li>
+<li><strong>パソコンで開いたときに左右が大きく余らないようにしてください。</strong>
+  ただし本文の幅をそのまま広げると1行が長くなりすぎます（日本語は1行30〜40字が読みやすい）。
+  タブを画面左の縦一列に移し、カードが並ぶ画面は列を増やし、
+  文章を読む画面は幅を抑えたまま中央に置く、というように内容ごとに変えてください。</li>
+</ul>
+<h2>配布物</h2>
+<p>実習生に配る A4 1枚の案内を作ってください（<code>docs/qr/</code>）。</p>
+<ul>
+<li>公開URLの QR コード（誤り訂正レベルは最高にして、汚れや欠けに強くしてください）</li>
+<li>使い方の手順</li>
+<li>できることの一覧</li>
+<li><strong>成績の共有設定の説明</strong>（3段階の表、変えかた、取り消せること、何が送られるか）</li>
+<li>PDF で書き出せるようにしてください</li>
+</ul>
+<p>QR コードは画像ファイルを参照せず、図形として HTML に直接埋め込んでください。
+1つのファイルで印刷でき、拡大しても荒れません。
+<strong>作ったら、PDF から実際に読み取れることを確かめてください</strong>（印刷解像度を変えて試す）。</p>
+<h2>権利まわり</h2>
+<ul>
+<li>第三者による改変・複製は認めません。緩い利用許諾は付けないでください。</li>
+<li>ただし README には、次の2点を正直に書いてください。</li>
+<li>厚生労働省などの公開資料に由来する部分は、私が制限できるものではないこと</li>
+<li>GitHub の公開リポジトリでは、利用規約により他の利用者に閲覧と fork が
+    許諾されること（README の注意書きでは上書きできません）</li>
+<li>厚生労働省の資料を使う場合は、出典を表示し、編集した場合はその旨を書いてください。</li>
+<li>学会のガイドラインは、<strong>そのまま転載せず、要点を自分の言葉で書き直してください。</strong></li>
+</ul>
+<h2>作業の順番</h2>
+<p>次の順で進めてください。<strong>各段階の終わりで必ず止まってください。</strong></p>
+<ol>
+<li>出題・採点の中身（問題を選ぶ、採点する、並び替える）とそのテスト</li>
+<li>画面と保存（localStorage）</li>
+<li>問題データの形を点検する仕組みとテスト</li>
+<li>資料を取ってくる道具と、問題を追加する道具</li>
+<li>問題を少しずつ増やす（<strong>1問ずつ出典を確認しながら</strong>）</li>
+<li>PWA 化（オフライン対応・自動更新）</li>
+<li>見た目の作り込み</li>
+<li>利用者の切り替え</li>
+<li>GitHub Pages で公開</li>
+<li>疑義照会カテゴリー</li>
+<li>成績の自動送信と指導者用画面、共有の3段階</li>
+<li>配布物（QR・A4案内）</li>
+</ol>
+<h2>先に知っておいてほしい落とし穴</h2>
+<p>実際に作ったときに引っかかった所です。同じ所で止まらないよう、先に伝えておきます。</p>
+<p><strong>厚生労働省の PDF が文字化けする</strong>
+国家試験の問題PDFなどは、<code>pdftotext</code> で読むと「ø ೔໨ᶃ」のような文字化けになります。
+Python の PyMuPDF（<code>pip install pymupdf</code>）を使うと正しく読めます。</p>
+<p><strong>サービスワーカーが古いファイルを保存してしまう</strong>
+<code>cache.addAll()</code> は、ブラウザが少し前にダウンロードして持っているファイルを
+そのまま使うことがあります。GitHub Pages は最大10分ほどファイルを持ち回すため、
+「新しい版として保存したのに中身は古い」という、次の更新まで直らない状態になります。
+<code>new Request(url, { cache: 'reload' })</code> を渡して、必ず取りに行かせてください。</p>
+<p><strong>選択肢の A・B・C の番号が続いてしまう</strong>
+CSS のカウンターで選択肢に記号を振る場合、<code>counter-reset</code> は同じ階層の
+後ろの要素には効きません。リセットを持つ要素で選択肢を囲んでください。</p>
+<p><strong>正解の位置が偏る</strong>
+問題を書いていくと、正解が1番目に集まります。正解の位置を均等に散らす道具を
+作ってください。<strong>選択肢の数ごとに分けて数えてください</strong>（4択と5択を混ぜて数えると
+計算が壊れます）。</p>
+<p><strong>Google Apps Script への送信が失敗する</strong>
+上に書いた <code>Content-Type: text/plain</code> の件です。</p>
+<p><strong>先生用画面を後から隠す</strong>
+入口のボタンを消すだけでなく、戻るときに <code>#teacher</code> を URL から消してください。
+付けっぱなしだと、次に開いたときにいきなり指導者用の画面が出ます。</p>
+<hr />
+<p>最初に、上の内容で認識が合っているか確認させてください。
+不明な点や、先に決めておくべきことがあれば聞いてください。
+問題ないようなら、<strong>手順1（出題・採点の中身とそのテスト）から始めてください。</strong></p>
+</body>
+</html>

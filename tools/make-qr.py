@@ -115,6 +115,33 @@ def find_browser():
     return None
 
 
+def wait_until_written(path, timeout=30):
+    """PDFが最後まで書き終わるのを待つ。
+
+    ブラウザは終了した直後にはまだ書き込み中のことがある。
+    待たずに読むと、途中までのPDFを読んで
+    「2ページある」「中身が古い」といった見誤りが起きる。
+    大きさが変わらなくなるまで待ってから次へ進む。
+    """
+    import time
+
+    deadline = time.time() + timeout
+    last_size = -1
+    stable_for = 0
+    while time.time() < deadline:
+        if path.exists():
+            size = path.stat().st_size
+            if size > 0 and size == last_size:
+                stable_for += 1
+                if stable_for >= 3:  # 3回続けて同じ大きさなら書き終わったとみなす
+                    return True
+            else:
+                stable_for = 0
+            last_size = size
+        time.sleep(0.3)
+    return path.exists() and path.stat().st_size > 0
+
+
 def make_pdf():
     browser = find_browser()
     if not browser:
@@ -134,7 +161,7 @@ def make_pdf():
         check=True,
         capture_output=True,
     )
-    if PDF.exists():
+    if wait_until_written(PDF):
         print(f"  {PDF.name} を書き出しました ({PDF.stat().st_size:,} バイト)")
         return True
     print("  PDFの書き出しに失敗しました")
