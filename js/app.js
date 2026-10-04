@@ -360,29 +360,71 @@ function renderQueryStep1(question) {
     { label: '疑義照会が必要', chose: true },
   ].forEach(({ label, chose }) => {
     const button = document.createElement('button');
+    // 2段階目の理由ボタンと見分けるための目印
+    button.className = 'query-decision';
     button.textContent = label;
     button.addEventListener('click', () => onQueryStep1(question, chose));
     choiceList.appendChild(button);
   });
 }
 
-// 1段階目に答えたときの処理
+// 1段階目(不要／必要)のボタンだけを取り出す
+function queryDecisionButtons() {
+  return [...document.querySelectorAll('#choice-list button.query-decision')];
+}
+
+// 2段階目(理由の一覧)が今出ているかどうか
+function hasQueryStep2() {
+  return Boolean(document.querySelector('#choice-list .query-reasons'));
+}
+
+// 2段階目を取り払う(「やっぱり不要」に変えたとき)
+function removeQueryStep2() {
+  document
+    .querySelectorAll('#choice-list .query-step2-heading, #choice-list .query-reasons')
+    .forEach((el) => el.remove());
+}
+
+/*
+  1段階目の正誤を色で示し、もう押せないようにする。
+  答えを見せるのはここだけ。
+  「必要」を選んで理由を見ている途中ではまだ呼ばない
+*/
+function revealQueryDecision(question, choseNeedsQuery) {
+  const buttons = queryDecisionButtons();
+  buttons.forEach((b) => {
+    b.disabled = true;
+    b.classList.remove('is-chosen');
+  });
+  (question.needsQuery ? buttons[1] : buttons[0]).classList.add('correct');
+  if (choseNeedsQuery !== question.needsQuery) {
+    (choseNeedsQuery ? buttons[1] : buttons[0]).classList.add('incorrect');
+  }
+}
+
+/*
+  1段階目に答えたときの処理。
+
+  「必要」を選んで理由の一覧が出たあとでも、「不要」に選び直せるようにしてある。
+  実際の処方監査でも、気になって調べてみた結果「これは問題ない」と
+  引き返すことがあるため。
+  そのため、理由を選ぶ段階に進む時点では、まだ正誤を見せない
+*/
 function onQueryStep1(question, choseNeedsQuery) {
-  const buttons = [...document.querySelectorAll('#choice-list button')];
-  const correctButton = question.needsQuery ? buttons[1] : buttons[0];
-  const chosenButton = choseNeedsQuery ? buttons[1] : buttons[0];
+  const buttons = queryDecisionButtons();
 
-  // 判断が合っていたかどうかで色を付ける
-  correctButton.classList.add('correct');
-  if (choseNeedsQuery !== question.needsQuery) chosenButton.classList.add('incorrect');
-  buttons.forEach((b) => (b.disabled = true));
-
-  // 「必要」が正解で、実際に「必要」を選べたときだけ、理由を選ぶ2段階目へ進む。
-  // それ以外は、この時点で答え合わせを表示する
   if (question.needsQuery && choseNeedsQuery) {
+    // すでに理由の一覧が出ているなら、そのままにする(二重に出さない)
+    if (hasQueryStep2()) return;
+    buttons.forEach((b) => b.classList.remove('is-chosen'));
+    buttons[1].classList.add('is-chosen'); // 今「必要」を選んでいる、という印だけ付ける
     renderQueryStep2(question);
     return;
   }
+
+  // ここで確定。理由の一覧が出ていれば閉じる
+  removeQueryStep2();
+  revealQueryDecision(question, choseNeedsQuery);
   finishAnswer(question, choseNeedsQuery === question.needsQuery);
 }
 
@@ -415,6 +457,9 @@ function renderQueryStep2(question) {
 // 2段階目(理由)に答えたときの処理
 function onQueryStep2(question, selectedIndex, selectedButton) {
   const isCorrect = checkAnswer(currentChoices, selectedIndex);
+  // 理由を選んだ時点で、1段階目の判断も「必要」で確定する
+  revealQueryDecision(question, true);
+
   const buttons = [...document.querySelectorAll('#choice-list button.query-reason')];
 
   buttons[currentChoices.correctIndex].classList.add('correct');

@@ -633,6 +633,27 @@ main h2 {
 .review-explanation { white-space: pre-line; }
 
 /* 疑義照会の2段階目(理由を選ぶ)の前に置く一行 */
+/*
+  1段階目で「今これを選んでいる」ことを示す印。
+
+  正解・不正解の色(緑・朱)とは別の見た目にしてある。
+  理由を見ている途中は、まだ合っているかどうかを教えていないため、
+  ここで緑にしてしまうと答えを先に見せることになる
+*/
+#choice-list button.query-decision.is-chosen {
+  border-color: var(--indigo-500);
+  background: color-mix(in srgb, var(--indigo-500) 9%, var(--surface));
+  font-weight: 700;
+}
+#choice-list button.query-decision.is-chosen::after {
+  content: '選択中 — 変更できます';
+  display: block;
+  margin-top: 3px;
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
 .query-step2-heading {
   margin: 16px 0 4px;
   font-size: 0.85rem;
